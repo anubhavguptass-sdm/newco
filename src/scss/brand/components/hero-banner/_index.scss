@@ -3,13 +3,13 @@
 
   .home-hero-content {
     padding-top: 1rem;
-
     padding-left: 1rem;
 
     @include sm {
       padding-top: 6rem;
     }
 
+    
     @include lg {
       padding-top: 8rem;
       padding-left: 0;
@@ -85,7 +85,6 @@
   .heading {
     margin-top: 5px;
     margin-left: 2rem;
-
     @include sm {
       margin-top: 5rem;
     }

@@ -2,6 +2,7 @@
     .bod-title{
         position: absolute;
         top: -10px; 
+          }
         &::after {
             content: "";
             background-color: $color-primary;
@@ -18,7 +19,7 @@
             background-position: center;
             outline: 2px solid $color-primary;
         }
-    }
+  
 }
 
 // .overlapping-title {

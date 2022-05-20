@@ -10,7 +10,7 @@
   }
 
   .measure-black {
-    @extend .d-none;
+    display: none;
     @include sd {
       display: block;
       position: absolute;
@@ -29,7 +29,7 @@
   }
 }
 
-.link-crumbs {
+.tag-Links {
   width: 85%;
   position: absolute;
   margin-top: -2.5rem;
@@ -72,10 +72,20 @@
       @include md {
         display: block;
       }
+      .diversity-area-sub-heading {
+        height: 59px;
+        line-height: 59px;
+        text-align: left;
+        background-color: $color-primary;
+        @include md {
+          height: 64px;
+          line-height: 64px;
+        }
+      }
     }
   }
   .diversity-area {
-    &.-heading {
+    .diversity-area-heading {
       height: 62px;
       line-height: 62px;
       background-color: $color-primary;
@@ -84,18 +94,8 @@
         line-height: 77px;
       }
     }
-    &.-content {
+    .diversity-area-content {
       padding-right: 0;
-    }
-    &.-second-heading {
-      height: 59px;
-      line-height: 59px;
-      text-align: left;
-      background-color: $color-primary;
-      @include md {
-        height: 64px;
-        line-height: 64px;
-      }
     }
   }
 }

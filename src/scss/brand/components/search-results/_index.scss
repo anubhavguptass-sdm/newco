@@ -1,0 +1,13 @@
+.searchbox-results {
+  button {
+    &:before {
+      display: none !important;
+    }
+  }
+  .searchBox-label {
+    display: block !important;
+    input {
+      display: block !important;
+    }
+  }
+}

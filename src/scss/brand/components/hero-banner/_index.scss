@@ -1,3 +1,84 @@
+.homepage-banner {
+  position: relative;
+
+  .home-hero-content {
+    padding-top: 1rem;
+
+    padding-left: 1rem;
+
+    @include sm {
+      padding-top: 6rem;
+    }
+
+    @include lg {
+      padding-top: 8rem;
+      padding-left: 0;
+    }
+
+    @include lg {
+      padding-left: 0rem;
+    }
+
+    .heading {
+      white-space: initial;
+
+      @include sd {
+        white-space: nowrap;
+      }
+      .heading-bg-strip {
+        width: 80%;
+
+        @include sm {
+          width: 100%;
+        }
+
+        &:before {
+          top: 0;
+        }
+
+        &:after {
+          top: -100%;
+          width: 60vw;
+          right: -60vw;
+        }
+      }
+    }
+
+    .banner-subheading {
+      white-space: initial;
+
+      @include sd {
+        white-space: nowrap;
+      }
+    }
+
+    p:last-of-type {
+      position: relative;
+
+      @include sm {
+        padding-left: 0 !important;
+        position: absolute;
+        bottom: 24px;
+        left: 12px;
+        line-height: $line-height-150;
+      }
+
+      @include lg {
+        left: 0;
+      }
+    }
+  }
+
+  .imageCompatibleMarkup.image {
+    img {
+      padding-bottom: 1.5rem;
+
+      @include sm {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
 // .profile--hero--banner {
 //   .card-content-container {
 //     padding: 1rem 1.5rem;

@@ -43,8 +43,8 @@
       margin-right: 12px;
       padding: 0 5px !important;
       color: $color-grey-3 !important;
-      @include sm{ 
-        display: table !important; 
+      @include sm {
+        display: table !important;
         margin-top: -4rem;
       }
       @include lg {

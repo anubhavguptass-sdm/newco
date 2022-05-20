@@ -1,114 +1,45 @@
 @if $include-searchbox-results {
   .searchbox {
     .form-search {
-      align-items: center;
-      display: flex;
-      flex-direction: $row-direction;
-      justify-content: center;
+      @extend .d-flex;
+      @extend .flex-row;
+      @extend .align-center;
+      @extend .justify-center;
     }
-
-    &-label {
+    .searchBox-label {
+      @extend .d-block;
+      height: auto;
+      padding: 1rem 2rem 1rem 2rem;
+      width: 100%;
+      @include sm {
+        box-shadow: 0px 16px 40px -8px #0000001a;
+      }
+    }
+    .search-query {
+      @extend .d-block;
+      background: $color-grey-3;
+      height: 48px;
+      font-size: 1rem;
+      border: none;
+      padding: 1rem;
       width: 100%;
     }
-
-    .search-query {
-      border: 1px solid $search-box-border-color;
-      border-#{$end-direction}-width: 0;
-      font-size: 16px;
-      height: 54px;
-      padding: 15px;
-      width: 100% !important;
-
-      @media (min-width: $breakpoint-sm-min) {
-        font-size: 18px;
-        height: 80px;
-      }
-    }
-
-    &-results {
-      margin-bottom: 50px !important;
-      margin-top: 30px;
-
-      .button {
-        background-color: transparent;
-        border: 1px solid $search-box-border-color;
-        border-#{$start-direction}-width: 0;
-        border-radius: 0;
-        font-size: 0;
-        height: 54px;
-        padding: 5px;
-        position: relative;
-        width: 54px;
-
-        &::before {
-          background-color: $search-box-border-color;
-          content: '';
-          display: inline-block;
-          height: 42px;
-          #{$start-direction}: 0;
-          position: absolute;
-          top: 5px;
-          width: 1px;
-
-          @media (min-width: $breakpoint-sm-min) {
-            height: 60px;
-            top: 10px;
-          }
-        }
-
-        &::after {
-          background: get-icon('search-icon', $navigation-search-icon-color);
-          background-position: 50%;
-          background-repeat: no-repeat !important;
-          background-size: contain;
-          content: '';
-          display: inline-block;
-          height: 19px;
-          width: 19px;
-
-          @media (min-width: $breakpoint-sm-min) {
-            height: 26px;
-            width: 26px;
-          }
-        }
-
-        @media (min-width: $breakpoint-sm-min) {
-          height: 80px;
-          width: 80px;
-        }
-      }
-
-      @media (min-width: $breakpoint-sm-min) {
-        margin-bottom: 100px !important;
-        margin-top: 50px;
-      }
-      // themes for searchbox
-      @each $key, $value in $searchbox-theme-colors {
-        &.theme-#{$key} {
-          .button {
-            border-bottom: 1px solid $value !important;
-            border-#{$start-direction}: 1px solid transparent !important;
-            border-#{$end-direction}: 1px solid $value !important;
-            border-top: 1px solid $value !important;
-
-            &::before {
-              background-color: $value !important;
-            }
-
-            &::after {
-              background: get-icon('search-icon', $value) !important;
-              background-repeat: no-repeat !important;
-            }
-          }
-
-          form {
-            input {
-              border-bottom: 1px solid $value !important;
-              border-#{$start-direction}: 1px solid $value !important;
-              border-top: 1px solid $value !important;
-            }
-          }
-        }
+    .button {
+      border: none;
+      position: absolute;
+      right: 2rem;
+      height: 3rem;
+      width: 3rem;
+      background-color: $color-primary;
+      font-size: 0;
+      &::after {
+        content: '\f0d1';
+        background-position: 50%;
+        background-repeat: no-repeat !important;
+        background-size: contain;
+        display: inline-block;
+        height: 19px;
+        width: 19px;
       }
     }
   }

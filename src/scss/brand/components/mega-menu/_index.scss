@@ -338,8 +338,8 @@ header {
       }
       input[type='text'] {
         height: auto;
-        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/Navigation-Search.svg');
-        color: var(--color-black);
+
+        color: $color-black;
         background-size: 18px auto;
         border: 1px solid var(--color-black);
         background-repeat: no-repeat;

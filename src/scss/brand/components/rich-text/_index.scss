@@ -10,7 +10,7 @@
   }
 
   .measure-black {
-    display: none;
+    @extend .d-none;
     @include sd {
       display: block;
       position: absolute;
@@ -20,6 +20,73 @@
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       height: 96%;
+    }
+    @include md {
+      img {
+        height: 32rem;
+      }
+    }
+  }
+}
+
+.link-crumbs {
+  ul {
+    list-style-type: none;
+    position: relative;
+    li {
+      display: table !important;
+      background: rgba(0, 0, 0, 0.5);
+      margin-right: 12px;
+      padding: 0 5px !important;
+      color: $color-grey-3 !important;
+      @include lg {
+        display: inline-block !important;
+      }
+    }
+  }
+}
+
+.diversity-box {
+  .component-content {
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .diversity-right-area {
+    .white-line-repeats {
+      display: none;
+      position: absolute;
+      width: 67px;
+      top: 2.4rem;
+      left: -4.2rem;
+      z-index: 0;
+      @include md {
+        display: block;
+      }
+    }
+  }
+  .diversity-area {
+    &.-heading {
+      height: 62px;
+      line-height: 62px;
+      background-color: $color-primary;
+      @include md {
+        height: 77px;
+        line-height: 77px;
+      }
+    }
+    &.-content {
+      padding-right: 0;
+    }
+    &.-second-heading {
+      height: 59px;
+      line-height: 59px;
+      text-align: left;
+      background-color: $color-primary;
+      @include md {
+        height: 64px;
+        line-height: 64px;
+      }
     }
   }
 }

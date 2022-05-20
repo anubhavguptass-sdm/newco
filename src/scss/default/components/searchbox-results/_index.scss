@@ -1,5 +1,5 @@
 @if $include-searchbox-results {
-  .searchbox {
+  
     .form-search {
       align-items: center;
       display: flex;
@@ -54,7 +54,7 @@
         margin-top: 50px;
       }
     }
-  }
+  
 
   .searchResults {
     border: 0;

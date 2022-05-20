@@ -238,6 +238,7 @@ header {
 .simple-navigation .megamenu * {
   color: $color-2;
 }
+
 .megamenu-navigation {
   .megamenu-logo {
     &::after {
@@ -314,6 +315,11 @@ header {
     .searchBox {
       z-index: 9;
       .searchBox-label {
+        display: none !important;
+        background: #fff;
+        box-shadow: 0px 16px 40px -8px #0000001a;
+        padding: 0 !important;
+        height: auto;
         position: fixed;
         z-index: 9999;
         left: 0;
@@ -326,10 +332,19 @@ header {
           top: 135px;
           width: 70%;
           left: 0;
+          height: 4rem;
+          padding: 1rem 2rem 1rem 1rem !important;
         }
         input[type='text'] {
           width: 94% !important;
           border: 2px solid $color-black;
+          display: none !important;
+        }
+        &.is-search-open {
+          display: block !important;
+          input {
+            display: block !important;
+          }
         }
       }
       .form-search {
@@ -690,7 +705,7 @@ header {
   @include sd {
     margin-left: 0rem !important;
     margin-right: 0rem !important;
-    width: auto;
+    width: 100%;
     overflow-y: initial;
     max-height: initial;
   }
@@ -698,6 +713,7 @@ header {
 .megamenu-navigation {
   .megamenu-submenu-item {
     box-shadow: none !important;
+    height: auto;
     .bg-color-3 {
       background-color: $color-grey-3;
       padding: 1rem;
@@ -756,7 +772,7 @@ header {
   > .navigation-level2
   > li
   > a {
-    line-height: 75px;
+  line-height: 75px;
   @include sd {
     line-height: $line-height-150;
   }
@@ -880,26 +896,6 @@ header {
   }
 }
 
-.searchBox-label {
-  display: none !important;
-  background: #fff;
-  box-shadow: 0px 16px 40px -8px #0000001a;
-  padding: 0 !important;
-  height: auto;
-  @include sd {
-    height: 4rem;
-    padding: 1rem 2rem 1rem 1rem !important;
-  }
-  &.is-search-open {
-    display: block !important;
-    input {
-      display: block !important;
-    }
-  }
-  input {
-    display: none !important;
-  }
-}
 .back-button-desktop-hide {
   display: block;
   font-size: 0.938rem;
@@ -911,7 +907,7 @@ header {
 .megamenu-navigation
   .megamenu--newco.mobile-megamenu-search
   > .component-content {
-    max-height: 95px;
+  max-height: 95px;
   @include xs {
     max-height: initial;
   }

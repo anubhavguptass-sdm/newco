@@ -1,4 +1,5 @@
 .overlapping-title {
+  position: relative;
     .bod-title{
         position: absolute;
         top: -10px; 
@@ -19,7 +20,19 @@
             background-position: center;
             outline: 2px solid $color-primary;
         }
-  
+        .overlapping-text {
+            position: absolute;
+            left: 1rem;
+            right: 2rem;
+            top: 1rem;
+        }
+        .giant-font {
+            span {
+                display: block;
+                width: fit-content;
+                color: #ffffff !important;
+            }
+        }
 }
 
 // .overlapping-title {

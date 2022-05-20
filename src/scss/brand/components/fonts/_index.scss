@@ -3,11 +3,11 @@
   line-height: $line-height-100;
   text-align: center;
   margin: 0;
-  @media (min-width: $breakpoint-sm-min) {
+  @include sd {
     font-size: 4rem;
     letter-spacing: -3px;
   }
-  @media (min-width: $breakpoint-sd-min) {
+  @include lg  {
     font-size: 5rem;
   }
 }

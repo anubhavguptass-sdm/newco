@@ -7,7 +7,7 @@
     font-size: 4rem;
     letter-spacing: -3px;
   }
-  @include lg  {
+  @include lg {
     font-size: 5rem;
   }
 }
@@ -17,7 +17,7 @@
   color: $color-white !important;
 }
 
-a{
+a {
   font-size: inherit !important;
   font-weight: inherit !important;
   color: inherit !important;

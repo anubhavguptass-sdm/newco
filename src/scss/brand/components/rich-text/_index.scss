@@ -30,17 +30,26 @@
 }
 
 .link-crumbs {
+  width: 85%;
+  position: absolute;
+  margin-top: -2.5rem;
+  left: 10px;
   ul {
     list-style-type: none;
     position: relative;
     li {
-      display: table !important;
+      display: inline !important;
       background: rgba(0, 0, 0, 0.5);
       margin-right: 12px;
       padding: 0 5px !important;
       color: $color-grey-3 !important;
+      @include sm{ 
+        display: table !important; 
+        margin-top: -4rem;
+      }
       @include lg {
         display: inline-block !important;
+        margin-top: -2rem;
       }
     }
   }

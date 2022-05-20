@@ -1,21 +1,23 @@
 .overlapping-title {
-    position: absolute;
-    top: -10px;
-    &::after {
-        content: "";
-        background-color: var(--color-primary);
-        background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
+    .bod-title{
         position: absolute;
-        background-size: 20px;
-        background-repeat: no-repeat;
-        right: 2px;
-        bottom: 2px;
-        top: initial;
-        left: initial;
-        height: 72px;
-        width: 72px;
-        background-position: center;
-        outline: 2px solid var(--color-primary);
+        top: -10px;
+        &::after {
+            content: "";
+            background-color: var(--color-primary);
+            background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
+            position: absolute;
+            background-size: 20px;
+            background-repeat: no-repeat;
+            right: 2px;
+            bottom: 2px;
+            top: initial;
+            left: initial;
+            height: 72px;
+            width: 72px;
+            background-position: center;
+            outline: 2px solid var(--color-primary);
+        }
     }
 }
 

@@ -18,8 +18,9 @@
 }
 
 a{
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
-  line-height: inherit;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+  padding: inherit !important;
 }

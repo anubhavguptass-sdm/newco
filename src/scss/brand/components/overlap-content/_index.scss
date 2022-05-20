@@ -12,7 +12,12 @@
   @include sm {
     left: 0;
   }
-
+  .sm-btn{
+    display: block;
+    @include md{
+      display: none;
+    }
+  }
   @include sd {
     position: absolute;
     right: 0;

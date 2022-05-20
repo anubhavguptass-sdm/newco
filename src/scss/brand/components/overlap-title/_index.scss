@@ -1,10 +1,10 @@
 .overlapping-title {
     .bod-title{
         position: absolute;
-        top: -10px;
+        top: -10px; 
         &::after {
             content: "";
-            background-color: var(--color-primary);
+            background-color: $color-primary;
             background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
             position: absolute;
             background-size: 20px;
@@ -16,7 +16,7 @@
             height: 72px;
             width: 72px;
             background-position: center;
-            outline: 2px solid var(--color-primary);
+            outline: 2px solid $color-primary;
         }
     }
 }

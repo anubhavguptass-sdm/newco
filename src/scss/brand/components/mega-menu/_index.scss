@@ -4,10 +4,10 @@ header {
 }
 .megamenu-navigation {
   .megamenu.search-opened > .component-content {
-    max-height: 100% !important;
+    max-height: 100px !important;
 
     @include sd {
-      max-height: 100px !important;
+      max-height: 100% !important;
     }
   }
 }
@@ -26,11 +26,11 @@ header {
   .megamenu--newco {
     padding: 0;
     > .component-content {
-      padding: 0.75rem 2rem 0 2rem !important;
-      border-bottom: 2px solid $color-grey-3;
+      padding: 0 2rem !important;
     }
     @include sd {
-      padding: 0 2rem !important;
+      padding: 0.75rem 2rem 0 2rem !important;
+      border-bottom: 2px solid $color-grey-3;
     }
     > .component-content {
       max-width: 100vw !important;
@@ -44,13 +44,11 @@ header {
       .megamenu-main-nav {
         .navigation-branch.navigation-level1 {
           max-width: 100% !important;
-          justify-content: center;
+          margin-top: 3.5rem;
+          margin-top: 1.5rem !important;
           @include sd {
             max-width: 100% !important;
-            margin-top: 3.5rem;
-          }
-          @include sm {
-            margin-top: 1.5rem !important;
+            justify-content: center;
           }
         }
       }
@@ -62,8 +60,9 @@ header {
           font-weight: $font-normal;
           color: $color-grey-1;
           cursor: pointer;
+          margin-bottom: 1rem !important;
           @include sm {
-            margin-bottom: 1rem !important;
+            margin-bottom: 0 !important;
           }
           &:hover {
             background-color: $color-primary;
@@ -77,32 +76,28 @@ header {
         color: $color-grey-2;
       }
       .contact--nav {
-        margin-left: 0;
+        margin-left: 0 !important;
         margin-right: 1rem;
-        @include sd {
-          margin-left: 0 !important;
-        }
         p {
+          width: 100px;
+          margin: auto !important;
           @include sm {
-            width: 100px;
-            margin: auto !important;
+            width: auto;
           }
           a {
-            position: relative;
-            padding-right: 20px;
+            padding-right: 0;
             @include sm {
-              padding-right: 0;
+              position: relative;
+              padding-right: 20px;
             }
             &:after {
               content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/contact-phone.png');
               position: absolute;
-              top: 0;
+              top: 4px;
+              left: 5.5rem;
               @include sd {
-                top: 4px;
+                top: 0;
                 left: 6rem;
-              }
-              @include sm {
-                left: 5.5rem;
               }
             }
           }
@@ -112,9 +107,10 @@ header {
         text-align: right;
         margin-right: 0.5rem;
         p {
+          width: 100px;
+          margin: auto !important;
           @include sm {
-            width: 100px;
-            margin: auto !important;
+            width: auto;
           }
           a {
             position: relative;
@@ -123,9 +119,9 @@ header {
               content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/other-contrast.png');
               position: absolute;
               right: 1px;
-              top: 0;
+              top: 4px;
               @include sd {
-                top: 4px;
+                top: 0;
               }
             }
           }
@@ -140,9 +136,9 @@ header {
               content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/other-contrast.png');
               position: absolute;
               right: 0;
-              top: 2px;
+              top: 4px;
               @include sd {
-                top: 4px;
+                top: 2px;
               }
             }
           }
@@ -157,8 +153,9 @@ header {
           font-weight: $font-normal;
           cursor: pointer;
           color: $color-grey-1;
+          margin-bottom: 1rem !important;
           @include sm {
-            margin-bottom: 1rem !important;
+            margin-bottom: 0rem !important;
           }
           &:hover {
             color: $color-black;
@@ -183,9 +180,11 @@ header {
       .megamenu-main-nav {
         background-color: $color-white;
         padding-bottom: 1rem;
+        margin-top: 0;
+        padding-bottom: 0;
         @include sd {
           margin-top: 0;
-          padding-bottom: 0;
+          padding-bottom: 1rem;
         }
         ul.navigation-level1 {
           li.navigation-item {
@@ -211,17 +210,18 @@ header {
     .megamenu-logo {
       .image {
         a {
-          width: 250px;
-          min-width: 250px;
-          max-width: 250px;
-          height: auto;
           border: 4px solid $color-white;
+          width: 115px;
+          max-width: 115px;
+          min-width: auto;
+          margin-left: -0.75rem;
+          margin-top: -0.25rem;
           @include sd {
-            width: 115px;
-            max-width: 115px;
-            min-width: auto;
-            margin-left: -0.75rem;
-            margin-top: -0.25rem;
+            width: 250px;
+            min-width: 250px;
+            max-width: 250px;
+            height: auto;
+            margin: 0;
           }
           &:hover {
             height: auto;
@@ -315,15 +315,16 @@ header {
       z-index: 9;
       .searchBox-label {
         position: fixed;
-        top: 135px;
         z-index: 9999;
-        width: 70%;
         left: 0;
         right: 0;
         margin: auto;
+        top: 45px;
+        width: 100%;
+        left: 0;
         @include sd {
-          top: 45px;
-          width: 100%;
+          top: 135px;
+          width: 70%;
           left: 0;
         }
         input[type='text'] {
@@ -338,16 +339,17 @@ header {
       }
       input[type='text'] {
         height: auto;
-
         color: $color-black;
         background-size: 18px auto;
         border: 1px solid var(--color-black);
         background-repeat: no-repeat;
         transition: none !important;
         opacity: 1 !important;
+        background-position: 98%;
+        display: none !important;
         @include sd {
           background-position: 98%;
-          display: none !important;
+          display: block !important;
           &.searchInput {
             display: block !important;
           }
@@ -469,8 +471,9 @@ header {
     top: 1px;
     font-size: $font-size-14;
     color: $color-black;
+    display: none;
     @include sd {
-      display: none;
+      display: block;
     }
   }
 }
@@ -679,12 +682,17 @@ header {
 .megamenu-navigation .megamenu-submenu-items-container,
 .simple-navigation .megamenu-submenu-items-container {
   display: block;
+  margin-left: -2rem !important;
+  margin-right: -2rem !important;
+  width: 100vw;
+  overflow-y: scroll;
+  max-height: 100vh;
   @include sd {
-    margin-left: -2rem !important;
-    margin-right: -2rem !important;
-    width: 100vw;
-    overflow-y: scroll;
-    max-height: 100vh;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    width: auto;
+    overflow-y: initial;
+    max-height: initial;
   }
 }
 .megamenu-navigation {
@@ -692,8 +700,9 @@ header {
     box-shadow: none !important;
     .bg-color-3 {
       background-color: $color-grey-3;
+      padding: 1rem;
       @include sd {
-        padding: 1rem;
+        padding: 0rem;
       }
     }
     .default-style {
@@ -733,8 +742,9 @@ header {
 }
 .theraflu-visit-bg-image {
   img {
+    min-height: 350px !important;
     @include sm {
-      min-height: 350px !important;
+      min-height: auto !important;
     }
   }
 }
@@ -746,8 +756,9 @@ header {
   > .navigation-level2
   > li
   > a {
-  @include sd {
     line-height: 75px;
+  @include sd {
+    line-height: $line-height-150;
   }
 }
 .megamenu-navigation
@@ -765,8 +776,9 @@ header {
 }
 
 .megamenu-remove {
+  display: none !important;
   @include sd {
-    display: none !important;
+    display: block !important;
   }
 }
 
@@ -870,13 +882,13 @@ header {
 
 .searchBox-label {
   display: none !important;
-  height: 4rem;
   background: #fff;
   box-shadow: 0px 16px 40px -8px #0000001a;
-  padding: 1rem 2rem 1rem 1rem !important;
+  padding: 0 !important;
+  height: auto;
   @include sd {
-    padding: 0 !important;
-    height: auto;
+    height: 4rem;
+    padding: 1rem 2rem 1rem 1rem !important;
   }
   &.is-search-open {
     display: block !important;
@@ -889,18 +901,19 @@ header {
   }
 }
 .back-button-desktop-hide {
-  display: none;
+  display: block;
   font-size: 0.938rem;
   @include sd {
-    display: block;
+    display: none;
   }
 }
 
 .megamenu-navigation
   .megamenu--newco.mobile-megamenu-search
   > .component-content {
-  @include xs {
     max-height: 95px;
+  @include xs {
+    max-height: initial;
   }
   @media only screen and (max-width: 1023px) and (min-width: 992px) {
     max-height: 95px;
@@ -983,8 +996,9 @@ header {
 }
 
 .megamenu-navigation .megamenu-top-bar-right {
+  margin-bottom: 1rem;
   @include sm {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 }
 

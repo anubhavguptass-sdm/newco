@@ -30,28 +30,7 @@
   }
 }
 
-.planet-people-hero {
-  .heading-bg-strip {
-    margin-left: -2rem;
-    padding-left: 2rem;
-    height: 88px;
-    @extend .line-height-125;
-    @include sd {
-      height: 40px;
-    }
-    @include sm {
-      height: auto;
-      width: 70vw;
-    }
-    &::before {
-      @include sm {
-        top: 0px !important;
-        height: 40px !important;
-      }
-    }
-  }
-}
-.home-hero-content {
+/* .home-hero-content {
   .green-bar {
     height: 100px;
     width: 105%;
@@ -94,7 +73,7 @@
       }
     }
   }
-}
+} */
 .contact-page-banner {
   .box.component:first-of-type {
     .green-bar {

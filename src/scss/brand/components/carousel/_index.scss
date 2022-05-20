@@ -655,8 +655,11 @@
     a {
       opacity: 1;
       top: 1rem;
-      @include sd {
-        top: 3rem;
+      @include sm {
+        top: 2rem;
+      }
+      @include md{
+        top: 1rem;
       }
       &.lSPrev {
         left: initial;

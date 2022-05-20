@@ -47,9 +47,14 @@
         display: table !important;
         margin-top: -4rem;
       }
-      @include lg {
+      @include md {
+        margin-top: auto;
+        top: -1.5rem
+      }
+      @include lg{
         display: inline-block !important;
-        margin-top: -2rem;
+        margin-top: auto;
+        top:auto;
       }
     }
   }
@@ -63,8 +68,8 @@
   }
   .diversity-right-area {
     padding-top: 3rem;
-    @include md {
-      padding-top: 10rem;
+    @include md{
+      padding-top: 9.5rem;
     }
     .white-line-repeats {
       display: none;
@@ -73,7 +78,7 @@
       top: 2.4rem;
       left: -4.2rem;
       z-index: 0;
-      @include md {
+      @include sd{
         display: block;
       }
     }
@@ -86,6 +91,9 @@
         height: 64px;
         line-height: 64px;
       }
+    }
+    .diversity-percentage-content{
+      margin-top: 0 0 2.5rem 0;
     }
   }
   .diversity-area {
@@ -106,6 +114,9 @@
     }
     .diversity-area-content {
       padding-right: 0;
+      @include md{
+
+      }
     }
   }
 }

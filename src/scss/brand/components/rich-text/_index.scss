@@ -76,7 +76,7 @@
       position: absolute;
       width: 67px;
       top: 2.4rem;
-      left: -4.2rem;
+      left: -5rem;
       z-index: 0;
       @include sd{
         display: block;
@@ -99,7 +99,7 @@
   .diversity-area {
     padding-top: 7rem;
 
-    @include md{
+    @include md {
       padding-top: 14rem;
       z-index: 1;
     }
@@ -115,19 +115,17 @@
     .diversity-area-content {
       padding-right: 0;
       @include md{
-
+        padding-right: 6rem;
       }
     }
   }
 }
 
-
-
 // who whe are slider csss
 
 .stories-around {
   width: 50%;
-  @include sm{
-    width: auto
+  @include sm {
+    width: auto;
   }
 }

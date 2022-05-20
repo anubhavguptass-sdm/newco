@@ -92,7 +92,7 @@ button {
         .lSAction {
           a {
             margin-top: 2px;
-            @include sd{
+            @include sd {
               margin-top: -1rem;
             }
           }

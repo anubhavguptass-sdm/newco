@@ -29,7 +29,7 @@
   }
 }
 
-.tag-Links {
+.tag-links {
   width: 85%;
   position: absolute;
   margin-top: -2.5rem;
@@ -72,15 +72,15 @@
       @include md {
         display: block;
       }
-      .diversity-area-sub-heading {
-        height: 59px;
-        line-height: 59px;
-        text-align: left;
-        background-color: $color-primary;
-        @include md {
-          height: 64px;
-          line-height: 64px;
-        }
+    }
+    .diversity-area-sub-heading {
+      height: 59px;
+      line-height: 59px;
+      text-align: left;
+      background-color: $color-primary;
+      @include md {
+        height: 64px;
+        line-height: 64px;
       }
     }
   }

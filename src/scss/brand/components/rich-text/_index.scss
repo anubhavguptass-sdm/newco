@@ -63,7 +63,7 @@
   }
   .diversity-right-area {
     padding-top: 3rem;
-    @include md{
+    @include md {
       padding-top: 10rem;
     }
     .white-line-repeats {
@@ -91,7 +91,7 @@
   .diversity-area {
     padding-top: 7rem;
 
-    @include md{
+    @include md {
       padding-top: 14rem;
       z-index: 1;
     }
@@ -110,13 +110,11 @@
   }
 }
 
-
-
 // who whe are slider csss
 
 .stories-around {
   width: 50%;
-  @include sm{
-    width: auto
+  @include sm {
+    width: auto;
   }
 }

@@ -1,0 +1,27 @@
+// bg-color mixin uses cf component hierarchy to disable background color on nested elements
+// and set background only to root element
+@mixin bg-color($color: $color-1) {
+  background-color: $color;
+
+  &-inner {
+    background-color: transparent;
+
+    > .row {
+      background-color: transparent;
+    }
+
+    > * {
+      > .paragraphSystem {
+        background-color: transparent;
+      }
+    }
+  }
+
+  > .component-content {
+    background-color: transparent;
+
+    > .paragraphSystem {
+      background-color: transparent;
+    }
+  }
+}

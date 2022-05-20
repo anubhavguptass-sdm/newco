@@ -1,0 +1,30 @@
+.newsfeedFilterBy {
+  max-width: 200px; }
+  .newsfeedFilterBy .active {
+    font-style: italic;
+    background: #DDD; }
+  .newsfeedFilterBy a {
+    color: inherit;
+    text-decoration: none; }
+  .newsfeedFilterBy .heading {
+    background: #F36533;
+    color: #FFF;
+    padding: 10px; }
+  .newsfeedFilterBy .slider {
+    position: absolute;
+    background: #FFF;
+    width: 100%;
+    max-width: 198px;
+    border: 1px solid grey;
+    z-index: 100; }
+    .newsfeedFilterBy .slider .tag-link a {
+      display: block; }
+  .newsfeedFilterBy .top-level {
+    font-weight: bold;
+    padding-left: 10px; }
+  .newsfeedFilterBy ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .newsfeedFilterBy li {
+    padding: 5px 20px; }

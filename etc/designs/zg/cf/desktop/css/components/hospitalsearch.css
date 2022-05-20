@@ -1,0 +1,101 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.hospitalSearch {
+  display: none; }
+  .hospitalSearch .hospitalSearch-province ul li {
+    list-style-type: none;
+    display: inline-block; }
+    .hospitalSearch .hospitalSearch-province ul li button {
+      background-color: #f36633;
+      border-radius: 3px;
+      color: white;
+      padding: 8px 20px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      display: inline-block; }
+      .hospitalSearch .hospitalSearch-province ul li button:hover {
+        background-color: #939191;
+        color: white; }
+      .hospitalSearch .hospitalSearch-province ul li button:active {
+        background-color: #939191;
+        color: white; }
+    .hospitalSearch .hospitalSearch-province ul li button.active {
+      background-color: #115A64; }
+  .hospitalSearch button.hospitalSearch-submit {
+    background-color: #f36633;
+    border-radius: 3px;
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block; }
+    .hospitalSearch button.hospitalSearch-submit:hover {
+      background-color: #939191;
+      color: white; }
+    .hospitalSearch button.hospitalSearch-submit:active {
+      background-color: #939191;
+      color: white; }
+  .hospitalSearch .hospitalSearch-type label {
+    margin-right: 20px;
+    vertical-align: middle; }
+  .hospitalSearch .hospitalSearch-result-list {
+    margin-top: 10px; }
+    .hospitalSearch .hospitalSearch-result-list ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px;
+      vertical-align: top; }
+      .hospitalSearch .hospitalSearch-result-list ul li p {
+        margin: 2px 0; }
+  .hospitalSearch .hospitalSearch-pagination {
+    cursor: default;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center; }
+  .hospitalSearch .hospitalSearch-pagination-item {
+    cursor: default;
+    display: inline-block;
+    margin: 1px;
+    border: solid 1px #e0e0e0;
+    padding: 5px 10px; }
+  .hospitalSearch .hospitalSearch-results {
+    display: none; }
+    .hospitalSearch .hospitalSearch-results .hospitalSearch-input {
+      padding: 4px 5px;
+      width: 200px; }
+  .hospitalSearch .hospitalSearch-city {
+    display: none; }
+
+.hospitalSearch-city ul li {
+  list-style-type: none;
+  display: inline-block; }
+  .hospitalSearch-city ul li button {
+    background-color: #f36633;
+    border-radius: 3px;
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    display: none; }
+    .hospitalSearch-city ul li button:hover {
+      background-color: #939191;
+      color: white; }
+    .hospitalSearch-city ul li button:active {
+      background-color: #939191;
+      color: white; }
+  .hospitalSearch-city ul li button.active {
+    background-color: #115A64; }

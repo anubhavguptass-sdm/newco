@@ -1,0 +1,110 @@
+@if $include-paddings-margins {
+  // creates padding and margin classes based on above settings
+  @media (min-width: $breakpoint-md-min) {
+    @each $type in $paddings-margins-classes-list {
+      @for $i from 0 to ($max-unit-steps + 1) {
+        $val: #{$i}#{if($i !=0, $basic-unit, null)};
+
+        //paddings
+        .p-d#{(if($type == '', null, unquote('-')))}#{unquote($type)}-#{$i} {
+          @if $type == '' {
+            padding-top: $val !important;
+            padding-bottom: $val !important;
+            padding-#{$start-direction}: $val !important;
+            padding-#{$end-direction}: $val !important;
+          } @else if $type == 't' {
+            padding-top: $val !important;
+          } @else if $type == 'b' {
+            padding-bottom: $val !important;
+          } @else if $type == 'l' {
+            padding-#{$start-direction}: $val !important;
+          } @else if $type == 'r' {
+            padding-#{$end-direction}: $val !important;
+          } @else if $type == 'y' {
+            padding-top: $val !important;
+            padding-bottom: $val !important;
+          } @else if $type == 'x' {
+            padding-#{$start-direction}: $val !important;
+            padding-#{$end-direction}: $val !important;
+          }
+        }
+        //margins
+        .m-d#{(if($type == '', null, unquote('-')))}#{unquote($type)}-#{$i} {
+          @if $type == '' {
+            margin-top: $val !important;
+            margin-bottom: $val !important;
+            margin-#{$end-direction}: $val !important;
+            margin-#{$start-direction}: $val !important;
+          } @else if $type == 't' {
+            margin-top: $val !important;
+          } @else if $type == 'b' {
+            margin-bottom: $val !important;
+          } @else if $type == 'l' {
+            margin-#{$start-direction}: $val !important;
+          } @else if $type == 'r' {
+            margin-#{$end-direction}: $val !important;
+          } @else if $type == 'y' {
+            margin-top: $val !important;
+            margin-bottom: $val !important;
+          } @else if $type == 'x' {
+            margin-#{$start-direction}: $val !important;
+            margin-#{$end-direction}: $val !important;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-md-max) {
+    @each $type in $paddings-margins-classes-list {
+      @for $i from 0 to ($max-unit-steps + 1) {
+        $val: #{$i}#{if($i !=0, $basic-unit, null)};
+        //paddings
+        .p-m#{(if($type == '', null, unquote('-')))}#{unquote($type)}-#{$i} {
+          @if $type == '' {
+            padding-top: $val !important;
+            padding-bottom: $val !important;
+            padding-#{$start-direction}: $val !important;
+            padding-#{$end-direction}: $val !important;
+          } @else if $type == 't' {
+            padding-top: $val !important;
+          } @else if $type == 'b' {
+            padding-bottom: $val !important;
+          } @else if $type == 'l' {
+            padding-#{$start-direction}: $val !important;
+          } @else if $type == 'r' {
+            padding-#{$end-direction}: $val !important;
+          } @else if $type == 'y' {
+            padding-top: $val !important;
+            padding-bottom: $val !important;
+          } @else if $type == 'x' {
+            padding-#{$start-direction}: $val !important;
+            padding-#{$end-direction}: $val !important;
+          }
+        }
+        //margins
+        .m-m#{(if($type == '', null, unquote('-')))}#{unquote($type)}-#{$i} {
+          @if $type == '' {
+            margin-top: $val !important;
+            margin-bottom: $val !important;
+            margin-#{$end-direction}: $val !important;
+            margin-#{$start-direction}: $val !important;
+          } @else if $type == 't' {
+            margin-top: $val !important;
+          } @else if $type == 'b' {
+            margin-bottom: $val !important;
+          } @else if $type == 'l' {
+            margin-#{$start-direction}: $val !important;
+          } @else if $type == 'r' {
+            margin-#{$end-direction}: $val !important;
+          } @else if $type == 'y' {
+            margin-top: $val !important;
+            margin-bottom: $val !important;
+          } @else if $type == 'x' {
+            margin-#{$start-direction}: $val !important;
+            margin-#{$end-direction}: $val !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@if $include-jv-sharer {
+  .reference-bp-share-icon {
+    display: inline-block;
+    margin-#{$end-direction}: $share-icon-spacing;
+    width: $share-icon-size;
+    height: $share-icon-size;
+
+    > .component-content {
+      width: $share-icon-size;
+      height: $share-icon-size;
+      position: relative;
+      padding-bottom: $share-icon-size;
+
+      > .jv-share-link {
+        align-content: center !important;
+        align-items: center !important;
+        border: 0 !important;
+        display: flex !important;
+        height: 100% !important;
+        justify-content: center !important;
+        justify-items: center !important;
+        #{$start-direction}: 0 !important;
+        position: absolute !important;
+        #{$end-direction}: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        height: 100%;
+
+        > img {
+          width: $share-icon-icon-size;
+          height: $share-icon-icon-size;
+        }
+      }
+    }
+
+    $size: 50;
+    $end-size: 100;
+    $step: 10;
+
+    @while $size <= $end-size {
+      &.icon-w-#{$size} {
+        > * {
+          > .jv-share-link {
+            > img {
+              width: percentage($size/100) !important;
+              max-width: percentage($size/100) !important;
+              height: auto;
+            }
+          }
+        }
+      }
+      $size: $size + $step;
+    }
+  }
+}

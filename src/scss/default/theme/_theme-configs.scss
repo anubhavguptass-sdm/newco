@@ -1,0 +1,29 @@
+//stylelint-disable
+// please maintain the order of variable inclusion list
+
+$use-legacy: false !default;
+@import 'theme-configuration/directions';
+@import 'theme-configuration/breakpoints';
+@import 'theme-configuration/inclusions';
+@import 'theme-configuration/icons';
+@import 'theme-configuration/typography';
+@import 'theme-configuration/other-utility-and-misc';
+@import 'theme-configuration/flex';
+@import 'theme-configuration/megamenu-navigation';
+@import 'theme-configuration/basics-links-buttons-borders';
+
+@import 'theme-configuration/videoplayer';
+@import 'theme-configuration/accordion';
+@import 'theme-configuration/carousel';
+@import 'theme-configuration/filter';
+@import 'theme-configuration/forms';
+@import 'theme-configuration/footer';
+@import 'theme-configuration/search-results';
+@import 'theme-configuration/font-resizer';
+@import 'theme-configuration/share-container';
+@import 'theme-configuration/exit_notification';
+@import 'theme-configuration/toaster';
+
+// include brand variables
+@import '../../brand/theme/vars';
+//stylelint-enable

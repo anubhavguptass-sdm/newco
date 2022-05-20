@@ -1,0 +1,40 @@
+@import '../core/mixins'; 
+ 
+
+
+
+.eventcalendar{
+
+.eventCalendarFilter{
+	border:solid 1px #D5D1CE;  
+		h4{
+			border-bottom:$borderbox; text-align:center; padding-bottom: 5px; font-size: 1.5em; color: $backgroundColorOrange;   
+		}
+	.eventCalendarSearchSection div{
+			margin-bottom: 15px;
+			padding: 0 10px;
+		label{
+			display: inline-block;
+			width: 200px;
+		}
+		select{
+		width: 200px;
+		min-height: 30px;
+		}
+		input{
+		width: 195px;
+		min-height: 30px;
+		}
+	}
+		.eventCalendarButtons .eventCalendarSubmit{
+			@include pull-right();
+		}
+	}
+}
+
+
+.eventCalendarTemplate, .event-results-label, 
+.eventcalendar .searchResultDetails{
+	display:none;
+} 
+

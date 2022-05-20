@@ -1,0 +1,25 @@
+// Who we are page
+.page-who-we-are {
+  .bottom-right-box {
+    position: relative;
+    @include sd {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .measure-black {
+    display: none;
+    @include sd {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      height: 96%;
+    }
+  }
+}

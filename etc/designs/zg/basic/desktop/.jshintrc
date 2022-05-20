@@ -1,0 +1,29 @@
+{
+  // Full list of options available at: http://jshint.com/docs/options/
+
+  "bitwise": true, // Prohibit bitwise operators (&, |, ^, etc.)
+  "curly": true, // Require {} for every new block or scope
+  "eqeqeq": true, // Require triple equals i.e. `===`
+  "es3": true, // Disallow trailing commas and other es3 related stuff
+  "forin": true, // Tolerate `for in` loops without `hasOwnPrototype`
+  "freeze": true, // Prohibit overwriting prototypes of native objects
+  "latedef": false, // Prohibit variable use before definition.
+  "undef": true, // Require all non-global variables be declared before they are used.
+  "unused": true, // Prohibit the use of explicitly undeclared variables
+  "strict": true, // Require `use strict` pragma in every file
+  "loopfunc": true, // Allow functions to be defined within loops
+  "newcap": true, // Require capitalization of all constructor functions e.g. `new F()`.
+  "maxcomplexity": 10, // Cyclomatic complexity
+  "maxparams": 4, // Maximum number of function parameters
+
+  "browser": true, // Standard browser globals e.g. `window`, `document`.
+  "jquery": true, // Enable globals exposed by jQuery JavaScript library.
+
+  "globals": {
+    "window": true,
+    "Cog": true,
+    "_": false,
+    "google": false, // Required by map component
+    "MediaElementPlayer": false // Required by video and videoGallery components
+  }
+}

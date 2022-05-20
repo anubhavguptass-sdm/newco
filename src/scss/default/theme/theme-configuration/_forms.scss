@@ -1,0 +1,110 @@
+/*
+** FORMS
+*/
+
+// GLOBAL INPUT
+// default-unit: px
+$input-font-family: $font-family-default !default;
+$input-font-size-desktop: 16px !default;
+$input-font-size-mobile: 14px !default;
+$input-font-color: $color-1 !default;
+$input-line-height-desktop: 20px !default;
+$input-line-height-mobile: 18px !default;
+$input-background-default: $white !default;
+$input-background-active: $white !default;
+$input-background-hover: $white !default;
+$input-background-error: $white !default;
+$input-border-color-default: $color-1 !default;
+$input-border-color-active: $color-1 !default;
+$input-border-color-hover: $color-2 !default;
+$input-border-color-error: $color-2 !default;
+$input-border-size: 1px !default;
+$input-padding-x-desktop: 1rem !default;
+$input-padding-y-desktop: 1rem !default;
+$input-padding-x-mobile: 1rem !default;
+$input-padding-y-mobile: 1rem !default;
+$input-plachoder-text-color: $gray-200 !default;
+$input-border-radius: 5px !default;
+$input-default-height: 55px !default;
+$input-default-spacing: 1rem !default;
+
+/*DISABLED*/
+$input-disabled-background: $gray-200 !default;
+$input-disabled-background-hover: $gray-300 !default;
+$input-disabled-font-color: $gray-600 !default;
+$input-disabled-font-color-hover: $gray-700 !default;
+$input-disabled-border-color: $gray-900 !default;
+$input-disabled-border-color-hover: $black !default;
+
+/*IN CASE THERE IS ICON IN INPUT FIELD*/
+$input-icon-size: 20px !default;
+$input-icon-position: left; /*left,right*/
+
+/*TEXTAREA*/
+$input-textarea-default-height-mobile: 250px !default;
+$input-textarea-default-height-desktop: 250px !default;
+
+/*SELECT*/
+$input-select-dropdown-icon: get-icon('arrow-select-down', $color-3) !default;
+$input-select-dropdown-icon-hover: get-icon(
+  'arrow-select-down',
+  $color-2
+) !default;
+$input-select-dropdown-icon-active: get-icon(
+  'arrow-select-up',
+  $color-1
+) !default;
+$input-select-dropdown-icon-size: 10px 10px !default;
+$input-select-dropdown-icon-background: $color-2 !default;
+$input-select-dropdown-icon-background-hover: $color-4 !default;
+$input-select-dropdown-icon-background-active: $color-5 !default;
+$input-select-dropdown-button-width: 50px !default;
+$input-select-dropdown-button-left-border: 3px solid $color-1 !default;
+
+/*CHECKBOX | RADIO*/
+$input-checkbox-size: 20px !default;
+$input-checkbox-checked-icon: get-icon('check-mark-icon', $color-1) !default;
+$input-checkbox-checked-icon-hover: get-icon(
+  'check-mark-icon',
+  $color-2
+) !default;
+$input-checkbox-background: $white !default;
+$input-checkbox-background-hover: $color-1 !default;
+$input-checkbox-checked-background: $color-1 !default;
+$input-checkbox-checked-background-hover: $color-1 !default;
+
+/*BUTTONS*/
+$input-button-padding-y-desktop: 1rem !default;
+$input-button-padding-x-desktop: 2rem !default;
+$input-button-padding-y-mobile: 1rem !default;
+$input-button-padding-x-mobile: 2rem !default;
+$input-button-font-size-desktop: 18px !default;
+$input-button-font-size-mobile: 16px !default;
+$input-button-line-height-desktop: 20px !default;
+$input-button-line-height-mobile: 18px !default;
+$input-button-border-size: 1px !default;
+$input-button-min-width: 150px !default;
+$input-button-max-width: 250px !default;
+$input-button-alignment: left;
+$input-button-font-color: $white !default;
+$input-button-font-color-hover: $color-2 !default;
+$input-button-font-color-active: $color-4 !default;
+$input-button-font-color-disabled: $gray-700 !default;
+$input-button-background-color: $color-2 !default;
+$input-button-background-color-hover: $color-1 !default;
+$input-button-background-color-active: $color-4 !default;
+$input-button-background-color-disabled: $gray-500 !default;
+$input-button-border-color: transparent !default;
+$input-button-border-color-hover: transparent !default;
+$input-button-border-color-active: transparent !default;
+$input-button-border-color-disabled: transparent !default;
+
+/*LABELS*/
+$input-label-font-family: $font-family-default;
+$input-label-font-color: $color-1 !default;
+$input-label-font-size-desktop: 18px !default;
+$input-label-font-size-mobile: 16px !default;
+$input-label-position: top; /*top,left,right,under*/
+$input-label-line-height-desktop: 20px !default;
+$input-label-line-height-mobile: 18px !default;
+$input-label-spacing: 5px !default;

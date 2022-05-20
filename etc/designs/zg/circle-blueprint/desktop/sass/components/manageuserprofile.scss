@@ -1,0 +1,122 @@
+@import '../core/mixins'; 
+ 
+.manageuserprofile .manageStaffProfile ul{
+	padding-left: 0;
+		.managerUserProfileList .manageUserOverlayContainer ul li{
+			float: none;
+			margin: 0;
+			padding: 2px 3px;
+					a{
+					  color:$white;
+					}
+		}
+		.managerUserProfileList .manageUserOverlayContainer li:nth-child(odd){
+			background: $backgroundActiveColor;
+			 color:$black;
+		}
+	
+	li{
+		background: #e0e0e0;
+		cursor: pointer;
+	    @include pull-left();
+		list-style-type: none;
+		margin: 0 10px 10px 0;
+		padding: 8px;	
+		a{
+		  color:$white;
+		}
+		
+	}
+	li:nth-child(odd){
+		background: #f36633;
+		color: $white;
+	}
+
+}
+
+
+
+.manageuserprofile .manageUserLinks{
+	border-right: 1px solid #e0e0e0;
+		ul li{
+		margin-bottom: 7px;
+		a{
+			background: url("../../img/boxlink-arrow.png") no-repeat scroll 0 2px;
+			color: #1a768d;
+			padding: 5px 0 6px 30px;
+			text-decoration: none;
+		}
+	}
+}
+
+
+.manageuserprofile .component-content .manageUserLinks ul li 
+.manageuserprofile .manageUserOverlayContainer .overlay-bg{
+	background: #000;
+	background: rgba(0,0,0,0.75);
+	cursor: pointer;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+.manageuserprofile .manageUserOverlayContainer .overlay-content{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 5px solid #D5D1CE;
+	border-radius: 10px 10px 10px 10px;
+	display: inline-block;
+	min-height: 80px;
+	min-width: 80px;
+	moz-border-radius: 10px 10px 10px 10px;
+	padding: 10px 10px 10px;
+	position: relative;
+	text-align: left;
+	top: 150px;
+	webkit-border-radius: 10px 10px 10px 10px;
+	width: 60%;
+}
+.manageuserprofile .manageUserOverlayContainer .overlay-close{
+	background: url("../../img/overlay-close-icon.png") no-repeat scroll 0 0 / 20px auto rgba(0, 0, 0, 0);
+	cursor: pointer;
+	display: none;
+	font-size: 25px;
+	height: 20px;
+	position: absolute;
+	right: 3px;
+	top: 5px;
+	width: 20px;
+	z-index: 9999;
+}
+.manageuserprofile .manageUserOverlayContainer .close-btn:hover{
+	background: #05abe0;
+}
+.manageuserprofile .manageUserOverlayContainer li span{
+	font-weight: 700;
+}
+.manageuserprofile .manageUserOverlayContainer li span.managerUserTitle{
+	display: inline-block;
+	font-weight: normal;
+	width: 40%;
+}
+.manageuserprofile h4{margin-top:0;margin-bottom:9px;}
+
+@include respond-to(mobile) {
+
+	.manageuserprofile .manageUserOverlayContainer li span{
+		font-size: 11px;
+		font-weight: normal;
+	}
+	.manageuserprofile .manageUserOverlayContainer li span.managerUserTitle{
+		display: inline-block;
+		font-size: 11px;
+		font-weight: normal;
+		width: 50%;
+	}
+	.manageuserprofile .manageUserOverlayContainer .overlay-content{
+		width: 80%;
+	}
+}

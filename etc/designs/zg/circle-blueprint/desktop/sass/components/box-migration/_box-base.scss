@@ -1,0 +1,16 @@
+@import '../../core/mixins';
+
+.box-outlined .component-content {
+    @include frame();
+    @include innerspace();
+    @include filled();
+}
+
+.box-heading {
+    @include heading();
+}
+
+.box-more {
+    display: block;
+    text-align: right;
+}

@@ -1,0 +1,66 @@
+@import '../core/mixins';
+
+.overlay {
+  &-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $black;
+    z-index: 9998;
+    opacity: 0.7;
+  }
+
+  &-container {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    text-align: center;
+    z-index: 9999;
+    padding-bottom: 30px;
+  }
+
+  &-content {
+    @include frame();
+    position: relative;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 90%;
+    padding: 10px;
+    display: inline-block;
+    background: $white;
+    text-align: left;
+    border-radius: 10px;
+
+    &-inner {
+      overflow: hidden;
+    }
+  }
+
+  &-close {
+    z-index: 9999;
+    font-size: 35px;
+    line-height: 1;
+    position: absolute;
+    top: -40px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    color: $white;
+    outline: none;
+
+    &:after {
+      @include font-awesome($fa-var-times);
+    }
+  }
+
+  &-loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/img/loader.gif) no-repeat 50% 50%;
+  }
+}

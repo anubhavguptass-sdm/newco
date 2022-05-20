@@ -1,0 +1,27 @@
+.right-overlapping-content {
+  position: relative;
+  width: 90%;
+  margin: 0 5% !important;
+  transform: none;
+  padding: 2rem !important;
+  top: -5rem;
+  -webkit-box-shadow: 0px 16px 40px -8px #0000001a;
+  box-shadow: 0px 16px 40px -8px #0000001a;
+  background-color: $color-white;
+
+  @include sm {
+    left: 0;
+  }
+
+  @include sd {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin: auto;
+    left: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    min-width: calc(100% / 2 + 4rem);
+  }
+}

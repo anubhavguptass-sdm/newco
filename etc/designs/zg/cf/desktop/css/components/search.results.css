@@ -1,0 +1,163 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.searchResults-pagination {
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: default; }
+
+.searchResults-pagination-list {
+  padding: 0;
+  margin: 0; }
+
+.searchResults-pagination-item {
+  display: inline-block;
+  margin: 1px;
+  cursor: default;
+  border-right: solid 1px #D5D1CE; }
+  .searchResults-pagination-item a {
+    display: inline-block;
+    padding: 0;
+    cursor: pointer; }
+    .searchResults-pagination-item a:hover {
+      color: #f36633;
+      text-decoration: none; }
+  .searchResults-pagination-item.item-previous, .searchResults-pagination-item.item-next {
+    border: none;
+    background: none;
+    vertical-align: middle; }
+    .searchResults-pagination-item.item-previous a, .searchResults-pagination-item.item-next a {
+      display: block;
+      height: 20px;
+      width: 20px;
+      border-right: none;
+      text-indent: -9999px; }
+  .searchResults-pagination-item.item-previous a {
+    background: url("../../assets/img/arrows/page-arrow-1.png") left center no-repeat; }
+  .searchResults-pagination-item.item-next a {
+    background: url("../../assets/img/arrows/page-arrow-2.png") right center no-repeat; }
+  .searchResults-pagination-item.is-active a {
+    font-weight: bold;
+    background-color: #f36633; }
+
+.searchBlox .searchResults-title {
+  display: block;
+  color: #f36633;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 5px;
+  margin: 0; }
+
+.searchBlox .searchBlox-results {
+  width: 100%; }
+
+.searchBlox .searchResults-description {
+  margin: 0; }
+
+.searchBlox .searchResults-term {
+  font-style: italic; }
+
+.searchBlox .searchResults-number {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left; }
+
+.searchBlox .searchResults-results {
+  margin-bottom: 10px; }
+
+.searchBlox .searchResults-result {
+  position: relative;
+  overflow: hidden;
+  padding: 8px 10px 10px 10px;
+  border-bottom: solid 1px #D5D1CE; }
+  .searchBlox .searchResults-result:nth-child(even) {
+    background-color: inherit; }
+
+.searchBlox .searchResults-icon-wrapper {
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  margin-top: 10px;
+  left: 0;
+  top: 0; }
+
+.searchBlox .searchResults-date {
+  margin-bottom: 10px;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  color: #635a54; }
+
+.searchBlox .searchResults-url {
+  margin-top: 10px; }
+  .searchBlox .searchResults-url a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-image: url("../../img/arrows/carousel-arrow.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 3px 0 3px 28px; }
+
+.lt-ie8 .searchResults-pagination-item {
+  display: inline;
+  zoom: 1;
+  margin: 3px; }
+  .lt-ie8 .searchResults-pagination-item a {
+    display: block;
+    zoom: 1; }
+
+.searchResults-tags {
+  list-style-type: none;
+  padding: 0; }
+
+.searchResults-tags-item {
+  display: inline-block;
+  margin: 0 2px; }
+
+.searchResults-tags-item-link {
+  background: #b9b8b8;
+  color: black;
+  border: 1px solid #939191;
+  padding: 1px;
+  display: block;
+  font-size: 0.85em; }
+
+.searchResults-description p {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #635a54; }
+
+.searchResults {
+  width: 100%; }
+  .searchResults .searchResults-stickyNav {
+    float: right;
+    padding-left: 20px; }
+    .searchResults .searchResults-stickyNav ul {
+      padding-left: 0; }
+      .searchResults .searchResults-stickyNav ul li {
+        list-style-type: none;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px; }
+        .searchResults .searchResults-stickyNav ul li a {
+          color: #000; }
+        .searchResults .searchResults-stickyNav ul li.active a {
+          color: #F98033;
+          font-size: 12px;
+          font-weight: 700; }

@@ -1,0 +1,40 @@
+@import '../core/mixins'; 
+ 
+.notification .notificationFormElement{
+	margin-bottom:15px;
+}
+.notification{
+		label{
+		display:inline-block;
+		text-align:right;
+		margin-right:10px;
+		width:200px;
+		}
+		input[type="text"], textarea, select{
+		display:inline-block;width:200px;
+		}
+	.btn{
+		margin-top:15px;
+		  @include pull-right();
+	}
+}
+
+.notification .notificationSuccessBox, .notificationFailureBox{
+	display:none;
+}
+
+.notificationSuccessBox, .notificationFailureBox{
+	border:solid 2px #f36633;
+	padding:0 10px 5px 10px;
+	margin-bottom:15px;
+}
+.notification .fixedRecipientNotification{
+	input{
+		border:none;
+		width:75%;
+	}
+	label{font-weight:700;}
+	.btn{
+		@include btn;
+	}
+}

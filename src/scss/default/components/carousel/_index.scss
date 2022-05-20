@@ -1,0 +1,17 @@
+@if $include-carousel {
+  .carousel {
+    > .component-content {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      position: relative;
+    }
+  }
+}
+
+.carouselSlide,
+.carouselSlide > div,
+.carouselSlide > div > div,
+.carouselSlide > div > div > div {
+  height: 100%;
+}

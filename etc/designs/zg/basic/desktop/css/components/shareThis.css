@@ -1,0 +1,23 @@
+.shareThis-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .shareThis-list li {
+    float: left;
+    width: auto;
+    height: 26px;
+    margin: 0 10px 10px 0; }
+    .shareThis-list li:last-child {
+      margin-right: 0; }
+
+.shareThis-item a {
+  display: block;
+  height: 26px;
+  transition: all .3s; }
+  .shareThis-item a:hover img {
+    opacity: 1; }
+
+.shareThis-item img {
+  opacity: 0.7;
+  transition: opacity .2s ease-in-out; }

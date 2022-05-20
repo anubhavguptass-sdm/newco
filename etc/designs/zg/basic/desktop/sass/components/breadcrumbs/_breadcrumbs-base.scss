@@ -1,0 +1,54 @@
+@import '../../core/mixins';
+
+.breadcrumbs {
+  margin: 10px 0;
+
+  &-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    li {
+      float: left;
+      margin-right: 6px;
+
+      @include respond-to(mobile) {
+        float: none;
+      }
+    }
+  }
+  &-separator {
+    margin: 0 10px;
+  }
+
+  &-without-separator {
+    .breadcrumbs-separator {
+      display: none;
+    }
+
+    li {
+      position: relative;
+      padding-right: 15px;
+      margin-right: 9px;
+
+      &:before {
+        top: 5px;
+        right: 0;
+
+        @include font-awesome($fa-var-chevron-right);
+        position: absolute;
+        font-size: 8px;
+      }
+
+      &:last-child {
+        background-image: none;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

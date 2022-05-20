@@ -1,0 +1,23 @@
+// Margin top and bottom reset for all the elements under the class
+.reset-margin-y {
+  * {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+// reset default bootstrap col- classes
+div[class*='col-'] {
+  min-height: auto;
+}
+
+// this interferes with flex items
+.container::before,
+.container::after,
+.container-fluid::before,
+.container-fluid::after,
+.paragraphSystem::before,
+.paragraphSystem::after,
+.row::before,
+.row::after {
+  display: none;
+}

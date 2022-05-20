@@ -1,0 +1,129 @@
+@import '../../core/mixins';
+
+.searchResults {
+  &-title {
+    margin-left: 110px;
+
+    @include heading();
+  }
+
+  &-term {
+    font-style: italic;
+  }
+
+  &-number {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: left;
+  }
+
+  &-results {
+    margin-bottom: 10px;
+  }
+
+  &-description,
+  &-url {
+    margin-left: 110px;
+  }
+
+  &-url {
+    margin-top: 10px;
+  }
+
+  &-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+  }
+
+  &-result {
+    position: relative;
+    padding: 0 10px 20px 10px;
+
+    overflow: hidden;
+    background-color: $light-theme-color;
+
+    &:nth-child(even) {
+      background-color: inherit;
+    }
+  }
+
+  &-icon-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    margin-top: 10px;
+
+    text-align: center;
+  }
+
+  &-date {
+    margin-bottom: 10px;
+    margin-left: 110px;
+  }
+
+  &-pagination {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    overflow: hidden;
+    cursor: default;
+
+    &-list {
+      padding: 0;
+      margin: 0;
+    }
+
+    &-item {
+      display: inline-block;
+      margin: 1px;
+
+      line-height: 30px;
+      background-color: lighten($light-theme-color, 5);
+      cursor: default;
+
+      a {
+        display: inline-block;
+        min-width: 30px;
+        padding: 0 10px;
+
+        background-color: $light-theme-color;
+        cursor: pointer;
+
+        &:hover {
+          background-color: lighten($light-theme-color, 4);
+          text-decoration: none;
+        }
+      }
+
+      &.is-active {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-tags {
+    list-style-type: none;
+    padding: 0;
+
+    &-item {
+      display: inline-block;
+      margin: 0 2px;
+
+      &-link {
+        display: block;
+        padding: 1px;
+
+        color: $black;
+        font-size: 0.85em;
+        background: $medium-theme-color;
+        border: 1px solid $theme-color;
+      }
+    }
+  }
+}

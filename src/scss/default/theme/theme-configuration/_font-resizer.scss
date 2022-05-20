@@ -1,0 +1,32 @@
+/*
+** FONT RESIZER SETTINGS
+*/
+
+// font change settings
+$font-size-body-large-mobile: 2 !default;
+$font-size-body-large-desktop: 3 !default;
+$line-height-body-large-mobile: 2 !default;
+$line-height-large-desktop: 3 !default;
+$font-size-body-larger-mobile: 4 !default;
+$font-size-body-larger-desktop: 6 !default;
+$line-height-body-larger-mobile: 4 !default;
+$line-height-larger-desktop: 6 !default;
+
+// font resizer buttons settings
+$font-resizer-btn-color-mobile: $black !default;
+$font-resizer-btn-color-desktop: $black !default;
+$font-resizer-btn-color-hover-active-mobile: $color-2 !default;
+$font-resizer-btn-color-hover-active: $color-2 !default;
+
+$font-resizer-btn-default-size-mobile: $font-size-body-mobile !default;
+$font-resizer-btn-default-size-desktop: $font-size-body !default;
+
+$font-resizer-btn-large-size-mobile: $font-size-body-mobile +
+  $font-size-body-large-mobile !default;
+$font-resizer-btn-large-size-desktop: $font-size-body +
+  $font-size-body-large-desktop !default;
+
+$font-resizer-btn-larger-size-mobile: $font-size-body-mobile +
+  $font-size-body-larger-mobile !default;
+$font-resizer-btn-larger-size-desktop: $font-size-body +
+  $font-size-body-larger-desktop !default;

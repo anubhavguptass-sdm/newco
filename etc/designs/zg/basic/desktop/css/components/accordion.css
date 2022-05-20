@@ -1,0 +1,90 @@
+.accordion-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: solid 2px #323131; }
+
+.accordion-slide {
+  border-top: 2px solid black; }
+  .accordion-slide:first-child {
+    border-top: 0; }
+
+.accordion-head {
+  padding: 13px;
+  display: block;
+  color: #323131;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  background-color: #e1e1e1;
+  background: #e1e1e1;
+  color: #323131; }
+
+.accordion-title {
+  float: none;
+  margin: 0;
+  display: inline-block; }
+
+.accordion-content {
+  padding: 13px; }
+  .accordion-content-wrapper {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0; }
+
+.mod-js .accordion-content-wrapper {
+  position: relative;
+  height: 0;
+  top: -999999px;
+  left: -999999px;
+  overflow: hidden;
+  box-sizing: border-box;
+  visibility: hidden; }
+
+.mod-js .accordion-head {
+  position: relative;
+  cursor: pointer; }
+  .mod-js .accordion-head:after {
+    position: absolute !important;
+    top: 50%;
+    margin-top: -10px;
+    right: 15px;
+    content: "\f054";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    position: relative;
+    font-weight: normal;
+    font-size: 12px; }
+
+.mod-js .accordion-slide.is-active > .accordion-head:hover,
+.mod-js .accordion-slide.is-active > .accordion-head {
+  color: #323131;
+  cursor: pointer; }
+  .mod-js .accordion-slide.is-active > .accordion-head:hover:after,
+  .mod-js .accordion-slide.is-active > .accordion-head:after {
+    right: 15px;
+    content: "\f078";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    position: relative;
+    font-weight: normal; }
+
+.mod-js .accordion-slide .accordion-head:hover {
+  color: #323131; }
+
+.mod-js .accordion-slide.is-active > .accordion-head {
+  color: black; }
+  .mod-js .accordion-slide.is-active > .accordion-head:hover {
+    background-color: #e1e1e1; }
+
+.mod-js .accordion-slide.is-active > .accordion-content-wrapper {
+  position: relative;
+  top: auto;
+  left: auto;
+  height: auto;
+  visibility: visible; }
+
+.mod-js .accordion-slide.is-active:last-child > .accordion-content-wrapper {
+  border-bottom: none; }

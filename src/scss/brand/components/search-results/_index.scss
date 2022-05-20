@@ -1,0 +1,45 @@
+.searchbox-results {
+  .form-search {
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .align-center;
+    @extend .justify-center;
+  }
+
+  .searchBox-label {
+    @extend .d-block;
+    height: auto;
+    padding: 1rem 2rem 1rem 2rem;
+    width: 100%;
+  }
+
+  input.search-query {
+    @extend .d-block;
+    background: $color-grey-3;
+    height: 48px;
+    font-size: 1rem;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+  }
+  .button {
+    border: none;
+    position: absolute;
+    right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: $color-primary;
+    font-size: 0;
+  }
+
+  .button::after {
+    content: '\f0d1';
+    font-family: 'remixicon';
+    background-position: 50%;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+  }
+}

@@ -1,0 +1,74 @@
+// mixin for link classes creation
+@mixin make-links($label, $map) {
+  $decration-color-default: map-get($map, decoration-color-default);
+  $decration-color-hover: map-get($map, decoration-color-hover);
+  $font-color-default: map-get($map, font-color-default);
+  $font-color-hover: map-get($map, font-color-hover);
+  $font-size-desktop: map-get($map, font-size-desktop);
+  $font-size-mobile: map-get($map, font-size-mobile);
+  $bg-color: map-get($map, bg-color);
+  $bg-color-hover: map-get($map, bg-hover-color);
+  $decoration-height: map-get($map, decoration-height);
+  $decoration-height-hover: map-get($map, decoration-height-hover);
+  $padding: map-get($map, paddings);
+  $display: map-get($map, l-display);
+  $decoration-offset-bottom: map-get($map, decoration-offset-bottom);
+  $decration-limit-width: map-get($map, decoration-linit-width);
+  background-color: $bg-color;
+  color: $font-color-default !important;
+  display: $display;
+  font-size: $font-size-mobile !important;
+  padding: $padding;
+  position: relative;
+  text-decoration: none !important;
+
+  &::after {
+    @include animate();
+    bottom: $decoration-offset-bottom;
+    content: '';
+    height: 0;
+    #{$start-direction}: 0;
+    margin: auto;
+    position: absolute;
+    #{$end-direction}: 0;
+    top: auto;
+    width: 100%;
+    @if $decration-limit-width != null {
+      max-width: $decration-limit-width;
+    }
+    @if $decration-color-default != null {
+      border-bottom: $decoration-height-hover solid $decration-color-default;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color-hover;
+    color: $font-color-hover !important;
+
+    &::after {
+      @if $decration-color-hover != null {
+        border-bottom: $decoration-height-hover solid $decration-color-hover;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-sm-min) {
+    font-size: $font-size-desktop !important;
+
+    &::after {
+      @if $decration-color-default != null {
+        border-bottom: $decoration-height solid $decration-color-default;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        @if $decration-color-hover != null {
+          border-bottom: $decoration-height-hover solid $decration-color-hover;
+        }
+      }
+    }
+  }
+}

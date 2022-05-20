@@ -1,0 +1,11 @@
+/*
+** FLEX SETTINGS
+*/
+
+$flex-unit: rem !default;
+//max columns for flex
+$flex-columns: 4 !default;
+//max amount of classes for spacing in grid s1,s2,s3...
+$flex-spacings: 5 !default;
+// count of flex order classes to be exported
+$flex-orders-count: 10 !default;

@@ -1,0 +1,28 @@
+$global-direction: ltr !default;
+
+@import '../../../brand/theme/theme-variables/directions';
+
+/*
+** DO NOT TOUCH UNLESS NEEDED
+*/
+/*** LTR websites ***/
+$direction: ltr !default;
+$opposite-direction: rtl !default;
+
+$start-direction: left !default;
+$end-direction: right !default;
+
+$row-direction: row !default;
+$transform-direction: 1 !default;
+
+@if $global-direction == rtl {
+  /*** RTL websites ***/
+  $direction: rtl;
+  $opposite-direction: ltr;
+
+  $start-direction: right;
+  $end-direction: left;
+
+  $row-direction: row;
+  $transform-direction: -1;
+}

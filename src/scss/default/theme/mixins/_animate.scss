@@ -1,0 +1,24 @@
+// basic transition mixin
+// default transition duration can be changed in theme_variables/_other-utility-and-misc
+@mixin animate(
+  $origin: top left,
+  $delay: 0s,
+  $duration: 0,
+  $important: false,
+  $easing: ease,
+  $prop: all
+) {
+  @if $important == true {
+    transform-origin: $origin !important;
+    transition: $prop
+      if($duration == 0, $transition-duration, $duration)
+      $easing !important;
+    transition-delay: $delay !important;
+  } @else {
+    transform-origin: $origin;
+    transition: $prop
+      if($duration == 0, $transition-duration, $duration)
+      $easing;
+    transition-delay: $delay;
+  }
+}

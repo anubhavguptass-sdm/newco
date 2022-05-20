@@ -1,0 +1,164 @@
+@if $include-hero-banner-h5-v1 and $include-hero-banner {
+  .hero-banner-h5-v0 {
+    > * {
+      > .paragraphSystem {
+        figure {
+          display: flex;
+          flex-direction: $row-direction;
+          flex-wrap: wrap;
+          height: auto;
+          position: relative;
+          width: 100%;
+
+          > picture {
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: auto;
+            width: 100%;
+
+            img {
+              height: auto;
+              width: 100%;
+            }
+          }
+
+          > figcaption {
+            align-content: center;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            #{$start-direction}: 0;
+            margin: auto;
+            padding: 1rem;
+            position: absolute;
+            #{$end-direction}: 0;
+            top: 0;
+
+            > * {
+              flex-basis: auto;
+              max-width: 100%;
+              width: 100%;
+
+              @media (min-width: $breakpoint-md-min) {
+                flex-basis: auto;
+                max-width: 60%;
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.vertical {
+      &-top {
+        figcaption {
+          justify-content: flex-start;
+        }
+      }
+
+      &-bottom {
+        figcaption {
+          justify-content: flex-end;
+        }
+      }
+
+      &-center {
+        figcaption {
+          justify-content: center;
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &-d {
+          &-top {
+            figcaption {
+              justify-content: flex-start;
+            }
+          }
+
+          &-bottom {
+            figcaption {
+              justify-content: flex-end;
+            }
+          }
+
+          &-center {
+            figcaption {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+
+    &.horizontal {
+      &-left {
+        figcaption {
+          align-content: flex-start;
+
+          * {
+            text-align: $start-direction;
+          }
+        }
+      }
+
+      &-right {
+        figcaption {
+          align-content: flex-end;
+
+          * {
+            text-align: $end-direction;
+          }
+        }
+      }
+
+      &-center {
+        figcaption {
+          align-content: center;
+
+          * {
+            text-align: center;
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &-d {
+          &-left {
+            figcaption {
+              align-content: flex-start;
+
+              * {
+                text-align: $start-direction;
+              }
+            }
+          }
+
+          &-right {
+            figcaption {
+              align-content: flex-end;
+
+              * {
+                text-align: $end-direction;
+              }
+            }
+          }
+
+          &-center {
+            figcaption {
+              align-content: center;
+
+              * {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.articleList > .component-content {
+  padding: 13px;
+  border: solid 2px #323131;
+  background-color: #e1e1e1; }
+
+.articleList-heading {
+  display: block;
+  color: #323131;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px; }
+
+.articleList-date {
+  margin-bottom: 10px;
+  color: #868484; }
+
+.articleList-article {
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .articleList-article-wrapper {
+    margin: 0;
+    padding: 0; }
+
+.articleList-title {
+  display: block;
+  color: #323131;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px; }
+
+.articleList-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.articleList-thumbnail {
+  max-width: 100px;
+  float: left;
+  margin-right: 15px; }
+  @media only screen and (max-width: 767px) {
+    .articleList-thumbnail {
+      float: none;
+      margin: auto;
+      display: block; } }
+
+.articleList-more {
+  float: right; }
+  .articleList-more:after {
+    display: inline;
+    content: "\00bb"; }
+  .articleList-more-arrow {
+    display: none; }
+    .no-generatedcontent .articleList-more-arrow {
+      display: inline; }
+
+.articleList-tags {
+  padding: 0;
+  margin: -20px 0 0 0;
+  list-style-type: none; }
+  .articleList-tags-item {
+    display: inline-block;
+    margin: 0 2px; }
+    .articleList-tags-item-link {
+      display: block;
+      padding: 1px;
+      background: #b9b8b8;
+      color: black;
+      border: 1px solid #939191;
+      font-size: 0.85em; }

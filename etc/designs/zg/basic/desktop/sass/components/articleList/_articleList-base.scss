@@ -1,0 +1,93 @@
+@import '../../core/mixins';
+
+.articleList {
+  > .component-content {
+    @include innerspace();
+
+    @include frame();
+    @include filled();
+  }
+
+  &-heading {
+    @include heading();
+  }
+
+  &-date {
+    margin-bottom: 10px;
+
+    color: $meta-text-color;
+  }
+
+  &-article {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    &-wrapper {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &-title {
+    @include heading();
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &-thumbnail {
+    max-width: 100px;
+    float: left;
+    margin-right: 15px;
+
+    @include respond-to(mobile) {
+      float: none;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  &-more {
+    float: right;
+
+    &:after {
+      display: inline;
+
+      content: "\00bb";
+    }
+
+    &-arrow {
+      display: none;
+
+      .no-generatedcontent & {
+        display: inline;
+      }
+    }
+  }
+
+  &-tags {
+    padding: 0;
+    margin: -20px 0 0 0;
+
+    list-style-type: none;
+
+    &-item {
+      display: inline-block;
+      margin: 0 2px;
+
+      &-link {
+        display: block;
+        padding: 1px;
+
+        background: $medium-theme-color;
+        color: $black;
+        border: 1px solid $theme-color;
+        font-size: 0.85em;
+      }
+    }
+  }
+}

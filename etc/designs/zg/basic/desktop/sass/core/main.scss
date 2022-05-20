@@ -1,0 +1,164 @@
+@import 'mixins';
+@import '../utils/font-awesome';
+
+// This fixes author device emulator background overwrite problem.
+#cq-emulator-content.firefox {
+  background-color: $white !important;
+}
+
+html, body {
+  width: 100%;
+  font-size: 14px;
+}
+
+body {
+  line-height: 1.5;
+  color: $default-text-color;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  overflow: auto;
+}
+
+[id=wrapper] {
+  color: $text-color;
+  background-color: $white-smoke;
+}
+
+[id=header] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+[id=footer] {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $text-color;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-text-color;
+  }
+}
+
+input[type="search"] {
+  box-sizing: content-box;
+}
+
+.component {
+  margin-bottom: 10px;
+
+  &-content {
+    @include clearfix;
+    margin-bottom: 14px;
+  }
+
+  & > &-content {
+    margin-bottom: 0;
+  }
+}
+
+.composite {
+  @include clearfix;
+}
+
+.alert {
+  margin-bottom: 20px;
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: disc inside;
+
+    li {
+      padding-left: 4px;
+    }
+  }
+
+  &-error {
+    color: $alert-text-color;
+  }
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.pull {
+  &-right {
+    float: right;
+  }
+
+  &-left {
+    float: left;
+  }
+}
+
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.button {
+  @extend %btn;
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}

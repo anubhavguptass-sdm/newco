@@ -1,0 +1,228 @@
+//stylelint-disable
+// .ps-widget classes represents PRICE SPIDER 3rd party buttons
+.btn {
+  @include animate();
+  align-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: $font-size-button-mobile;
+  font-weight: $button-font-weight !important;
+  height: auto;
+  justify-content: center;
+  justify-items: center;
+  line-height: 1;
+  margin: auto;
+  margin: auto;
+  max-width: 100%;
+  overflow: hidden;
+  padding: $default-button-padding-mobile;
+  text-align: center;
+
+  // full width button
+  &.full-width,
+  .ps-widget[ps-sku],
+  .ps-widget[data-ps-sku] {
+    box-sizing: border-box;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &.parametrizedhtml {
+    padding: 0 !important;
+  }
+
+  .component-content {
+    flex: 1 1 100%;
+    height: 100%;
+
+    .ps-widget[ps-sku],
+    .ps-widget[data-ps-sku] {
+      @include animate();
+      align-items: center;
+      box-sizing: border-box;
+      display: flex !important;
+      height: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: $breakpoint-md-min) {
+    font-size: $font-size-button;
+    padding: $default-button-padding-desktop;
+  }
+}
+
+@each $key, $value in $button-theme-colors {
+  // create btn-color classes based on button theme colors
+  .btn-color-#{$key} {
+    background: $value;
+    border: $button-border-size
+      solid
+      if(
+        $set-default-button-border-color,
+        $default-button-border-color,
+        $value
+      );
+    color: $default-button-text-color !important;
+    text-decoration: if($button-text-decoration, underline, none) !important;
+
+    @media (min-width: $breakpoint-sm-min) {
+      //desktop styles
+      &:hover,
+      &:focus,
+      &:active {
+        background: $white;
+        border: $button-border-size solid $value;
+        color: $value !important;
+        text-decoration: if(
+          $button-text-decoration-hover,
+          underline,
+          none
+        ) !important;
+
+        // price spider buttons override
+        .ps-widget[ps-sku],
+        .ps-widget[data-ps-sku] {
+          color: $value !important;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-sm-max) {
+      //mobile styles
+      &:active {
+        background: $white;
+        border: $button-border-size solid $value;
+        color: $value !important;
+        text-decoration: if(
+          $button-text-decoration-hover,
+          underline,
+          none
+        ) !important;
+
+        // price spider buttons override
+        .ps-widget[ps-sku],
+        .ps-widget[data-ps-sku] {
+          color: $value !important;
+        }
+      }
+    }
+
+    // inverted buttons
+    &.inverted {
+      background: $white;
+      border: $button-border-size solid $value;
+      color: $value !important;
+
+      @media (min-width: $breakpoint-sm-min) {
+        //desktop styles
+        &:hover,
+        &:focus,
+        &:active {
+          background: $value;
+          color: $white !important;
+
+          // price spider buttons override
+          .ps-widget[ps-sku],
+          .ps-widget[data-ps-sku] {
+            color: $white !important;
+          }
+        }
+      }
+
+      @media (max-width: $breakpoint-sm-max) {
+        //mobile styles
+        &:active {
+          background: $value;
+          color: $white !important;
+
+          // price spider buttons override
+          .ps-widget[ps-sku],
+          .ps-widget[data-ps-sku] {
+            color: $white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// button sizes
+.btn-small,
+// price spider buttons override
+.btn-small .ps-widget[ps-sku],
+.btn-small .ps-widget[data-ps-sku] {
+  font-size: $font-size-button-mobile - 3px;
+  padding: $default-small-button-padding-mobile;
+
+  @media (min-width: $breakpoint-md-min) {
+    font-size: $font-size-button - 3px;
+    padding: $default-small-button-padding-desktop;
+  }
+}
+
+.btn-large,
+// price spider buttons override
+.btn-large .ps-widget[ps-sku],
+.btn-large .ps-widget[data-ps-sku] {
+  font-size: $font-size-button-mobile + 3px;
+  padding: $default-large-button-padding-mobile;
+
+  @media (min-width: $breakpoint-md-min) {
+    font-size: $font-size-button + 3px;
+    padding: $default-small-button-padding-desktop;
+  }
+}
+
+// price spider buttons override
+// i.e. reset for default pricespider css
+body {
+  .ps-widget[ps-sku],
+  .ps-widget[data-ps-sku],
+  .ps-widget[ps-sku]:hover,
+  .ps-widget[data-ps-sku]:hover {
+    background: transparent;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-radius: 0;
+    border-style: none;
+    border-width: 0;
+    box-sizing: content-box;
+    color: inherit;
+    display: block;
+    flex: 1 1 100%;
+    float: none;
+    font-family: $font-family-primary;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: initial;
+    line-height: initial;
+    margin: 0;
+    min-height: auto;
+    min-width: auto;
+    padding: 0;
+    white-space: nowrap;
+    width: 100%;
+
+    > span.ps-button-label {
+      background-color: transparent;
+      border: none;
+      color: inherit;
+      display: block;
+      display: none !important;
+      font-weight: inherit;
+      height: 100%;
+      text-align: inherit;
+      width: 100%;
+    }
+  }
+}
+
+// include custom buttons from brand folder
+@import '../../../brand/theme/buttons';
+
+//stylelint-enable

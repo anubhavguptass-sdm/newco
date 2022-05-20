@@ -1,0 +1,72 @@
+/*
+** INCLUSIONS
+*/
+
+// COMPONENTS
+$include-accordion: true !default;
+$include-anchor-box: true !default;
+$include-box: true !default;
+$include-breadcrumbs: true !default;
+$include-cards: true !default;
+$include-carousel: true !default;
+$include-carousel-common-questions: true !default;
+$include-default-icon: true !default;
+$include-divider: true !default;
+$include-filter: true !default;
+$include-jv-sharer: true !default;
+$include-bp-share-container: true !default;
+$include-footer: true !default;
+$include-bp-player: true !default;
+$include-bp-content-loader: true !default;
+$include-gygia-forms: true !default;
+
+$include-hero-banner: true !default;
+$include-hero-banner-enhanced-h4-v0: true !default;
+$include-hero-banner-enhanced-h4-v1: true !default;
+$include-hero-banner-h5-v0: true !default;
+$include-hero-banner-h5-v1: true !default;
+
+$include-list: true !default;
+$include-mega-menu: true !default;
+$include-quiz: true !default;
+$include-rich-text: true !default;
+$include-searchbox-results: true !default;
+$include-tabs: true !default;
+$include-titles: true !default;
+$include-video: true !default;
+$include-full-link: true !default;
+$include-table: true !default;
+$include-font-resizer: true !default;
+$include-bp-toggler: true !default;
+$include-bp-toaster: true !default;
+
+// CUSTOM & UTILITY CLASSES
+$include-color-utility-classes: true !default; // i.e. text/border/background color utility classes
+$include-blendings: false !default;
+
+// text
+$include-text-alignments: true !default;
+
+//backgrounds
+$include-sizes: true !default;
+$include-custom-sizes: true !default;
+$include-positions: true !default;
+$include-attachments: true !default;
+$include-repeats: true !default;
+
+//flex
+$include-flex: true !default;
+$include-flex-for-filter: true !default;
+$include-flex-justification: true !default;
+$include-flex-item-sizing: true !default;
+$include-flex-fullbox: true !default;
+$inlcude-flex-order: true !default;
+// include non predefined column sizes spacing
+$include-flex-npcss: true !default;
+
+//other
+$include-lineheights: true !default;
+$include-paddings-margins: true !default;
+$include-borders: true !default;
+$include-hide-classes: true !default;
+$include-width-utility-classes: true !default;

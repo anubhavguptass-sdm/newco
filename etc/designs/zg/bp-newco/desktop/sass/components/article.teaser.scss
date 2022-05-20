@@ -1,0 +1,23 @@
+@import '../core/mixins';
+
+.articleTeaser .articleTeaser-image-holder.articleTeaser-image-top img {
+    border-bottom: solid 4px #f36633;
+}
+.articleTeaser .articleTeaser-text-content .articleTeaser-text-link {
+    @include btn;
+}
+ 
+
+/* Mobile view 767 max width */
+
+ 
+@include respond-to(mobile) {
+ 
+.articleTeaser .component-content.hero-article .articleTeaser-text-content{
+        width:100%;           
+}
+.articleTeaser .articleTeaser-image-holder{
+	text-align:center;
+}
+
+}

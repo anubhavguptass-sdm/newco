@@ -1,0 +1,55 @@
+.twitter > .component-content {
+  padding: 13px;
+  border: solid 2px #323131;
+  background-color: #e1e1e1; }
+
+.twitter-feed {
+  position: relative;
+  display: block;
+  margin: 10px 0;
+  padding-left: 55px;
+  list-style-type: none; }
+  .twitter-feed:before, .twitter-feed:after {
+    content: "";
+    display: table; }
+  .twitter-feed:after {
+    clear: both; }
+
+.twitter-content a:hover strong {
+  text-decoration: underline; }
+
+a:hover
+.twitter-sender-avatar {
+  position: absolute;
+  top: 3px;
+  left: 0; }
+
+.twitter-date {
+  float: right; }
+
+.twitter-actions {
+  padding: 0;
+  margin: 0;
+  float: right; }
+
+.twitter-action {
+  list-style-type: none;
+  display: inline; }
+
+.feed-provider-heading {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  line-height: 30px; }
+  .feed-provider-heading-image {
+    float: left;
+    width: 30px;
+    height: 30px; }
+
+.feed-provider-description {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid black; }
+
+.feed-provider-feeds {
+  padding: 0;
+  margin: 0; }

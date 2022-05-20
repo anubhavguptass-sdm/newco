@@ -1,0 +1,139 @@
+/*
+** .border
+** .border-top
+** .border-left
+** .border-bottom
+** .border-right
+** .border-0
+*/
+
+@if $include-borders {
+  @each $side in $border-sides {
+    .border#{(if($side == '', null, unquote('-')))}#{unquote($side)} {
+      @if $side == '' {
+        border: solid $default-border-color $default-border-width;
+      } @else if $side == 'top' {
+        border-top: solid $default-border-color $default-border-width;
+      } @else if $side == 'bottom' {
+        border-bottom: solid $default-border-color $default-border-width;
+      } @else if $side == 'left' {
+        border-#{$start-direction}: solid
+          $default-border-color
+          $default-border-width;
+      } @else if $side == 'right' {
+        border-#{$end-direction}: solid
+          $default-border-color
+          $default-border-width;
+      } @else if $side == '0' {
+        border: none;
+      }
+    }
+
+    @media (min-width: $breakpoint-md-min) {
+      .border-d#{(if($side == '', null, unquote('-')))}#{unquote($side)} {
+        @if $side == '' {
+          border: solid $default-border-color $default-border-width;
+        } @else if $side == 'top' {
+          border-top: solid $default-border-color $default-border-width;
+        } @else if $side == 'bottom' {
+          border-bottom: solid $default-border-color $default-border-width;
+        } @else if $side == 'left' {
+          border-#{$start-direction}: solid
+            $default-border-color
+            $default-border-width;
+        } @else if $side == 'right' {
+          border-#{$end-direction}: solid
+            $default-border-color
+            $default-border-width;
+        } @else if $side == '0' {
+          border: none;
+        }
+      }
+    }
+  }
+
+  /*
+  ** .rounded
+  ** .rounded-top
+  ** .rounded-left
+  ** .rounded-bottom
+  ** .rounded-right
+  ** .rounded-top-left
+  ** .rounded-top-right
+  ** .rounded-bottom-left
+  ** .rounded-bottom-right
+  ** .rounded-pill
+  ** .rounded-circle
+  ** .rounded-0
+  */
+
+  @each $side in $rounded-sides {
+    .rounded#{(if($side == '', null, unquote('-')))}#{unquote($side)} {
+      overflow: hidden;
+      @if $side == '' {
+        border-radius: $default-radius-size !important;
+      } @else if $side == 'top' {
+        border-top-left-radius: $default-radius-size !important;
+        border-top-right-radius: $default-radius-size !important;
+      } @else if $side == 'bottom' {
+        border-bottom-left-radius: $default-radius-size !important;
+        border-bottom-right-radius: $default-radius-size !important;
+      } @else if $side == 'left' {
+        border-top-left-radius: $default-radius-size !important;
+        border-bottom-left-radius: $default-radius-size !important;
+      } @else if $side == 'right' {
+        border-top-right-radius: $default-radius-size !important;
+        border-bottom-right-radius: $default-radius-size !important;
+      } @else if $side == 'top-left' {
+        border-top-left-radius: $default-radius-size !important;
+      } @else if $side == 'bottom-left' {
+        border-bottom-left-radius: $default-radius-size !important;
+      } @else if $side == 'top-right' {
+        border-top-right-radius: $default-radius-size !important;
+      } @else if $side == 'bottom-right' {
+        border-bottom-right-radius: $default-radius-size !important;
+      } @else if $side == 'pill' {
+        border-radius: 50rem !important;
+      } @else if $side == 'circle' {
+        border-radius: 50% !important;
+      } @else if $side == '0' {
+        border-radius: 0 !important;
+      }
+    }
+
+    @media (min-width: $breakpoint-md-min) {
+      .rounded-d#{(if($side == '', null, unquote('-')))}#{unquote($side)} {
+        overflow: hidden;
+        @if $side == '' {
+          border-radius: $default-radius-size !important;
+        } @else if $side == 'top' {
+          border-top-left-radius: $default-radius-size !important;
+          border-top-right-radius: $default-radius-size !important;
+        } @else if $side == 'bottom' {
+          border-bottom-left-radius: $default-radius-size !important;
+          border-bottom-right-radius: $default-radius-size !important;
+        } @else if $side == 'left' {
+          border-top-left-radius: $default-radius-size !important;
+          border-bottom-left-radius: $default-radius-size !important;
+        } @else if $side == 'right' {
+          border-top-right-radius: $default-radius-size !important;
+          border-bottom-right-radius: $default-radius-size !important;
+        } @else if $side == 'top-left' {
+          border-top-left-radius: $default-radius-size !important;
+        } @else if $side == 'bottom-left' {
+          border-bottom-left-radius: $default-radius-size !important;
+        } @else if $side == 'top-right' {
+          border-top-right-radius: $default-radius-size !important;
+        } @else if $side == 'bottom-right' {
+          border-bottom-right-radius: $default-radius-size !important;
+        } @else if $side == 'pill' {
+          border-radius: 50rem !important;
+        } @else if $side == 'circle' {
+          border-radius: 50% !important;
+        } @else if $side == '0' {
+          border-radius: 0 !important;
+        }
+      }
+    }
+  }
+}

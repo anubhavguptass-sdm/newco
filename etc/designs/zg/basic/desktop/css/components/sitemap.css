@@ -1,0 +1,85 @@
+.sitemap-columns-1 .sitemap-column {
+  width: 100%; }
+
+.sitemap-columns-2 .sitemap-column {
+  width: 50%; }
+
+.sitemap-columns-3 .sitemap-column {
+  width: 33.33333%; }
+
+.sitemap-columns-4 .sitemap-column {
+  width: 25%; }
+
+.sitemap-columns-5 .sitemap-column {
+  width: 20%; }
+
+.sitemap-columns-6 .sitemap-column {
+  width: 16.66667%; }
+
+.sitemap-columns-7 .sitemap-column {
+  width: 14.28571%; }
+
+.sitemap-columns-8 .sitemap-column {
+  width: 12.5%; }
+
+.sitemap-columns-9 .sitemap-column {
+  width: 11.11111%; }
+
+.sitemap-columns-10 .sitemap-column {
+  width: 10%; }
+
+.sitemap-columns-11 .sitemap-column {
+  width: 9.09091%; }
+
+.sitemap-columns-12 .sitemap-column {
+  width: 8.33333%; }
+
+.sitemap-column {
+  float: left; }
+  .sitemap-column .component-content {
+    overflow: hidden; }
+  .sitemap-column a {
+    text-decoration: none; }
+  .sitemap-column h3 {
+    padding: 5px 7px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #e1e1e1; }
+  .sitemap-column ul {
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    list-style: none; }
+  .sitemap-column > ul {
+    margin: 0 3px; }
+    .sitemap-column > ul li > ul {
+      padding-bottom: 0;
+      padding-left: 5px;
+      margin-bottom: 0;
+      margin-left: 0;
+      word-wrap: break-word; }
+      .sitemap-column > ul li > ul li {
+        position: relative;
+        padding-left: 5px;
+        font-weight: bold;
+        line-height: 150%; }
+        .sitemap-column > ul li > ul li:before {
+          position: absolute;
+          top: 1px;
+          left: 0;
+          content: "\f0da";
+          display: inline-block;
+          font-family: FontAwesome;
+          font-style: normal;
+          position: relative;
+          font-weight: normal; }
+        .sitemap-column > ul li > ul li > ul {
+          margin-top: 0; }
+          .sitemap-column > ul li > ul li > ul li {
+            font-weight: normal; }
+
+@media only screen and (max-width: 767px) {
+  .component-content .sitemap-column {
+    width: 100%;
+    float: none; }
+    .component-content .sitemap-column > ul {
+      margin: 0 0 15px; } }

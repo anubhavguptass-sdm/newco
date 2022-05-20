@@ -1,0 +1,33 @@
+@import '../core/mixins'; 
+ 
+.accessranking .accessRankingResults ol li:before {
+  background: none repeat scroll 0 0 #f36633;
+  border: $borderbox;
+  border-radius: 10px;
+  color: $white;
+  content: counter(item,decimal) " ";
+  counter-increment: item;
+  font-weight: 700;
+  padding: 3px 8px;
+  text-align: center;
+  margin-right: 5px;
+  display: inline-block;
+}
+.accessranking .accessRankingResults ol {
+  counter-reset: item;
+  padding-left: 10px;
+    
+  .accessRankingResults li {
+	  color: #635a54;
+	  list-style-type: decimal;
+	  display: block;
+	  font-size: 12px;
+	  padding-bottom: 10px;
+	  padding-left: 10px;
+	  padding-top: 1px;
+	}
+
+}
+
+
+

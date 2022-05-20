@@ -1,0 +1,344 @@
+@if $include-flex and $use-legacy == false {
+  /*
+  ** FLEX START
+  */
+
+  // hide all anchors inside flex
+  a[style='visibility:hidden'] {
+    display: none !important;
+  }
+
+  $selector: '> .class-filter .filter-list-js,' !default;
+  $justifications: (
+    justify: (
+      items: (
+        flex-end,
+        flex-start,
+        center,
+        space-around,
+        space-evenly,
+        space-between,
+        stretch
+      ),
+      content: (
+        flex-end,
+        flex-start,
+        center,
+        space-around,
+        space-evenly,
+        space-between,
+        stretch
+      )
+    ),
+    align: (
+      items: (
+        flex-end,
+        flex-start,
+        center,
+        space-around,
+        space-evenly,
+        space-between,
+        stretch
+      ),
+      content: (
+        flex-end,
+        flex-start,
+        center,
+        space-around,
+        space-evenly,
+        space-between,
+        stretch
+      )
+    )
+  ) !default;
+
+  .flex {
+    max-width: 100%;
+
+    &.image-flex {
+      > .component-content,
+      picture {
+        display: flex;
+        flex-direction: $row-direction;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        img {
+          height: auto;
+        }
+      }
+    }
+
+    div {
+      flex-basis: inherit;
+    }
+
+    &[class*='justify-'],
+    &[class*='align-'] {
+      * {
+        justify-content: inherit !important;
+        justify-items: inherit !important;
+        align-content: inherit !important;
+        align-items: inherit !important;
+      }
+    }
+
+    .filter-container-js {
+      width: 100%;
+    }
+
+    // base flex setup
+    > div {
+      > div,
+      > .class-filter .filter-list-js {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: $row-direction;
+
+        > div:nth-last-of-type(1),
+        > li:nth-last-of-type(1) {
+          margin-#{$end-direction}: 0 !important;
+        }
+
+        > li:nth-of-type(1n + 1) {
+          margin: 0;
+        }
+
+        .box,
+        .component-content,
+        .content,
+        .inner,
+        figure {
+          height: auto;
+        }
+      }
+    }
+
+    &.flex-col {
+      > div {
+        > div,
+        > .class-filter .filter-list-js {
+          flex-direction: column !important;
+          flex-wrap: nowrap !important;
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-md-min) {
+      @for $n from 1 to ($flex-columns + 1) {
+        &.cols-d-#{$n} {
+          > div {
+            flex-basis: calc(100% / #{$n});
+          }
+
+          @at-root & > div > .class-filter .filter-list-js > li {
+            width: calc(100% / #{$n});
+            // max-width: calc(100% / #{$n});
+          }
+
+          @for $i from 1 to ($flex-spacings + 1) {
+            &.s-d-#{$i} {
+              @at-root & > div > .class-filter .filter-list-js {
+                flex-basis: calc(
+                  ((100% - (#{$i}#{$flex-unit} * (#{$n} - 1))) / #{$n})
+                );
+                gap: #{$i}#{$flex-unit};
+
+                & > li {
+                  width: calc(100% / #{$n});
+                  // max-width: calc(100% / #{$n});
+                }
+              }
+              > div {
+                > .content {
+                  flex-basis: calc(
+                    ((100% - (#{$i}#{$flex-unit} * (#{$n} - 1))) / #{$n})
+                  );
+                  gap: #{$i}#{$flex-unit};
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @each $type, $val in $justifications {
+        &.#{$type} {
+          @each $key, $value in $val {
+            &-#{$key} {
+              @each $end-value in $value {
+                &-#{$end-value}-d {
+                  #{$type}-#{$key}: #{$end-value} !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: $breakpoint-md-max) {
+      @for $n from 1 to ($flex-columns + 1) {
+        &.cols-m-#{$n} {
+          > div {
+            flex-basis: calc(100% / #{$n});
+          }
+
+          @at-root & > div > .class-filter .filter-list-js > li {
+            width: calc(100% / #{$n});
+            // max-width: calc(100% / #{$n});
+          }
+
+          @for $i from 1 to ($flex-spacings + 1) {
+            &.s-m-#{$i} {
+              @at-root & > div > .class-filter .filter-list-js {
+                flex-basis: calc(
+                  ((100% - (#{$i}#{$flex-unit} * (#{$n} - 1))) / #{$n})
+                );
+                gap: #{$i}#{$flex-unit};
+
+                & > li {
+                  width: calc(100% / #{$n});
+                  // max-width: calc(100% / #{$n});
+                }
+              }
+              > div {
+                > .content {
+                  flex-basis: calc(
+                    ((100% - (#{$i}#{$flex-unit} * (#{$n} - 1))) / #{$n})
+                  );
+                  gap: #{$i}#{$flex-unit};
+                }
+              }
+            }
+          }
+        }
+      }
+      @each $type, $val in $justifications {
+        &.#{$type} {
+          @each $key, $value in $val {
+            &-#{$key} {
+              @each $end-value in $value {
+                &-#{$end-value} {
+                  #{$type}-#{$key}: #{$end-value} !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @if $include-flex-fullbox {
+      &.fullbox {
+        @media (max-width: $breakpoint-md-max) {
+          @at-root [class*='fullbox-m'] {
+            > div {
+              > div {
+                position: relative;
+
+                > .fullbox {
+                  max-width: 50%;
+                  min-width: auto;
+                  width: 50% !important;
+                  position: absolute !important;
+                  top: 0 !important;
+                  bottom: 0 !important;
+                }
+              }
+            }
+          }
+
+          &-m {
+            &-right {
+              > div {
+                > div {
+                  align-items: flex-start;
+
+                  > .fullbox {
+                    #{$start-direction}: auto !important;
+                    #{$end-direction}: 0 !important;
+                  }
+                }
+              }
+            }
+            &-left {
+              > div {
+                > div {
+                  align-items: flex-end;
+
+                  > .fullbox {
+                    #{$end-direction}: auto !important;
+                    #{$start-direction}: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+        @media (min-width: $breakpoint-md-min) {
+          // desktop
+          @at-root [class*='fullbox-d'] {
+            > div {
+              > div {
+                position: relative;
+
+                > .fullbox {
+                  max-width: 50%;
+                  min-width: auto;
+                  width: 50% !important;
+                  position: absolute !important;
+                  top: 0 !important;
+                  bottom: 0 !important;
+                }
+              }
+            }
+          }
+
+          &-d {
+            &-right {
+              > div {
+                > div {
+                  align-items: flex-start;
+
+                  > .fullbox {
+                    #{$start-direction}: auto !important;
+                    #{$end-direction}: 0 !important;
+                  }
+                }
+              }
+            }
+            &-left {
+              > div {
+                > div {
+                  align-items: flex-end;
+
+                  > .fullbox {
+                    #{$end-direction}: auto !important;
+                    #{$start-direction}: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // flex order classes
+    @if $inlcude-flex-order {
+      @for $o from 1 to $flex-orders-count {
+        @media (max-width: $breakpoint-md-max) {
+          &-order-m-#{$o} {
+            order: #{$o} !important;
+          }
+        }
+        @media (min-width: $breakpoint-md-min) {
+          &-order-d-#{$o} {
+            order: #{$o} !important;
+          }
+        }
+      }
+    }
+  }
+  /*
+  ** FLEX END
+  */
+}

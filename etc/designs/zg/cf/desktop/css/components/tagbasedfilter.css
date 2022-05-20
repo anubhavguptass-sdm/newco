@@ -1,0 +1,121 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.genericFormGroup {
+  clear: both; }
+
+.initialTabBasedFilter {
+  background-color: #eeece4;
+  border: 2px solid #323131;
+  padding: 15px 60px;
+  position: relative; }
+
+.tagBasedFilter .formControl-radio {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 21px; }
+
+.tagBasedFilter .genericFormGroup span input[type="radio"], .tagBasedFilter .genericFormGroup span input[type="checkbox"] {
+  float: left;
+  margin: 2px 2px 0 0;
+  padding: 0;
+  width: 15px; }
+
+.tagBasedFilter .genericFormGroup label {
+  float: left;
+  padding: 1px 0 0;
+  width: auto; }
+
+.tagBasedFilterResults-Information {
+  border: 1px solid #C5C4C4; }
+  .tagBasedFilterResults-Information .tagBasedFilterResults-productImage {
+    border-bottom: 1px solid #C5C4C4;
+    text-align: center; }
+  .tagBasedFilterResults-Information .tagBasedFilterResults-description {
+    padding: 20px; }
+    .tagBasedFilterResults-Information .tagBasedFilterResults-description h2 {
+      font-size: 26px;
+      margin: 16px 0 0;
+      text-align: center; }
+    .tagBasedFilterResults-Information .tagBasedFilterResults-description p {
+      text-align: center; }
+
+.prd-category {
+  border-bottom: 1px solid #C5C4C4;
+  border-top: 1px solid #C5C4C4;
+  font-size: 11px;
+  display: block;
+  padding: 5px 0;
+  text-align: center; }
+
+.tagBasedFilterResults-box-content .product-button {
+  border: 1px solid #C5C4C4;
+  display: inline-block;
+  font-size: 11px;
+  margin: 10px 0 0;
+  padding: 10px; }
+
+.tagbasedfilter .simpleTagFilter input[type="button"] {
+  background-color: #f36633;
+  border: 1px solid #D5D1CE;
+  border-radius: 0;
+  color: white;
+  padding: 5px 10px; }
+
+/*Multi Level Filter*/
+.tagBasedFilter .multiLevelFilterContent input[type="button"]:hover {
+  background-color: #85F5F5; }
+
+.tagBasedFilter .multiLevelFilterContent .selected {
+  background-color: #85F5F5; }
+
+.tagBasedFilter .multiLevelFilter-ContainerResults .tagBasedFilterResults {
+  overflow: hidden;
+  margin-top: 10px;
+  padding-top: 15px; }
+
+.tagBasedFilter.multiLevelFilter .genericFormGroup span input[type="button"]:focus {
+  background: url("../../img/quiz1_hover.png") no-repeat scroll center center; }
+
+.multiLevelFilter-Container .multiLevelFilter-level1 {
+  margin-left: 25px; }
+
+.multiLevelFilter-Container .multiLevelFilter-level2 {
+  margin-left: 45px; }
+
+.multiLevelFilter-Container .multiLevelFilter-level3 {
+  margin-left: 65px; }
+
+.multiLevelFilter-Container .buttonTypeContent .multiLevelFilter-level1, .multiLevelFilter-Container .buttonTypeContent .multiLevelFilter-level2, .multiLevelFilter-Container .buttonTypeContent .multiLevelFilter-level3 {
+  margin-left: 0; }
+  .multiLevelFilter-Container .buttonTypeContent .multiLevelFilter-level1 input, .multiLevelFilter-Container .buttonTypeContent .multiLevelFilter-level2 input, .multiLevelFilter-Container .buttonTypeContent .multiLevelFilter-level3 input {
+    float: left; }
+
+.multiLevelFilter-Container .buttonTypeContent .multiLevelFilter-level4 {
+  margin-left: 0; }
+
+.multiLevelFilter-Container .buttonTypeContent.multiLevelFilter-level0 {
+  float: left; }
+
+.multiLevelFilter .genericFormGroup {
+  border-bottom: 1px dotted #e0e0e0;
+  overflow: hidden;
+  padding: 5px 0; }
+
+.tagBasedNoResult {
+  color: #ff0000;
+  font-weight: 700; }
+
+.tagbasedfilter-primary .multiLevelFilter-Container .multiLevelFilterContent {
+  float: left; }

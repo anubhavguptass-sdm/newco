@@ -1,0 +1,83 @@
+/*
+** CREATE THEME MAP VARIABLES HERE
+** MAPS ARE USED FOR CLASS EXPORTS
+*/
+// map for grays theme colors
+$grays: () !default;
+$grays: map-merge(
+  (
+    'white': $white,
+    'gray-100': $gray-100,
+    'gray-200': $gray-200,
+    'gray-300': $gray-300,
+    'gray-400': $gray-400,
+    'gray-500': $gray-500,
+    'gray-600': $gray-600,
+    'gray-700': $gray-700,
+    'gray-800': $gray-800,
+    'gray-900': $gray-900,
+    'black': $black
+  ),
+  $grays
+);
+// map for main theme colors
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    '1': $color-1,
+    '2': $color-2,
+    '3': $color-3,
+    '4': $color-4,
+    '5': $color-5,
+    '6': $color-6,
+    '7': $color-7
+  ),
+  $theme-colors
+);
+// map for button themes
+$button-theme-colors: (
+  '1': $color-1,
+  '2': $color-2
+) !default;
+// map for filter thems
+$filter-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+) !default;
+// map for text color themes
+$text-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+) !default;
+// map for background color themes
+$background-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+) !default;
+// map for border themes
+$border-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+) !default;
+// map for divider themes
+$divider-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+) !default;
+// map for searchbox and search results themes
+$searchbox-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+) !default;
+// map for title color themes
+$title-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+) !default;

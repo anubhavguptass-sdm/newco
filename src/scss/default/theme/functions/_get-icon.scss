@@ -1,0 +1,30 @@
+// Function to get an icon from icon map and assign it a new color
+// Default color is black
+@function get-icon(
+  $icon,
+  $color: $default-svg-icon-color,
+  $color-alt: $default-svg-icon-color-alternative
+) {
+  @if 'color' != type-of($color) {
+    @warn 'The requested color - "' + $color + '" - was not recognized as a Sass color value.';
+    @return null;
+  }
+
+  @if 'color' != type-of($color-alt) {
+    @warn 'The requested alternative color - "' + $color-alt + '" - was not recognized as a Sass color value.';
+    @return null;
+  }
+
+  @if map-has-key($icons, $icon) {
+    $icon: map-get($icons, $icon);
+    $placeholder: '%%COLOR%%';
+    $placeholder-alt: '%%COLOR-ALT%%';
+    $data-uri: str-replace(url($data-svg-prefix+$icon), $placeholder, $color);
+    $data-uri: str-replace($data-uri, $placeholder-alt, $color-alt);
+
+    @return str-replace($data-uri, '#', '%23');
+  }
+
+  @warn 'The requested icon - "' + $icon + '" - is not defined in the $icons map.';
+  @return null;
+}

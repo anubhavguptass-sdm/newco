@@ -1,0 +1,77 @@
+.podcast {
+  border-radius: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #EFEFED;
+  max-width: 800px; }
+  .podcast p {
+    margin: 0; }
+
+.podcast__information {
+  display: flex; }
+
+.podcast__text {
+  padding: 10px; }
+
+.podcast__title {
+  font-weight: 700; }
+
+.audio {
+  background-color: #efefed; }
+
+.audio__controls {
+  display: flex;
+  align-items: center; }
+
+.audio__backwards {
+  visibility: hidden;
+  height: 37px;
+  width: 37px;
+  border: 1px solid #15717d;
+  border-radius: 50%; }
+
+.audio__forwards {
+  visibility: hidden;
+  height: 37px;
+  width: 37px;
+  border: 1px solid #15717d;
+  border-radius: 50%; }
+
+.audio__backwards, .audio__forwards, .audio__play, .audio__pause {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+.audio__play {
+  height: 50px;
+  width: 50px;
+  background-color: #15717d;
+  border-radius: 50%; }
+  .audio__play:after {
+    content: "\25b6";
+    color: #fff;
+    font-size: 25px; }
+
+.audio__pause {
+  display: none;
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 50%; }
+  .audio__pause:after {
+    content: "| |";
+    color: #000;
+    font-size: 25px; }
+
+.audio--playing .audio__pause {
+  display: flex; }
+
+.audio--playing .audio__backwards {
+  visibility: visible; }
+
+.audio--playing .audio__forwards {
+  visibility: visible; }
+
+.audio--playing .audio__play {
+  display: none; }

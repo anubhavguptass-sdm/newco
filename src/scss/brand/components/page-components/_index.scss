@@ -1,0 +1,13 @@
+.contact-designation {
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    strong {
+      color: $color-2;
+      font-size: $font-size-18;
+      font-weight: $font-normal;
+    }
+  }
+}

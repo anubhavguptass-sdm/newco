@@ -1,0 +1,19 @@
+@import '../../core/mixins';
+
+.flash {
+  > .component-content {
+    text-align: center;
+  }
+
+  object {
+    max-width: 100%;
+  }
+
+  &-missing {
+    margin: 0 auto;
+  }
+
+  .seoDescription {
+    display: none;
+  }
+}

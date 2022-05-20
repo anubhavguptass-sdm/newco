@@ -1,0 +1,107 @@
+img {
+  max-width: 100%;
+}
+
+.container-fluid {
+  overflow: hidden;
+  padding: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+#header .row > .col-xs-12,
+#header .layout-inner > .col-xs-12,
+#content .layout-inner > .col-xs-12,
+.breadcrumbs-parsys .col-xs-12,
+.hero-title {
+  min-height: 0;
+}
+
+#header,
+#footer,
+#content,
+%container-shared {
+  clear: both;
+  display: block;
+  float: none;
+  margin-#{$start-direction}: auto;
+  margin-#{$end-direction}: auto;
+  padding-#{$start-direction}: 15px;
+  padding-#{$end-direction}: 15px;
+
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+#content {
+  margin-top: $space-50;
+
+  @media (min-width: $breakpoint-md-min) {
+    margin-top: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// There is a margin added to some of the AEM component layers in main.css - removing it here
+body {
+  .component-content,
+  .component,
+  .content {
+    line-height: 1;
+    margin-bottom: 0;
+  }
+}
+
+// removing bootstrap & AEM paddings and margins by default
+body {
+  #header {
+    padding-top: 0;
+  }
+
+  .component-content,
+  .paragraphSystem,
+  .navigation-item.navigation-level1,
+  div[clas*='col-'],
+  .component {
+    margin-#{$start-direction}: 0;
+    margin-#{$end-direction}: 0;
+    padding-#{$start-direction}: 0;
+    padding-#{$end-direction}: 0;
+  }
+}
+
+/*disable bootstrap min height by default in all column classes*/
+div[class*='col-'] {
+  min-height: auto;
+}
+
+// hides all 3rd party iframes to prevent unwanted empty space
+.container-fluid ~ iframe {
+  display: none;
+}
+
+// layout shift holder
+[class*='hero-banner-'] .image,
+.carouseSlide .no-image > .carousel-content > .content > .image {
+  min-height: 300px;
+}
+
+@media (min-width: $breakpoint-sm-min) {
+  //desktop styles
+  [class*='hero-banner-'] .image,
+  .carouseSlide .no-image > .carousel-content > .content > .image {
+    min-height: 300px;
+  }
+}

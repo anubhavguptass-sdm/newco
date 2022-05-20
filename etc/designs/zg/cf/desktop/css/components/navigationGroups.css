@@ -1,0 +1,67 @@
+.navigationGroupEnhanced .component-content {
+  overflow: visible; }
+  .navigationGroupEnhanced .component-content nav.flexy {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center; }
+    .navigationGroupEnhanced .component-content nav.flexy button.moreFields {
+      align-self: stretch;
+      transition: all .4s ease-out;
+      padding: 0 1rem 0 1.5rem;
+      outline: 0;
+      border: 0;
+      font-size: 18px;
+      background: #F36533;
+      color: #ffffff; }
+      .navigationGroupEnhanced .component-content nav.flexy button.moreFields.hidden {
+        transition: none;
+        border-right: 0.5rem solid #F36533;
+        width: 0;
+        padding: 0;
+        overflow: visible;
+        display: none; }
+      .navigationGroupEnhanced .component-content nav.flexy button.moreFields:after {
+        content: attr(count);
+        display: inline-flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        color: #F36533;
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 14px;
+        margin-left: 1rem;
+        margin-right: calc(-1rem + -8px); }
+    .navigationGroupEnhanced .component-content nav.flexy ul.links {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      overflow: hidden; }
+    .navigationGroupEnhanced .component-content nav.flexy ul li {
+      flex: auto;
+      padding: 1rem; }
+      .navigationGroupEnhanced .component-content nav.flexy ul li a {
+        color: #ffffff; }
+      .navigationGroupEnhanced .component-content nav.flexy ul li ul {
+        background: #F36533; }
+    .navigationGroupEnhanced .component-content nav.flexy ul.hidden-links {
+      display: block;
+      position: absolute;
+      background: #F36533;
+      right: 0;
+      top: 100%; }
+      .navigationGroupEnhanced .component-content nav.flexy ul.hidden-links li {
+        padding: 1rem; }
+        .navigationGroupEnhanced .component-content nav.flexy ul.hidden-links li a {
+          color: #ffffff;
+          padding-right: 3rem; }
+        .navigationGroupEnhanced .component-content nav.flexy ul.hidden-links li ul li a {
+          color: #ffffff; }
+      .navigationGroupEnhanced .component-content nav.flexy ul.hidden-links.hidden {
+        display: none; }
+  .navigationGroupEnhanced .component-content * {
+    box-sizing: border-box; }

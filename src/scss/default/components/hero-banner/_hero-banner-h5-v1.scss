@@ -1,0 +1,198 @@
+@if $include-hero-banner-h5-v1 and $include-hero-banner {
+  .hero-banner-h5-v1 {
+    li {
+      .carousel-content {
+        > .paragraphSystem {
+          position: relative;
+
+          > .image {
+            flex-basis: 1;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: auto;
+            min-width: 100%;
+            position: relative;
+            width: 100%;
+
+            img {
+              max-width: 100%;
+              min-width: 100%;
+              width: 100%;
+            }
+          }
+
+          > .box {
+            align-items: flex-end;
+            bottom: 0;
+            display: flex;
+            flex-direction: $row-direction;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            #{$start-direction}: 0;
+            margin: auto;
+            padding: 1rem;
+            position: absolute;
+            #{$end-direction}: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+
+    &.vertical {
+      &-top {
+        li {
+          .carousel-content {
+            > .paragraphSystem {
+              > .box {
+                align-items: flex-start;
+              }
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        li {
+          .carousel-content {
+            > .paragraphSystem {
+              > .box {
+                align-items: flex-end;
+              }
+            }
+          }
+        }
+      }
+
+      &-center {
+        li {
+          .carousel-content {
+            > .paragraphSystem {
+              > .box {
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &-d {
+          &-top {
+            li {
+              .carousel-content {
+                > .paragraphSystem {
+                  > .box {
+                    align-items: flex-start;
+                  }
+                }
+              }
+            }
+          }
+
+          &-bottom {
+            li {
+              .carousel-content {
+                > .paragraphSystem {
+                  > .box {
+                    align-items: flex-end;
+                  }
+                }
+              }
+            }
+          }
+
+          &-center {
+            li {
+              .carousel-content {
+                > .paragraphSystem {
+                  > .box {
+                    align-items: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.horizontal {
+      &-left {
+        li {
+          .carousel-content {
+            > .paragraphSystem {
+              > .box {
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+      }
+
+      &-right {
+        li {
+          .carousel-content {
+            > .paragraphSystem {
+              > .box {
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+      }
+
+      &-center {
+        li {
+          .carousel-content {
+            > .paragraphSystem {
+              > .box {
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &-d {
+          &-left {
+            li {
+              .carousel-content {
+                > .paragraphSystem {
+                  > .box {
+                    justify-content: flex-start;
+                  }
+                }
+              }
+            }
+          }
+
+          &-right {
+            li {
+              .carousel-content {
+                > .paragraphSystem {
+                  > .box {
+                    justify-content: flex-end;
+                  }
+                }
+              }
+            }
+          }
+
+          &-center {
+            li {
+              .carousel-content {
+                > .paragraphSystem {
+                  > .box {
+                    justify-content: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

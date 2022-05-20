@@ -1,0 +1,79 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* BUTTONS
+----------------------------------*/
+/* line 3, ../../sass/core/overlay.scss */
+.overlay-background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9998;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+/* line 14, ../../sass/core/overlay.scss */
+.overlay-container {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  text-align: center;
+  z-index: 9999;
+  padding-bottom: 30px;
+}
+
+/* line 23, ../../sass/core/overlay.scss */
+.overlay-content {
+  position: relative;
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 90%;
+  padding: 10px;
+  display: inline-block;
+  background: #FFF;
+  text-align: left;
+  border: solid 2px #323131;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 36, ../../sass/core/overlay.scss */
+.overlay-content-inner {
+  overflow: hidden;
+}
+
+/* line 40, ../../sass/core/overlay.scss */
+.overlay-close {
+  width: 25px;
+  height: 25px;
+  z-index: 9999;
+  font-size: 25px;
+  position: absolute;
+  top: -30px;
+  right: 15px;
+  background: url(../../../../wireframe/desktop/img/close.png) no-repeat;
+  cursor: Pointer;
+  display: none;
+}
+
+/* line 53, ../../sass/core/overlay.scss */
+.overlay-loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../wireframe/desktop/img/loader.gif) no-repeat 50% 50%;
+}

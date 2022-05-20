@@ -1,0 +1,171 @@
+@import '../core/mixins'; 
+ 
+ 
+ 
+.eventdetails .eventDetails-eventDate,
+.eventDetails-itineraryDayDate{
+		color: #72635e;
+}
+
+.eventdetails .eventDetails-speakerPhotoUrl{
+	display:inline-block;
+	vertical-align:top;
+	margin-right:25px;
+}
+
+.eventdetails .eventDetails-speakerProfile{
+	display:inline-block;
+}
+
+.eventdetails .eventDetails-location, .eventdetails .eventDetails-locationName{ 
+	background:url("../../img/location.png") no-repeat left center;
+	padding:5px 15px;
+}
+.eventdetails .eventDetails-locale{
+	background:url("../../img/locale.png") no-repeat left center;
+	padding:5px 20px;
+}
+.eventdetails .eventDetailsInfo h2{	
+	color:#72635e;
+}
+
+.eventdetails .eventDetails-itineraryDayDate{
+	background:$backgroundColorOrange;
+} 
+.eventdetails .eventDetails-itineraryDayDate h5{
+	color:$white;
+	padding:7px 10px;
+}
+
+.eventdetails .eventDetails-keyDocumentsDownload a{
+	background:url("../../img/Download_Icon.png") no-repeat left center;
+	padding-left:17px;
+}
+.eventdetails .eventDetails-locationPic{
+	width:250px;
+	height:200px;
+}
+.eventdetails .eventDetails-itineraryItemInfo p{
+	display:inline-block;
+}
+.eventdetails .eventDetailsSpeaker{
+	margin-bottom:15px;
+}
+
+.eventdetails ul{
+	padding-left:0;
+		li{
+			list-style-type:none;
+		}
+}
+
+.eventdetails .eventDetailsSpeakerInfo .eventDetails-speakerProfile .eventDetails-speakerPhoto{
+	@include pull-left();
+	margin:0 15px 0 0;
+}
+.eventdetails .eventDetailsSpeakerInfo .eventDetails-speakerProfile h4, 
+.eventdetails .eventDetailsSpeakerInfo .eventDetails-speakerProfile p{
+	padding:10px;
+}
+.eventdetails button.eventDetails-eventRegister-button, .eventdetails .eventDetails-eventUnRegister-button, 
+.eventdetails .eventDetails-eventLaunch-button, .eventdetails .eventDetails-eventNotLoggedIn a{
+	background-color: $backgroundColorOrange;
+	border: $borderbox;
+	border-radius: 0;
+    color: #fff;
+	cursor: pointer;
+    display: inline-block;
+	padding: 5px 20px;
+	margin-top:10px;
+} 
+
+
+.eventdetails .eventDetailsItineraryInfo .eventDetails-itineraryItemInfo{
+	border-bottom:$borderbox;
+	padding:5px 0;
+}
+
+.eventdetails .eventDetailsItineraryInfo span.eventDetails-itineraryItemEndDate, 
+.eventdetails .eventDetailsItineraryInfo span.eventDetails-itineraryItemDate{
+	display:inline-block;
+	width:90px;
+}
+
+
+.eventdetails .eventRelatedList-img-small, .eventdetails .eventRelatedList-description, 
+.eventdetails .eventRelatedList-location, .eventdetails .eventRelated-eventLive{
+    	display:inline-block;
+        vertical-align:top; 
+}
+.eventdetails .eventRelatedList-img-small{
+	width:10%;
+}
+.eventdetails .eventRelatedList-description{
+	width:68%;
+}
+.eventdetails .eventRelatedList-location{
+	width:15%;
+}
+.eventdetails .eventRelated-eventLive{
+	width:5%;
+}
+.eventdetails .eventRelated-eventLive p{
+	background:$backgroundColorOrange;
+	color:$white;
+	padding:40px 10px;
+}
+
+.eventdetails .eventRelatedList-location .eventDetails-eventWebinar{
+    background:url("../../img/video.png") no-repeat left center;
+	padding:5px 23px;
+}
+.eventdetails .eventRelatedList-location .eventRelated-eventLive, .eventdetails .eventRelatedList-location .eventDetails-eventWebinar, .eventdetails .eventRelatedList-location .eventDetails-duration, 
+.eventdetails .eventDetails-eventNotWebinar{
+    display:none;
+}
+.eventdetails .showWebinarEvent.eventRelatedList-location .eventDetails-eventWebinar, 
+.eventdetails .showWebinarEvent.eventRelatedList-location .eventDetails-duration{
+	display:block;
+}
+.eventdetails .showEventLocation.eventRelatedList-location .eventDetails-eventNotWebinar{
+	display:block;
+}
+.eventdetails .eventRelated-eventLive.hideLiveEvent{
+    display:none;
+}
+.eventdetails .eventRelated-eventLive.showLiveEvent{
+	display:inline-block;
+}
+.eventdetails .eventDetails-eventRegister .eventDetails-eventRegister-button.eventDetails-button-disabled:disabled{
+	background-color:#cccccc;
+	color:#e0e0e0;
+}
+.eventdetails .eventDetails-zincCode p{
+	@include pull-right();
+}
+
+.eventDetails-relatedEvents .eventDetails-duration, .eventDetails-pastRelatedEvents .eventDetails-duration{
+	background:url("../../img/clock.png") no-repeat left center;
+	padding:5px 20px;
+}
+.eventList-prescription .eventList-prescriptionurl{
+    background:url("../../img/Download_Icon.png") no-repeat left center;
+	padding-left:17px;
+}
+
+.eventdetails .eventDetails-category.showWebinarEvent .eventDetails-eventWebinar, 
+.eventdetails .eventDetails-category.showEventLocation .eventDetails-eventNotWebinar{
+	display: block;
+}
+.eventdetails .eventDetails-category.showWebinarEvent .eventDetails-eventNotWebinar, 
+.eventdetails .eventDetails-category.showEventLocation .eventDetails-eventWebinar{
+	display: none;
+}
+.eventdetails .eventDetails-category .eventDetails-eventWebinar {
+	background:url("../../img/video.png") no-repeat left center;
+	padding:5px 25px;
+}
+.eventdetails .eventDetails-category .eventDetails-eventNotWebinar {
+	background: rgba(0, 0, 0, 0) url("../../img/location.png") no-repeat scroll left center;
+    padding: 5px 15px;
+}

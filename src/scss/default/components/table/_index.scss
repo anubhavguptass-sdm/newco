@@ -1,0 +1,362 @@
+@if $include-table {
+  .table {
+    width: 100%;
+    max-width: 100%;
+    > .component-content {
+      width: 100%;
+      max-width: 100%;
+      > .content {
+        display: flex;
+        flex-direction: $row-direction;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+
+        > .table-row {
+          width: 100%;
+          flex: 1 1 100%;
+
+          > * {
+            > .content {
+              > *:not(a) {
+                min-width: 20px;
+                min-height: 20px;
+
+                > .component-content {
+                  display: flex;
+                  flex-direction: $row-direction;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.no-colspan-cells-js {
+      > * {
+        > .content {
+          > .table-row {
+            > * {
+              > .content {
+                > *:not(a) {
+                  &:nth-last-child(1) {
+                    max-width: none !important;
+                    flex: 0 1 100% !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-sm-max) {
+      //mobile styles
+      &.scrollable {
+        > * {
+          > .content {
+            > .table-row {
+              > * {
+                > .content {
+                  overflow: hidden;
+                  scroll-behavior: smooth;
+                  &:not(.js-scroll) {
+                    scroll-snap-type: x mandatory;
+                  }
+
+                  [class*='bp-table-td'],
+                  [class*='bp-table-tc'] {
+                    min-width: 50%;
+                    max-width: 50%;
+                    scroll-snap-align: start;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &.fixed-headers {
+          > * {
+            > .content {
+              > .table-row {
+                transform: translate(0);
+                > * {
+                  > .content {
+                    scroll-snap-points-x: repeat(100%);
+
+                    [class*='bp-table-td'] {
+                      position: fixed;
+                      top: 0;
+                      #{$start-direction}: 0;
+                      height: 100%;
+                      width: 50%;
+                      max-width: 50%;
+                      z-index: 9;
+                      background-color: $white;
+                    }
+
+                    [class*='bp-table-tc'] {
+                      padding-#{$start-direction}: 50%;
+                      width: 100%;
+                      max-width: 100%;
+                      min-width: 100%;
+                      border: none !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          > * {
+            > .content {
+              > .table-row:nth-child(2) {
+                > * {
+                  > .content {
+                    [class*='bp-table-td']:not(:nth-of-type(1)) {
+                      position: static;
+                      top: auto;
+                      #{$start-direction}: auto;
+                      z-index: 1;
+                      padding-#{$start-direction}: 50%;
+                      width: 100%;
+                      max-width: 100%;
+                      min-width: 100%;
+                      border: none !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-row {
+      min-width: 100%;
+      width: 100%;
+      flex: 0 0 100%;
+
+      > * {
+        > .content {
+          display: flex;
+          flex-direction: $row-direction;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+
+    // style cells if needed
+    // &-cell {}
+
+    // border color classes
+    &.b-color {
+      @each $colorName, $colorHex in $all-colors {
+        &-#{$colorName} {
+          border-color: $colorHex !important;
+
+          > * {
+            > .content {
+              > .table-row {
+                border-color: $colorHex !important;
+
+                &:nth-last-child(1) {
+                  border-color: $colorHex !important;
+                }
+
+                > * {
+                  > .content {
+                    > .advancedParametrizedHtml:not(:nth-last-child(1)),
+                    > .parametrizedhtml:not(:nth-last-child(1)) {
+                      border-color: $colorHex !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.bordered {
+      border-#{$start-direction}: solid $default-table-borders-size;
+      border-#{$end-direction}: solid $default-table-borders-size;
+
+      > * {
+        > .content {
+          > .table-row {
+            border-top: solid $default-table-borders-size;
+
+            &:nth-last-child(1) {
+              border-bottom: solid $default-table-borders-size;
+            }
+
+            > * {
+              > .content {
+                > .advancedParametrizedHtml:not(:nth-last-child(1)),
+                > .parametrizedhtml:not(:nth-last-child(1)) {
+                  border-#{$end-direction}: solid $default-table-borders-size;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.cellpadding {
+      @for $i from 1 to 4 {
+        &-#{$i} {
+          > * {
+            > .content {
+              > .table-row {
+                > * {
+                  > .content {
+                    > .advancedParametrizedHtml,
+                    > .parametrizedhtml {
+                      > .component-content {
+                        padding: #{$i}rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // cells alignment
+    // -v: vertical
+    // -h: horizontal
+    // applies for both mobile & desktop
+    &.cells {
+      &-v-top {
+        > * {
+          > .content {
+            > .table-row {
+              > * {
+                > .content {
+                  > .advancedParametrizedHtml,
+                  > .parametrizedhtml {
+                    > .component-content {
+                      align-content: flex-start;
+                      align-items: flex-start;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-v-center {
+        > * {
+          > .content {
+            > .table-row {
+              > * {
+                > .content {
+                  > .advancedParametrizedHtml,
+                  > .parametrizedhtml {
+                    > .component-content {
+                      align-content: center;
+                      align-items: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-v-bottom {
+        > * {
+          > .content {
+            > .table-row {
+              > * {
+                > .content {
+                  > .advancedParametrizedHtml,
+                  > .parametrizedhtml {
+                    > .component-content {
+                      align-content: flex-end;
+                      align-items: flex-end;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-h-left {
+        > * {
+          > .content {
+            > .table-row {
+              > * {
+                > .content {
+                  > .advancedParametrizedHtml,
+                  > .parametrizedhtml {
+                    > .component-content {
+                      justify-content: flex-start;
+                      justify-items: flex-start;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-h-center {
+        > * {
+          > .content {
+            > .table-row {
+              > * {
+                > .content {
+                  > .advancedParametrizedHtml,
+                  > .parametrizedhtml {
+                    > .component-content {
+                      justify-content: center;
+                      justify-items: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-h-right {
+        > * {
+          > .content {
+            > .table-row {
+              > * {
+                > .content {
+                  > .advancedParametrizedHtml,
+                  > .parametrizedhtml {
+                    > .component-content {
+                      justify-content: flex-end;
+                      justify-items: flex-end;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

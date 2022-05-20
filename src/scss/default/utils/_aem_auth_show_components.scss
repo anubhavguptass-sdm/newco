@@ -1,0 +1,189 @@
+//stylelint-disable
+
+// styles for AEM editor custom components visibilty
+
+.gtm-tracker-configurator,
+.p-spider-widget,
+.carousel-configurator {
+  display: none;
+}
+
+.aem-AuthorLayer-Edit {
+  .ps-widget,
+  .s-rev-trax,
+  .gtm-tracker-configurator,
+  .carousel-configurator,
+  .p-spider-widget,
+  .class-filter {
+    background-color: $gray-300;
+    color: $black;
+    height: auto;
+    line-height: 1.5;
+    min-height: 50px;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .carousel {
+    @include animate();
+    opacity: 1 !important;
+
+    &.initialized {
+      opacity: 1;
+    }
+  }
+
+  .searchBox-title {
+    display: inline-block !important;
+  }
+
+  // PriceSpiderWidget
+  .p-spider-widget {
+    display: inline-block;
+    height: auto;
+    margin: 1rem auto;
+    max-width: 150px;
+
+    &::before {
+      content: 'PriceSpiderWidget';
+    }
+  }
+  // Buy now button
+  .ps-widget {
+    display: inline-block;
+    height: auto;
+    margin: 1rem auto;
+    max-width: 150px;
+
+    &::before {
+      content: 'Buy Now button:\A \A ps-sku="'attr(ps-sku) '"\A data-gtm-product-name="'attr(
+          data-gtm-product-name
+        );
+      white-space: pre;
+    }
+  }
+  //RevTraxContainer
+  .s-rev-trax {
+    display: inline-block;
+    line-height: 1.5;
+    margin: 1rem auto;
+    max-width: 150px;
+
+    &::before {
+      content: 'RevTraxContainer:\A \A ProgramID: "'attr(data-programid);
+      white-space: pre;
+    }
+  }
+
+  // GTMTracker configurator
+  .gtm-tracker-configurator {
+    display: block;
+    margin: 1rem auto;
+    max-width: 1140px;
+    min-height: 50px;
+
+    &::before {
+      content: 'GATracker configurator:\A \A id="'attr(id) '"\A data-event="'attr(
+          data-event
+        )
+        '"\A data-event-category="'attr(data-event-category) '"\A data-event-action="'attr(
+          data-event-action
+        )
+        '"\A data-event-trigger="'attr(data-event-trigger) '"\A data-event-label="'attr(
+          data-event-label
+        )
+        '"\A data-event-target="'attr(data-event-target) '"\A data-event-target-parent-selector="'attr(
+          data-event-target-parent-selector
+        )
+        '"\A data-event-target-sharer-selector="'attr(
+          data-event-target-sharer-selector
+        ) '"\A data-event-target-child-selector="'attr(
+          data-event-target-child-selector
+        )
+        '"\A data-event-delay="'attr(data-event-delay) '"\A data-event-anchor-delay="'attr(
+          data-event-anchor-delay
+        )
+        '"\A data-debug="'attr(data-debug) '"';
+      white-space: pre;
+    }
+  }
+
+  // class filter configuration
+  .gtm-tracker-configurator {
+    display: block;
+    margin: 1rem auto;
+    max-width: 1140px;
+    min-height: 50px;
+
+    &::before {
+      content: 'Class Filter configurator:\A \A id="'attr(id) '"\A Filter class: "'attr(
+          data-filter-class
+        )
+        '"\A Update URL hash: "'attr(data-update-urlhash) '"\A data-event-action="'attr(
+          data-event-action
+        )
+        '"\A Label selector: "'attr(data-label-selector) '"\A Default label: "'attr(
+          data-default-label
+        )
+        '"\A Multiselect: "'attr(data-multiselect) '"\A Type: "'attr(data-type)
+        '"\A Categories: "'attr(data-categories) '"';
+      white-space: pre;
+    }
+  }
+
+  // Carousel configurator
+  .carousel-configurator {
+    display: block;
+    margin: 1rem auto;
+    max-width: 1140px;
+    min-height: 50px;
+
+    &::before {
+      content: 'Carousel configurator:\A \A
+      Carousel class: "'attr(
+          data-carousel-class
+        ) '"' '"\A Carousel type="'attr(data-carousel-type) '"'
+        '"\A Slides at a time: "'attr(data-slider-items) '"' '"\A Slides at a time (Mobile): "'attr(
+          data-slider-items-mobile
+        )
+        '"' '"\A Slides per move: "'attr(data-slider-per-move) '"' '"\A Slides per move Mobile: "'attr(
+          data-slider-per-move-mobile
+        )
+        '"' '"\A Slides Margin: "'attr(data-slider-margin) 'px"' '"\A Slides Margin Mobile: "'attr(
+          data-slider-margin-mobile
+        )
+        'px"' '"\A Carousel add Class: "'attr(data-slider-add-class) '"' '"\A Carousel Mode"'attr(
+          data-slider-mode
+        )
+        '"' '"\A Carousel Animation Speed: "'attr(data-slider-animation-speed) 'ms"'
+        '"\A Autoplay: "'attr(data-slider-autoplay) '"' '"\A Pause On Hover: "'attr(
+          data-slider-pause-on-hover
+        ) '"' '"\A End Animation Enabled: "'attr(data-slider-end-animation) '"'
+        '"\A Pause slide for: "'attr(data-slider-pause) 'ms"' '"\A Keypress navigation enabled: "'attr(
+          data-slider-enable-keypress
+        )
+        '"' '"\A Enable prev/next buttons: "'attr(data-slider-enable-prevnext) '"'
+        '"\A Enable prev/next buttons Mobile: "'attr(
+          data-slider-enable-prevnext-mobile
+        )
+        '"' '"\A Enable bullet navigation: "'attr(data-slider-enable-pager) '"' '"\A Enable bullet navigation Mobile: "'attr(
+          data-slider-enable-pager-mobile
+        )
+        '"' '"\A Adaptive height: "'attr(data-slider-adaptive-height) '"' '"\A Enable vertical Slider: "'attr(
+          data-slider-enable-vertical
+        )
+        '"' '"\A Vertical height: "'attr(data-slider-vertical-height) 'px"' '"\A Bullets position: "'attr(
+          data-slider-pager-position
+        )
+        '"' '"\A Bullets position Mobile: "'attr(data-slider-pager-mobile) '"' '"\A Enable touch: "'attr(
+          data-slider-enable-touch
+        )
+        '"' '"\A Enable drag: "'attr(data-slider-enable-drag) '"' '"\A Enable free move: "'attr(
+          data-slider-enable-free-move
+        )
+        '"';
+      white-space: pre;
+    }
+  }
+}
+//stylelint-enable

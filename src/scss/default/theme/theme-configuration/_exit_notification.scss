@@ -1,0 +1,28 @@
+/*
+** EXIT NOTIFICATION
+*/
+
+/* OVERLAY */
+$notification-overlay-bacground-color: $color-3 !default;
+$notification-overlay-bacground-opacity: 0.75 !default;
+
+/* INNER */
+$notification-use-shadow: true !default;
+$notification-border: solid $color-2 2px !default;
+$notification-border-radius: 10px !default;
+$notification-padding: 2rem !default;
+$notification-bacground-color: $white !default;
+$notification-max-width: 40% !default;
+$notification-max-width-mobile: 90% !default;
+
+/* BUTTONS */
+$notification-buttons-color-theme: color-1 !default;
+$notification-buttons-top-offset: 1rem !default;
+$notification-buttons-use-rounded: true !default;
+$notification-buttons-use-large: true !default;
+$notification-buttons-position-desktop: right !default;
+$notification-buttons-position-mobile: center !default;
+$notification-buttons-spacing: 5px !default;
+
+$btn-position: right !default;
+$btn-position-desktop: right !default;

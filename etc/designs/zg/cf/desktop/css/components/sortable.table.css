@@ -1,0 +1,49 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.arrows-sprite {
+  background: url("../../img/arrows.png") no-repeat; }
+
+.sortableTable .table {
+  border: solid 2px #323131;
+  width: 100%;
+  position: relative; }
+  .sortableTable .table th, .sortableTable .table td {
+    text-align: center;
+    border: solid 2px #323131;
+    padding: 10px; }
+  .sortableTable .table th {
+    background-color: #eeece4;
+    color: #323131;
+    font-weight: bold; }
+    .sortableTable .table th.sortable {
+      cursor: pointer; }
+    .sortableTable .table th.asc span:after, .sortableTable .table th.desc span:after {
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      zoom: 1;
+      background-position: 0 0;
+      content: '';
+      width: 16px;
+      height: 10px;
+      margin-left: 10px;
+      background: url("../../img/arrows.png") no-repeat; }
+    .sortableTable .table th.desc span:after {
+      background-position: 0 -63px; }
+  .sortableTable .table td {
+    color: #72635d; }
+    .sortableTable .table td:first-of-type {
+      text-align: left; }
+  .sortableTable .table tr:nth-child(even) {
+    background: #f5f5f5; }

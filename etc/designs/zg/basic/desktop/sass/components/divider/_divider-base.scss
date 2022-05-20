@@ -1,0 +1,10 @@
+@import '../../core/mixins';
+
+.divider {
+  > .component-content {
+    height: 2px;
+    margin: 2em 0;
+
+    background: $gradient-ends;
+  }
+}

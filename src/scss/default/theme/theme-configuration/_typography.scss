@@ -1,0 +1,72 @@
+/*
+** TYPOGRAPHY
+*/
+
+/*
+** SELECTION COLOR STYLES
+*/
+$selection-background-color: $color-1 !default;
+$selection-text-color: $color-2 !default;
+
+/*
+** DEFAULT DEVICE FONT STACK
+*/
+$font-stack: $font-family-default !default;
+$font-stack-secondary: $font-family-default !default;
+$font-stack-tertiary: $font-family-default !default;
+
+// FONT FAMILY
+$font-family-primary: $font-stack !default;
+$font-family-secondary: $font-stack-secondary !default;
+$font-family-tertiary: $font-stack-tertiary !default;
+$font-family-light: $font-family-default, arial, sans-serif !default;
+$font-family-medium: $font-family-default, arial, sans-serif !default;
+$font-family-bold: $font-family-default, arial, sans-serif !default;
+$font-family-black: $font-stack-secondary !default;
+
+//ADJUST FONT AND HEADING SIZES FOR THE THEME
+$font-size-button: 15px !default;
+$font-size-button-mobile: 14px !default;
+$font-size-body: 14px !default;
+$font-size-body-mobile: 14px !default;
+$font-size-h1: 48px !default;
+$font-size-h1-mobile: 30px !default;
+$font-size-h2: 30px !default;
+$font-size-h2-mobile: 20px !default;
+$font-size-h3: 24px !default;
+$font-size-h3-mobile: 16px !default;
+$font-size-h4: 20px !default;
+
+//AJUST LINE HEIGHTS FOR THE THEME
+$line-height-body: 24px !default;
+$line-height-body-mobile: 18px !default;
+$line-height-h1: 50px !default;
+$line-height-h1-mobile: 30px !default;
+$line-height-h2: 30px !default;
+$line-height-h2-mobile: 22px !default;
+$line-height-h3: 26px !default;
+$line-height-h3-mobile: 18px !default;
+$line-height-h4: 24px !default;
+
+//BACKUP FOR ORIGINAL COMPONENTS
+$font-size-tiny: 11px !default;
+$font-size-h4-mobile: $font-size-body-mobile !default;
+$font-size-subhead: $font-size-h2-mobile !default;
+$font-size-subhead-mobile: $font-size-body-mobile !default;
+$font-size-intro: $font-size-h2-mobile !default;
+$line-height-h4-mobile: 18px !default;
+$line-height-subhead: 26px !default;
+$line-height-subhead-mobile: 17px !default;
+$line-height-intro: 30px !default;
+$line-height-dropdown: 50px !default;
+$line-height-breadcrumbs: 18px !default;
+
+//FONT HEIGHTS
+$font-weight-button: 300 !default;
+$font-weight-body: 400 !default;
+$font-weight-h1: 400 !default;
+$font-weight-h2: 400 !default;
+$font-weight-h3: 400 !default;
+$font-weight-h4: 400 !default;
+$font-weight-anchors: $font-weight-body !default;
+$font-weight-breadcrumbs: $font-weight-body !default;

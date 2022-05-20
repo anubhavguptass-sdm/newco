@@ -1,0 +1,39 @@
+/*
+** THEME INCLUSION ORDER
+*/
+@import 'functions/index';
+@import 'typography/font-face';
+@import 'colors/index';
+@import 'icons/index';
+@import 'theme-configs';
+
+// define root css vars here
+:root {
+  font-size: $font-size-body;
+  --max-content-width: #{$max-content-width};
+  --max-content-md-width: #{$max-content-md-width};
+  --direction: #{$direction};
+  --font-family-primary: #{$font-stack};
+  --font-family-secondary: #{$font-stack-secondary};
+  --font-family-tertiary: #{$font-stack-tertiary};
+  @each $key, $value in $all-colors {
+    --color-#{$key}: #{$value};
+  }
+  @each $key, $value in $breakpoints-map {
+    --#{$key}: #{$value};
+  }
+}
+
+@media (min-width: $breakpoint-sm-min) {
+  :root {
+    font-size: $font-size-body-mobile;
+  }
+}
+
+@import 'mixins/index';
+@import 'animations/index';
+@import 'common-framework-overrides/index';
+@import 'defaults/default-styles';
+@import 'buttons/index';
+@import 'legacy/index';
+@import 'utility-classes/index';

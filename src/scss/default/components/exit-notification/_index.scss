@@ -1,0 +1,122 @@
+/*stylelint-disable*/
+
+@if $notification-buttons-position-mobile == left {
+  $btn-position: flex-start;
+}
+@if $notification-buttons-position-mobile == right {
+  $btn-position: flex-end;
+}
+@if $notification-buttons-position-mobile == center {
+  $btn-position: center;
+}
+
+@if $notification-buttons-position-desktop == left {
+  $btn-position-desktop: flex-start;
+}
+@if $notification-buttons-position-desktop == right {
+  $btn-position-desktop: flex-end;
+}
+@if $notification-buttons-position-desktop == center {
+  $btn-position-desktop: center;
+}
+
+body {
+  &.scroll-stop {
+    overflow: hidden !important;
+  }
+}
+
+#exit-notification {
+  @include animate(center, 0s, 0.2s);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    $notification-overlay-bacground-color,
+    $notification-overlay-bacground-opacity
+  );
+  z-index: 999999;
+  transform: scale(1) translateY(0);
+  opacity: 1;
+  pointer-events: all;
+
+  & .exit-notification-inner {
+    @include animate(center, 0.2s, 0.2s);
+    transform: scale(1) translateY(-50%);
+    @if $notification-use-shadow {
+      box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.32);
+    }
+    border-radius: $notification-border-radius;
+    opacity: 1;
+    pointer-events: all;
+    position: relative;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    max-width: $notification-max-width-mobile;
+    @media (min-width: $breakpoint-sm-min) {
+      //desktop styles
+      max-width: $notification-max-width;
+    }
+    background-color: $notification-bacground-color;
+    padding: $notification-padding;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: $notification-border;
+
+    .exit-notification-decoration {
+      display: none;
+    }
+
+    > * {
+      flex: 0 0 100%;
+    }
+
+    .exit-notification-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: $btn-position;
+      @media (min-width: $breakpoint-sm-min) {
+        //desktop styles
+        justify-content: $btn-position-desktop;
+      }
+      margin-top: $notification-buttons-top-offset;
+
+      button {
+        margin-#{$start-direction}: 0;
+        margin-#{$end-direction}: 0;
+        @extend .btn;
+        @extend .btn-#{$notification-buttons-color-theme};
+        @if $notification-buttons-use-large {
+          @extend .btn-large;
+        }
+        @if $notification-buttons-use-rounded {
+          @extend .rounded;
+        }
+
+        &:not(:first-child) {
+          margin-#{$start-direction}: $notification-buttons-spacing;
+        }
+      }
+    }
+  }
+
+  &.is-hidden,
+  &.is-hidden > .exit-notification-inner {
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 0.2s;
+  }
+
+  &.is-hidden > .exit-notification-inner {
+    transition-delay: 0s;
+  }
+}
+/*stylelint-enable*/

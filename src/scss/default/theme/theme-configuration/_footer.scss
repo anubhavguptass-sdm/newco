@@ -1,0 +1,21 @@
+/*
+** FOOTER
+*/
+
+// COLORS
+$footer-background-color: $color-7 !default;
+$footer-text-color: $color-2 !default;
+$footer-divider-starter-color: rgba(darken($color-7, 20%), 0.2) !default;
+$footer-divider-end-color: rgba($color-7, 0) !default;
+$footer-divider-color: transparent !default;
+
+// FONT SIZES
+$footer-links-font-size-m: $font-size-body-mobile !default;
+$footer-links-font-size-d: $font-size-body !default;
+
+$footer-copyright-font-size-m: $font-size-body-mobile !default;
+$footer-copyright-font-size-d: $font-size-body !default;
+
+// SOCIAL ICON SIZES
+$footer-icon-social-icon-size-m: $default-icon-size !default;
+$footer-icon-social-icon-size-d: $middle-icon-size !default;

@@ -1,0 +1,21 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.questionanswers.hideScoreBox .quizScoreBox, .questionanswers.hideScoreBox .quizResultBoxContainer {
+  display: none; }
+
+.quizResultBoxContainer.showBoxQuiz {
+  display: block; }
+
+.quizButton img {
+  cursor: pointer; }

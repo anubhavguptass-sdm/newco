@@ -1,0 +1,62 @@
+@if $include-divider {
+  // divider component styles
+  .divider {
+    &.divider {
+      @each $key, $value in $divider-theme-colors {
+        &-color-#{$key} {
+          background-color: $value;
+          height: $default-divider-height;
+        }
+      }
+    }
+
+    &.thick {
+      height: $default-divider-thick-height !important;
+    }
+
+    &.thin {
+      height: $default-divider-thin-height !important;
+    }
+
+    &-elipse {
+      display: flex;
+      justify-content: center;
+
+      .component-content {
+        margin: $space-15 0;
+        position: relative;
+        width: 100%;
+
+        &::after {
+          background: radial-gradient(
+            ellipse at 50% -5%,
+            $footer-divider-starter-color,
+            $footer-divider-end-color 70%
+          );
+          bottom: 0;
+          content: '';
+          height: 50px;
+          #{$start-direction}: -10%;
+          position: absolute;
+          #{$end-direction}: -10%;
+          top: 100%;
+          width: 120%;
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        .component-content {
+          width: 70%;
+
+          &::after {
+            background: radial-gradient(
+              ellipse at 50% -5%,
+              $footer-divider-starter-color,
+              $footer-divider-end-color 35%
+            );
+          }
+        }
+      }
+    }
+  }
+}

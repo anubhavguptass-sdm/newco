@@ -1,0 +1,635 @@
+@if $include-box and $use-legacy {
+  .box {
+    &.bg {
+      @if $include-sizes {
+        &-size {
+          &-cover {
+            > .component-content {
+              background-size: cover;
+            }
+          }
+
+          &-contain {
+            > .component-content {
+              background-size: contain;
+            }
+          }
+
+          &-auto {
+            > .component-content {
+              background-size: auto;
+            }
+          }
+          @if $include-custom-sizes {
+            $n: 0;
+            $increment: 5;
+            @while $n < 100 {
+              $n: $n + $increment;
+
+              &-w#{$n} {
+                > .component-content {
+                  background-size: percentage($n/100) auto;
+                }
+              }
+
+              &-h#{$n} {
+                > .component-content {
+                  background-size: auto percentage($n/100);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @if $include-positions {
+        &-position {
+          &-top-left {
+            > .component-content {
+              background-position: top left;
+            }
+          }
+
+          &-top-center {
+            > .component-content {
+              background-position: top center;
+            }
+          }
+
+          &-top-right {
+            > .component-content {
+              background-position: top right;
+            }
+          }
+
+          &-bottom-left {
+            > .component-content {
+              background-position: bottom left;
+            }
+          }
+
+          &-bottom-center {
+            > .component-content {
+              background-position: bottom center;
+            }
+          }
+
+          &-bottom-right {
+            > .component-content {
+              background-position: bottom right;
+            }
+          }
+
+          &-center-left {
+            > .component-content {
+              background-position: center left;
+            }
+          }
+
+          &-center-center {
+            > .component-content {
+              background-position: center;
+            }
+          }
+
+          &-center-right {
+            > .component-content {
+              background-position: center right;
+            }
+          }
+        }
+      }
+
+      @if $include-attachments {
+        &-attachment {
+          &-scroll {
+            > .component-content {
+              background-attachment: scroll;
+            }
+          }
+
+          &-local {
+            > .component-content {
+              background-attachment: local;
+            }
+          }
+
+          &-fixed {
+            > .component-content {
+              background-attachment: fixed;
+            }
+          }
+        }
+      }
+
+      @if $include-repeats {
+        &-repeat {
+          &-no-r {
+            > .component-content {
+              background-repeat: no-repeat;
+            }
+          }
+
+          &-rx {
+            > .component-content {
+              background-repeat: repeat-x;
+            }
+          }
+
+          &-ry {
+            > .component-content {
+              background-repeat: repeat-y;
+            }
+          }
+
+          &-round {
+            > .component-content {
+              background-repeat: round;
+            }
+          }
+
+          &-space {
+            > .component-content {
+              background-repeat: space;
+            }
+          }
+        }
+      }
+
+      @if $include-blendings {
+        &-blending {
+          &-color {
+            > .component-content {
+              background-blend-mode: color;
+              background-color: inherit !important;
+            }
+          }
+
+          &-color-burn {
+            > .component-content {
+              background-blend-mode: color-burn;
+              background-color: inherit !important;
+            }
+          }
+
+          &-color-dodge {
+            > .component-content {
+              background-blend-mode: color-dodge;
+              background-color: inherit !important;
+            }
+          }
+
+          &-darken {
+            > .component-content {
+              background-blend-mode: darken;
+              background-color: inherit !important;
+            }
+          }
+
+          &-difference {
+            > .component-content {
+              background-blend-mode: difference;
+              background-color: inherit !important;
+            }
+          }
+
+          &-hard-light {
+            > .component-content {
+              background-blend-mode: hard-light;
+              background-color: inherit !important;
+            }
+          }
+
+          &-hue {
+            > .component-content {
+              background-blend-mode: hue;
+              background-color: inherit !important;
+            }
+          }
+
+          &-lighten {
+            > .component-content {
+              background-blend-mode: lighten;
+              background-color: inherit !important;
+            }
+          }
+
+          &-luminosity {
+            > .component-content {
+              background-blend-mode: luminosity;
+              background-color: inherit !important;
+            }
+          }
+
+          &-multiply {
+            > .component-content {
+              background-blend-mode: multiply;
+              background-color: inherit !important;
+            }
+          }
+
+          &-overlay {
+            > .component-content {
+              background-blend-mode: overlay;
+              background-color: inherit !important;
+            }
+          }
+
+          &-saturation {
+            > .component-content {
+              background-blend-mode: saturation;
+              background-color: inherit !important;
+            }
+          }
+
+          &-screen {
+            > .component-content {
+              background-blend-mode: screen;
+              background-color: inherit !important;
+            }
+          }
+
+          &-soft-light {
+            > .component-content {
+              background-blend-mode: soft-light;
+              background-color: inherit !important;
+            }
+          }
+        }
+      }
+    }
+
+    &.video-bg {
+      overflow: hidden !important;
+
+      &.blending {
+        &-color {
+          video.box-video-bg {
+            mix-blend-mode: color;
+          }
+        }
+
+        &-color-burn {
+          video.box-video-bg {
+            mix-blend-mode: color-burn;
+          }
+        }
+
+        &-color-dodge {
+          video.box-video-bg {
+            mix-blend-mode: color-dodge;
+          }
+        }
+
+        &-darken {
+          video.box-video-bg {
+            mix-blend-mode: darken;
+          }
+        }
+
+        &-difference {
+          video.box-video-bg {
+            mix-blend-mode: difference;
+          }
+        }
+
+        &-hard-light {
+          video.box-video-bg {
+            mix-blend-mode: hard-light;
+          }
+        }
+
+        &-hue {
+          video.box-video-bg {
+            mix-blend-mode: hue;
+          }
+        }
+
+        &-lighten {
+          video.box-video-bg {
+            mix-blend-mode: lighten;
+          }
+        }
+
+        &-luminosity {
+          video.box-video-bg {
+            mix-blend-mode: luminosity;
+          }
+        }
+
+        &-multiply {
+          video.box-video-bg {
+            mix-blend-mode: multiply;
+          }
+        }
+
+        &-overlay {
+          video.box-video-bg {
+            mix-blend-mode: overlay;
+          }
+        }
+
+        &-saturation {
+          video.box-video-bg {
+            mix-blend-mode: saturation;
+          }
+        }
+
+        &-screen {
+          video.box-video-bg {
+            mix-blend-mode: screen;
+          }
+        }
+
+        &-soft-light {
+          video.box-video-bg {
+            mix-blend-mode: soft-light;
+          }
+        }
+      }
+
+      video.box-video-bg {
+        @include animate(center);
+        height: 100%; /* height needs to be set to 100% */
+        #{$start-direction}: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%; /* width needs to be set to 100% */
+        z-index: 0;
+
+        &.ready-js {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.paralax-js {
+      background-position: top center;
+      background-repeat: repeat-y;
+      background-size: cover !important;
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      &.bg {
+        @if $include-sizes {
+          &-size-d {
+            &-cover {
+              > .component-content {
+                background-size: cover;
+              }
+            }
+
+            &-contain {
+              > .component-content {
+                background-size: contain;
+              }
+            }
+
+            &-auto {
+              > .component-content {
+                background-size: auto;
+              }
+            }
+
+            @if $include-custom-sizes {
+              $n: 0;
+              $increment: 5;
+              @while $n < 100 {
+                $n: $n + $increment;
+
+                &-w#{$n} {
+                  > .component-content {
+                    background-size: percentage($n/100) auto;
+                  }
+                }
+
+                &-h#{$n} {
+                  > .component-content {
+                    background-size: auto percentage($n/100);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        @if $include-positions {
+          &-position-d {
+            &-top-left {
+              > .component-content {
+                background-position: top left;
+              }
+            }
+
+            &-top-center {
+              > .component-content {
+                background-position: top center;
+              }
+            }
+
+            &-top-right {
+              > .component-content {
+                background-position: top right;
+              }
+            }
+
+            &-bottom-left {
+              > .component-content {
+                background-position: bottom left;
+              }
+            }
+
+            &-bottom-center {
+              > .component-content {
+                background-position: bottom center;
+              }
+            }
+
+            &-bottom-right {
+              > .component-content {
+                background-position: bottom right;
+              }
+            }
+
+            &-center-left {
+              > .component-content {
+                background-position: center left;
+              }
+            }
+
+            &-center-center {
+              > .component-content {
+                background-position: center;
+              }
+            }
+
+            &-center-right {
+              > .component-content {
+                background-position: center right;
+              }
+            }
+          }
+        }
+
+        @if $include-attachments {
+          &-attachment-d {
+            &-scroll {
+              > .component-content {
+                background-attachment: scroll;
+              }
+            }
+
+            &-local {
+              > .component-content {
+                background-attachment: local;
+              }
+            }
+
+            &-fixed {
+              > .component-content {
+                background-attachment: fixed;
+              }
+            }
+          }
+        }
+
+        @if $include-repeats {
+          &-repeat-d {
+            &-no-r {
+              > .component-content {
+                background-repeat: no-repeat;
+              }
+            }
+
+            &-rx {
+              > .component-content {
+                background-repeat: repeat-x;
+              }
+            }
+
+            &-ry {
+              > .component-content {
+                background-repeat: repeat-y;
+              }
+            }
+
+            &-round {
+              > .component-content {
+                background-repeat: round;
+              }
+            }
+
+            &-space {
+              > .component-content {
+                background-repeat: space;
+              }
+            }
+          }
+        }
+
+        @if $include-blendings {
+          &-blending-d {
+            &-color {
+              > .component-content {
+                background-blend-mode: color;
+                background-color: inherit !important;
+              }
+            }
+
+            &-color-burn {
+              > .component-content {
+                background-blend-mode: color-burn;
+                background-color: inherit !important;
+              }
+            }
+
+            &-color-dodge {
+              > .component-content {
+                background-blend-mode: color-dodge;
+                background-color: inherit !important;
+              }
+            }
+
+            &-darken {
+              > .component-content {
+                background-blend-mode: darken;
+                background-color: inherit !important;
+              }
+            }
+
+            &-difference {
+              > .component-content {
+                background-blend-mode: difference;
+                background-color: inherit !important;
+              }
+            }
+
+            &-hard-light {
+              > .component-content {
+                background-blend-mode: hard-light;
+                background-color: inherit !important;
+              }
+            }
+
+            &-hue {
+              > .component-content {
+                background-blend-mode: hue;
+                background-color: inherit !important;
+              }
+            }
+
+            &-lighten {
+              > .component-content {
+                background-blend-mode: lighten;
+                background-color: inherit !important;
+              }
+            }
+
+            &-luminosity {
+              > .component-content {
+                background-blend-mode: luminosity;
+                background-color: inherit !important;
+              }
+            }
+
+            &-multiply {
+              > .component-content {
+                background-blend-mode: multiply;
+                background-color: inherit !important;
+              }
+            }
+
+            &-overlay {
+              > .component-content {
+                background-blend-mode: overlay;
+                background-color: inherit !important;
+              }
+            }
+
+            &-saturation {
+              > .component-content {
+                background-blend-mode: saturation;
+                background-color: inherit !important;
+              }
+            }
+
+            &-screen {
+              > .component-content {
+                background-blend-mode: screen;
+                background-color: inherit !important;
+              }
+            }
+
+            &-soft-light {
+              > .component-content {
+                background-blend-mode: soft-light;
+                background-color: inherit !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

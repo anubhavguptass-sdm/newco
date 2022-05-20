@@ -1,0 +1,277 @@
+/*stylelint-disable*/
+/*
+** MISC SETUP
+*/
+
+// JV SHARER
+$share-icon-size: 40px !default;
+$share-icon-icon-size: 20px !default;
+$share-icon-spacing: 5px !default;
+
+// DEFAULT CONTAINER PADDING
+$container-padding: 1rem !default;
+
+// MAX POSSIBLE COLS- CLASSES FOR FLEXBOX
+$max-columns-in-row: 6 !default;
+
+// MAX CONTENT WIDTH FOR BOTH USED RENDITIONS
+$max-content-width: 1140px !default;
+$max-content-md-width: 940px !default;
+
+// DEFAULT TRANSITION DURATION
+$transition-duration: 0.2s;
+
+$paragraph-margin-bottom: 1rem !default;
+
+$space-5: 5px !default;
+$space-10: 10px !default;
+$space-15: 15px !default;
+$space-20: 20px !default;
+$space-30: 30px !default;
+$space-50: 50px !default;
+
+$spacer-xs: 0.25rem !default;
+$spacer-sm: 0.5rem !default;
+$spacer: 1rem !default;
+$spacer-lg: 2rem !default;
+$spacer-xl: 3rem !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** TABLE
+*/
+
+$default-table-borders-size: 1px !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** BORDERS
+*/
+
+$border-radius: 5px !default; //for showcase
+$border-radius-lg: 0.3rem !default;
+$border-radius-sm: 0.2rem !default;
+
+// DEFAULTS FOR UTILITY CLASSES
+$default-border-width: 1px !default;
+$default-radius-size: $border-radius !default;
+$default-border-color: $white !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** SHADOWS
+*/
+
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** BREADCRUMBS
+*/
+
+// COLORS
+$breadcrumbs-current-color: $color-2 !default;
+$breadcrumbs-parent-color: $color-1 !default;
+$breadcrumbs-arrow-icon-color: $gray-900 !default;
+$breadcrumbs-home-icon-color: $black !default;
+
+// FONT SIZES
+$breadcrumbsfont-size-m: $font-size-body-mobile !default;
+$breadcrumbsfont-size-d: $font-size-body !default;
+$breadcrumbs-text-transform: lowercase !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** TITLE DIVIDER
+*/
+
+$title-divider-color: $color-1 !default;
+$title-divider-width: 80px;
+$title-divider-height: 3px !default;
+$title-bottom-margin: 2rem !default;
+$title-divider-top-margin: 1rem !default;
+$title-bottom-margin-desktop: 2rem !default;
+$title-divider-top-margin-desktop: 1rem !default;
+$link-divider-color: $color-2 !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** TABS DIVIDER COLORS
+*/
+
+// COLORS
+$tab-inactive-color: $gray-300 !default;
+$tab-active-color: $color-1 !default;
+$tab-hover-color: $color-1 !default;
+$tabs-divider-color: $color-1 !default;
+
+// TABS CONTENT SPACING TOP AND BOTTOM, MOBILE AND DESKTOP
+$tabs-content-padd-t-m: $space-20 !default;
+$tabs-content-padd-b-m: $space-20 !default;
+$tabs-content-padd-t-d: $space-50 !default;
+$tabs-content-padd-b-d: $space-50 !default;
+
+// TAB LINKS FONT SIZES
+$tab-nav-item-font-size-m: 19px !default;
+$tab-nav-item-font-size-d: 19px !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** DIVIDERs
+*/
+
+$default-divider-height: 3px !default;
+$default-divider-thick-height: 4px !default;
+$default-divider-thin-height: 1px !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** POWER REVIEWS
+*/
+
+// COLORS
+$pr-exit-icon-color: $black !default;
+$pr-search-icon-color: $black !default;
+$pr-arrow-down-icon-color: $black !default;
+$pr-thumbsup-icon-color: $black !default;
+$pr-thumbsdown-icon-color: $black !default;
+$pr-stars-icon-color: $black !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** VIDEO (OLD PLAYERS DEPRICATED)
+*/
+
+// ICON COLOR
+$video-play-button-icon: $white !default;
+$player-icon-default: get-icon('play-button', $video-play-button-icon) !default;
+$player-icon-hover: get-icon('play-button', $video-play-button-icon) !default;
+$player-icon-width: 72px;
+$player-icon-height: 72px;
+
+//----------------------------------------------------------------------------
+
+/*
+** LISTS
+*/
+
+// LIST BULET COLOR
+$list-bullet-color: $color-4 !default;
+$list-bullet-size: 1.8rem !default;
+$list-bullet-spacing: 1rem !default;
+$list-bottom-spacing: 0.2rem !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** BOX BACKGROUND CUSTOM CLASSES INCLUSION
+*/
+
+$backgrounds-custom-size-step: 5 !default;
+
+//----------------------------------------------------------------------------
+
+// line heights maps settings
+// the resulting class would be then .line-height-(class-appendix groupname)-(class appendix lineheight label)
+// ie.
+// .line-height-all-1-5 {
+//  h1,h2,h3,h4,p,span,a {
+//    line-height: 1.5;
+//  }
+// }
+
+//'class appendix lineheight label': lineheight value
+$line-heights: (
+  '1': 1,
+  '1-1': 1.1,
+  '1-2': 1.2,
+  '1-3': 1.3,
+  '1-4': 1.4,
+  '1-5': 1.5,
+  '1-6': 1.6,
+  '1-7': 1.7,
+  '1-8': 1.8,
+  '1-9': 1.9,
+  '2': 2
+) !default;
+
+// 'class-appendix groupname': selector
+$line-height-targets: (
+  'p': 'p',
+  'a': 'a',
+  'span': 'span',
+  'h1': 'h1',
+  'h2': 'h2',
+  'h3': 'h3',
+  'h4': 'h4',
+  'headings': 'h1,h2,h3,h4',
+  'all': 'h1,h2,h3,h4,p,span,a'
+) !default;
+
+//max unit steps for class and units declarations
+$max-unit-steps: 5 !default;
+// basic unit used
+$basic-unit: rem !default;
+
+//  classes list and variations
+//  t - top
+//  b - bottom
+//  l - left
+//  r - right
+//  y - top and bottom
+//  x - left and right
+$paddings-margins-classes-list: '', 't', 'b', 'l', 'r', 'y', 'x' !default;
+
+/*
+** BORDERS
+*/
+
+// border utility classes
+$border-sides: '', 'top', 'left', 'bottom', 'right', '0' !default;
+$rounded-sides: '', 'top', 'left', 'bottom', 'right', 'top-left', 'top-right',
+  'bottom-left', 'bottom-right', 'pill', 'circle', '0' !default;
+
+/*
+** ACCESIBILITY
+*/
+$aria-outline: solid $color-1 1px !default;
+
+/*
+** BP CONTENT LOADER
+*/
+$content-loader-animation-duration: 2s !default;
+$content-loader-statusbar-height: 10px !default;
+$content-loader-statusbar-offset: 2rem !default;
+$content-loader-statusbar-color: $color-1 !default;
+$content-loader-statusbar-position: bottom !default;
+/*stylelint-enable*/
+
+$default-icon-color: transparent;
+$external-link-arrow-size: 14px;
+$external-link-arrow-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/external-link-icon.png);
+
+$video-play-button-icon: $white !default;
+$player-icon-default: get-icon('play-button', $video-play-button-icon) !default;
+$player-icon-hover: get-icon('play-button', $video-play-button-icon) !default;
+$player-icon-width: 72px;
+$player-icon-height: 72px;
+
+$backgrounds-custom-size-step: 5 !default;
+
+$line-height-100: 1;
+$line-height-125: 1.25;
+$line-height-130: 1.3;
+$line-height-150: 1.5;
+$line-height-160: 1.6;

@@ -1,0 +1,240 @@
+body,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+  font-family: $font-family-default !important;
+}
+
+.max-width-1440 {
+  max-width: 1440px !important;
+}
+
+body img {
+  height: auto;
+}
+#content {
+  @media (min-width: 1024px) {
+    margin-top: 180px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .flex.cols-d-2 > * > .component-content > *,
+  .flex.cols-d-2 > * > figure > *,
+  .flex.cols-d-2 > * > .paragraphSystem > *,
+  .flex.cols-d-2 > * > .navigation-root > * {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-sd-min) {
+  .flex.cols-d-2 > * > .component-content > *,
+  .flex.cols-d-2 > * > figure > *,
+  .flex.cols-d-2 > * > .paragraphSystem > *,
+  .flex.cols-d-2 > * > .navigation-root > * {
+    flex-basis: calc(100% / 2);
+    max-width: calc(100% / 2);
+    width: calc(100% / 2);
+  }
+}
+
+p {
+  margin: 0 0 1rem 0;
+
+  &.small {
+    font-size: $font-size-14;
+  }
+
+  &.extra-small-text {
+    font-size: $font-size-12;
+  }
+
+  &.lead {
+    font-size: $font-size-18;
+    line-height: $line-height-160;
+
+    strong {
+      line-height: $line-height-160;
+    }
+  }
+}
+
+a {
+  padding: 0 1px;
+  &:focus,
+  &:focus:focus-visible {
+    outline: 2px dotted;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-color-2);
+    color: $color-2;
+  }
+}
+/* global css start  */
+
+.line-height-160 {
+  line-height: $line-height-160;
+}
+
+.line-height-150 {
+  line-height: $line-height-150;
+}
+
+.line-height-130 {
+  line-height: $line-height-130;
+}
+
+.line-height-125 {
+  line-height: $line-height-125;
+}
+
+.line-height-100 {
+  line-height: $line-height-100;
+}
+
+.font-light {
+  font-weight: $font-light;
+}
+
+.font-normal {
+  font-weight: $font-normal;
+}
+
+.font-semi-bold {
+  font-weight: $font-semi-bold;
+}
+
+.font-bold {
+  font-weight: $font-bold;
+}
+
+.font-extra-bold {
+  font-weight: $font-extra-bold;
+}
+
+.font-small-12 {
+  font-size: 0.75rem;
+}
+
+.font-small-14 {
+  font-size: 0.875rem;
+}
+
+.font-small-15 {
+  font-size: 0.938rem;
+}
+
+.font-size-16 {
+  font-size: 1rem;
+}
+
+.font-small-1-5 {
+  font-size: 1.5rem;
+}
+
+.font-small-1-125 {
+  font-size: 1.125rem;
+}
+
+.color-grey-3 {
+  color: $color-3;
+}
+
+.text-color-black-1 {
+  color: $color-1;
+}
+
+.text-color-aqua {
+  color: $color-secondary-aqua;
+}
+
+.text-color-lime {
+  color: $color-secondary-lime;
+}
+
+.bg-color-aqua {
+  background-color: $color-secondary-aqua;
+}
+
+/* global css end */
+
+.big-text {
+  font-size: $font-size-18;
+  line-height: $line-height-160;
+}
+
+.strong,
+strong {
+  font-weight: $font-extra-bold;
+  line-height: $line-height-160;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+a[style*='visibility:hidden'] {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.justify-right {
+  justify-content: flex-end;
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-none {
+  display: none;
+}
+.align-center {
+  align-items: center;
+}
+.align-flex-start {
+  align-items: flex-start;
+}
+.align-flex-end {
+  align-items: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-flex-start {
+  justify-content: flex-start;
+}
+.justify-flex-end {
+  justify-content: flex-end;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}

@@ -1,0 +1,32 @@
+.tagList-tag-link, .tagList-tag-item {
+  background-color: #e1e1e1;
+  border: 1px solid #656363;
+  color: #323131;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block; }
+  .tagList-tag-link:hover, .tagList-tag-item:hover {
+    background-color: #939191;
+    color: white; }
+
+.tagList-heading {
+  font-weight: bold;
+  color: #323131;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  display: block; }
+
+.tagList-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.tagList-tag {
+  display: inline-block; }
+
+.tagList-tag-link, .tagList-tag-item {
+  margin-right: 5px;
+  text-decoration: none; }
+  .tagList-tag-link:hover, .tagList-tag-link:active, .tagList-tag-item:hover, .tagList-tag-item:active {
+    color: #fff; }

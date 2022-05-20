@@ -1,0 +1,36 @@
+/*
+** ACCORDION
+*/
+
+/*SETTINGS*/
+$accordion-full-width-background: true !default;
+$accordion-title-padding: 1rem !default;
+$accordion-content-padding: 1rem !default;
+$accordion-title-padding-desktop: 1rem !default;
+$accordion-content-padding-desktop: 1rem !default;
+$accordion-closed-icon: get-icon('arrow-down', $color-1) !default;
+$accordion-closed-icon-hover: get-icon('arrow-down', $color-1) !default;
+$accordion-opened-icon: get-icon('arrow-up', $color-1) !default;
+$accordion-opened-icon-hover: get-icon('arrow-up', $color-1) !default;
+$accordion-icon-size: 20px !default;
+$accordion-icon-size-desktop: 30px !default;
+$accordion-icon-offset: 1rem !default;
+
+/*COLORS*/
+$accordion-link-color: $color-2 !default;
+$accordion-background-color: $color-7 !default;
+$accordion-separator-color: $color-7 !default;
+$accordion-separator-bottom-offset: 0% !default;
+$accordion-separator-width: calc(
+  100% - (#{$accordion-title-padding-desktop} * 2)
+) !default;
+$accordion-list-color: $color-3 !default;
+$accordion-plus-icon-color: $color-1 !default;
+$accordion-minus-icon-color: $color-1 !default;
+
+/*ITEM TITLE TOP AND BOTTOM SPACING*/
+$accordion-heading-spacing-t-b: $space-5 !default;
+
+/*ITEM FONT SIZES*/
+$accordion-link-font-size-m: $font-size-body-mobile !default;
+$accordion-link-font-size-d: $font-size-body !default;

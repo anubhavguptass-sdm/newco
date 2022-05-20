@@ -1,0 +1,95 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.webinar {
+  border: 1px solid #D5D1CE; }
+  .webinar .containerInner {
+    height: auto;
+    overflow: hidden;
+    padding: 1% 1% 0 0%; }
+  .webinar .contentLeft {
+    overflow: hidden;
+    float: left;
+    width: 60%; }
+  .webinar .contentRight {
+    overflow: hidden; }
+  .webinar .footer {
+    overflow: hidden;
+    margin: 10px auto; }
+    .webinar .footer .webinarArrowLeft {
+      background: url("../../img/arrows/leftArrow.png") no-repeat left center;
+      bottom: 0;
+      left: 0; }
+    .webinar .footer .webinarArrowRight {
+      background: url("../../img/arrows/rightArrow.png") no-repeat left center;
+      right: 0;
+      bottom: 0; }
+  .webinar .content {
+    overflow: auto;
+    margin: 0 0 0 10px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden; }
+    .webinar .content .webinarThumbnails {
+      margin: 0 46px;
+      overflow: hidden; }
+      @media only screen and (max-width: 767px) {
+        .webinar .content .webinarThumbnails {
+          margin: 0 20px; } }
+      .webinar .content .webinarThumbnails .view-chapters-button {
+        display: none; }
+        @media only screen and (max-width: 767px) {
+          .webinar .content .webinarThumbnails .view-chapters-button {
+            display: block; } }
+      @media only screen and (max-width: 767px) {
+        .webinar .content .webinarThumbnails .desktop-only {
+          display: none; } }
+      .webinar .content .webinarThumbnails .imagesContainer {
+        overflow: hidden;
+        position: relative; }
+  .webinar .webinarThumbnails {
+    margin: 0 46px;
+    overflow: hidden; }
+  .webinar .slide {
+    text-align: center; }
+    .webinar .slide img {
+      width: 96%; }
+  .webinar .videoDetail {
+    text-align: left;
+    overflow: hidden;
+    margin: 5px 5px 45px 0;
+    padding: 0; }
+  .webinar .imageSeparator {
+    margin: 0 8px; }
+  .webinar .imagesContainer div {
+    float: left; }
+    .webinar .imagesContainer div img {
+      float: left;
+      cursor: pointer;
+      width: 150px;
+      height: 115px;
+      display: block;
+      border: 1px solid #D5D1CE; }
+  .webinar .imageBox.activeSlide img {
+    border: 1px solid #D5D1CE; }
+  .webinar .video {
+    width: 100%;
+    height: 250px; }
+  .webinar .webinarArrowLeft, .webinar .webinarArrowRight {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    padding: 50px 0; }

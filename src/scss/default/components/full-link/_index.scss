@@ -1,0 +1,168 @@
+@if $include-full-link {
+  //image full link for image component
+  .full-link {
+    &.hover-effect {
+      .image {
+        img {
+          @include animate(cemter, 0, 0.25s);
+          transform: scale(1);
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.25);
+          }
+        }
+      }
+    }
+
+    &.r1x1 {
+      .image {
+        > .component-content {
+          padding-bottom: 100%;
+        }
+      }
+    }
+
+    &.r4x3 {
+      .image {
+        > .component-content {
+          padding-bottom: 75%;
+        }
+      }
+    }
+
+    &.r16x9 {
+      .image {
+        > .component-content {
+          padding-bottom: 56.25%;
+        }
+      }
+    }
+
+    &.r3x2 {
+      .image {
+        > .component-content {
+          padding-bottom: 66.66%;
+        }
+      }
+    }
+
+    &.r8x5 {
+      .image {
+        > .component-content {
+          padding-bottom: 62.5%;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+
+      img {
+        max-width: 100%;
+        width: auto;
+      }
+
+      *:not(a) {
+        position: static;
+      }
+
+      a {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        flex-direction: $row-direction;
+        flex-wrap: nowrap;
+        justify-content: center;
+        #{$start-direction}: 0;
+        margin: auto;
+        position: absolute;
+        #{$end-direction}: 0;
+        top: 0;
+      }
+    }
+  }
+  //image full link for image component
+  .full-link.image {
+    position: relative;
+
+    &.hover-effect {
+      .image {
+        img {
+          @include animate(cemter, 0, 0.25s);
+          transform: scale(1);
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.25);
+          }
+        }
+      }
+    }
+
+    &.r1x1 {
+      .image {
+        > .component-content {
+          padding-bottom: 100%;
+        }
+      }
+    }
+
+    &.r4x3 {
+      .image {
+        > .component-content {
+          padding-bottom: 75%;
+        }
+      }
+    }
+
+    &.r16x9 {
+      .image {
+        > .component-content {
+          padding-bottom: 56.25%;
+        }
+      }
+    }
+
+    &.r3x2 {
+      .image {
+        > .component-content {
+          padding-bottom: 66.66%;
+        }
+      }
+    }
+
+    &.r8x5 {
+      .image {
+        > .component-content {
+          padding-bottom: 62.5%;
+        }
+      }
+    }
+
+    img {
+      max-width: 100%;
+      width: auto;
+    }
+
+    *:not(a) {
+      position: static;
+    }
+
+    a {
+      align-items: center;
+      bottom: 0;
+      display: flex;
+      flex-direction: $row-direction;
+      flex-wrap: nowrap;
+      justify-content: center;
+      #{$start-direction}: 0;
+      margin: auto;
+      position: absolute;
+      #{$end-direction}: 0;
+      top: 0;
+    }
+  }
+}

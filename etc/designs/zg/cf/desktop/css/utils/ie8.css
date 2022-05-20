@@ -1,0 +1,12 @@
+/* IE8 Specific Styles */
+/* Lighbox */
+.lightboxOverlay {
+  background-image: url("../img/white.png"); }
+
+.lightboxContainer {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#d2d2d2')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#d2d2d2');
+  zoom: 1; }
+
+.lbClose {
+  background-image: url("../../assets/img/lb-close.png"); }

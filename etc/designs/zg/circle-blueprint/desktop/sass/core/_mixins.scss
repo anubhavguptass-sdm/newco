@@ -1,0 +1,200 @@
+@import "compass";
+@import "colors";
+// import variables for font awesome
+@import "../utils/fa-variables";
+
+$break-desktop: 990px;
+$break-mobile: 767px;
+$break-small-mobile: 239px;
+
+//http://compass-style.org/help/tutorials/spriting/customization-options/
+// $arrows-spacing: 50px;
+// $arrows-sprite-dimensions: true;
+// @import "arrows/*.png";
+
+// $arrows-sprite-map: sprite-map("arrows/*.png", $spacing: 50px); // define a sprite map for mixing "get-sprite" to prevent error when including sprite in @media
+
+// source:  http://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+// list of icons and their names can be found here : http://fontawesome.io/icons/
+@mixin font-awesome($ico) {
+  content: $ico;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  position: relative;
+  font-weight: normal;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin overflowclear() {
+  overflow: visible;
+}
+
+@mixin frame() {
+  border: solid 2px $borderColor;
+}
+
+@mixin filled() {
+  background-color: $backgroundColor;
+}
+
+@mixin innerspace() {
+  padding: 13px;
+}
+
+@mixin separated() {
+  border-bottom: solid 2px $borderColor;
+}
+
+@mixin pull-right() {
+  float: right;
+}
+
+@mixin pull-left() {
+  float: left;
+}
+
+@mixin heading() {
+  display: block;
+  color: $textColor;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+//@mixin navi-arrow($state) {
+//    @if $state == 'down'{
+//        background-image: url(../../assets/img/arrow-down.png);
+//    } @else {
+//        background-image: url(../../assets/img/arrow-right.png);
+//    }
+//    background-position: 100% center;
+//    background-repeat: no-repeat;
+//}
+
+@mixin respond-to($media) {
+  @if $media == small-mobile {
+    @media only screen and (max-width: $break-small-mobile) {
+      @content;
+    }
+  } @else if $media == mobile {
+    @media only screen and (max-width: $break-mobile) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (min-width: $break-mobile + 1) and (max-width: $break-desktop - 1) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media only screen and (min-width: $break-desktop) {
+      @content;
+    }
+  }
+
+  // Usage!!
+  // @include respond-to(mobile) {
+  //     margin-left: 10px;
+  // }
+  // @include respond-to(tablet) {
+  //     width: 50%;
+  // }
+  // @include respond-to(desktop) {
+  //     width: 50%;
+  // }
+}
+
+// http://compass-style.org/reference/compass/helpers/sprites/
+@mixin get-sprite($map, $sprite, $repeat: no-repeat, $height: true, $width: true) {
+
+  //http://compass-style.org/reference/compass/helpers/sprites/#sprite-file
+  $sprite-image: sprite-file($map, $sprite);
+
+  // http://compass-style.org/reference/compass/helpers/sprites/#sprite-url
+  $sprite-map: sprite-url($map);
+
+  // http://compass-style.org/reference/compass/helpers/sprites/#sprite-position
+  $sprite-position: sprite-position($map, $sprite);
+
+  // Returns background
+  background: $sprite-map $sprite-position $repeat;
+
+  // http://compass-style.org/reference/compass/helpers/image-dimensions/
+  // Checks to see if the user wants height returned
+  @if $height == true {
+    // Gets the height of the sprite-image
+    $sprite-height: image-height($sprite-image);
+    // Returns the height
+    height: $sprite-height;
+  }
+
+  // http://compass-style.org/reference/compass/helpers/image-dimensions/
+  // Checks to see if the user wants height returned
+  @if $width == true {
+    // Gets the width of the sprite-image
+    $sprite-width: image-width($sprite-image);
+    // Returns the width
+    width: $sprite-width;
+  }
+}
+
+//Function that gets nth element from margin, padding and border widths with support of shorthand notatinon
+@function nth_($list, $n) {
+  $list-length: length($list);
+  @if $list-length == 0 {
+    @warn "nth_ is for $list containing 1, 2, or 4 elements, list contains 0 elements";
+  } @else if $list-length == 1 {
+    @return nth($list, 1);
+  } @else if $list-length == 2 or $list-length == 3 {
+    @if $n == 1 {
+      @return nth($list, 1);
+    } @else if $n == 2 {
+      @return nth($list, 2);
+    } @else if $n == 3 {
+      @return nth($list, 1);
+    } @else if $n == 4 {
+      @return nth($list, 2);
+    }
+  } @else if $list-length == 4 {
+    @return nth($list, $n);
+  } @else {
+    @warn "nth_ is for $list containing less then 5 elements";
+  }
+}
+
+
+
+/* BUTTONS
+----------------------------------*/
+
+
+@mixin btn{
+	background-color: $backgroundColorOrange;
+	border-radius: 3px;
+	color: $white;
+	padding: 8px 20px; 
+	border: 1px solid #ccc;
+	cursor: pointer;
+    display: inline-block;
+   &:hover {
+     background-color: $backgroundHoverColor;color: $textHoverColor;
+   }
+   &:active {
+      background-color: $backgroundHoverColor; color: $textHoverColor;
+   }
+
+}  
+@mixin cursor-pointer{ 
+	cursor:pointer;
+}

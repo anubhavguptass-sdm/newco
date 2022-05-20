@@ -1,0 +1,36 @@
+.breadcrumbs {
+  margin: 10px 0; }
+  .breadcrumbs-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .breadcrumbs-list li {
+      float: left;
+      margin-right: 6px; }
+      @media only screen and (max-width: 767px) {
+        .breadcrumbs-list li {
+          float: none; } }
+  .breadcrumbs-separator {
+    margin: 0 10px; }
+  .breadcrumbs-without-separator .breadcrumbs-separator {
+    display: none; }
+  .breadcrumbs-without-separator li {
+    position: relative;
+    padding-right: 15px;
+    margin-right: 9px; }
+    .breadcrumbs-without-separator li:before {
+      top: 5px;
+      right: 0;
+      content: "\f054";
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      position: relative;
+      font-weight: normal;
+      position: absolute;
+      font-size: 8px; }
+    .breadcrumbs-without-separator li:last-child {
+      background-image: none; }
+      .breadcrumbs-without-separator li:last-child:before {
+        display: none; }

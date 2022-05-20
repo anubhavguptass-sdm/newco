@@ -1,0 +1,21 @@
+@import '../../core/mixins';
+
+.image {
+  .right {
+    text-align: right;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .middle {
+    text-align: center;
+  }
+}
+
+@include respond-to(mobile) {
+  .image .component-content {
+    text-align: center;
+  }
+}

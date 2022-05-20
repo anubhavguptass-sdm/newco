@@ -1,0 +1,37 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.articleTeaser .articleTeaser-image-holder.articleTeaser-image-top img {
+  border-bottom: solid 4px #f36633; }
+
+.articleTeaser .articleTeaser-text-content .articleTeaser-text-link {
+  background-color: #f36633;
+  border-radius: 3px;
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block; }
+  .articleTeaser .articleTeaser-text-content .articleTeaser-text-link:hover {
+    background-color: #939191;
+    color: white; }
+  .articleTeaser .articleTeaser-text-content .articleTeaser-text-link:active {
+    background-color: #939191;
+    color: white; }
+
+/* Mobile view 767 max width */
+@media only screen and (max-width: 767px) {
+  .articleTeaser .component-content.hero-article .articleTeaser-text-content {
+    width: 100%; }
+  .articleTeaser .articleTeaser-image-holder {
+    text-align: center; } }

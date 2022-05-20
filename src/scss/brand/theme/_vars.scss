@@ -1,0 +1,24 @@
+//stylelint-disable
+// please maintain the order of variable inclusion list
+
+@import 'theme-variables/breakpoints';
+@import 'theme-variables/inclusions';
+@import 'theme-variables/icons';
+@import 'theme-variables/typography';
+@import 'theme-variables/other-utility-and-misc';
+@import 'theme-variables/flex';
+@import 'theme-variables/megamenu-navigation';
+@import 'theme-variables/basics-links-buttons-borders';
+
+@import 'theme-variables/videoplayer';
+@import 'theme-variables/accordion';
+@import 'theme-variables/carousel';
+@import 'theme-variables/filter';
+@import 'theme-variables/forms';
+@import 'theme-variables/footer';
+@import 'theme-variables/search-results';
+//@import 'theme-variables/font-resizer';
+@import 'theme-variables/share-container';
+//@import 'theme-variables/exit_notification';
+
+//stylelint-enable

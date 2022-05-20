@@ -1,0 +1,131 @@
+// sets element max width depends on max content width declaration
+.max-content-width {
+  clear: both;
+  float: none !important;
+  margin-#{$start-direction}: auto !important;
+  margin-#{$end-direction}: auto !important;
+  max-width: 100% !important;
+
+  * {
+    clear: both;
+    float: none;
+  }
+
+  @media (min-width: $breakpoint-md-min) {
+    max-width: $max-content-width !important;
+  }
+
+  @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-min) {
+    max-width: $max-content-md-width !important;
+  }
+}
+
+@if $include-width-utility-classes {
+  // max-width & width utility class
+  .max-image-w-none {
+    img {
+      max-width: none !important;
+    }
+  }
+
+  .min-image-w-auto {
+    img {
+      min-width: auto !important;
+    }
+  }
+
+  .min-w-auto {
+    min-width: auto !important;
+  }
+
+  .image-w-auto {
+    img {
+      width: auto !important;
+    }
+  }
+
+  .max-w-none {
+    max-width: none !important;
+  }
+
+  .max-image-w-none {
+    image {
+      max-width: none !important;
+    }
+  }
+
+  .max-w-m-auto {
+    @media (max-width: $breakpoint-md-max) {
+      max-width: none !important;
+    }
+  }
+
+  .max-w-d-auto {
+    @media (min-width: $breakpoint-md-min) {
+      max-width: none !important;
+    }
+  }
+
+  .w {
+    &-auto {
+      max-width: none !important;
+      flex-basis: auto !important;
+      width: auto !important;
+      min-width: auto !important;
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      //desktop styles
+      &-d-auto {
+        max-width: none !important;
+        flex-basis: auto !important;
+        width: auto !important;
+        min-width: auto !important;
+      }
+    }
+  }
+
+  [class*='w-d-'],
+  [class*='w-m-'] {
+    max-width: none !important;
+    min-width: auto !important;
+  }
+
+  @media (min-width: $breakpoint-md-min) {
+    @for $i from 1 through 100 {
+      .max-w-d-#{$i} {
+        max-width: percentage($i/100) !important;
+      }
+
+      .w-d-#{$i} {
+        width: percentage($i/100) !important;
+        flex-basis: percentage($i/100) !important;
+      }
+
+      .max-image-w-d-#{$i} {
+        img {
+          max-width: percentage($i/100) !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    @for $i from 1 through 100 {
+      .max-w-m-#{$i} {
+        max-width: percentage($i/100) !important;
+      }
+
+      .w-m-#{$i} {
+        width: percentage($i/100) !important;
+        flex-basis: percentage($i/100) !important;
+      }
+
+      .max-image-w-m-#{$i} {
+        img {
+          max-width: percentage($i/100) !important;
+        }
+      }
+    }
+  }
+}

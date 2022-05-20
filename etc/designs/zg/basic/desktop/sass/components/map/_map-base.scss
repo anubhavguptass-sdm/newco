@@ -1,0 +1,18 @@
+@import '../../core/mixins';
+
+.map-canvas {
+  margin-bottom: 10px;
+
+  @include frame();
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: inherit;
+  }
+}
+
+.no-js .map-canvas img {
+  width: 100%;
+  max-width: 640px;
+}

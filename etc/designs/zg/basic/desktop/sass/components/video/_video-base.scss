@@ -1,0 +1,39 @@
+@import '../../core/mixins';
+
+.video {
+  object,
+  embed {
+    width: 100%;
+  }
+
+  &-heading {
+    @include heading();
+  }
+
+  &-description {
+    @include innerspace();
+    margin-top: -2px;
+
+    @include frame();
+  }
+
+  &-video {
+    @include frame();
+
+    &-container {
+      margin: 0 auto;
+    }
+  }
+
+  &-nojs {
+    display: none;
+    padding: 20px 0;
+
+    text-align: center;
+    color: $red;
+  }
+}
+
+.no-js .video-nojs {
+  display: block;
+}

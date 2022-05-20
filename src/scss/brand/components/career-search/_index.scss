@@ -1,0 +1,53 @@
+/* carrer search box */
+
+.career-search-wrapper {
+  position: absolute;
+  bottom: -73px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.haleon-career-search-section {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.haleon-career-search-input-element {
+  display: flex;
+  justify-content: center;
+}
+
+.haleon-career-search-section .haleon-career-search-card button {
+  height: 48px;
+  width: 48px;
+  background: #30ea03;
+  cursor: pointer;
+}
+
+.haleon-career-search-section .haleon-career-search-card img.career-search-img {
+  width: 24px;
+  padding: 3px;
+}
+
+.haleon-career-search-section .haleon-career-search-card input {
+  margin: 0 1.5rem 0 0;
+  background: #ddd;
+  outline: 1px solid #ddd;
+  padding: 1rem;
+  border: none;
+  max-width: 417px;
+  width: 50%;
+  height: 48px;
+}
+
+.haleon-career-search-section .haleon-career-search-card {
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0px 16px 40px -8px #0000001a;
+  max-width: 994px;
+}
+
+/* carrer search box end */

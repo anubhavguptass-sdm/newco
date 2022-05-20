@@ -1,0 +1,70 @@
+// adds linear vertical gradient background
+@mixin gradient-linear($top, $bottom) {
+  background: $top; /* Old browsers */
+  background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $top),
+    color-stop(100%, $bottom)
+  );
+  background: -webkit-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -o-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -ms-linear-gradient(top, $top 0%, $bottom 100%);
+  background: linear-gradient(to bottom, $top 0%, $bottom 100%);
+}
+// adds linear horizontal gradient background
+@mixin gradient-horizontal($startColor, $endColor) {
+  background-color: $endColor;
+  background-image: -moz-linear-gradient(left, $startColor, $endColor);
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from($startColor),
+    to($endColor)
+  );
+  background-image: -webkit-linear-gradient(left, $startColor, $endColor);
+  background-image: -o-linear-gradient(left, $startColor, $endColor);
+  background-image: linear-gradient(to right, $startColor, $endColor);
+  background-repeat: repeat-x;
+}
+// adds radial gradient background
+@mixin gradient-radial($from, $to) {
+  background: -moz-radial-gradient(
+    center,
+    circle farthest-side,
+    $from 0%,
+    $to 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0,
+    center center,
+    100%,
+    color-stop(0%, $from),
+    color-stop(100%, $to)
+  );
+  background: -webkit-radial-gradient(
+    center,
+    circle farthest-side,
+    $from 0%,
+    $to 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    circle farthest-side,
+    $from 0%,
+    $to 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    circle farthest-side,
+    $from 0%,
+    $to 100%
+  );
+  background: radial-gradient(center, circle farthest-side, $from 0%, $to 100%);
+  background-color: $from;
+}

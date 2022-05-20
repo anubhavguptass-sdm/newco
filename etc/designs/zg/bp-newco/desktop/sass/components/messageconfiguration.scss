@@ -1,0 +1,69 @@
+@import '../core/mixins'; 
+ 
+.messageconfiguration{
+
+	margin-top:20px;
+	
+	
+}
+.messageconfiguration .sendMessage, .cfButton{
+	background-color: $backgroundColorOrange;
+	border:$borderbox;
+	color: $white;
+	padding: 5px 20px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+
+.messageconfiguration .emailTemplate table{
+	width:100%;
+}
+
+.messageconfiguration .messagaeConfigurationContent .messageInput select{
+	display:inline-block;
+	width:35%;
+}
+.messageconfiguration .messagaeConfigurationContent .messageInput label{
+	display:inline-block;
+	width:25%;
+	vertical-align: top;
+}
+.messageconfiguration .messagaeConfigurationContent .messageInput{
+	margin-bottom:15px;
+}
+.messageconfiguration .messagaeConfigurationContent .emailTemplateContainer{
+	margin-bottom:10px;
+	h5{
+		border: 1px solid #e0e0e0;
+		padding: 10px;
+	}
+	p{
+		margin:0;margin-bottom:10px;
+	}
+	table{
+		width:100%;
+	}
+ 
+}
+
+
+.messageconfiguration .responseMessageText p{
+		border:solid 1px #DDB5B3;
+		border-radius:2px;
+		color:#7B474D;
+		padding:5px;
+		margin-right:10px;
+		font-size:11px;
+		
+	}
+.messageconfiguration .responseMessageText p.msgResFailure{
+	background:#FFD3D4;
+}
+.messageconfiguration .responseMessageText p.msgResSuccess{
+	background:#D5FECC;
+}
+.messageconfiguration .messagaeConfigurationContent .sendMessage:disabled {
+	background: #e0e0e0;
+	cursor:default;
+} 

@@ -1,0 +1,235 @@
+.product-slider {
+  display: flex;
+  flex-direction: column;
+
+  .slider-galeria-thumbs {
+    order: 2;
+    width: 60% !important;
+    height: auto !important;
+    float: none;
+
+    @include sm {
+      display: none;
+    }
+
+    .slick-list {
+      height: auto !important;
+      margin-bottom: 1rem;
+      margin-top: -2rem;
+      z-index: 10;
+    }
+
+    .slick-current {
+      span {
+        height: auto !important;
+      }
+    }
+
+    .slick-active {
+      span {
+        height: auto !important;
+        margin: 0 1rem 0 1rem;
+
+        @include sd {
+          margin: 0 1rem 0 0;
+        }
+      }
+    }
+
+    .slick-track {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .thumbs-wrapper p {
+      width: 50%;
+      padding: 1rem;
+      text-align: left;
+    }
+  }
+
+  .slider-galeria {
+    order: 1;
+    width: 100% !important;
+
+    .slick-track {
+      display: flex;
+      flex-direction: row;
+      transform: none;
+      width: 4320px !important;
+
+      .slick-slide {
+        width: 100vw !important;
+
+        .carousel-wrapper {
+          position: relative;
+
+          @include sd {
+            flex-direction: column;
+          }
+
+          div.max-content-width {
+            @include sd {
+              padding-left: 1.5rem !important;
+              padding-right: 1.5rem !important;
+            }
+          }
+
+          div {
+            padding-left: 5rem;
+            padding-right: 7rem;
+            position: relative;
+
+            @include lg {
+              padding-left: 0rem;
+              padding-right: 2rem;
+            }
+
+            @include sd {
+              order: 2;
+              width: 100% !important;
+              margin-top: 2rem;
+              margin-bottom: 4rem;
+            }
+
+            div {
+              width: 100% !important;
+              padding: 0;
+              display: flex;
+              justify-content: space-between;
+
+              @include sd {
+                margin-top: 0;
+              }
+
+              p {
+                span {
+                  display: inline-block !important;
+                  float: none !important;
+                  padding: 2px 5px;
+                  color: var(--color-2);
+                  border: 1px dotted var(--color-3);
+                }
+              }
+
+              .read-time {
+                p:last-of-type {
+                  padding-top: 8px;
+
+                  &::before {
+                    content: '';
+                    background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/Other-Clock.svg');
+                    position: absolute;
+                    top: 5px;
+                    left: -25px;
+                    height: 16px;
+                    width: 16px;
+
+                    @include sd {
+                      top: 2px !important;
+                      right: 80px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          h2 {
+            text-align: left;
+            margin-left: 2rem;
+            font-size: $font-size-h2;
+            line-height: $line-height-125;
+            font-weight: $font-extra-bold;
+
+            @include sd {
+              margin-left: 1.5rem;
+              font-size: $font-size-h3;
+              line-height: $line-height-125;
+            }
+          }
+
+          p {
+            text-align: left;
+            margin-left: 2rem;
+            font-size: $font-size-h5;
+            line-height: $line-height-150;
+            margin-right: 0;
+
+            @include sd {
+              margin-left: 1.5rem;
+            }
+
+            span {
+              height: auto !important;
+              float: left;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      img {
+        left: 0 !important;
+        right: unset !important;
+
+        @include sd {
+          order: 1;
+          width: 100% !important;
+        }
+      }
+    }
+
+    ul.slick-dots {
+      text-align: center;
+      padding: 0;
+      position: absolute;
+      bottom: 8rem;
+      left: 122px;
+      cursor: pointer;
+      width: 50px;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+
+      @media screen and (max-width: 1366px) {
+        left: 5rem;
+      }
+
+      @media screen and (max-width: 1280px) {
+        left: 2rem;
+        bottom: 7rem;
+      }
+
+      @media screen and (max-width: 1180px) {
+        left: 7.5rem;
+      }
+
+      @media screen and (max-width: 1024px) {
+        left: 3.5rem;
+      }
+
+      @include sd {
+        bottom: 7rem;
+        left: 22px;
+      }
+
+      @include sm {
+        bottom: 3.5rem;
+      }
+    }
+
+    .slick-dots li {
+      width: 4px;
+      height: 20px;
+      background-color: $color-1;
+      border-radius: 0;
+    }
+
+    .slick-dots li.slick-active {
+      width: 8px;
+      height: 32px;
+      background-color: var(--color-black);
+    }
+  }
+}

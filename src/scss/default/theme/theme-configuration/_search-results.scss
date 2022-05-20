@@ -1,0 +1,46 @@
+/*
+** SEARCH RESULTS
+*/
+
+// description
+$search-result-description-color: $black !default;
+$search-result-description-font-size: 16px !default;
+$search-result-description-font-size-desktop: 18px !default;
+$search-result-description-font-weight: normal !default;
+$search-result-description-font-weight-desktop: normal !default;
+$search-result-description-line-height: 20px !default;
+$search-result-description-line-height-desktop: 20px !default;
+
+// title
+$search-result-title-color: $color-1 !default;
+$search-result-title-font-size: 16px !default;
+$search-result-title-font-size-desktop: 18px !default;
+$search-result-title-font-weight: 700 !default;
+$search-result-title-font-weight-desktop: 700 !default;
+$search-result-title-bottom-margin: 0.5rem !default;
+$search-result-title-decoration: none !default;
+
+// pagination
+$search-result-pagination-justification: center !default;
+$search-result-pagination-font-size: 16px !default;
+$search-result-pagination-font-size-desktop: 18px !default;
+$search-result-pagination-font-color: $color-1 !default;
+$search-result-pagination-font-weight: normal !default;
+
+// result
+$result-y-padding: 1rem !default;
+
+// label
+$search-result-label-hidden: false !default;
+$search-result-label-bottom-offset: 2rem !default;
+$search-result-label-left-offset-mobile: -1rem !default;
+$search-result-label-font-size: 16px !default;
+$search-result-label-font-size-desktop: 18px !default;
+$search-result-label-font-color: $gray-600 !default;
+$search-result-label-font-weight: 700 !default;
+$search-result-label-font-weight-desktop: 700 !default;
+$search-result-label-font-size-keayword: 16px !default;
+$search-result-label-font-size-desktop-keyword: 18px !default;
+$search-result-label-font-keyword-color: $color-1 !default;
+$search-result-label-font-keyword-weight: 700 !default;
+$search-result-label-font-keyword-weight-desktop: 700 !default;

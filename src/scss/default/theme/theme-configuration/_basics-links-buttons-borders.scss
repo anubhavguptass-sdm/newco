@@ -1,0 +1,172 @@
+/*
+** COLORS - BASIC, LINKS, BUTTONS, BORDER
+*/
+
+$body-bg: $white !default;
+$body-color: $color-2 !default;
+$body-text-align: null !default;
+
+$primary-text-color: $color-2 !default;
+$secondary-text-color: $color-1 !default;
+
+$primary-headings-color: $color-1 !default;
+$secondary-headings-color: $color-2 !default;
+
+$primary-links-color: $color-1 !default;
+$primary-links-background-color: none !default;
+$primary-links-hover-background-color: $color-3 !default;
+$primary-links-hover-color: $white !default;
+$secondary-links-color: $color-2 !default;
+$secondary-links-hover-color: $color-3 !default;
+$tertiary-links-color: $color-2 !default;
+$quaternary-links-color: $color-4 !default;
+$link-text-decoration: $color-1 !default;
+$link-text-decoration-hover: transparent !default;
+
+$links: (
+  top-bar-link: (
+    decoration-color-default: null,
+    decoration-color-hover: null,
+    font-color-default: $megamenu-top-bar-link-color,
+    font-color-hover: $megamenu-top-bar-link-color-hover,
+    font-size-desktop: $font-size-body,
+    font-size-mobile: $font-size-body-mobile,
+    bg-color: transparent,
+    bg-hover-color: transparent,
+    decoration-height: 0,
+    decoration-height-hover: 1px,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-default: (
+    decoration-color-default: $color-1,
+    decoration-color-hover: null,
+    font-color-default: $color-1,
+    font-color-hover: $white,
+    font-size-desktop: $font-size-body,
+    font-size-mobile: $font-size-body-mobile,
+    bg-color: transparent,
+    bg-hover-color: $color-3,
+    decoration-height: 1px,
+    decoration-height-hover: 0,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-alt-1: (
+    decoration-color-default: transparent,
+    decoration-color-hover: $color-3,
+    font-color-default: $color-2,
+    font-color-hover: $color-3,
+    font-size-desktop: 18px,
+    font-size-mobile: 18px,
+    bg-color: transparent,
+    bg-hover-color: transparent,
+    decoration-height: 3,
+    decoration-height-hover: 3,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-alt-2: (
+    decoration-color-default: $color-1,
+    decoration-color-hover: transparent,
+    font-color-default: $color-1,
+    font-color-hover: $white,
+    font-size-desktop: 22px,
+    font-size-mobile: 22px,
+    bg-color: transparent,
+    bg-hover-color: $color-1,
+    decoration-height: 0,
+    decoration-height-hover: 0,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-alt-3: (
+    decoration-color-default: $color-1,
+    decoration-color-hover: $white,
+    font-color-default: $color-1,
+    font-color-hover: $white,
+    font-size-desktop: 19px,
+    font-size-mobile: 19px,
+    bg-color: transparent,
+    bg-hover-color: $color-1,
+    decoration-height: 1px,
+    decoration-height-hover: 0,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-alt-4: (
+    decoration-color-default: transparent,
+    decoration-color-hover: transparent,
+    font-color-default: $color-1,
+    font-color-hover: $white,
+    font-size-desktop: 16px,
+    font-size-mobile: 16px,
+    bg-color: transparent,
+    bg-hover-color: $color-1,
+    decoration-height: 0,
+    decoration-height-hover: 0,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-alt-5: (
+    decoration-color-default: transparent,
+    decoration-color-hover: $color-3,
+    font-color-default: $white,
+    font-color-hover: $color-3,
+    font-size-desktop: 16px,
+    font-size-mobile: 16px,
+    bg-color: $color-1,
+    bg-hover-color: $color-1,
+    decoration-height: 0,
+    decoration-height-hover: 1px,
+    l-display: inline-block,
+    paddings: 0.7rem 1.5rem,
+    decoration-offset-bottom: 0.8rem,
+    decoration-linit-width: calc(100% - 3rem)
+  ),
+  link-alt-6: (
+    decoration-color-default: transparent,
+    decoration-color-hover: $white,
+    font-color-default: $gray-600,
+    font-color-hover: $color-1,
+    font-size-desktop: 16px,
+    font-size-mobile: 16px,
+    bg-color: transparent,
+    bg-hover-color: transparent,
+    decoration-height: 0,
+    decoration-height-hover: 1px,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  )
+) !default;
+
+//button paddings
+$default-button-padding-mobile: 10px 15px !important !default;
+$default-button-padding-desktop: 10px 15px !important !default;
+$default-large-button-padding-mobile: 10px 15px !important !default;
+$default-large-button-padding-desktop: 10px 15px !important !default;
+$default-small-button-padding-mobile: 10px 15px !important !default;
+$default-small-button-padding-desktop: 10px 15px !important !default;
+$button-text-decoration: false !default;
+$button-text-decoration-hover: true !default;
+$default-button-text-color: $color-3 !default;
+$button-border-size: 2px !default;
+$set-default-button-border-color: true !default;
+$default-button-border-color: $color-3 !default;
+$button-font-weight: 600 !default;
+
+$default-border-color: transparent !default;

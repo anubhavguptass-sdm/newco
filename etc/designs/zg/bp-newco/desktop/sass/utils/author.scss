@@ -1,0 +1,13 @@
+/**
+* This file will be included in author mode only
+*/
+
+.webshop-metadata {
+    display: block !important;
+    visibility: visible !important;
+}
+.webshop-cart .cart-empty.is-hidden, .webshop-cart .cart-loading.is-hidden,
+.webshop-order-history .order-history-empty.is-hidden,  .webshop-order-history .order-history-loading.is-hidden {
+    display: block !important;
+    visibility: visible !important;
+}

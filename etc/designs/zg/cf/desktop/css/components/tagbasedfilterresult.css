@@ -1,0 +1,41 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.tagBasedFilterResults-Information {
+  border: 1px solid #C5C4C4; }
+  .tagBasedFilterResults-Information .tagBasedFilterResults-productImage {
+    border-bottom: 1px solid #C5C4C4;
+    text-align: center; }
+  .tagBasedFilterResults-Information .tagBasedFilterResults-description {
+    padding: 20px; }
+    .tagBasedFilterResults-Information .tagBasedFilterResults-description h2 {
+      font-size: 26px;
+      margin: 16px 0 0;
+      text-align: center; }
+    .tagBasedFilterResults-Information .tagBasedFilterResults-description p {
+      text-align: center; }
+
+.prd-category {
+  border-bottom: 1px solid #C5C4C4;
+  border-top: 1px solid #C5C4C4;
+  font-size: 11px;
+  display: block;
+  padding: 5px 0;
+  text-align: center; }
+
+.tagBasedFilterResults-box-content .product-button {
+  border: 1px solid #C5C4C4;
+  display: inline-block;
+  font-size: 11px;
+  margin: 10px 0 0;
+  padding: 10px; }

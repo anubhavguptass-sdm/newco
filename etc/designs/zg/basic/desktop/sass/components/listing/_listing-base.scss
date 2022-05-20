@@ -1,0 +1,27 @@
+@mixin clearLeftForItem($columnsCount) {
+  @for $i from 1 through $columnsCount {
+    $child: $columnsCount / $i;
+
+    .listing-item.grid_#{$i} {
+      &:nth-of-type(#{$child}n + 1) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.listing {
+  &-item {
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.grid_12 .listing {
+  @include clearLeftForItem(12);
+}
+
+.grid_16 .listing {
+  @include clearLeftForItem(16);
+}

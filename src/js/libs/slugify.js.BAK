@@ -1,0 +1,11 @@
+/*eslint-disable*/
+/*
+** in case default one doesn't work
+*/
+window.transliteration = require('transliteration')
+window.slugifier = transliteration.slugify,
+window.tr = transliteration.transliterate,
+window.slug = str => {
+  return slugifier(tr(str))
+}
+/*eslint-enable*/

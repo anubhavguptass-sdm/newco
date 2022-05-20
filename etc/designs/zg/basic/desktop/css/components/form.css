@@ -1,0 +1,119 @@
+.form-heading {
+  display: block;
+  color: #323131;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px; }
+
+.form form {
+  margin: 0 0 20px; }
+
+.form fieldset {
+  background-color: #e1e1e1;
+  border: solid 2px #323131;
+  padding: 13px;
+  margin: 15px 0; }
+
+.form label,
+.form input,
+.form button,
+.form select,
+.form textarea {
+  font-size: 14px; }
+
+.form select,
+.form textarea,
+.form input {
+  width: 100%;
+  max-width: 250px;
+  padding: 4px 6px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  color: #323131;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border linear 0.2s, box-shadow linear 0.2s; }
+  .form select:focus,
+  .form textarea:focus,
+  .form input:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6); }
+    .form select:focus:invalid,
+    .form textarea:focus:invalid,
+    .form input:focus:invalid {
+      color: red;
+      border-color: #ff6666; }
+
+.form legend {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+  padding: 0 5px;
+  display: block;
+  margin-right: 10px; }
+
+.form textarea {
+  height: auto;
+  resize: vertical; }
+
+.form label {
+  display: block;
+  margin-bottom: 5px; }
+
+.form select {
+  max-width: 260px; }
+  .form select[multiple], .form select[size] {
+    height: auto; }
+
+.form input {
+  height: 20px; }
+  .form input[type="radio"], .form input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    box-shadow: none; }
+
+.form .control-label {
+  padding: 5px 0; }
+
+.form .control-group {
+  margin-bottom: 10px; }
+
+.no-js .clearButton {
+  display: none; }
+
+.hiddenField {
+  display: none; }
+
+.control-tooltip {
+  display: none;
+  padding: 0 10px;
+  max-width: 200px;
+  margin-left: 5px;
+  position: absolute;
+  z-index: 1;
+  background-color: #ddd;
+  left: 100%;
+  top: 0; }
+  .control-tooltip:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 100%;
+    top: 10px;
+    display: inline-block;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    border-right-color: #ddd;
+    border-width: 5px;
+    margin-top: -5px; }
+  .control-tooltip-container {
+    position: relative;
+    display: inline-block; }
+  .control-tooltip-button:hover + .control-tooltip, .control-tooltip:hover {
+    display: block; }

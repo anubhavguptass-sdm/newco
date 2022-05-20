@@ -1,0 +1,55 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.searchBlox-pagination .searchResults-pagination {
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: default; }
+
+.searchBlox-pagination .searchResults-pagination-item {
+  display: inline-block;
+  line-height: 30px;
+  margin: 1px;
+  cursor: default; }
+  .searchBlox-pagination .searchResults-pagination-item a {
+    display: inline-block;
+    min-width: 30px;
+    padding: 0 10px;
+    cursor: pointer; }
+    .searchBlox-pagination .searchResults-pagination-item a:hover {
+      text-decoration: none;
+      color: dimgrey;
+      font-weight: bold; }
+  .searchBlox-pagination .searchResults-pagination-item.is-active a {
+    font-weight: bold;
+    color: black; }
+  .searchBlox-pagination .searchResults-pagination-item:last-child a, .searchBlox-pagination .searchResults-pagination-item:first-child a {
+    height: inherit;
+    width: inherit;
+    border-right: inherit;
+    line-height: 30px; }
+
+.searchBlox-pagination .searchResults-pagination-list {
+  padding: 0;
+  margin: 0; }
+
+.lt-ie8 .searchBlox-pagination .searchResults-pagination-item {
+  display: inline;
+  zoom: 1;
+  margin: 3px; }
+  .lt-ie8 .searchBlox-pagination .searchResults-pagination-item a {
+    display: block;
+    zoom: 1; }

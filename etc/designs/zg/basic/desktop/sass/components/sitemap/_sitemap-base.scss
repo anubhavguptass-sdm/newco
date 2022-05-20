@@ -1,0 +1,82 @@
+@import '../../core/mixins';
+
+@for $i from 1 through 12 {
+  .sitemap-columns-#{$i} {
+    .sitemap-column {
+      width: 100%/$i;
+    }
+  }
+}
+
+.sitemap-column {
+  float: left;
+
+  .component-content {
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h3 {
+    padding: 5px 7px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: $background-color;
+  }
+
+  ul {
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+
+  > ul {
+    margin: 0 3px;
+
+    li > ul {
+      padding-bottom: 0;
+      padding-left: 5px;
+      margin-bottom: 0;
+      margin-left: 0;
+      word-wrap: break-word;
+
+      li {
+        position: relative;
+        padding-left: 5px;
+        font-weight: bold;
+        line-height: 150%;
+
+        &:before {
+          position: absolute;
+          top: 1px;
+          left: 0;
+
+          @include font-awesome($fa-var-caret-right);
+        }
+
+        > ul {
+          margin-top: 0;
+
+          li {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(mobile) {
+  .component-content {
+    .sitemap-column {
+      width: 100%;
+      float: none;
+
+      > ul {
+        margin: 0 0 15px;
+      }
+    }
+  }
+}

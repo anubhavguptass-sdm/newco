@@ -1,0 +1,161 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.product-list-main__results .product {
+  border-bottom: 2px solid #f3f2f1; }
+
+.productList .product-list-content {
+  display: table;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+  .productList .product-list-content .product-list-main, .productList .product-list-content product-list-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto; }
+
+.productList .alphabet-filter__element {
+  margin-left: 10px; }
+
+.productList .no-of-shown-results, .productList .no-of-all-results, .productList .applied-filter {
+  font-weight: bold; }
+
+.productList .product-list-main {
+  display: table-row;
+  justify-content: space-around; }
+
+.productList .product-list-header {
+  display: table-row;
+  justify-content: space-around; }
+
+.productList .product-list-filter--alphabet {
+  border-left: 2px solid #f3f2f1; }
+
+.productList .product-list-filter .filter-trigger--alphabet {
+  color: #72635d;
+  cursor: default;
+  opacity: 0.5;
+  text-decoration: none;
+  margin: 0; }
+  .productList .product-list-filter .filter-trigger--alphabet.filter-trigger--active {
+    color: #f36633;
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: none; }
+
+.productList .product-list-header__filter-by .filter-by__label {
+  background-color: #f36633;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer; }
+
+.productList ul.filter__product-types {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+  .productList ul.filter__product-types li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+    .productList ul.filter__product-types li input ~ span::after {
+      content: "";
+      background-color: white;
+      border-radius: 30px;
+      width: 20px;
+      height: 20px;
+      margin: 0 7px 0 0;
+      position: absolute;
+      right: 0; }
+    .productList ul.filter__product-types li input:checked ~ span::after {
+      background-color: #15717e;
+      border: 2px solid white;
+      margin: 0 6px 0 0; }
+    .productList ul.filter__product-types li input {
+      visibility: hidden; }
+
+.productList ul .alphabet-filter__elements, .productList ul .product__links--additional {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.productList ul.filter__product-types.show {
+  display: block;
+  padding: 0; }
+
+.productList .product__info-formula-text {
+  font-style: italic; }
+
+.productList .product .product__links a {
+  color: #15717e;
+  font-weight: bold; }
+
+.productList .product .product__info-title, .productList .product .product__info-title a {
+  color: #15717e;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold; }
+
+.productList .product .product__info-title.lock-icon {
+  color: black;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold; }
+  .productList .product .product__info-title.lock-icon a:before {
+    content: '!';
+    color: #ff0000; }
+
+.productList .product-list-main__results {
+  width: 95%; }
+  .productList .product-list-main__results .product {
+    display: flex;
+    margin-top: 15px; }
+    .productList .product-list-main__results .product .product__info {
+      width: 50%; }
+    .productList .product-list-main__results .product .product__links {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: arial;
+      font-size: 13px;
+      font-weight: 700; }
+
+.productList .results__show-more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  color: white;
+  background-color: #15717e;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  width: 20%;
+  margin-left: 35%;
+  margin-right: auto; }
+  .productList .results__show-more-btn:hover {
+    background-color: white;
+    display: inline-block;
+    padding: 8px 30px;
+    border: 2px solid #15717e;
+    color: #15717e;
+    font-size: 18px;
+    width: 20%;
+    margin-left: 35%;
+    margin-right: auto; }

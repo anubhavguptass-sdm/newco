@@ -1,0 +1,61 @@
+/*stylelint-disable*/
+@if $include-font-resizer {
+  .bp-font-resizer {
+    display: flex;
+    flex-direction: $row-direction;
+    align-items: center;
+    align-content: center;
+
+    > * {
+      flex: 0 0 auto;
+      height: 100%;
+      margin-#{$end-direction}: 5px;
+      line-height: 1;
+      font-family: $font-family-default;
+      display: flex;
+    }
+
+    &-button {
+      @include animate();
+      color: $font-resizer-btn-color-mobile !important;
+
+      @media (min-width: $breakpoint-sm-min) {
+        //desktop styles
+        color: $font-resizer-btn-color-desktop !important;
+      }
+
+      &:hover,
+      &.active-js {
+        color: $font-resizer-btn-color-hover-active !important;
+      }
+
+      &.default {
+        font-size: $font-resizer-btn-default-size-mobile !important;
+
+        @media (min-width: $breakpoint-sm-min) {
+          //desktop styles
+          font-size: $font-resizer-btn-default-size-desktop !important;
+        }
+      }
+
+      &.large {
+        font-size: $font-resizer-btn-large-size-mobile !important;
+
+        @media (min-width: $breakpoint-sm-min) {
+          //desktop styles
+          font-size: $font-resizer-btn-large-size-desktop !important;
+        }
+      }
+
+      &.larger {
+        font-size: $font-resizer-btn-larger-size-mobile !important;
+
+        @media (min-width: $breakpoint-sm-min) {
+          //desktop styles
+          font-size: $font-resizer-btn-larger-size-desktop !important;
+        }
+      }
+    }
+  }
+}
+/*stylelint-enable*/

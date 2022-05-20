@@ -1,0 +1,369 @@
+// .story-block {
+//   .story-content {
+//     padding: 1.5rem;
+//     @media (min-width: $breakpoint-sm-min) {
+//       padding: 1rem;
+//     }
+//   }
+// }
+// .story-desc {
+//   position: relative;
+//   width: auto;
+//   text-align: right;
+//   @media (min-width: $breakpoint-sm-min) {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//   }
+// }
+// .story-right-list {
+//   .reference-story-block {
+//     &:nth-last-child(1) {
+//       margin-bottom: 0;
+//     }
+//   }
+
+//   .story-block {
+//     height: 146px;
+//     margin-bottom: 1rem;
+
+//     .story-image {
+//       width: 40%;
+
+//       @include lg {
+//         width: 25%;
+//       }
+//     }
+
+//     .story-content {
+//       width: 60%;
+//       overflow: hidden;
+
+//       @include lg {
+//         width: 85%;
+//       }
+//     }
+//   }
+// }
+// .flex.cols-d-2 > * > .paragraphSystem .story-left-list {
+//   flex-basis: 60%;
+//   max-width: 60%;
+//   width: 60%;
+//   padding-right: 10px;
+
+//   @include sd {
+//     flex-basis: 50%;
+//     max-width: 50%;
+//     width: 50%;
+//     padding-right: 0px;
+//   }
+
+//   @include sm {
+//     flex-basis: 100%;
+//     max-width: 100%;
+//     width: 100%;
+//     padding-right: 0px;
+//   }
+// }
+
+// .flex.cols-d-2 > * > .paragraphSystem .story-right-list {
+//   flex-basis: 40%;
+//   max-width: 40%;
+//   width: 40%;
+//   padding-left: 10px;
+
+//   @include sd {
+//     flex-basis: 50%;
+//     max-width: 50%;
+//     width: 50%;
+//     padding-left: 1rem;
+//   }
+
+//   @include sm {
+//     flex-basis: 100%;
+//     max-width: 100%;
+//     width: 100%;
+//     padding-left: 0px;
+//   }
+// }
+
+// .story-block {
+//   display: flex;
+//   margin: 0;
+//   height: 470px;
+//   margin-bottom: 1rem;
+//   position: relative;
+
+//   @include lg {
+//     height: 350px;
+//   }
+
+//   .story-image {
+//     width: 50%;
+//     height: 100%;
+
+//     @include lg {
+//       width: 25%;
+//     }
+
+//     @include sm {
+//       width: 50%;
+//       line-height: 0 !important;
+//     }
+
+//     img {
+//       height: 100%;
+//       object-fit: cover;
+//       object-position: top;
+//     }
+//   }
+
+//   .story-content {
+//     width: 50%;
+//     padding: 1rem;
+//     height: 100%;
+//     background-color: $color-white;
+//     overflow: hidden;
+
+//     @include lg {
+//       width: 85%;
+//     }
+
+//     @include sd {
+//       overflow: hidden;
+//       padding: 1rem;
+//     }
+
+//     @include sm {
+//       margin-top: 0;
+//       width: 50%;
+//     }
+
+//     h3 {
+//       a {
+//         &:hover {
+//           background-color: $color-active;
+//         }
+
+//         &:after {
+//           content: '';
+//           position: absolute;
+//           left: 0;
+//           right: 0;
+//           width: 100%;
+//           height: 100%;
+//           top: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   .story-right-list .story-block {
+//     height: auto;
+//     margin-bottom: 1rem;
+//   }
+
+//   .story-right-list .story-block .story-image {
+//     width: 40%;
+//   }
+
+//   .story-right-list .story-block .story-content {
+//     width: 60%;
+//     height: auto;
+//   }
+
+//   .story-block .story-image {
+//     width: 40%;
+//   }
+
+//   .story-block .story-content {
+//     width: 60%;
+//   }
+// }
+
+// @media screen and (max-width: 512px) {
+//   .story-block {
+//     height: auto;
+//     flex-direction: column;
+//   }
+
+//   .story-block .story-image {
+//     width: 100%;
+//   }
+
+//   .story-block .story-content {
+//     width: 100%;
+//   }
+
+//   .story-right-list .story-block .story-image {
+//     width: 100%;
+//   }
+
+//   .story-right-list .story-block .story-content {
+//     width: 100%;
+//   }
+
+//   .story-right-list {
+//     .story-block {
+//       flex-direction: column !important;
+
+//       .story-image {
+//         height: auto;
+//       }
+//     }
+//   }
+
+//   .more-contact-detail {
+//     .story-right-list {
+//       .story-block {
+//         flex-direction: row !important;
+//       }
+//     }
+//   }
+// }
+// .more-contact-detail {
+//   .box.component {
+//     .paragraphSystem.content {
+//       justify-content: center !important;
+//       margin: 0 -8px !important;
+//     }
+
+//     .story-right-list {
+//       flex-basis: 50% !important;
+//       max-width: 50% !important;
+//       width: 50% !important;
+
+//       &.first {
+//         padding-right: 1.5rem;
+
+//         @include lg {
+//           padding-right: 0 !important;
+//           padding-left: 1rem !important;
+//         }
+//       }
+
+//       &.last {
+//         padding-left: 1.5rem;
+
+//         @include lg {
+//           padding-left: 1rem !important;
+//         }
+//       }
+
+//       @include sd {
+//         flex-basis: 100% !important;
+//         max-width: 100% !important;
+//         width: 100% !important;
+//       }
+//     }
+//   }
+
+//   .story-block .story-content h3 {
+//     display: flex;
+//     align-items: center;
+//     height: 100%;
+//   }
+// }
+
+// .main-story-padding {
+//   @include sd {
+//     padding-right: 8px !important;
+//     padding-left: 8px !important;
+//   }
+// }
+// .flex.cols-d-2 > * > .paragraphSystem .story-left-list {
+//   @include lg {
+//     flex-basis: 100% !important;
+//     max-width: 100% !important;
+//     width: 100% !important;
+//     padding-right: 0px !important;
+//   }
+// }
+
+// .flex.cols-d-2 > * > .paragraphSystem .story-right-list {
+//   @include lg {
+//     -ms-flex-preferred-size: 100% !important;
+//     flex-basis: 100% !important;
+//     max-width: 100% !important;
+//     width: 100% !important;
+//     padding-left: 0px !important;
+//   }
+// }
+
+// .latest-open-sec + .box.component.bg-color-3 {
+//   .box.component {
+//     .paragraphSystem.content {
+//       @include sd {
+//         flex-direction: column !important;
+//       }
+//     }
+//   }
+
+//   .story-block {
+//     @include sd {
+//       flex-direction: column !important;
+//       width: 100%;
+//       height: auto !important;
+//     }
+
+//     .story-image {
+//       @include sd {
+//         order: 1;
+//         width: 100%;
+//       }
+//     }
+
+//     .story-content {
+//       @include sd {
+//         order: 2;
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// .local-story-hero {
+//   margin-bottom: 8rem !important;
+//   width: 80%;
+//   margin-left: auto !important;
+//   margin-right: 0 !important;
+
+//   @include sd {
+//     width: 100%;
+//     margin-bottom: 0 !important;
+//     margin-right: auto !important;
+//   }
+
+//   .local-story {
+//     position: absolute;
+//     bottom: -10rem;
+//     right: 2rem;
+//     background: #fff;
+//     width: 65%;
+//     box-shadow: 0px 16px 40px -8px #0000001a;
+//     padding: 2rem;
+//     z-index: 101;
+
+//     @include sd {
+//       position: relative;
+//       bottom: unset;
+//       right: unset;
+//       width: 90%;
+//       margin: -4rem auto 0 !important;
+//     }
+
+//     .local-story-first {
+//       padding-right: 0.75rem;
+
+//       h6 {
+//         margin: 0;
+//         margin-bottom: 10px;
+//       }
+//     }
+
+//     .btn {
+//       margin-right: 2px;
+//     }
+//   }
+// }

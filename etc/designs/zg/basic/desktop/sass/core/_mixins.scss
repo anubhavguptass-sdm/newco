@@ -1,0 +1,128 @@
+@import "colors";
+@import "../utils/fa-variables";
+
+$break-desktop: 990px;
+$break-mobile: 767px;
+$break-small-mobile: 239px;
+
+@function icon($character) {
+  @return unquote("\"")+unquote(str-insert($character,"\\", 1))+unquote("\"");
+}
+
+@mixin font-awesome($ico) {
+  content: icon($ico);
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  position: relative;
+  font-weight: normal;
+}
+
+@mixin frame() {
+  border: solid 2px $border-color;
+}
+
+@mixin filled() {
+  background-color: $background-color;
+}
+
+@mixin innerspace() {
+  padding: 13px;
+}
+
+@mixin heading() {
+  display: block;
+  color: $text-color;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+@mixin headings() {
+  @for $i from 1 through 6 {
+    h#{$i} {
+      margin-top: 0;
+      word-wrap: break-word;
+    }
+  }
+}
+
+@mixin respond-to($media) {
+  @if $media == small-mobile {
+    @media only screen and (max-width: $break-small-mobile) {
+      @content;
+    }
+  } @else if $media == mobile {
+    @media only screen and (max-width: $break-mobile) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (min-width: $break-mobile + 1) and (max-width: $break-desktop - 1) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media only screen and (min-width: $break-desktop) {
+      @content;
+    }
+  }
+}
+
+@mixin nav-border {
+  border: 2px solid $border-color;
+}
+
+@mixin nav-icon($icon) {
+  @include font-awesome($icon);
+  display: block;
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  top: 0;
+  line-height: 38px;
+  font-size: 25px;
+  right: 0;
+}
+
+@mixin nav-title($padding, $font-weight: normal) {
+  padding: $padding;
+  background: $background-color;
+  color: $text-color;
+  font-size: 14px;
+  font-weight: $font-weight;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; // IE 6+, FF 7+, Op 11+, Saf 1.3+, Chr 1+
+  -o-text-overflow: ellipsis; // for Opera 9 & 10
+}
+
+%btn {
+  background-color: $background-color;
+  border: 1px solid $link-border-color;
+  color: $text-color;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background-color: $background-hover-color;
+    color: $text-hover-color;
+  }
+}

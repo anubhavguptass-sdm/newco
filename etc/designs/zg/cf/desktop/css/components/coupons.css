@@ -1,0 +1,44 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.coupons {
+  padding: 10px;
+  border: 1px solid #D5D1CE;
+  position: relative;
+  margin-bottom: 10px; }
+  .coupons .couponsImage {
+    float: left;
+    width: 30%;
+    margin-right: 10px; }
+  .coupons .couponsDescription {
+    float: left;
+    width: 60%; }
+  .coupons .couponsContainer .button, .coupons .couponsContainer a.lightbox {
+    bottom: 10px;
+    position: absolute;
+    right: 25px; }
+
+.overlay-content-inner a.couponCancel, .overlay-content-inner a.couponSubmit {
+  background-color: #f36633;
+  border-radius: 3px;
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block; }
+  .overlay-content-inner a.couponCancel:hover, .overlay-content-inner a.couponSubmit:hover {
+    background-color: #939191;
+    color: white; }
+  .overlay-content-inner a.couponCancel:active, .overlay-content-inner a.couponSubmit:active {
+    background-color: #939191;
+    color: white; }

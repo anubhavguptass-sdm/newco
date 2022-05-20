@@ -1,0 +1,140 @@
+@if $include-cards {
+  .card {
+    &-icon-left-text-right {
+      &.image {
+        margin-bottom: $space-30;
+      }
+
+      figure {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        figcaption {
+          text-align: $start-direction;
+
+          p {
+            margin-top: 0;
+          }
+        }
+
+        img {
+          width: 33%;
+        }
+      }
+    }
+
+    &-title-button-embedded {
+      figure {
+        line-height: 0;
+        position: relative;
+
+        > a {
+          line-height: 0;
+        }
+
+        figcaption {
+          bottom: 0;
+          #{$start-direction}: 0;
+          margin-bottom: $space-15;
+          margin-#{$start-direction}: $space-15;
+          position: absolute;
+
+          p {
+            text-align: $start-direction;
+          }
+
+          p:last-of-type {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    &-title-divider,
+    &-title-divider-reverse {
+      figcaption {
+        margin-bottom: 20px;
+        position: relative;
+
+        > * {
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+
+        &::after {
+          background-color: $title-divider-color;
+          content: '';
+          height: 3px;
+          #{$start-direction}: 0;
+          position: absolute;
+          top: calc(100% + 5px);
+          width: $title-divider-width;
+        }
+      }
+
+      &.title-center-m {
+        .component-content {
+          .richText-content,
+          figcaption {
+            &::after {
+              #{$start-direction}: calc(
+                calc(100% - #{$title-divider-width}) / 2
+              );
+            }
+          }
+        }
+      }
+
+      &.title-right-m {
+        figcaption {
+          &::after {
+            #{$start-direction}: unset;
+            #{$end-direction}: 0;
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &.title-left-d {
+          figcaption {
+            &::after {
+              #{$start-direction}: 0;
+            }
+          }
+        }
+
+        &.title-center-d {
+          .component-content {
+            .richText-content,
+            figcaption {
+              &::after {
+                #{$start-direction}: calc((100% - #{$title-divider-width}) / 2);
+              }
+            }
+          }
+        }
+
+        &.title-right-d {
+          figcaption {
+            &::after {
+              #{$start-direction}: unset;
+              #{$end-direction}: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &-title-divider-reverse {
+      figure {
+        display: flex;
+        flex-direction: column;
+
+        > :not(figcaption) {
+          order: 2;
+        }
+      }
+    }
+  }
+}

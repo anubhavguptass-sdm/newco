@@ -1,0 +1,230 @@
+@if $include-accordion {
+  .accordion {
+    &-content {
+      > div {
+        padding: $accordion-content-padding;
+
+        @media (min-width: $breakpoint-sm-min) {
+          padding: $accordion-content-padding-desktop;
+        }
+      }
+
+      // Animation fix for the content
+      &-wrapper {
+        cursor: auto;
+        transition: max-height 0.2s ease-in-out;
+        visibility: visible !important;
+        height: auto !important;
+        #{$start-direction}: auto !important;
+        max-height: 0;
+        overflow: hidden !important;
+        top: auto !important;
+        cursor: auto !important;
+
+        *:not(a) {
+          cursor: auto !important;
+        }
+      }
+    }
+
+    &-container {
+      border: 0;
+      list-style: none;
+    }
+
+    &-head {
+      background: none;
+      border: 0;
+      padding: $accordion-title-padding;
+
+      h3 {
+        width: 90%;
+
+        a {
+          border: 0;
+          color: $accordion-link-color;
+          font-size: $accordion-link-font-size-m;
+          font-weight: 600;
+          text-decoration: none;
+        }
+      }
+
+      &::after {
+        @include animate();
+        background-image: $accordion-closed-icon !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        content: '';
+        height: $accordion-icon-size;
+        #{$start-direction}: auto;
+        margin: 0;
+        margin: auto;
+        position: relative;
+        #{$end-direction}: $accordion-icon-offset;
+        top: 0;
+        vertical-align: middle;
+        width: $accordion-icon-size;
+      }
+
+      &:hover {
+        &::after {
+          background-image: $accordion-closed-icon-hover !important;
+        }
+      }
+
+      &::before {
+        background-color: $accordion-separator-color;
+        bottom: $accordion-separator-bottom-offset;
+        content: '';
+        height: 1px;
+        #{$start-direction}: 0;
+        margin: auto;
+        max-width: $accordion-separator-width;
+        position: absolute;
+        #{$end-direction}: 0;
+      }
+    }
+
+    &-title {
+      margin: 0;
+    }
+
+    &-slide {
+      border: 0;
+      cursor: pointer;
+      margin-bottom: 10px;
+      position: relative;
+      -webkit-tap-highlight-color: transparent;
+
+      &.is-active {
+        .accordion-content-wrapper {
+          height: auto !important;
+          overflow: hidden !important;
+        }
+
+        .accordion-head {
+          &::after {
+            background-image: $accordion-opened-icon !important;
+          }
+
+          &:hover::after {
+            background-image: $accordion-opened-icon-hover !important;
+          }
+        }
+      }
+
+      &:focus-within {
+        .accordion-head {
+          &::after {
+            background-image: $accordion-opened-icon !important;
+          }
+
+          &:hover::after {
+            background-image: $accordion-opened-icon-hover !important;
+          }
+        }
+      }
+
+      &::before {
+        background: $accordion-background-color;
+        box-sizing: border-box;
+        content: '';
+        height: 100%;
+        #{$start-direction}: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50% * $transform-direction);
+        width: if($accordion-full-width-background, 100vw, 100%);
+        z-index: -1;
+      }
+
+      &:focus-within {
+        .accordion-content-wrapper {
+          height: auto !important;
+          overflow: hidden !important;
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      &-head {
+        padding: $accordion-title-padding-desktop;
+
+        h3 {
+          a {
+            font-size: $accordion-link-font-size-d;
+          }
+        }
+
+        &::after {
+          height: $accordion-icon-size-desktop;
+          width: $accordion-icon-size-desktop;
+        }
+      }
+
+      &-slide {
+        &::after {
+          #{$start-direction}: 0;
+          width: 100%;
+        }
+        &.is-active {
+          .accordion-head {
+            &::before {
+              content: '';
+              #{$start-direction}: 0;
+              width: 100%;
+            }
+          }
+        }
+        &:focus-within {
+          .accordion-head {
+            &::before {
+              content: '';
+              #{$start-direction}: 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .list-diff-style {
+    ul {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      margin: $space-20 0 !important;
+
+      li {
+        width: 100% !important;
+      }
+      @media (min-width: $breakpoint-sm-min) {
+        li {
+          width: 35% !important;
+        }
+      }
+    }
+  }
+}
+
+// default CF styles
+.mod-js .accordion-head {
+  position: relative;
+  cursor: pointer;
+}
+
+.mod-js .accordion-head:after {
+  position: absolute !important;
+  content: ' ';
+}
+
+.mod-js .accordion-slide.is-active > .accordion-head:hover,
+.mod-js .accordion-slide.is-active > .accordion-head {
+  cursor: pointer;
+}
+
+.mod-js .accordion-slide.is-active > .accordion-head:hover {
+  background-color: inherit !important;
+}

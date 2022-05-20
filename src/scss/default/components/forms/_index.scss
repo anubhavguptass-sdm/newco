@@ -1,0 +1,393 @@
+/*
+** Gygia form wrappers resets and styles
+*/
+// fallback for sites that doesn't have this variable
+$include-gygia-forms: null !default;
+
+@if $include-gygia-forms != null {
+  $include-gygia-forms: $include-gygia-forms;
+} @else {
+  $include-gygia-forms: true;
+}
+
+@if $include-gygia-forms {
+  body {
+    .gigya-screen {
+      padding: 0 !important;
+
+      &.portrait {
+        width: auto;
+        padding-#{$start-direction}: 0 !important;
+        padding-#{$end-direction}: 0 !important;
+        padding-top: 0 !important;
+      }
+
+      form {
+        .gigya-composite-control {
+          display: flex;
+          flex-direction: $row-direction;
+          padding: 0 !important;
+          margin-bottom: $input-default-spacing;
+
+          @if $input-label-position == left or $input-label-position == right {
+            flex-wrap: nowrap;
+            align-items: center;
+            align-content: center;
+          } @else {
+            flex-wrap: wrap;
+          }
+
+          &-dropdown {
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              max-height: $input-default-height;
+              border-bottom-right-radius: $input-border-radius;
+              border-top-right-radius: $input-border-radius;
+              background-color: $input-select-dropdown-icon-background;
+              background-image: $input-select-dropdown-icon;
+              background-size: $input-select-dropdown-icon-size;
+              border-#{$start-direction}: $input-select-dropdown-button-left-border;
+              background-position: center;
+              background-repeat: no-repeat;
+              width: $input-select-dropdown-button-width;
+              height: $input-default-height;
+              margin: auto;
+              pointer-events: none !important;
+              @include animate();
+
+              @if $input-label-position == top {
+                #{$start-direction}: auto;
+                #{$end-direction}: 0;
+                top: auto;
+                bottom: 0;
+              }
+              @if $input-label-position == under {
+                #{$start-direction}: auto;
+                #{$end-direction}: 0;
+                top: 0;
+                bottom: auto;
+              }
+              @if $input-label-position == left {
+                #{$start-direction}: auto;
+                #{$end-direction}: 0;
+                top: 0;
+                bottom: 0;
+              }
+              @if $input-label-position == right {
+                #{$start-direction}: auto;
+                #{$end-direction}: calc(10% + #{$input-label-spacing});
+                top: 0;
+                bottom: 0;
+              }
+            }
+
+            &:hover {
+              &::after {
+                background-color: $input-select-dropdown-icon-background-hover;
+                background-image: $input-select-dropdown-icon-hover;
+              }
+            }
+
+            &.dropdown-opened-js {
+              &::after {
+                background-color: $input-select-dropdown-icon-background-active;
+                background-image: $input-select-dropdown-icon-active;
+              }
+            }
+          }
+
+          &-multi-choice {
+            @if $input-label-position == top {
+              flex: 0 0 100%;
+              margin-bottom: $input-default-spacing !important;
+            }
+            @if $input-label-position == under {
+              flex: 0 0 100%;
+              order: 1;
+              margin-bottom: $input-label-spacing !important;
+            }
+            @if $input-label-position == left {
+              flex: 1 1 auto;
+              margin-bottom: $input-default-spacing !important;
+            }
+            @if $input-label-position == right {
+              flex: 1 1 auto;
+              order: 1;
+              margin-bottom: $input-default-spacing !important;
+            }
+
+            .gigya-multi-choice-item {
+              flex: 1 1 100%;
+            }
+          }
+
+          > label,
+          label * {
+            color: $input-label-font-color;
+            padding: 0 !important;
+            font-family: $input-label-font-family;
+            font-size: $input-label-font-size-mobile;
+            line-height: $input-label-line-height-mobile;
+
+            @if $input-label-position == top {
+              flex: 0 0 100%;
+              margin-bottom: $input-label-spacing;
+            }
+            @if $input-label-position == under {
+              flex: 0 0 100%;
+              order: 2;
+              margin-top: $input-label-spacing;
+              margin-bottom: 0 !important;
+            }
+            @if $input-label-position == left {
+              flex: 0 0 10%;
+              margin-#{$end-direction}: $input-label-spacing;
+              margin-bottom: 0;
+              margin-top: 0;
+            }
+            @if $input-label-position == right {
+              flex: 0 0 10%;
+              order: 2;
+              text-align: $end-direction;
+              margin-#{$start-direction}: $input-label-spacing;
+              margin-bottom: 0;
+              margin-top: 0;
+            }
+
+            @media (min-width: $breakpoint-sm-min) {
+              font-size: $input-label-font-size-desktop;
+              line-height: $input-label-line-height-desktop;
+            }
+          }
+
+          .select-css::-ms-expand {
+            display: none;
+          }
+
+          select {
+            background-image: none;
+            -webkit-appearance: none;
+            appearance: none;
+          }
+
+          input:not([type='radio']),
+          input:not([type='radio']):focus,
+          input.gigya-error,
+          input.gigya-error:focus,
+          select {
+            @include animate();
+            outline: none;
+            box-sizing: border-box;
+            font-family: $input-font-family;
+            font-size: $input-font-size-mobile;
+            color: $input-font-color;
+            line-height: $input-line-height-mobile;
+            display: block;
+            width: 100%;
+            height: $input-default-height;
+            min-height: $input-default-height;
+            border-radius: $input-border-radius;
+            padding: $input-padding-y-mobile $input-padding-x-mobile;
+            margin-#{$start-direction}: 0;
+            margin-#{$end-direction}: 0;
+
+            &::placeholder {
+              color: $input-plachoder-text-color;
+            }
+
+            @media (min-width: $breakpoint-sm-min) {
+              font-size: $input-font-size-desktop;
+              line-height: $input-line-height-desktop;
+              padding: $input-padding-y-desktop $input-padding-x-desktop;
+            }
+
+            @if $input-label-position == top {
+              flex: 0 0 100%;
+              margin-bottom: 0 !important;
+            }
+            @if $input-label-position == under {
+              flex: 0 0 100%;
+              order: 1;
+              margin-bottom: 0 !important;
+            }
+            @if $input-label-position == left {
+              flex: 1 1 auto;
+              margin-bottom: 0 !important;
+            }
+            @if $input-label-position == right {
+              flex: 1 1 auto;
+              order: 1;
+              margin-bottom: 0 !important;
+            }
+          }
+
+          &-submit {
+            @if $input-button-alignment == left {
+              justify-content: flex-start;
+            }
+            @if $input-button-alignment == center {
+              justify-content: center;
+            }
+            @if $input-button-alignment == right {
+              justify-content: flex-end;
+            }
+          }
+
+          input:not([type='radio']),
+          select,
+          textarea {
+            max-width: 100%;
+            @include animate();
+            background-color: $input-background-default;
+            border: $input-border-size solid $input-border-color-default;
+            box-shadow: 0 0 0 0 $input-border-color-active;
+
+            &:focus {
+              background-color: $input-background-active;
+              border-color: $input-border-color-active;
+              box-shadow: 0px 0px 5px -1px $input-border-color-active;
+              &:hover {
+                border-color: $input-border-color-active;
+              }
+            }
+
+            &:hover {
+              background-color: $input-background-hover;
+              border-color: $input-border-color-hover;
+
+              &:disabled {
+                color: $input-disabled-font-color-hover;
+                background-color: $input-disabled-background-hover;
+                border-color: $input-disabled-border-color-hover;
+              }
+            }
+
+            &.gigya-error {
+              background-color: $input-background-error;
+              border-color: $input-border-color-error;
+            }
+
+            &:disabled {
+              color: $input-disabled-font-color;
+              background-color: $input-disabled-background;
+              border-color: $input-disabled-border-color;
+            }
+          }
+
+          input[type='submit'],
+          button {
+            @include animate();
+            background-color: $input-button-background-color;
+            border: $input-button-border-size solid $input-button-border-color;
+            color: $input-button-font-color;
+            font-size: $input-button-font-size-mobile;
+            line-height: $input-button-line-height-mobile;
+            min-width: $input-button-min-width;
+            max-width: $input-button-max-width;
+            padding: $input-button-padding-y-mobile
+              $input-button-padding-x-mobile;
+
+            @media (min-width: $breakpoint-sm-min) {
+              font-size: $input-button-font-size-desktop;
+              line-height: $input-button-line-height-desktop;
+              padding: $input-button-padding-y-desktop
+                $input-button-padding-x-desktop;
+            }
+
+            &:focus {
+              color: $input-button-font-color-active;
+              background-color: $input-button-background-color-active;
+              border-color: $input-button-border-color-active;
+            }
+
+            &:hover {
+              color: $input-button-font-color-hover;
+              background-color: $input-button-background-color-hover;
+              border-color: $input-button-border-color-hover;
+            }
+
+            &:disabled {
+              color: $input-button-font-color-disabled;
+              background-color: $input-button-background-color-disabled;
+              border-color: $input-button-border-color-disabled;
+            }
+          }
+
+          textarea {
+            height: $input-textarea-default-height-mobile;
+
+            @media (min-width: $breakpoint-sm-min) {
+              height: $input-textarea-default-height-desktop;
+            }
+          }
+        }
+
+        label {
+          color: $input-label-font-color;
+        }
+      }
+    }
+
+    label {
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+    }
+
+    #ciam-pch-unsubscribe {
+      > form {
+        > .gigya-layout-row {
+          > .gigya-layout-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: $start-direction;
+
+            .gigya-composite-control-label {
+              width: 100%;
+              flex: 1 1 100%;
+            }
+
+            .gigya-composite-control-label:nth-of-type(1) {
+              margin-bottom: 2rem;
+            }
+
+            .gigya-composite-control-checkbox {
+              margin: auto !important;
+              width: 100% !important;
+              min-width: 100% !important;
+              max-width: 100% !important;
+              align-items: center !important;
+              align-content: center !important;
+              flex-wrap: nowrap;
+              margin-bottom: 1rem !important;
+
+              input[type='checkbox'] {
+                min-height: auto;
+                height: 1.5rem;
+                width: 1.5rem;
+                flex: 0 0 1.5rem;
+                max-width: 1.5rem;
+                margin-top: 0;
+                margin-#{$end-direction}: 1rem;
+
+                & + label {
+                  flex: 0 1 auto !important;
+                  margin: 0 !important;
+                  width: auto !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

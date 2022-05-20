@@ -1,0 +1,103 @@
+.tabs {
+  position: relative; }
+  .tabs-heading {
+    display: block;
+    color: #323131;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px; }
+  .tabs-nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 39px;
+    z-index: 150;
+    width: 100%;
+    overflow: hidden; }
+    .tabs-nav-list {
+      position: relative;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      width: 2000px;
+      list-style: none;
+      overflow: hidden; }
+    .tabs-nav-item {
+      display: inline;
+      float: left;
+      margin-left: 5px;
+      height: 21px;
+      top: 4px;
+      padding: 7px 10px 7px 10px;
+      border-width: 2px 2px 0 2px;
+      border-style: solid;
+      border-color: #323131;
+      background: #e1e1e1;
+      font-weight: bold;
+      font-size: 12px;
+      cursor: pointer; }
+      .tabs-nav-item a {
+        color: #323131; }
+      .tabs-nav-item.is-active,
+      .tabs-nav-item.is-active a, .tabs-nav-item.is-active:hover {
+        cursor: default;
+        background: white; }
+      .tabs-nav-item.is-active, .tabs-nav-item.is-active:hover {
+        border-bottom: none;
+        padding-bottom: 9px; }
+      .tabs-nav-item.is-active:hover a {
+        color: #323131; }
+      .tabs-nav-item:first-child {
+        margin-left: 0; }
+      .tabs-nav-item:hover {
+        background: #939191; }
+        .tabs-nav-item:hover a {
+          color: white;
+          text-decoration: none; }
+    .tabs-nav-switcher {
+      position: absolute;
+      top: 0;
+      height: 35px;
+      width: 15px;
+      border: 2px solid #323131;
+      background: #e1e1e1;
+      cursor: pointer; }
+      .tabs-nav-switcher-right {
+        right: 0; }
+      .tabs-nav-switcher-left {
+        left: 0; }
+        .tabs-nav-switcher-left:before {
+          content: "f053";
+          margin-left: -4px; }
+      .tabs-nav-switcher:before {
+        left: 50%;
+        margin-left: -3px;
+        padding: 7px 0;
+        font-size: 12px;
+        content: "\f054";
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        position: relative;
+        font-weight: normal; }
+  .tabs-content {
+    padding: 13px;
+    position: relative;
+    top: -2px;
+    z-index: 100;
+    border: solid 2px #323131;
+    background: white;
+    overflow: hidden; }
+
+.tabMenuItem {
+  margin-bottom: 0; }
+
+.no-js .tabs > .component-content {
+  padding-top: 0; }
+
+.no-js .tabs-nav {
+  display: none; }
+
+.no-js .tabs-content {
+  display: block !important;
+  visibility: visible !important; }

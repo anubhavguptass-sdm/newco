@@ -1,0 +1,55 @@
+@import '../core/mixins';
+ 
+.locationfinder {
+	input[type=text] {
+		font-family: arial;
+		font-size: 12px;
+		border: $borderbox;
+		display: inline;
+	    @include pull-left();
+		height: 12px;
+		padding: 8px;
+		width: 27%;
+			@include respond-to(mobile) {
+				width: 60%;    
+				margin-bottom: 20px;
+			}
+	} 
+	.button {
+		padding: 8px;
+		background-image: url(../../img/Search-icon.png);
+		background-repeat: no-repeat;
+		border: none;    margin-right: 20px;
+		width: 30px;
+		height: 30px;
+			@include respond-to(mobile) {
+				margin-right: 24%;
+				margin-bottom: 20px;
+			}
+	}
+	.locationFinder-selectOption {
+		width: 7%;
+		border: $borderbox;
+		height: 30px;
+		margin-left: 10px;
+		margin-right: 20px;
+			@include respond-to(mobile) {
+				width: 20%;
+				margin-left:0px; 
+				margin-right: 15px;
+			}
+	}
+	.locationFinder-selectOption1 {
+		height: 30px;
+		margin-left: 15px;
+		width: 15%;
+			@include respond-to(mobile) {
+				width: 40%;
+				margin-left:0px;
+			}
+	}
+	.locationFinder-loadMore .loadMore{
+		@include btn;
+	}
+
+}

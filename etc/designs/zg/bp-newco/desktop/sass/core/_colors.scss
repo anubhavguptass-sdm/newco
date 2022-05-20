@@ -1,0 +1,49 @@
+/* COLOR NAMES
+----------------------------------------- */
+
+/*theme colors*/
+
+$themeColor: #939191;
+
+$mediumThemeColor: lighten($themeColor, 15);
+$lightThemeColor: lighten($themeColor, 31);
+
+$darkThemeColor: darken($themeColor, 38);
+$mediumDarkThemeColor: lighten($darkThemeColor, 20);
+$lightDarkThemeColor:  lighten($darkThemeColor, 33);
+
+/*hard-coded colors*/
+$black: black;
+$white: white;
+$whiteSmoke: whiteSmoke;
+$red: red;
+
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+
+/*border colors*/
+$borderbox: 1px solid #D5D1CE;
+$borderColor: $darkThemeColor;
+$linkBorderColor: $mediumDarkThemeColor;
+$vertSeparatorBorderColor: $mediumThemeColor; // separator in rich text links
+
+/*text colors*/
+$defaultTextColor: $black;
+$alertTextColor: #8A0808;
+$linkTextColor: $lightDarkThemeColor;
+$textColor: $darkThemeColor;
+$textHoverColor: $white;
+$metaTextColor: $lightDarkThemeColor;
+$infoTextColor: $mediumDarkThemeColor;
+
+/*background colors*/
+$mainWrapperColor: $whiteSmoke;
+$backgroundColor: $lightThemeColor;
+$backgroundHoverColor: $themeColor;
+$backgroundActiveColor: $white;
+
+$backgroundColorOrange: #f36633;
+
+/*gradient colors*/
+$gradientEnds: $themeColor;
+$gradientMiddle: darken($themeColor, 38);

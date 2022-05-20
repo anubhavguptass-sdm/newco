@@ -1,0 +1,20 @@
+@import '../core/mixins'; 
+ 
+.editusername .editUserNameFormSuccess, .editUserNameFormFailure{
+	display:none;
+}
+.editusername .component-content .editUserNameFormSuccess p{
+	color:$alertTextColor;
+	margin-bottom:10px;
+}
+.editusername .component-content .editUserNameFormFailure p{
+	color:$alertTextColor;
+	margin-bottom:10px; 
+}
+.editUserNameForm .control-group .button{
+	margin-top:15px;
+}
+
+.button{
+	@include btn;
+}

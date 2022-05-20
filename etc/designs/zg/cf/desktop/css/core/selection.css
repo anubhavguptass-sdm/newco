@@ -1,0 +1,8 @@
+span.selection-underline {
+  text-decoration: underline; }
+
+span.selection-bold {
+  font-weight: bold; }
+
+span.selection-italic {
+  font-style: italic; }

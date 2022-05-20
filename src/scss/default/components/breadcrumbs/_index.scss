@@ -1,0 +1,202 @@
+@if $include-breadcrumbs {
+  .breadcrumbs {
+    margin: 0;
+
+    li {
+      align-items: center;
+      display: inline-flex;
+      flex: 0 0 auto;
+      flex-direction: $row-direction;
+      height: 50px;
+      position: relative;
+      margin: 0;
+      padding: 0;
+
+      &:nth-of-type(1) {
+        box-sizing: content-box;
+        flex: 1 1 auto;
+        max-width: 20px;
+        min-width: 20px;
+
+        a {
+          align-items: center;
+          border: 0;
+          display: inline-block;
+          font-size: 0 !important;
+          line-height: 0 !important;
+
+          &::before {
+            background-image: get-icon(
+              'home-icon',
+              $breadcrumbs-home-icon-color
+            );
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            content: '';
+            display: block;
+            height: 17px;
+            line-height: normal;
+            padding-#{$end-direction}: 5px;
+            width: 15px;
+          }
+        }
+      }
+
+      &:not(:nth-last-of-type(1)) {
+        flex: 0 0 auto;
+        min-width: 0;
+        margin-#{$end-direction}: 20px;
+
+        &::before {
+          position: absolute;
+          background-image: get-icon(
+            'right-arrow',
+            $breadcrumbs-arrow-icon-color
+          );
+          width: 10px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          content: '';
+          display: flex;
+          align-items: center;
+          align-content: center;
+          height: 100%;
+          top: 0;
+          bottom: 0;
+          #{$start-direction}: auto;
+          #{$end-direction}: -15px;
+          @if $global-direction == rtl {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+      // current page breadcrumb
+      &.is-current,
+      &.is-current a {
+        color: $breadcrumbs-current-color;
+      }
+    }
+
+    a {
+      color: $breadcrumbs-parent-color;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: $breadcrumbs-text-transform;
+      white-space: nowrap;
+      font-size: $breadcrumbsfont-size-m;
+      font-weight: $font-weight-breadcrumbs;
+      line-height: $line-height-breadcrumbs;
+      text-decoration: none;
+    }
+
+    &-list,
+    &-without-separator {
+      align-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: $row-direction;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      background: none;
+
+      a {
+        font-size: $breadcrumbsfont-size-d !important;
+        font-weight: $font-weight-breadcrumbs;
+        line-height: $line-height-breadcrumbs;
+      }
+    }
+    // breadcrumbs behavior styles
+    &.foldable {
+      ol {
+        flex-wrap: wrap !important;
+
+        > li {
+          height: auto !important;
+        }
+      }
+    }
+    // breadcrumbs behavior styles
+    &.ellipsis {
+      ol {
+        flex-wrap: nowrap !important;
+
+        > li {
+          flex: 0 1 auto !important;
+
+          &:nth-last-child(1) {
+            flex: 0 0 auto !important;
+          }
+        }
+      }
+    }
+    // breadcrumbs behavior styles
+    &.stacked-text {
+      ol {
+        flex-wrap: nowrap !important;
+
+        > li {
+          flex: 0 1 auto !important;
+          flex-wrap: wrap !important;
+          height: auto !important;
+          min-height: 50px !important;
+
+          > a {
+            white-space: normal !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// default cf styles
+.breadcrumbs {
+  margin: 10px 0;
+}
+
+.breadcrumbs-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .breadcrumbs-list li {
+    float: none;
+  }
+}
+
+.breadcrumbs-separator {
+  margin: 0 10px;
+}
+
+.breadcrumbs-without-separator .breadcrumbs-separator {
+  display: none;
+}
+
+.breadcrumbs-without-separator li {
+  position: relative;
+}
+
+.breadcrumbs-without-separator li:before {
+  right: 0;
+  content: ' ';
+  display: inline-block;
+  position: relative;
+  position: absolute;
+}
+
+.breadcrumbs-without-separator li:last-child {
+  background-image: none;
+}
+
+.breadcrumbs-without-separator li:last-child:before {
+  display: none;
+}

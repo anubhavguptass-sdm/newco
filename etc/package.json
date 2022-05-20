@@ -1,0 +1,33 @@
+{
+  "name": "Newco_22Feb",
+  "version": "1.0.0",
+  "subPackages": [
+    "/etc/designs/zg/circle-blueprint/desktop",
+    "/etc/designs/zg/cf/desktop",
+    "/etc/designs/zg/basic/desktop",
+    "/etc/designs/zg/bp-backrelief/desktop",
+    "/etc/designs/zg/jv-blueprint/desktop"
+  ],
+  "config": {
+    "engine": "Simple",
+    "rootPaths": [
+      "/content/cf-consumer-healthcare/bp-newco/en_US"
+    ]
+  },
+  "scripts": {
+    "postinstall": "subpkg install",
+    "build": "subpkg build",
+    "dev": "subpkg run dev",
+    "serve": "cross-var browser-sync start --startPath $npm_package_config_rootPaths_0.html -s --directory --serveStatic \".\" -f \"**/*.css,**/*.js,**/*.html\" --no-inject-changes --reload-delay 500",
+    "start": "concurrently -p \"[{name}]\" -n \"SYNC,WATCH\" -c \"cyan,green\" \"npm run serve\" \"npm run dev\"",
+    "update": "cross-var ce export $npm_package_config_rootPaths_0 -x -f content",
+    "deploy": "npm run build \u0026\u0026 ce import -c etc"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "concurrently": "^3.5.1",
+    "crex": "^1.5.0",
+    "cross-var": "^1.1.0",
+    "subpackage": "^1.1.0"
+  }
+}

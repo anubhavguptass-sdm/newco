@@ -1,0 +1,75 @@
+// String replace function for sass
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
+  }
+
+  @return $string;
+}
+
+$num-list: '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.', ',', '-', '+',
+  '/', '_';
+
+@function get-unit($str: null) {
+  @if $str == null or unitless($str) {
+    @return null;
+  }
+  $str: '#{$str}';
+  @each $num in $num-list {
+    $str: str-replace($str, $num, '');
+  }
+  @return $str;
+}
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function rem($value: null, $rendition: null) {
+  @if $value == null {
+    @return null;
+  }
+
+  $unit: get-unit($value);
+  $val: strip-units($value);
+  $root-val: strip-units($font-size-body);
+
+  @if $unit == null {
+    @return $value;
+  }
+
+  @if $rendition != null and $rendition == 'm' {
+    $root-val: strip-units($font-size-body-mobile);
+  }
+
+  @if $rendition == 'd' or $rendition == 'm' or $rendition == null {
+    @if ($unit == 'px') {
+      @return #{$val / $root-val}rem;
+    }
+    @if ($unit == 'pt') {
+      @return #{$val * 0.083333396325467}rem;
+    }
+    @if ($unit == 'pc') {
+      @return #{$val * 1.0000001251969}rem;
+    }
+    @if ($unit == 'in') {
+      @return #{$val * 6.0000007559056}rem;
+    }
+    @if ($unit == 'cm') {
+      @return #{$val * 2.3622050220101}rem;
+    }
+    @if ($unit == 'mm') {
+      @return #{$val * 0.23622050220101}rem;
+    }
+  } @else {
+    @debug '$rendition does allow only "d", "m" or null values. Or can be completely omited!';
+    @return $value;
+  }
+}

@@ -1,0 +1,166 @@
+@import '../core/mixins'; 
+ 
+.eventlist .eventListContent {
+	border-bottom: solid 1px #e0e0e0;
+	margin-bottom: 10px;
+}
+
+.eventlist .eventListContainer .eventList-img-small, .eventlist .eventListContainer .eventList-description,
+.eventlist .eventListContainer .eventList-img-large {
+	display: inline-block;
+	vertical-align: top;
+	@include pull-left();
+}
+
+.eventlist .eventListContainer .eventList-img-small img {
+	width: 100px;
+	height: 100px;
+}
+
+.eventlist .eventListContainer .eventList-description {
+	padding: 0 15px;
+	width: 60%;
+}
+
+.eventlist .eventListContainer .eventList-description p {
+	margin: 0 0 10px 0;
+}
+
+.eventlist .eventListContainer .eventList-webinarLink, .eventlist .eventListContainer .eventList-location,
+.eventlist .eventListContainer .eventList-button {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 15px;
+}
+
+.eventlist .eventListContainer .event-list-live_event {
+	vertical-align: middle;
+	padding: 30px 15px;
+	@include pull-right();
+	background: #f36633;
+	color: $white;
+}
+
+.eventlist .eventListContainer ul li {
+	list-style-type: none;
+    position: relative;
+	 li.live {
+		background: #e0e0e0;
+	}
+}
+.eventlist .eventListContainer .eventList-webinarLink span.eventList-duration{
+	background: url("../../img/clock.png") no-repeat left center;
+	padding: 5px 20px;
+}
+.eventlist .eventListContainer .eventList-webinarLink span.eventList-webinar-icon{
+	background: url("../../img/webinar_icon.png") no-repeat left center;
+	padding-left: 70px;
+	display: block;
+	margin-bottom: 7px;
+	width: 60px;
+	height: 11px;
+}
+.eventlist .eventListContainer .eventList-location span.eventList-location{
+	background: url("../../img/location.png") no-repeat left center;
+	padding-left: 15px;
+}
+.event-filter-container .event-filter-button {
+	margin-top: 15px;
+}
+.eventlist .event-list-live_event {
+	display: none;
+}
+.eventlist li.live .event-list-live_event {
+	display: inline-block;
+}
+.event-filter-container .event-filter-button .event-filter-submit {
+	background-color: $backgroundColorOrange;
+	border: $borderbox;
+	border-radius: 0;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px 20px;
+}
+
+.event-filter-date .searchFilter-start-date, .event-filter-date .searchFilter-end-date{
+	display: inline-block;
+}
+.event-filter-taggroup .searchFilter-control, .event-filter-format .searchFilter-control	{
+	background: none repeat scroll 0 0 #f5f5f5;
+	border-bottom: $borderbox;
+	padding: 7px 5px;
+}
+.eventlist .eventList-category {
+	margin-top: 10px;
+}
+.event-filter-format, .event-filter-date, .event-filter-button {
+	display: none;
+}
+.eventlist  .eventListContainer .loading {
+	padding: 50px;
+	text-align: center;
+}
+.eventList-eventNotWebinar, .eventList-duration, .eventList-eventWebinar{
+	display: none;
+}
+.showWebinarEvent .eventList-eventWebinar, .showWebinarEvent .eventList-duration{
+	display: block;
+}
+.showEventLocation .eventList-eventNotWebinar {
+	display: block;
+}
+.eventlist .eventList-location .eventList-eventWebinar{
+    background:url("../../img/video.png") no-repeat left center;padding:5px 23px;
+}  
+.eventlist .eventList-location .eventList-duration{
+	background:url("../../img/clock.png") no-repeat left center;
+	padding:5px 20px;
+}
+.eventlist .eventList-zincCode p{
+	@include pull-right();
+}
+.eventlist .eventList-eventLive.showLiveEvent{
+	display: inline-block;
+}
+.eventlist .eventList-eventLive p{
+	background:$backgroundColorOrange;
+	color:$white;
+	padding:40px 10px;
+} 
+.eventlist .eventList-eventLive.hideEvent{
+	display:none;
+}
+.eventList-availableOnline {
+    position: absolute;
+    bottom: 15px;
+    background: #605e5e;
+    color: $white;
+}
+.eventList-availableOnline p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 6px;
+}
+
+/* Tablet View Start */
+@include respond-to(tablet) {
+	.eventlist .eventListContainer .eventList-description {
+		width: 95%;
+	}
+}
+
+/* Mobile View Start */
+
+@include respond-to(mobile) {
+	.eventlist .eventListContainer .eventList-img {
+		display: block;
+		text-align: center;
+	}
+
+
+}
+
+

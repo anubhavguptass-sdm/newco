@@ -1,0 +1,9 @@
+// text color mixin for use in components same as text color utility class but without "!important",
+// ergo it can be overriden by utility classes
+@mixin text-color($color: $color-1) {
+  color: $color;
+
+  * {
+    color: $color;
+  }
+}

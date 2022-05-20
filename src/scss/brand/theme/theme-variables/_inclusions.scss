@@ -1,0 +1,62 @@
+/*
+** INCLUSIONS
+*/
+
+// COMPONENTS
+$include-accordion: true;
+$include-anchor-box: false;
+$include-box: false;
+$include-breadcrumbs: false;
+$include-cards: false;
+$include-carousel: true;
+$include-carousel-common-questions: false;
+$include-default-icon: true;
+$include-divider: false;
+$include-filter: true;
+$include-jv-sharer: false;
+$include-footer: true;
+$include-hero-banner: true;
+$include-list: true;
+$include-mega-menu: true;
+$include-quiz: false;
+$include-rich-text: true;
+$include-searchbox-results: true;
+$include-tabs: true;
+$include-titles: false;
+$include-video: true;
+$include-full-link: false;
+$include-table: true;
+$include-font-resizer: true;
+$include-bp-toggler: false;
+
+// CUSTOM & UTILITY CLASSES
+// i.e. text/border/background color utility classes
+$include-color-utility-classes: true;
+$include-blendings: false;
+
+// text
+$include-text-alignments: true;
+
+//backgrounds
+$include-sizes: true;
+$include-custom-sizes: true;
+$include-positions: true;
+$include-attachments: true;
+$include-repeats: true;
+
+//flex
+$include-flex: true;
+$include-flex-for-filter: true;
+$include-flex-justification: true;
+$include-flex-item-sizing: false;
+$include-flex-fullbox: false;
+$inlcude-flex-order: true;
+// include non predefined column sizes spacing
+$include-flex-npcss: true;
+
+//other
+$include-lineheights: false;
+$include-paddings-margins: true;
+$include-borders: true;
+$include-hide-classes: true;
+$include-width-utility-classes: false;

@@ -1,0 +1,16 @@
+// import 3rd party libraries first
+// import theme styles, mixins, functions & variables
+
+@import 'theme/index';
+
+// import component styles
+
+@import 'components/components';
+
+// import utils i.e. AEM editor visibility styles
+
+@import 'utils/aem_auth_show_components';
+@import 'utils/bp_debugger_flex_overlay';
+
+// import brand styles
+@import '../brand/theme/brand-styles';

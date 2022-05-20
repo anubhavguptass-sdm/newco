@@ -1,0 +1,13 @@
+// gives horizontal padding to element for content to keep desired width
+@mixin paddedWidth($width) {
+  padding-#{$start-direction}: calc((100% - #{$width}) / 2);
+  padding-#{$end-direction}: calc((100% - #{$width}) / 2);
+}
+
+// gives horizontal margin to element for it to keep full width within paddedwidth element or element with centered max width
+@mixin paddedWidthToFull($width) {
+  @media (min-width: $width) {
+    margin-#{$start-direction}: calc(((100vw - #{$width}) / 2) * -1) !important;
+    margin-#{$end-direction}: calc(((100vw - #{$width}) / 2) * -1) !important;
+  }
+}

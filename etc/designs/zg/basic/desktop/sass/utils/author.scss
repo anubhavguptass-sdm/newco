@@ -1,0 +1,17 @@
+/**
+* This file will be included in author mode only
+*
+* USE:
+* ".aem-AuthorLayer-Edit" to detect Touch UI authoring
+* ".cq-wcm-edit" to detect Classic UI authoring
+*/
+
+.hiddenField {
+  display: block;
+}
+
+#header,
+#content,
+#footer {
+  height: auto;
+}

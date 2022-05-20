@@ -1,0 +1,103 @@
+/*
+** CLASS FILTER
+*/
+
+$include-filter-themes: true !default;
+//list of color variables or false
+$colors-in-theme: $color-1, $color-2, $color-3 !default;
+
+$class-filter-left-border-color: none !default;
+$class-filter-selected-bckgrnd-color: $color-6 !default;
+$class-filter-selected-bckgrnd-hover-color: $color-7 !default;
+$class-filter-selected-text-color: $color-2 !default;
+$class-filter-selected-text-color-hover: $color-2 !default;
+$class-filter-border: solid $color-7 1px !default;
+$class-filter-selected-item-dropdown-text-alignment: center !default;
+$class-filter-arrow-dropdown-color: $color-2 !default;
+$class-filter-opened-background-color: $color-3 !default;
+$class-filter-opened-text-color: $color-2 !default;
+$class-filter-selection-border-color: $color-2 !default;
+$class-filter-selection-bckgrnd-color: $color-3 !default;
+$class-filter-selection-bckgrnd-active-color: $color-2 !default;
+$class-filter-selection-text-active-color: $white !default;
+$class-filter-button-bckgrnd-color: $color-4 !default;
+$class-filter-button-bckgrnd-active-color: $color-2 !default;
+$class-filter-button-bckgrnd-hover-color: $color-7 !default;
+$class-filter-button-border-radius: $border-radius-lg !default;
+$flex-filter-item-margins: 1rem;
+
+// CHANGE PADDING OF THE DROPDOWN LIST FILTER
+$class-filter-selected-padd-t-b-m: 1rem !default;
+$class-filter-selected-padd-l-r-m: 2rem !default;
+
+// CHANGE GUTTER OF GRID for buttons and links in class filter
+$class-filter-margin-x: 0.5rem;
+$class-filter-margin-x-m: $class-filter-margin-x;
+$class-filter-margin-y: 1rem;
+$class-filter-margin-y-m: $class-filter-margin-y;
+
+// ADJUST FONT SIZES OF CLASS FILTER
+$class-filter-selected-font-size-m: $font-size-body-mobile !default;
+$class-filter-selected-font-size-d: $font-size-body !default;
+
+$class-filter-button-font-size-m: $font-size-body-mobile !default;
+$class-filter-button-font-size-d: $font-size-body !default;
+
+$class-filter-title-text-color: $gray-600 !default;
+$class-filter-title-active-text-color: $color-1 !default;
+$class-filter-title-underline-color: $color-1 !default;
+$class-filter-title-underline-width: 60px !default;
+$class-filter-title-font-size: $font-size-body !default;
+$class-filter-title-font-weight: bold !default;
+$class-filter-title-font-size-mobile: 20px !default;
+$class-filter-title-font-weight-mobile: bold !default;
+$class-filter-title-margins: 1rem !default;
+$class-filter-title-margins-mobile: 1rem !default;
+$class-filter-title-divider-offset: 3px !default;
+
+$class-filter-max-items-per-row: 5 !default;
+$class-filter-max-items-per-row-mobile: 2 !default;
+$class-filter-max-items-justification: center !default;
+$class-filter-text-align: center !default;
+$class-filter-text-align-mobile: center !default;
+
+$filter-sidebar-max-width: 50% !default;
+$filter-sidebar-max-width-mobile: 70% !default;
+$filter-sidebar-main-background: rgba(0, 0, 0, 0.25) !default;
+$filter-sidebar-background-color: $color-3 !default;
+
+$symbols: (
+  bullet: '\2022',
+  play: '\2023',
+  hyphen: '\2010',
+  hyphenbullet: '\2043',
+  asterisks: '\002A',
+  flower: '\2055',
+  threedot: '\2056',
+  fourddot: '\2058',
+  leftbrace: '\007B',
+  none: ''
+) !default;
+
+$class-filter-links-color: $color-1 !default;
+$class-filter-links-color-hover: $color-2 !default;
+$class-filter-links-sublevel-color: $black !default;
+$class-filter-links-sublevel-color-hover: $color-3 !default;
+$class-filter-links-sublevel-size: 18px !default;
+$class-filter-links-sublevel-size-mobile: 18px !default;
+$class-filter-links-sublevel-start-margin: 10px !default;
+$class-filter-links-sublevel-y-margin: 10px !default;
+$class-filter-links-decoration: none !default;
+$class-filter-links-symbol-spacing: 10px !default;
+$class-filter-links-decoration-lvl1: none !default;
+$class-filter-links-symbol-spacing-lvl1: 0 !default;
+$class-filter-links-font-weight-lvl1: bold !default;
+$class-filter-links-decoration-lvl2: none !default;
+$class-filter-links-font-weight-lvl2: bold !default;
+$class-filter-links-symbol-spacing-lvl2: 0 !default;
+$class-filter-links-decoration-lvl3: bullet !default;
+$class-filter-links-font-weight-lvl3: normal !default;
+$class-filter-links-symbol-spacing-lvl3: 10px !default;
+$class-filter-links-decoration-lvl4: bullet !default;
+$class-filter-links-font-weight-lvl4: normal !default;
+$class-filter-links-symbol-spacing-lvl4: 10px !default;

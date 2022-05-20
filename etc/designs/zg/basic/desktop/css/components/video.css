@@ -1,0 +1,29 @@
+.video object,
+.video embed {
+  width: 100%; }
+
+.video-heading {
+  display: block;
+  color: #323131;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px; }
+
+.video-description {
+  padding: 13px;
+  margin-top: -2px;
+  border: solid 2px #323131; }
+
+.video-video {
+  border: solid 2px #323131; }
+  .video-video-container {
+    margin: 0 auto; }
+
+.video-nojs {
+  display: none;
+  padding: 20px 0;
+  text-align: center;
+  color: red; }
+
+.no-js .video-nojs {
+  display: block; }

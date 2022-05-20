@@ -1,0 +1,113 @@
+/*stylelint-disable*/
+// following vars are not in theme configuration
+
+// configure media query generic strings
+$background-renditions: (
+  'min-width' $breakpoint-md-min 'd',
+  'max-width' $breakpoint-md-max 'm'
+) !default;
+// configure background properties to iterate over
+// first level: property prefix
+// second level: property infix
+// third level: property value & suffix
+$background-properties: (
+  background: (
+    size: (
+      cover,
+      contain,
+      auto
+    ),
+    position: (
+      top left,
+      top right,
+      top center,
+      bottom left,
+      bottom right,
+      bottom center,
+      center,
+      center left,
+      center right
+    ),
+    attachment: (
+      scroll,
+      local,
+      fixed
+    ),
+    repeat: (
+      no-repeat,
+      repeat-x,
+      repeat-y,
+      round,
+      space
+    ),
+    blending: (
+      normal,
+      multiply,
+      screen,
+      overlay,
+      darken,
+      lighten,
+      color-dodge,
+      color-burn,
+      hard-light,
+      soft-light,
+      difference,
+      exclusion,
+      hue,
+      saturation,
+      color,
+      luminosity
+    )
+  )
+) !default;
+
+@if $include-box and $use-legacy == false {
+  .box {
+    @each $prop, $rendition, $suffix in $background-renditions {
+      @media (#{$prop}: #{$rendition}) {
+        @each $type, $val in $background-properties {
+          &.#{str-replace($type, 'background', 'bg')} {
+            @each $key, $value in $val {
+              &-#{$key} {
+                @each $end-value, $v in $value {
+                  &-#{str-replace($end-value, ' ', '-')}-#{$suffix} {
+                    @if $key == 'blending' {
+                      $key: 'blend-mode';
+                    }
+                    #{$type}-#{$key}: #{$end-value} !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.video-bg {
+      overflow: hidden !important;
+
+      video.box-video-bg {
+        @include animate(center);
+        height: 100%; /* height needs to be set to 100% */
+        #{$start-direction}: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%; /* width needs to be set to 100% */
+        z-index: 0;
+
+        &.ready-js {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.paralax-js {
+      background-position: top center;
+      background-repeat: repeat-y;
+      background-size: cover !important;
+    }
+  }
+}
+/*stylelint-enable*/

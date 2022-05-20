@@ -1,0 +1,30 @@
+.exit-notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000; }
+  .exit-notification.is-hidden {
+    display: none; }
+  .exit-notification-buttons {
+    text-align: right; }
+  @media screen and (max-width: 699px) {
+    .exit-notification-restrictive {
+      position: absolute; } }
+  .exit-notification-inner {
+    padding: 13px;
+    background-color: #e1e1e1;
+    position: fixed;
+    top: 100px;
+    width: 700px;
+    margin-left: -363px;
+    left: 50%; }
+    @media screen and (max-width: 699px) {
+      .exit-notification-inner {
+        position: absolute;
+        width: auto;
+        margin: 20px;
+        left: 0;
+        top: 0; } }

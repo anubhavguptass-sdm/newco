@@ -1,0 +1,13 @@
+@import '../core/mixins'; 
+ 
+.tellafriend .tellfriendButton{
+	margin-top:15px;
+} 
+.tellafriend .errorDivTellaFriend p{
+	color:#8A0808;
+} 
+.tellafriend .successDivTellaFriend p{
+	color:#84B200;
+}               
+.tellafriend .wsform-item textarea{width:220px;}                
+

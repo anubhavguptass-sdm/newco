@@ -1,0 +1,114 @@
+.btn {
+  height: 28px;
+  min-width: 105px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  background-color: $color-primary;
+  font-size: $font-size-18;
+  line-height: $line-height-100;
+  color: $color-2;
+  margin-left: 3px;
+
+  &:hover {
+    background-color: $color-2 !important;
+    color: $color-white !important;
+
+    img {
+      filter: brightness(0) invert(1) !important;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $color-2 !important;
+  }
+
+  &.btn-icon {
+    img {
+      width: 18px;
+      margin-left: 1rem;
+    }
+  }
+
+  &.btn-black {
+    background-color: transparent;
+    border: 2px solid $color-2;
+    color: $color-2;
+    font-weight: $font-normal !important;
+    font-size: $font-size-18;
+
+    &:hover {
+      background-color: $color-grey-3 !important;
+      color: $color-2 !important;
+
+      img {
+        filter: brightness(0) invert(0) !important;
+      }
+    }
+
+    &:focus {
+      outline: 2px solid $color-primary !important;
+      border: 2px solid $color-2 !important;
+    }
+  }
+
+  &.btn-dark-black {
+    background-color: $color-2;
+    border: 2px solid $color-2;
+    font-weight: $font-normal !important;
+    font-size: $font-size-18;
+    color: $color-white;
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+
+    &:hover {
+      background-color: #484848 !important;
+      color: $color-white !important;
+    }
+
+    &:focus {
+      outline: 2px solid $color-primary !important;
+    }
+  }
+
+  &.btn-pink {
+    background-color: $color-secondary-pink;
+    border: 2px solid $color-secondary-pink;
+    font-size: $font-size-18;
+
+    &:hover {
+      background-color: $color-secondary-pink !important;
+      color: $color-2 !important;
+
+      img {
+        filter: brightness(0) invert(0) !important;
+      }
+    }
+
+    &:focus {
+      outline: 2px solid $color-primary !important;
+    }
+  }
+
+  &.btn-white {
+    background-color: transparent;
+    border: 2px solid $color-white;
+    font-size: $font-size-18;
+    color: $color-white;
+    font-weight: $font-normal !important;
+
+    &:hover {
+      background-color: $color-1 !important;
+    }
+
+    &:focus {
+      outline: 2px solid $color-primary !important;
+    }
+
+    img {
+      filter: brightness(0) invert(1) !important;
+    }
+  }
+}

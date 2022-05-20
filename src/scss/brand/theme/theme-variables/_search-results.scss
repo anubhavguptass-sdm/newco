@@ -1,0 +1,46 @@
+/*
+** SEARCH RESULTS
+*/
+
+// description
+$search-result-description-color: $primary-text-color;
+$search-result-description-font-size: $font-size-body-mobile;
+$search-result-description-font-size-desktop: $font-size-body;
+$search-result-description-font-weight: normal;
+$search-result-description-font-weight-desktop: normal;
+$search-result-description-line-height: 20px;
+$search-result-description-line-height-desktop: 20px;
+
+// title
+$search-result-title-color: $color-1;
+$search-result-title-font-size: $font-size-h3-mobile;
+$search-result-title-font-size-desktop: $font-size-h3;
+$search-result-title-font-weight: 700;
+$search-result-title-font-weight-desktop: 700;
+$search-result-title-bottom-margin: 0.5rem;
+$search-result-title-decoration: none;
+
+// pagination
+$search-result-pagination-justification: center;
+$search-result-pagination-font-size: 16px;
+$search-result-pagination-font-size-desktop: 18px;
+$search-result-pagination-font-color: $color-1;
+$search-result-pagination-font-weight: 700;
+
+// result
+$result-y-padding: 1rem;
+
+// label
+$search-result-label-hidden: false;
+$search-result-label-bottom-offset: 2rem;
+$search-result-label-left-offset-mobile: -1rem;
+$search-result-label-font-size: 16px;
+$search-result-label-font-size-desktop: $font-size-body;
+$search-result-label-font-color: $gray-600;
+$search-result-label-font-weight: 700;
+$search-result-label-font-weight-desktop: 700;
+$search-result-label-font-size-keayword: 16px;
+$search-result-label-font-size-desktop-keyword: 18px;
+$search-result-label-font-keyword-color: $color-1;
+$search-result-label-font-keyword-weight: 700;
+$search-result-label-font-keyword-weight-desktop: 700;

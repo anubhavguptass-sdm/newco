@@ -1,0 +1,31 @@
+.tabsEnhancedMarkup .component-content .tabs-arrows {
+  display: flex;
+  width: 100%; }
+  .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-arrows__left {
+    float: left; }
+  .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-arrows__right {
+    float: right; }
+  .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-arrows--hidden {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none; }
+    .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-arrows--hidden a {
+      text-decoration: none; }
+  .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-dots {
+    display: inline-block;
+    margin: 0 auto;
+    width: 90%; }
+    .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-dots .tabs-dots__list {
+      display: flex; }
+      .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-dots .tabs-dots__list li {
+        display: block; }
+      .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-dots .tabs-dots__list .tabs-dots__item {
+        flex: auto; }
+        .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-dots .tabs-dots__list .tabs-dots__item .tabs-dots__dot {
+          display: block;
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          background-color: black; }
+      .tabsEnhancedMarkup .component-content .tabs-arrows .tabs-dots .tabs-dots__list .is-active .tabs-dots__dot {
+        background-color: #F36533; }

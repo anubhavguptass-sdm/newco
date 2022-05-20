@@ -1,0 +1,30 @@
+/*
+** ACCORDION
+*/
+
+// SETTINGS
+$accordion-full-width-background: false;
+$accordion-closed-icon: get-icon('plus-icon', $color-2);
+$accordion-closed-icon-hover: get-icon('plus-icon', $color-2);
+$accordion-opened-icon: get-icon('minus-icon', $color-2);
+$accordion-opened-icon-hover: get-icon('minus-icon', $color-2);
+$accordion-icon-size: 33px;
+$accordion-icon-size-desktop: 40px;
+$accordion-icon-offset: 1rem !default;
+
+// COLORS
+$accordion-link-color: $color-1;
+$accordion-background-color: #f3f4f5;
+$accordion-separator-color: $color-2;
+$accordion-separator-bottom-offset: 0%;
+$accordion-separator-width: 100%;
+$accordion-list-color: $color-3;
+$accordion-plus-icon-color: $color-2;
+$accordion-minus-icon-color: $color-2;
+
+// ITEM TITLE TOP AND BOTTOM SPACING
+$accordion-heading-spacing-t-b: $space-5;
+
+// ITEM FONT SIZES
+$accordion-link-font-size-m: 16px;
+$accordion-link-font-size-d: 18px;

@@ -1,0 +1,21 @@
+@import '../core/mixins'; 
+ 
+.rssfeed #rssFeedsDiv article{
+	border-bottom:dotted 1px;
+	margin-bottom:10px;
+	 h4{
+		margin:0;
+	}
+
+}
+.rssfeed .component-content p{
+	margin:5px 0;
+
+}
+.rssfeed .component-content p.rssFeedDate{
+	font-style:italic;
+}
+.rssfeed .component-content p.rssFeedLink{
+	text-align:right;
+	font-weight:700;
+}

@@ -1,0 +1,248 @@
+// body is used for overriding default component styles with same selecotr
+@if $include-accordion {
+  .accordion {
+    .accordion-container {
+      margin-top: 1rem;
+
+      @include sd {
+        margin-top: 0rem;
+      }
+    }
+
+    .accordion-slide {
+      border-top: 2px solid #000 !important;
+      border-bottom: 0px solid #000 !important;
+    }
+
+    .accordion-slide.is-active {
+      border-top: 4px solid #000 !important;
+      border-bottom: 2px solid #000 !important;
+    }
+
+    .accordion-slide.first {
+      border-top: 1px solid #000 !important;
+    }
+
+    .accordion-slide.last {
+      border-bottom: 1px solid #000 !important;
+    }
+
+    .accordion-slide.is-active.first {
+      border-top: 4px solid #000 !important;
+    }
+
+    .accordion-slide.is-active.last {
+      border-bottom: 4px solid #000 !important;
+    }
+  }
+
+  .accordion {
+    .accordion-container {
+      margin: 3rem 0 0;
+      padding: 0;
+      list-style: none;
+      .accordion-slide {
+        margin-bottom: 0;
+        list-style-type: none;
+        margin-left: 0;
+        border-top: 2px solid $color-2;
+        border-bottom: 2px solid $color-2;
+        &.last {
+          margin-bottom: 0;
+        }
+        &::before {
+          width: 100vw;
+          background-color: $color-white;
+        }
+        .accordion-content-wrapper {
+          .accordion-content > .paragraphSystem {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+          }
+          p {
+            margin: 0;
+          }
+        }
+        &.is-active {
+          .accordion-content-wrapper {
+            max-height: initial !important;
+          }
+          .accordion-head {
+            h3 a {
+              color: var(--color-2);
+            }
+            &:hover {
+              &::after {
+                background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/accordion-minus.svg) !important;
+              }
+            }
+            &::after {
+              background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/accordion-minus.svg) !important;
+              height: 24px;
+              width: 24px;
+            }
+          }
+        }
+        .accordion-head {
+          position: relative;
+          cursor: pointer;
+          &::after {
+            right: 0;
+            position: absolute !important;
+            background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/accordion-plus.svg) !important;
+            transition: unset;
+            height: 24px;
+            width: 24px;
+          }
+          &::before {
+            display: none;
+          }
+          &:hover {
+            &::after {
+              background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/accordion-plus.svg) !important;
+            }
+          }
+          h3 {
+            width: 80%;
+            a {
+              line-height: 22px;
+              font-weight: $font-semi-bold;
+              font-size: $font-size-21;
+              @media (min-width: $breakpoint-md-min) {
+                line-height: 29px;
+                font-size: 24px;
+              }
+              @include sm {
+                font-size: $font-size-18;
+              }
+              &:hover,
+              &:focus {
+                color: var(--color-1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .list-diff-style {
+      ul {
+        margin: $spacer 0 !important;
+        li {
+          a {
+            &:first-of-type {
+              &::after {
+                content: '';
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .faq-filters {
+      padding-top: 0 !important;
+    }
+    .title {
+      h1 {
+        font-weight: $font-extra-bold;
+        line-height: $line-height-125;
+      }
+    }
+    /* .richText-content {
+      p {
+        font-size: $font-size-18;
+      }
+    } */
+  }
+}
+
+.green-right-design {
+  position: absolute;
+  right: 0;
+  top: -5.4rem;
+  width: 30%;
+}
+.green-left-design {
+  width: 70%;
+}
+.faq-green-bar {
+  margin-bottom: 7rem !important;
+  &::before {
+    content: '';
+    background: var(--bg-color-2) !important;
+    width: 72%;
+    height: 100px;
+    position: absolute;
+    top: 100%;
+  }
+  &::after {
+    content: '';
+    background: var(--bg-color-2) !important;
+    width: 28%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 5rem !important;
+    &::before {
+      height: 70px;
+    }
+    &::after {
+      height: 70px;
+    }
+  }
+  .component-content {
+    line-height: 0;
+  }
+}
+
+.contact-us {
+  .accordion .accordion-container {
+    margin-top: 0;
+
+    .accordion-slide {
+      .accordion-head::after {
+        right: 16px;
+      }
+    }
+
+    .accordion-slide.is-active {
+      .accordion-head::after {
+        right: 16px;
+      }
+    }
+  }
+}
+
+.page-investors,
+.page-who-we-are,
+.page-contacts-accordion-version {
+  .accordion .accordion-container .accordion-slide {
+    border-top: 2px solid #000 !important;
+    border-bottom: 0px solid #000 !important;
+  }
+
+  .accordion .accordion-container .accordion-slide:first-of-type {
+    border-top: 0px solid #000 !important;
+  }
+
+  .accordion .accordion-container .accordion-slide.is-active {
+    border-top: 4px solid #000 !important;
+    border-bottom: 2px solid #000 !important;
+  }
+
+  .accordion .accordion-container .accordion-slide.is-active:first-of-type {
+    border-top: 3px solid #000 !important;
+  }
+
+  .accordion .accordion-container .accordion-slide.is-active:last-of-type {
+    border-bottom: 3px solid #000 !important;
+  }
+
+  .accordion-container {
+    border-top: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+  }
+}

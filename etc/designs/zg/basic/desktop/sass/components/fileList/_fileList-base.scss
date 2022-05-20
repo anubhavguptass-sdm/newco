@@ -1,0 +1,55 @@
+@import '../../core/mixins';
+
+.fileList {
+  &-heading {
+    @include heading();
+  }
+
+  &-date {
+    margin-bottom: 10px;
+
+    color: $meta-text-color;
+  }
+
+  &-file {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  &-description {
+    overflow: hidden;
+  }
+
+  &-title {
+    @include heading();
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &-thumbnail {
+    margin-right: 15px;
+    float: left;
+    max-width: 100px;
+
+    @include respond-to(mobile) {
+      float: none;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  &-download {
+    text-align: right;
+
+    &-size {
+      display: block;
+
+      color: $meta-text-color;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.browse-stories-sec {
+  .filter-container-js {
+    display: flex;
+    flex-direction: row !important;
+
+    @include sd {
+      flex-direction: column !important;
+    }
+
+    .selected-item-js {
+      display: inline-block;
+      text-decoration: underline;
+      padding: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      order: 1;
+      display: none;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 10px 10px 0;
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+      li.active-js {
+        background-color: #47ffe5;
+      }
+    }
+  }
+}
+
+.reference-bp-filter {
+  .class-filter {
+    .filter-container-js.faqs-filter {
+      &:focus {
+        &:focus-visible {
+          outline: 2px dotted;
+        }
+      }
+    }
+  }
+}
+
+.browse-stories-sec {
+  .filter-container-js {
+    ul {
+      li {
+        margin-top: 2px;
+        margin-left: 2px;
+
+        &:focus {
+          &:focus-visible {
+            outline: 2px dotted;
+          }
+        }
+      }
+    }
+  }
+
+  .filter-container-js.faqs-filter {
+    .selected-item-js {
+      &:focus {
+        &:focus-visible {
+          outline: 2px dotted;
+        }
+      }
+    }
+  }
+}
+
+.filter-list-js::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-list-js {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.operate-filter-article-section {
+  .faqs-filter {
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 1rem;
+    position: relative;
+
+    .filter-list-js {
+      display: none;
+    }
+  }
+
+  .faqs-filter:after {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    font-family: monospace;
+    z-index: -1;
+    content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/dropdown-arrow.svg');
+  }
+
+  .faqs-filter.opened-js {
+    .filter-list-js {
+      display: block;
+      position: absolute;
+      background: #fff;
+      width: auto;
+      height: auto;
+      z-index: 100;
+      width: 200px;
+      border: 1px solid #000;
+      left: 0px;
+      padding: 5px;
+
+      .filter-item-js {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.page-where-we-operate {
+  .faqs-filter.opened-js {
+    .filter-list-js {
+      .filter-item-js {
+        &:focus {
+          &:focus-visible {
+            outline: 2px dotted;
+          }
+        }
+      }
+    }
+  }
+}

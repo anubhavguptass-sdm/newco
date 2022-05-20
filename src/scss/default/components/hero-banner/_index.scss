@@ -1,0 +1,74 @@
+@import 'hero-banner-enhanced-h4-v0';
+@import 'hero-banner-enhanced-h4-v1';
+@import 'hero-banner-h5-v0';
+@import 'hero-banner-h5-v1';
+
+@if $include-hero-banner {
+  .fold-carousel {
+    @media (max-width: $breakpoint-sm-max) {
+      &-m {
+        .carouselSlide {
+          .carousel-content {
+            > .paragraphSystem {
+              display: flex !important;
+              flex-direction: column !important;
+
+              .box {
+                position: relative;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      &-d {
+        .carouselSlide {
+          .carousel-content {
+            > .paragraphSystem {
+              display: flex;
+              flex-direction: column;
+
+              .box {
+                position: relative;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fold-hero {
+    @media (max-width: $breakpoint-sm-max) {
+      &-m {
+        .component-content {
+          > .paragraphSystem {
+            display: flex !important;
+            flex-direction: column !important;
+
+            .box {
+              position: relative !important;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      &-d {
+        .component-content {
+          > .paragraphSystem {
+            display: flex !important;
+            flex-direction: column !important;
+
+            .box {
+              position: relative !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

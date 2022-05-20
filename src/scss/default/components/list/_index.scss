@@ -1,0 +1,249 @@
+@if $include-list {
+  .richText {
+    $percent-step: 10 !default;
+    $i: 0 !default;
+    $full: 100 !default;
+
+    &-content {
+      p + ul,
+      p + ol {
+        margin-top: -0.5rem;
+      }
+
+      ul,
+      ol {
+        margin: 0;
+        padding: 0;
+
+        > li {
+          color: $primary-text-color;
+          display: block;
+          line-height: $line-height-body-mobile;
+          list-style-type: none;
+          margin: 0;
+          margin-bottom: $list-bottom-spacing;
+          padding: 0;
+          padding-#{$start-direction}: $list-bullet-spacing;
+          position: relative;
+          text-align: $start-direction;
+
+          &:nth-last-of-type(1) {
+            margin-bottom: 0;
+          }
+
+          &::before {
+            color: $list-bullet-color;
+            content: '\2022';
+            display: inline-flex;
+            font-size: $list-bullet-size;
+            #{$start-direction}: 0;
+            line-height: $line-height-body-mobile;
+            position: absolute;
+            text-indent: 0;
+            top: 0;
+            @media (min-width: $breakpoint-md-min) {
+              line-height: $line-height-body;
+            }
+          }
+
+          @media (min-width: $breakpoint-md-min) {
+            line-height: $line-height-body;
+          }
+        }
+      }
+
+      ol > li {
+        @for $i from 1 through 100 {
+          &:nth-child(#{$i})::before {
+            content: '#{$i}.';
+            font-size: inherit;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    // list alignment
+    &.text {
+      @media (max-width: $breakpoint-md-max) {
+        &-center {
+          .richText-content {
+            ul > li {
+              text-align: center !important;
+            }
+          }
+        }
+
+        &-right {
+          .richText-content {
+            ul > li {
+              text-align: $end-direction !important;
+            }
+          }
+        }
+
+        &-left {
+          .richText-content {
+            ul > li {
+              text-align: $start-direction !important;
+            }
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &-d-center {
+          .richText-content {
+            ul > li {
+              text-align: center !important;
+            }
+          }
+        }
+
+        &-d-right {
+          .richText-content {
+            ul > li {
+              text-align: $end-direction !important;
+            }
+          }
+        }
+
+        &-d-left {
+          .richText-content {
+            ul > li {
+              text-align: $start-direction !important;
+            }
+          }
+        }
+      }
+    }
+
+    &.no-bullets {
+      .richText-content {
+        ul > li {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @each $key, $value in $all-colors {
+      &.list-color-#{$key} {
+        li {
+          &::before {
+            color: $value !important;
+          }
+        }
+      }
+    }
+
+    &.list-align {
+      @media (max-width: $breakpoint-md-max) {
+        &-left,
+        &-right,
+        &-center {
+          .richText-content {
+            display: flex;
+            flex-direction: $row-direction;
+            flex-wrap: wrap;
+
+            > * {
+              flex: 1 1 100%;
+            }
+
+            > ul {
+              flex: 0 1 auto;
+            }
+          }
+        }
+
+        &-left {
+          .richText-content {
+            justify-content: flex-start;
+          }
+        }
+
+        &-center {
+          .richText-content {
+            justify-content: center;
+          }
+        }
+
+        &-right {
+          .richText-content {
+            justify-content: flex-end;
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &-d-left,
+        &-d-right,
+        &-d-center {
+          .richText-content {
+            display: flex;
+            flex-direction: $row-direction;
+            flex-wrap: wrap;
+
+            > * {
+              flex: 1 1 100%;
+            }
+
+            > ul {
+              flex: 0 1 auto;
+            }
+          }
+        }
+
+        &-d-left {
+          .richText-content {
+            justify-content: flex-start;
+          }
+        }
+
+        &-d-center {
+          .richText-content {
+            justify-content: center;
+          }
+        }
+
+        &-d-right {
+          .richText-content {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+
+    @while $i < $full {
+      $i: $i + $percent-step;
+      @media (max-width: $breakpoint-md-max) {
+        &.list-w-#{$i} {
+          .richText-content {
+            ul {
+              max-width: percentage($i / $full) !important;
+
+              ul {
+                max-width: none !important;
+              }
+            }
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &.list-w-d-#{$i} {
+          .richText-content {
+            ul {
+              max-width: percentage($i / $full) !important;
+
+              ul {
+                max-width: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

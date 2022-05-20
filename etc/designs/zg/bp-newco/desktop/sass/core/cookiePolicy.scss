@@ -1,0 +1,68 @@
+@import '../core/mixins';
+
+// info version
+.cookiePolicy-info {
+  @include filled;
+  @include transition(2s linear all);
+  max-height: 1000px;
+  overflow: hidden;
+
+  &.collapsed {
+    max-height: 0;
+  }
+
+  .cookiePolicy-inner {
+    padding: 20px 10px;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
+// restrictive version
+.cookiePolicy-restrictive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+
+  &.collapsed {
+    display: none;
+  }
+
+  .cookiePolicy-inner {
+    $width: 700px;
+    position: fixed;
+    top: 100px;
+    width: $width;
+    margin-left: -$width/2;
+    left: 50%;
+    @include innerspace;
+    @include filled;
+
+    @media screen and (max-width: 699px) {
+      position: absolute;
+      width: auto;
+      margin: 20px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+}
+
+@media screen and (max-width: 699px) {
+
+  .cookiePolicy-restrictive {
+    position: absolute;
+  }
+}
+
+// commons
+.cookiePolicy-buttons {
+  text-align: right;
+}

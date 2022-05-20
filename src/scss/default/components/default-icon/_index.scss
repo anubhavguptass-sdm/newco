@@ -1,0 +1,54 @@
+@if $include-default-icon {
+  .default-icon {
+    display: inline-block;
+    width: auto;
+
+    > a {
+      background-color: $default-icon-color;
+      display: inline-block;
+      position: relative;
+
+      &:not(:last-child) {
+        margin: 0 10px 10px 0 !important;
+      }
+
+      img {
+        height: 20px;
+        #{$start-direction}: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50% * $transform-direction, -50%);
+        width: 20px;
+      }
+    }
+
+    &.default {
+      > a {
+        height: $default-icon-size;
+        width: $default-icon-size;
+      }
+    }
+
+    &.middle {
+      > a {
+        height: $middle-icon-size;
+        width: $middle-icon-size;
+      }
+    }
+
+    &.large {
+      > a {
+        height: $large-icon-size;
+        width: $large-icon-size;
+      }
+    }
+  }
+
+  .d-icon {
+    display: inline-block;
+    font-size: 0;
+    line-height: 1;
+    width: auto;
+  }
+}

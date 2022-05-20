@@ -1,0 +1,38 @@
+$theme-color: #939191;
+
+$medium-theme-color: lighten($theme-color, 15);
+$light-theme-color: lighten($theme-color, 31);
+$dark-theme-color: darken($theme-color, 38);
+
+$medium-dark-theme-color: lighten($dark-theme-color, 20);
+$light-dark-theme-color: lighten($dark-theme-color, 33);
+
+$black: black;
+$white: white;
+$white-smoke: whiteSmoke;
+$red: red;
+$blue: #52A8EC;
+
+$border-color: $dark-theme-color;
+$link-border-color: $medium-dark-theme-color;
+$vert-separator-border-color: $medium-theme-color;
+
+$form-border-color: $medium-theme-color;
+$form-active-border-color: $blue;
+$form-disable-color: $light-theme-color;
+
+$default-text-color: $black;
+$alert-text-color: $red;
+$link-text-color: $light-dark-theme-color;
+$text-color: $dark-theme-color;
+$text-hover-color: $white;
+$meta-text-color: $light-dark-theme-color;
+$info-text-color: $medium-dark-theme-color;
+
+$main-wrapper-color: $white-smoke;
+$background-color: $light-theme-color;
+$background-hover-color: $theme-color;
+$background-active-color: $white;
+
+$gradient-ends: $theme-color;
+$gradient-middle: darken($theme-color, 38);

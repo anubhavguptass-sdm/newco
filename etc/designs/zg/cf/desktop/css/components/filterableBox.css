@@ -1,0 +1,60 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.filterableBox {
+  position: relative;
+  margin-left: 10px; }
+  .filterableBox .filterableBox__header {
+    display: flex; }
+    .filterableBox .filterableBox__header .header__item {
+      margin-right: 20px; }
+    .filterableBox .filterableBox__header .header__searchWrapper .searchWrapper__search-box {
+      height: 100%;
+      padding: 0; }
+    .filterableBox .filterableBox__header .header__sortMenu .sortMenu__label {
+      background-color: #f36633;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin: auto; }
+    .filterableBox .filterableBox__header .header__sortMenu .sortMenu__items {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      margin-top: 10px;
+      padding-inline-start: 0; }
+      .filterableBox .filterableBox__header .header__sortMenu .sortMenu__items .sortMenu__item {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer; }
+        .filterableBox .filterableBox__header .header__sortMenu .sortMenu__items .sortMenu__item:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5); }
+        .filterableBox .filterableBox__header .header__sortMenu .sortMenu__items .sortMenu__item.active {
+          font-weight: bold; }
+  .filterableBox .filterableBox__content {
+    margin-top: 20px; }
+    .filterableBox .filterableBox__content .content__noResultFound {
+      display: none; }
+    .filterableBox .filterableBox__content .content {
+      display: flex;
+      flex-wrap: wrap; }
+      .filterableBox .filterableBox__content .content .indexable-component {
+        padding: 10px; }
+        .filterableBox .filterableBox__content .content .indexable-component:first-child {
+          margin-right: 20px; }

@@ -1,0 +1,120 @@
+@import '../../core/mixins';
+
+.accordion {
+  &-container {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    @include frame();
+  }
+
+  &-slide {
+    border-top: 2px solid $black;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  &-head {
+    @include innerspace();
+
+    @include heading();
+    @include filled();
+    background: $background-color;
+    color: $text-color;
+  }
+
+  &-title {
+    float: none;
+    margin: 0;
+
+    display: inline-block;
+  }
+
+  &-content {
+    @include innerspace();
+
+    &-wrapper {
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+    }
+  }
+}
+
+.mod-js {
+  .accordion {
+    &-content-wrapper {
+      position: relative;
+      height: 0;
+      top: -999999px;
+      left: -999999px;
+      overflow: hidden;
+      box-sizing: border-box;
+
+      visibility: hidden;
+    }
+
+    &-head {
+      position: relative;
+
+      cursor: pointer;
+
+      &:after {
+        position: absolute !important;
+        top: 50%;
+        margin-top: -10px;
+        right: 15px;
+
+        @include font-awesome($fa-var-chevron-right);
+        font-size: 12px;
+      }
+    }
+
+    &-slide {
+
+      &.is-active > .accordion-head:hover,
+      &.is-active > .accordion-head {
+        color: $text-color;
+        cursor: pointer;
+
+        &:after {
+          right: 15px;
+
+          @include font-awesome($fa-var-chevron-down);
+        }
+      }
+
+      .accordion-head:hover {
+        color: $text-color;
+      }
+
+      &.is-active {
+        > .accordion-head {
+          color: $black;
+
+          &:hover {
+            @include filled();
+          }
+        }
+
+        > .accordion-content-wrapper {
+          position: relative;
+          top: auto;
+          left: auto;
+          height: auto;
+
+          visibility: visible;
+        }
+
+        &:last-child {
+          > .accordion-content-wrapper {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

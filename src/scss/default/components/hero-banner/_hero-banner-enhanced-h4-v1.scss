@@ -1,0 +1,30 @@
+@if $include-hero-banner-enhanced-h4-v1 and $include-hero-banner {
+  .hero-banner-enhanced-h4-v1 .carousel .bg-full {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero-banner-enhanced-h4-v1 .carousel {
+    .carousel-nav-next a::before,
+    .carousel-nav-prev a::before {
+      content: '';
+    }
+
+    .carousel-nav-next a,
+    .carousel-nav-prev a {
+      border-#{$end-direction}: 4px solid $carousel-arrow-color;
+      border-top: 4px solid $carousel-arrow-color;
+      height: 30px;
+      width: 30px;
+    }
+
+    .carousel-nav-next a {
+      transform: rotate(45deg);
+    }
+
+    .carousel-nav-prev a {
+      transform: rotate(-135deg);
+    }
+  }
+}

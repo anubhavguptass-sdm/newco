@@ -1,0 +1,180 @@
+@import '../core/mixins'; 
+ 
+.ratingsandreviews div.gig-comments-commentList-header-commentsCount,
+.ratingsandreviews div.gig-comments-headerLinks{
+	padding-top:0px;
+}
+.ratingsandreviews a.gig-comments-headerLinks-rss, 
+.ratingsandreviews a.gig-comments-headerLinks-rss:hover, 
+.ratingsandreviews a.gig-comments-headerLinks-rss:link, 
+.ratingsandreviews a.gig-comments-headerLinks-rss:active,
+.ratingsandreviews a.gig-comments-headerLinks-rss:visited,
+.ratingsandreviews a.gig-comments-headerLinks-subscribe, 
+.ratingsandreviews a.gig-comments-headerLinks-subscribe:hover,
+.ratingsandreviews a.gig-comments-headerLinks-subscribe:link,
+.ratingsandreviews a.gig-comments-headerLinks-subscribe:active, 
+.ratingsandreviews a.gig-comments-headerLinks-subscribe:visited,
+.ratingsandreviews span.gig-comments-replies-length{
+	text-decoration: none; 
+}
+.ratingsandreviews{padding:20px; border: 1px solid #D5D1CE;}
+.ratingsandreviews .gig-rating-writeYourReview, 
+.ratingsandreviews a.gig-comments-button, 
+.ratingsandreviews a.gig-comments-button:link, 
+.ratingsandreviews a.gig-comments-button:active,
+.ratingsandreviews a.gig-comments-button:visited,
+.ratingsandreviews .gig-rating-writeYourReview:link,
+.ratingsandreviews .gig-rating-writeYourReview:active, 
+.ratingsandreviews .gig-rating-writeYourReview:visited{
+    background: #F36633;
+    border: 1px solid #D5D1CE;
+    border-radius: 0; 
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 2px;      
+}
+.ratingsandreviews a.gig-comments-button.gig-comments-button-vote{
+	background:none;
+	padding: 5px;     
+}
+.ratingsandreviews a.gig-comments-button-post, 
+.ratingsandreviews a.gig-comments-button-post:hover, 
+.ratingsandreviews a.gig-comments-button-post:link, 
+.ratingsandreviews a.gig-comments-button-post:active,
+.ratingsandreviews a.gig-comments-button-post:visited, 
+.ratingsandreviews a.gig-comments-button-ok, 
+.ratingsandreviews a.gig-comments-button-ok:hover, 
+.ratingsandreviews a.gig-comments-button-ok:link, 
+.ratingsandreviews a.gig-comments-button-ok:active, 
+.ratingsandreviews a.gig-comments-button-ok:visited, 
+.ratingsandreviews .gig-comments-linksContainer li,
+.ratingsandreviews .gig-composebox-post, .gig-composebox-post:hover{
+    background: #F36633;
+    border: 1px solid #D5D1CE;
+    border-radius: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 3px;
+}
+.ratingsandreviews .gig-composebox-post{
+	padding: 3px 25px;
+}
+.ratingsandreviews .gig-comments-linksContainer li:after {
+   background:none;
+}
+
+.ratingsandreviews .gig-comments-rss a:link, 
+.ratingsandreviews .gig-comments-rss a:visited, 
+.ratingsandreviews .gig-comment-repliesArrow-text{
+    color:$white;
+}
+.ratingsandreviews a.gig-comments-dropdown, 
+.ratingsandreviews a.gig-comments-dropdown:link, 
+.ratingsandreviews a.gig-comments-dropdown:active,
+.ratingsandreviews a.gig-comments-dropdown:visited{ 
+    padding:2px;
+    background:none;
+}
+
+.ratingsandreviews span.gig-comments-username{color:#F36633;}
+.ratingsandreviews div.gig-comments-dottedLine {
+    background-image: none;   
+    height: 1px;
+    border-bottom:1px dotted #D5D1CE;
+    margin-top: 5px;
+}
+
+
+
+.ratingsandreviews .gig-comments-container{width:auto!important;}
+.ratingsandreviews div.gig-comments-commentBox-bottom{border-top:none;}
+.ratingsandreviews div.gig-comments-comment-body{color:#635A54;}
+.ratingsandreviews div.gig-comments-headerText{color: #F36633;font-weight:700;}
+.ratingsandreviews textarea.gig-comments-textarea, .ratingsandreviews div.gig-comments-textarea-wrapper{height:180px;}
+.ratingsandreviews div.gig-comments-commentBox-bottom{margin-top:10px;}
+.ratingsandreviews div.gig-comments-star {background-image: url("../../img/review-and-ratings/star_grey.gif");}
+.ratingsandreviews div.gig-comments-star-full,
+.ratingsandreviews .gig-comment-rating-star-full, 
+.ratingsandreviews .gig-composebox-rating-star-full, 
+.ratingsandreviews .gig-selfreview-rating-star-full
+{
+    background-image: url("../../img/review-and-ratings/Favourite.gif");
+}
+.ratingsandreviews div.gig-comments-star {width:15px;height:14px;}
+.ratingsandreviews div.gig-comments-providerIcons {background-image: url("../../img/review-and-ratings/ButtonLogin_Icons.png");}
+.ratingsandreviews div.gig-comments-star-editable, 
+.ratingsandreviews div.gig-comments-star-editable-empty, 
+.ratingsandreviews div.gig-comments-addComment-ratings-error
+.ratingsandreviews div.gig-comments-star-editable-empty,
+.ratingsandreviews div.gig-comments-star-myRating {
+                    background-image: url("../../img/review-and-ratings/star_icon_big.png"); 
+}
+
+.ratingsandreviews .gig-rating-star {
+    background-image: url("../../img/review-and-ratings/star_gray_big.png");
+}
+.ratingsandreviews .gig-rating-star-full,
+.ratingsandreviews .gig-selfreview-rating-star.gig-selfreview-rating-star-full{
+    background-image: url("../../img/review-and-ratings/star_selected_big.png");
+}
+.ratingsandreviews .gig-rating-star-half{
+background-image: url("../../img/review-and-ratings/Star_half_big.png");
+}
+.ratingsandreviews div.gig-comments-vote-up, .ratingsandreviews .gig-comment-vote-pos.gig-comment-vote-with-value{
+background-image: url("../../img/review-and-ratings/thumbsup_hover.png");
+}
+
+.ratingsandreviews div.gig-comments-expand-arrow{
+    background-image: url("../../img/review-and-ratings/icon_ExpandReply.png");
+}
+.ratingsandreviews div.gig-comments-collapse-arrow {
+    background-image: url("../../img/review-and-ratings/icon_CollapsReply.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 13px;
+    vertical-align: bottom;
+    width: 10px;
+}
+.ratingsandreviews div.gig-comments-close-icon{
+    background-image: url("../../img/review-and-ratings/overlay-close-icon.png");
+}
+
+div.gig-comments-star-editable-full, div.gig-comments-star-myRating-full, 
+div.gig-comments-addComment-ratings-error div.gig-comments-star-editable-full
+{
+    background-image: url("../../img/review-and-ratings/star_selected_big.png");
+}
+
+.ratingsandreviews div.gig-comments-star-editable-full, 
+.ratingsandreviews div.gig-comments-star-myRating-full, 
+.ratingsandreviews div.gig-comments-addComment-ratings-error, 
+.ratingsandreviews div.gig-comments-star-editable-full, 
+.ratingsandreviews .gig-composebox-rating-star.gig-composebox-rating-star-full{
+    background-image: url("../../img/review-and-ratings/star_selected_big.png");
+}
+
+.ratingsandreviews .gig-rating-readReviewsLink,
+.ratingsandreviews .gig-rating-readReviewsLink:link,
+.ratingsandreviews .gig-rating-readReviewsLink:active,
+.ratingsandreviews .gig-rating-readReviewsLink:visited, 
+.ratingsandreviews .gig-rating-readReviewsLink:hover {
+	color:#1A768D;text-decoration:none;
+}
+.ratingsandreviews textarea.gig-comments-textarea{
+  background-image:none;
+}
+.ratingsandreviews .gig-comment{background:#fff;margin-bottom:10px;}
+
+.ratingsandreviews .gig-comment-title, 
+.ratingsandreviews .gig-comment-photo, 
+.ratingsandreviews .gig-comment-data{padding:5px;}
+
+.ratingsandreviews .reviewPageDetails.hideLikeLink .gig-comment-likeLink, 
+.ratingsandreviews .reviewPageDetails.hideLikeLink .gig-comment-vote-posneg,  
+.ratingsandreviews .hideCommentReply .gig-comment-replyLink, 
+.ratingsandreviews .hideShareButton .gig-comment-shareLink,
+.ratingsandreviews .hideOtherComments .gig-comments-comments,  
+.ratingsandreviews .hideHeaderBar .gig-comments-header{display:none;}

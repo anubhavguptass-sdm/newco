@@ -1,0 +1,118 @@
+{
+    "name": "blueprinttheme",
+    "engines": {
+        "node": ">=10.16.3"
+    },
+    "version": "0.0.6",
+    "custom": {
+        "brand": "bp-preparationh"
+    },
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "main": "webpack.config.js",
+    "browserslist": [
+        "> 1%",
+        "last 3 versions"
+    ],
+    "scripts": {
+        "start": "webpack-dev-server --config webpack.config.js --port 3001 --hot --inline --compress",
+        "prettier": "prettier --config .prettierrc.js --write src/scss/**/*.scss src/js/**/*.js",
+        "lint": "npm run lint:style && npm run lint:js",
+        "lint:style": "stylelint src/scss/**/*.scss --config .stylelintrc.js --fix",
+        "lint:js": "eslint -c .eslintrc src/js/**/*.js -f compact --fix",
+        "build": "webpack --config webpack.config.js --mode production",
+        "bundle": "npm run prettier && npm run lint && npm run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/node": "^7.8.7",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/polyfill": "^7.8.7",
+        "@babel/preset-env": "^7.9.6",
+        "autoprefixer": "^9.7.6",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.1.0",
+        "babel-plugin-lodash": "^3.3.4",
+        "before-build-webpack": "^0.2.9",
+        "clean-webpack-plugin": "^2.0.1",
+        "copy-webpack-plugin": "^5.1.1",
+        "css-loader": "^2.1.1",
+        "es6-promise": "^4.2.6",
+        "eslint": "^5.16.0",
+        "eslint-config-prettier": "^4.2.0",
+        "eslint-loader": "^2.1.2",
+        "eslint-plugin-eslint-comments": "^3.1.1",
+        "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+        "husky": "^2.1.0",
+        "lodash-webpack-plugin": "^0.11.5",
+        "mini-css-extract-plugin": "^0.6.0",
+        "node-sass": "^4.14.1",
+        "npm": "^6.14.8",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "postcss-loader": "3.0.0",
+        "prettier": "^1.19.1",
+        "read-json-sync": "^2.0.1",
+        "sass-loader": "^7.3.1",
+        "style-loader": "^0.23.1",
+        "stylelint": "^13.7.2",
+        "stylelint-config-sass-guidelines": "^6.2.0",
+        "terser-webpack-plugin": "^1.3.0",
+        "url-loader": "^1.0.1",
+        "webpack": "^4.46.0",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.3",
+        "webpack-merge": "^4.2.2"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run prettier && npm run lint"
+        }
+    },
+    "keywords": [
+        "babel",
+        "boilerplate",
+        "es6",
+        "sass",
+        "webpack"
+    ],
+    "dependencies": {
+        "@node-minify/core": "^6.0.0",
+        "@node-minify/cssnano": "^6.0.0",
+        "@node-minify/terser": "^6.0.0",
+        "adm-zip": "^0.4.14",
+        "babel-preset-es2015": "^6.24.1",
+        "core-js": "^2.6.5",
+        "css-selector-parser": "^1.4.1",
+        "cssnano": "^4.1.10",
+        "extract-html-class": "^1.0.1",
+        "fast-array-diff": "^0.2.0",
+        "filepath": "^1.1.0",
+        "find-unused-sass-variables": "^2.0.0",
+        "import-glob-loader": "^1.1.0",
+        "lodash": "^4.17.20",
+        "luxon": "^1.25.0",
+        "minify": "^5.1.1",
+        "moment": "^2.25.0",
+        "open": "^7.0.4",
+        "postcss": "^8.1.0",
+        "prompt": "^1.0.0",
+        "prompt-async": "^0.9.9",
+        "prompts": "^2.3.2",
+        "request-promise": "^4.2.5",
+        "rimraf": "^3.0.2",
+        "scrollbooster": "^1.1.0",
+        "stickyfill": "^1.1.1-strict",
+        "string-extract-class-names": "^5.9.24",
+        "stylelint-config-standard": "^20.0.0",
+        "survey-jquery": "^1.7.4",
+        "terser": "^5.0.0",
+        "transliteration": "^2.1.11",
+        "youtube-player": "^5.5.2"
+    }
+}

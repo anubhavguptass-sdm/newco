@@ -1,0 +1,26 @@
+.accordion-container {
+  list-style: none;
+}
+
+.accordion-head {
+  padding: 13px 0;
+}
+
+.accordion-title {
+  margin: 0;
+}
+
+.mod-js .accordion-head {
+  position: relative;
+  cursor: pointer;
+}
+
+.mod-js .accordion-head:after {
+  position: absolute !important;
+  content: " ";
+}
+
+.mod-js .accordion-slide.is-active>.accordion-head:hover,
+.mod-js .accordion-slide.is-active>.accordion-head {
+  cursor: pointer;
+}

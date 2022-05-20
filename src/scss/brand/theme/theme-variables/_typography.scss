@@ -1,0 +1,54 @@
+//AJUST LINE HEIGHTS FOR THE THEME
+$line-height-body: $line-height-150;
+$line-height-body-mobile: $line-height-150;
+$font-size-big: 5rem;
+$font-size-h1: 4.5rem;
+$font-size-h2: 2.25rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.3125rem;
+$font-size-h5: 1.125rem;
+$font-size-h6: 0.75rem;
+$font-size-12: 0.75rem;
+$font-size-13: 0.813rem;
+$font-size-14: 0.875rem;
+$font-size-15: 0.938rem;
+$font-size-16: 1rem;
+$font-size-18: 1.125rem;
+$font-size-21: 1.313rem;
+$font-size-button-large: 1.125rem;
+$font-size-button-medium: 0.9375rem;
+$font-size-button-small: 0.8125rem;
+$font-size-input-large: 1.125rem;
+$font-size-input-medium: 1rem;
+$font-size-input-small: 0.875rem;
+
+//Font Size Mobile
+$font-size-big-mobile: 2.625rem;
+$font-size-h1-mobile: 2rem;
+$font-size-h2-mobile: 1.5rem;
+$font-size-h3-mobile: 1.3125rem;
+$font-size-h4-mobile: 1.125rem;
+
+//Font Weights
+$font-light: 300;
+$font-normal: 400;
+$font-semi-bold: 500;
+$font-bold: 600;
+$font-extra-bold: 900;
+
+//Box Shadow
+$box-shadow-1: 0px 1px 2px rgba(0, 0, 0, 0.1);
+$box-shadow-2: 0px 3px 8px -1px rgba(0, 0, 0, 0.1);
+$box-shadow-3: 0px 6px 20px -4px rgba(0, 0, 0, 0.1);
+$box-shadow-4: 0px 16px 40px -8px rgba(0, 0, 0, 0.1);
+$box-shadow-5: 0px 20px 56px -10px rgba(0, 0, 0, 0.15);
+$box-shadow-6: 0px 24px 64px -12px rgba(0, 0, 0, 0.2);
+
+//BORDER SIZES
+$button-border-size: 1px;
+
+//BACKUP FOR ORIGINAL COMPONENTS
+$font-size-tiny: 0.688rem;
+$font-size-subhead: $font-size-h2-mobile;
+$font-size-subhead-mobile: $font-size-body-mobile;
+$font-size-intro: $font-size-h2-mobile;

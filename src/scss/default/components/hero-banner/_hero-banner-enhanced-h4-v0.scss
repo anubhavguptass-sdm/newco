@@ -1,0 +1,245 @@
+@if $include-hero-banner-enhanced-h4-v0 and $include-hero-banner {
+  .hero-banner-enhanced-h4-v0 {
+    > * {
+      > .paragraphSystem {
+        overflow: hidden;
+        position: relative;
+
+        > .box {
+          bottom: 0;
+          height: 100%;
+          #{$start-direction}: 0;
+          margin: auto;
+          position: absolute;
+          #{$end-direction}: 0;
+          top: 0;
+          width: 100%;
+          z-index: 9;
+
+          > .component-content {
+            height: 100%;
+            width: 100%;
+
+            > .paragraphSystem {
+              display: flex;
+              flex-direction: $row-direction;
+              flex-wrap: wrap;
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+
+        > .image {
+          height: auto;
+          position: relative;
+          width: 100%;
+
+          > * {
+            img {
+              height: auto;
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-md-min) {
+      > * {
+        > * {
+          > .box {
+            > .component-content {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    &.vertical {
+      &-top {
+        > * {
+          > * {
+            > .box {
+              > * {
+                > .paragraphSystem {
+                  align-content: flex-start;
+                  align-items: flex-start;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-bottom {
+        > * {
+          > * {
+            > .box {
+              > * {
+                > .paragraphSystem {
+                  align-content: flex-end;
+                  align-items: flex-end;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-center {
+        > * {
+          > * {
+            > .box {
+              > * {
+                > .paragraphSystem {
+                  align-content: center;
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &-d {
+          &-top {
+            > * {
+              > * {
+                > .box {
+                  > * {
+                    > .paragraphSystem {
+                      align-content: flex-start;
+                      align-items: flex-start;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &-bottom {
+            > * {
+              > * {
+                > .box {
+                  > * {
+                    > .paragraphSystem {
+                      align-content: flex-end;
+                      align-items: flex-end;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &-center {
+            > * {
+              > * {
+                > .box {
+                  > * {
+                    > .paragraphSystem {
+                      align-content: center;
+                      align-items: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.horizontal {
+      &-left {
+        > * {
+          > * {
+            > .box {
+              > * {
+                > .paragraphSystem {
+                  justify-content: flex-start;
+                  justify-items: flex-start;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-right {
+        > * {
+          > * {
+            > .box {
+              > * {
+                > .paragraphSystem {
+                  justify-content: flex-end;
+                  justify-items: flex-end;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-center {
+        > * {
+          > * {
+            > .box {
+              > * {
+                > .paragraphSystem {
+                  justify-content: center;
+                  justify-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        &-d {
+          &-left {
+            > * {
+              > * {
+                > .box {
+                  > * {
+                    > .paragraphSystem {
+                      justify-content: flex-start;
+                      justify-items: flex-start;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &-right {
+            > * {
+              > * {
+                > .box {
+                  > * {
+                    > .paragraphSystem {
+                      justify-content: flex-end;
+                      justify-items: flex-end;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &-center {
+            > * {
+              > * {
+                > .box {
+                  > * {
+                    > .paragraphSystem {
+                      justify-content: center;
+                      justify-items: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

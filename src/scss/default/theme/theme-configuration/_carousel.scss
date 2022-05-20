@@ -1,0 +1,23 @@
+/*
+** CAROUSEL
+*/
+
+// COLORS
+$nav-dot-color: transparent !default;
+$nav-dot-active-color: $color-1 !default;
+$nav-dot-border: solid $color-1 1px !default;
+$carousel-arrow-color: $color-1 !default;
+
+// NAVIGATION DOT SIZE AND SPACING
+$carousel-dot-spacing: $space-5;
+$carousel-dot-size: $space-10 !default;
+
+//----------------------------------------------------------------------------
+
+/*
+** COMMON QUESTIONS SLIDER
+*/
+
+// COLORS
+$common-questions-plus-icon-color: $black !default;
+$common-questions-minus-icon-color: $black !default;

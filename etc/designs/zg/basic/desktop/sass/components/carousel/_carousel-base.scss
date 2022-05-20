@@ -1,0 +1,193 @@
+@import '../../core/mixins';
+
+.carousel {
+  > .component-content {
+    position: relative;
+    padding: 15px 60px;
+
+    @include frame();
+    @include filled();
+  }
+
+  &-slides {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &-slide {
+    clear: both;
+    position: absolute;
+    width: 100%;
+
+    .no-content,
+    .no-image {
+      text-align: center;
+    }
+
+    &.is-active {
+      display: block;
+      position: relative;
+    }
+
+    .image-and-content {
+      overflow: hidden;
+    }
+
+    .no-content .carousel-cover {
+      float: none;
+      max-width: 100%;
+    }
+
+    .no-image .carousel-content {
+      float: none;
+      max-width: 100%;
+    }
+  }
+
+  &-cover {
+    max-width: 50%;
+    height: auto;
+    float: right;
+
+    @include respond-to(mobile) {
+      max-width: 100%;
+      float: none;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  &-content {
+    max-width: 48%;
+    float: left;
+    width: 100%;
+
+    text-align: left;
+    transition: margin 200ms ease-in;
+
+    @include respond-to(mobile) {
+      max-width: 100%;
+      float: none;
+    }
+  }
+
+  &-nav {
+    padding: 0;
+    margin-top: 20px;
+    overflow: hidden;
+
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 3px;
+
+      &.is-active a {
+        background: $background-hover-color;
+      }
+    }
+
+    a {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+
+      font-size: 0;
+      color: transparent;
+      border: 2px solid $link-border-color;
+    }
+
+    &-prev,
+    &-next {
+      position: absolute;
+      top: 50%;
+      width: 19px;
+      height: 31px;
+
+      border: none;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        border: none;
+
+        &:before {
+          font-size: 30px;
+          color: $theme-color;
+        }
+
+        &:hover {
+          &:before {
+            color: $dark-theme-color;
+          }
+        }
+      }
+
+      @include respond-to(mobile) {
+        display: block;
+      }
+    }
+
+    &-prev {
+      left: 10px;
+
+      a {
+        &:before {
+          @include font-awesome($fa-var-chevron-left);
+        }
+      }
+    }
+
+    &-next {
+      right: 10px;
+
+      a {
+        &:before {
+          @include font-awesome($fa-var-chevron-right);
+        }
+      }
+    }
+  }
+
+  .carousel-autoplay-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+
+    button {
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.no-js {
+  .carousel {
+    &-slide {
+      position: static;
+
+      &:first-child {
+        margin-top: 0;
+
+        border-top: none;
+      }
+    }
+
+    &-nav {
+      li {
+        display: none;
+      }
+    }
+  }
+}

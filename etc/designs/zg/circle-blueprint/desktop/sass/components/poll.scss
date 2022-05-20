@@ -1,0 +1,66 @@
+@import '../core/mixins'; 
+ 
+.poll{
+	border: $borderbox;
+	padding:15px;
+}
+.poll .content-component{
+	border: $borderbox;
+	border-top:none;
+}
+.poll .poll-description, .poll .pollOptionContainer, .pollResultContainer{
+	padding:0 13px;	
+}
+.poll .genericPollGroup {
+	clear:both
+	.button{	
+		margin-bottom:15px;
+	} 
+}
+.pollResultsContainer {
+	border-top:solid 1px #e0e0e0;
+	padding-top:10px;
+	margin-top:15px;
+		h4 span.pollResultValue{
+			display:inline-block; 
+			background-color:#F36633;
+			color:$white;
+			font-size:14px;
+			padding:5px 10px; 
+		}
+}
+.poll .pollTitle{ 
+    text-align:right;
+    margin-right:15px;
+}
+.poll .genericPollGroup{clear:both}
+
+.poll .pollControl-radio{
+    @include pull-left();
+	margin: 0;
+	padding: 0;
+	width: 21px;
+ input[type="radio"]{
+    @include pull-left();
+	margin: 2px 2px 0 0;
+	padding: 0;
+	width: 15px;
+}
+	label{
+    @include pull-left();
+	padding: 1px 0 0;
+}
+
+}
+
+.poll button.showPollResult{
+	margin:15px 0 0 0;
+}
+
+.poll .pollError p{
+	border:solid 1px #e0e0e0;
+	color:#c1056f;
+	padding:10px;
+} 
+	
+.cfButton{background-color: #F36633;border: 1px solid #D5D1CE;color: #fff;padding: 5px 20px;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;cursor: pointer;display: inline-block;}

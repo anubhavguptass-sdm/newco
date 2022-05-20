@@ -1,0 +1,80 @@
+@import '../../core/mixins';
+
+.twitter {
+  > .component-content {
+    @include innerspace();
+
+    @include frame();
+    @include filled();
+  }
+
+  &-feed {
+    @include clearfix;
+    position: relative;
+    display: block;
+    margin: 10px 0;
+    padding-left: 55px;
+
+    list-style-type: none;
+  }
+
+  &-content {
+    a {
+      &:hover {
+        strong {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  a:hover
+  &-sender-avatar {
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+
+  &-date {
+    float: right;
+  }
+
+  &-actions {
+    padding: 0;
+    margin: 0;
+    float: right;
+  }
+
+  &-action {
+    list-style-type: none;
+    display: inline;
+  }
+
+}
+
+.feed-provider {
+  &-heading {
+    display: inline-block;
+    margin: 0 0 0 20px;
+
+    line-height: 30px;
+
+    &-image {
+      float: left;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &-description {
+    margin: 10px 0;
+    padding: 10px 0;
+
+    border-bottom: 1px solid $black;
+  }
+
+  &-feeds {
+    padding: 0;
+    margin: 0;
+  }
+}

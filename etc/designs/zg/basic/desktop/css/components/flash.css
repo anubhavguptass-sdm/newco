@@ -1,0 +1,11 @@
+.flash > .component-content {
+  text-align: center; }
+
+.flash object {
+  max-width: 100%; }
+
+.flash-missing {
+  margin: 0 auto; }
+
+.flash .seoDescription {
+  display: none; }

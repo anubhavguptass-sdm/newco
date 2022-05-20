@@ -1,0 +1,138 @@
+@if $include-color-utility-classes {
+  /*
+  ** Color classes
+  ** Generating all of the color classes by iterating through the color list
+  ** backgound color classes: .bg-color-(desired color name)
+  ** text color classes: .color-(desired color name)
+  ** border color classes: .border-color-(desired color name)
+  */
+  @each $key, $value in $text-theme-colors {
+    .text-color-#{$key} {
+      color: $value !important;
+
+      & * {
+        color: $value !important;
+      }
+
+      @media (min-width: $breakpoint-sm-min) {
+        &-d {
+          color: $value !important;
+
+          & * {
+            color: $value !important;
+          }
+        }
+      }
+    }
+  }
+  @each $key, $value in $background-theme-colors {
+    .bg-color-#{$key} {
+      background-color: $value !important;
+
+      &-inner {
+        background-color: transparent !important;
+
+        > .row {
+          background-color: transparent !important;
+        }
+
+        > * {
+          > .paragraphSystem {
+            background-color: transparent !important;
+          }
+        }
+      }
+
+      > .component-content {
+        background-color: transparent !important;
+
+        > .paragraphSystem {
+          background-color: transparent !important;
+        }
+      }
+
+      // for styling exactly only the language list background
+      &.megamenu-language-list {
+        > .inner {
+          background-color: $value !important;
+
+          > .component-content {
+            background-color: transparent !important;
+          }
+        }
+      }
+      @media (min-width: $breakpoint-sm-min) {
+        &-d {
+          &-inner {
+            background-color: transparent !important;
+
+            > .row {
+              background-color: transparent !important;
+            }
+
+            > * {
+              > .paragraphSystem {
+                background-color: transparent !important;
+              }
+            }
+          }
+
+          > .component-content {
+            background-color: transparent !important;
+
+            > .paragraphSystem {
+              background-color: transparent !important;
+            }
+          }
+
+          // for styling exactly only the language list background
+          &.megamenu-language-list {
+            > .inner {
+              background-color: $value !important;
+
+              > .component-content {
+                background-color: transparent !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @each $key, $value in $border-theme-colors {
+    .border-color-#{$key} {
+      border-color: $value !important;
+
+      @media (min-width: $breakpoint-sm-min) {
+        &-d {
+          border-color: $value !important;
+        }
+      }
+    }
+  }
+}
+
+.background-gradient-1 {
+  background: -moz-linear-gradient(top, #ffffff 0%, #fbfcfc 75%, #f6f8f8 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #ffffff 0%,
+    #fbfcfc 75%,
+    #f6f8f8 100%
+  );
+  background: linear-gradient(to bottom, #ffffff 0%, #fbfcfc 75%, #f6f8f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f8f8', GradientType=0);
+}
+
+.background-gradient-2 {
+  background: -moz-linear-gradient(top, #f8f9fa 0%, #fbfcfc 75%, #f6f8f8 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #f8f9fa 0%,
+    #fbfcfc 75%,
+    #f6f8f8 100%
+  );
+  background: linear-gradient(to bottom, #f8f9fa 0%, #fbfcfc 75%, #f6f8f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f9fa', endColorstr='#f6f8f8', GradientType=0);
+}

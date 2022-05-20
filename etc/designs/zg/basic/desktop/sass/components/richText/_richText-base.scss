@@ -1,0 +1,63 @@
+@import '../../core/mixins';
+
+.richText .component-content {
+  overflow: hidden;
+}
+
+.richText {
+  @include headings;
+
+  a {
+    text-decoration: underline;
+  }
+
+  ul, ol {
+    padding: 10px 0;
+    margin-left: 10px;
+  }
+
+  li {
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    list-style-type: none;
+  }
+
+  ol {
+    li {
+      list-style: decimal;
+    }
+  }
+
+  ul {
+    li {
+      position: relative;
+      margin-left: 0;
+      padding-left: 15px;
+
+      &:before {
+        position: absolute;
+        top: 1px;
+        left: -5px;
+
+        @include font-awesome($fa-var-caret-right);
+      }
+    }
+  }
+
+  &-image {
+    display: block;
+    margin-bottom: 10px;
+
+    &.pull-left {
+      margin: 5px 15px 5px 10px;
+      float: left;
+    }
+
+    &.pull-right {
+      margin: 5px 10px 5px 15px;
+      float: right;
+    }
+  }
+}

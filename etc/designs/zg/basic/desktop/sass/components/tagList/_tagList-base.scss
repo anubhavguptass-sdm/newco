@@ -1,0 +1,31 @@
+.tagList {
+  &-heading {
+    font-weight: bold;
+    color: $dark-theme-color;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-tag {
+    display: inline-block;
+  }
+
+  &-tag-link, &-tag-item {
+    @extend %btn;
+
+    margin-right: 5px;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+  }
+}

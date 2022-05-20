@@ -1,0 +1,42 @@
+@if $include-hide-classes {
+  /*
+  ** hide classes to hide content
+  ** .hide - do not render
+  ** .hide-keep - hide but render
+  */
+  .hide {
+    display: none !important;
+
+    &-keep {
+      height: 0 !important;
+      max-height: 0 !important;
+      min-height: 0 !important;
+      opacity: 0 !important;
+      overflow: hidden !important;
+      visibility: hidden !important;
+    }
+  }
+  // use for accessibility on elements
+  // more info: https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    .hide-m {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: $breakpoint-md-min) {
+    .hide-d {
+      display: none !important;
+    }
+  }
+}

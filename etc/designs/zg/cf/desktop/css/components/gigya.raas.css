@@ -1,0 +1,18 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.hidden-password-field {
+  display: none; }
+
+.gigya-screen .default-submit-button input[type=submit] {
+  background-color: #f36633; }

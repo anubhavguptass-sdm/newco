@@ -1,0 +1,110 @@
+/*
+** MEGAMENU COLORS SETUP
+*/
+
+//MOBILE BASE BACKGROUND COLOR (TOP FIXED BAR)
+$mobile-base-color: $white !default;
+
+//MEGAMENU BACKGROUND AND TEXT
+$megamenu-background-color: $white !default;
+$megamenu-text-color: $color-2 !default;
+
+//DESKTOP NAVIGATION BAR BACKGROUND AND TEXT
+$magamenu-navigation-bar-background: $color-1 !default;
+$magamenu-navigation-bar-spacing: 0 !default;
+$megamenu-navigation-bar-text-color: $white !default;
+$megamenu-navigation-bar-text-decoration: none !important !default;
+
+//LOGO
+$megamenu-logo-top-offset: -50% !default;
+$megamen-logo-image-desktop-width: 140px;
+
+//NAVIGATION LINK COLORS
+$navigation-link-color: $white !default;
+$navigation-link-color-hover: $color-1 !default;
+$navigation-link-color-mobile: $color-1 !default;
+$navigation-link-color-hover-mobile: $color-1 !default;
+$navigation-link-2nd-level-color: $color-1 !default;
+$navigation-link-2nd-level-color-hover: $color-1 !default;
+
+//NAVIGATION BAR LINKS DECORATION
+$megamenu-navigation-link-decoration-color: $white !default;
+$megamenu-navigation-link-decoration-height: 3px !default;
+$megamenu-navigation-link-decoration-width: 70px !default;
+$megamenu-navigation-link-decoration-background-color: transparent !default;
+$megamenu-navigation-link-decoration-background-color-hover: $white !default;
+$megamenu-navigation-link-hover-decoration: false !default;
+$megamenu-navigation-link-active-decoration: true !default;
+$megamenu-navigation-link-hover-background: true !default;
+$megamenu-navigation-link-active-background: false !default;
+$megamenu-navigation-bar-height: 45px !default;
+$megamenu-navigation-bar-link-size-desktop: 14px !default;
+$megamenu-navigation-link-desktop-max-height: 75% !default;
+$megamenu-links-sides-padding: 5px !default;
+
+// unit (px/rem/em/percentage) needs to be speccified
+$megamenu-navigation-link-decoration-offset: 1px !default;
+$megamenu-top-bar-link-color: $color-2;
+$megamenu-top-bar-link-color-hover: $color-1 !default;
+$megamenu-top-nav-link-hover-decoration: true !default;
+
+//UTILITY NAVIGATION ITEMS SPACING
+$megamenu-utility-items-spacing: 1rem !default;
+
+//NAVIGATION ICONS COLORS
+$navigation-search-icon-color: $color-2 !default;
+$navigation-search-icon-color-hover: $gray-700 !default;
+$navigation-search-border-color: $gray-400 !default;
+$navigation-search-border-color-mobile: $color-2 !default;
+$navigation-exit-icon-color: $color-1 !default;
+$navigation-burger-icon-color: $color-1 !default;
+
+// HAMBURGER
+$megamenu-hamburger-size: 20px !default;
+
+//MEGAMENU DROPDOWN BACKGROUND AND TEXT
+$megamenu-submenu-background: $white !default;
+$megamenu-submenu-text: $color-1 !default;
+$megamenu-submenu-shadow: inset 0 -10px 10px -10px #666363 !default;
+
+//MEGAMENU COUNTRY LIST BACKGROUND AND TEXT
+$megamenu-countrylist-background: $white !default;
+$megamenu-countrylist-text: $color-1 !default;
+$megamenu-countrylist-shadow: $megamenu-submenu-shadow !default;
+
+$country-selected-border-color: $color-3 !default;
+$country-selected-border-radius: 0 !default;
+$country-selected-padding: 15px 20px !default;
+
+// LANGUAGE-SELECTOR ARROW COLOR
+$megamenu-language-selector-color: $color-2 !default;
+$megamenu-language-list-top-position: 92px !default;
+
+// LANGUAGE LIST CLOSE
+$megamenu-language-list-close-size: 50px;
+$megamenu-language-list-close-color: $white;
+$megamenu-language-list-close-weight: 700;
+$megamenu-language-list-close-font-size: 30px;
+$megamenu-language-list-close-padding: 10px;
+$megamenu-language-list-close-margin: 0;
+$megamenu-language-list-close-background: $color-1;
+
+//MEGAMENU SIMPLE NAVIGATION DROPDOWN BACKGROUND AND TEXT
+$simple-navigation-submenu-background: $color-1 !default;
+$simple-navigation-submenu-text: $color-1 !default;
+
+//MEGAMENU SEARCH BOX
+$search-box-border-color: $color-3 !default;
+$search-result-description-color: $gray-700 !default;
+$search-box-padding: 0.5rem 1rem 0.5rem 2rem !default;
+$search-box-padding-mobile: 0.5rem 2rem !default;
+$search-placeholder-icon-position: center left 5px !default;
+$search-placeholder-icon-color: $color-1 !default;
+$search-box-font-size: $font-size-body !default;
+$search-box-font-size-mobile: 18px !default;
+$search-box-icon-size: $search-box-font-size !default;
+
+// NAVIGATION LEVEL 2 BORDER
+$navigation-border-level-2: none !default;
+//NAVIGATION BORDERS
+$navigation-border-bottom-mobile: $white !default;

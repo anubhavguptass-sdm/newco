@@ -1,0 +1,289 @@
+/*stylelint-disable*/
+@if $include-bp-toggler {
+  .toggler {
+    &-content {
+      overflow: hidden !important;
+    }
+    // layout styles
+    @media (min-width: $breakpoint-sm-min) {
+      //desktop styles
+      &-container {
+        position: relative;
+      }
+
+      &-controller {
+        position: absolute;
+        z-index: 99;
+
+        &.top-#{$start-direction} {
+          top: 0;
+          bottom: auto;
+          #{$start-direction}: 0;
+          #{$end-direction}: auto;
+
+          &.bleed {
+            &-x {
+              transform: translateX(-100%);
+            }
+            &-y {
+              transform: translateY(-100%);
+            }
+            &-xy {
+              transform: translate(-100%, -100%);
+            }
+          }
+        }
+        &.top-#{$end-direction} {
+          top: 0;
+          bottom: auto;
+          #{$end-direction}: 0;
+          #{$start-direction}: auto;
+
+          &.bleed {
+            &-x {
+              transform: translateX(100%);
+            }
+            &-y {
+              transform: translateY(-100%);
+            }
+            &-xy {
+              transform: translate(100%, -100%);
+            }
+          }
+        }
+
+        &.bottom-#{$start-direction} {
+          top: auto;
+          bottom: 0;
+          #{$start-direction}: 0;
+
+          &.bleed {
+            &-x {
+              transform: translateX(-100%);
+            }
+            &-y {
+              transform: translateY(100%);
+            }
+            &-xy {
+              transform: translate(-100%, 100%);
+            }
+          }
+        }
+
+        &.bottom-#{$end-direction} {
+          top: auto;
+          bottom: 0;
+          #{$end-direction}: 0;
+
+          &.bleed {
+            &-x {
+              transform: translateX(100%);
+            }
+            &-y {
+              transform: translateY(100%);
+            }
+            &-xy {
+              transform: translate(100%, 100%);
+            }
+          }
+        }
+
+        &.middle- {
+          &#{$start-direction},
+          &#{$end-direction} {
+            top: 0;
+            bottom: 0;
+          }
+
+          &#{$start-direction} {
+            #{$start-direction}: 0;
+
+            &.bleed {
+              &-x {
+                transform: translateX(-100%);
+              }
+            }
+          }
+
+          &#{$end-direction} {
+            #{$end-direction}: 0;
+
+            &.bleed {
+              &-x {
+                transform: translateX(100%);
+              }
+            }
+          }
+        }
+
+        &.top-center {
+          top: 0;
+          bottom: auto;
+          left: 0;
+          right: 0;
+          margin: auto;
+
+          &.bleed {
+            &-y {
+              transform: translateY(-100%);
+            }
+          }
+        }
+        &.bottom-center {
+          top: auto;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+
+          &.bleed {
+            &-y {
+              transform: translateY(100%);
+            }
+          }
+        }
+      }
+    }
+    // layout styles
+    @media (max-width: $breakpoint-sm-max) {
+      //mobile styles
+      &-container {
+        position: relative;
+      }
+
+      &-controller {
+        position: absolute;
+        z-index: 9;
+
+        &.top-#{$start-direction}-m {
+          top: 0;
+          bottom: auto;
+          #{$start-direction}: 0;
+          #{$end-direction}: auto;
+
+          &.bleed-m {
+            &-x-m {
+              transform: translateX(-100%);
+            }
+            &-y-m {
+              transform: translateY(-100%);
+            }
+            &-xy-m {
+              transform: translate(-100%, -100%);
+            }
+          }
+        }
+        &.top-#{$end-direction}-m {
+          top: 0;
+          bottom: auto;
+          #{$end-direction}: 0;
+          #{$start-direction}: auto;
+
+          &.bleed {
+            &-x-m {
+              transform: translateX(100%);
+            }
+            &-y-m {
+              transform: translateY(-100%);
+            }
+            &-xy-m {
+              transform: translate(100%, -100%);
+            }
+          }
+        }
+
+        &.bottom-#{$start-direction}-m {
+          top: auto;
+          bottom: 0;
+          #{$start-direction}: 0;
+
+          &.bleed {
+            &-x-m {
+              transform: translateX(-100%);
+            }
+            &-y-m {
+              transform: translateY(100%);
+            }
+            &-xy-m {
+              transform: translate(-100%, 100%);
+            }
+          }
+        }
+
+        &.bottom-#{$end-direction}-m {
+          top: auto;
+          bottom: 0;
+          #{$end-direction}: 0;
+
+          &.bleed {
+            &-x-m {
+              transform: translateX(100%);
+            }
+            &-y-m {
+              transform: translateY(100%);
+            }
+            &-xy-m {
+              transform: translate(100%, 100%);
+            }
+          }
+        }
+
+        &.middle- {
+          &#{$start-direction}-m,
+          &#{$end-direction}-m {
+            top: 0;
+            bottom: 0;
+          }
+
+          &#{$start-direction}-m {
+            #{$start-direction}: 0;
+
+            &.bleed {
+              &-x-m {
+                transform: translateX(-100%);
+              }
+            }
+          }
+
+          &#{$end-direction} {
+            #{$end-direction}: 0;
+
+            &.bleed {
+              &-x-m {
+                transform: translateX(100%);
+              }
+            }
+          }
+        }
+
+        &.top-center-m {
+          top: 0;
+          bottom: auto;
+          left: 0;
+          right: 0;
+          margin: auto;
+
+          &.bleed {
+            &-y-m {
+              transform: translateY(-100%);
+            }
+          }
+        }
+        &.bottom-center-m {
+          top: auto;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+
+          &.bleed {
+            &-y-m {
+              transform: translateY(100%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*stylelint-enable*/

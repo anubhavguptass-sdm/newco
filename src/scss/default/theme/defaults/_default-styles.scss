@@ -1,0 +1,563 @@
+::selection {
+  background: $selection-background-color;
+  color: $selection-text-color;
+}
+
+::-moz-selection {
+  background: $selection-background-color;
+  color: $selection-text-color;
+}
+
+* {
+  outline: none;
+
+  .outlined {
+    outline: $aria-outline;
+  }
+}
+
+/* THIS IS TO KEEP FOOTER ALWAYS AT THE BOTTOM, EVEN WHEN THERE'S NO CONTENT IN .content */
+body,
+html,
+.container-fluid {
+  min-height: 100vh;
+}
+.container-fluid {
+  display: flex;
+  flex-direction: $row-direction;
+
+  > .row {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    width: 100%;
+    flex: 1 1 100%;
+    min-width: 100%;
+
+    > #header {
+      flex: 0 0 auto;
+    }
+    > #content {
+      flex: 1 1 auto;
+      height: auto;
+      max-width: 100vw;
+    }
+    > #footer {
+      flex: 0 0 auto;
+    }
+  }
+}
+
+#header,
+#footer,
+#content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* END OF FIX */
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-body-mobile;
+  font-weight: $font-weight-body;
+  margin: 0;
+  padding: 0;
+  direction: $direction;
+  text-align: $start-direction;
+  background-color: $body-bg;
+
+  @if $include-font-resizer {
+    &.large-font-size {
+      #content {
+        h1,
+        .h1 {
+          font-size: calc(
+            #{$font-size-h1-mobile} + #{$font-size-body-large-mobile}
+          );
+          line-height: calc(
+            #{$line-height-h1-mobile} + #{$line-height-body-large-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h1} + #{$font-size-body-large-desktop}
+            );
+            line-height: calc(
+              #{$line-height-h1} + #{$line-height-large-desktop}
+            );
+          }
+        }
+
+        h2,
+        .h2 {
+          font-size: calc(
+            #{$font-size-h2-mobile} + #{$font-size-body-large-mobile}
+          );
+          line-height: calc(
+            #{$line-height-h2-mobile} + #{$line-height-body-large-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h2} + #{$font-size-body-large-desktop}
+            );
+            line-height: calc(
+              #{$line-height-h2} + #{$line-height-large-desktop}
+            );
+          }
+        }
+
+        h3,
+        .h3 {
+          font-size: calc(
+            #{$font-size-h3-mobile} + #{$font-size-body-large-mobile}
+          );
+          line-height: calc(
+            #{$line-height-h3-mobile} + #{$line-height-body-large-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h3} + #{$font-size-body-large-desktop}
+            );
+            line-height: calc(
+              #{$line-height-h3} + #{$line-height-large-desktop}
+            );
+          }
+        }
+
+        h4,
+        .h4 {
+          font-size: calc(#{$font-size-h4} + #{$font-size-body-large-mobile});
+          line-height: calc(
+            #{$line-height-h4} + #{$line-height-body-large-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h4} + #{$font-size-body-large-desktop}
+            );
+            line-height: calc(
+              #{$line-height-h4} + #{$line-height-large-desktop}
+            );
+          }
+        }
+
+        p,
+        .p {
+          font-size: calc(
+            #{$font-size-body-mobile} + #{$font-size-body-large-mobile}
+          );
+          line-height: calc(
+            #{$line-height-body-mobile} + #{$line-height-body-large-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-body} + #{$font-size-body-large-desktop}
+            );
+            line-height: calc(
+              #{$line-height-body} + #{$line-height-large-desktop}
+            );
+          }
+        }
+
+        a,
+        .a {
+          font-size: calc(
+            #{$font-size-body-mobile} + #{$font-size-body-large-mobile}
+          );
+          line-height: calc(
+            #{$line-height-body-mobile} + #{$line-height-body-large-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-body} + #{$font-size-body-large-desktop}
+            );
+            line-height: calc(
+              #{$line-height-body} + #{$line-height-large-desktop}
+            );
+          }
+        }
+
+        .small {
+          font-size: calc(#{$font-size-tiny} + #{$font-size-body-large-mobile});
+          line-height: 1;
+        }
+      }
+    }
+
+    &.larger-font-size {
+      #content {
+        h1,
+        .h1 {
+          font-size: calc(
+            #{$font-size-h1-mobile} + #{$font-size-body-larger-mobile}
+          );
+          line-height: calc(
+            #{$line-height-h1-mobile} + #{$line-height-body-larger-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h1} + #{$font-size-body-larger-desktop}
+            );
+            line-height: calc(
+              #{$line-height-h1} + #{$line-height-larger-desktop}
+            );
+          }
+        }
+
+        h2,
+        .h2 {
+          font-size: calc(
+            #{$font-size-h2-mobile} + #{$font-size-body-larger-mobile}
+          );
+          line-height: calc(
+            #{$line-height-h2-mobile} + #{$line-height-body-larger-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h2} + #{$font-size-body-larger-desktop}
+            );
+            line-height: calc(
+              #{$line-height-h2} + #{$line-height-larger-desktop}
+            );
+          }
+        }
+
+        h3,
+        .h3 {
+          font-size: calc(
+            #{$font-size-h3-mobile} + #{$font-size-body-larger-mobile}
+          );
+          line-height: calc(
+            #{$line-height-h3-mobile} + #{$line-height-body-larger-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h3} + #{$font-size-body-larger-desktop}
+            );
+            line-height: calc(
+              #{$line-height-h3} + #{$line-height-larger-desktop}
+            );
+          }
+        }
+
+        h4,
+        .h4 {
+          font-size: calc(#{$font-size-h4} + #{$font-size-body-larger-mobile});
+          line-height: calc(
+            #{$line-height-h4} + #{$line-height-body-larger-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h4} + #{$font-size-body-larger-desktop}
+            );
+            line-height: calc(
+              #{$line-height-h4} + #{$font-size-body-larger-desktop}
+            );
+          }
+        }
+
+        p,
+        .p {
+          font-size: calc(
+            #{$font-size-body-mobile} + #{$font-size-body-larger-mobile}
+          );
+          line-height: calc(
+            #{$line-height-body-mobile} + #{$line-height-body-larger-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-body} + #{$font-size-body-larger-desktop}
+            );
+            line-height: calc(
+              #{$line-height-body} + #{$line-height-larger-desktop}
+            );
+          }
+        }
+
+        a,
+        .a {
+          font-size: calc(
+            #{$font-size-body-mobile} + #{$font-size-body-larger-mobile}
+          );
+          line-height: calc(
+            #{$line-height-body-mobile} + #{$line-height-body-larger-mobile}
+          );
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-body} + #{$font-size-body-larger-desktop}
+            );
+            line-height: calc(
+              #{$line-height-body} + #{$line-height-larger-desktop}
+            );
+          }
+        }
+
+        .small {
+          font-size: calc(
+            #{$font-size-tiny} + #{$font-size-body-larger-mobile}
+          );
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  &.no-scrolling {
+    max-height: 100vh !important;
+    overflow: hidden;
+  }
+
+  @media (min-width: $breakpoint-md-min) {
+    font-size: $font-size-body;
+  }
+
+  sup {
+    top: 0;
+  }
+
+  //stylelint-disable
+  //loads variables from fonts.scss
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .h1,
+  .h2,
+  .h3,
+  .h4 {
+    margin-top: 0;
+  }
+
+  h1,
+  .h1 {
+    color: $secondary-headings-color;
+    font-family: $font-family-secondary;
+    font-size: $font-size-h1-mobile;
+    font-weight: $font-weight-h1;
+    line-height: $line-height-h1-mobile;
+    margin: 0 0 1rem 0;
+
+    @media (min-width: $breakpoint-md-min) {
+      font-size: $font-size-h1;
+      line-height: $line-height-h1;
+    }
+  }
+
+  h2,
+  .h2 {
+    color: $primary-headings-color;
+    font-family: $font-family-secondary;
+    font-size: $font-size-h2-mobile;
+    font-weight: $font-weight-h2;
+    line-height: $line-height-h2-mobile;
+    margin: 0 0 1rem 0;
+
+    @media (min-width: $breakpoint-md-min) {
+      font-size: $font-size-h2;
+      line-height: $line-height-h2;
+    }
+  }
+
+  h3,
+  .h3 {
+    color: $primary-headings-color;
+    font-family: $font-family-secondary;
+    font-size: $font-size-h3-mobile;
+    font-weight: $font-weight-h3;
+    line-height: $line-height-h3-mobile;
+    margin: 0 0 1rem 0;
+
+    @media (min-width: $breakpoint-md-min) {
+      font-size: $font-size-h3;
+      line-height: $line-height-h3;
+    }
+  }
+
+  h4,
+  .h4 {
+    color: $primary-headings-color;
+    font-family: $font-family-secondary;
+    font-size: $font-size-h4;
+    font-weight: $font-weight-h4;
+    line-height: $line-height-h4;
+
+    @media (min-width: $breakpoint-sm-min) {
+      //desktop styles
+      line-height: $line-height-h4-mobile;
+      font-size: $font-size-h4-mobile;
+    }
+  }
+
+  p,
+  .p {
+    color: $secondary-text-color;
+    font-family: $font-family-primary;
+    font-size: $font-size-body-mobile;
+    font-weight: $font-weight-body;
+    line-height: $line-height-body-mobile;
+
+    @media (min-width: $breakpoint-md-min) {
+      font-size: $font-size-body;
+      line-height: $line-height-body;
+    }
+  }
+
+  a,
+  a:visited .a {
+    @include animate();
+    color: $primary-links-color;
+    font-family: $font-family-primary;
+    font-size: $font-size-body-mobile;
+    font-weight: $font-weight-anchors;
+    line-height: $line-height-body-mobile;
+    color: $primary-links-color;
+    text-decoration: $link-text-decoration;
+
+    @media (min-width: $breakpoint-md-min) {
+      font-size: $font-size-body;
+      line-height: $line-height-body;
+    }
+
+    &:hover,
+    &:focus {
+      color: $black;
+    }
+
+    &.skip-main {
+      height: 1px;
+      #{$start-direction}: -999px;
+      overflow: hidden;
+      position: fixed;
+      top: auto;
+      width: 1px;
+      z-index: -999;
+
+      &:focus,
+      &:active,
+      &:visited {
+        background: $gray-900;
+        color: $white;
+        font-size: 1.4em;
+        height: auto;
+        #{$start-direction}: 0;
+        margin: 10px;
+        overflow: auto;
+        padding: 5px;
+        top: 0;
+        width: auto;
+        z-index: 999;
+      }
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  // default list styles with
+  // adjustable positioning of lists in rich text
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .small {
+    font-size: $font-size-tiny;
+    line-height: 1;
+  }
+
+  // default image component
+  .image {
+    font-size: 0;
+  }
+
+  .image .right {
+    text-align: $end-direction;
+  }
+
+  .image .left {
+    text-align: $start-direction;
+  }
+
+  .image .middle {
+    text-align: center;
+  }
+
+  // ie fixes
+  figure {
+    width: 100%;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  div[class*='col-'] {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .paragraphSystem,
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  img[src$='.svg'] {
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-md-max) {
+    //desktop styles
+    img {
+      max-width: 100vw !important;
+    }
+  }
+}
+
+// create link styles
+@each $label, $map in $links {
+  @if $label == a {
+    #{$label} {
+      @include make-links($label, $map);
+    }
+  } @else {
+    .#{$label} {
+      @include make-links($label, $map);
+    }
+  }
+}
+
+//clearing text decoration for links in image and title components
+.image,
+.title {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@import '../../../brand/theme/default-styles';
+//stylelint-enable

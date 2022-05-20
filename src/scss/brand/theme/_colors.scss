@@ -1,0 +1,239 @@
+// Variables
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+// Color system
+
+//--------------------------------------------------------------
+
+/*
+** BASE THEME COLORS
+*/
+
+:root {
+  --color-1: #484848;
+  --color-2: #000000;
+  --color-3: #9e9e9e;
+  --color-4: #f4f4f4;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey-1: #484848;
+  --color-grey-2: #9e9e9e;
+  --color-grey-3: #eaeaea;
+  --bg-color-1: #000000;
+  --bg-color-2: #30ea03;
+  --bg-color-3: #eaeaea;
+  --bg-color-4: #484848;
+  --bg-color-5: #9e9e9e;
+  --border-color-1: #000000;
+  --border-color-2: #30ea03;
+  --border-color-3: #eaeaea;
+  --border-color-4: #484848;
+  --border-color-5: #9e9e9e;
+  --border-color-6: #dbdbdb;
+  --color-primary: #30ea03;
+  --color-secondary-aqua: #47ffe5;
+  --color-secondary-pink: #f900ff;
+  --color-secondary-lime: #dfff00;
+  --color-active: #30ea03;
+  --color-alert: #f900ff;
+  --color-error: #f41811;
+}
+
+$breakpoint-sm-min: 768px;
+$color-1: #484848;
+$color-2: #000000;
+$color-3: #9e9e9e;
+$color-4: #f4f4f4;
+$color-5: #bf7a7a;
+$color-6: #e7e5d9;
+$color-7: #a1b3ba;
+$color-black: #000;
+$color-white: #fff;
+$border-color-1: var(--border-color-1);
+$border-color-2: var(--border-color-2);
+$border-color-3: var(--border-color-3);
+$border-color-4: var(--border-color-4);
+$border-color-5: var(--border-color-5);
+$border-color-6: var(--border-color-6);
+$color-grey-1: #484848;
+$color-grey-2: #9e9e9e;
+$color-grey-3: #eaeaea;
+$color-primary: var(--color-primary);
+$color-secondary-aqua: var(--color-secondary-aqua);
+$color-secondary-pink: var(--color-secondary-pink);
+$color-secondary-lime: var(--color-secondary-lime);
+$color-active: var(--color-active);
+$color-alert: var(--color-alert);
+$color-error: var(--color-error);
+
+$gray-100: $color-grey-1;
+$gray-200: $color-grey-2;
+$gray-300: $color-grey-3;
+$gray-400: rgb(206, 212, 218);
+$gray-500: rgb(213, 209, 206);
+$gray-600: rgb(134, 142, 150);
+$gray-700: rgb(73, 80, 87);
+$gray-800: rgb(52, 58, 64);
+$gray-900: rgb(84, 79, 64);
+
+$black: $color-black;
+$white: $color-white;
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    'white': $color-white,
+    'gray-100': $gray-100,
+    'gray-200': $gray-200,
+    'gray-300': $gray-300,
+    'black': $color-black
+  ),
+  $grays
+);
+
+$table-background: var(--bg-color-3);
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    '1': $color-1,
+    '2': $color-2,
+    '3': $color-3,
+    '4': $color-4
+  ),
+  $theme-colors
+);
+$all-brand-colors: map-merge($theme-colors, $grays);
+
+$theme-bg-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-bg-colors: map-merge(
+  (
+    '1': var(--bg-color-1),
+    '2': var(--bg-color-2),
+    '3': var(--bg-color-3),
+    '4': var(--bg-color-4),
+    '5': var(--bg-color-5)
+  ),
+  $theme-bg-colors
+);
+$all-brand-bg-colors: map-merge($theme-bg-colors, $grays);
+
+$theme-border-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-border-colors: map-merge(
+  (
+    '1': var(--border-color-1),
+    '2': var(--border-color-2),
+    '3': var(--border-color-3),
+    '4': var(--border-color-4),
+    '5': var(--border-color-5)
+  ),
+  $theme-border-colors
+);
+$all-brand-border-colors: map-merge($theme-border-colors, $grays);
+
+// merge all colors from theme except shades into one map
+@each $key, $value in $all-brand-colors {
+  .text-color-#{$key} {
+    color: $value !important;
+
+    & * {
+      color: $value !important;
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      &-d {
+        color: $value !important;
+
+        & * {
+          color: $value !important;
+        }
+      }
+    }
+  }
+}
+@each $key, $value in $all-brand-bg-colors {
+  body .bg-color-#{$key} {
+    background-color: $value !important;
+
+    &-inner {
+      background-color: transparent !important;
+
+      > .row {
+        background-color: transparent !important;
+      }
+
+      > .component-content {
+        > .paragraphSystem {
+          background-color: transparent !important;
+        }
+      }
+    }
+
+    > .component-content {
+      background-color: transparent !important;
+
+      > .paragraphSystem {
+        background-color: transparent !important;
+      }
+    }
+
+    // for styling exactly only the language list background
+    &.megamenu-language-list {
+      > .inner {
+        background-color: $value !important;
+
+        > .component-content {
+          background-color: transparent !important;
+        }
+      }
+    }
+    @media (min-width: $breakpoint-sm-min) {
+      &-d {
+        &-inner {
+          background-color: transparent !important;
+
+          > .row {
+            background-color: transparent !important;
+          }
+
+          > .component-content {
+            > .paragraphSystem {
+              background-color: transparent !important;
+            }
+          }
+        }
+
+        > .component-content {
+          background-color: transparent !important;
+
+          > .paragraphSystem {
+            background-color: transparent !important;
+          }
+        }
+
+        // for styling exactly only the language list background
+        &.megamenu-language-list {
+          > .inner {
+            background-color: $value !important;
+
+            > .component-content {
+              background-color: transparent !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@each $key, $value in $all-brand-border-colors {
+  .border-color-#{$key} {
+    border-color: $value !important;
+
+    @media (min-width: $breakpoint-sm-min) {
+      &-d {
+        border-color: $value !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/* IE7 Specific Styles */
+#wrapper, #header, #content, #footer,
+#topContent, #pageContent, #bottomContent,
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6,
+.grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+  zoom: 1; }
+
+html, body, #wrapper {
+  /*height: 100%;*/
+  line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/* Lightbox */
+.lightboxOverlay {
+  background-image: url(../../assets/img/white.gif); }
+
+/* lightbox */
+.lbClose {
+  background-image: url("../../assets/img/lb-close.png"); }
+
+.lightboxContainer {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#d2d2d2')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='#d2d2d2');
+  zoom: 1; }
+
+.sitemap-columns-3 .sitemap-column {
+  width: 33%; }
+
+.sitemap-columns-6 .sitemap-column {
+  width: 16.6%; }
+
+.sitemap-columns-7 .sitemap-column {
+  width: 14.1%; }
+
+.sitemap-columns-8 .sitemap-column {
+  width: 12.49%; }
+
+.sitemap-columns-9 .sitemap-column {
+  width: 11%; }
+
+.sitemap-columns-10 .sitemap-column {
+  width: 10%; }
+
+.sitemap-columns-11 .sitemap-column {
+  width: 9%; }
+
+.sitemap-columns-12 .sitemap-column {
+  width: 8.2%; }

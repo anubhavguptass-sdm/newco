@@ -1,0 +1,22 @@
+@import '../core/mixins'; 
+ 
+.powerreviews {
+	border:solid 1px #e0e0e0;
+	padding:5px 10px 0 10px;
+	margin-bottom:5px;
+}
+.powerreviews .p-w-r .pr-header-title{
+	color:$backgroundColorOrange;
+}
+.powerreviews .p-w-r .pr-star-selected {
+    background-color: $backgroundColorOrange;
+}
+.powerreviews .pr-snapshot-rating .pr-stars {
+    background-image: url("../../img/stars.gif");
+} 
+.powerreviews .pr-review-rating .pr-stars-small, .powerreviews .pr-snippet-stars .pr-stars-small {
+    background-image: url("../../img/stars_small.gif");
+}
+ .powerreviews.pr-base-modal a, .powerreviews .pr-pa-snippet a, .powerreviews .pr-review-engine a, .powerreviews .pr-snippet a, .powerreviews .prImageSnippet a {
+    color: $backgroundColorOrange;
+}

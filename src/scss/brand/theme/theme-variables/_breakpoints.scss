@@ -1,0 +1,45 @@
+/*
+** BREAKPOINTS
+*/
+
+@mixin xs {
+  @media screen and (min-width: #{$breakpoint-xs-min}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: #{$breakpoint-sm-min}) {
+    @content;
+  }
+}
+
+@mixin sd {
+  @media screen and (min-width: #{$breakpoint-sd-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: #{$breakpoint-md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: #{$breakpoint-lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: #{$breakpoint-xl-min}) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (min-width: #{$breakpoint-xxl-min}) {
+    @content;
+  }
+}

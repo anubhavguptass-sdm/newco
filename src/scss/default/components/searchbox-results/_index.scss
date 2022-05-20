@@ -1,0 +1,323 @@
+@if $include-searchbox-results {
+  .searchbox {
+    .form-search {
+      align-items: center;
+      display: flex;
+      flex-direction: $row-direction;
+      justify-content: center;
+    }
+
+    &-label {
+      width: 100%;
+    }
+
+    .search-query {
+      border: 1px solid $search-box-border-color;
+      border-#{$end-direction}-width: 0;
+      font-size: 16px;
+      height: 54px;
+      padding: 15px;
+      width: 100% !important;
+
+      @media (min-width: $breakpoint-sm-min) {
+        font-size: 18px;
+        height: 80px;
+      }
+    }
+
+    &-results {
+      margin-bottom: 50px !important;
+      margin-top: 30px;
+
+      .button {
+        background-color: transparent;
+        border: 1px solid $search-box-border-color;
+        border-#{$start-direction}-width: 0;
+        border-radius: 0;
+        font-size: 0;
+        height: 54px;
+        padding: 5px;
+        position: relative;
+        width: 54px;
+
+        &::before {
+          background-color: $search-box-border-color;
+          content: '';
+          display: inline-block;
+          height: 42px;
+          #{$start-direction}: 0;
+          position: absolute;
+          top: 5px;
+          width: 1px;
+
+          @media (min-width: $breakpoint-sm-min) {
+            height: 60px;
+            top: 10px;
+          }
+        }
+
+        &::after {
+          background: get-icon('search-icon', $navigation-search-icon-color);
+          background-position: 50%;
+          background-repeat: no-repeat !important;
+          background-size: contain;
+          content: '';
+          display: inline-block;
+          height: 19px;
+          width: 19px;
+
+          @media (min-width: $breakpoint-sm-min) {
+            height: 26px;
+            width: 26px;
+          }
+        }
+
+        @media (min-width: $breakpoint-sm-min) {
+          height: 80px;
+          width: 80px;
+        }
+      }
+
+      @media (min-width: $breakpoint-sm-min) {
+        margin-bottom: 100px !important;
+        margin-top: 50px;
+      }
+      // themes for searchbox
+      @each $key, $value in $searchbox-theme-colors {
+        &.theme-#{$key} {
+          .button {
+            border-bottom: 1px solid $value !important;
+            border-#{$start-direction}: 1px solid transparent !important;
+            border-#{$end-direction}: 1px solid $value !important;
+            border-top: 1px solid $value !important;
+
+            &::before {
+              background-color: $value !important;
+            }
+
+            &::after {
+              background: get-icon('search-icon', $value) !important;
+              background-repeat: no-repeat !important;
+            }
+          }
+
+          form {
+            input {
+              border-bottom: 1px solid $value !important;
+              border-#{$start-direction}: 1px solid $value !important;
+              border-top: 1px solid $value !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .searchResults {
+    border: 0;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+
+    &.stripped {
+      $orders: (
+        odd: 'odds',
+        even: 'evens'
+      );
+
+      .searchResults-result {
+        position: relative !important;
+
+        &::after {
+          background-color: transparent;
+          bottom: 0;
+          content: '';
+          height: 100%;
+          #{$start-direction}: 0;
+          position: absolute;
+          #{$end-direction}: 0;
+          top: 0;
+          transform: none;
+          width: 100%;
+          z-index: -1;
+        }
+      }
+
+      &.full-width {
+        .searchResults-result {
+          &::after {
+            #{$start-direction}: 50%;
+            transform: translateX(-50% * $transform-direction);
+            width: 100vw;
+          }
+        }
+      }
+
+      @each $order, $orderval in $orders {
+        &.#{$orderval} {
+          @each $key, $value in $all-colors {
+            &.theme-#{$key} {
+              .searchResults-result {
+                &:nth-child(#{$order}) {
+                  &::after {
+                    background-color: $value !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &::before {
+      @media (min-width: $breakpoint-sm-min) {
+        background-color: inherit;
+        box-sizing: border-box;
+        content: '';
+        display: block;
+        height: 100%;
+        #{$start-direction}: 50%;
+        position: absolute;
+        top: 0;
+        transform: translateX(-50% * $transform-direction);
+        width: 100vw;
+        z-index: -1;
+      }
+    }
+
+    &-number {
+      color: $search-result-label-font-color;
+      font-size: $search-result-label-font-size;
+      font-weight: $search-result-label-font-weight;
+      margin-bottom: $search-result-label-bottom-offset;
+      margin-#{$start-direction}: $search-result-label-left-offset-mobile;
+      position: relative;
+
+      .searchResults-term {
+        color: $search-result-label-font-keyword-color;
+        font-size: $search-result-label-font-size-keayword;
+        font-weight: $search-result-label-font-keyword-weight;
+        position: relative;
+      }
+      @if $search-result-label-hidden {
+        display: none !important;
+      } @else {
+        display: block !important;
+      }
+
+      @media (min-width: $breakpoint-sm-min) {
+        font-size: $search-result-label-font-size-desktop;
+        font-weight: $search-result-label-font-weight-desktop;
+        margin-#{$start-direction}: 0;
+        position: relative;
+
+        .searchResults-term {
+          font-size: $search-result-label-font-size-desktop-keyword;
+          font-weight: $search-result-label-font-keyword-weight-desktop;
+        }
+      }
+    }
+
+    &-results {
+      margin-bottom: 10px;
+    }
+
+    &-result {
+      background-color: transparent;
+      padding-bottom: $result-y-padding;
+      padding-top: $result-y-padding;
+      position: relative;
+
+      @media (min-width: $breakpoint-sm-min) {
+        padding: 30px 0;
+      }
+    }
+
+    &-description {
+      color: $search-result-description-color;
+      font-size: $search-result-description-font-size;
+      font-weight: $search-result-description-font-weight;
+      line-height: $search-result-description-line-height;
+      margin: 0;
+
+      @media (min-width: $breakpoint-sm-min) {
+        font-size: $search-result-description-font-size-desktop;
+        font-weight: $search-result-description-font-weight-desktop;
+        line-height: $search-result-description-line-height-desktop;
+      }
+    }
+
+    &-title {
+      h3,
+      a {
+        display: block;
+        font-size: $search-result-title-font-size;
+        font-style: normal;
+        font-weight: $search-result-title-font-weight;
+        margin-bottom: $search-result-title-bottom-margin;
+        text-decoration: $search-result-title-decoration;
+
+        @media (min-width: $breakpoint-sm-min) {
+          font-size: $search-result-title-font-size-desktop;
+        }
+      }
+    }
+
+    &-pagination {
+      margin: 30px auto;
+
+      @media (min-width: $breakpoint-sm-min) {
+        margin: 50px auto;
+      }
+    }
+
+    &-pagination-item:first-child a {
+      text-indent: unset;
+    }
+
+    &-pagination-list {
+      align-items: center;
+      display: flex;
+      justify-content: $search-result-pagination-justification;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-pagination-item {
+      background-color: transparent;
+      border: none;
+
+      a {
+        background-color: transparent;
+        color: $search-result-pagination-font-color;
+        font-size: $search-result-pagination-font-size;
+        font-weight: $search-result-pagination-font-weight;
+        text-decoration: none;
+
+        @media (min-width: $breakpoint-sm-min) {
+          //desktop styles
+          font-size: $search-result-pagination-font-size-desktop;
+        }
+      }
+    }
+  }
+}
+
+// default cf styles
+.searchResults-pagination-list {
+  padding: 0;
+  margin: 0;
+}
+
+.searchResults-pagination-item {
+  display: inline-block;
+  margin: 1px;
+  cursor: default;
+}
+
+.searchResults-pagination-item a {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}

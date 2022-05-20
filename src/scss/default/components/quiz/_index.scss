@@ -1,0 +1,274 @@
+@if $include-quiz {
+  .quiz-block {
+    overflow: hidden;
+    position: relative;
+
+    .indicators {
+      #{$start-direction}: 50%;
+      position: absolute;
+      top: $space-30;
+      transform: translateX(-50% * $transform-direction);
+      width: 235px;
+      z-index: 1;
+
+      .indicator {
+        background-color: $quiz-indicator-color;
+        border-radius: 4px;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 3px;
+        margin-#{$end-direction}: $space-5;
+        width: 50px;
+
+        &.active {
+          background-color: $quiz-indicator-active-color;
+        }
+      }
+
+      .quiz-counter {
+        color: $quiz-indicator-counter-color;
+        font-size: $quiz-indicator-counter-font-size-m;
+        margin-top: $space-10;
+      }
+    }
+
+    .carousel-wrapper {
+      border: 1px solid $quiz-frame-border-color;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      justify-content: flex-start;
+      transition: transform 0.2s;
+      transition-delay: 0.3s;
+
+      .carousel-slide {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        flex: 1 0 100%;
+        position: relative;
+
+        .quiz-icon {
+          height: 40px;
+          margin: $space-50 auto;
+          width: 40px;
+        }
+
+        .slide-background {
+          bottom: 0;
+          #{$start-direction}: 0;
+          position: absolute;
+          #{$end-direction}: 0;
+          top: 0;
+          z-index: 1;
+        }
+
+        .slide-content {
+          box-sizing: border-box;
+          height: 100%;
+          margin: 0 auto;
+          padding: $space-30 0;
+          position: relative;
+          text-align: center;
+          width: 70%;
+          z-index: 2;
+
+          .d-flex {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .answers .btn {
+            background: $white;
+            flex: 1 0;
+            margin-#{$end-direction}: $space-10;
+            padding: 0;
+
+            &:last-of-type {
+              margin-#{$end-direction}: 0;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+              background: $color-6;
+            }
+          }
+
+          .quiz-main-title {
+            color: $quiz-content-main-title-color;
+            font-size: $quiz-content-main-title-font-size-m;
+          }
+
+          h3 {
+            color: $quiz-content-secondary-titles-color;
+            font-size: $quiz-content-secondary-titles-font-size-m;
+          }
+
+          .answers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .btn-transparent {
+              border: 1px solid $color-6;
+            }
+          }
+        }
+
+        &.main {
+          padding: 100px 0 $space-50 0;
+
+          .slide-content {
+            margin: 0 auto;
+            max-width: 230px;
+            padding-top: 0;
+            text-align: center;
+            width: 100%;
+          }
+
+          .begin {
+            margin-bottom: $space-30;
+          }
+        }
+
+        &#slide-last {
+          .slide-content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            #quizResults {
+              max-width: 250px;
+
+              .quiz-result {
+                display: none;
+              }
+            }
+          }
+
+          .retake-quiz {
+            cursor: pointer;
+            position: absolute;
+            #{$end-direction}: $space-15;
+            top: $space-15;
+            z-index: 2;
+          }
+        }
+
+        &.main,
+        &.results {
+          .btn:hover,
+          .btn:focus,
+          .btn:active {
+            background: $white;
+          }
+        }
+
+        .retake-quiz {
+          .icon-retake {
+            height: 15px;
+            margin: 0 auto;
+            transform: rotate(0deg);
+            transition: transform 0.2s;
+            width: 15px;
+          }
+
+          .retake-text {
+            color: $quiz-retake-link-color;
+          }
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      .indicators {
+        #{$start-direction}: 100px;
+        transform: none;
+        width: auto;
+
+        .indicator {
+          width: 80px;
+        }
+
+        .quiz-counter {
+          font-size: $quiz-indicator-counter-font-size-d;
+        }
+      }
+
+      .carousel-track {
+        .carousel-slide {
+          .slide-content {
+            text-align: $start-direction;
+            width: 50%;
+
+            .answers {
+              .btn {
+                margin-#{$end-direction}: $space-30;
+              }
+            }
+          }
+
+          &.main {
+            .slide-content {
+              margin: 0;
+              max-width: 100%;
+              padding: $space-50 100px;
+              text-align: $start-direction;
+
+              .quiz-main-title {
+                font-size: $quiz-content-main-title-font-size-d;
+              }
+
+              h3 {
+                font-size: $quiz-content-secondary-titles-font-size-d;
+              }
+            }
+
+            .begin {
+              margin-top: 70px;
+            }
+          }
+
+          &#slide-last {
+            .slide-content {
+              flex-direction: $row-direction;
+              width: 80%;
+
+              #quizResults {
+                max-width: 500px;
+              }
+            }
+
+            .retake-quiz {
+              #{$end-direction}: $space-30;
+              top: $space-30;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-sm-min) {
+    .carousel-track {
+      .carousel-slide {
+        .slide-content {
+          .quiz-logo {
+            height: 150px;
+            margin-#{$end-direction}: 100px;
+            width: 150px;
+          }
+        }
+
+        .retake-quiz {
+          .icon-retake {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.richText .component-content {
+  overflow: hidden; }
+
+.richText h1 {
+  margin-top: 0;
+  word-wrap: break-word; }
+
+.richText h2 {
+  margin-top: 0;
+  word-wrap: break-word; }
+
+.richText h3 {
+  margin-top: 0;
+  word-wrap: break-word; }
+
+.richText h4 {
+  margin-top: 0;
+  word-wrap: break-word; }
+
+.richText h5 {
+  margin-top: 0;
+  word-wrap: break-word; }
+
+.richText h6 {
+  margin-top: 0;
+  word-wrap: break-word; }
+
+.richText a {
+  text-decoration: underline; }
+
+.richText ul, .richText ol {
+  padding: 10px 0;
+  margin-left: 10px; }
+
+.richText li {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  list-style-type: none; }
+
+.richText ol li {
+  list-style: decimal; }
+
+.richText ul li {
+  position: relative;
+  margin-left: 0;
+  padding-left: 15px; }
+  .richText ul li:before {
+    position: absolute;
+    top: 1px;
+    left: -5px;
+    content: "\f0da";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    position: relative;
+    font-weight: normal; }
+
+.richText-image {
+  display: block;
+  margin-bottom: 10px; }
+  .richText-image.pull-left {
+    margin: 5px 15px 5px 10px;
+    float: left; }
+  .richText-image.pull-right {
+    margin: 5px 10px 5px 15px;
+    float: right; }

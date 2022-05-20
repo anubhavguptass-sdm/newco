@@ -1,0 +1,53 @@
+@if $include-text-alignments {
+  /*TEXT ALIGNMENT*/
+  .text {
+    &-center-m {
+      text-align: center !important;
+    }
+
+    &-left-m {
+      text-align: $start-direction !important;
+    }
+
+    &-right-m {
+      text-align: $end-direction !important;
+    }
+
+    &-justify-m {
+      text-align: justify !important;
+    }
+  }
+  @media (min-width: $breakpoint-md-min) {
+    .text {
+      &-center-d {
+        text-align: center !important;
+      }
+
+      &-left-d {
+        text-align: $start-direction !important;
+      }
+
+      &-right-d {
+        text-align: $end-direction !important;
+      }
+
+      &-justify-d {
+        text-align: justify !important;
+      }
+    }
+  }
+}
+
+@if $include-lineheights {
+  @each $class-name, $lineheight in $line-heights {
+    .line-height {
+      @each $class-element, $tags in $line-height-targets {
+        &-#{$class-element}-#{$class-name} {
+          #{$tags} {
+            line-height: #{$lineheight} !important;
+          }
+        }
+      }
+    }
+  }
+}

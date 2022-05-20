@@ -1,0 +1,21 @@
+#wrapper, #header, #content, #footer,
+#topContent, #pageContent, #bottomContent,
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6,
+.grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12,
+.section {
+  zoom: 1; }
+
+#header .grid_1, #header .grid_2,
+#header .grid_3, #header .grid_4,
+#header .grid_5, #header .grid_6,
+#header .grid_7, #header .grid_8,
+#header .grid_9, #header .grid_10,
+#header .grid_11, #header .grid_12 {
+  float: none; }
+
+html, body, #wrapper {
+  height: 100%; }
+
+/* -- video player -- */
+.videoplayer .mejs-controls .mejs-button {
+  margin: 5px 2px; }

@@ -1,0 +1,11 @@
+@import '../core/mixins'; 
+ 
+.acregister form{
+	padding:15px 10px;
+}
+.acregister .wsform-item.register-form-checkbox .wsform-controls{
+	padding-top:14px;
+}
+.acregistration .acregister-failure p{
+	color:#ce381b;
+}

@@ -1,0 +1,57 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.notification .notificationFormElement {
+  margin-bottom: 15px; }
+
+.notification label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+  width: 200px; }
+
+.notification input[type="text"], .notification textarea, .notification select {
+  display: inline-block;
+  width: 200px; }
+
+.notification .btn {
+  margin-top: 15px;
+  float: right; }
+
+.notification .notificationSuccessBox {
+  display: none; }
+
+.notification .fixedRecipientNotification input {
+  border: none;
+  width: 75%; }
+
+.notification .fixedRecipientNotification label {
+  font-weight: 700; }
+
+.notification .fixedRecipientNotification .btn {
+  background-color: #f36633;
+  border-radius: 3px;
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block; }
+  .notification .fixedRecipientNotification .btn:hover {
+    background-color: #939191;
+    color: white; }
+  .notification .fixedRecipientNotification .btn:active {
+    background-color: #939191;
+    color: white; }
+
+.notificationFailureBox {
+  display: none; }

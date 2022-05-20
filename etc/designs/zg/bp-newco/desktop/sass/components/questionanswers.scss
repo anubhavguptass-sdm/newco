@@ -1,0 +1,11 @@
+@import '../core/mixins'; 
+  
+.questionanswers.hideScoreBox .quizScoreBox, .quizResultBoxContainer{
+	display:none;
+}
+.quizResultBoxContainer.showBoxQuiz{
+	display:block;
+} 
+.quizButton img{
+	cursor:pointer;
+}

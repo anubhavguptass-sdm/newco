@@ -1,0 +1,139 @@
+@import '../core/mixins'; 
+  
+.add-to-basket-container{
+    border: $borderbox;
+    background: #F0EFED;  
+	
+	.add-to-basket-description{
+		border-right:$borderbox;
+		display: inline-block;
+		vertical-align: top;
+		width: 65%;    
+		padding-left: 10px;
+		margin-right: 10px;
+			
+	} 
+	.add-to-basket-quantity{
+		display: inline-block;
+		vertical-align: middle;
+		width: 15%;padding-top: 20px;
+			select {
+				padding-left: 2%;
+				padding-right: 4%;
+			}
+	}
+	.add-to-basket-btn{
+		display: inline-block;padding-top: 20px;
+		vertical-align: middle;
+		width: 15%;
+}
+	 
+}
+
+/* Mobile View start */ 
+
+@include respond-to(mobile) {
+ 
+	.add-to-basket-container{
+		padding-bottom: 10px;
+		  .add-to-basket-description{
+			width: 100%;    
+		  } 
+		  .add-to-basket-quantity{
+			width: 100%;
+			padding-left: 10px;
+		  }
+		  .add-to-basket-btn{
+			width: 100%;
+			padding-left: 10px;
+		  }
+		 
+	}
+
+}
+
+/* webshop Code */
+
+.order-header {
+    background-color: #fff;
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+} 
+.productDescription {
+    float: left;
+    width: 35%; 
+	padding-left: 20px;
+}
+.productDescription img {
+    width: 40%;
+    margin: 20px 15px 5px 0px !important;
+}
+.SampleCount {
+    float: left;
+    width: 15%;
+}
+.OrderDate {
+    float: left;
+    width: 25%;
+}
+.OrderStatus{
+    width: 20%;
+    float: left;
+}
+.itemOrderList {
+    float: left;
+    width: 100%;
+}
+.orderList .order-header div {
+    font-weight: bold;
+    font-size: 20px;
+}
+.itemOrderList .SampleCount, .itemOrderList .OrderDate, .itemOrderList .OrderStatus{
+    padding-top: 15px;
+}
+.webshop-metadata {
+    display: none !important;
+}
+
+
+/*27th Apr */
+
+.webshop-cart .cartRecord {
+    background: #fff;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    float: left;
+    width: 100%;
+}
+.webshop-cart .add-to-basket-description {
+    width: 68%;
+    border-right: 1px solid #f2f2f2;
+    float: left;
+}
+.webshop-cart .add-to-basket-wrapper {
+    width: 30%;
+    display: inline;
+    margin-left: 40px;
+    position: relative;
+    left: 15px;
+
+}
+.webshop-cart .add-to-basket-wrapper div {
+    float: left;
+}
+.webshop-cart a.add-to-basket-remove {
+    float: left;
+    position: relative;
+    left: 15px;
+}
+.webshop-cart .webshop-error {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: red;
+}
+ 
+
+

@@ -1,0 +1,75 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.locationfinder input[type=text] {
+  font-family: arial;
+  font-size: 12px;
+  border: 1px solid #D5D1CE;
+  display: inline;
+  float: left;
+  height: 12px;
+  padding: 8px;
+  width: 27%; }
+  @media only screen and (max-width: 767px) {
+    .locationfinder input[type=text] {
+      width: 60%;
+      margin-bottom: 20px; } }
+
+.locationfinder .button {
+  padding: 8px;
+  background-image: url(../../img/Search-icon.png);
+  background-repeat: no-repeat;
+  border: none;
+  margin-right: 20px;
+  width: 30px;
+  height: 30px; }
+  @media only screen and (max-width: 767px) {
+    .locationfinder .button {
+      margin-right: 24%;
+      margin-bottom: 20px; } }
+
+.locationfinder .locationFinder-selectOption {
+  width: 7%;
+  border: 1px solid #D5D1CE;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 20px; }
+  @media only screen and (max-width: 767px) {
+    .locationfinder .locationFinder-selectOption {
+      width: 20%;
+      margin-left: 0px;
+      margin-right: 15px; } }
+
+.locationfinder .locationFinder-selectOption1 {
+  height: 30px;
+  margin-left: 15px;
+  width: 15%; }
+  @media only screen and (max-width: 767px) {
+    .locationfinder .locationFinder-selectOption1 {
+      width: 40%;
+      margin-left: 0px; } }
+
+.locationfinder .locationFinder-loadMore .loadMore {
+  background-color: #f36633;
+  border-radius: 3px;
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block; }
+  .locationfinder .locationFinder-loadMore .loadMore:hover {
+    background-color: #939191;
+    color: white; }
+  .locationfinder .locationFinder-loadMore .loadMore:active {
+    background-color: #939191;
+    color: white; }

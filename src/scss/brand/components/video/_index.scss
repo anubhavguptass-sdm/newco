@@ -1,0 +1,81 @@
+.reference-card-block {
+  .media-image.media-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+    min-height: 14rem;
+    @include sd {
+      min-height: 10rem;
+    }
+    @include sm {
+      min-height: auto;
+    }
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .youtube-player {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    /* min-height: 360px;  / remove for leadership page height issue /  */
+    @media screen and (max-width: 1200px) {
+      height: 100%;
+      width: 100%;
+    }
+    > img {
+      /*position: static;*/
+      object-fit: cover;
+      height: 100%;
+    }
+    .play {
+      background: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/green-button.png)
+        no-repeat;
+      height: 80px;
+      width: 80px;
+      background-size: cover;
+    }
+    &:hover {
+      .play {
+        background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow.png);
+      }
+    }
+  }
+}
+.profile--hero--banner .reference-card-block .youtube-player > img {
+  position: static;
+}
+.youtube-play-icon {
+  .youtube-player {
+    .play {
+      display: none;
+    }
+  }
+}
+.leader-card-adjust .reference-leader-profile .media-container {
+  position: relative;
+}
+.leader-card-adjust .reference-leader-profile .media-container:after {
+  content: '';
+  background-color: var(--color-primary);
+  background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
+  position: absolute;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  right: 2px;
+  bottom: 2px;
+  top: initial;
+  left: initial;
+  height: 48px;
+  width: 48px;
+  background-position: center;
+  outline: 2px solid $color-primary;
+}
+.leader-card-adjust
+  .bg-color-black:hover
+  .reference-leader-profile
+  .media-container:after {
+  content: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow.png) !important;
+}

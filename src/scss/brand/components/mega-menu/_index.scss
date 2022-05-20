@@ -1,0 +1,1030 @@
+header {
+  position: fixed;
+  z-index: 10000;
+}
+.megamenu-navigation {
+  .megamenu.search-opened > .component-content {
+    max-height: 100% !important;
+
+    @include sd {
+      max-height: 100px !important;
+    }
+  }
+}
+
+@media screen and(min-width : 1024px) and (max-width: 1079) {
+  .megamenu-navigation .megamenu-top-bar-right {
+    width: 25%;
+    max-width: 25%;
+    margin-left: 4%;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+.megamenu-navigation {
+  .megamenu--newco {
+    padding: 0;
+    > .component-content {
+      padding: 0.75rem 2rem 0 2rem !important;
+      border-bottom: 2px solid $color-grey-3;
+    }
+    @include sd {
+      padding: 0 2rem !important;
+    }
+    > .component-content {
+      max-width: 100vw !important;
+      > .paragraphSystem {
+        max-width: 100% !important;
+      }
+    }
+    .megamenu-nav-container {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      .megamenu-main-nav {
+        .navigation-branch.navigation-level1 {
+          max-width: 100% !important;
+          justify-content: center;
+          @include sd {
+            max-width: 100% !important;
+            margin-top: 3.5rem;
+          }
+          @include sm {
+            margin-top: 1.5rem !important;
+          }
+        }
+      }
+    }
+    .megamenu-top-bar-left {
+      .richText-content {
+        p {
+          font-size: $font-size-13;
+          font-weight: $font-normal;
+          color: $color-grey-1;
+          cursor: pointer;
+          @include sm {
+            margin-bottom: 1rem !important;
+          }
+          &:hover {
+            background-color: $color-primary;
+            color: $color-black;
+          }
+        }
+      }
+    }
+    .megamenu-top-bar-right {
+      * {
+        color: $color-grey-2;
+      }
+      .contact--nav {
+        margin-left: 0;
+        margin-right: 1rem;
+        @include sd {
+          margin-left: 0 !important;
+        }
+        p {
+          @include sm {
+            width: 100px;
+            margin: auto !important;
+          }
+          a {
+            position: relative;
+            padding-right: 20px;
+            @include sm {
+              padding-right: 0;
+            }
+            &:after {
+              content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/contact-phone.png');
+              position: absolute;
+              top: 0;
+              @include sd {
+                top: 4px;
+                left: 6rem;
+              }
+              @include sm {
+                left: 5.5rem;
+              }
+            }
+          }
+        }
+      }
+      .accessibility--nav {
+        text-align: right;
+        margin-right: 0.5rem;
+        p {
+          @include sm {
+            width: 100px;
+            margin: auto !important;
+          }
+          a {
+            position: relative;
+            padding-right: 20px;
+            &:after {
+              content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/other-contrast.png');
+              position: absolute;
+              right: 1px;
+              top: 0;
+              @include sd {
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
+      .location--nav {
+        p {
+          a {
+            position: relative;
+            padding-right: 20px;
+            &:after {
+              content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/other-contrast.png');
+              position: absolute;
+              right: 0;
+              top: 2px;
+              @include sd {
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
+      .megamenu-search {
+        margin-left: 0;
+      }
+      .richText-content {
+        p {
+          font-size: $font-size-13;
+          font-weight: $font-normal;
+          cursor: pointer;
+          color: $color-grey-1;
+          @include sm {
+            margin-bottom: 1rem !important;
+          }
+          &:hover {
+            color: $color-black;
+            background-color: $color-primary;
+            a {
+              color: $color-black !important;
+            }
+          }
+        }
+      }
+    }
+    .megamenu-nav-container {
+      &.sticked-js {
+        > .paragraphSystem {
+          background-color: $color-white;
+        }
+        .megamenu-main-nav {
+          margin-top: 0;
+          padding-bottom: 0;
+        }
+      }
+      .megamenu-main-nav {
+        background-color: $color-white;
+        padding-bottom: 1rem;
+        @include sd {
+          margin-top: 0;
+          padding-bottom: 0;
+        }
+        ul.navigation-level1 {
+          li.navigation-item {
+            a {
+              color: $color-black !important;
+              font-size: $font-size-16 !important;
+              font-weight: $font-normal !important;
+              cursor: pointer;
+              &:hover {
+                background-color: $color-primary !important;
+              }
+              &:focus {
+                background-color: $color-primary !important;
+              }
+              &:after {
+                content: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .megamenu-logo {
+      .image {
+        a {
+          width: 250px;
+          min-width: 250px;
+          max-width: 250px;
+          height: auto;
+          border: 4px solid $color-white;
+          @include sd {
+            width: 115px;
+            max-width: 115px;
+            min-width: auto;
+            margin-left: -0.75rem;
+            margin-top: -0.25rem;
+          }
+          &:hover {
+            height: auto;
+            background-color: $color-white;
+            border: 4px solid $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.megamenu-navigation .megamenu *,
+.simple-navigation .megamenu * {
+  color: $color-2;
+}
+.megamenu-navigation {
+  .megamenu-logo {
+    &::after {
+      background: none;
+    }
+    @media (min-width: $breakpoint-sd-min) {
+      width: 20%;
+      order: 2;
+      max-width: 20%;
+      > .component-content a {
+        width: auto;
+        max-width: unset;
+        min-width: unset;
+        img {
+          width: auto;
+        }
+      }
+      > .component-content .image a {
+        max-width: 250px;
+        min-width: 250px;
+        width: 250px;
+      }
+    }
+  }
+  .megamenu {
+    .megamenu-main-nav {
+      @media (min-width: $breakpoint-sd-min) {
+        margin-top: 0;
+        padding-bottom: 1rem;
+      }
+      > .component-content > .navigation-mobile-menu {
+        left: auto;
+        right: -15px;
+        top: -2px;
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/menu-icon.svg');
+        background-size: auto;
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &.nav-opened {
+      .megamenu-main-nav > .component-content .navigation-mobile-menu {
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/cross-icon.svg');
+        background-size: auto;
+      }
+    }
+    nav {
+      width: 100%;
+    }
+  }
+  .megamenu-search {
+    @media (min-width: $breakpoint-xl-min) {
+      right: -0.5rem !important;
+      top: -6px !important;
+      max-width: 8% !important;
+    }
+
+    @media (min-width: $breakpoint-sd-min) {
+      width: 11%;
+      order: 4;
+      max-width: 11%;
+      text-align: right;
+      position: relative;
+      right: 0;
+      top: -6px;
+    }
+    @media (min-width: 1920px) {
+      max-width: 6% !important;
+    }
+    @media only screen and (min-width: 1024px) {
+      right: -14px;
+      top: -6px;
+    }
+    .searchBox {
+      z-index: 9;
+      .searchBox-label {
+        position: fixed;
+        top: 135px;
+        z-index: 9999;
+        width: 70%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @include sd {
+          top: 45px;
+          width: 100%;
+          left: 0;
+        }
+        input[type='text'] {
+          width: 94% !important;
+          border: 2px solid $color-black;
+        }
+      }
+      .form-search {
+        text-align: right; /* justify-content: flex-start; */
+        justify-content: space-evenly !important;
+        align-items: flex-start;
+      }
+      input[type='text'] {
+        height: auto;
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/Navigation-Search.svg');
+        color: var(--color-black);
+        background-size: 18px auto;
+        border: 1px solid var(--color-black);
+        background-repeat: no-repeat;
+        transition: none !important;
+        opacity: 1 !important;
+        @include sd {
+          background-position: 98%;
+          display: none !important;
+          &.searchInput {
+            display: block !important;
+          }
+        }
+      }
+      button {
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/Navigation-Search.svg') !important;
+        position: relative;
+        width: 18px !important;
+        height: 18px !important;
+        background-size: 18px !important;
+        right: 0 !important;
+        top: 0.6rem !important;
+        @media only screen and (max-width: 1023.5px) {
+          width: 24px !important;
+          height: 24px !important;
+          background-size: 24px !important;
+          top: 3px !important;
+          right: 2.5rem !important;
+        }
+        &:hover {
+          &:after {
+            display: block;
+            @media only screen and (max-width: 1023.5px) {
+              display: none;
+            }
+          }
+        }
+        &:focus {
+          &:after {
+            display: block;
+            @media only screen and (max-width: 1023.5px) {
+              display: none;
+            }
+          }
+        }
+        &::before {
+          content: 'Search';
+          position: absolute;
+          left: -48px;
+          top: 1px;
+          font-size: $font-size-14;
+          color: $color-black;
+          @media only screen and (max-width: 1023.5px) {
+            display: none;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          left: -50px;
+          right: 0;
+          top: -1px;
+          height: 20px;
+          background-color: $color-primary;
+          color: $color-2;
+          width: 70px;
+          z-index: -1;
+          display: none;
+        }
+      }
+    }
+    &.is-open {
+      .searchBox {
+        button {
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  .megamenu-top-bar-left {
+    @media (min-width: $breakpoint-sd-min) {
+      .component-content > .paragraphSystem {
+        height: auto;
+      }
+      max-width: 40%;
+      .richText {
+        margin-right: 1rem;
+        p {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+  .megamenu-top-bar-right {
+    // Newly Added
+    @media (min-width: $breakpoint-sd-min) {
+      width: 23%;
+      max-width: 23%;
+      margin-left: 6%;
+      order: 3;
+      .richText {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    @media (min-width: $breakpoint-xl-min) {
+      max-width: 17%;
+      margin-left: 12%;
+    }
+    @media (min-width: 1920px) {
+      margin-left: 17%;
+    }
+  }
+}
+.megamenu-navigation
+  .megamenu-search.is-open
+  > .component-content
+  > .paragraphSystem
+  .searchBox
+  button {
+  opacity: 1 !important;
+  &::before {
+    content: 'Search';
+    position: absolute;
+    left: -48px;
+    top: 1px;
+    font-size: $font-size-14;
+    color: $color-black;
+    @include sd {
+      display: none;
+    }
+  }
+}
+.megamenu--newco {
+  .megamenu-top-bar-right {
+    p {
+      &:after {
+        right: 0;
+        width: 18px;
+        height: 19px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024x) {
+  .megamenu-navigation .megamenu-top-bar-right,
+  .simple-navigation .megamenu-top-bar-right {
+    width: 25%;
+    max-width: 25%;
+  }
+  .megamenu-navigation .megamenu-search,
+  .simple-navigation .megamenu-search {
+    width: 15%;
+    max-width: 15%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .megamenu-navigation .megamenu-logo > .component-content a,
+  .megamenu-navigation .megamenu-logo > .component-content a:hover,
+  .simple-navigation .megamenu-logo > .component-content a,
+  .simple-navigation .megamenu-logo > .component-content a:hover {
+    height: auto;
+    min-height: unset;
+  }
+  .megamenu-navigation .megamenu-logo > .component-content .image .middle {
+    text-align: left !important;
+    width: 90px;
+  }
+  .megamenu-navigation .megamenu-logo > .component-content {
+    display: block;
+    padding-left: 0rem;
+  }
+}
+.megamenu-navigation
+  .megamenu-search.is-open
+  > .component-content
+  > .paragraphSystem
+  .searchBox
+  button,
+.megamenu-navigation
+  .megamenu-search:focus
+  > .component-content
+  > .paragraphSystem
+  .searchBox
+  button,
+.megamenu-navigation
+  .megamenu-search.is-open
+  > .component-content
+  > .paragraphSystem
+  .searchBox
+  button:hover,
+.megamenu-navigation
+  .megamenu-search:focus
+  > .component-content
+  > .paragraphSystem
+  .searchBox
+  button:hover {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .megamenu-navigation
+    .megamenu-main-nav
+    > .component-content
+    > .navigation-mobile-menu,
+  .simple-navigation
+    .megamenu-main-nav
+    > .component-content
+    > .navigation-mobile-menu {
+    right: 5px;
+    left: auto;
+    top: -5px;
+  }
+  .megamenu-navigation .megamenu-top-bar-left,
+  .simple-navigation .megamenu-top-bar-left {
+    margin: 0 !important;
+  }
+  .megamenu--newco .megamenu-top-bar-right .richText-content p,
+  .megamenu-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem
+    .richText
+    p,
+  .simple-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem
+    .richText
+    p {
+    min-height: 30px;
+    display: inline-block;
+    color: var(--color-black) !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 30px;
+    width: auto;
+  }
+  .megamenu-navigation
+    .megamenu-top-bar-right
+    > .component-content
+    > .paragraphSystem
+    > *,
+  .simple-navigation
+    .megamenu-top-bar-right
+    > .component-content
+    > .paragraphSystem
+    > * {
+    text-align: left;
+    padding: 0;
+    margin: 0 !important;
+  }
+  .megamenu-navigation
+    .megamenu-top-bar-right
+    > .component-content
+    > .paragraphSystem,
+  .simple-navigation
+    .megamenu-top-bar-right
+    > .component-content
+    > .paragraphSystem,
+  .megamenu-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem,
+  .simple-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem {
+    padding: 0px;
+  }
+  .megamenu-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem
+    > *,
+  .simple-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem
+    > * {
+    text-align: left;
+  }
+  .megamenu-navigation
+    .megamenu-main-nav
+    > .component-content
+    > .navigation-root.navigation-level1
+    > .navigation-item
+    > a,
+  .simple-navigation
+    .megamenu-main-nav
+    > .component-content
+    > .navigation-root.navigation-level1
+    > .navigation-item
+    > a {
+    text-align: left;
+    justify-content: left;
+    padding: 0px; /* min-height: 26px; */
+  }
+  .megamenu-navigation
+    .megamenu-main-nav
+    > .component-content
+    > .navigation-root.navigation-level1
+    > .navigation-item,
+  .simple-navigation
+    .megamenu-main-nav
+    > .component-content
+    > .navigation-root.navigation-level1
+    > .navigation-item {
+    justify-content: left;
+    text-align: left; /* min-height: 26px; */
+  }
+}
+.megamenu-navigation
+  .megamenu-main-nav
+  > .component-content
+  > .navigation-root.navigation-level1
+  > .navigation-item
+  > a {
+  line-height: $line-height-160;
+}
+.megamenu--newco > .component-content > .paragraphSystem {
+  max-width: 1440px !important;
+  margin: auto !important;
+}
+
+.megamenu-navigation
+  .megamenu-nav-container.sticked-js
+  > .component-content
+  > .paragraphSystem {
+  position: relative;
+}
+
+.megamenu-navigation .megamenu-submenu-items-container,
+.simple-navigation .megamenu-submenu-items-container {
+  display: block;
+  @include sd {
+    margin-left: -2rem !important;
+    margin-right: -2rem !important;
+    width: 100vw;
+    overflow-y: scroll;
+    max-height: 100vh;
+  }
+}
+.megamenu-navigation {
+  .megamenu-submenu-item {
+    box-shadow: none !important;
+    .bg-color-3 {
+      background-color: $color-grey-3;
+      @include sd {
+        padding: 1rem;
+      }
+    }
+    .default-style {
+      ul {
+        padding: 1.5rem;
+        li {
+          margin-bottom: 2rem;
+          &:nth-last-child() {
+            margin-bottom: 0;
+          }
+          &::before {
+            display: none;
+          }
+          a {
+            color: $color-2;
+            font-size: 15px;
+            line-height: $line-height-100;
+          }
+        }
+      }
+      .btn.btn-black {
+        color: #fff !important;
+        background-color: $color-2 !important;
+        color: $color-2;
+        font-size: 0.938rem;
+        line-height: $line-height-100;
+        margin-top: 1rem;
+        &:hover {
+          background-color: $color-3 !important;
+        }
+        &:focus {
+          outline: 2px solid $color-primary;
+        }
+      }
+    }
+  }
+}
+.theraflu-visit-bg-image {
+  img {
+    @include sm {
+      min-height: 350px !important;
+    }
+  }
+}
+.megamenu-navigation
+  .megamenu-main-nav
+  > .component-content
+  > .navigation-root.navigation-level1
+  > .navigation-item
+  > .navigation-level2
+  > li
+  > a {
+  @include sd {
+    line-height: 75px;
+  }
+}
+.megamenu-navigation
+  .megamenu-search
+  > .component-content
+  > .paragraphSystem
+  .searchBox
+  input[type='text'] {
+  background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/green-search.svg');
+  background-color: #eaeaea;
+  background-size: 2rem !important;
+  background-position: center right 0 !important;
+  padding-right: 2rem;
+  text-align: left;
+}
+
+.megamenu-remove {
+  @include sd {
+    display: none !important;
+  }
+}
+
+@include sd {
+  .header-anchor-text a {
+    line-height: 1.6;
+    color: #000 !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    cursor: pointer;
+    padding: 0;
+  }
+  .megamenu-navigation {
+    .megamenu-top-bar-left > .component-content > .paragraphSystem {
+      .richText {
+        p {
+          min-height: 54px !important;
+          width: 100%;
+          margin: 0;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  .megamenu-navigation {
+    .megamenu-top-bar-right > .component-content > .paragraphSystem {
+      .richText {
+        p {
+          min-height: 54px !important;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  .megamenu-navigation {
+    .megamenu--newco {
+      .megamenu-top-bar-right {
+        .accessibility--nav p a {
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+  .megamenu-navigation
+    .megamenu--newco
+    .megamenu-top-bar-right
+    .accessibility--nav
+    p
+    a:after {
+    right: -1.5rem;
+  }
+  .megamenu-navigation .megamenu-submenu-item .default-style ul li {
+    padding-left: 0px !important;
+  }
+  .megamenu-navigation .megamenu-submenu-item .default-style ul {
+    padding: 1rem !important;
+  }
+  .megamenu-submenu-item {
+    height: 100vh;
+  }
+  li {
+    &.page-who-we-are,
+    &.page-our-brands,
+    &.page-planet-and-people,
+    &.page-careers {
+      a::before {
+        content: '';
+        border: solid #a19e9e;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        position: absolute;
+        /* right: 4px; */
+        /* position: absolute; */
+        /* top: 71px; */
+        margin-left: 0.5rem;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        color: #000;
+      }
+    }
+    &.page-who-we-are a::before {
+      left: 6rem;
+    }
+    &.page-our-brands a::before {
+      left: 5.5rem;
+    }
+    &.page-planet-and-people a::before {
+      left: 7.8rem;
+    }
+    &.page-careers a::before {
+      left: 3.7rem;
+    }
+  }
+  li {
+    &.page-careers {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.searchBox-label {
+  display: none !important;
+  height: 4rem;
+  background: #fff;
+  box-shadow: 0px 16px 40px -8px #0000001a;
+  padding: 1rem 2rem 1rem 1rem !important;
+  @include sd {
+    padding: 0 !important;
+    height: auto;
+  }
+  &.is-search-open {
+    display: block !important;
+    input {
+      display: block !important;
+    }
+  }
+  input {
+    display: none !important;
+  }
+}
+.back-button-desktop-hide {
+  display: none;
+  font-size: 0.938rem;
+  @include sd {
+    display: block;
+  }
+}
+
+.megamenu-navigation
+  .megamenu--newco.mobile-megamenu-search
+  > .component-content {
+  @include xs {
+    max-height: 95px;
+  }
+  @media only screen and (max-width: 1023px) and (min-width: 992px) {
+    max-height: 95px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 991px) {
+  .megamenu-navigation .megamenu-logo > .component-content .image a {
+    position: absolute;
+    left: -2rem;
+    top: -1.5rem;
+  }
+
+  .megamenu-navigation
+    .megamenu-main-nav
+    > .component-content
+    > .navigation-root.navigation-level1
+    > .navigation-item
+    > a {
+    justify-content: left;
+    padding: 0;
+  }
+
+  .megamenu-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem
+    .richText
+    p {
+    text-align: left;
+    margin-left: 0.25rem;
+  }
+  .megamenu-navigation
+    .megamenu--newco
+    .megamenu-nav-container
+    .megamenu-main-nav
+    .navigation-branch.navigation-level1 {
+    max-width: 100% !important;
+    margin-top: 2.5rem;
+  }
+
+  .megamenu-navigation
+    .megamenu-top-bar-right
+    > .component-content
+    > .paragraphSystem,
+  .simple-navigation
+    .megamenu-top-bar-right
+    > .component-content
+    > .paragraphSystem {
+    padding: 0 !important;
+  }
+
+  .megamenu-top-bar-right {
+    display: block;
+    width: 100%;
+  }
+  .megamenu-navigation
+    .megamenu-top-bar-right
+    > .component-content
+    > .paragraphSystem
+    .richText
+    p {
+    text-align: left;
+    width: 100%;
+    margin-left: 0.25rem;
+  }
+  .megamenu-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem,
+  .simple-navigation
+    .megamenu-top-bar-left
+    > .component-content
+    > .paragraphSystem {
+    padding: 0;
+  }
+  .megamenu-navigation .megamenu-top-bar-left {
+    margin: 0;
+  }
+}
+
+.megamenu-navigation .megamenu-top-bar-right {
+  @include sm {
+    margin-bottom: 1rem;
+  }
+}
+
+#footer {
+  margin-top: 0.2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .megamenu-navigation
+    .megamenu-top-bar-right
+    > .component-content
+    > .paragraphSystem
+    > div {
+    margin-left: 0;
+  }
+}
+
+// header css 16-05-2022 start
+
+/* header css start*/
+
+.megamenu-top-bar-left > * > .paragraphSystem,
+.megamenu-top-bar-right > * > .paragraphSystem {
+  flex-basis: auto;
+}
+.megamenu-top-bar-left,
+.megamenu-top-bar-right .megamenu-search {
+  height: auto !important;
+}
+.megamenu-main-nav
+  > *
+  > .navigation-root.navigation-level1
+  .navigation-item
+  > a {
+  padding: 0 1rem;
+}
+.megamenu-logo {
+  .image {
+    a {
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// Variables
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$theme-color-interval: 8% !default;
+
+$white: #ffffff !default;
+$gray-100: rgb(248, 249, 250) !default;
+$gray-200: rgb(233, 236, 239) !default;
+$gray-300: rgb(222, 226, 230) !default;
+$gray-400: rgb(206, 212, 218) !default;
+$gray-500: rgb(213, 209, 206) !default;
+$gray-600: rgb(134, 142, 150) !default;
+$gray-700: rgb(73, 80, 87) !default;
+$gray-800: rgb(52, 58, 64) !default;
+$gray-900: rgb(84, 79, 64) !default;
+$black: #000000 !default;
+
+//--------------------------------------------------------------
+
+/*
+** BASE THEME COLORS
+*/
+$color-1: #bf6f7e !default;
+$color-2: #364959 !default;
+$color-3: #f2f2f2 !default;
+$color-4: #f2bfbb !default;
+$color-5: #bf7a7a !default;
+$color-6: #e7e5d9 !default;
+$color-7: #a1b3ba !default;
+
+@import 'maps';
+
+//-----------------------------------------------------------------------
+
+// import brand styles
+@import '../../../brand/theme/colors';
+
+//-----------------------------------------------------------------------
+// merge all colors from theme except shades into one map
+$all-colors: map-merge($theme-colors, $grays) !default;
+
+//-----------------------------------------------------------------------

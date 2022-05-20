@@ -1,0 +1,33 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* BUTTONS
+----------------------------------*/
+/* line 3, ../../sass/components/box-migration/_box-base.scss */
+.box-outlined .component-content {
+  border: solid 2px #323131;
+  padding: 13px;
+  background-color: #e1e1e1;
+}
+
+/* line 9, ../../sass/components/box-migration/_box-base.scss */
+.box-heading {
+  display: block;
+  color: #323131;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* line 13, ../../sass/components/box-migration/_box-base.scss */
+.box-more {
+  display: block;
+  text-align: right;
+}

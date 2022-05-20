@@ -1,0 +1,24 @@
+.searchBox input[type=text] {
+  width: 81px; }
+
+.searchBox-title {
+  cursor: default; }
+
+.searchBox .form-content .textField {
+  display: inline;
+  float: left;
+  margin-right: 15px; }
+
+.searchBox .form-contentButton {
+  display: inline;
+  float: left; }
+  .searchBox .form-contentButton.section {
+    margin: -1px 0 0; }
+
+.searchBox .form-content .section {
+  margin: 0 15px 0 0; }
+
+.searchBox .form-search.no-box,
+.searchBox .form-search.no-box .section {
+  margin-top: 0;
+  margin-bottom: 0; }

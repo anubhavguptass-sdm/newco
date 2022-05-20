@@ -1,0 +1,269 @@
+/* Custom Accessibility CSS */
+.visually-hidden {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  color: #000;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+body {
+  a.skip-main {
+    transition: none;
+
+    &:focus {
+      padding: 10px;
+      display: inline-block;
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
+      text-decoration: underline;
+      outline: 2px dotted;
+      margin: 6px 12px;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+}
+
+a {
+  &:focus {
+    &:focus-visible {
+      outline: 2px dotted;
+    }
+  }
+}
+
+button {
+  &:focus {
+    &:focus-visible {
+      outline: 2px dotted;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .megamenu-navigation {
+    .megamenu-logo {
+      > .component-content {
+        .image {
+          a {
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+
+    .megamenu-main-nav {
+      > .component-content {
+        > .navigation-root.navigation-level1 {
+          > .navigation-item {
+            > a {
+              margin-left: 3px;
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-cq {
+    .lSSlideOuter {
+      .lSSlideWrapper {
+        .lSAction {
+          a {
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    ul {
+      li {
+        a {
+          &:focus {
+            &:focus-visible {
+              background-color: var(--bg-color-2);
+            }
+          }
+        }
+      }
+    }
+
+    .image {
+      a {
+        margin-top: 2px;
+        margin-left: 3px;
+      }
+    }
+
+    .social-pages {
+      .icons-with-link {
+        a {
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}
+
+.megamenu-navigation {
+  .megamenu-search {
+    > .component-content {
+      > .paragraphSystem {
+        .searchBox {
+          button {
+            margin-right: 2px !important;
+
+            &:focus {
+              &:focus-visible {
+                outline: 2px dotted;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .megamenu-submenu-items-container {
+    .megamenu-submenu-item {
+      display: none;
+    }
+
+    .megamenu-submenu-item.openedNew {
+      display: block;
+      opacity: 1;
+      -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+      transform: scaleY(1);
+    }
+  }
+}
+
+.megamenu-navigation {
+  .megamenu-submenu-items-container {
+    .megamenu-submenu-item {
+      &:hover {
+        display: block;
+      }
+
+      &:focus {
+        display: block;
+      }
+    }
+  }
+}
+
+.youtube-player .play:focus:focus-visible {
+  outline: 2px dotted;
+}
+
+.btn.btn-black {
+  &:focus {
+    &:focus-visible {
+      outline: 2px dotted var(--color-primary);
+    }
+  }
+}
+
+.the-science-content {
+  .the-science-button-list {
+    .btn {
+      margin-left: 2px;
+      margin-top: 2px;
+
+      &:focus {
+        &:focus-visible {
+          outline: 2px dotted #fff;
+        }
+      }
+    }
+  }
+}
+
+#content {
+  .tabs {
+    .tabs-nav-list {
+      .tabs-nav-item {
+        a {
+          &:focus {
+            &:focus-visible {
+              outline: 2px dotted #000 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-slider {
+  .slick-dots {
+    li {
+      > button {
+        display: block;
+        opacity: 0;
+        border: none;
+        outline: none;
+        margin-left: 2px;
+
+        &:focus {
+          &:focus-visible {
+            outline: 2px dotted #fff;
+            height: 100%;
+            width: 3px;
+            opacity: 1;
+            color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+.leader-card-adjust {
+  .card-content-container {
+    h3 {
+      a {
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+    }
+  }
+}
+
+.megamenu-navigation {
+  .megamenu-search {
+    .searchBox {
+      input[type='text'] {
+        &:focus {
+          &:focus-visible {
+            outline: 2px dotted;
+          }
+        }
+      }
+    }
+  }
+}

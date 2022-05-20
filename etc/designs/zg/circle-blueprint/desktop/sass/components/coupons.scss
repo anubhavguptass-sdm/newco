@@ -1,0 +1,30 @@
+@import '../core/mixins'; 
+ 
+.coupons {
+		padding:10px;
+		border: $borderbox;
+		position:relative;
+		margin-bottom:10px;
+	.couponsImage{
+		@include pull-left();
+		width:30%;
+		margin-right:10px;
+	}
+	.couponsDescription{
+		@include pull-left();
+		width:60%;
+	}
+
+}
+
+
+.coupons .couponsContainer .button, 
+.coupons .couponsContainer a.lightbox {
+	bottom: 10px;
+	position: absolute;
+	right: 25px;
+}
+
+.coupons a.lightbox, .overlay-content-inner a.couponCancel, .overlay-content-inner a.couponSubmit{
+	@include btn;
+}

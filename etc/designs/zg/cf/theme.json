@@ -1,0 +1,7 @@
+{
+  "title": "Common Framework",
+  "version": "5-3-42",
+  "parentTheme": "/etc/designs/zg/basic",
+  "protectedTheme": true,
+  "finalTheme": false
+}

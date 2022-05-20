@@ -1,0 +1,146 @@
+.button {
+  background-color: #e1e1e1;
+  border: 1px solid #656363;
+  color: #323131;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block; }
+  .button:hover {
+    background-color: #939191;
+    color: white; }
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../../assets/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../../assets/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../../assets/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../../assets/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../../assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+#cq-emulator-content.firefox {
+  background-color: white !important; }
+
+html, body {
+  width: 100%;
+  font-size: 14px; }
+
+body {
+  line-height: 1.5;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  overflow: auto; }
+
+[id=wrapper] {
+  color: #323131;
+  background-color: whiteSmoke; }
+
+[id=header] {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+[id=footer] {
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
+img {
+  max-width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #323131;
+  margin: 10px 0; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: 0.83em; }
+
+h6 {
+  font-size: 0.67em; }
+
+a {
+  color: #323131;
+  text-decoration: none; }
+  a:hover {
+    color: #868484; }
+
+input[type="search"] {
+  box-sizing: content-box; }
+
+.component {
+  margin-bottom: 10px; }
+  .component-content {
+    margin-bottom: 14px; }
+    .component-content:before, .component-content:after {
+      content: "";
+      display: table; }
+    .component-content:after {
+      clear: both; }
+  .component > .component-content {
+    margin-bottom: 0; }
+
+.composite:before, .composite:after {
+  content: "";
+  display: table; }
+
+.composite:after {
+  clear: both; }
+
+.alert {
+  margin-bottom: 20px; }
+  .alert-list {
+    margin: 0;
+    padding: 0;
+    list-style: disc inside; }
+    .alert-list li {
+      padding-left: 4px; }
+  .alert-error {
+    color: red; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important; }
+
+.lazyload,
+.lazyloading {
+  opacity: 0; }
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms; }

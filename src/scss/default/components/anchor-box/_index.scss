@@ -1,0 +1,6 @@
+@if $include-anchor-box {
+  .anchor-box,
+  .anchor-sibling {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,52 @@
+/*stylelint-disable*/
+// fallback for sites that doesn't have this variable
+$include-bp-content-loader: null !default;
+
+@if $include-bp-content-loader != null {
+  $include-bp-content-loader: $include-bp-content-loader;
+} @else {
+  $include-bp-content-loader: true;
+}
+// end of fallback
+@if $include-bp-content-loader {
+  .bp-content-loader {
+    &-updated {
+      @include animate(top left, 0s, $content-loader-animation-duration);
+      overflow: hidden;
+
+      > * {
+        @include animate(top left, 0s, $content-loader-animation-duration);
+        margin-top: 0;
+      }
+
+      .achild {
+        display: none;
+      }
+    }
+
+    &-statusbar {
+      height: $content-loader-statusbar-height;
+      background-color: $content-loader-statusbar-color;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      @if $content-loader-statusbar-position == top {
+        top: calc(
+          -#{$content-loader-statusbar-height} -
+            #{$content-loader-statusbar-offset}
+        );
+        bottom: auto;
+      }
+      @if $content-loader-statusbar-position == bottom {
+        bottom: calc(
+          -#{$content-loader-statusbar-height} -
+            #{$content-loader-statusbar-offset}
+        );
+        top: auto;
+      }
+    }
+  }
+}
+
+/*stylelint-enable*/

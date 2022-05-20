@@ -1,0 +1,107 @@
+/* contact form */
+
+.haleon-contact-form {
+  label {
+    display: block;
+    font-weight: 600;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    height: 3rem;
+    border: 2px solid;
+    padding: 0rem 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+
+  select {
+    border: 2px solid;
+
+    option:hover {
+      background-color: var(--bg-color-2);
+    }
+  }
+
+  .contact-privacy-policy-heading {
+    display: flex;
+
+    .privacy-checkbox {
+      display: block;
+      width: 20px;
+      margin-top: 0.2rem;
+
+      input[type='checkbox'] {
+        width: 20px;
+        height: 20px;
+        outline: none;
+        accent-color: var(--color-primary);
+
+        &::before {
+          content: '';
+          position: absolute;
+          border: 2px solid #000;
+          border-radius: 0px;
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          margin-right: 0.5em;
+          margin-top: 0;
+
+          @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            display: none;
+          }
+        }
+      }
+
+      input[type='checkbox']:checked {
+        background-color: var(--bg-color-2);
+      }
+    }
+  }
+
+  .contact-desc-haleon {
+    padding: 1rem 2rem 0;
+  }
+
+  .col-primary-theme {
+    color: var(--color-primary);
+    padding: 0 0.75rem;
+  }
+
+  .group-form {
+    position: relative;
+
+    .input-required {
+      position: absolute;
+      bottom: -1rem;
+      color: #c30000;
+      @media screen and (max-width: 480px) {
+        bottom: -2rem;
+      }
+      &.btm-0 {
+        bottom: 0 !important;
+      }
+    }
+  }
+}
+.emailValidation {
+  input {
+    border: 2px solid #c30000 !important;
+    outline: 1px solid #c30000 !important;
+  }
+
+  .err-email-msg {
+    color: #c30000 !important;
+  }
+}
+/* contact form end */

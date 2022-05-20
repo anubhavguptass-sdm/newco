@@ -1,0 +1,109 @@
+@import '../core/mixins';
+
+.articleList {
+  > .component-content {
+    @include frame();
+    @include innerspace();
+    @include filled();
+  }
+}
+.articleList-heading {
+  @include heading();
+}
+.articleList-date {
+  margin-bottom: 10px;
+  color: $metaTextColor;
+}
+.articleList-article {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.articleList-description {
+  overflow: hidden;
+}
+.articleList-title {
+  @include heading();
+}
+.articleList-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.articleList-thumbnail {
+  max-width: 100px;
+  @include pull-left();
+  margin-right: 15px;
+}
+.articleList-more {
+  @include pull-right();
+  &:after {
+    content: " \00bb";
+    display: inline;
+  }
+}
+.articleList-more-arrow {
+  display: none;
+  .no-generatedcontent & {
+    //Falback if arrow cannot be created by :after
+    display: inline;
+  }
+}
+.articleList-article-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.articleList-horizontal-2-columns .articleList-article,
+.articleList-horizontal-3-columns .articleList-article {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+.articleList-horizontal-2-columns .articleList-article {
+  padding: 0;
+  margin: 0;
+  margin-right: 1.2%;
+  width: 48%;
+}
+.articleList-horizontal-3-columns .articleList-article {
+  padding: 0;
+  margin: 0;
+  margin-right: 1.5%;
+  width: 31%;
+}
+.articleList-tags {
+  list-style-type: none;
+  padding: 0;
+  margin: -20px 0 0 0;
+}
+.articleList-tags-item {
+  display: inline-block;
+  margin: 0 2px;
+}
+ .articleList-tags-item-link {
+  background: $mediumThemeColor;
+  color: $black;
+  border: 1px solid $themeColor;
+  padding: 1px;
+  display: block;
+  font-size: 0.85em;
+}
+
+/* Mobile Start  767 view */
+
+@include respond-to(mobile) {
+  .articleList-thumbnail {
+    float: none;
+    margin: auto;
+    display: block;
+  }
+
+  .articleList-horizontal-2-columns,
+  .articleList-horizontal-3-columns {
+    .articleList-article {
+      display: block;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/* COLOR NAMES
+----------------------------------------- */
+/*theme colors*/
+/*hard-coded colors*/
+/* FUNCTIONAL COLORS
+----------------------------------------- */
+/*border colors*/
+/*text colors*/
+/*background colors*/
+/*gradient colors*/
+/* all other colors*/
+/* BUTTONS
+----------------------------------*/
+.pcodeloginpanel .passcodeButton {
+  background-color: #f36633;
+  border-radius: 3px;
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block; }
+  .pcodeloginpanel .passcodeButton:hover {
+    background-color: #939191;
+    color: white; }
+  .pcodeloginpanel .passcodeButton:active {
+    background-color: #939191;
+    color: white; }
+
+.pcodeloginpanel input[type=text] {
+  padding: 4px 0; }
+
+.pcodeloginpanel .errorPasscode {
+  margin-top: 3px; }
+
+.pcodeloginpanel .hidePasscodeError {
+  display: none; }

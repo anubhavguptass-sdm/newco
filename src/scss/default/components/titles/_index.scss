@@ -1,0 +1,287 @@
+@if $include-titles {
+  // define media query generic strings
+  // device prefix | width prefix | brakpoint
+  $renditions: (
+    'd' 'min' $breakpoint-sm-min,
+    'm' 'max' $breakpoint-sm-max
+  ) !default;
+  // define alignments
+  // alignment | flex alignment | text alignment
+  $alignments: (
+    'center' center center,
+    'left' flex-start left,
+    'right' flex-end right
+  ) !default;
+
+  $titleCounter: 1 !default;
+  $loops: length($renditions) * length($alignments) !default;
+  $allTitles: '' !default;
+  $allLinks: '' !default;
+
+  @each $deviceSuffix, $widthPrefix, $breakPoint in $renditions {
+    @each $alignment, $flexAlignment, $textAlignment in $alignments {
+      $comma: if($titleCounter < $loops, ',', '');
+      $allTitles: $allTitles +
+        '*[class*=title-#{$deviceSuffix}-#{$alignment}]#{$comma}';
+      $allLinks: $allLinks +
+        '*[class*=title-#{$deviceSuffix}-#{$alignment}-link]#{$comma}';
+      $titleCounter: $titleCounter + 1;
+    }
+  }
+
+  #{$allTitles} {
+    > .component-content {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: $row-direction;
+      flex-wrap: wrap;
+
+      > * {
+        flex: 1 1 100%;
+        margin-bottom: 0;
+      }
+
+      &::after {
+        background-color: $title-divider-color;
+        content: '';
+        display: block;
+        flex: 1 1 100%;
+        height: $title-divider-height;
+        margin-bottom: $title-bottom-margin;
+        margin-top: $title-divider-top-margin;
+        max-width: $title-divider-width;
+        width: 100%;
+
+        @media (min-width: $breakpoint-sm-min) {
+          //desktop styles
+          margin-bottom: $title-bottom-margin-desktop;
+          margin-top: $title-divider-top-margin-desktop;
+        }
+      }
+    }
+  }
+
+  #{$allLinks} {
+    > .component-content {
+      display: block;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    a {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: $row-direction;
+      flex-wrap: wrap;
+      overflow: hidden;
+
+      > * {
+        flex: 1 1 auto;
+        margin-bottom: 0;
+      }
+
+      &::after {
+        background-color: $title-divider-color;
+        content: '';
+        display: block;
+        flex: 1 1 100%;
+        height: $title-divider-height;
+        max-width: none;
+        transform: translateX(calc(-100% + #{$title-divider-width}));
+        width: 100%;
+      }
+    }
+  }
+
+  .title {
+    @each $deviceSuffix, $widthPrefix, $breakPoint in $renditions {
+      @media (#{$widthPrefix}-width: #{$breakPoint}) {
+        &-#{$deviceSuffix} {
+          @each $alignment, $flexAlignment, $textAlignment in $alignments {
+            &-#{$alignment} {
+              > .component-content {
+                justify-content: $flexAlignment;
+
+                > * {
+                  text-align: $textAlignment;
+                }
+
+                &::after {
+                  content: '';
+                  display: block;
+                  height: $title-divider-height;
+
+                  @if $textAlignment == left {
+                    transform: translateX(
+                      calc(-100% + #{$title-divider-width})
+                    );
+                  } @else if $textAlignment == right {
+                    transform: translateX(calc(100% - #{$title-divider-width}));
+                  } @else if $textAlignment == center {
+                    transform: none;
+                    margin-left: calc((100% - #{$title-divider-width}) / 2);
+                    margin-right: calc((100% - #{$title-divider-width}) / 2);
+                  }
+                }
+              }
+
+              &-link {
+                a {
+                  justify-content: $flexAlignment;
+                  text-align: $textAlignment;
+
+                  > * {
+                    text-align: $textAlignment;
+                  }
+
+                  &::after {
+                    content: '';
+                    display: block;
+                    height: $title-divider-height;
+
+                    @if $textAlignment == left {
+                      transform: translateX(
+                        calc(-100% + #{$title-divider-width})
+                      );
+                    } @else if $textAlignment == right {
+                      transform: translateX(
+                        calc(100% - #{$title-divider-width})
+                      );
+                    } @else if $textAlignment == center {
+                      transform: none;
+                      margin-left: calc((100% - #{$title-divider-width}) / 2);
+                      margin-right: calc((100% - #{$title-divider-width}) / 2);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @each $colorName, $colorHex in $title-theme-colors {
+      &-color-#{$colorName} {
+        > .component-content {
+          &::after {
+            background-color: $colorHex !important;
+          }
+        }
+
+        &-link {
+          a {
+            &::after {
+              background-color: $colorHex !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .no-divider {
+    @each $deviceSuffix, $widthPrefix, $breakPoint in $renditions {
+      @media (#{$widthPrefix}-width: #{$breakPoint}) {
+        &-#{$deviceSuffix} {
+          > .component-content {
+            margin-bottom: $title-bottom-margin;
+
+            &::after {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // titles classes for image and richText components - affecting only H titles
+  .title-left-m {
+    .component-content {
+      .richText-content,
+      figcaption {
+        h1,
+        h2,
+        h3,
+        h4 {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .title-center-m {
+    .component-content {
+      .richText-content,
+      figcaption {
+        h1,
+        h2,
+        h3,
+        h4 {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .title-right-m {
+    .component-content {
+      .richText-content,
+      figcaption {
+        h1,
+        h2,
+        h3,
+        h4 {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-md-min) {
+    .title-left-d {
+      .component-content {
+        .richText-content,
+        figcaption {
+          h1,
+          h2,
+          h3,
+          h4 {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .title-center-d {
+      .component-content {
+        .richText-content,
+        figcaption {
+          h1,
+          h2,
+          h3,
+          h4 {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .title-right-d {
+      .component-content {
+        .richText-content,
+        figcaption {
+          h1,
+          h2,
+          h3,
+          h4 {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

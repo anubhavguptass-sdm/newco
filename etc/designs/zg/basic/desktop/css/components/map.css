@@ -1,0 +1,11 @@
+.map-canvas {
+  margin-bottom: 10px;
+  border: solid 2px #323131;
+  text-align: center; }
+  .map-canvas img {
+    width: 100%;
+    max-width: inherit; }
+
+.no-js .map-canvas img {
+  width: 100%;
+  max-width: 640px; }

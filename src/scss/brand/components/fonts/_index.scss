@@ -1,0 +1,18 @@
+.giant-font {
+  font-size: 2.625rem;
+  line-height: $line-height-100;
+  text-align: center;
+  margin: 0;
+  @media (min-width: $breakpoint-sm-min) {
+    font-size: 4rem;
+    letter-spacing: -3px;
+  }
+  @media (min-width: $breakpoint-sd-min) {
+    font-size: 5rem;
+  }
+}
+.big-title {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: $color-white !important;
+}

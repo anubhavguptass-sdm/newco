@@ -1,0 +1,14 @@
+// slight adjustment so it fits to the BP layout and flex if needed
+@if $include-rich-text {
+  .richText.component {
+    > .component-content {
+      height: 100%;
+      width: 100%;
+
+      > .richText-content {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

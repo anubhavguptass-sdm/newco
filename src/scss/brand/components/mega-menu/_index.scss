@@ -49,6 +49,7 @@ header {
           @include sd {
             max-width: 100% !important;
             justify-content: center;
+            margin-top: 0 !important;
           }
         }
       }
@@ -91,13 +92,14 @@ header {
               padding-right: 20px;
             }
             &:after {
-              content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/contact-phone.png');
+              content: '\efec';
+              font-family: 'remixicon';
               position: absolute;
               top: 4px;
               left: 5.5rem;
               @include sd {
                 top: 0;
-                left: 6rem;
+                left: 5.5rem;
               }
             }
           }
@@ -116,7 +118,8 @@ header {
             position: relative;
             padding-right: 20px;
             &:after {
-              content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/other-contrast.png');
+              content: '\ebd9';
+              font-family: 'remixicon';
               position: absolute;
               right: 1px;
               top: 4px;
@@ -188,7 +191,6 @@ header {
         }
         ul.navigation-level1 {
           li.navigation-item {
-            padding: 0 1rem;
             a {
               color: $color-black !important;
               font-size: $font-size-16 !important;
@@ -372,7 +374,8 @@ header {
         }
       }
       button {
-        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/Navigation-Search.svg') !important;
+        content: '\f0d1';
+        font-family: 'remixicon';
         position: relative;
         width: 18px !important;
         height: 18px !important;
@@ -407,8 +410,9 @@ header {
           position: absolute;
           left: -48px;
           top: 1px;
-          font-size: $font-size-14;
+          font-size: $font-size-16;
           color: $color-black;
+          font-family: $font-family-default;
           @media only screen and (max-width: 1023.5px) {
             display: none;
           }
@@ -812,7 +816,6 @@ header {
     .megamenu-top-bar-left > .component-content > .paragraphSystem {
       .richText {
         p {
-          min-height: 54px !important;
           width: 100%;
           margin: 0;
           margin-bottom: 0 !important;
@@ -824,7 +827,6 @@ header {
     .megamenu-top-bar-right > .component-content > .paragraphSystem {
       .richText {
         p {
-          min-height: 54px !important;
           margin-bottom: 0 !important;
         }
       }
@@ -845,7 +847,7 @@ header {
     .accessibility--nav
     p
     a:after {
-    right: -1.5rem;
+    right: -1rem;
   }
   .megamenu-navigation .megamenu-submenu-item .default-style ul li {
     padding-left: 0px !important;
@@ -875,6 +877,7 @@ header {
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         color: #000;
+        display: none;
       }
     }
     &.page-who-we-are a::before {
@@ -888,11 +891,6 @@ header {
     }
     &.page-careers a::before {
       left: 3.7rem;
-    }
-  }
-  li {
-    &.page-careers {
-      padding-bottom: 1rem;
     }
   }
 }

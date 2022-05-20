@@ -17,10 +17,12 @@
   color: $color-white !important;
 }
 
-a{
-  font-size: inherit !important;
-  font-weight: inherit !important;
-  color: inherit !important;
-  line-height: inherit !important;
-  padding: inherit !important;
+h1, h2, h3, h4, h5, h6, p {
+  a{
+    font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+  padding: inherit;
+  }
 }

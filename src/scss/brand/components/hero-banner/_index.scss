@@ -25,6 +25,7 @@
       @include sd {
         white-space: nowrap;
       }
+
       .heading-bg-strip {
         width: 80%;
 
@@ -79,6 +80,72 @@
     }
   }
 }
+
+.planet-people-banner {
+  .heading {
+    margin-top: 5px;
+    margin-left: 2rem;
+
+    @include sm {
+      margin-top: 5rem;
+    }
+
+    @include sd {
+      margin-top: 3rem;
+    }
+
+    .heading-bg-strip {
+      width: 80%;
+      margin-left: -2rem;
+      padding-left: 2rem;
+
+      @include sm {
+        width: 100vw;
+      }
+
+      &:before {
+        top: 0;
+
+        @include sm {
+          top: 100%;
+        }
+      }
+
+      &:after {
+        top: -100%;
+
+        @include sm {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .banner-subheading {
+    margin-left: 2rem;
+  }
+
+  .image {
+    order: 2;
+
+    @include sm {
+      order: unset;
+    }
+  }
+
+  .progress-report-btn {
+    position: relative;
+
+    @include sm {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+
+
 // .profile--hero--banner {
 //   .card-content-container {
 //     padding: 1rem 1.5rem;

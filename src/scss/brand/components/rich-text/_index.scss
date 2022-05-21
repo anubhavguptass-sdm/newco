@@ -1,15 +1,14 @@
-// Who we are page
 .bottom-right-box {
   background-color: $color-primary;
   position: relative;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem !important;
   @include sd {
     position: absolute;
     bottom: 0;
     right: 0;
   }
   @include md {
-    padding: 2rem;
+    padding: 2rem !important;
   }
 }
 
@@ -125,5 +124,14 @@
   width: 50%;
   @include sm {
     width: auto;
+  }
+}
+
+.bg-strip-170 {
+  &:before {
+    height: 100%;
+    @include sm {
+      height: 170px !important;
+    }
   }
 }

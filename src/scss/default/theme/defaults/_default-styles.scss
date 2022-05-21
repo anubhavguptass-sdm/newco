@@ -76,16 +76,10 @@ body {
           font-size: calc(
             #{$font-size-h1-mobile} + #{$font-size-body-large-mobile}
           );
-          line-height: calc(
-            #{$line-height-h1-mobile} + #{$line-height-body-large-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-h1} + #{$font-size-body-large-desktop}
-            );
-            line-height: calc(
-              #{$line-height-h1} + #{$line-height-large-desktop}
             );
           }
         }
@@ -95,16 +89,10 @@ body {
           font-size: calc(
             #{$font-size-h2-mobile} + #{$font-size-body-large-mobile}
           );
-          line-height: calc(
-            #{$line-height-h2-mobile} + #{$line-height-body-large-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-h2} + #{$font-size-body-large-desktop}
-            );
-            line-height: calc(
-              #{$line-height-h2} + #{$line-height-large-desktop}
             );
           }
         }
@@ -114,16 +102,10 @@ body {
           font-size: calc(
             #{$font-size-h3-mobile} + #{$font-size-body-large-mobile}
           );
-          line-height: calc(
-            #{$line-height-h3-mobile} + #{$line-height-body-large-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-h3} + #{$font-size-body-large-desktop}
-            );
-            line-height: calc(
-              #{$line-height-h3} + #{$line-height-large-desktop}
             );
           }
         }
@@ -131,16 +113,10 @@ body {
         h4,
         .h4 {
           font-size: calc(#{$font-size-h4} + #{$font-size-body-large-mobile});
-          line-height: calc(
-            #{$line-height-h4} + #{$line-height-body-large-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-h4} + #{$font-size-body-large-desktop}
-            );
-            line-height: calc(
-              #{$line-height-h4} + #{$line-height-large-desktop}
             );
           }
         }
@@ -150,16 +126,10 @@ body {
           font-size: calc(
             #{$font-size-body-mobile} + #{$font-size-body-large-mobile}
           );
-          line-height: calc(
-            #{$line-height-body-mobile} + #{$line-height-body-large-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-body} + #{$font-size-body-large-desktop}
-            );
-            line-height: calc(
-              #{$line-height-body} + #{$line-height-large-desktop}
             );
           }
         }
@@ -169,16 +139,10 @@ body {
           font-size: calc(
             #{$font-size-body-mobile} + #{$font-size-body-large-mobile}
           );
-          line-height: calc(
-            #{$line-height-body-mobile} + #{$line-height-body-large-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-body} + #{$font-size-body-large-desktop}
-            );
-            line-height: calc(
-              #{$line-height-body} + #{$line-height-large-desktop}
             );
           }
         }
@@ -197,16 +161,10 @@ body {
           font-size: calc(
             #{$font-size-h1-mobile} + #{$font-size-body-larger-mobile}
           );
-          line-height: calc(
-            #{$line-height-h1-mobile} + #{$line-height-body-larger-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-h1} + #{$font-size-body-larger-desktop}
-            );
-            line-height: calc(
-              #{$line-height-h1} + #{$line-height-larger-desktop}
             );
           }
         }
@@ -216,16 +174,10 @@ body {
           font-size: calc(
             #{$font-size-h2-mobile} + #{$font-size-body-larger-mobile}
           );
-          line-height: calc(
-            #{$line-height-h2-mobile} + #{$line-height-body-larger-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-h2} + #{$font-size-body-larger-desktop}
-            );
-            line-height: calc(
-              #{$line-height-h2} + #{$line-height-larger-desktop}
             );
           }
         }
@@ -235,16 +187,10 @@ body {
           font-size: calc(
             #{$font-size-h3-mobile} + #{$font-size-body-larger-mobile}
           );
-          line-height: calc(
-            #{$line-height-h3-mobile} + #{$line-height-body-larger-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-h3} + #{$font-size-body-larger-desktop}
-            );
-            line-height: calc(
-              #{$line-height-h3} + #{$line-height-larger-desktop}
             );
           }
         }
@@ -252,16 +198,10 @@ body {
         h4,
         .h4 {
           font-size: calc(#{$font-size-h4} + #{$font-size-body-larger-mobile});
-          line-height: calc(
-            #{$line-height-h4} + #{$line-height-body-larger-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-h4} + #{$font-size-body-larger-desktop}
-            );
-            line-height: calc(
-              #{$line-height-h4} + #{$font-size-body-larger-desktop}
             );
           }
         }
@@ -271,16 +211,10 @@ body {
           font-size: calc(
             #{$font-size-body-mobile} + #{$font-size-body-larger-mobile}
           );
-          line-height: calc(
-            #{$line-height-body-mobile} + #{$line-height-body-larger-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-body} + #{$font-size-body-larger-desktop}
-            );
-            line-height: calc(
-              #{$line-height-body} + #{$line-height-larger-desktop}
             );
           }
         }
@@ -290,16 +224,10 @@ body {
           font-size: calc(
             #{$font-size-body-mobile} + #{$font-size-body-larger-mobile}
           );
-          line-height: calc(
-            #{$line-height-body-mobile} + #{$line-height-body-larger-mobile}
-          );
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
               #{$font-size-body} + #{$font-size-body-larger-desktop}
-            );
-            line-height: calc(
-              #{$line-height-body} + #{$line-height-larger-desktop}
             );
           }
         }

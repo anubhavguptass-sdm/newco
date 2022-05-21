@@ -20,7 +20,7 @@
     }
   }
 
-  @include sm {
+  @include sd {
     .sm-btn {
       display: none;
     }
@@ -28,7 +28,7 @@
     left: auto;
     position: absolute;
     right: 0;
-    padding: 1rem;
+    padding: 1rem !important;
     top: 50%;
     margin: auto;
     left: auto;
@@ -38,6 +38,6 @@
     min-width: calc(100% / 2 + 4rem);
   }
   @include sd{
-    padding: 2rem;
+    padding: 2rem !important;
   }
 }

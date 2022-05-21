@@ -35,7 +35,6 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    min-width: calc(100% / 2 + 4rem);
   }
   @include sd{
     padding: 2rem !important;

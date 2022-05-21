@@ -9,7 +9,7 @@
 
 // define root css vars here
 :root {
-  font-size: $font-size-body;
+  font-size: $font-size-body-mobile;
   --max-content-width: #{$max-content-width};
   --max-content-md-width: #{$max-content-md-width};
   --direction: #{$direction};
@@ -26,7 +26,7 @@
 
 @media (min-width: $breakpoint-sm-min) {
   :root {
-    font-size: $font-size-body-mobile;
+    font-size: $font-size-body;
   }
 }
 

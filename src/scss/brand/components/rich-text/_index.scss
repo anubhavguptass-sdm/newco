@@ -47,12 +47,12 @@
       }
       @include md {
         margin-top: auto;
-        top: -1.5rem
+        top: -1.5rem;
       }
-      @include lg{
+      @include lg {
         display: inline-block !important;
         margin-top: auto;
-        top:auto;
+        top: auto;
       }
     }
   }
@@ -66,7 +66,7 @@
   }
   .diversity-right-area {
     padding-top: 3rem;
-    @include md{
+    @include md {
       padding-top: 9.5rem;
     }
     .white-line-repeats {
@@ -76,7 +76,7 @@
       top: 2.4rem;
       left: -5rem;
       z-index: 0;
-      @include sd{
+      @include sd {
         display: block;
       }
     }
@@ -90,7 +90,7 @@
         line-height: 64px;
       }
     }
-    .diversity-percentage-content{
+    .diversity-percentage-content {
       margin-top: 0 0 2.5rem 0;
     }
   }

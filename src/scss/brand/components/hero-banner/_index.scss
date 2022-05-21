@@ -44,15 +44,6 @@
   }
 }
 
-.imageCompatibleMarkup.image {
-  img {
-    padding-bottom: 1.5rem;
-
-    @include sm {
-      padding-bottom: 50px;
-    }
-  }
-}
 
 .planet-people-banner {
   .heading {

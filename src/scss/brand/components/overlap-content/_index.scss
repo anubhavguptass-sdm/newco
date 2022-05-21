@@ -14,17 +14,15 @@
 
   .sd-btn {
     display: none;
-
+    @include sd {
+      display: none;
+    }
     @include md {
       display: block;
     }
   }
 
-  @include sd {
-    .sm-btn {
-      display: none;
-    }
-
+  @include sm {
     left: auto;
     position: absolute;
     right: 0;

@@ -1,5 +1,4 @@
 // Who we are page
-.page-who-we-are {
   .bottom-right-box {
     position: relative;
     @include sd {
@@ -21,13 +20,12 @@
       transform: translateY(-50%);
       height: 96%;
     }
-    @include md {
+    @media screen and (min-width: $breakpoint-md-min)  and (max-width: $breakpoint-lg-min){
       img {
         height: 32rem;
       }
     }
   }
-}
 
 .tag-links {
   width: 85%;
@@ -114,7 +112,7 @@
     }
     .diversity-area-content {
       padding-right: 0;
-      @include md{
+      @include sd{
         padding-right: 6rem;
       }
     }

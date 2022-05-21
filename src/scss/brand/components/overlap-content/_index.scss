@@ -14,12 +14,11 @@
 
   .sd-btn {
     display: none;
-
+    @include sd {
+      display: none;
+    }
     @include md {
       display: block;
-    }
-    @include sd{
-      display: none;
     }
   }
 

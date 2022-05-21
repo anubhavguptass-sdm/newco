@@ -25,27 +25,6 @@ body img {
     margin-top: 180px;
   }
 }
-@media screen and (min-width: 992px) {
-  .flex.cols-d-2 > * > .component-content > *,
-  .flex.cols-d-2 > * > figure > *,
-  .flex.cols-d-2 > * > .paragraphSystem > *,
-  .flex.cols-d-2 > * > .navigation-root > * {
-    flex-basis: 100%;
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: $breakpoint-sd-min) {
-  .flex.cols-d-2 > * > .component-content > *,
-  .flex.cols-d-2 > * > figure > *,
-  .flex.cols-d-2 > * > .paragraphSystem > *,
-  .flex.cols-d-2 > * > .navigation-root > * {
-    flex-basis: calc(100% / 2);
-    max-width: calc(100% / 2);
-    width: calc(100% / 2);
-  }
-}
 
 p {
   margin: 0 0 1rem 0;

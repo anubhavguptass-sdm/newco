@@ -1,8 +1,9 @@
 // Who we are page
+.bottom-box-wrapper{
 .bottom-right-box {
   background-color: $color-primary;
   position: relative;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   @include sd {
     position: absolute;
     bottom: 0;
@@ -11,6 +12,7 @@
   @include md{
     padding: 2rem;
   }
+}
 }
 
 .measure-black {

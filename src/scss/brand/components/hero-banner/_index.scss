@@ -9,8 +9,6 @@
     @include sm {
       order: unset;
       padding-top: 3rem;
-      padding-left: 0;
-      padding-right: 0;
     }
 
     .heading {
@@ -35,7 +33,6 @@
         padding-left: 0 !important;
         position: absolute;
         bottom: 24px;
-        left: 12px;
         line-height: $line-height-150;
       }
       .story-name {

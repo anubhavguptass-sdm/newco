@@ -1,63 +1,55 @@
 .hero-banner {
   position: relative;
 
-  .richText.component.first {
+  .heading {
+    white-space: initial;
     padding-top: 1rem;
     padding-left: 1rem;
 
     @include sm {
       padding-top: 6rem;
     }
-
+    @include sd {
+      white-space: nowrap;
+    }
     @include lg {
       padding-top: 8rem;
       padding-left: 0;
     }
+  }
 
-    @include lg {
-      padding-left: 0rem;
-    }
+  .banner-subheading {
+    white-space: initial;
+    margin-left: 1rem;
 
-    .heading {
-      white-space: initial;
-
-      @include sd {
-        white-space: nowrap;
-      }
-    }
-
-    .banner-subheading {
-      white-space: initial;
-
-      @include sd {
-        white-space: nowrap;
-      }
-    }
-
-    p:last-of-type {
-      position: relative;
-
-      @include sm {
-        padding-left: 0 !important;
-        position: absolute;
-        bottom: 24px;
-        left: 12px;
-        line-height: $line-height-150;
-      }
-
-      @include lg {
-        left: 0;
-      }
+    @include sd {
+      white-space: nowrap;
     }
   }
 
-  .imageCompatibleMarkup.image {
-    img {
-      padding-bottom: 1.5rem;
+  .description-story {
+    position: relative;
+    padding-left: 1rem;
 
-      @include sm {
-        padding-bottom: 50px;
-      }
+    @include sm {
+      padding-left: 0 !important;
+      position: absolute;
+      bottom: 24px;
+      left: 12px;
+      line-height: $line-height-150;
+    }
+    .story-name {
+      border-bottom: 2px solid #30ea03;
+    }
+  }
+}
+
+.imageCompatibleMarkup.image {
+  img {
+    padding-bottom: 1.5rem;
+
+    @include sm {
+      padding-bottom: 50px;
     }
   }
 }

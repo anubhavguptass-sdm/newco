@@ -43,7 +43,7 @@
       color: $color-grey-3 !important;
       @include sm {
         display: table !important;
-       top: -1.5rem;
+        top: -1.5rem;
       }
       @include lg {
         display: inline-block !important;

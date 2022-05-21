@@ -11,14 +11,14 @@
   @include sm {
     left: 0;
   }
-  .sd-btn{
+  .sd-btn {
     display: none;
     @include md {
       display: block;
     }
   }
   @include md {
-    .sm-btn{
+    .sm-btn {
       display: none;
     }
     position: absolute;

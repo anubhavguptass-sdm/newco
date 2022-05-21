@@ -18,13 +18,12 @@
     @include md {
       display: block;
     }
-  }
-
-  @include sd {
-    .sm-btn {
+    @include sd{
       display: none;
     }
+  }
 
+  @include sm {
     left: auto;
     position: absolute;
     right: 0;
@@ -36,7 +35,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  @include sd{
+  @include sd {
     padding: 2rem !important;
   }
 }

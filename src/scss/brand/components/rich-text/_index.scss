@@ -43,15 +43,10 @@
       color: $color-grey-3 !important;
       @include sm {
         display: table !important;
-        margin-top: -4rem;
-      }
-      @include md {
-        margin-top: auto;
-        top: -1.5rem;
+       top: -1.5rem;
       }
       @include lg {
         display: inline-block !important;
-        margin-top: auto;
         top: auto;
       }
     }

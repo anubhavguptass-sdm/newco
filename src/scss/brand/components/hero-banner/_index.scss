@@ -1,40 +1,46 @@
 .hero-banner {
   position: relative;
 
-  .heading {
-    white-space: initial;
-    padding-top: 1rem;
-    padding-left: 1rem;
-
+  .hero-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0rem;
+    order: -1;
     @include sm {
-      padding-top: 6rem;
+      order: unset;
+      padding-top: 3rem;
+      padding-left: 0;
+      padding-right: 0;
     }
-    @include sd {
-      white-space: nowrap;
-    }
-    @include lg {
-      padding-top: 8rem;
-      padding-left: 2rem;
-    }
-  }
 
-  .banner-subheading {
-    margin-left: 1rem;
-  }
+    .heading {
+      white-space: initial;
+      padding-top: 1rem;
 
-  .description-story {
-    position: relative;
-    padding-left: 1rem;
-
-    @include sm {
-      padding-left: 0 !important;
-      position: absolute;
-      bottom: 24px;
-      left: 12px;
-      line-height: $line-height-150;
+      @include sm {
+        padding-top: 6rem;
+      }
+      @include sd {
+        white-space: nowrap;
+      }
+      @include lg {
+        padding-top: 8rem;
+      }
     }
-    .story-name {
-      border-bottom: 2px solid #30ea03;
+
+    .description-story {
+      position: relative;
+
+      @include sm {
+        padding-left: 0 !important;
+        position: absolute;
+        bottom: 24px;
+        left: 12px;
+        line-height: $line-height-150;
+      }
+      .story-name {
+        border-bottom: 2px solid #30ea03;
+      }
     }
   }
 }

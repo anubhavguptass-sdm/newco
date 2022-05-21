@@ -1,12 +1,8 @@
 .right-overlapping-content {
   position: relative;
-<<<<<<< HEAD
-  margin: 0 5% !important;
-=======
   margin: 0 !important;
   -webkit-transform: none;
   -ms-transform: none;
->>>>>>> 542a90ff9c4f79610c394305b28527153b5bd6c5
   transform: none;
   padding: 2rem !important;
   top: -5rem;
@@ -40,7 +36,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  @include sd{
+  @include sd {
     padding: 2rem;
   }
 }

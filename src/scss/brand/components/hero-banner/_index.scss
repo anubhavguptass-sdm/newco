@@ -1,7 +1,7 @@
-.homepage-banner {
+.hero-banner {
   position: relative;
 
-  .home-hero-content {
+  .richText.component.first {
     padding-top: 1rem;
     padding-left: 1rem;
 
@@ -9,7 +9,6 @@
       padding-top: 6rem;
     }
 
-    
     @include lg {
       padding-top: 8rem;
       padding-left: 0;
@@ -24,24 +23,6 @@
 
       @include sd {
         white-space: nowrap;
-      }
-
-      .heading-bg-strip {
-        width: 80%;
-
-        @include sm {
-          width: 100%;
-        }
-
-        &:before {
-          top: 0;
-        }
-
-        &:after {
-          top: -100%;
-          width: 60vw;
-          right: -60vw;
-        }
       }
     }
 

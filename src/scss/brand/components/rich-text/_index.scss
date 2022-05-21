@@ -1,31 +1,31 @@
 // Who we are page
-  .bottom-right-box {
-    position: relative;
-    @include sd {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
+.bottom-right-box {
+  position: relative;
+  @include sd {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
+}
 
-  .measure-black {
-    display: none;
-    @include sd {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      height: 96%;
-    }
-    @media screen and (min-width: $breakpoint-md-min)  and (max-width: $breakpoint-lg-min){
-      img {
-        height: 32rem;
-      }
+.measure-black {
+  display: none;
+  @include sd {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 96%;
+  }
+  @media screen and (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-min) {
+    img {
+      height: 32rem;
     }
   }
+}
 
 .tag-links {
   width: 85%;
@@ -112,7 +112,7 @@
     }
     .diversity-area-content {
       padding-right: 0;
-      @include sd{
+      @include sd {
         padding-right: 6rem;
       }
     }

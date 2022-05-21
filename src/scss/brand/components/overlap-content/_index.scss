@@ -1,6 +1,5 @@
 .right-overlapping-content {
   position: relative;
-  width: 90%;
   margin: 0 5% !important;
   transform: none;
   padding: 2rem !important;
@@ -29,6 +28,5 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    min-width: calc(100% / 2 + 4rem);
   }
 }

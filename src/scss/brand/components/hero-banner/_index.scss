@@ -14,17 +14,12 @@
     }
     @include lg {
       padding-top: 8rem;
-      padding-left: 0;
+      padding-left: 2rem;
     }
   }
 
   .banner-subheading {
-    white-space: initial;
     margin-left: 1rem;
-
-    @include sd {
-      white-space: nowrap;
-    }
   }
 
   .description-story {
@@ -43,7 +38,6 @@
     }
   }
 }
-
 
 .planet-people-banner {
   .heading {

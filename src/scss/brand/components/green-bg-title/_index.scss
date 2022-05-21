@@ -35,6 +35,49 @@
   }
 }
 
+.heading-bg-strip {
+  .two-steps {
+    width: 80%;
+    background: transparent !important;
+
+    @include sm {
+      background: var(--bg-color-2) !important;
+      margin-left: -2rem;
+      padding-left: 2rem;
+      width: 100%;
+    }
+
+    &:before {
+      height: 100%;
+      top: 100%;
+      width: 110%;
+      left: -10%;
+
+      @include sm {
+        height: 100%;
+        left: -100vw;
+        width: 100vw;
+      }
+    }
+
+    &:after {
+      top: 0;
+    }
+
+    em {
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+}
+
+.bg-strip-170{
+  height: 100%;
+  @include sm{
+    height: 170px;
+  }
+}
+
 /* .home-hero-content {
   .green-bar {
     height: 100px;

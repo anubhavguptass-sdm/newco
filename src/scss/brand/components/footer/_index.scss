@@ -15,6 +15,7 @@
 
   .footer-secondary-nav {
     border-top: 1px solid $color-grey-3;
+    padding: 3rem 0;
 
     .footer-logo {
       display: flex;
@@ -176,9 +177,9 @@
     }
   }
   .footer-column {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     @include md {
-      padding: 4rem 2rem;
+      padding: 4rem 0rem;
     }
   }
 }

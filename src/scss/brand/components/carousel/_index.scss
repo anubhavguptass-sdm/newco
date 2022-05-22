@@ -51,19 +51,13 @@
 .half-carousel .lSSlideWrapper {
   overflow: visible;
 }
-.lSSlideOuter
-.lSSlideWrapper
-.lSAction
-a.lSPrev {
-content: '\e905';
-font-family: 'icomoon';
+.lSSlideOuter .lSSlideWrapper .lSAction a.lSPrev {
+  content: '\e905';
+  font-family: 'icomoon';
 }
-.lSSlideOuter
-.lSSlideWrapper
-.lSAction
-a.lSNext {
-content: '\e906';
-font-family: 'icomoon';
+.lSSlideOuter .lSSlideWrapper .lSAction a.lSNext {
+  content: '\e906';
+  font-family: 'icomoon';
 }
 // .template-standard-content-v2-profile
 //   .carousel-cq
@@ -611,9 +605,10 @@ font-family: 'icomoon';
         .media-container {
           position: relative;
           &:after {
-            content: '';
+            content: '\e906';
+            font-family: 'icomoon';
             background-color: $color-primary;
-            background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
+            // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
             position: absolute;
             background-size: 20px;
             background-repeat: no-repeat;
@@ -757,9 +752,10 @@ font-family: 'icomoon';
                   .imageCompatibleMarkup {
                     position: relative;
                     &:after {
-                      content: '';
+                      content: '\e906';
+                      font-family: 'icomoon';
                       background-color: $color-primary;
-                      background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
+                      // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
                       position: absolute;
                       background-size: 20px;
                       background-repeat: no-repeat;

@@ -377,9 +377,9 @@ header {
         content: '\f0d1';
         font-family: 'icomoon';
         position: relative;
-        width: 18px !important;
-        height: 18px !important;
-        background-size: 18px !important;
+        width: 16px !important;
+        height: 16px !important;
+        background-size: 16px !important;
         right: 0 !important;
         top: 0.6rem !important;
         @media only screen and (max-width: 1023.5px) {
@@ -409,7 +409,7 @@ header {
           content: 'Search';
           position: absolute;
           left: -48px;
-          top: 1px;
+          top: 0px;
           font-size: $font-size-16;
           color: $color-black;
           font-family: $font-family-default;
@@ -847,7 +847,7 @@ header {
     .header-icon-two
     p
     a:after {
-    right: -1rem;
+    right: -1.1rem;
   }
   .megamenu-navigation .megamenu-submenu-item .default-style ul li {
     padding-left: 0px !important;

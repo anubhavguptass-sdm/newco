@@ -53,6 +53,12 @@
 }
 .lSSlideOuter .lSSlideWrapper .lSAction a.lSPrev {
   background-image: none;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #fff;
+  border-radius: 30px;
   &:after {
     content: '\e906';
     font-family: 'icomoon';
@@ -60,30 +66,17 @@
 }
 .lSSlideOuter .lSSlideWrapper .lSAction a.lSNext {
   background-image: none;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #fff;
+  border-radius: 30px;
   &:after {
     content: '\e907';
     font-family: 'icomoon';
   }
 }
-// .template-standard-content-v2-profile
-//   .carousel-cq
-//   .lSSlideOuter
-//   .lSSlideWrapper
-//   .lSAction
-//   a.lSPrev {
-//   content: '\e906';
-//   font-family: 'icomoon';
-// }
-
-// .template-standard-content-v2-profile
-//   .carousel-cq
-//   .lSSlideOuter
-//   .lSSlideWrapper
-//   .lSAction
-//   a.lSNext {
-//   content: '\e907';
-//   font-family: 'icomoon';
-// }
 
 .half-carousel.leader-card-adjust {
   top: 2.5rem;
@@ -100,18 +93,6 @@
       right: -10px;
       top: -110px;
     }
-
-    // a {
-    //   &.lSNext {
-    //     content: '\e907';
-    //     font-family: 'icomoon';
-    //   }
-
-    //   &.lSPrev {
-    //     content: '\e906';
-    //     font-family: 'icomoon';
-    //   }
-    // }
   }
 
   .brand-tile {
@@ -185,26 +166,6 @@
     }
   }
 }
-
-// .template-standard-content-v2-profile
-//   .carousel-cq
-//   .lSSlideOuter
-//   .lSSlideWrapper
-//   .lSAction
-//   a.lSPrev {
-//     content: '\e906';
-//     font-family: 'icomoon';
-// }
-
-// .template-standard-content-v2-profile
-//   .carousel-cq
-//   .lSSlideOuter
-//   .lSSlideWrapper
-//   .lSAction
-//   a.lSNext {
-//     content: '\e907';
-//     font-family: 'icomoon';
-// }
 
 .collage-top-carousel .carousel-slides .carousel-slide .carouselSlide,
 .collage-bottom-carousel .carousel-slides .carousel-slide .carouselSlide {
@@ -345,25 +306,6 @@
     }
   }
 }
-// .template-standard-content-v2-profile
-//   .carousel-cq
-//   .lSSlideOuter
-//   .lSSlideWrapper
-//   .lSAction
-//   a.lSPrev {
-//     content: '\e906';
-//     font-family: 'icomoon';
-// }
-
-// .template-standard-content-v2-profile
-//   .carousel-cq
-//   .lSSlideOuter
-//   .lSSlideWrapper
-//   .lSAction
-//   a.lSNext {
-//     content: '\e907';
-//     font-family: 'icomoon';
-// }
 
 .reference-our-brand-bottom-carousel {
   .carouselSlide:hover {
@@ -614,9 +556,9 @@
             content: '\e907';
             font-family: 'icomoon';
             background-color: $color-primary;
-            // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
             position: absolute;
             background-size: 20px;
+            font-size: 20px;
             background-repeat: no-repeat;
             right: 0;
             bottom: 0px;
@@ -689,20 +631,12 @@
       &.lSPrev {
         left: initial;
         right: 75px;
-        // content: '\e906';
-        // font-family: 'icomoon';
-        width: 56px;
         background-size: cover;
-        height: 56px;
         background-repeat: no-repeat;
         background-position: 0;
       }
       &.lSNext {
-        // content: '\e907';
-        // font-family: 'icomoon';
-        width: 56px;
         background-size: cover;
-        height: 56px;
         background-repeat: no-repeat;
         background-position: 0;
       }
@@ -727,26 +661,12 @@
       .lSAction {
         a {
           &.lSPrev {
-            // content: '\e906';
-            // font-family: 'icomoon';
-            width: 56px;
-            height: 56px;
             right: 75px;
             @include md {
-              width: 80px;
-              height: 80px;
               right: 106px;
             }
           }
           &.lSNext {
-            // content: '\e907';
-            // font-family: 'icomoon';
-            width: 56px;
-            height: 56px;
-            @include md {
-              width: 80px;
-              height: 80px;
-            }
           }
         }
       }
@@ -764,9 +684,9 @@
                       font-family: 'icomoon';
                       font-size: 1rem;
                       background-color: $color-primary;
-                      // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
                       position: absolute;
                       background-size: 20px;
+                      font-size: 20px;
                       background-repeat: no-repeat;
                       right: 2px;
                       bottom: 2px;
@@ -828,14 +748,6 @@
               top: 2rem;
             }
           }
-          // a.lSPrev {
-          //   content: '\e906';
-          //   font-family: 'icomoon';
-          // }
-          // a.lSNext {
-          //   content: '\e907';
-          //   font-family: 'icomoon';
-          // }
         }
       }
     }

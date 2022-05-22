@@ -72,11 +72,11 @@
   }
 }
 
-.bar-over-img{
-  @include md{
+.bar-over-img {
+  @include md {
     width: 100vw;
   }
-  &::after{
+  &::after {
     content: '';
     width: 100vw;
     background: var(--bg-color-2) !important;
@@ -86,12 +86,12 @@
     right: -100vw;
     top: 100%;
     z-index: 1 !important;
-  @include md{
-    display: none !important;
-  }
+    @include md {
+      display: none !important;
+    }
   }
 }
-.healthcare-box{
+.healthcare-box {
   padding-right: 0 !important;
   .heading-bg-strip {
     margin: 0;

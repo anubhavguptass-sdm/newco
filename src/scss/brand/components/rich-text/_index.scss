@@ -17,7 +17,7 @@
 
 .measure-black {
   display: none;
-  @include sd {
+  @include sm {
     display: block;
     position: absolute;
     right: 0;
@@ -25,12 +25,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    height: 96%;
-  }
-  @media screen and (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-min) {
-    img {
-      height: 32rem;
-    }
+    height: auto;
   }
 }
 
@@ -258,4 +253,8 @@
 
 .width-100 {
   width: 100%;
+}
+
+.width-auto img {
+  width: auto;
 }

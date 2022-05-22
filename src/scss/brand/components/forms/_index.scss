@@ -27,7 +27,7 @@
   }
 
   select {
-    border: 2px solid;
+    border: 2px solid $color-grey-3;
 
     option:hover {
       background-color: var(--bg-color-2);

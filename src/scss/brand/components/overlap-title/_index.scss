@@ -23,7 +23,7 @@
 
 .bottom-right-arrow {
   position: relative;
-  &::after {
+  &::before {
     content: '\e907';
     font-family: 'icomoon';
     text-align: center;

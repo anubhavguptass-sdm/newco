@@ -52,12 +52,18 @@
   overflow: visible;
 }
 .lSSlideOuter .lSSlideWrapper .lSAction a.lSPrev {
-  content: '\e905';
-  font-family: 'icomoon';
+  background-image: none;
+  &:after {
+    content: '\e906';
+    font-family: 'icomoon';
+  }
 }
 .lSSlideOuter .lSSlideWrapper .lSAction a.lSNext {
-  content: '\e906';
-  font-family: 'icomoon';
+  background-image: none;
+  &:after {
+    content: '\e907';
+    font-family: 'icomoon';
+  }
 }
 // .template-standard-content-v2-profile
 //   .carousel-cq
@@ -65,7 +71,7 @@
 //   .lSSlideWrapper
 //   .lSAction
 //   a.lSPrev {
-//   content: '\e905';
+//   content: '\e906';
 //   font-family: 'icomoon';
 // }
 
@@ -75,7 +81,7 @@
 //   .lSSlideWrapper
 //   .lSAction
 //   a.lSNext {
-//   content: '\e906';
+//   content: '\e907';
 //   font-family: 'icomoon';
 // }
 
@@ -97,12 +103,12 @@
 
     // a {
     //   &.lSNext {
-    //     content: '\e906';
+    //     content: '\e907';
     //     font-family: 'icomoon';
     //   }
 
     //   &.lSPrev {
-    //     content: '\e905';
+    //     content: '\e906';
     //     font-family: 'icomoon';
     //   }
     // }
@@ -186,7 +192,7 @@
 //   .lSSlideWrapper
 //   .lSAction
 //   a.lSPrev {
-//     content: '\e905';
+//     content: '\e906';
 //     font-family: 'icomoon';
 // }
 
@@ -196,7 +202,7 @@
 //   .lSSlideWrapper
 //   .lSAction
 //   a.lSNext {
-//     content: '\e906';
+//     content: '\e907';
 //     font-family: 'icomoon';
 // }
 
@@ -345,7 +351,7 @@
 //   .lSSlideWrapper
 //   .lSAction
 //   a.lSPrev {
-//     content: '\e905';
+//     content: '\e906';
 //     font-family: 'icomoon';
 // }
 
@@ -355,7 +361,7 @@
 //   .lSSlideWrapper
 //   .lSAction
 //   a.lSNext {
-//     content: '\e906';
+//     content: '\e907';
 //     font-family: 'icomoon';
 // }
 
@@ -605,7 +611,7 @@
         .media-container {
           position: relative;
           &:after {
-            content: '\e906';
+            content: '\e907';
             font-family: 'icomoon';
             background-color: $color-primary;
             // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
@@ -681,7 +687,7 @@
       &.lSPrev {
         left: initial;
         right: 75px;
-        // content: '\e905';
+        // content: '\e906';
         // font-family: 'icomoon';
         width: 56px;
         background-size: cover;
@@ -690,7 +696,7 @@
         background-position: 0;
       }
       &.lSNext {
-        // content: '\e906';
+        // content: '\e907';
         // font-family: 'icomoon';
         width: 56px;
         background-size: cover;
@@ -719,7 +725,7 @@
       .lSAction {
         a {
           &.lSPrev {
-            // content: '\e905';
+            // content: '\e906';
             // font-family: 'icomoon';
             width: 56px;
             height: 56px;
@@ -731,7 +737,7 @@
             }
           }
           &.lSNext {
-            // content: '\e906';
+            // content: '\e907';
             // font-family: 'icomoon';
             width: 56px;
             height: 56px;
@@ -752,8 +758,9 @@
                   .imageCompatibleMarkup {
                     position: relative;
                     &:after {
-                      content: '\e906';
+                      content: '\e907';
                       font-family: 'icomoon';
+                      font-size: 1rem;
                       background-color: $color-primary;
                       // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
                       position: absolute;
@@ -767,6 +774,8 @@
                       width: 48px;
                       background-position: center;
                       outline: 2px solid #30ea03;
+                      text-align: center;
+                      line-height: 48px;
                     }
                   }
                   .richText.default-style {
@@ -818,11 +827,11 @@
             }
           }
           // a.lSPrev {
-          //   content: '\e905';
+          //   content: '\e906';
           //   font-family: 'icomoon';
           // }
           // a.lSNext {
-          //   content: '\e906';
+          //   content: '\e907';
           //   font-family: 'icomoon';
           // }
         }

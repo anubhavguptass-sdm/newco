@@ -213,6 +213,20 @@
   p {
     color: $color-white;
   }
+  .small-cards {
+    margin-bottom: 2rem;
+    .card-content-wrapper {
+      .card-content {
+        padding: 1rem;
+        @include sd {
+          padding: 1rem 0.5rem;
+        }
+      }
+    }
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .bottom-right-arrow.arrow-size-40 {
@@ -224,18 +238,6 @@
 
 .small-font {
   font-size: o.75rem;
-}
-
-.small-cards {
-  margin-bottom: 2rem;
-  .card-content-wrapper {
-    .card-content {
-      padding: 1rem;
-      @include sd {
-        padding: 1rem 0.5rem;
-      }
-    }
-  }
 }
 
 /* Who we are */

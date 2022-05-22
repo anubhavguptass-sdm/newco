@@ -71,22 +71,22 @@
     }
   }
 }
-.bar-over-img{
+.bar-over-img::after{
   content: '';
-    width: 100vw;
-    background: var(--bg-color-2) !important;
-    display: block;
-    height: 100%;
-    position: absolute;
-    right: -100vw;
-    top: 100%;
-    z-index: 1;
+  width: 100vw;
+  background: var(--bg-color-2) !important;
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: -100vw;
+  top: 100%;
+  z-index: 1;
 @include md{
   display: none;
 }
 }
 .healthcare-box{
-  padding-right: 0;
+  padding-right: 0 !important;
   .heading-bg-strip{
     margin: 0;
   }

@@ -71,21 +71,27 @@
     }
   }
 }
-.bar-over-img::after {
-  content: '';
-  width: 100vw;
-  background: var(--bg-color-2) !important;
-  display: block;
-  height: 100%;
-  position: absolute;
-  right: -100vw;
-  top: 100%;
-  z-index: 1;
-  @include md {
-    display: none;
+
+.bar-over-img{
+  @include md{
+    width: 100vw;
+  }
+  &::after{
+    content: '';
+    width: 100vw;
+    background: var(--bg-color-2) !important;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: -100vw;
+    top: 100%;
+    z-index: 1 !important;
+  @include md{
+    display: none !important;
+  }
   }
 }
-.healthcare-box {
+.healthcare-box{
   padding-right: 0 !important;
   .heading-bg-strip {
     margin: 0;
@@ -99,7 +105,7 @@
     height: inherit;
     content: '';
     width: 100%;
-    height: 50px;
+    height: 5rem;
     top: 46%;
   }
 }

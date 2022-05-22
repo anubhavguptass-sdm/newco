@@ -1,3 +1,13 @@
+.leader-card-design {
+    .card-content-container {
+        flex-basis: auto;
+        background-color: $color-grey-3;
+        padding: 1rem;
+        p {
+            margin: 0;
+        }
+    }
+}
 // .leader-card-adjust {
 //   .media-container {
 //     position: relative;

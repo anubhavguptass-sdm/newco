@@ -169,7 +169,7 @@
         line-height: 64px;
       }
     }
-    .percentage-box{
+    .percentage-box {
       margin-bottom: 2.5rem;
     }
   }
@@ -226,12 +226,12 @@
   font-size: o.75rem;
 }
 
-.small-cards{
+.small-cards {
   margin-bottom: 2rem;
   .card-content-wrapper {
-    .card-content{
+    .card-content {
       padding: 1rem;
-      @include sd{
+      @include sd {
         padding: 1rem 0.5rem;
       }
     }

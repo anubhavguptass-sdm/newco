@@ -10,6 +10,10 @@
       order: unset;
       padding-top: 3rem;
     }
+    @include sd {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     .heading {
       white-space: initial;

@@ -60,7 +60,7 @@
   }
 }
 
-.diversity-box {
+/* .diversity-box {
   .component-content {
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@
       }
     }
   }
-}
+} */
 
 // who whe are slider csss
 
@@ -138,3 +138,92 @@
     }
   }
 }
+
+/* Who we are */
+
+.section-with-bg {
+  color: $color-white;
+  > .component-content {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem 1rem 4rem;
+  }
+  .right-area {
+    padding-top: 3rem;
+    @include md {
+      padding-top: 10rem;
+    }
+    .sub-heading {
+      height: 59px;
+      line-height: 59px;
+      text-align: left;
+      background-color: $color-primary;
+      font-weight: $font-semi-bold;
+      padding: 0 1rem;
+      @include sm {
+        text-align: right;
+      }
+      @include md {
+        height: 64px;
+        line-height: 64px;
+      }
+    }
+    /* .percentage-content {
+      margin-top: 0 0 2.5rem 0;
+    } */
+  }
+  .left-area {
+    padding-top: 7rem;
+    @include sm {
+      z-index: 0;
+    }
+    @include md {
+      padding-top: 14rem;
+      z-index: 1;
+    }
+    .heading {
+      height: 62px;
+      line-height: 62px;
+      background-color: $color-primary;
+      padding: 0 1rem;
+      font-weight: $font-semi-bold;
+      @include md {
+        height: 77px;
+        line-height: 77px;
+      }
+    }
+    /* .diversity-area-content {
+      padding-right: 0;
+      @include sd {
+        padding-right: 6rem;
+      }
+    } */
+    &:after {
+      content: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      @include sm {
+        content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-white.png');
+      }
+    }
+  }
+  p {
+    color: $color-white;
+  }
+}
+
+.bottom-right-arrow.arrow-size-40 {
+  &:after {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.small-font {
+  font-size: o.75rem;
+}
+
+/* Who we are */

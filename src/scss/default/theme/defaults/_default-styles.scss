@@ -206,6 +206,17 @@ body {
           }
         }
 
+        h5,
+        .h5 {
+          font-size: calc(#{$font-size-h5} + #{$font-size-body-larger-mobile});
+
+          @media (min-width: $breakpoint-md-min) {
+            font-size: calc(
+              #{$font-size-h5} + #{$font-size-body-larger-desktop}
+            );
+          }
+        }
+
         p,
         .p {
           font-size: calc(

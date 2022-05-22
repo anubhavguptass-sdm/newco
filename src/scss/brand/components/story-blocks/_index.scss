@@ -368,9 +368,14 @@
 //   }
 // }
 .story-right-list {
-    .first{
+    &.first{
         @include md{
             padding-right: 1.5rem;
+        }
+    }
+    &.last {
+        @include md{
+        padding-left: 1.5rem;
         }
     }
     .story-block {
@@ -383,6 +388,7 @@
      .story-image {
             width: 40%;
             line-height: 0;
+            height: 100%;
         }
         .story-content{
             width: 60%;

@@ -605,9 +605,10 @@
         .media-container {
           position: relative;
           &:after {
-            content: '';
+            content: '\e906';
+            font-family: 'icomoon';
             background-color: $color-primary;
-            background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
+            // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
             position: absolute;
             background-size: 20px;
             background-repeat: no-repeat;
@@ -751,9 +752,10 @@
                   .imageCompatibleMarkup {
                     position: relative;
                     &:after {
-                      content: '';
+                      content: '\e906';
+                      font-family: 'icomoon';
                       background-color: $color-primary;
-                      background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
+                      // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
                       position: absolute;
                       background-size: 20px;
                       background-repeat: no-repeat;

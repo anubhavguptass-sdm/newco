@@ -71,7 +71,7 @@
     }
   }
 }
-.bar-over-img::after{
+.bar-over-img::after {
   content: '';
   width: 100vw;
   background: var(--bg-color-2) !important;
@@ -81,13 +81,13 @@
   right: -100vw;
   top: 100%;
   z-index: 1;
-@include md{
-  display: none;
+  @include md {
+    display: none;
+  }
 }
-}
-.healthcare-box{
+.healthcare-box {
   padding-right: 0 !important;
-  .heading-bg-strip{
+  .heading-bg-strip {
     margin: 0;
   }
 }

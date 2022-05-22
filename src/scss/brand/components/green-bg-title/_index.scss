@@ -71,28 +71,28 @@
     }
   }
 }
-.bar-over-img{
+.bar-over-img {
   content: '';
-    width: 100vw;
-    background: var(--bg-color-2) !important;
-    display: block;
-    height: 100%;
-    position: absolute;
-    right: -100vw;
-    top: 100%;
-    z-index: 1;
-@include md{
-  display: none;
+  width: 100vw;
+  background: var(--bg-color-2) !important;
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: -100vw;
+  top: 100%;
+  z-index: 1;
+  @include md {
+    display: none;
+  }
 }
-}
-.healthcare-box{
+.healthcare-box {
   padding-right: 0;
-  .heading-bg-strip{
+  .heading-bg-strip {
     margin: 0;
   }
 }
-.image-bg-strip::after{
-   @include md{
+.image-bg-strip::after {
+  @include md {
     background: var(--bg-color-2) !important;
     position: absolute;
     z-index: 1;
@@ -101,7 +101,7 @@
     width: 100%;
     height: 50px;
     top: 46%;
-   }
+  }
 }
 /* .home-hero-content {
   .green-bar {

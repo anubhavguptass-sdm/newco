@@ -24,9 +24,12 @@
 .bottom-right-arrow {
   position: relative;
   &::after {
-    content: '';
+    content: '\e907';
+    font-family: 'icomoon';
+    text-align: center;
+    line-height: 48px;
     background-color: $color-primary;
-    background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
+    // background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
     position: absolute;
     background-size: 20px;
     background-repeat: no-repeat;

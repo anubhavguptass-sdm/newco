@@ -58,9 +58,12 @@
   position: relative;
 }
 .leader-card-adjust .reference-leader-profile .media-container:after {
-  content: '';
-  background-color: var(--color-primary);
-  background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
+  content: '\e907';
+  font-family: 'icomoon';
+  text-align: center;
+  line-height: 48px;
+  background-color: $color-primary;
+  // background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
   position: absolute;
   background-size: 20px;
   background-repeat: no-repeat;

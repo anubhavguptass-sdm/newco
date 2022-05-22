@@ -51,23 +51,39 @@
 .half-carousel .lSSlideWrapper {
   overflow: visible;
 }
-.template-standard-content-v2-profile
-  .carousel-cq
-  .lSSlideOuter
-  .lSSlideWrapper
-  .lSAction
-  a.lSPrev {
-  background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-left.png');
+.lSSlideOuter .lSSlideWrapper .lSAction a.lSPrev {
+  background-image: none;
+  &:after {
+    content: '\e906';
+    font-family: 'icomoon';
+  }
 }
+.lSSlideOuter .lSSlideWrapper .lSAction a.lSNext {
+  background-image: none;
+  &:after {
+    content: '\e907';
+    font-family: 'icomoon';
+  }
+}
+// .template-standard-content-v2-profile
+//   .carousel-cq
+//   .lSSlideOuter
+//   .lSSlideWrapper
+//   .lSAction
+//   a.lSPrev {
+//   content: '\e906';
+//   font-family: 'icomoon';
+// }
 
-.template-standard-content-v2-profile
-  .carousel-cq
-  .lSSlideOuter
-  .lSSlideWrapper
-  .lSAction
-  a.lSNext {
-  background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-right.png');
-}
+// .template-standard-content-v2-profile
+//   .carousel-cq
+//   .lSSlideOuter
+//   .lSSlideWrapper
+//   .lSAction
+//   a.lSNext {
+//   content: '\e907';
+//   font-family: 'icomoon';
+// }
 
 .half-carousel.leader-card-adjust {
   top: 2.5rem;
@@ -85,15 +101,17 @@
       top: -110px;
     }
 
-    a {
-      &.lSNext {
-        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-right.png') !important;
-      }
+    // a {
+    //   &.lSNext {
+    //     content: '\e907';
+    //     font-family: 'icomoon';
+    //   }
 
-      &.lSPrev {
-        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-left.png') !important;
-      }
-    }
+    //   &.lSPrev {
+    //     content: '\e906';
+    //     font-family: 'icomoon';
+    //   }
+    // }
   }
 
   .brand-tile {
@@ -168,23 +186,25 @@
   }
 }
 
-.template-standard-content-v2-profile
-  .carousel-cq
-  .lSSlideOuter
-  .lSSlideWrapper
-  .lSAction
-  a.lSPrev {
-  background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-left.png);
-}
+// .template-standard-content-v2-profile
+//   .carousel-cq
+//   .lSSlideOuter
+//   .lSSlideWrapper
+//   .lSAction
+//   a.lSPrev {
+//     content: '\e906';
+//     font-family: 'icomoon';
+// }
 
-.template-standard-content-v2-profile
-  .carousel-cq
-  .lSSlideOuter
-  .lSSlideWrapper
-  .lSAction
-  a.lSNext {
-  background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-right.png);
-}
+// .template-standard-content-v2-profile
+//   .carousel-cq
+//   .lSSlideOuter
+//   .lSSlideWrapper
+//   .lSAction
+//   a.lSNext {
+//     content: '\e907';
+//     font-family: 'icomoon';
+// }
 
 .collage-top-carousel .carousel-slides .carousel-slide .carouselSlide,
 .collage-bottom-carousel .carousel-slides .carousel-slide .carouselSlide {
@@ -325,23 +345,25 @@
     }
   }
 }
-.template-standard-content-v2-profile
-  .carousel-cq
-  .lSSlideOuter
-  .lSSlideWrapper
-  .lSAction
-  a.lSPrev {
-  background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-left.png);
-}
+// .template-standard-content-v2-profile
+//   .carousel-cq
+//   .lSSlideOuter
+//   .lSSlideWrapper
+//   .lSAction
+//   a.lSPrev {
+//     content: '\e906';
+//     font-family: 'icomoon';
+// }
 
-.template-standard-content-v2-profile
-  .carousel-cq
-  .lSSlideOuter
-  .lSSlideWrapper
-  .lSAction
-  a.lSNext {
-  background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-right.png);
-}
+// .template-standard-content-v2-profile
+//   .carousel-cq
+//   .lSSlideOuter
+//   .lSSlideWrapper
+//   .lSAction
+//   a.lSNext {
+//     content: '\e907';
+//     font-family: 'icomoon';
+// }
 
 .reference-our-brand-bottom-carousel {
   .carouselSlide:hover {
@@ -589,9 +611,10 @@
         .media-container {
           position: relative;
           &:after {
-            content: '';
+            content: '\e907';
+            font-family: 'icomoon';
             background-color: $color-primary;
-            background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
+            // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
             position: absolute;
             background-size: 20px;
             background-repeat: no-repeat;
@@ -602,6 +625,8 @@
             height: 48px;
             width: 48px;
             background-position: center;
+            text-align: center;
+            line-height: 48px;
           }
         }
         &:hover {
@@ -664,7 +689,8 @@
       &.lSPrev {
         left: initial;
         right: 75px;
-        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-left.png');
+        // content: '\e906';
+        // font-family: 'icomoon';
         width: 56px;
         background-size: cover;
         height: 56px;
@@ -672,7 +698,8 @@
         background-position: 0;
       }
       &.lSNext {
-        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-right.png');
+        // content: '\e907';
+        // font-family: 'icomoon';
         width: 56px;
         background-size: cover;
         height: 56px;
@@ -700,7 +727,8 @@
       .lSAction {
         a {
           &.lSPrev {
-            background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/navigation-left-white.png');
+            // content: '\e906';
+            // font-family: 'icomoon';
             width: 56px;
             height: 56px;
             right: 75px;
@@ -711,7 +739,8 @@
             }
           }
           &.lSNext {
-            background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/navigation-right-white.png');
+            // content: '\e907';
+            // font-family: 'icomoon';
             width: 56px;
             height: 56px;
             @include md {
@@ -731,9 +760,11 @@
                   .imageCompatibleMarkup {
                     position: relative;
                     &:after {
-                      content: '';
+                      content: '\e907';
+                      font-family: 'icomoon';
+                      font-size: 1rem;
                       background-color: $color-primary;
-                      background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
+                      // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png');
                       position: absolute;
                       background-size: 20px;
                       background-repeat: no-repeat;
@@ -745,6 +776,8 @@
                       width: 48px;
                       background-position: center;
                       outline: 2px solid #30ea03;
+                      text-align: center;
+                      line-height: 48px;
                     }
                   }
                   .richText.default-style {
@@ -795,12 +828,14 @@
               top: 2rem;
             }
           }
-          a.lSPrev {
-            background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-left.png');
-          }
-          a.lSNext {
-            background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/arrow-right.png');
-          }
+          // a.lSPrev {
+          //   content: '\e906';
+          //   font-family: 'icomoon';
+          // }
+          // a.lSNext {
+          //   content: '\e907';
+          //   font-family: 'icomoon';
+          // }
         }
       }
     }

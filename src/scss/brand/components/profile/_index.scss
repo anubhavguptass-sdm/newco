@@ -1,13 +1,38 @@
 .leader-card-design {
-  .card-content-container {
-    flex-basis: auto;
-    background-color: $color-grey-3;
-    padding: 1rem;
-    p {
-      margin: 0;
+    .card-content-container {
+        flex-basis: auto;
+        background-color: $color-grey-3;
+        padding: 1rem;
+        width: 100%;
+        p {
+            margin: 0;
+        }
     }
-  }
+    .bottom-right-arrow {
+        position: relative;
+        &::after {
+            content: "\e907";
+            font-family: "icomoon";
+            text-align: center;
+            line-height: 48px;
+            font-size: 20px;
+            background-color: $color-primary;
+            position: absolute;
+            background-size: 20px;
+            background-repeat: no-repeat;
+            right: 2px;
+            bottom: 2px;
+            top: initial;
+            left: initial;
+            height: 48px;
+            width: 48px;
+            background-position: center;
+            outline: 2px solid $color-primary;
+        }
+    }
 }
+
+
 // .leader-card-adjust {
 //   .media-container {
 //     position: relative;

@@ -1,6 +1,4 @@
 (function ($) {
-    console.log('check-js-contact')
-    $('form').each(function() { this.reset() });
     if(document.getElementById('checkboxpot')){
         const checkbox = document.getElementById('checkboxpot')
         //  honeypot checkbox disable button validation
@@ -12,12 +10,6 @@
             }
         }) 
     }
-    
-    const form = document.getElementById('submitbtn')
-    form.addEventListener('submit', (event) => {
-        ValidateEmail(event);
-    }) 
-
    if(document.getElementById('textCharacterCount')){
     setTimeout(function () {
         document.getElementById("description").removeAttribute("tabindex")
@@ -195,7 +187,4 @@
         }
     }
 
-    function ClearForm() {
-        document.haleonForm.reset();
-    }
 })(Cog.jQuery());

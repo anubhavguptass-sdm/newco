@@ -9,7 +9,6 @@ libs/zeroclipboard.js
 libs/lightslider.min.js
 libs/hammer.js
 libs/lodash.js
-libs/contact.js
 utils/conditionalComponentLoad.js
 utils/site.tools.js
 utils/eventdatamanager.js

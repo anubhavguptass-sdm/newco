@@ -272,26 +272,32 @@
 }
 /* Home page */
 
-.img-bottom-btn-wrapper.flex {
-  margin-bottom: 4rem;
+.img-bottom-btn-wrapper {
   padding-top: 3rem;
-  @include sm {
-    margin-bottom: 5rem;
-    padding-top: 5rem;
-  }
-  > div > div {
+
+  &.flex > div > div {
     @include sm {
       align-items: flex-end;
     }
   }
   .img-bottom-btn {
+    justify-content: flex-start;
+    max-width: 343px;
     @include sm {
       margin-bottom: -52px;
     }
     .btn {
       margin-left: 0;
+      justify-content: flex-start;
+      max-width: 320px !important;
+      width: 80%;
+      text-align: left;
     }
   }
+}
+
+.p-m-x-1-5 {
+  padding: 0 1.5rem !important;
 }
 
 /* Home page end */

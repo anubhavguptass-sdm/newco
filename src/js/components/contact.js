@@ -1,22 +1,28 @@
 (function ($) {
     console.log('check-js-contact')
+ 
+
+    if(document.getElementById('checkboxpot')){
+        const checkbox = document.getElementById('checkboxpot')
+        //  honeypot checkbox disable button validation
+        checkbox.addEventListener('change', (event) => {
+            if (event.currentTarget.checked) {
+                document.getElementById("submitbtn").disabled = true;
+            } else {
+                document.getElementById("submitbtn").disabled = false;
+            }
+        }) 
+    }
+    
+   if(document.getElementById('textCharacterCount')){
     setTimeout(function () {
         document.getElementById("description").removeAttribute("tabindex")
     }, 1000);
-
-    const checkbox = document.getElementById('checkboxpot')
-    //  honeypot checkbox disable button validation
-    checkbox.addEventListener('change', (event) => {
-        if (event.currentTarget.checked) {
-            document.getElementById("submitbtn").disabled = true;
-        } else {
-            document.getElementById("submitbtn").disabled = false;
-        }
-    })
-
     var inputVal = document.getElementById('description');
     var countdisp = document.getElementById('textCharacterCount');
     countdisp.innerHTML = 0;
+   }
+   
     inputVal.addEventListener('keydown', count);
 
     function count(e) {
@@ -25,6 +31,11 @@
     }
 
     $(document).ready(function () {
+        validateForm();
+        OnfocusField();
+        emailValidation();
+        ClearForm();
+        ValidateEmail();
         console.log('check-js-contact')
         $('#name').on('keypress', function (event) {
             if ($('#name').val().length == 0 && event.which === 32) {
@@ -55,7 +66,6 @@
     });
 
     function emailValidation() {
-        debugger
         var element = document.getElementById("emailGroup");
         var val = document.getElementById("email");
         var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -148,12 +158,12 @@
         }
     }
 
-    function ValidateEmail(formType) {
+    function ValidateEmail() {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (formType.email.value.match(mailformat)) {
+        if (document.haleonForm.email.value.match(mailformat)) {
             ClearForm();
-            formType.retURL.value = "https://haleon-com.preprod-cf65.ch.adobecqms.net/contact-us/thank-you";
-            formType.action = "https://crms--crmssit.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8";
+            document.haleonForm.retURL.value = "https://haleon-com.preprod-cf65.ch.adobecqms.net/contact-us/thank-you";
+            document.haleonForm.action = "https://crms--crmssit.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8";
             return true;
         } else {
             event.preventDefault()

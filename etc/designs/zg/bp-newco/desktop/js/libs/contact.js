@@ -1,7 +1,6 @@
 (function ($) {
     console.log('check-js-contact')
  
-
     if(document.getElementById('checkboxpot')){
         const checkbox = document.getElementById('checkboxpot')
         //  honeypot checkbox disable button validation
@@ -14,6 +13,11 @@
         }) 
     }
     
+    const form = document.getElementById('submitbtn')
+    form.addEventListener('submit', (event) => {
+        ValidateEmail();
+    }) 
+
    if(document.getElementById('textCharacterCount')){
     setTimeout(function () {
         document.getElementById("description").removeAttribute("tabindex")
@@ -23,7 +27,7 @@
     countdisp.innerHTML = 0;
    }
    
-    inputVal.addEventListener('keydown', count);
+    inputVal.addEventListener('keydown', count);    
 
     function count(e) {
         var len = inputVal.value.length;
@@ -31,12 +35,29 @@
     }
 
     $(document).ready(function () {
-        validateForm('null');
-        OnfocusField();
-        emailValidation();
-        ClearForm();
-        ValidateEmail();
-        console.log('check-js-contact')
+       
+        $('#name').on('keyup focus', function (event) {
+            validateForm('name');
+        });
+        $('#email').on('keyup', function (event) {
+            validateForm('email');
+        });
+        $('#description').on('keyup', function (event) {
+            validateForm('desc');
+        });
+        $('#00N9E000004hkmw').on('change keydown', function (event) {
+            validateForm('country');
+        });
+        $('#subject').on('change keydown', function (event) {
+            validateForm('subject');
+        });
+        $('#subject').on('change keydown', function (event) {
+            validateForm('subject');
+        });
+        $('#submitbtn').click(function(){
+            validateForm('all');
+            OnfocusField();
+       });
         $('#name').on('keypress', function (event) {
             if ($('#name').val().length == 0 && event.which === 32) {
                 event.preventDefault();

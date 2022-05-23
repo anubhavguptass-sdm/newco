@@ -230,21 +230,9 @@
 
 /* Who we are */
 
-.z-index-1 {
-  z-index: 1;
-}
-
 .img-bottom-btn .btn {
   width: 100%;
   margin: 0;
-}
-
-.width-100 {
-  width: 100%;
-}
-
-.width-auto img {
-  width: auto;
 }
 
 .bg-grey-border {
@@ -281,23 +269,17 @@
     }
   }
   .img-bottom-btn {
-    justify-content: flex-start;
-    max-width: 343px;
     @include sm {
       margin-bottom: -52px;
     }
     .btn {
       margin-left: 0;
-      justify-content: flex-start;
-      max-width: 320px !important;
       width: 80%;
       text-align: left;
+      justify-content: flex-start;
+      max-width: 343px;
     }
   }
-}
-
-.p-m-x-1-5 {
-  padding: 0 1.5rem !important;
 }
 
 /* Home page end */

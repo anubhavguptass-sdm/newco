@@ -48,3 +48,4 @@ import './utils/switchable-image';
 import './utils/youtube-video';
 import './components/accessibility';
 import './brand/index';
+import './components/contact';

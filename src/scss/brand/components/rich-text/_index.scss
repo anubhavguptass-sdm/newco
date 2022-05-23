@@ -304,9 +304,31 @@
 
 .box-with-vertical-lines {
   @include sm {
-    background: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-black.png);
+    background: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-black.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50%;
   }
+}
+.grey-nav-arrow {
+  .lSPrev {
+    background: $bg-color-3;
+  }
+
+  .lSNext {
+    background: $bg-color-3;
+  }
+}
+
+.icon-bottom-arrow {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  background: #eaeaea;
+  padding: 1.5rem;
+  backdrop-filter: blur(32px);
 }

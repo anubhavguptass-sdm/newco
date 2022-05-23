@@ -11,7 +11,7 @@
 /* BUTTONS
 ----------------------------------*/
 /* line 4, ../../sass/core/exitNotification.scss */
-.exit-notification {
+/* .exit-notification {
   position: fixed;
   top: 0;
   left: 0;
@@ -20,13 +20,13 @@
   background: black;
   background: rgba(0, 0, 0, 0.8);
   z-index: 1000;
-}
+} */
 /* line 14, ../../sass/core/exitNotification.scss */
-.exit-notification.is-hidden {
+/* .exit-notification.is-hidden {
   display: none;
-}
+} */
 /* line 18, ../../sass/core/exitNotification.scss */
-.exit-notification .exit-notification-inner {
+/* .exit-notification .exit-notification-inner {
   position: fixed;
   top: 100px;
   width: 700px;
@@ -34,25 +34,25 @@
   left: 50%;
   padding: 13px;
   background-color: #e1e1e1;
-}
+} */
 @media screen and (max-width: 699px) {
   /* line 18, ../../sass/core/exitNotification.scss */
-  .exit-notification .exit-notification-inner {
+  /* .exit-notification .exit-notification-inner {
     position: absolute;
     width: auto;
     margin: 20px;
     left: 0;
     top: 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 699px) {
   /* line 40, ../../sass/core/exitNotification.scss */
-  .exit-notification-restrictive {
+  /* .exit-notification-restrictive {
     position: absolute;
-  }
+  } */
 }
 /* line 46, ../../sass/core/exitNotification.scss */
-.exit-notification-buttons {
+/* .exit-notification-buttons {
   text-align: right;
-}
+} */

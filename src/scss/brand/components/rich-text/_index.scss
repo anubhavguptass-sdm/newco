@@ -257,23 +257,23 @@
 
 /* Home page */
 
-.img-bottom-btn-wrapper.flex{
+.img-bottom-btn-wrapper.flex {
   margin-bottom: 4rem;
   padding-top: 3rem;
-  @include sm{
+  @include sm {
     margin-bottom: 5rem;
     padding-top: 5rem;
   }
-  >div>div {
-    @include sm{
+  > div > div {
+    @include sm {
       align-items: flex-end;
     }
   }
-  .img-bottom-btn{
-    @include sm{
+  .img-bottom-btn {
+    @include sm {
       margin-bottom: -52px;
     }
-    .btn{
+    .btn {
       margin-left: 0;
     }
   }

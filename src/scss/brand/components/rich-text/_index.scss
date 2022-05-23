@@ -268,19 +268,27 @@
 
 .img-bottom-btn-wrapper {
   padding-top: 3rem;
+}
 
-  .img-bottom-btn {
-    @include sm {
-      margin-bottom: -52px;
-    }
-    .btn {
-      margin-left: 0;
-      width: 80%;
-      text-align: left;
-      justify-content: flex-start;
-      max-width: 343px;
-    }
+.img-bottom-btn {
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: -52px;
   }
+  .btn {
+    margin-left: 0;
+    width: 80%;
+    text-align: left;
+    justify-content: flex-start;
+    max-width: 343px;
+  }
+}
+
+.bottom-pos-0{
+  position: absolute;
+  bottom: 0;
 }
 
 /* Home page end */
@@ -291,5 +299,14 @@
   padding: 1rem;
   @include sm {
     padding: 2rem;
+  }
+}
+
+.box-with-vertical-lines {
+  @include sm{
+  background: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-black.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
   }
 }

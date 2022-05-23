@@ -621,12 +621,12 @@
   .lSAction {
     a {
       opacity: 1;
-      top: 1rem;
+      top: 2rem;
       @include sm {
-        top: 2rem;
+        top: 3.5rem;
       }
-      @include md {
-        top: 1rem;
+      @include sd {
+        top: 2.5rem;
       }
       &.lSPrev {
         left: initial;
@@ -665,8 +665,6 @@
             @include md {
               right: 106px;
             }
-          }
-          &.lSNext {
           }
         }
       }

@@ -15,7 +15,7 @@
     max-width: $max-content-width !important;
   }
 
-  @media (min-width: $breakpoint-xl-min) {
+  @media (min-width: ($breakpoint-xl-min + 1)) {
     max-width: 1440px !important;
   }
 

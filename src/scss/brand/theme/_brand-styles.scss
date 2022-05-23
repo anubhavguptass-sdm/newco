@@ -245,41 +245,40 @@ a[style*='visibility:hidden'] {
 }
 
 .p-d-1-5 {
-  @include sm{
+  @include sm {
     padding: 1.5rem;
   }
 }
-   
+
 .p-d-x-1-5 {
-  @include sm{
+  @include sm {
     padding: 0 1.5rem;
   }
 }
-  
+
 .p-d-y-1-5 {
-  @include sm{
+  @include sm {
     padding: 1.5rem 0;
   }
 }
-  
+
 .p-m-1-5 {
   padding: 1.5rem;
-  @include sm{
-    padding: 0;
-  }
-}
-  
-.p-m-x-1-5 {
-  padding: 0 1.5rem;
-  @include sm{
-    padding: 0;
-  }
-}
-     
-.p-m-y-1-5 {
-  padding: 1.5rem 0;
-  @include sm{
+  @include sm {
     padding: 0;
   }
 }
 
+.p-m-x-1-5 {
+  padding: 0 1.5rem;
+  @include sm {
+    padding: 0;
+  }
+}
+
+.p-m-y-1-5 {
+  padding: 1.5rem 0;
+  @include sm {
+    padding: 0;
+  }
+}

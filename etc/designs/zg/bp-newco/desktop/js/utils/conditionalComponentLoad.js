@@ -20,8 +20,8 @@ var ConditionalComponentLoad = function () {
     // },
     {
       selector: ".haleon-contact-form",
-      js: ["./components/articleFilter.js"],
-      name: "Article filter",
+      js: ["./components/contact.js"],
+      name: "Contact Page",
     },
     {
       selector: ".products-table",

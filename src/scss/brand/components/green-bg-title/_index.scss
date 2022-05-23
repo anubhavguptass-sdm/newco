@@ -74,7 +74,7 @@
 
 .bar-over-img {
   @include md {
-    width: 100vw;
+    width: 100vw !important;
   }
   &::after {
     content: '';

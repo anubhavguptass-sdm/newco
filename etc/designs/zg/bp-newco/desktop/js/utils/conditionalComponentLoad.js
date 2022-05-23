@@ -19,6 +19,11 @@ var ConditionalComponentLoad = function () {
     //   name: "shareThis",
     // },
     {
+      selector: ".haleon-contact-form",
+      js: ["./components/articleFilter.js"],
+      name: "Article filter",
+    },
+    {
       selector: ".products-table",
       js: ["./components/productsTable.js"],
       name: "Products table",

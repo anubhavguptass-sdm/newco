@@ -218,5 +218,5 @@ a[style*='visibility:hidden'] {
   flex-direction: column;
 }
 .text-color-3 {
-  color: $color-3;
+  color: $color-3 !important;
 }

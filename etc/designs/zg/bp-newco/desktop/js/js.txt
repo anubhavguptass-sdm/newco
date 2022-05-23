@@ -1,17 +1,25 @@
+{mergeOff}
+libs/jquery.js
+libs/cog.js
 libs/jquery.ui.core.js
 libs/jquery.ui.datepicker.js
 libs/jquery.placeholder.js
-libs/cf.js
 libs/overthrow.js
 libs/zeroclipboard.js
 libs/lightslider.min.js
 libs/hammer.js
+libs/lodash.js
+libs/contact.js
+utils/conditionalComponentLoad.js
 utils/site.tools.js
 utils/eventdatamanager.js
 
-{components}
 
 components/carousels.js
+components/accessibility.js
+components/accordion.js
+components/tabs.js
+
 bundle.js
 
 components/gtmTracker.js

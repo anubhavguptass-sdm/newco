@@ -269,11 +269,6 @@
 .img-bottom-btn-wrapper {
   padding-top: 3rem;
 
-  &.flex > div > div {
-    @include sm {
-      align-items: flex-end;
-    }
-  }
   .img-bottom-btn {
     @include sm {
       margin-bottom: -52px;

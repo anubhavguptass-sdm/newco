@@ -23,11 +23,10 @@
 
 .bottom-right-arrow {
   position: relative;
-  &::before {
+  &::after {
     content: '\e907';
     font-family: 'icomoon';
     text-align: center;
-    line-height: 72px;
     font-size: 20px;
     background-color: $color-primary;
     // background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
@@ -40,11 +39,28 @@
     left: initial;
     height: 72px;
     width: 72px;
+    line-height: 72px;
     color: $color-2;
     background-position: center;
     outline: 2px solid $color-primary;
   }
+  &.arrow-size-40 {
+    &:after {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+    }
+  }
+  &.arrow-size-48 {
+    &:after {
+      height: 48px;
+      width: 48px;
+      line-height: 48px;
+    }
+  }
 }
+
+
 // .overlapping-title {
 //   .richText.component {
 //     position: absolute;

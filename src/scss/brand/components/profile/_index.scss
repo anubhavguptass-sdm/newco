@@ -8,28 +8,6 @@
       margin: 0;
     }
   }
-  .bottom-right-arrow {
-    position: relative;
-    &::after {
-      content: '\e907';
-      font-family: 'icomoon';
-      text-align: center;
-      line-height: 48px;
-      font-size: 20px;
-      background-color: $color-primary;
-      position: absolute;
-      background-size: 20px;
-      background-repeat: no-repeat;
-      right: 2px;
-      bottom: 2px;
-      top: initial;
-      left: initial;
-      height: 48px;
-      width: 48px;
-      background-position: center;
-      outline: 2px solid $color-primary;
-    }
-  }
 }
 
 // .leader-card-adjust {

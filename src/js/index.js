@@ -47,5 +47,4 @@ import './components/bp-toggler';
 import './utils/switchable-image';
 import './utils/youtube-video';
 import './components/accessibility';
-import './components/contact';
 import './brand/index';

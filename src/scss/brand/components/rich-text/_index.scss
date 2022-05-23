@@ -244,12 +244,7 @@
 
 .img-bottom-btn .btn {
   width: 100%;
-  justify-content: flex-start;
-}
-
-.img-bottom-btn .btn {
-  width: 100%;
-  justify-content: flex-start;
+  margin: 0;
 }
 
 .width-100 {
@@ -259,3 +254,29 @@
 .width-auto img {
   width: auto;
 }
+
+/* Home page */
+
+.img-bottom-btn-wrapper.flex{
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+  @include sm{
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  >div>div {
+    @include sm{
+      align-items: flex-end;
+    }
+  }
+  .img-bottom-btn{
+    @include sm{
+      margin-bottom: -52px;
+    }
+    .btn{
+      margin-left: 0;
+    }
+  }
+}
+
+/* Home page end */

@@ -10,7 +10,8 @@
       order: unset;
       padding-top: 3rem;
     }
-    @include sd {
+    
+    @media only screen and (min-width: 1023px) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -36,7 +37,7 @@
       @include sm {
         padding-left: 0 !important;
         position: absolute;
-        bottom: 24px;
+        bottom: 0;
         line-height: $line-height-150;
       }
       .story-name {

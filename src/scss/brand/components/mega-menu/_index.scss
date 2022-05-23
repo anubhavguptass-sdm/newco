@@ -339,7 +339,7 @@ header {
           padding: 1rem 2rem 1rem 1rem !important;
         }
         input[type='text'] {
-          width: 94% !important;
+          width: 100% !important;
           border: 2px solid $color-black;
           display: none !important;
         }
@@ -387,7 +387,8 @@ header {
           height: 24px !important;
           background-size: 24px !important;
           top: 3px !important;
-          right: 2.5rem !important;
+          right: 2rem !important;
+          position: fixed;
         }
         &:hover {
           &:after {
@@ -1056,4 +1057,10 @@ header {
   .carousel-slides
   .carousel-slide {
   margin-top: 4rem;
+}
+.megamenu .searchBox input[type='text'] {
+  font-size: $font-size-12;
+  @include sm {
+    font-size: $font-size-16;
+  }
 }

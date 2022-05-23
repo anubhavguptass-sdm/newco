@@ -31,8 +31,8 @@
     appearance: none;
     position: relative;
     &:after {
-      content: '\e901';
-      font-family: 'icomoon';
+      content: "\e901";
+      font-family: "icomoon";
       position: absolute;
       right: 0;
       top: 0;
@@ -53,14 +53,14 @@
       width: 20px;
       margin-top: 0.2rem;
 
-      input[type='checkbox'] {
+      input[type="checkbox"] {
         width: 20px;
         height: 20px;
         outline: none;
         accent-color: var(--color-primary);
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           border: 2px solid #000;
           border-radius: 0px;
@@ -76,7 +76,7 @@
         }
       }
 
-      input[type='checkbox']:checked {
+      input[type="checkbox"]:checked {
         background-color: var(--bg-color-2);
       }
     }
@@ -103,6 +103,19 @@
       }
       &.btm-0 {
         bottom: 0 !important;
+      }
+    }
+    .dropdown-arrow {
+      position: relative;
+      &:after {
+        content: "\e901";
+        font-family: "icomoon";
+        position: absolute;
+        right: 0;
+        top: 2rem;
+        font-size: 1rem;
+        color: #000;
+        pointer-events: none;
       }
     }
   }

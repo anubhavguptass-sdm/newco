@@ -256,6 +256,12 @@
     @include sm {
       padding-left: 4.375rem !important;
     }
+    .heading {
+      padding-top: 2rem;
+      @include sm {
+        padding-top: 0;
+      }
+    }
   }
 }
 /* Home page */

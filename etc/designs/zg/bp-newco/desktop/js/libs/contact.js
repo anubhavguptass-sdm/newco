@@ -166,7 +166,7 @@
             document.haleonForm.action = "https://crms--crmssit.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8";
             return true;
         } else {
-            event.preventDefault()
+            // event.preventDefault();
             document.haleonForm.email.focus();
             return false;
         }

@@ -8,6 +8,14 @@
       margin: 0;
     }
   }
+  .bottom-right-arrow::after {
+    top: -50px;
+  }
+}
+.leader-card-adjust {
+  .leader-card-bg {
+    background-color: $color-grey-3;
+  }
 }
 
 // .leader-card-adjust {

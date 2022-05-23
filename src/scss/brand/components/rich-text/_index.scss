@@ -249,26 +249,22 @@
 
 .bg-grey-border {
   .border-right {
-    border-bottom: solid rgba(0, 0, 0, 0) 2px;
+    border-bottom: solid 2px $border-color-7 !important;
     border-right: none !important;
 
     @include sm {
-      border-right: solid rgba(0, 0, 0, 0) 2px;
+      border-right: solid 2px $border-color-7 !important;
       border-bottom: none !important;
     }
   }
-
   .left-area {
     padding-right: 0;
-
     @include sm {
       padding-right: 4.375rem !important;
     }
   }
-
   .right-area {
     padding-left: 0;
-
     @include sm {
       padding-left: 4.375rem !important;
     }

@@ -266,16 +266,12 @@
 }
 /* Home page */
 
-.img-bottom-btn-wrapper {
-  padding-top: 3rem;
-}
-
 .img-bottom-btn {
   @include sm {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-bottom: -52px;
+    margin-bottom: -52px !important;
   }
   .btn {
     margin-left: 0;
@@ -307,7 +303,7 @@
     background: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-black.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 50%;
+    background-size: 50% 100%;
   }
 }
 .grey-nav-arrow {
@@ -331,4 +327,10 @@
   background: #eaeaea;
   padding: 1.5rem;
   backdrop-filter: blur(32px);
+}
+
+.heading-with-bg {
+  background-color: $color-primary;
+  padding: 1rem;
+  font-weight: $font-semi-bold;
 }

@@ -285,7 +285,7 @@
 
 /* Home page end */
 
-.bottom-banner-over-content {
+.banner-over-content {
   background-color: $color-black;
   z-index: 1;
   padding: 1rem;
@@ -295,11 +295,11 @@
 }
 .grey-nav-arrow {
   .lSPrev {
-    background: $bg-color-3;
+    background: $bg-color-3 !important;
   }
 
   .lSNext {
-    background: $bg-color-3;
+    background: $bg-color-3 !important;
   }
 }
 

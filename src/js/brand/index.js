@@ -32,7 +32,6 @@ const { all } = require('core-js/fn/promise');
   }
 
   $(document).ready(e => {
-    console.log('JS Working');
     if ($('.template-standard-content-v2-profile').length) {
       $('.title').remove();
     }

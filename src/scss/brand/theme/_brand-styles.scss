@@ -17,9 +17,17 @@ a {
   max-width: 1440px !important;
 }
 
-body img {
-  height: auto;
+body {
+  img {
+    height: auto;
+  }
+  .img-full-width {
+    img {
+      width: 100%;
+    }
+  }
 }
+
 #content {
   @media (min-width: 1024px) {
     margin-top: 180px;

@@ -289,3 +289,12 @@
 }
 
 /* Home page end */
+
+.bottom-banner-over-content {
+  background-color: $color-black;
+  z-index: 1;
+  padding: 1rem;
+  @include sm {
+    padding: 2rem;
+  }
+}

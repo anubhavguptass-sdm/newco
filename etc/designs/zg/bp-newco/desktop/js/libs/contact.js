@@ -1,6 +1,6 @@
 (function ($) {
     console.log('check-js-contact')
- 
+    $('form').each(function() { this.reset() });
     if(document.getElementById('checkboxpot')){
         const checkbox = document.getElementById('checkboxpot')
         //  honeypot checkbox disable button validation
@@ -15,7 +15,7 @@
     
     const form = document.getElementById('submitbtn')
     form.addEventListener('submit', (event) => {
-        ValidateEmail();
+        ValidateEmail(event);
     }) 
 
    if(document.getElementById('textCharacterCount')){
@@ -54,7 +54,8 @@
         $('#subject').on('change keydown', function (event) {
             validateForm('subject');
         });
-        $('#submitbtn').click(function(){
+        $('#submitbtn').click(function(event){
+            ValidateEmail(event);
             validateForm('all');
             OnfocusField();
        });
@@ -179,15 +180,16 @@
         }
     }
 
-    function ValidateEmail() {
+    function ValidateEmail(event) {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if (document.haleonForm.email.value.match(mailformat)) {
-            ClearForm();
             document.haleonForm.retURL.value = "https://haleon-com.preprod-cf65.ch.adobecqms.net/contact-us/thank-you";
             document.haleonForm.action = "https://crms--crmssit.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8";
+            document.getElementById("haleonForm").submit();
+            setTimeout(document.haleonForm.reset(), 2000);
             return true;
         } else {
-            // event.preventDefault();
+            event.preventDefault();
             document.haleonForm.email.focus();
             return false;
         }

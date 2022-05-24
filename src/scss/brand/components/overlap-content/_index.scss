@@ -1,40 +1,41 @@
-.right-overlapping-content {
+.positioned-banner {
+  left: 50%;
+  transform: translateX(-50%);
   position: relative;
-  margin: 0 !important;
+  margin: 0;
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  padding: 2rem !important;
+  padding: 2rem;
   top: -5rem;
   -webkit-box-shadow: 0px 16px 40px -8px #0000001a;
   box-shadow: 0px 16px 40px -8px #0000001a;
   background-color: #fff;
-  left: 50%;
-  transform: translateX(-50%);
-
-  .sd-btn {
-    display: none;
-    @include sd {
-      display: none;
-    }
-    @include md {
-      display: block;
-    }
-  }
 
   @include sm {
-    left: auto;
-    position: absolute;
-    right: 0;
-    padding: 1rem !important;
     top: 50%;
+    position: absolute;
+    padding: 1rem;
     margin: auto;
-    left: auto;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   @include sd {
-    padding: 2rem !important;
+    padding: 2rem;
+  }
+}
+
+
+.left-positioned{
+  @include sm{
+    left: 0;
+    right: auto;
+  }
+}
+.right-positioned{
+  @include sm{
+    right: 0;
+    left: auto;
   }
 }

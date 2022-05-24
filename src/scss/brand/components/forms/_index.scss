@@ -38,14 +38,12 @@
   .privacy-checkbox {
     display: block;
     width: 20px;
-    margin-top: 0.2rem;
-
+    position: absolute;
     input[type='checkbox'] {
       width: 20px;
       height: 20px;
       outline: none;
       accent-color: var(--color-primary);
-      position: absolute;
       top: -2.5rem;
       &::before {
         content: '';

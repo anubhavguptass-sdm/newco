@@ -35,43 +35,39 @@
     }
   }
 
-  .contact-privacy-policy-heading {
-    display: flex;
+  .privacy-checkbox {
+    display: block;
+    width: 20px;
+    margin-top: 0.2rem;
 
-    .privacy-checkbox {
-      display: block;
+    input[type='checkbox'] {
       width: 20px;
-      margin-top: 0.2rem;
+      height: 20px;
+      outline: none;
+      accent-color: var(--color-primary);
+      position: absolute;
+      top: -2.5rem;
+      &::before {
+        content: '';
+        position: absolute;
+        border: 2px solid #000;
+        border-radius: 0px;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        margin-right: 0.5em;
+        margin-top: 0;
 
-      input[type='checkbox'] {
-        width: 20px;
-        height: 20px;
-        outline: none;
-        accent-color: var(--color-primary);
-
-        &::before {
-          content: '';
-          position: absolute;
-          border: 2px solid #000;
-          border-radius: 0px;
-          display: inline-block;
-          width: 17px;
-          height: 17px;
-          margin-right: 0.5em;
-          margin-top: 0;
-
-          @media screen and (-webkit-min-device-pixel-ratio: 0) {
-            display: none;
-          }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          display: none;
         }
       }
+    }
 
-      input[type='checkbox']:checked {
-        background-color: var(--bg-color-2);
-      }
+    input[type='checkbox']:checked {
+      background-color: var(--bg-color-2);
     }
   }
-
   .contact-desc-haleon {
     padding: 1rem 2rem 0;
   }

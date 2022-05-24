@@ -237,7 +237,12 @@ a[style*='visibility:hidden'] {
 .width-auto img {
   width: auto;
 }
-
+.max-content-width-1140 {
+  max-width: 1140px;
+  @include lg {
+    max-width: 1140px;
+  }
+}
 .p-m-x-1-5 {
   padding: 0 1.5rem !important;
   @include sm {

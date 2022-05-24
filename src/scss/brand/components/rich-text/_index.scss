@@ -201,7 +201,7 @@
       right: 0;
       z-index: -1;
       @include sm {
-        content: url("/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png");
+        content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png');
       }
     }
   }
@@ -300,7 +300,7 @@
 
 .box-with-vertical-lines {
   @include sm {
-    background: url("/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-black.png");
+    background: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-black.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50% 100%;

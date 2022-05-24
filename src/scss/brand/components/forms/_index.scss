@@ -13,7 +13,7 @@
     height: 3rem;
     border: 2px solid $color-grey-3;
     padding: 0rem 1rem;
-    margin-bottom: 1.75rem;
+    margin-bottom: 0.75rem;
     background-color: $color-grey-3;
     color: $color-3;
   }
@@ -85,15 +85,7 @@
     position: relative;
 
     .input-required {
-      position: absolute;
-      bottom: -1rem;
       color: #c30000;
-      @media screen and (max-width: 480px) {
-        bottom: -2rem;
-      }
-      &.btm-0 {
-        bottom: 0 !important;
-      }
     }
     .dropdown-arrow {
       position: relative;

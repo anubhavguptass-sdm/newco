@@ -46,17 +46,19 @@
             validateForm('subject');
             if(event.type == 'change'){
                 let val = document.haleonForm.subject.value;
+                document.getElementById('enquiryReqMsg').style.cssText = "color: #9e9e9e; display:block";
              if(val == 'Report a problem'){
-                $('#description').attr('placeholder', 'Please provide as much detail as possible, including: product variant, expiration date and LOT/BATCH numbers. In case of product quality reports, we might follow up and request a photo showing the defect.');
+                document.getElementById("enquiryReqMsg").innerHTML = "'Please provide as much detail as possible, including: product variant, expiration date and LOT/BATCH numbers. In case of product quality reports, we might follow up and request a photo showing the defect.'";
+                // $('#description').attr('placeholder', 'Please provide as much detail as possible, including: product variant, expiration date and LOT/BATCH numbers. In case of product quality reports, we might follow up and request a photo showing the defect.');
              } 
             else if(val == 'Brand or Product question'){
-                $('#description').attr('placeholder', 'Got a question to ask or something to tell us? We’re here for you.');
+                document.getElementById("enquiryReqMsg").innerHTML =  'Got a question to ask or something to tell us? We’re here for you.';
              } 
              else if(val == 'Anything else'){
-                $('#description').attr('placeholder', 'If your enquiry is related to commercial and distribution, promotions, sponsorship or anything else, we will point you in the right direction so your question is answered as quickly as possible.');
+                document.getElementById("enquiryReqMsg").innerHTML =   'If your enquiry is related to commercial and distribution, promotions, sponsorship or anything else, we will point you in the right direction so your question is answered as quickly as possible.';
              } 
              else {
-                $('#description').attr('placeholder', '');
+                validateForm('subject');
              } 
             }
         });
@@ -170,10 +172,11 @@
         if ((type == 'subject' || type == 'all')) {
             if (enquiry == "") {
                 document.getElementById('subject').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
-                document.getElementById('enquiryReqMsg').style.display = 'block';
+                document.getElementById('enquiryReqMsg').style.cssText = "color: #c30000; display: block";
+                document.getElementById("enquiryReqMsg").innerHTML ="Required";
+
             } else {
                 document.getElementById('subject').style.cssText = "border-color: #EAEAEA; outline: 1px solid #EAEAEA";
-                document.getElementById('enquiryReqMsg').style.display = 'none';
             }
         }
         if ((type == 'desc' || type == 'all')) {

@@ -43,7 +43,9 @@
 .carousel .carousel-slides .carousel-slide.active .carouselSlide {
   margin-left: 0;
 }
-
+.carousel img {
+  width: 100%;
+}
 .half-carousel .lSSlideOuter {
   overflow: visible;
 }

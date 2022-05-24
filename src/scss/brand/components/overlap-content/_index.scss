@@ -3,10 +3,7 @@
   transform: translateX(-50%);
   position: relative;
   margin: 0;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  padding: 2rem;
+  padding: 2rem !important;
   top: -5rem;
   -webkit-box-shadow: 0px 16px 40px -8px #0000001a;
   box-shadow: 0px 16px 40px -8px #0000001a;
@@ -15,8 +12,7 @@
   @include sm {
     top: 50%;
     position: absolute;
-    padding: 1rem;
-    margin: auto;
+    padding: 2rem !important;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -26,15 +22,14 @@
   }
 }
 
-
-.left-positioned{
-  @include sm{
+.left-positioned {
+  @include sm {
     left: 0;
     right: auto;
   }
 }
-.right-positioned{
-  @include sm{
+.right-positioned {
+  @include sm {
     right: 0;
     left: auto;
   }

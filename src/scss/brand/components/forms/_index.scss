@@ -30,17 +30,6 @@
     border: 2px solid $color-grey-3;
     appearance: none;
     position: relative;
-    &:after {
-      content: '\e901';
-      font-family: 'icomoon';
-      position: absolute;
-      right: 1rem;
-      top: 3.15rem;
-      z-index: 9;
-      font-size: $font-size-16;
-      color: $color-2;
-    }
-
     option:hover {
       background-color: var(--bg-color-2);
     }

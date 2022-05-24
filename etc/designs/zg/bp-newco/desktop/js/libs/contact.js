@@ -19,7 +19,8 @@
     countdisp.innerHTML = 0;
    }
    
-    inputVal.addEventListener('keydown keypress focus', count);    
+    inputVal.addEventListener('keyperss', count);    
+    inputVal.addEventListener('keyup', count);    
 
     function count(e) {
         var len = inputVal.value.length;
@@ -38,10 +39,10 @@
         $('#description').on('keyup focus', function (event) {
             validateForm('desc');
         });
-        $('#00N9E000004hkmw').on('change keydown', function (event) {
+        $('#00N9E000004hkmw').on('change keydown focus', function (event) {
             validateForm('country');
         });
-        $('#subject').on('change keydown', function (event) {
+        $('#subject').on('change keydown focus', function (event) {
             validateForm('subject');
             if(event.type == 'change'){
                 let val = document.haleonForm.subject.value;

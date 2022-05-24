@@ -87,11 +87,12 @@
         content: '\e901';
         font-family: 'icomoon';
         position: absolute;
-        right: 0;
-        top: 2rem;
+        right: 1rem;
+        top: 3rem;
         font-size: 1rem;
         color: #000;
         pointer-events: none;
+        z-index: 1;
       }
     }
   }

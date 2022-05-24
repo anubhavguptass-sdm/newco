@@ -334,3 +334,55 @@
   padding: 1rem;
   font-weight: $font-semi-bold;
 }
+
+/* leadership-team/dame-emma-walmsley Amrendra code */
+
+.carousel {
+  .reference-card-block {
+    .youtube-player {
+      .play {
+        display: none;
+      }
+    }
+  }
+}
+
+.leader-card-adjust {
+  .reference-leader-profile {
+    .media-container {
+      @include sd {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+.reference-card-block {
+  .youtube-player {
+    width: 100%;
+    @include sm {
+      width: 50%;
+    }
+  }
+}
+
+.leader-card-design {
+  .card-content-container {
+    width: 100%;
+    @include sm {
+      width: 50%;
+    }
+  }
+}
+
+.story-block {
+  .story-content {
+    padding: 2rem;
+    width: 50%;
+  }
+  .story-image {
+    width: 50%;
+  }
+}
+
+/* Leadership End Amrendra code */

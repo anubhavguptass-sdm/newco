@@ -1,4 +1,7 @@
 .leader-card-design {
+  .media-container {
+    flex-basis: 100%;
+  }
   .card-content-container {
     flex-basis: auto;
     background-color: $color-grey-3;

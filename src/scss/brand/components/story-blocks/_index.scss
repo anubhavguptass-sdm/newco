@@ -382,25 +382,25 @@
     display: flex;
     margin-bottom: 1rem;
     position: relative;
-    @include md {
-      height: 9.5rem;
-    }
-    .story-image {
-      width: 40%;
-      line-height: 0;
-      img {
-        height: 100%;
-      }
-    }
-    .story-content {
-      width: 60%;
-      padding: 1rem;
-      background-color: $color-white;
-      display: flex;
-      align-items: center;
+  }
+  .story-image {
+    width: 40%;
+    line-height: 0;
+    img {
+      height: 100%;
+      object-fit: cover;
     }
   }
+.story-content {
+  width: 60%;
+  padding: 1rem;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
 }
+}
+
+
 .story-left-list {
   width: 100%;
   @include sm {
@@ -408,19 +408,13 @@
   }
   .story-block {
     background: #fff;
-    .story-content {
-      padding: 2rem;
-      width: 50%;
-    }
-    .story-image {
-      width: 50%;
-    }
   }
-}
-.story-right-list {
-  width: 100%;
-
-  @include sm {
+  .story-content {
+    padding: 2rem;
+    width: 50%;
+  }
+  .story-image {
     width: 50%;
   }
 }
+

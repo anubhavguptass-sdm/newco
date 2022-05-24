@@ -26,6 +26,7 @@
         countdisp.innerHTML = len;
     }
 
+
     $(document).ready(function () {
        
         $('#name').on('keyup focus', function (event) {
@@ -42,10 +43,23 @@
         });
         $('#subject').on('change keydown', function (event) {
             validateForm('subject');
+            if(event.type == 'change'){
+                let val = document.haleonForm.subject.value;
+             if(val == 'Report a problem'){
+                $('#description').attr('placeholder', 'Please provide as much detail as possible, including: product variant, expiration date and LOT/BATCH numbers.In case of product quality reports, we might follow up and request a photo showing the defect.');
+             } 
+            else if(val == 'Brand or Product question'){
+                $('#description').attr('placeholder', 'Got a question to ask or something to tell us? We’re here for you.');
+             } 
+             else if(val == 'Anything else'){
+                $('#description').attr('placeholder', 'If your enquiry is related to commercial and distribution, promotions, sponsorship or anything else, we will point you in the right direction so your question is answered as quickly as possible.');
+             } 
+             else {
+                $('#description').attr('placeholder', '');
+             } 
+            }
         });
-        $('#subject').on('change keydown', function (event) {
-            validateForm('subject');
-        });
+       
         $('#submitbtn').click(function(event){
             ValidateEmail(event);
             validateForm('all');
@@ -164,8 +178,14 @@
         if ((type == 'desc' || type == 'all')) {
             if (desc == "") {
                 document.getElementById('description').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
+                document.getElementById("descReqMsg").innerHTML = "Required.";
                 document.getElementById('descReqMsg').style.display = 'block';
-            } else {
+            } 
+            else if (desc.length < 20) {
+                document.getElementById("descReqMsg").innerHTML = "This field must contain at least 20 characters.";
+                document.getElementById('descReqMsg').style.display = 'block';
+            }
+            else {
                 document.getElementById('description').style.cssText = "border-color: #EAEAEA; outline: 1px solid #EAEAEA";
                 document.getElementById('descReqMsg').style.display = 'none';
             }

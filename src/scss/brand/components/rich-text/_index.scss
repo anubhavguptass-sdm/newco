@@ -360,7 +360,7 @@
     width: 100%;
 
     @include sm {
-      width: 50%;
+      flex-basis: 50% !important;
     }
   }
 }

@@ -352,7 +352,7 @@
     width: 100%;
 
     @include sm {
-      width: 50%;
+      width: 50% !important;
     }
   }
 

@@ -391,15 +391,14 @@
       object-fit: cover;
     }
   }
-.story-content {
-  width: 60%;
-  padding: 1rem;
-  background-color: $color-white;
-  display: flex;
-  align-items: center;
+  .story-content {
+    width: 60%;
+    padding: 1rem;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+  }
 }
-}
-
 
 .story-left-list {
   width: 100%;
@@ -417,4 +416,3 @@
     width: 50%;
   }
 }
-

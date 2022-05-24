@@ -357,32 +357,4 @@
   }
 }
 
-.reference-card-block {
-  .youtube-player {
-    width: 100%;
-    @include sm {
-      width: 50%;
-    }
-  }
-}
-
-.leader-card-design {
-  .card-content-container {
-    width: 100%;
-    @include sm {
-      width: 50%;
-    }
-  }
-}
-
-.story-block {
-  .story-content {
-    padding: 2rem;
-    width: 50%;
-  }
-  .story-image {
-    width: 50%;
-  }
-}
-
 /* Leadership End Amrendra code */

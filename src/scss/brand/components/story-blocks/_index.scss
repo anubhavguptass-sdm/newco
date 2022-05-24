@@ -401,3 +401,26 @@
     }
   }
 }
+.story-left-list {
+  width: 100%;
+  @include sm {
+    width: 50%;
+  }
+  .story-block {
+    background: #fff;
+    .story-content {
+      padding: 2rem;
+      width: 50%;
+    }
+    .story-image {
+      width: 50%;
+    }
+  }
+}
+.story-right-list {
+  width: 100%;
+
+  @include sm {
+    width: 50%;
+  }
+}

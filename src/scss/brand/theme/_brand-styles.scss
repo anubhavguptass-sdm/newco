@@ -238,9 +238,10 @@ a[style*='visibility:hidden'] {
   width: auto;
 }
 .max-content-width-1140 {
-  max-width: 1140px;
+  max-width: 100%;
   @include lg {
     max-width: 1140px;
+    margin: auto;
   }
 }
 .p-m-x-1-5 {

@@ -9,6 +9,7 @@
     }
     @include sm {
       min-height: auto;
+      width: 50%;
     }
     img {
       object-fit: cover;
@@ -20,13 +21,11 @@
     height: auto;
     padding: 0;
     margin: 0;
-    /* min-height: 360px;  / remove for leadership page height issue /  */
-    @media screen and (max-width: 1200px) {
-      height: 100%;
-      width: 100%;
+    width: 100%;
+    @include sm {
+      width: 50%;
     }
     > img {
-      /*position: static;*/
       object-fit: cover;
       height: 100%;
     }

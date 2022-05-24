@@ -38,14 +38,12 @@
   .privacy-checkbox {
     display: block;
     width: 20px;
-    margin-top: 0.2rem;
-
+    position: absolute;
     input[type='checkbox'] {
       width: 20px;
       height: 20px;
       outline: none;
       accent-color: var(--color-primary);
-      position: absolute;
       top: -2.5rem;
       &::before {
         content: '';
@@ -89,11 +87,12 @@
         content: '\e901';
         font-family: 'icomoon';
         position: absolute;
-        right: 0;
-        top: 2rem;
+        right: 1rem;
+        top: 3rem;
         font-size: 1rem;
         color: #000;
         pointer-events: none;
+        z-index: 1;
       }
     }
   }

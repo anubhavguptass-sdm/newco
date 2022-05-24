@@ -19,7 +19,7 @@
     countdisp.innerHTML = 0;
    }
    
-    inputVal.addEventListener('keydown', count);    
+    inputVal.addEventListener('keydown keypress focus', count);    
 
     function count(e) {
         var len = inputVal.value.length;
@@ -32,10 +32,10 @@
         $('#name').on('keyup focus', function (event) {
             validateForm('name');
         });
-        $('#email').on('keyup', function (event) {
+        $('#email').on('keyup focus', function (event) {
             validateForm('email');
         });
-        $('#description').on('keyup', function (event) {
+        $('#description').on('keyup focus', function (event) {
             validateForm('desc');
         });
         $('#00N9E000004hkmw').on('change keydown', function (event) {
@@ -135,7 +135,7 @@
                 document.getElementById("nameReqMsg").innerHTML = "Required";
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else if (name.length < 5) {
-                console.log(name.length);
+                document.getElementById('name').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
                 document.getElementById("nameReqMsg").innerHTML = "This field must contain at least 5 characters.";
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else {
@@ -182,6 +182,7 @@
                 document.getElementById('descReqMsg').style.display = 'block';
             } 
             else if (desc.length < 20) {
+                document.getElementById('description').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
                 document.getElementById("descReqMsg").innerHTML = "This field must contain at least 20 characters.";
                 document.getElementById('descReqMsg').style.display = 'block';
             }

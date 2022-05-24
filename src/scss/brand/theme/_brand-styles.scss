@@ -153,6 +153,9 @@ a {
 .bg-color-aqua {
   background-color: $color-secondary-aqua;
 }
+.border-lime {
+  border: 1px solid $color-secondary-lime;
+}
 
 /* global css end */
 
@@ -233,6 +236,16 @@ a[style*='visibility:hidden'] {
 }
 .width-100 {
   width: 100%;
+}
+.width-m-100 {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.width-d-60 {
+  @include sm {
+    width: 60%;
+  }
 }
 .width-auto img {
   width: auto;

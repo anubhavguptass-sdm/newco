@@ -298,13 +298,13 @@ a[style*='visibility:hidden'] {
 }
 
 .object-fit-cover {
-   .component-content {
+  .component-content {
     height: 100% !important;
     img {
       height: 100% !important;
       object-fit: cover;
     }
-    .paragraphSystem.content{
+    .paragraphSystem.content {
       height: 100%;
     }
   }

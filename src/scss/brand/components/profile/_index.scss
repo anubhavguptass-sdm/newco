@@ -4,9 +4,7 @@
     background-color: $color-grey-3;
     padding: 1rem;
     width: 100%;
-    @include sm {
-      width: 50%;
-    }
+
     p {
       margin: 0;
     }

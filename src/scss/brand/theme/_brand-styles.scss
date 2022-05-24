@@ -159,7 +159,9 @@ a {
 .bg-color-lime {
   background-color: $color-secondary-lime;
 }
-
+.justify-space-between-d {
+  justify-content: space-between;
+}
 /* global css end */
 
 .big-text {
@@ -239,6 +241,9 @@ a[style*='visibility:hidden'] {
 }
 .width-100 {
   width: 100%;
+}
+.max-width-quarter {
+  max-width: 24%
 }
 .width-m-100 {
   @media screen and (max-width: 767px) {

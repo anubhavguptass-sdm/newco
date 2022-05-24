@@ -18,7 +18,6 @@
     width: 100%;
     height: auto;
     padding: 1rem;
-    margin-bottom: 0;
   }
 
   select {
@@ -113,5 +112,8 @@
   font-size: 1.5rem !important;
   line-height: 120% !important;
   display: block;
+}
+.pos-absolute{
+  position: absolute;
 }
 /* contact form end */

@@ -1,4 +1,5 @@
 .story-right-list {
+  width: 100%;
   &.first {
     @include md {
       padding-right: 1.5rem;
@@ -32,18 +33,35 @@
 }
 
 .story-left-list {
-  width: 100%;
+  margin-bottom: 1rem;
+  >.component-content{
+    height: 100%
+  }
   @include sm {
     width: 50%;
   }
   .story-block {
+    height: 100%;
     background: #fff;
+    flex-direction: column;
+    @include xs{
+    flex-direction: row;
+    }
   }
   .story-content {
     padding: 2rem;
-    width: 50%;
+    @include xs{
+      width: 60%;
+    }
   }
   .story-image {
-    width: 50%;
+   @include xs{
+    width: 40%;
+   }
+    img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 }

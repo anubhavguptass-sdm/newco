@@ -1,7 +1,7 @@
 #footer {
   margin-top: 0.2rem;
   padding: 0;
-  width: 100vw;
+  width: 100%;
 
   .p-m-x-1 {
     padding-left: 1.5rem !important;
@@ -15,7 +15,10 @@
 
   .footer-secondary-nav {
     border-top: 1px solid $color-grey-3;
-    padding: 3rem 0;
+    padding: 3rem 1.5rem;
+    @include sd {
+        padding: 3rem 0rem;
+    }
 
     .footer-logo {
       display: flex;
@@ -74,7 +77,7 @@
     align-items: flex-start;
 
     @include sm {
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -189,6 +192,12 @@
   justify-content: center;
   @include sm {
     justify-content: flex-end;
+  }
+  .footer-list{
+    @extend .flex-row;
+    li{
+        padding-right: 5px;
+    }
   }
 }
 

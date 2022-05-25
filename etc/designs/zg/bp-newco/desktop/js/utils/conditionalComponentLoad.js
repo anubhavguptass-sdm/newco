@@ -24,6 +24,11 @@ var ConditionalComponentLoad = function () {
       name: "Contact Page",
     },
     {
+      selector: ".haleon-career-search-section",
+      js: ["libs/search-career.js"],
+      name: "career Page",
+    },
+    {
       selector: ".products-table",
       js: ["./components/productsTable.js"],
       name: "Products table",

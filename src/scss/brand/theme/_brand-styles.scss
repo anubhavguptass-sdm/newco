@@ -228,7 +228,7 @@ a[style*='visibility:hidden'] {
   justify-content: space-between;
 }
 .flex-row {
-  flex-direction: row;
+  flex-direction: row !important;
 }
 .flex-column {
   flex-direction: column;

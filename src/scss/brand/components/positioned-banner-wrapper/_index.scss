@@ -1,5 +1,5 @@
 .positioned-banner-wrapper {
-  .banner-text{
+  .banner-text {
     left: 50%;
     transform: translateX(-50%);
     position: relative;
@@ -16,16 +16,16 @@
       transform: translateY(-50%);
     }
   }
-  &.right-positioned{
-    .banner-text{
+  &.right-positioned {
+    .banner-text {
       @include sm {
         right: 0;
         left: auto;
       }
     }
   }
-  &.left-positioned{
-    .banner-text{
+  &.left-positioned {
+    .banner-text {
       @include sm {
         left: 0;
         right: auto;

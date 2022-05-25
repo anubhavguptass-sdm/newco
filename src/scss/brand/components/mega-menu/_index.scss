@@ -74,12 +74,11 @@ header {
     }
     .megamenu-top-bar-right {
       * {
-        color: $color-black;
+        color: $color-grey-2;
       }
       .header-icon-one {
         margin-left: 0 !important;
         margin-right: 1rem;
-        margin-bottom: 1rem;
         p {
           width: 100px;
           margin: auto !important;
@@ -96,7 +95,7 @@ header {
               content: '\e91a';
               font-family: 'icomoon';
               position: absolute;
-              top: -2px;
+              top: 4px;
               left: 5.5rem;
               @include sd {
                 top: 0;
@@ -123,7 +122,7 @@ header {
               font-family: 'icomoon';
               position: absolute;
               right: 1px;
-              top: -4px;
+              top: 4px;
               @include sd {
                 top: 0;
               }
@@ -219,7 +218,7 @@ header {
           max-width: 115px;
           min-width: auto;
           margin-left: -0.75rem;
-          margin-top: 0;
+          margin-top: -0.25rem;
           @include sd {
             width: 250px;
             min-width: 250px;
@@ -276,22 +275,16 @@ header {
       > .component-content > .navigation-mobile-menu {
         left: auto;
         right: -15px;
-        top: 0px;
-        // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/menu-icon.svg');
-        content: '\e916';
-        font-family: 'icomoon';
-        font-size: 1rem;
+        top: -2px;
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/menu-icon.svg');
         background-size: auto;
-        width: 28px;
-        height: 28px;
+        width: 32px;
+        height: 32px;
       }
     }
     &.nav-opened {
       .megamenu-main-nav > .component-content .navigation-mobile-menu {
-        // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/cross-icon.svg');
-        content: '\e90e';
-        font-family: 'icomoon';
-        font-size: 1rem;
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/cross-icon.svg');
         background-size: auto;
       }
     }
@@ -305,13 +298,7 @@ header {
       top: -6px !important;
       max-width: 8% !important;
     }
-    @media (min-width: 1535px) {
-      max-width: 10% !important;
-    }
-    @media (min-width: $breakpoint-md-min) {
-      width: 12%;
-      max-width: 12%;
-    }
+
     @media (min-width: $breakpoint-sd-min) {
       width: 11%;
       order: 4;
@@ -323,12 +310,6 @@ header {
     }
     @media (min-width: 1920px) {
       max-width: 8.5% !important;
-    }
-    @media (min-width: 2132px) {
-      max-width: 7.5% !important;
-    }
-    @media (min-width: 2880px) {
-      max-width: 6.5% !important;
     }
     @media only screen and (min-width: 1024px) {
       right: -18px;
@@ -463,9 +444,6 @@ header {
     }
   }
   .megamenu-top-bar-left {
-    .default-style {
-      margin-bottom: 1rem;
-    }
     @media (min-width: $breakpoint-sd-min) {
       .component-content > .paragraphSystem {
         height: auto;
@@ -497,9 +475,6 @@ header {
     }
     @media (min-width: 1920px) {
       margin-left: 14%;
-    }
-    @media (min-width: 2880px) {
-      margin-left: 15%;
     }
   }
 }

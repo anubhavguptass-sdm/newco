@@ -1,7 +1,7 @@
 #footer {
   margin-top: 0.2rem;
   padding: 0;
-  width: 100%;
+  width: 100vw;
 
   .p-m-x-1 {
     padding-left: 1.5rem !important;
@@ -15,10 +15,7 @@
 
   .footer-secondary-nav {
     border-top: 1px solid $color-grey-3;
-    padding: 3rem 1rem;
-    @include sd {
-      padding: 3rem 1rem;
-    }
+    padding: 3rem 0;
 
     .footer-logo {
       display: flex;
@@ -77,12 +74,12 @@
     align-items: flex-start;
 
     @include sm {
-      justify-content: space-around;
+      justify-content: center;
       flex-direction: row;
       flex-wrap: wrap;
     }
 
-    @include sd {
+    @include md {
       justify-content: space-between;
     }
 
@@ -100,9 +97,9 @@
   }
 
   .copyright {
-    margin-top: 0.5rem;
+    margin-top: 0;
 
-    @include sm {
+    @include sd {
       margin-top: 0;
     }
 
@@ -180,9 +177,9 @@
     }
   }
   .footer-column {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     @include md {
-      padding: 4rem 1rem;
+      padding: 4rem 0rem;
     }
   }
 }
@@ -192,12 +189,6 @@
   justify-content: center;
   @include sm {
     justify-content: flex-end;
-  }
-  .footer-list {
-    @extend .flex-row;
-    li {
-      padding-right: 5px;
-    }
   }
 }
 

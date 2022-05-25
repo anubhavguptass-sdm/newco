@@ -127,8 +127,10 @@ header {
               position: absolute;
               right: 1px;
               top: -4px;
+              right: -6rem;
               @include sd {
                 top: 0;
+                right: -1.1rem;
               }
             }
           }
@@ -871,14 +873,6 @@ header {
         }
       }
     }
-  }
-  .megamenu-navigation
-    .megamenu--newco
-    .megamenu-top-bar-right
-    .header-icon-two
-    p
-    a:after {
-    right: -1.1rem;
   }
   .megamenu-navigation .megamenu-submenu-item .default-style ul li {
     padding-left: 0px !important;

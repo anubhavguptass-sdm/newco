@@ -89,7 +89,11 @@ const { all } = require('core-js/fn/promise');
 
   $(document).ready(function() {
     megaMenuMobile();
-    careerSearch();
+    if (document.getElementById('searchCareer')) {
+    $('#searchCareer').click(function(){
+      careerSearch();
+  });
+}
   });
   window.addEventListener('orientationchange', function() {
     $(document).ready(function() {
@@ -136,6 +140,7 @@ const { all } = require('core-js/fn/promise');
     });
   });
   // Show More Filter
+ 
 
   //careerSearch for search jobs
   function careerSearch() {
@@ -147,7 +152,6 @@ const { all } = require('core-js/fn/promise');
     if (document.getElementById('location')) {
       var location = encodeURI(document.getElementById('location').value);
     }
-
     if (
       job &&
       location != undefined &&

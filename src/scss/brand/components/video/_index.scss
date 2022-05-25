@@ -40,7 +40,7 @@
     }
   }
 }
-.profile--hero--banner .reference-card-block .youtube-player > img {
+.profile-hero-banner .reference-card-block .youtube-player > img {
   position: static;
 }
 .youtube-play-icon {
@@ -49,33 +49,4 @@
       display: none;
     }
   }
-}
-.leader-card-adjust .reference-leader-profile .media-container {
-  position: relative;
-}
-.leader-card-adjust .reference-leader-profile .media-container:after {
-  content: '\e907';
-  font-family: 'icomoon';
-  text-align: center;
-  line-height: 48px;
-  font-size: 20px;
-  background-color: $color-primary;
-  // background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow-right.png);
-  position: absolute;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  right: 2px;
-  bottom: 2px;
-  top: initial;
-  left: initial;
-  height: 48px;
-  width: 48px;
-  background-position: center;
-  outline: 2px solid $color-primary;
-}
-.leader-card-adjust
-  .bg-color-black:hover
-  .reference-leader-profile
-  .media-container:after {
-  content: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow.png) !important;
 }

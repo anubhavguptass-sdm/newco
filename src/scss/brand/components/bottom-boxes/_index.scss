@@ -1,0 +1,15 @@
+.bottom-box-wrapper {
+    .bottom-right-box {
+      background-color: $color-primary;
+      position: relative;
+      padding: 2rem 1.5rem;
+      @include sd {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      @include md {
+        padding: 2rem !important;
+      }
+    }
+  }

@@ -131,38 +131,6 @@
     }
   }
 
-  .reference-leadership-carousel-two {
-    .leader-card-adjust {
-      @include sd {
-        margin-top: 1rem;
-      }
-
-      @include sm {
-        margin-top: 0;
-      }
-
-      h2 {
-        position: absolute;
-        top: 3.2rem;
-
-        @include sd {
-          top: 2rem;
-          left: 2rem;
-        }
-
-        @include sm {
-          position: relative;
-          top: 0;
-          left: 0rem;
-        }
-
-        @media only screen and (max-width: 480px) {
-          width: 50%;
-        }
-      }
-    }
-  }
-
   @media (min-width: 992px) {
     .tabs .tabs-nav-list .tabs-nav-item a:hover,
     .tabs .tabs-nav-list .tabs-nav-item a:focus {
@@ -180,21 +148,6 @@
     .tabs .tabs-nav-list .tabs-nav-item a:focus {
       outline: 1px solid var(--color-1);
     }
-
-    .reference-leadership-carousel-two {
-      .leader-card-adjust {
-        .reference-leader-profile {
-          margin-top: 1rem;
-        }
-      }
-    }
-  }
-
-  .tabs .tabContent .richText-content h3:nth-of-type(1),
-  .tabs .tabContent .richText-content h4:nth-of-type(1),
-  .tabs .tabContent .richText-content p:nth-of-type(1),
-  .tabs .tabContent .richText-content ul:nth-of-type(1) {
-    margin-top: 0;
   }
 
   @media (min-width: 768px) {

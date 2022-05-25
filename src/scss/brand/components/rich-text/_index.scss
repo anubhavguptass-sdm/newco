@@ -1,239 +1,7 @@
 // Who we are page
-.bottom-box-wrapper {
-  .bottom-right-box {
-    background-color: $color-primary;
-    position: relative;
-    padding: 2rem 1.5rem;
-    @include sd {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-    @include md {
-      padding: 2rem !important;
-    }
-  }
-}
 
-.measure-black {
-  display: none;
-  @include sm {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    height: auto;
-  }
-}
 
-.tag-links {
-  width: 85%;
-  position: absolute;
-  margin-top: -2.5rem;
-  left: 10px;
-  ul {
-    list-style-type: none;
-    position: relative;
-    li {
-      display: inline !important;
-      background: rgba(0, 0, 0, 0.5);
-      margin-right: 12px;
-      padding: 0 5px !important;
-      color: $color-grey-3 !important;
-      @include sm {
-        display: table !important;
-        top: -1.5rem;
-      }
-      @include lg {
-        display: inline-block !important;
-        top: auto;
-      }
-    }
-  }
-}
 
-/* .diversity-box {
-  .component-content {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .diversity-right-area {
-    padding-top: 3rem;
-    @include md {
-      padding-top: 10rem;
-    }
-    .white-line-repeats {
-      display: none;
-      position: absolute;
-      width: 67px;
-      top: 2.4rem;
-      left: -5rem;
-      z-index: 0;
-      @include sd {
-        display: block;
-      }
-    }
-    .diversity-area-sub-heading {
-      height: 59px;
-      line-height: 59px;
-      text-align: left;
-      background-color: $color-primary;
-      @include md {
-        height: 64px;
-        line-height: 64px;
-      }
-    }
-    .diversity-percentage-content {
-      margin-top: 0 0 2.5rem 0;
-    }
-  }
-  .diversity-area {
-    padding-top: 7rem;
-
-    @include md {
-      padding-top: 14rem;
-      z-index: 1;
-    }
-    .diversity-area-heading {
-      height: 62px;
-      line-height: 62px;
-      background-color: $color-primary;
-      @include md {
-        height: 77px;
-        line-height: 77px;
-      }
-    }
-    .diversity-area-content {
-      padding-right: 0;
-      @include sd {
-        padding-right: 6rem;
-      }
-    }
-  }
-} */
-
-// who whe are slider csss
-
-.stories-around {
-  width: 50%;
-  @include sm {
-    width: auto;
-  }
-}
-
-.bg-strip-170 {
-  &:before {
-    height: 100%;
-    @include sm {
-      height: 170px !important;
-    }
-  }
-}
-
-/* Who we are */
-
-.section-with-bg {
-  color: $color-white;
-  > .component-content {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 1rem 1rem 4rem;
-  }
-  .right-area {
-    padding-top: 3rem;
-    @include md {
-      padding-top: 10rem;
-    }
-    .sub-heading {
-      height: 59px;
-      line-height: 59px;
-      text-align: left;
-      background-color: $color-primary;
-      font-weight: $font-semi-bold;
-      padding: 0 1rem;
-      @include sm {
-        text-align: right;
-      }
-      @include md {
-        height: 64px;
-        line-height: 64px;
-      }
-    }
-    .percentage-box {
-      margin-bottom: 2.5rem;
-    }
-  }
-  .left-area {
-    padding-top: 7rem;
-    @include sm {
-      z-index: 0;
-    }
-    @include md {
-      padding-top: 14rem;
-      z-index: 1;
-    }
-    .heading {
-      height: 62px;
-      line-height: 62px;
-      background-color: $color-primary;
-      padding: 0 1rem;
-      font-weight: $font-semi-bold;
-      @include md {
-        height: 77px;
-        line-height: 77px;
-      }
-    }
-    /* .diversity-area-content {
-      padding-right: 0;
-      @include sd {
-        padding-right: 6rem;
-      }
-    } */
-    &:after {
-      content: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      @include sm {
-        content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png');
-      }
-    }
-  }
-  p {
-    color: $color-white;
-  }
-  .small-cards {
-    margin-bottom: 2rem;
-    .card-content-wrapper {
-      .card-content {
-        padding: 1rem;
-        @include sd {
-          padding: 1rem 0.5rem;
-        }
-      }
-    }
-  }
-  img {
-    width: 100%;
-  }
-}
-
-.small-font {
-  font-size: 0.75rem;
-}
-
-/* Who we are */
-
-.img-bottom-btn .btn {
-  width: 100%;
-  margin: 0;
-}
 
 .bg-grey-border {
   .border-right {
@@ -274,7 +42,7 @@
     margin-bottom: -52px !important;
   }
   .btn {
-    margin-left: 0;
+    margin: 0;
     width: 80%;
     text-align: left;
     justify-content: flex-start;
@@ -297,7 +65,6 @@
     padding: 2rem;
   }
 }
-
 .box-with-vertical-lines {
   @include sm {
     background: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-black.png');
@@ -306,46 +73,13 @@
     background-size: 50% 100%;
   }
 }
-.grey-nav-arrow {
-  .lSPrev {
-    background: $bg-color-3 !important;
-  }
 
-  .lSNext {
-    background: $bg-color-3 !important;
-  }
-}
 
-.icon-bottom-arrow {
-  position: absolute;
-  top: -4rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 64px;
-  height: 64px;
-  background: #eaeaea;
-  padding: 1.5rem;
-  backdrop-filter: blur(32px);
-}
 
-.heading-with-bg {
-  background-color: $color-primary;
-  padding: 1rem;
-  font-weight: $font-semi-bold;
-}
+
+
 
 /* leadership-team/dame-emma-walmsley Amrendra code */
-
-.carousel {
-  .reference-card-block {
-    .youtube-player {
-      .play {
-        display: none;
-      }
-    }
-  }
-}
 
 .leadership-single-page {
   .card-content-container {

@@ -1,19 +1,7 @@
 // body is used for overriding default component styles with same selecotr
 @if $include-accordion {
   .accordion {
-    .accordion-container {
-      margin-top: 1rem;
-
-      @include sd {
-        margin-top: 0rem;
-      }
-    }
-
-    .accordion-slide {
-      border-top: 2px solid #000 !important;
-      border-bottom: 0px solid #000 !important;
-    }
-
+   
     .accordion-slide.is-active {
       border-top: 4px solid #000 !important;
       border-bottom: 2px solid #000 !important;
@@ -47,6 +35,10 @@
         margin-left: 0;
         border-top: 2px solid $color-2;
         border-bottom: 2px solid $color-2;
+        &.is-active {
+          border-top: 2px solid $color-2;
+         border-bottom: 2px solid $color-2;
+        }
         &.last {
           margin-bottom: 0;
         }
@@ -123,126 +115,6 @@
         }
       }
     }
-
-    .list-diff-style {
-      ul {
-        margin: $spacer 0 !important;
-        li {
-          a {
-            &:first-of-type {
-              &::after {
-                content: '';
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .faq-filters {
-      padding-top: 0 !important;
-    }
-    .title {
-      h1 {
-        font-weight: $font-extra-bold;
-        line-height: $line-height-125;
-      }
-    }
-    /* .richText-content {
-      p {
-        font-size: $font-size-18;
-      }
-    } */
-  }
-}
-
-.green-right-design {
-  position: absolute;
-  right: 0;
-  top: -5.4rem;
-  width: 30%;
-}
-.green-left-design {
-  width: 70%;
-}
-.faq-green-bar {
-  margin-bottom: 7rem !important;
-  &::before {
-    content: '';
-    background: var(--bg-color-2) !important;
-    width: 72%;
-    height: 100px;
-    position: absolute;
-    top: 100%;
-  }
-  &::after {
-    content: '';
-    background: var(--bg-color-2) !important;
-    width: 28%;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  @media only screen and (max-width: 767px) {
-    margin-bottom: 5rem !important;
-    &::before {
-      height: 70px;
-    }
-    &::after {
-      height: 70px;
-    }
-  }
-  .component-content {
-    line-height: 0;
-  }
-}
-
-.contact-us {
-  .accordion .accordion-container {
-    margin-top: 0;
-
-    .accordion-slide {
-      .accordion-head::after {
-        right: 16px;
-      }
-    }
-
-    .accordion-slide.is-active {
-      .accordion-head::after {
-        right: 16px;
-      }
-    }
-  }
-}
-
-.page-investors,
-.page-who-we-are,
-.page-contacts-accordion-version {
-  .accordion .accordion-container .accordion-slide {
-    border-top: 2px solid #000 !important;
-    border-bottom: 0px solid #000 !important;
-  }
-
-  .accordion .accordion-container .accordion-slide:first-of-type {
-    border-top: 0px solid #000 !important;
-  }
-
-  .accordion .accordion-container .accordion-slide.is-active {
-    border-top: 4px solid #000 !important;
-    border-bottom: 2px solid #000 !important;
-  }
-
-  .accordion .accordion-container .accordion-slide.is-active:first-of-type {
-    border-top: 3px solid #000 !important;
-  }
-
-  .accordion .accordion-container .accordion-slide.is-active:last-of-type {
-    border-bottom: 3px solid #000 !important;
-  }
-
-  .accordion-container {
-    border-top: 1px solid #000 !important;
-    border-bottom: 1px solid #000 !important;
+   
   }
 }

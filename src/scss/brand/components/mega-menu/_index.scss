@@ -318,9 +318,9 @@ header {
       max-width: 12%;
     }
     @media (min-width: $breakpoint-sd-min) {
-      width: 11%;
+      width: 12%;
       order: 4;
-      max-width: 11%;
+      max-width: 12%;
       text-align: right;
       position: relative;
       right: 0;
@@ -487,8 +487,8 @@ header {
   .megamenu-top-bar-right {
     // Newly Added
     @media (min-width: $breakpoint-sd-min) {
-      width: 23%;
-      max-width: 23%;
+      width: 22%;
+      max-width: 22%;
       margin-left: 4%;
       order: 3;
       .richText {

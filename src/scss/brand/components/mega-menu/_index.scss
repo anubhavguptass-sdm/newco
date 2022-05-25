@@ -79,6 +79,7 @@ header {
       .header-icon-one {
         margin-left: 0 !important;
         margin-right: 1rem;
+        margin-bottom: 1rem;
         p {
           width: 100px;
           margin: auto !important;
@@ -95,7 +96,7 @@ header {
               content: '\e91a';
               font-family: 'icomoon';
               position: absolute;
-              top: 4px;
+              top: -2px;
               left: 5.5rem;
               @include sd {
                 top: 0;
@@ -122,7 +123,7 @@ header {
               font-family: 'icomoon';
               position: absolute;
               right: 1px;
-              top: 4px;
+              top: -4px;
               @include sd {
                 top: 0;
               }
@@ -462,6 +463,9 @@ header {
     }
   }
   .megamenu-top-bar-left {
+    .default-style {
+      margin-bottom: 1rem;
+    }
     @media (min-width: $breakpoint-sd-min) {
       .component-content > .paragraphSystem {
         height: auto;

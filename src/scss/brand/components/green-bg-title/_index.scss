@@ -1,76 +1,4 @@
-.heading-bg-strip {
-  span {
-    background: var(--bg-color-2) !important;
-    display: block;
-    width: 80%;
-    position: relative;
-    height: 100%;
-    white-space: nowrap;
-    @extend .font-bold;
-    @include sm {
-      width: 100%;
-    }
-    &:before {
-      content: '';
-      width: 100vw;
-      background: var(--bg-color-2) !important;
-      display: block;
-      height: 100%;
-      position: absolute;
-      left: -100vw;
-      top: 0;
 
-      z-index: -1;
-    }
-    &:after {
-      content: '';
-      width: 100vw;
-      background: var(--bg-color-2) !important;
-      display: block;
-      height: 100%;
-      position: absolute;
-      right: -100vw;
-      top: -100%;
-      z-index: -1;
-    }
-  }
-}
-
-.heading-bg-strip {
-  .two-steps {
-    width: 80%;
-    background: transparent !important;
-
-    @include sm {
-      background: var(--bg-color-2) !important;
-      margin-left: -2rem;
-      padding-left: 2rem;
-      width: 100%;
-    }
-
-    &:before {
-      height: 100%;
-      top: 100%;
-      width: 110%;
-      left: -10%;
-
-      @include sm {
-        height: 100%;
-        left: -100vw;
-        width: 100vw;
-      }
-    }
-
-    &:after {
-      top: 0;
-    }
-
-    em {
-      font-style: normal;
-      font-weight: normal;
-    }
-  }
-}
 
 .bar-over-img {
   @include md {
@@ -109,50 +37,7 @@
     top: calc(11rem + 180px);
   }
 }
-/* .home-hero-content {
-  .green-bar {
-    height: 100px;
-    width: 105%;
 
-    @media (min-width: 2560px) {
-      width: 0;
-    }
-
-    @include sd {
-      height: 50px;
-      width: 100%;
-      text-transform: capitalize;
-    }
-
-    @include sm {
-      width: 70%;
-    }
-
-    &::before {
-      @media (min-width: $breakpoint-xl-min) {
-        left: -25vw;
-      }
-
-      @media (min-width: 2560px) {
-        left: -45vw;
-        width: 60vw;
-      }
-    }
-
-    &::after {
-      width: 70vw;
-      left: 100% !important;
-      @media (min-width: $breakpoint-xl-min) {
-        left: 35vw;
-      }
-
-      @media (min-width: 2560px) {
-        left: 15vw !important;
-        width: 80vw;
-      }
-    }
-  }
-} */
 .contact-page-banner {
   .box.component:first-of-type {
     .green-bar {

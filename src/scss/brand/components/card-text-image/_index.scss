@@ -1,0 +1,15 @@
+.card{
+    background-color: var(--bg-color-3);
+    .card-text{
+        padding: 1.5rem;
+    }
+    .card-image{
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        &.card-image-with-link{
+            @extend .bottom-right-arrow;
+        }
+    }
+}

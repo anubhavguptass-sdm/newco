@@ -1,18 +1,19 @@
-blockquote {
-  margin: 0;
-  padding: 2rem;
-  .quote-title {
-    position: relative;
-    &::before {
-      content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-quote.png');
-      position: absolute;
-      background-size: 40px;
-      left: 0;
-      top: -2rem;
+.quote-wrapper{
+  background-color: var(--bg-color-2);
+  blockquote {
+    margin: 0;
+    padding: 2rem;
+    .quote-title {
+      position: relative;
+      &::before {
+        content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-quote.png');
+        position: absolute;
+        background-size: 40px;
+        left: 0;
+        top: -2rem;
+      }
     }
   }
-}
-.profile-quote {
   .leader-name {
     text-align: right;
   }

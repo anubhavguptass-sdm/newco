@@ -135,6 +135,5 @@ const { all } = require('core-js/fn/promise');
     });
   });
   // Show More Filter
- 
 })(Cog.jQuery());
 /*eslint-enable*/

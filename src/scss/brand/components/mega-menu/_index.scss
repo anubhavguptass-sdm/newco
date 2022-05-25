@@ -749,6 +749,7 @@ header {
   .megamenu-submenu-item {
     box-shadow: none !important;
     height: auto;
+    padding: 0;
     .bg-color-3 {
       background-color: $color-grey-3;
       padding: 1rem;
@@ -1059,6 +1060,17 @@ header {
   .navigation-item
   > a {
   padding: 0 1rem;
+}
+li.page-who-we-are a::before, li.page-our-brands a::before, li.page-planet-and-people a::before, li.page-careers a::before {
+  content: '\e903';
+  font-family: 'icomoon';
+  color: #a19e9e;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 3px;
+  position: absolute;
+  margin-left: 0.5rem;
+  color: #000;
 }
 .megamenu-logo {
   .image {

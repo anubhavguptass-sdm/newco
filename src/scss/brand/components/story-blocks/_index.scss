@@ -34,8 +34,8 @@
 
 .story-left-list {
   margin-bottom: 1rem;
-  >.component-content{
-    height: 100%
+  > .component-content {
+    height: 100%;
   }
   @include sm {
     width: 50%;
@@ -44,21 +44,21 @@
     height: 100%;
     background: #fff;
     flex-direction: column;
-    @include xs{
-    flex-direction: row;
+    @include xs {
+      flex-direction: row;
     }
   }
   .story-content {
     padding: 2rem;
-    @include xs{
+    @include xs {
       width: 60%;
     }
   }
   .story-image {
-   @include xs{
-    width: 40%;
-   }
-    img{
+    @include xs {
+      width: 40%;
+    }
+    img {
       height: 100%;
       object-fit: cover;
       object-position: center;

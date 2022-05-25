@@ -18,4 +18,33 @@
   }
 }
 
+.bg-grey-border {
+  .border-right {
+      border-bottom: solid rgba(0,0,0,0) 2px;
+      border-right: none;
+      @include sm {
+          border-right: solid rgba(0,0,0,0) 2px;
+          border-bottom: none;
+      }
+  }
+  .left-area {
+      padding-right: 0;
+      @include sm {
+          padding-right: 4.375rem !important;
+      }
+  }
+  .right-area {
+      padding-left: 0;
+      @include sm {
+          padding-left: 4.375rem !important;
+      }
+      .heading{
+          padding-top: 2rem;
+          @include sm{
+              padding-top: 0;
+          }
+      }
+  }
+}
+
 /* Health pro End */

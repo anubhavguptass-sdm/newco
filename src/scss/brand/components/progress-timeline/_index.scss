@@ -1,0 +1,124 @@
+
+
+.progress-timeline {
+  .box.component:nth-child(3) {
+    .box.component {
+      .richText {
+        h3 {
+          .green-bar {
+            position: relative;
+            font-weight: inherit;
+            border-bottom: 44px solid var(--bg-color-2);
+
+            @include sd {
+              border-bottom: none;
+              background: var(--bg-color-2) !important;
+              height: 44px;
+              width: 100vw;
+            }
+
+            &::before {
+              content: '';
+              width: 10vw;
+              background: var(--bg-color-2) !important;
+              display: block;
+              height: 44px;
+              position: absolute;
+              left: -10vw;
+              top: 74px;
+              z-index: -1;
+
+              @media screen and (min-width: 1920px) {
+                width: 5vw;
+                left: -5vw;
+              }
+
+              @include sd {
+                top: -9px;
+              }
+            }
+
+            &::after {
+              content: '';
+              width: 10vw;
+              background: var(--bg-color-2) !important;
+              display: block;
+              height: 44px;
+              position: absolute;
+              left: 30px;
+              top: 74px;
+              z-index: -1;
+
+              @media screen and (min-width: 1920px) {
+                width: 6vw;
+              }
+
+              @include sd {
+                width: 100vw;
+                top: -9px;
+                left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .box.component:nth-child(5) {
+      .richText {
+        h3 {
+          .green-bar {
+            border-color: #000;
+
+            @include sd {
+              border: none !important;
+              background-color: #000 !important;
+              color: #fff !important;
+            }
+
+            &::before {
+              @include sd {
+                background-color: #000 !important;
+              }
+            }
+
+            &::after {
+              @include sd {
+                background-color: #000 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .box.component:first-of-type {
+      .richText {
+        h3 {
+          .green-bar:before {
+            width: 40vw !important;
+            left: -40vw !important;
+
+            @include sd {
+              top: -9px;
+            }
+          }
+        }
+      }
+    }
+    .box.component:last-of-type {
+      .richText {
+        h3 {
+          .green-bar:after {
+            width: 40vw !important;
+            left: 30px !important;
+
+            @include sd {
+              width: 100vw !important;
+              top: -9px !important;
+              left: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

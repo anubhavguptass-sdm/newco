@@ -66,3 +66,12 @@
     padding: 1rem;
     font-weight: $font-semi-bold;
 }
+.green-line {
+  background: #30ea03;
+  min-width: 54px;
+  height: 1px;
+  position: relative;
+  top: -6px;
+  display: inline-block;
+  margin: 0 0.5rem;
+}

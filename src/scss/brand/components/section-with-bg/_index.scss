@@ -1,60 +1,59 @@
-
 .section-with-bg {
-    *{
-        color: $color-white;
-    }
-    .heading-with-bg{
-        color: #000;
-    }
-    p{
-        @extend .big-text;
-    }
-    .card-content-wrapper{
-        margin-bottom: 2rem;
-        .image{
-            @extend .bottom-right-arrow;
-            &:after {
-                width: 40px;
-                line-height: 40px;
-            }
-        }
-    }
-    > .component-content {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      padding: 1rem 1rem 4rem;
-    }
-    .percentage-box {
-        margin-bottom: 2.5rem;
-    }
-    .right-area {
-      padding-top: 3rem;
-      @include md {
-        padding-top: 10rem;
-      }
-    }
-    .left-area {
-      padding-top: 7rem;
-      @include sm {
-        z-index: 0;
-      }
-      @include md {
-        padding-top: 14rem;
-        z-index: 1;
-      }
+  * {
+    color: $color-white;
+  }
+  .heading-with-bg {
+    color: #000;
+  }
+  p {
+    @extend .big-text;
+  }
+  .card-content-wrapper {
+    margin-bottom: 2rem;
+    .image {
+      @extend .bottom-right-arrow;
       &:after {
-        content: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-        @include sm {
-          content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png');
-        }
+        width: 40px;
+        line-height: 40px;
       }
-    }
-    img {
-      width: 100%;
     }
   }
+  > .component-content {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem 1rem 4rem;
+  }
+  .percentage-box {
+    margin-bottom: 2.5rem;
+  }
+  .right-area {
+    padding-top: 3rem;
+    @include md {
+      padding-top: 10rem;
+    }
+  }
+  .left-area {
+    padding-top: 7rem;
+    @include sm {
+      z-index: 0;
+    }
+    @include md {
+      padding-top: 14rem;
+      z-index: 1;
+    }
+    &:after {
+      content: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      @include sm {
+        content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png');
+      }
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

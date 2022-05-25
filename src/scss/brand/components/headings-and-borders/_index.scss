@@ -1,70 +1,70 @@
 .heading-bg-strip {
-    span {
+  span {
+    background: var(--bg-color-2);
+    display: block;
+    width: 80%;
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+    @extend .font-bold;
+    @include sm {
+      width: 100%;
+    }
+    &:before {
+      content: '';
+      width: 100vw;
       background: var(--bg-color-2);
       display: block;
-      width: 80%;
-      position: relative;
       height: 100%;
-      white-space: nowrap;
-      @extend .font-bold;
+      position: absolute;
+      left: -100vw;
+      top: 0;
+
+      z-index: -1;
+    }
+    &:after {
+      content: '';
+      width: 100vw;
+      background: var(--bg-color-2);
+      display: block;
+      height: 100%;
+      position: absolute;
+      right: -100vw;
+      top: -100%;
+      z-index: -1;
+    }
+  }
+  &.two-steps {
+    width: 80%;
+    background: transparent;
+    @include sm {
+      background: var(--bg-color-2);
+      margin-left: -2rem;
+      padding-left: 2rem;
+    }
+
+    &:before {
+      height: 100%;
+      top: 100%;
+      width: 110%;
+      left: -10%;
+
       @include sm {
-        width: 100%;
-      }
-      &:before {
-        content: '';
-        width: 100vw;
-        background: var(--bg-color-2);
-        display: block;
         height: 100%;
-        position: absolute;
         left: -100vw;
-        top: 0;
-  
-        z-index: -1;
+        width: 100vw;
       }
       &:after {
-        content: '';
-        width: 100vw;
-        background: var(--bg-color-2);
-        display: block;
-        height: 100%;
-        position: absolute;
-        right: -100vw;
-        top: -100%;
-        z-index: -1;
-      }
-    }
-    &.two-steps {
-        width: 80%;
-        background: transparent;
-        @include sm {
-            background: var(--bg-color-2);
-            margin-left: -2rem;
-            padding-left: 2rem;
-          }
-        
-      &:before {
-        height: 100%;
-        top: 100%;
-        width: 110%;
-        left: -10%;
-  
-        @include sm {
-          height: 100%;
-          left: -100vw;
-          width: 100vw;
-        }
-        &:after {
-            top: 0;
-        }
+        top: 0;
       }
     }
   }
+}
 
 .heading-with-bg {
-    background-color: $color-primary;
-    padding: 1rem;
-    font-weight: $font-semi-bold;
+  background-color: $color-primary;
+  padding: 1rem;
+  font-weight: $font-semi-bold;
 }
 .green-line {
   background: #30ea03;

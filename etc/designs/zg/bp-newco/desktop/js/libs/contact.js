@@ -11,7 +11,7 @@
         }) 
     }
    if(document.getElementById('textCharacterCount')){
-    setTimeout(function () {
+    setTimeout(function () {  
         document.getElementById("description").removeAttribute("tabindex")
     }, 1000);
     var inputVal = document.getElementById('description');
@@ -29,7 +29,7 @@
 
 
     $(document).ready(function () {
-       
+        $('#privacy').removeClass("external");
         $('#name').on('keyup focus', function (event) {
             validateForm('name');
         });
@@ -48,7 +48,7 @@
                 let val = document.haleonForm.subject.value;
                 document.getElementById('enquiryReqMsg').style.cssText = "color: #9e9e9e; display:block";
              if(val == 'Report a problem'){
-                document.getElementById("enquiryReqMsg").innerHTML = "'Please provide as much detail as possible, including: product variant, expiration date and LOT/BATCH numbers. In case of product quality reports, we might follow up and request a photo showing the defect.'";
+                document.getElementById("enquiryReqMsg").innerHTML = 'Please provide as much detail as possible, including: product variant, expiration date and LOT/BATCH numbers. In case of product quality reports, we might follow up and request a photo showing the defect.';
                 // $('#description').attr('placeholder', 'Please provide as much detail as possible, including: product variant, expiration date and LOT/BATCH numbers. In case of product quality reports, we might follow up and request a photo showing the defect.');
              } 
             else if(val == 'Brand or Product question'){
@@ -64,9 +64,8 @@
         });
        
         $('#submitbtn').click(function(event){
-            ValidateEmail(event);
             validateForm('all');
-            OnfocusField();
+            OnfocusField(event);
        });
         $('#name').on('keypress', function (event) {
             if ($('#name').val().length == 0 && event.which === 32) {
@@ -111,7 +110,8 @@
         }
     }
 
-    function OnfocusField() {
+    function OnfocusField(event) {
+        
         if (document.haleonForm.name.value == '') {
             document.haleonForm.name.focus();
         } else if (document.haleonForm.email.value == '') {
@@ -122,6 +122,12 @@
             document.haleonForm.subject.focus();
         } else if (document.haleonForm.description.value == '') {
             document.haleonForm.description.focus();
+        }
+        else if (!document.haleonForm.checkbox_1.checked) {
+            document.haleonForm.checkbox_1.focus();
+        }
+        else{
+            ValidateEmail(event);
         }
     }
 
@@ -198,18 +204,37 @@
     }
 
     function ValidateEmail(event) {
+       
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (document.haleonForm.email.value.match(mailformat)) {
-            document.haleonForm.retURL.value = "https://haleon-com.preprod-cf65.ch.adobecqms.net/contact-us/thank-you";
-            document.haleonForm.action = "https://crms--crmssit.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8";
-            document.getElementById("haleonForm").submit();
-            setTimeout(document.haleonForm.reset(), 2000);
-            return true;
-        } else {
+        if(document.haleonForm.name.value.length < 5){
             event.preventDefault();
-            document.haleonForm.email.focus();
+            document.haleonForm.name.focus();
             return false;
         }
+        if(document.haleonForm.description.value.length < 20){
+            event.preventDefault();
+            document.haleonForm.description.focus();
+            return false;
+        }
+        if (document.haleonForm.email.value.match(mailformat)) {
+                    document.haleonForm.retURL.value = `${window.location.origin}/contact-us/thank-you/`;
+                    window.location.href = document.haleonForm.retURL.value;
+                    document.getElementById("enquiryReqMsg").innerHTML = '';
+                   document.getElementById("haleonForm").submit();
+                   setTimeout(document.haleonForm.reset(), 2000);
+                   return true;
+       }
+       else {
+        event.preventDefault();
+        document.haleonForm.email.focus();
+        return false;
+    }
+        
+       
+      
+        
+        
+       
     }
 
 })(Cog.jQuery());

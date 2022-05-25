@@ -23,8 +23,8 @@
     border-bottom: 2px solid $color-3;
     border-right: none;
     @include sm {
-        border-right: 2px solid $color-3;
-        border-bottom: none;
+      border-right: 2px solid $color-3;
+      border-bottom: none;
     }
   }
   .left-area {

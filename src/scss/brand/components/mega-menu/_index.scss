@@ -80,6 +80,9 @@ header {
         margin-left: 0 !important;
         margin-right: 1rem;
         margin-bottom: 1rem;
+        @include md {
+          margin-bottom: 0;
+        }
         p {
           width: 100px;
           margin: auto !important;
@@ -643,7 +646,6 @@ header {
     > * {
     text-align: left;
     padding: 0;
-    margin: 0 !important;
   }
   .megamenu-navigation
     .megamenu-top-bar-right

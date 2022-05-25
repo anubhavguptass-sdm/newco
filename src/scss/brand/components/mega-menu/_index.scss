@@ -128,7 +128,7 @@ header {
               right: 1px;
               top: -4px;
               right: -6rem;
-              @include sd {
+              @include md {
                 top: 0;
                 right: -1.1rem;
               }

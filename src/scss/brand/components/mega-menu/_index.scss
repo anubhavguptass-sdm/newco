@@ -127,8 +127,10 @@ header {
               position: absolute;
               right: 1px;
               top: -4px;
-              @include sd {
+              right: -6rem;
+              @include md {
                 top: 0;
+                right: -1.1rem;
               }
             }
           }
@@ -749,6 +751,7 @@ header {
   .megamenu-submenu-item {
     box-shadow: none !important;
     height: auto;
+    padding: 0;
     .bg-color-3 {
       background-color: $color-grey-3;
       padding: 1rem;
@@ -870,14 +873,6 @@ header {
         }
       }
     }
-  }
-  .megamenu-navigation
-    .megamenu--newco
-    .megamenu-top-bar-right
-    .header-icon-two
-    p
-    a:after {
-    right: -1.1rem;
   }
   .megamenu-navigation .megamenu-submenu-item .default-style ul li {
     padding-left: 0px !important;
@@ -1059,6 +1054,24 @@ header {
   .navigation-item
   > a {
   padding: 0 1rem;
+  position: relative;
+}
+li.page-who-we-are a::before,
+li.page-our-brands a::before,
+li.page-planet-and-people a::before,
+li.page-careers a::before {
+  content: '\e903';
+  font-family: 'icomoon';
+  color: #a19e9e;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 3px;
+  position: absolute;
+  color: #000;
+  right: -1.5rem;
+  @include md {
+    display: none;
+  }
 }
 .megamenu-logo {
   .image {

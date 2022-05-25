@@ -1060,6 +1060,7 @@ header {
   .navigation-item
   > a {
   padding: 0 1rem;
+  position: relative;
 }
 li.page-who-we-are a::before,
 li.page-our-brands a::before,
@@ -1072,8 +1073,11 @@ li.page-careers a::before {
   font-size: 1rem;
   padding: 3px;
   position: absolute;
-  margin-left: 0.5rem;
   color: #000;
+  right: -1.5rem;
+  @include md {
+    display: none;
+  }
 }
 .megamenu-logo {
   .image {

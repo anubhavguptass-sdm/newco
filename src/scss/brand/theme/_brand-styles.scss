@@ -216,7 +216,7 @@ a[style*='visibility:hidden'] {
   align-items: flex-end;
 }
 .justify-center {
-  justify-content: center;
+  justify-content: center !important;
 }
 .justify-flex-start {
   justify-content: flex-start;
@@ -228,7 +228,7 @@ a[style*='visibility:hidden'] {
   justify-content: space-between;
 }
 .flex-row {
-  flex-direction: row;
+  flex-direction: row !important;
 }
 .flex-column {
   flex-direction: column;

@@ -1,0 +1,21 @@
+/* Health Profesional Amrendra*/
+
+.your-patient-card-overlap {
+  position: relative;
+
+  .card-content {
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+  }
+
+  .giant-font {
+    .blog-fit-content {
+      @extend .d-block;
+      width: fit-content;
+      @extend .text-color-white;
+    }
+  }
+}
+
+/* Health pro End */

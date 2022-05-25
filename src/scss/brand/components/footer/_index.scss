@@ -1,28 +1,47 @@
 #footer {
   margin-top: 0.2rem;
   padding: 0;
-  width: 100vw;
+  width: 100%;
+
+  .p-m-x-1 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+
+    @include sd {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+
   .footer-secondary-nav {
     border-top: 1px solid $color-grey-3;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
+    @include sd {
+      padding: 3rem 1rem;
+    }
+
     .footer-logo {
       display: flex;
       justify-content: center;
+
       @include sm {
         justify-content: flex-start;
       }
+
       img {
         width: 138px;
         margin-left: 0;
       }
     }
   }
+
   .image {
     a {
       border: 4px solid $color-white;
-      margin: 0 -12px;
+
       &:hover {
         height: auto;
+        background-color: #fff !important;
         border: 4px solid $color-primary;
       }
     }
@@ -32,14 +51,17 @@
     color: $color-1;
     font-size: $font-size-12;
     line-height: $line-height-150;
+
     a {
       margin-right: 3px;
       font-size: $font-size-15;
     }
+
     strong {
       color: $color-grey-2;
     }
   }
+
   h6 {
     color: $color-1;
     line-height: $line-height-150;
@@ -47,6 +69,7 @@
     margin-top: 0;
     margin-bottom: 1rem;
   }
+
   .footer-list {
     display: flex;
     justify-content: center;
@@ -54,12 +77,12 @@
     align-items: flex-start;
 
     @include sm {
-      justify-content: center;
+      justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
     }
 
-    @include md {
+    @include sd {
       justify-content: space-between;
     }
 
@@ -77,9 +100,9 @@
   }
 
   .copyright {
-    margin-top: 0;
+    margin-top: 0.5rem;
 
-    @include sd {
+    @include sm {
       margin-top: 0;
     }
 
@@ -157,9 +180,9 @@
     }
   }
   .footer-column {
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
     @include md {
-      padding: 4rem 0rem;
+      padding: 4rem 1rem;
     }
   }
 }
@@ -169,6 +192,14 @@
   justify-content: center;
   @include sm {
     justify-content: flex-end;
+  }
+  .footer-list {
+    @extend .flex-row;
+    @extend .justify-center;
+    padding-top: 0.75rem;
+    li {
+      padding: 0 5px 0 0 !important;
+    }
   }
 }
 

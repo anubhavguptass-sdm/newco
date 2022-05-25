@@ -103,23 +103,23 @@
     }
   }
 }
-.carousel{
-  .carousel-slide{
+.carousel {
+  .carousel-slide {
     @include sm {
       padding: 0px 15px 0 0px;
       margin-top: 160px;
     }
-    &.active{
+    &.active {
       .carouselSlide {
         margin-left: 0;
       }
     }
   }
-  img{
+  img {
     width: 100%;
   }
-  .lSAction{
-    a{
+  .lSAction {
+    a {
       background-image: none;
       width: 60px;
       height: 60px;
@@ -146,7 +146,6 @@
     margin-top: 3rem;
   }
 }
-
 
 .carousel-right-img {
   position: absolute;
@@ -347,8 +346,6 @@
       }
     }
   }
-
-
 }
 
 .reference-leadership-carousel-two {
@@ -659,7 +656,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 991px) {
   .carousel .carousel-slides .carousel-slide .carouselSlide {

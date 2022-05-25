@@ -1061,7 +1061,10 @@ header {
   > a {
   padding: 0 1rem;
 }
-li.page-who-we-are a::before, li.page-our-brands a::before, li.page-planet-and-people a::before, li.page-careers a::before {
+li.page-who-we-are a::before,
+li.page-our-brands a::before,
+li.page-planet-and-people a::before,
+li.page-careers a::before {
   content: '\e903';
   font-family: 'icomoon';
   color: #a19e9e;

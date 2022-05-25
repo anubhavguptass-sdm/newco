@@ -90,10 +90,10 @@ const { all } = require('core-js/fn/promise');
   $(document).ready(function() {
     megaMenuMobile();
     if (document.getElementById('searchCareer')) {
-    $('#searchCareer').click(function(){
-      careerSearch();
-  });
-}
+      $('#searchCareer').click(function() {
+        careerSearch();
+      });
+    }
   });
   window.addEventListener('orientationchange', function() {
     $(document).ready(function() {
@@ -140,7 +140,6 @@ const { all } = require('core-js/fn/promise');
     });
   });
   // Show More Filter
- 
 
   //careerSearch for search jobs
   function careerSearch() {

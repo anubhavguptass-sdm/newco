@@ -747,7 +747,7 @@ header {
     max-height: initial;
   }
 }
-.megamenu-submenu-item>*>.paragraphSystem {
+.megamenu-submenu-item > * > .paragraphSystem {
   flex-wrap: wrap;
   @include md {
     flex-wrap: nowrap;

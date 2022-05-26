@@ -12,6 +12,18 @@
   }
 
   @media (min-width: $breakpoint-md-min) {
+    max-width: $max-content-md-width !important;
+  }
+
+  @media (min-width: $breakpoint-sd-min) {
+    max-width: $max-content-sd-width !important;
+  }
+
+  @media (min-width: $breakpoint-lg-min) {
+    max-width: $max-content-lg-width !important;
+  }
+
+  @media (min-width: ($breakpoint-xl-min + 1)) {
     max-width: $max-content-width !important;
   }
 

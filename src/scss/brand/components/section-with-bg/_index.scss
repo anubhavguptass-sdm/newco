@@ -5,9 +5,12 @@
   .heading-with-bg {
     color: #000;
   }
-  /* p {
+  p {
     @extend .big-text;
-  } */
+  }
+  p.giant-font {
+    @extend .giant-font;
+  }
   .card-content-wrapper {
     margin-bottom: 2rem;
     .image {

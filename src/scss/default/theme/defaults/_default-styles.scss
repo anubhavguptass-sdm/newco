@@ -382,19 +382,17 @@ body {
       line-height: $line-height-h3;
     }
   }
-
   h4,
   .h4 {
     color: $primary-headings-color;
     font-family: $font-family-secondary;
-    font-size: $font-size-h4;
+    font-size: $font-size-h4-mobile;
     font-weight: $font-weight-h4;
-    line-height: $line-height-h4;
+    line-height: $line-height-h4-mobile;
 
-    @media (min-width: $breakpoint-sm-min) {
-      //desktop styles
-      line-height: $line-height-h4-mobile;
-      font-size: $font-size-h4-mobile;
+    @media (min-width: $breakpoint-md-min) {
+      line-height: $line-height-h4;
+      font-size: $font-size-h4;
     }
   }
 

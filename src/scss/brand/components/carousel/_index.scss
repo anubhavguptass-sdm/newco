@@ -2,14 +2,33 @@
   img {
     width: 100%;
   }
+  .carousel-slides {
+    height: auto !important;
+    .richText{
+      padding: 1rem;
+      &.link-crumbs{
+        padding: 0;
+      }
+    }
+}
+.carousel-slide{
+  background: #fff;
+}
   &.carousel-with-img-arrow-links {
     .image {
       @extend .bottom-right-arrow;
+      &:after {
+        width: 40px;
+        line-height: 40px;
+      }
     }
   }
   &.carousel-top-arrow-nav {
+    .lSSlideOuter {
+      margin-top: -6rem;
+    }
     .lSSlide {
-      margin-top: 3rem;
+      margin-top: 6rem;
     }
     .lSAction {
       a {
@@ -20,17 +39,22 @@
         line-height: 60px;
         background-color: $color-white;
         border-radius: 30px;
+        top: 0rem;
+        left: auto;
         &:after {
           font-family: 'icomoon';
         }
         &.lSPrev {
+          right: 80px;
           &:after {
             content: '\e906';
           }
         }
-        &.lSPrev {
+        &.lSNext {
+          right: 0;
           &:after {
             content: '\e907';
+            
           }
         }
       }

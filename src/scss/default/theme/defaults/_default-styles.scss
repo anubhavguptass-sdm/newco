@@ -59,7 +59,7 @@ html,
 /* END OF FIX */
 
 body {
-  font-family: $font-family-primary;
+  font-family:$font-family-primary;
   font-size: $font-size-body-mobile;
   font-weight: $font-weight-body;
   margin: 0;
@@ -331,24 +331,12 @@ body {
   //loads variables from fonts.scss
 
   h1,
-  h2,
-  h3,
-  h4,
-  .h1,
-  .h2,
-  .h3,
-  .h4 {
-    margin-top: 0;
-  }
-
-  h1,
   .h1 {
     color: $primary-headings-color;
-    font-family: $font-family-secondary;
     font-size: $font-size-h1-mobile;
     font-weight: $font-weight-h1;
     line-height: $line-height-h1-mobile;
-
+    margin: 0 0 1rem 0;
     @media (min-width: $breakpoint-md-min) {
       font-size: $font-size-h1;
       line-height: $line-height-h1;
@@ -358,11 +346,10 @@ body {
   h2,
   .h2 {
     color: $primary-headings-color;
-    font-family: $font-family-secondary;
     font-size: $font-size-h2-mobile;
     font-weight: $font-weight-h2;
     line-height: $line-height-h2-mobile;
-
+    margin: 0 0 1rem 0;
     @media (min-width: $breakpoint-md-min) {
       font-size: $font-size-h2;
       line-height: $line-height-h2;
@@ -372,11 +359,10 @@ body {
   h3,
   .h3 {
     color: $primary-headings-color;
-    font-family: $font-family-secondary;
     font-size: $font-size-h3-mobile;
     font-weight: $font-weight-h3;
     line-height: $line-height-h3-mobile;
-
+    margin: 0 0 1rem 0;
     @media (min-width: $breakpoint-md-min) {
       font-size: $font-size-h3;
       line-height: $line-height-h3;
@@ -385,11 +371,10 @@ body {
   h4,
   .h4 {
     color: $primary-headings-color;
-    font-family: $font-family-secondary;
     font-size: $font-size-h4-mobile;
     font-weight: $font-weight-h4;
     line-height: $line-height-h4-mobile;
-
+    margin: 0 0 1rem 0;
     @media (min-width: $breakpoint-md-min) {
       line-height: $line-height-h4;
       font-size: $font-size-h4;
@@ -399,11 +384,10 @@ body {
   p,
   .p {
     color: $primary-text-color;
-    font-family: $font-family-primary;
     font-size: $font-size-body-mobile;
     font-weight: $font-weight-body;
     line-height: $line-height-body-mobile;
-
+    margin: 0 0 1rem 0;
     @media (min-width: $breakpoint-md-min) {
       font-size: $font-size-body;
       line-height: $line-height-body;
@@ -412,25 +396,21 @@ body {
 
   a,
   a:visited .a {
-    @include animate();
-    color: $primary-links-color;
-    font-family: $font-family-primary;
-    font-size: $font-size-body-mobile;
-    font-weight: $font-weight-anchors;
-    line-height: $line-height-body-mobile;
-    color: $primary-links-color;
-    text-decoration: $link-text-decoration;
-
-    @media (min-width: $breakpoint-md-min) {
-      font-size: $font-size-body;
-      line-height: $line-height-body;
-    }
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    line-height: inherit;
+    padding: inherit;
 
     &:hover,
     &:focus {
-      color: $black;
+      background-color: var(--bg-color-2);
+      color: $color-2;
     }
-
+    &:focus,
+    &:focus:focus-visible {
+      outline: 2px dotted;
+    }
     &.skip-main {
       height: 1px;
       #{$start-direction}: -999px;
@@ -457,7 +437,11 @@ body {
       }
     }
   }
-
+  a[style*='visibility:hidden'] {
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+  }
   button {
     background-color: transparent;
     border: none;
@@ -522,6 +506,13 @@ body {
 
   img[src$='.svg'] {
     width: 100%;
+  }
+
+  @media (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-md-max) {
+    //desktop styles
+    img {
+      max-width: 100vw !important;
+    }
   }
 }
 

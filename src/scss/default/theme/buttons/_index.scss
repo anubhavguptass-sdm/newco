@@ -179,48 +179,6 @@
 
 // price spider buttons override
 // i.e. reset for default pricespider css
-body {
-  .ps-widget[ps-sku],
-  .ps-widget[data-ps-sku],
-  .ps-widget[ps-sku]:hover,
-  .ps-widget[data-ps-sku]:hover {
-    background: transparent;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    border-radius: 0;
-    border-style: none;
-    border-width: 0;
-    box-sizing: content-box;
-    color: inherit;
-    display: block;
-    flex: 1 1 100%;
-    float: none;
-    font-family: $font-family-primary;
-    font-size: inherit;
-    font-weight: inherit;
-    letter-spacing: initial;
-    line-height: initial;
-    margin: 0;
-    min-height: auto;
-    min-width: auto;
-    padding: 0;
-    white-space: nowrap;
-    width: 100%;
-
-    > span.ps-button-label {
-      background-color: transparent;
-      border: none;
-      color: inherit;
-      display: block;
-      display: none !important;
-      font-weight: inherit;
-      height: 100%;
-      text-align: inherit;
-      width: 100%;
-    }
-  }
-}
 
 // include custom buttons from brand folder
 @import '../../../brand/theme/buttons';

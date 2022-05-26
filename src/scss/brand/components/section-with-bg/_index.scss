@@ -32,8 +32,8 @@
     @include md {
       padding-top: 10rem;
     }
-    h3{
-      @include sm{
+    h3 {
+      @include sm {
         text-align: right;
       }
     }
@@ -61,7 +61,7 @@
   img {
     width: 100%;
   }
-  .giant-font{
+  .giant-font {
     text-align: center;
   }
 }

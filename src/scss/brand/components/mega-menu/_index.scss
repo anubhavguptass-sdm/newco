@@ -99,7 +99,7 @@ header {
               content: '\e91a';
               font-family: 'icomoon';
               position: absolute;
-              top: -2px;
+              top: 1px;
               left: 5.5rem;
               @include sd {
                 top: 0;
@@ -126,8 +126,8 @@ header {
               font-family: 'icomoon';
               position: absolute;
               right: 1px;
-              top: -4px;
-              right: -6rem;
+              top: -5px;
+              left: 6.5rem;
               @include md {
                 top: 0;
                 right: -1.1rem;
@@ -745,6 +745,12 @@ header {
     width: 100%;
     overflow-y: initial;
     max-height: initial;
+  }
+}
+.megamenu-submenu-item>*>.paragraphSystem {
+  flex-wrap: wrap;
+  @include md {
+    flex-wrap: nowrap;
   }
 }
 .megamenu-navigation {

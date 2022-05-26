@@ -1,5 +1,5 @@
 #footer {
-   .footer-column {
+  .footer-column {
     padding: 2rem 1rem;
   }
   .footer-secondary-nav {
@@ -15,8 +15,8 @@
           border-color: $color-primary;
         }
       }
-      .left{
-        @media (max-width: $breakpoint-md-max){
+      .left {
+        @media (max-width: $breakpoint-md-max) {
           text-align: center;
         }
       }
@@ -50,7 +50,7 @@
 
   .copyright {
     margin-top: 0.5rem;
-      .richText-content {
+    .richText-content {
       justify-content: center;
       @include sm {
         justify-content: unset;
@@ -84,7 +84,6 @@
         }
       }
     }
-
   }
 }
 
@@ -103,4 +102,3 @@
     }
   }
 }
-

@@ -4,16 +4,16 @@
   }
   .carousel-slides {
     height: auto !important;
-    .richText{
+    .richText {
       padding: 1rem;
-      &.link-crumbs{
+      &.link-crumbs {
         padding: 0;
       }
     }
-}
-.carousel-slide{
-  background: #fff;
-}
+  }
+  .carousel-slide {
+    background: #fff;
+  }
   &.carousel-with-img-arrow-links {
     .image {
       @extend .bottom-right-arrow;
@@ -54,7 +54,6 @@
           right: 0;
           &:after {
             content: '\e907';
-            
           }
         }
       }

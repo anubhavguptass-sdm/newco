@@ -6,13 +6,20 @@
     height: auto !important;
     .richText {
       padding: 1rem;
-      &.tag-links {
-        padding: 0;
-      }
     }
   }
   .carousel-slide {
     background: #fff;
+    ul.tag-links {
+      width: 80%;
+      position: relative;
+      top: -2.5rem;
+      left: 10px;
+      li {
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+      }
+    }
   }
   &.carousel-with-img-arrow-links {
     .image {

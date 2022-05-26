@@ -1,8 +1,9 @@
 .quote-wrapper {
   background-color: var(--bg-color-2);
+  padding: 4rem 0 2rem;
   blockquote {
     margin: 0;
-    padding: 2rem;
+    padding: 0 2rem;
     .quote-title {
       position: relative;
       &::before {
@@ -16,5 +17,6 @@
   }
   .leader-name {
     text-align: right;
+    margin-bottom: 0;
   }
 }

@@ -5,7 +5,7 @@
 /*
 ** SELECTION COLOR STYLES
 */
-$selection-background-color: $color-1 !default;
+$selection-background-color: $color-primary !default;
 $selection-text-color: $color-2 !default;
 
 /*
@@ -27,7 +27,7 @@ $font-family-black: $font-stack-secondary !default;
 //ADJUST FONT AND HEADING SIZES FOR THE THEME
 $font-size-button: 15px !default;
 $font-size-button-mobile: 14px !default;
-$font-size-body: 14px !default;
+$font-size-body: 16px !default;
 $font-size-body-mobile: 14px !default;
 $font-size-h1: 48px !default;
 $font-size-h1-mobile: 30px !default;

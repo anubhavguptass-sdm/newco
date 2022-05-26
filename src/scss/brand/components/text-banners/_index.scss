@@ -5,6 +5,9 @@
   @include sm {
     padding: 2rem;
   }
+  .heading {
+    color: $color-white;
+  }
 }
 .box-with-vertical-lines {
   @include sm {

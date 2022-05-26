@@ -345,3 +345,11 @@ a[style*='visibility:hidden'] {
   position: absolute;
   bottom: 0;
 }
+
+.fit-content {
+  .richText-content {
+    width: fit-content !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

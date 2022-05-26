@@ -8,8 +8,11 @@
   p {
     @extend .big-text;
   }
-  p.giant-font {
+  .giant-font {
     @extend .giant-font;
+  }
+  .small-font {
+    @extend .small-font;
   }
   .card-content-wrapper {
     margin-bottom: 2rem;
@@ -66,5 +69,11 @@
   }
   .giant-font {
     text-align: center;
+    @include sm {
+      text-align: left;
+    }
+  }
+  .card-content {
+    padding: 1rem;
   }
 }

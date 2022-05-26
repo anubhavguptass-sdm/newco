@@ -4,23 +4,23 @@
   }
   .carousel-slides {
     height: auto !important;
-    .richText {
-      padding: 0 1rem;
+    .richText{
+      padding: 1rem;
+    }
+}
+.carousel-slide{
+  background: #fff;
+  ul.tag-links{
+    width: 80%;
+    position: relative;
+    top: -2.5rem;
+    left: 10px;
+    li{
+      background: rgba(0, 0, 0, 0.5);
+      border:none;
     }
   }
-  .carousel-slide {
-    background: #fff;
-    ul.tag-links {
-      width: 80%;
-      position: relative;
-      top: -2.5rem;
-      left: 10px;
-      li {
-        background: rgba(0, 0, 0, 0.5);
-        border: none;
-      }
-    }
-  }
+}
   &.carousel-with-img-arrow-links {
     .image {
       @extend .bottom-right-arrow;
@@ -61,6 +61,7 @@
           right: 0;
           &:after {
             content: '\e907';
+            
           }
         }
       }

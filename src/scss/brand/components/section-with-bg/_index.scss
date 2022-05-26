@@ -5,9 +5,9 @@
   .heading-with-bg {
     color: #000;
   }
-  p {
+  /* p {
     @extend .big-text;
-  }
+  } */
   .card-content-wrapper {
     margin-bottom: 2rem;
     .image {
@@ -32,6 +32,11 @@
     @include md {
       padding-top: 10rem;
     }
+    h3{
+      @include sm{
+        text-align: right;
+      }
+    }
   }
   .left-area {
     padding-top: 7rem;
@@ -55,5 +60,8 @@
   }
   img {
     width: 100%;
+  }
+  .giant-font{
+    text-align: center;
   }
 }

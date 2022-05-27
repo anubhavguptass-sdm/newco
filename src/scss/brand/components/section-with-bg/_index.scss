@@ -72,13 +72,26 @@
   img {
     width: 100%;
   }
-  .giant-font {
-    text-align: center;
-    @include sm {
-      text-align: left;
-    }
-  }
+  
   .card-content {
     padding: 1rem;
+  }
+  .banner-over-content{
+    margin-top: 1.5rem;
+    @include sm{
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  }
+  .fit-content {
+    .richText-content {
+      width: fit-content !important;
+      margin-left: 0;
+      margin-right: 0;
+      @include sm{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 }

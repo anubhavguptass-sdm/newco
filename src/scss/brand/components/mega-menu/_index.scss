@@ -710,6 +710,7 @@ header {
     > .navigation-item {
     justify-content: left;
     text-align: left; /* min-height: 26px; */
+    width: 100%;
   }
 }
 .megamenu-navigation
@@ -1116,6 +1117,7 @@ li.page-careers a::before {
     font-size: $font-size-16;
   }
 }
+
 @include md {
   .megamenu-main-nav > * > .navigation-root.navigation-level1 {
     background: transparent;
@@ -1129,6 +1131,9 @@ li.page-careers a::before {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+  .megamenu-main-nav > * > .navigation-mobile-menu {
+    display: block;
   }
 }
 @include sd {

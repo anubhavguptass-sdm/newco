@@ -21,7 +21,12 @@ var ConditionalComponentLoad = function () {
      {
       selector: ".haleon-contact-form",
       js: ["libs/contact.js"],
-      name: "Contact Page",
+      name: "Consumer Enquiry Page",
+    },
+    {
+      selector: ".scrollPage",
+      js: ["libs/scroll-page.js"],
+      name: "Contact Us Page",
     },
     {
       selector: ".haleon-career-search-section",

@@ -60,7 +60,7 @@
   }
 }
 
-@media only screen and (max-width: 1279px) and (min-width: 768px) {
+@media only screen and (max-width: 1279px) and (min-width: 992px) {
   .card-text-image-small {
     .bottom-pos-0 {
       position: relative;
@@ -73,8 +73,17 @@
 }
 @media only screen and (max-width: 1440px) and (min-width: 992px) {
   .card-text-image {
-    &.bottom-pos-0 {
+    .bottom-pos-0 {
       position: relative !important;
     }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-text-image{
+    >.component-content > .paragraphSystem{
+        flex-direction: column !important;
+        flex-wrap: initial;
+      }
   }
 }

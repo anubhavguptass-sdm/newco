@@ -113,7 +113,6 @@ const { all } = require('core-js/fn/promise');
     ).removeClass('megamenu-remove');
     $('.megamenu-submenu-item').addClass('megamenu-remove');
   });
-
   // Mobile Menu
 
   // Show More Filter

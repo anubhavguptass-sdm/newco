@@ -67,6 +67,7 @@
     }
     > .component-content > .paragraphSystem {
       flex-direction: column !important;
+      flex-wrap: initial;
     }
   }
 }

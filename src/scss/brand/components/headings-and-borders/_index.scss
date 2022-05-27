@@ -34,7 +34,7 @@
       z-index: -1;
     }
     &.two-steps {
-      width: 80%;
+      width: 85%;
       background: transparent;
       @include sm {
         background: var(--bg-color-2);
@@ -56,6 +56,14 @@
       }
       &:after {
         top: 0 !important;
+      }
+      &.bg-strip-170 {
+        &:before {
+          height: 100%;
+          @include sm {
+            height: 170px !important;
+          }
+        }
       }
     }
   }

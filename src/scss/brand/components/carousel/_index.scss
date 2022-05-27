@@ -6,6 +6,9 @@
     height: auto !important;
     .richText {
       padding: 0 1rem;
+      &.even{
+        padding: 0;
+      }
     }
   }
   .carousel-slide {
@@ -18,7 +21,7 @@
       li {
         background: rgba(0, 0, 0, 0.5);
         border: none;
-        color: $color-white;
+        color: $color-white !important;
       }
     }
   }

@@ -17,36 +17,35 @@
       width: 100%;
     }
   }
-  .youtube-player {
-    height: auto;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    > img {
-      object-fit: cover;
-      height: 100%;
-    }
-    .play {
-      background: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/green-button.png)
-        no-repeat;
+  
+}
+.youtube-player {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  > img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .play {
+    &::after {
+      position: absolute;
+      content: '\e91b';
+      font-family: 'icomoon';
       height: 80px;
+      background: #F900FF;
       width: 80px;
-      background-size: cover;
-    }
-    &:hover {
-      .play {
-        background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow.png);
-      }
-    }
+      color: #000;
+      text-align: center;
+      /* padding: 2rem; */
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      justify-content: center;
+  }
   }
 }
 .profile-hero-banner .reference-card-block .youtube-player > img {
   position: static;
-}
-.youtube-play-icon {
-  .youtube-player {
-    .play {
-      display: none;
-    }
-  }
 }

@@ -50,6 +50,18 @@
   @extend .bottom-right-arrow;
 }
 
+.card-content-container{
+  position: relative;
+&::after {
+ @extend .bottom-right-arrow;
+ bottom: auto;
+ top: -50px;
+}
+}
+.play{
+  display: block;
+
+}
 /* Health pro End */
 
 .scroll-down-arrow {

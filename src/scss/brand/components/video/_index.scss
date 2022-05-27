@@ -27,16 +27,21 @@
       height: 100%;
     }
     .play {
-      background: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/green-button.png)
-        no-repeat;
-      height: 80px;
-      width: 80px;
-      background-size: cover;
+      &::after {
+        position: absolute;
+        content: '\e91b';
+        font-family: 'icomoon';
+        height: 80px;
+        background: #F900FF;
+        width: 80px;
+        color: #000;
+        text-align: center;
+        /* padding: 2rem; */
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        justify-content: center;
     }
-    &:hover {
-      .play {
-        background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/black-arrow.png);
-      }
     }
   }
 }

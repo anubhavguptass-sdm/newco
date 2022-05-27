@@ -18,6 +18,11 @@
     }
   }
 }
+.youtube-player {
+  .play {
+    display: none;
+  }
+}
 .youtube-play-icon {
   height: auto;
   padding: 0;
@@ -28,7 +33,7 @@
     height: 100%;
   }
   .play {
-    display: none;
+    display: block;
     &::after {
       position: absolute;
       content: '\e91b';
@@ -49,8 +54,4 @@
 .profile-hero-banner .reference-card-block .youtube-player > img {
   position: static;
 }
-.youtube-player {
-  .play {
-    display: none;
-  }
-}
+

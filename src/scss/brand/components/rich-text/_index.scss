@@ -65,10 +65,16 @@
     .bottom-pos-0 {
       position: relative;
     }
-
     > .component-content > .paragraphSystem {
       flex-direction: column !important;
       flex-wrap: initial;
+    }
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 992px) {
+  .card-text-image{
+    &.bottom-pos-0 {
+      position: relative !important;
     }
   }
 }

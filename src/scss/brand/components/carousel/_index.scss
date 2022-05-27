@@ -6,7 +6,7 @@
     height: auto !important;
     .richText {
       padding: 0 1rem;
-      &.even{
+      &.even {
         padding: 0;
       }
     }
@@ -21,7 +21,7 @@
       li {
         background: rgba(0, 0, 0, 0.5);
         border: none;
-        color: $color-white !important;
+        color: $color-grey-3 !important;
       }
     }
   }

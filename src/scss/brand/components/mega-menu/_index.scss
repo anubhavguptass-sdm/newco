@@ -555,7 +555,7 @@ header {
     max-width: 15%;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1023px) {
   .megamenu-navigation .megamenu-logo > .component-content a,
   .megamenu-navigation .megamenu-logo > .component-content a:hover,
   .simple-navigation .megamenu-logo > .component-content a,
@@ -1135,6 +1135,37 @@ li.page-careers a::before {
   .megamenu-main-nav > * > .navigation-mobile-menu {
     display: none;
   }
-  .megamenu-main-nav > * > .navigation-root.navigation-level1 {
+  .megamenu-main-nav>*>.navigation-root.navigation-level1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 45px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .megamenu-top-bar-left > .component-content > .paragraphSystem {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0;
+    padding: 0;
+  }
+  .megamenu-nav-container {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: auto !important;
+    flex: auto !important;
+    max-width: 100vw;
+    min-height: 45px !important;
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 8;
+    order: 8;
+    width: 100vw;
   }
 }

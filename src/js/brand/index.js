@@ -113,21 +113,23 @@ const { all } = require('core-js/fn/promise');
     ).removeClass('megamenu-remove');
     $('.megamenu-submenu-item').addClass('megamenu-remove');
   });
-// it for scroll section based on href
-$( '.scrollPage' ).on( 'click', function(e){
-  var href = $(this).attr( 'href' );
- let height = $( href ).offset().top -300;
-  $( 'html, body' ).animate({
+  // it for scroll section based on href
+  $('.scrollPage').on('click', function(e) {
+    var href = $(this).attr('href');
+    let height = $(href).offset().top - 300;
+    $('html, body').animate(
+      {
         scrollTop: height
-  }, '300' );
-  e.preventDefault();
-});
+      },
+      '300'
+    );
+    e.preventDefault();
+  });
 
   // Mobile Menu
 
   // Show More Filter
   $(document).ready(function() {
-
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');
     });

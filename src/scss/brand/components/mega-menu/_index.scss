@@ -316,8 +316,8 @@ header {
       max-width: 10% !important;
     }
     @media (min-width: $breakpoint-md-min) {
-      width: 12%;
-      max-width: 12%;
+      width: 10%;
+      max-width: 10%;
     }
     @media (min-width: $breakpoint-sd-min) {
       width: 12%;
@@ -338,7 +338,7 @@ header {
       max-width: 6.5% !important;
     }
     @media only screen and (min-width: 1024px) {
-      right: -18px;
+      right: -10px;
       top: -6px;
     }
     .searchBox {
@@ -495,15 +495,18 @@ header {
   }
   .megamenu-top-bar-right {
     // Newly Added
-    @media (min-width: $breakpoint-md-min) {
+    @include md {
       width: 24%;
       max-width: 24%;
-      margin-left: 4%;
+      margin-left: 6%;
       order: 3;
       .richText {
         margin-right: 0;
         margin-left: 0;
       }
+    }
+    @include sd {
+      margin-left: 4%;
     }
     @media (min-width: $breakpoint-xl-min) {
       max-width: 17%;

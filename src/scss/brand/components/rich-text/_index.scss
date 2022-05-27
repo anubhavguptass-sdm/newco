@@ -51,17 +51,21 @@
   font-style: normal;
 }
 
-.card-content-container {
-  position: relative;
-  &::after {
-    @extend .bottom-right-arrow;
-    bottom: auto;
-    top: -50px;
-  }
+.card-content-container{
+ position: relative;
+&::after {
+ @extend .bottom-right-arrow;
+ bottom: auto;
+ top: -50px;
+ width: 48px;
+}
 }
 .play {
   display: block;
 }
+.leader-card-bg {
+  background: #eaeaea;
+  }
 /* Health pro End */
 
 .scroll-down-arrow {

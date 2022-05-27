@@ -27,8 +27,9 @@
     max-width: $max-content-width !important;
   }
 
-  @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-min) {
+  @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-max) {
     max-width: $max-content-md-width !important;
+    width: calc(100% - 1.5rem);
   }
 }
 

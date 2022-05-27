@@ -33,29 +33,29 @@
       top: -100%;
       z-index: -1;
     }
-  }
-  &.two-steps {
-    width: 80%;
-    background: transparent;
-    @include sm {
-      background: var(--bg-color-2);
-      margin-left: -2rem;
-      padding-left: 2rem;
-    }
-
-    &:before {
-      height: 100%;
-      top: 100%;
-      width: 110%;
-      left: -10%;
-
+    &.two-steps {
+      width: 80%;
+      background: transparent;
       @include sm {
-        height: 100%;
-        left: -100vw;
-        width: 100vw;
+        background: var(--bg-color-2);
+        margin-left: -2rem;
+        padding-left: 2rem;
       }
-      &:after {
-        top: 0;
+  
+      &:before {
+        height: 100%;
+        top: 100%;
+        width: 110%;
+        left: -10%;
+  
+        @include sm {
+          height: 100%;
+          left: -100vw;
+          width: 100vw;
+        }
+        &:after {
+          top: 0 !important;
+        }
       }
     }
   }

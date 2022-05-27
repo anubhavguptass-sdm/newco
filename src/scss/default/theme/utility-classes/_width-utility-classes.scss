@@ -27,7 +27,7 @@
     max-width: $max-content-width !important;
   }
 
-  @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-min) {
+  @media (min-width: $breakpoint-md-min) and (max-width: ($breakpoint-lg-min-1)) {
     max-width: $max-content-md-width !important;
   }
 }

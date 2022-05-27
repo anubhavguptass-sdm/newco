@@ -16,7 +16,9 @@ $max-columns-in-row: 6 !default;
 
 // MAX CONTENT WIDTH FOR BOTH USED RENDITIONS
 $max-content-width: 1440px !default;
-$max-content-md-width: 1140px !default;
+$max-content-md-width: 940px !default;
+$max-content-sd-width: 1080px !default;
+$max-content-lg-width: 1200px !default;
 
 // DEFAULT TRANSITION DURATION
 $transition-duration: 0.2s;

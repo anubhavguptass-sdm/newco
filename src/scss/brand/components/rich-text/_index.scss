@@ -60,9 +60,8 @@
   }
 }
 
-/* Home page bg grey section */
-@media only screen and (max-width: 1280px) and (min-width: 992px) {
-  .card-text-image {
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+  .card-text-image-small {
     .bottom-pos-0 {
       position: relative;
     }
@@ -71,4 +70,3 @@
     }
   }
 }
-/* home page end */

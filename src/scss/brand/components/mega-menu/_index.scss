@@ -710,6 +710,7 @@ header {
     > .navigation-item {
     justify-content: left;
     text-align: left; /* min-height: 26px; */
+    width: 100%;
   }
 }
 .megamenu-navigation
@@ -1116,6 +1117,41 @@ li.page-careers a::before {
     font-size: $font-size-16;
   }
 }
+.megamenu-navigation .megamenu > .component-content,
+.simple-navigation .megamenu > .component-content {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  background: #fff;
+  left: 0;
+  max-height: 50px;
+  min-height: 50px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  width: 100%;
+  z-index: 9;
+  @include sd {
+    background: transparent;
+    max-height: none;
+    max-width: 940px;
+    min-height: auto;
+    overflow: visible;
+    position: relative;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
 @include md {
   .megamenu-main-nav > * > .navigation-root.navigation-level1 {
     background: transparent;
@@ -1130,12 +1166,15 @@ li.page-careers a::before {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .megamenu-main-nav > * > .navigation-mobile-menu {
+    display: block;
+  }
 }
 @include sd {
   .megamenu-main-nav > * > .navigation-mobile-menu {
     display: none;
   }
-  .megamenu-main-nav>*>.navigation-root.navigation-level1 {
+  .megamenu-main-nav > * > .navigation-root.navigation-level1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

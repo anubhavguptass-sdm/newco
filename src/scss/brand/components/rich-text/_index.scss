@@ -46,8 +46,9 @@
     }
   }
 }
-.media-image{
+.media-image {
   @extend .bottom-right-arrow;
+  font-style: normal;
 }
 
 .card-content-container{

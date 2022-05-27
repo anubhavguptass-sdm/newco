@@ -51,17 +51,16 @@
   font-style: normal;
 }
 
-.card-content-container{
+.card-content-container {
   position: relative;
-&::after {
- @extend .bottom-right-arrow;
- bottom: auto;
- top: -50px;
+  &::after {
+    @extend .bottom-right-arrow;
+    bottom: auto;
+    top: -50px;
+  }
 }
-}
-.play{
+.play {
   display: block;
-
 }
 /* Health pro End */
 

@@ -28,7 +28,7 @@ header {
     > .component-content {
       padding: 0 2rem !important;
     }
-    @include sd {
+    @media only screen and (min-width: 992px) {
       padding: 0.75rem 2rem 0 2rem !important;
       border-bottom: 2px solid $color-grey-3;
     }

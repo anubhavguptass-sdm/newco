@@ -113,11 +113,6 @@ const { all } = require('core-js/fn/promise');
     ).removeClass('megamenu-remove');
     $('.megamenu-submenu-item').addClass('megamenu-remove');
   });
-
-  // Mobile Menu
-
-  // Show More Filter
-  $(document).ready(function() {
 // it for scroll section based on href
 $( '.scrollPage' ).on( 'click', function(e){
   var href = $(this).attr( 'href' );
@@ -127,6 +122,11 @@ $( '.scrollPage' ).on( 'click', function(e){
   }, '300' );
   e.preventDefault();
 });
+
+  // Mobile Menu
+
+  // Show More Filter
+  $(document).ready(function() {
 
 
     $('.megamenu-navigation .searchBox button').click(function() {

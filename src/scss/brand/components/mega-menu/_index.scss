@@ -913,9 +913,6 @@ header {
         display: inline-block;
         padding: 3px;
         position: absolute;
-        /* right: 4px; */
-        /* position: absolute; */
-        /* top: 71px; */
         margin-left: 0.5rem;
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
@@ -1081,7 +1078,7 @@ li.page-careers a::before {
   padding: 3px;
   position: absolute;
   color: #000;
-  right: -1.5rem;
+  right: -1.2rem;
   @include md {
     display: none;
   }

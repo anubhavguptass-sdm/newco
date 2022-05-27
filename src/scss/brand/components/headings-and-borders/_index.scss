@@ -41,21 +41,21 @@
         margin-left: -2rem;
         padding-left: 2rem;
       }
-  
+
       &:before {
         height: 100%;
         top: 100%;
         width: 110%;
         left: -10%;
-  
+
         @include sm {
           height: 100%;
           left: -100vw;
           width: 100vw;
         }
-        &:after {
-          top: 0 !important;
-        }
+      }
+      &:after {
+        top: 0 !important;
       }
     }
   }

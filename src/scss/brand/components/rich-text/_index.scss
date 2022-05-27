@@ -51,17 +51,17 @@
   font-style: normal;
 }
 
-.card-content-container{
- position: relative;
-&::after {
- @extend .bottom-right-arrow;
- bottom: auto;
- bottom: auto;
- top: -48px;
- width: 50px;
- height: 48px;
- line-height: 48px;
-}
+.card-content-container {
+  position: relative;
+  &::after {
+    @extend .bottom-right-arrow;
+    bottom: auto;
+    bottom: auto;
+    top: -48px;
+    width: 50px;
+    height: 48px;
+    line-height: 48px;
+  }
 }
 
 .leader-card-bg {

@@ -80,10 +80,10 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .card-text-image{
-    >.component-content > .paragraphSystem{
-        flex-direction: column !important;
-        flex-wrap: initial;
-      }
+  .card-text-image {
+    > .component-content > .paragraphSystem {
+      flex-direction: column !important;
+      flex-wrap: initial;
+    }
   }
 }

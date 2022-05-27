@@ -27,6 +27,7 @@
       height: 100%;
     }
     .play {
+      display: none;
       &::after {
         position: absolute;
         content: '\e91b';
@@ -48,10 +49,8 @@
 .profile-hero-banner .reference-card-block .youtube-player > img {
   position: static;
 }
-.youtube-play-icon {
   .youtube-player {
     .play {
       display: none;
     }
   }
-}

@@ -52,7 +52,7 @@
 }
 
 .card-content-container{
-  position: relative;
+ position: relative;
 &::after {
  @extend .bottom-right-arrow;
  bottom: auto;
@@ -62,8 +62,10 @@
 }
 .play{
   display: block;
-
 }
+.leader-card-bg {
+  background: #eaeaea;
+  }
 /* Health pro End */
 
 .scroll-down-arrow {

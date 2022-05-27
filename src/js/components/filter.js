@@ -399,7 +399,7 @@ String.prototype.regexIndexOf = function(regex, startpos) {
     }
   }
 
-   initFilters = () => {
+  initFilters = () => {
     if (!bpComponents.bpLanguages.loaded) {
       setTimeout(initFilters, 10);
       return;

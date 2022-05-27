@@ -555,7 +555,7 @@ header {
     max-width: 15%;
   }
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 991px) {
   .megamenu-navigation .megamenu-logo > .component-content a,
   .megamenu-navigation .megamenu-logo > .component-content a:hover,
   .simple-navigation .megamenu-logo > .component-content a,
@@ -601,7 +601,7 @@ header {
   margin: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 991px) {
   .megamenu-navigation
     .megamenu-main-nav
     > .component-content
@@ -710,7 +710,6 @@ header {
     > .navigation-item {
     justify-content: left;
     text-align: left; /* min-height: 26px; */
-    width: 100%;
   }
 }
 .megamenu-navigation
@@ -1115,145 +1114,5 @@ li.page-careers a::before {
   font-size: $font-size-12;
   @include sm {
     font-size: $font-size-16;
-  }
-}
-
-@include md {
-  .megamenu-main-nav > * > .navigation-root.navigation-level1 {
-    background: transparent;
-    border: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .megamenu-main-nav > * > .navigation-mobile-menu {
-    display: block;
-  }
-}
-@include sd {
-  .megamenu-main-nav > * > .navigation-mobile-menu {
-    display: none;
-  }
-  .megamenu-main-nav > * > .navigation-root.navigation-level1 {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 45px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1440px;
-  }
-  .megamenu-top-bar-left > .component-content > .paragraphSystem {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100%;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    padding: 0;
-    padding: 0;
-  }
-  .megamenu-nav-container {
-    -webkit-box-flex: 1 !important;
-    -ms-flex: auto !important;
-    flex: auto !important;
-    max-width: 100vw;
-    min-height: 45px !important;
-    -webkit-box-ordinal-group: 9;
-    -ms-flex-order: 8;
-    order: 8;
-    width: 100vw;
-  }
-}
-.megamenu.nav-opened > .component-content {
-  max-height: 100vh;
-  min-height: 100vh;
-  overflow: auto;
-  background-color: #fff;
-  @include sd {
-    background: transparent;
-    max-height: none;
-    min-height: auto;
-    overflow: visible;
-  }
-}
-.megamenu-navigation .megamenu > .component-content,
-.simple-navigation .megamenu > .component-content {
-  -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
-  transform-origin: top center;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-  background: #fff;
-  left: 0;
-  max-height: 50px;
-  min-height: 50px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-  width: 100%;
-  z-index: 9;
-  @include sd {
-    background: transparent;
-    max-height: none;
-    max-width: 940px;
-    min-height: auto;
-    overflow: visible;
-    position: relative;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .megamenu-top-bar-left {
-    margin: 1rem 0;
-    -webkit-box-ordinal-group: 5;
-    -ms-flex-order: 4;
-    order: 4;
-  }
-  .megamenu-logo {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-    position: relative;
-  }
-  .megamenu-top-bar-right {
-    margin: 0;
-    -webkit-box-ordinal-group: 6;
-    -ms-flex-order: 5;
-    order: 5;
-  }
-  .megamenu-search {
-    -webkit-animation: searchshow 0.2s ease forwards;
-    animation: searchshow 0.2s ease forwards;
-    margin: 0;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-    overflow: hidden;
-  }
-  .megamenu-nav-container {
-    margin: 0;
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-    padding: 0;
   }
 }

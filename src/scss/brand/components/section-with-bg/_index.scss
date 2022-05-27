@@ -72,13 +72,13 @@
   img {
     width: 100%;
   }
-  
+
   .card-content {
     padding: 1rem;
   }
-  .banner-over-content{
+  .banner-over-content {
     margin-top: 1.5rem;
-    @include sm{
+    @include sm {
       padding: 2rem;
       margin-top: 3rem;
     }
@@ -88,7 +88,7 @@
       width: fit-content !important;
       margin-left: 0;
       margin-right: 0;
-      @include sm{
+      @include sm {
         margin-left: auto;
         margin-right: auto;
       }

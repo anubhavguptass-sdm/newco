@@ -601,7 +601,7 @@ header {
   margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .megamenu-navigation
     .megamenu-main-nav
     > .component-content
@@ -1114,5 +1114,27 @@ li.page-careers a::before {
   font-size: $font-size-12;
   @include sm {
     font-size: $font-size-16;
+  }
+}
+@include md {
+  .megamenu-main-nav > * > .navigation-root.navigation-level1 {
+    background: transparent;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+@include sd {
+  .megamenu-main-nav > * > .navigation-mobile-menu {
+    display: none;
+  }
+  .megamenu-main-nav > * > .navigation-root.navigation-level1 {
   }
 }

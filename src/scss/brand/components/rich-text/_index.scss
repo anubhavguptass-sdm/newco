@@ -65,8 +65,10 @@
     .bottom-pos-0 {
       position: relative;
     }
+
     > .component-content > .paragraphSystem {
       flex-direction: column !important;
+      flex-wrap: initial;
     }
   }
 }

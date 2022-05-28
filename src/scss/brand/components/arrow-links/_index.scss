@@ -7,12 +7,12 @@
     font-size: 20px;
     background-color: $color-primary;
     position: absolute;
-    right: 2px;
-    bottom: 2px;
+    right: 0px;
+    bottom: 0px;
     width: 72px;
     line-height: 72px;
     color: $color-2;
-    outline: 2px solid $color-primary;
+    border: 2px solid $color-primary;
   }
   &.arrow-size-small {
     &:after {

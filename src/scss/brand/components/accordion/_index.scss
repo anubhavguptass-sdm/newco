@@ -26,6 +26,7 @@
         .accordion-head {
           position: relative;
           cursor: pointer;
+          z-index: auto;
           &::after {
             right: 0;
             position: absolute !important;

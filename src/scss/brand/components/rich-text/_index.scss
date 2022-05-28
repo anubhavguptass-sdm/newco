@@ -162,14 +162,14 @@
     position: absolute;
     top: 0;
   }
- .reference-bp-share-icon-svg{
-   margin: 2rem 0;
-   display: inline-block;
+  .reference-bp-share-icon-svg {
+    margin: 2rem 0;
+    display: inline-block;
     width: 3.25rem;
-   @include sm{
-   display: block;
+    @include sm {
+      display: block;
+    }
   }
-}
 }
 
 .dashed-tag {

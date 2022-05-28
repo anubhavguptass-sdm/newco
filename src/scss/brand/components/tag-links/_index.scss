@@ -5,6 +5,14 @@ ul.tag-links {
     padding: 0.25rem;
     margin-right: 10px;
     font-size: 0.875rem;
+    @include sm {
+      padding: 2px;
+      margin-right: 1px;
+    }
+    @include sd {
+      padding: 0.25rem;
+      margin-right: 10px;
+    }
     &::before {
       display: none;
     }

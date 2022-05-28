@@ -18,6 +18,12 @@
       position: relative;
       top: -2.5rem;
       left: 10px;
+      @include sm {
+        left: 3px;
+      }
+      @include sd {
+        left: 10px;
+      }
       li {
         background: rgba(0, 0, 0, 0.5);
         border: none;
@@ -52,7 +58,6 @@
         border-radius: 30px;
         top: 0rem;
         left: auto;
-        background-color: $color-grey-3;
         &:after {
           font-family: 'icomoon';
         }

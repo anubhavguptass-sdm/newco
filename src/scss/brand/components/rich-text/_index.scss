@@ -134,7 +134,7 @@
 
   background: #000;
   color: #fff;
-  @include xs {
+  @include sm {
     top: 3.75rem;
     left: 1rem;
     max-width: fit-content;
@@ -157,23 +157,19 @@
   }
 }
 .article-social-share {
-  width: 1.25rem;
   text-align: center;
   @include sm {
     position: absolute;
     top: 0;
   }
-  .reference-bp-share-icon-svg {
-    margin: 2rem 0;
-    display: inline-block;
-    @include sm {
-      display: block;
-    }
-    .share-icon {
-      padding: 1rem;
-      border: 2px solid $color-2;
-    }
+ .reference-bp-share-icon-svg{
+   margin: 2rem 0;
+   display: inline-block;
+    width: 3.25rem;
+   @include sm{
+   display: block;
   }
+}
 }
 
 .dashed-tag {

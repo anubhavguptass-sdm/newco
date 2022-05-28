@@ -30,6 +30,9 @@
     max-width: 50% !important;
     flex-basis: 50% !important;
     background-color: $color-white;
+    &::after{
+      display: none;
+    }
   }
  }
 }

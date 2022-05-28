@@ -217,7 +217,7 @@ a[style*='visibility:hidden'] {
   }
 }
 .width-auto img {
-  width: auto;
+  width: auto !important;
 }
 .max-content-width-1140 {
   max-width: 100%;

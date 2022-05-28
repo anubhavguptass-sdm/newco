@@ -107,11 +107,13 @@
 }
 
 .full-clickable-box:hover {
+  overflow: hidden;
+  position: relative;
   a:after {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 1;
@@ -129,4 +131,8 @@
       outline: 2px solid $color-2;
     }
   }
+}
+
+.carousel .full-clickable-box:hover a:after {
+  width: 100%;
 }

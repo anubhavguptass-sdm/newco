@@ -124,10 +124,9 @@
   width: 100%;
 }
 
-
 // article breadcrumb
 
-.article-breadcrumbs{
+.article-breadcrumbs {
   z-index: 1;
   top: 1rem;
   left: 1rem;
@@ -143,9 +142,9 @@
     padding-left: 1rem;
     line-height: 35px;
     margin: 0;
-    .breadcrumb-list-item{
+    .breadcrumb-list-item {
       margin-right: 1rem;
-      a{
+      a {
         color: #fff;
       }
     }
@@ -162,12 +161,11 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  li{
+  li {
     border: 1px dashed $color-1;
     margin: 0 5px !important;
     padding: 5px 10px !important;
     color: $color-2 !important;
-
   }
 }
 .small-icon {
@@ -183,7 +181,7 @@
     padding-top: 1.5rem !important;
     padding-left: 0rem !important;
     &::before {
-      content: none;
+      content: none !important;
     }
     span {
       margin-right: 1.5rem;

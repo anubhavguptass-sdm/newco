@@ -154,6 +154,11 @@ a[style*='visibility:hidden'] {
 .d-block {
   display: block;
 }
+.d-md-block {
+  @media screen and (max-width: 991px) {
+    display: block;
+  }
+}
 .d-inline-block {
   display: inline-block;
 }

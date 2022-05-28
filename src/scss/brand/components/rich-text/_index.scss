@@ -116,7 +116,7 @@
     left: 0;
     z-index: 1;
   }
-  .card-image-with-link {
+  .image {
     &:after {
       filter: grayscale(100) contrast(100) invert(1);
     }
@@ -124,7 +124,7 @@
 }
 
 .full-clickable-box:focus-within {
-  .card-image-with-link {
+  .image {
     &:after {
       outline: 2px solid $color-2;
     }

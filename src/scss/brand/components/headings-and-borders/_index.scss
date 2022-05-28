@@ -36,6 +36,18 @@
     &.two-steps {
       width: 85%;
       background: transparent;
+      &.one-step-lower {
+        width: 100%;
+        &:after {
+          content: none;
+        }
+      }
+      &.one-step-upper {
+        width: 100%;
+        &:before {
+          content: none;
+        }
+      }
       @include sm {
         background: var(--bg-color-2);
         margin-left: -2rem;

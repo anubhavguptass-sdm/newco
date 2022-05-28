@@ -1,8 +1,5 @@
 .reference-card-block {
   .media-image.media-container {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex-basis: 100% !important;
     min-height: 14rem;
     @include sd {
       min-height: 10rem;

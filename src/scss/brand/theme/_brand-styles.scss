@@ -135,7 +135,13 @@ strong {
 .text-center {
   text-align: center;
 }
-
+.text-center-m,
+.text-center-m > .component-content,
+text-center-m * {
+  @media screen and (max-width: 767px) {
+    text-align: center !important;
+  }
+}
 .text-right {
   text-align: right;
 }

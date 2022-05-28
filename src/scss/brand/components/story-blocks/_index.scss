@@ -37,7 +37,7 @@
   > .component-content {
     height: 100% !important;
   }
-  @include xs {
+  @include sd {
     width: 50%;
   }
   .story-block {

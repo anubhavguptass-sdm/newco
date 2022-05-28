@@ -167,10 +167,13 @@
     width: 3.25rem;
    @include sm{
    display: block;
+   }
+   .share-icon {
+    padding: 1rem;
+    border: 2px solid $color-2;
   }
 }
 }
-
 .dashed-tag {
   display: flex;
   text-align: center;

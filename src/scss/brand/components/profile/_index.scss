@@ -23,13 +23,14 @@
 .leader-card-bg {
   background: #eaeaea;
 }
-.profile-hero-banner{
- @include sm{
-  .media-container , .card-content-container{
-    width: 50% !important;
-    max-width: 50% !important;
-    flex-basis: 50% !important;
-    background-color: $color-white;
+.profile-hero-banner {
+  @include sm {
+    .media-container,
+    .card-content-container {
+      width: 50% !important;
+      max-width: 50% !important;
+      flex-basis: 50% !important;
+      background-color: $color-white;
+    }
   }
- }
 }

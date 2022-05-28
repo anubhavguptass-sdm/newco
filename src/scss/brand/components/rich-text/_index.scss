@@ -51,19 +51,6 @@
   font-style: normal;
 }
 
-.card-content-container {
-  position: relative;
-  &::after {
-    @extend .bottom-right-arrow;
-    bottom: auto;
-    bottom: auto;
-    top: -50px;
-    width: 50px;
-    height: 48px;
-    line-height: 48px;
-  }
-}
-
 /* Health pro End */
 
 .scroll-down-arrow {
@@ -185,4 +172,19 @@
 }
 .small-icon {
   width: 15px !important;
+}
+
+// end
+
+.numeric-list {
+  li {
+    display: flex !important;
+    padding-top: 1.5rem !important;
+    padding-left: 0rem !important;
+    span {
+      margin-right: 1.5rem;
+      font-size: 5rem;
+      line-height: 4rem !important;
+    }
+  }
 }

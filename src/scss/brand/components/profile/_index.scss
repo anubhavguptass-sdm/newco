@@ -20,19 +20,16 @@
     z-index: 0;
   }
 }
-.leadership-single-page {
-  .card-content-container {
-    width: 100% !important;
-
-    @include sm {
-      width: 50% !important;
-    }
+.leader-card-bg {
+  background: #eaeaea;
+}
+.profile-hero-banner{
+ @include sm{
+  .media-container , .card-content-container{
+    width: 50% !important;
+    max-width: 50% !important;
+    flex-basis: 50% !important;
+    background-color: $color-white;
   }
-  .media-container {
-    width: 100%;
-
-    @include sm {
-      flex-basis: 50% !important;
-    }
-  }
+ }
 }

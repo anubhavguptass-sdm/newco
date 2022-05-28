@@ -14,9 +14,6 @@
     display: flex;
     margin-bottom: 1rem;
     position: relative;
-    &:last-child {
-      margin-bottom: 0rem;
-    }
   }
   .story-image {
     width: 40%;
@@ -36,11 +33,11 @@
 }
 
 .story-left-list {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
   > .component-content {
     height: 100% !important;
   }
-  @include sm {
+  @include xs {
     width: 50%;
   }
   .story-block {

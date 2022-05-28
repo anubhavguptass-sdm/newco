@@ -124,10 +124,14 @@
   width: 100%;
 }
 .numeric-list {
+  list-style-type: none;
   li {
     display: flex !important;
     padding-top: 1.5rem !important;
     padding-left: 0rem !important;
+    &::before {
+      content: none;
+    }
     span {
       margin-right: 1.5rem;
       font-size: 5rem;

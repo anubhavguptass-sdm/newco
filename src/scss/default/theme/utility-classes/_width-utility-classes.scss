@@ -31,6 +31,12 @@
     max-width: $max-content-md-width !important;
     width: calc(100% - 1.5rem);
   }
+  &.max-width-80 {
+    max-width: 100% !important;
+    @include sm {
+      max-width: 80% !important;
+    }
+  }
 }
 
 @if $include-width-utility-classes {

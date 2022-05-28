@@ -136,3 +136,15 @@
 .carousel .full-clickable-box:hover a:after {
   width: 100%;
 }
+.numeric-list {
+  li {
+    display: flex !important;
+    padding-top: 1.5rem !important;
+    padding-left: 0rem !important;
+    span {
+      margin-right: 1.5rem;
+      font-size: 5rem;
+      line-height: 4rem !important;
+    }
+  }
+}

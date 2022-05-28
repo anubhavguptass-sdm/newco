@@ -123,3 +123,77 @@
 .carousel .full-clickable-box:hover a:after {
   width: 100%;
 }
+
+// article breadcrumb
+
+.article-breadcrumbs {
+  z-index: 1;
+ 
+  background: #000;
+  color: #fff;
+  @include xs{
+    top: 3.75rem;
+    left: 1rem;
+    max-width: fit-content;
+  }
+  .breadcrumbs-list {
+    list-style: none;
+    list-style: none;
+    display: block;
+    padding: 0;
+    height: 35px;
+    padding-left: 1rem;
+    line-height: 35px;
+    margin: 0;
+    .breadcrumb-list-item {
+      margin-right: 1rem;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+.article-social-share {
+  position: absolute;
+  top: 0;
+}
+
+
+
+.dashed-tag{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  li {
+    border: 1px dashed $color-1;
+    margin: 0 5px !important;
+    padding: 5px 10px !important;
+    color: $color-2 !important;
+  }
+}
+
+
+
+
+.small-icon {
+  width: 15px !important;
+}
+
+// end
+
+.numeric-list {
+  list-style-type: none;
+  li {
+    display: flex !important;
+    padding-top: 1.5rem !important;
+    padding-left: 0rem !important;
+    &::before {
+      content: none !important;
+    }
+    span {
+      margin-right: 1.5rem;
+      font-size: 5rem;
+      line-height: 4rem !important;
+    }
+  }
+}

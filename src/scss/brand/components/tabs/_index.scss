@@ -130,6 +130,12 @@
       height: 8px;
     }
   }
+  .pink-underline {
+    @extend .grey-underline;
+    &::before {
+      background-color: $color-secondary-pink;
+    }
+  }
 
   @media (min-width: 992px) {
     .tabs .tabs-nav-list .tabs-nav-item a:hover,

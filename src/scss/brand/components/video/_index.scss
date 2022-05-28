@@ -1,8 +1,5 @@
 .reference-card-block {
   .media-image.media-container {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex-basis: 100% !important;
     min-height: 14rem;
     @include sd {
       min-height: 10rem;
@@ -17,41 +14,40 @@
       width: 100%;
     }
   }
-  .youtube-play-icon {
-    height: auto;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    > img {
-      object-fit: cover;
-      height: 100%;
-    }
-    .play {
-      &::after {
-        position: absolute;
-        content: '\e91b';
-        font-family: 'icomoon';
-        height: 80px;
-        background: #f900ff;
-        width: 80px;
-        color: #000;
-        text-align: center;
-        /* padding: 2rem; */
-        display: flex;
-        align-items: center;
-        font-size: 1.5rem;
-        justify-content: center;
-      }
+}
+.youtube-player {
+  .play {
+    display: none;
+  }
+}
+.youtube-play-icon {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  > img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .play {
+    display: block;
+    &::after {
+      position: absolute;
+      content: '\e91b';
+      font-family: 'icomoon';
+      height: 80px;
+      background: #f900ff;
+      width: 80px;
+      color: #000;
+      text-align: center;
+      /* padding: 2rem; */
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      justify-content: center;
     }
   }
 }
 .profile-hero-banner .reference-card-block .youtube-player > img {
   position: static;
-}
-.youtube-play-icon {
-  .youtube-player {
-    .play {
-      display: none;
-    }
-  }
 }

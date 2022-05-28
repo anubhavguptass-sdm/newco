@@ -6,7 +6,7 @@ body {
   }
 }
 #content {
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     margin-top: 180px;
   }
 }
@@ -217,7 +217,7 @@ a[style*='visibility:hidden'] {
   }
 }
 .width-auto img {
-  width: auto;
+  width: auto !important;
 }
 .max-content-width-1140 {
   max-width: 100%;
@@ -225,6 +225,9 @@ a[style*='visibility:hidden'] {
     max-width: 1140px;
     margin: auto;
   }
+}
+.m-auto{
+  margin: auto !important;
 }
 .p-m-x-1-5 {
   padding-left: 1.5rem !important;

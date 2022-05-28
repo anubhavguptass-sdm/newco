@@ -128,10 +128,10 @@
 
 .article-breadcrumbs {
   z-index: 1;
- 
+
   background: #000;
   color: #fff;
-  @include xs{
+  @include xs {
     top: 3.75rem;
     left: 1rem;
     max-width: fit-content;
@@ -173,9 +173,7 @@
  }
 }
 
-
-
-.dashed-tag{
+.dashed-tag {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -186,9 +184,6 @@
     color: $color-2 !important;
   }
 }
-
-
-
 
 .small-icon {
   width: 15px !important;

@@ -51,19 +51,6 @@
   font-style: normal;
 }
 
-.card-content-container {
-  position: relative;
-  &::after {
-    @extend .bottom-right-arrow;
-    bottom: auto;
-    bottom: auto;
-    top: -50px;
-    width: 50px;
-    height: 48px;
-    line-height: 48px;
-  }
-}
-
 /* Health pro End */
 
 .scroll-down-arrow {

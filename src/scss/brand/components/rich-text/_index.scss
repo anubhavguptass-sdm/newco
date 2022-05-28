@@ -115,7 +115,7 @@
 .full-clickable-box:focus-within {
   .image {
     &:after {
-      outline: 2px solid $color-2;
+      border: 2px solid $color-2;
     }
   }
 }

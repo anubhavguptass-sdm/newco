@@ -157,10 +157,10 @@
   position: absolute;
   top: 0;
 }
-.article-cats {
-  margin: 2rem 0;
-}
-.article-cats ul {
+
+
+
+.dashed-tag{
   display: flex;
   text-align: center;
   justify-content: center;
@@ -171,6 +171,10 @@
     color: $color-2 !important;
   }
 }
+
+
+
+
 .small-icon {
   width: 15px !important;
 }

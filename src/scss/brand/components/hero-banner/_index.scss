@@ -33,9 +33,9 @@
         position: absolute;
         bottom: 0;
         line-height: $line-height-150;
-        right: 2rem
+        right: 2rem;
       }
-      @include sd{
+      @include sd {
         right: 0rem;
       }
       p {

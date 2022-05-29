@@ -21,7 +21,7 @@
         white-space: nowrap;
       }
     }
-    .banner-subheading{
+    .banner-subheading {
       @extend .font-size--large;
       @extend .line-height-160;
     }
@@ -34,7 +34,7 @@
         bottom: 0;
         line-height: $line-height-150;
       }
-      p{
+      p {
         @extend .font-size--medium;
         @extend .line-height-150;
       }

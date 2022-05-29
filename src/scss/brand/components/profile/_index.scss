@@ -1,4 +1,4 @@
-.leader-card-design {
+.profile-card-list-wrapper {
   .media-container {
     flex-basis: 100%;
   }
@@ -11,17 +11,6 @@
       margin: 0;
     }
   }
-}
-.leader-card-adjust {
-  .leader-card-bg {
-    background-color: $color-grey-3;
-  }
-  .accordion {
-    z-index: 0;
-  }
-}
-.leader-card-bg {
-  background: #eaeaea;
 }
 .profile-hero-banner {
   @include sm {

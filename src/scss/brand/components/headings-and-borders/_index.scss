@@ -108,9 +108,11 @@
 }
 
 .heading-with-bg {
+  color: $color-2;
   background-color: $color-primary;
   padding: 1rem;
   font-weight: $font-extra-bold;
+  line-height: $line-height-150;
 }
 .green-line {
   background: #30ea03;

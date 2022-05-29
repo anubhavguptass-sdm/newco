@@ -2,7 +2,9 @@
   * {
     color: $color-white;
   }
-  
+  .heading-with-bg {
+    color: #000;
+  }
   p {
     @extend .big-text;
   }

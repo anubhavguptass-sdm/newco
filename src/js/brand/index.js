@@ -37,7 +37,7 @@ const { all } = require('core-js/fn/promise');
       $('.title').remove();
     }
 
-    $('.card-content-container').each((ind, el) => {
+    $('.profile-card-content').each((ind, el) => {
       let contentelement = $(el),
         dtitle = contentelement.attr('data-title'),
         dsubtitle = contentelement.attr('data-subtitle'),

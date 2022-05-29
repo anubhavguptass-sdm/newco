@@ -2,7 +2,7 @@
   .media-container {
     flex-basis: 100%;
   }
-  .card-content-container {
+  .profile-card-content {
     flex-basis: auto;
     background-color: $color-grey-3;
     padding: 1rem;
@@ -26,7 +26,7 @@
 .profile-hero-banner {
   @include sm {
     .media-container,
-    .card-content-container {
+    .profile-card-content {
       width: 50% !important;
       max-width: 50% !important;
       flex-basis: 50% !important;

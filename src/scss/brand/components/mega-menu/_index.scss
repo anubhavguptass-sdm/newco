@@ -768,12 +768,6 @@ header {
     box-shadow: none !important;
     height: auto;
     padding: 0;
-    > .component-content > .paragraphSystem {
-      height: auto;
-      @include md {
-        height: 100%;
-      }
-    }
     .bg-color-3 {
       background-color: $color-grey-3;
       padding: 1rem;

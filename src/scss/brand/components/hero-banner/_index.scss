@@ -21,7 +21,7 @@
         white-space: nowrap;
       }
     }
-    .banner-subheading{
+    .banner-subheading {
       @extend .font-size--large;
       @extend .line-height-160;
     }
@@ -38,7 +38,7 @@
       @include sd{
         right: 0rem;
       }
-      p{
+      p {
         @extend .font-size--medium;
         @extend .line-height-150;
       }

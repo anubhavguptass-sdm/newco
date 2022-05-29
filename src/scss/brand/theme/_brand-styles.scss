@@ -61,7 +61,7 @@ a {
 }
 
 .font-extra-bold {
-  font-weight: $font-extra-bold;
+  font-weight: $font-extra-bold !important;
 }
 
 .font-small-12 {

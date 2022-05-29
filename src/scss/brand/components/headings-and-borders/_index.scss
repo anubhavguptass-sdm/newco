@@ -6,7 +6,7 @@
     position: relative;
     height: 100%;
     white-space: nowrap;
-    @extend .font-bold;
+    @extend .font-extra-bold;
     @include sm {
       width: 100%;
     }
@@ -108,9 +108,11 @@
 }
 
 .heading-with-bg {
+  color: $color-2;
   background-color: $color-primary;
   padding: 1rem;
   font-weight: $font-extra-bold;
+  line-height: $line-height-150;
 }
 .green-line {
   background: #30ea03;

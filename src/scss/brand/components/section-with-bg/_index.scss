@@ -16,10 +16,6 @@
   }
   .small-font {
     @extend .small-font;
-    text-align: center;
-    @include sm {
-      text-align: left;
-    }
   }
   .card-content-wrapper {
     margin-bottom: 2rem;
@@ -81,8 +77,9 @@
   }
   .banner-over-content {
     margin-top: 1.5rem;
-    padding: 2rem;
+    padding: 2rem 0.5rem;
     @include sm {
+      padding: 2rem;
       margin-top: 3rem;
     }
   }

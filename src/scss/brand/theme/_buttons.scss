@@ -98,6 +98,7 @@
 
     &:hover {
       background-color: $color-2 !important;
+      border: 2px solid $color-2;
       color: $white !important;
 
       img {

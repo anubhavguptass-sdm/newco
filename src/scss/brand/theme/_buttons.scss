@@ -97,8 +97,8 @@
     font-size: $font-size-18;
 
     &:hover {
-      background-color: $color-secondary-pink !important;
-      color: $color-2 !important;
+      background-color: $color-2 !important;
+      color: $white !important;
 
       img {
         filter: brightness(0) invert(0) !important;
@@ -106,7 +106,7 @@
     }
 
     &:focus {
-      outline: 2px solid $color-primary !important;
+      outline: 2px solid $color-2 !important;
     }
   }
 

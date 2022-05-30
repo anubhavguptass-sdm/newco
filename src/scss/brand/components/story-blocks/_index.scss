@@ -12,11 +12,17 @@
   }
   .story-block {
     display: flex;
+    flex-direction: column;
+  @include sm{
+    flex-direction: row;
+  }
     margin-bottom: 1rem;
     position: relative;
   }
   .story-image {
-    width: 40%;
+    @include sm{
+      width: 40%;
+    }
     line-height: 0;
     img {
       height: 100%;
@@ -24,7 +30,9 @@
     }
   }
   .story-content {
-    width: 60%;
+    @include sm{
+      width: 60%;
+    }
     padding: 1rem;
     background-color: $color-white;
     display: flex;
@@ -44,18 +52,18 @@
     height: 100%;
     background: #fff;
     flex-direction: column;
-    @include xs {
+    @include sm {
       flex-direction: row;
     }
   }
   .story-content {
     padding: 2rem;
-    @include xs {
+    @include sm {
       width: 60%;
     }
   }
   .story-image {
-    @include xs {
+    @include sm {
       width: 40%;
     }
     img {

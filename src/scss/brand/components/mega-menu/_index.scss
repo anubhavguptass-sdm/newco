@@ -27,6 +27,12 @@ header {
     padding: 0;
     > .component-content {
       padding: 0 2rem !important;
+      @include sd {
+        padding: 0 2rem 0 0 !important;
+      }
+      @include lg {
+        padding: 0 2rem !important;
+      }
     }
     @media only screen and (min-width: 992px) {
       padding: 0.75rem 2rem 0 2rem !important;
@@ -313,7 +319,7 @@ header {
       max-width: 8% !important;
     }
     @media (min-width: 1535px) {
-      max-width: 10% !important;
+      max-width: 8.5% !important;
     }
     @media (min-width: $breakpoint-md-min) {
       width: 10%;
@@ -322,20 +328,20 @@ header {
     @media (min-width: $breakpoint-sd-min) {
       width: 12%;
       order: 4;
-      max-width: 12%;
+      max-width: 10.5%;
       text-align: right;
       position: relative;
       right: 0;
       top: -6px;
     }
     @media (min-width: 1920px) {
-      max-width: 8.5% !important;
+      max-width: 7% !important;
     }
-    @media (min-width: 2132px) {
-      max-width: 7.5% !important;
+    @media (min-width: 2400px) {
+      max-width: 6% !important;
     }
     @media (min-width: 2880px) {
-      max-width: 6.5% !important;
+      max-width: 5% !important;
     }
     @media only screen and (min-width: 1024px) {
       right: -10px;
@@ -412,13 +418,14 @@ header {
         @include md {
           right: -20px !important;
           top: 4px !important;
-          width: 18px !important;
-          height: 18px !important;
-          background-size: 18px !important;
+          width: 20px !important;
+          height: 20px !important;
+          background-size: 20px !important;
           position: relative;
+          background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/search-line.svg');
         }
         @include sd {
-          top: 11px !important;
+          top: 10px !important;
         }
         &:hover {
           &:after {
@@ -440,7 +447,7 @@ header {
           content: 'Search';
           position: absolute;
           left: -56px;
-          top: 0px;
+          top: 2px;
           font-size: $font-size-13;
           color: $color-black;
           font-family: $font-family-default;

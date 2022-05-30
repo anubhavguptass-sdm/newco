@@ -211,7 +211,24 @@
   }
 }
 
-.progress-timeline .flex.cols-d-5 > div {
-  flex-basis: calc(100% / 5) !important;
+.progress-timeline {
+  .flex.cols-d-5>div {
+  flex-basis: calc(100% / 5);
   gap: 1rem;
+  }
+  .heading-bg-strip{
+      span {
+          display: inline-block;
+          &:before{
+              width: 10vw;
+              left: -10vw;
+              top: 100%;
+          }
+          &:after{
+              width: 10vw;
+              right: -10vw;
+              top: 100%;
+          }
+      }
+  }
 }

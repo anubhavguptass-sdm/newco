@@ -13,14 +13,14 @@
   .story-block {
     display: flex;
     flex-direction: column;
-  @include sm{
-    flex-direction: row;
-  }
+    @include sm {
+      flex-direction: row;
+    }
     margin-bottom: 1rem;
     position: relative;
   }
   .story-image {
-    @include sm{
+    @include sm {
       width: 40%;
     }
     line-height: 0;
@@ -30,7 +30,7 @@
     }
   }
   .story-content {
-    @include sm{
+    @include sm {
       width: 60%;
     }
     padding: 1rem;

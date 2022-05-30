@@ -8,109 +8,109 @@ body {
   strong {
     font-weight: $font-extra-bold;
   }
-  
-a {
-  &:focus,
-  &:focus:focus-visible {
-    outline: 2px dotted;
+
+  a {
+    &:focus,
+    &:focus:focus-visible {
+      outline: 2px dotted;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--bg-color-2);
+      color: $color-2;
+    }
+  }
+  /* global css start  */
+
+  .line-height-160 {
+    line-height: $line-height-160;
   }
 
-  &:hover,
-  &:focus {
-    background-color: var(--bg-color-2);
-    color: $color-2;
+  .line-height-150 {
+    line-height: $line-height-150;
   }
-}
-/* global css start  */
 
-.line-height-160 {
-  line-height: $line-height-160;
-}
+  .line-height-130 {
+    line-height: $line-height-130;
+  }
 
-.line-height-150 {
-  line-height: $line-height-150;
-}
+  .line-height-125 {
+    line-height: $line-height-125;
+  }
 
-.line-height-130 {
-  line-height: $line-height-130;
-}
+  .line-height-100 {
+    line-height: $line-height-100;
+  }
 
-.line-height-125 {
-  line-height: $line-height-125;
-}
+  .font-light {
+    font-weight: $font-light;
+  }
 
-.line-height-100 {
-  line-height: $line-height-100;
-}
+  .font-normal {
+    font-weight: $font-normal;
+  }
 
-.font-light {
-  font-weight: $font-light;
-}
+  .font-semi-bold {
+    font-weight: $font-semi-bold;
+  }
 
-.font-normal {
-  font-weight: $font-normal;
-}
+  .font-bold {
+    font-weight: $font-bold;
+  }
 
-.font-semi-bold {
-  font-weight: $font-semi-bold;
-}
+  .font-extra-bold {
+    font-weight: $font-extra-bold !important;
+  }
 
-.font-bold {
-  font-weight: $font-bold;
-}
+  .font-small-12 {
+    font-size: 0.75rem;
+  }
 
-.font-extra-bold {
-  font-weight: $font-extra-bold !important;
-}
+  .font-small-14 {
+    font-size: 0.875rem;
+  }
 
-.font-small-12 {
-  font-size: 0.75rem;
-}
+  .font-small-15 {
+    font-size: 0.938rem;
+  }
 
-.font-small-14 {
-  font-size: 0.875rem;
-}
+  .font-size-16 {
+    font-size: 1rem;
+  }
 
-.font-small-15 {
-  font-size: 0.938rem;
-}
+  .font-small-1-5 {
+    font-size: 1.5rem;
+  }
 
-.font-size-16 {
-  font-size: 1rem;
-}
+  .font-small-1-125 {
+    font-size: 1.125rem;
+  }
 
-.font-small-1-5 {
-  font-size: 1.5rem;
-}
+  .font-size--small {
+    font-size: 0.75rem;
+  }
+  .font-size--medium {
+    font-size: 0.875rem;
+  }
+  .font-size--large {
+    font-size: 1.125rem;
+  }
+  .color-grey-3 {
+    color: $color-3;
+  }
 
-.font-small-1-125 {
-  font-size: 1.125rem;
-}
+  .text-color-black-1 {
+    color: $color-1;
+  }
 
-.font-size--small {
-  font-size: 0.75rem;
-}
-.font-size--medium {
-  font-size: 0.875rem;
-}
-.font-size--large {
-  font-size: 1.125rem;
-}
-.color-grey-3 {
-  color: $color-3;
-}
+  .text-color-aqua {
+    color: $color-secondary-aqua;
+  }
 
-.text-color-black-1 {
-  color: $color-1;
-}
-
-.text-color-aqua {
-  color: $color-secondary-aqua;
-}
-
-.text-color-lime {
-  color: $color-secondary-lime;
-}
+  .text-color-lime {
+    color: $color-secondary-lime;
+  }
 }
 #content {
   @media (min-width: 992px) {
@@ -136,7 +136,6 @@ a {
   font-size: $font-size-18;
   line-height: $line-height-160;
 }
-
 
 .text-left {
   text-align: left;

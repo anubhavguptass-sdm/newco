@@ -5,8 +5,8 @@
   .heading-with-bg {
     color: #000;
     margin: 0 0 3rem;
-  font-weight: $font-extra-bold;
-  line-height: $line-height-150;
+    font-weight: $font-extra-bold;
+    line-height: $line-height-150;
   }
   p {
     @extend .big-text;

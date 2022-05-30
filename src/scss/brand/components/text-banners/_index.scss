@@ -9,19 +9,19 @@
     color: $color-white;
   }
 }
-.box-with-halfcover-bg{
- >.component-content{
-  @include sm {
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 50% 100%;
-    margin-top: 1rem;
+.box-with-halfcover-bg {
+  > .component-content {
+    @include sm {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 50% 100%;
+      margin-top: 1rem;
+    }
   }
- }
 }
-.box-with-fullcover-bg{
-  >.component-content{
+.box-with-fullcover-bg {
+  > .component-content {
     background-repeat: no-repeat;
     background-size: 100%;
   }
- }
+}

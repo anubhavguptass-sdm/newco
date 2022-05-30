@@ -4,9 +4,11 @@
   }
   .heading-with-bg {
     color: #000;
-    margin: 0 0 3rem;
-    font-weight: $font-extra-bold;
+    margin: 0 0 2.5rem;
     line-height: $line-height-150;
+    @include sm {
+      margin: 0 0 1rem;
+    }
   }
   p {
     @extend .big-text;
@@ -18,7 +20,10 @@
     @extend .small-font;
   }
   .card-content-wrapper {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    @include sd {
+      margin-bottom: 2rem;
+    }
     .image {
       @extend .bottom-right-arrow;
       &:after {

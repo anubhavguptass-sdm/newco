@@ -24,7 +24,7 @@
     .banner-text {
       @include sm {
         right: 0;
-        left: auto;
+        left: auto; 
       }
     }
   }
@@ -38,9 +38,12 @@
   }
   &.bottom-positioned {
     @include md {
-      bottom: -11rem;
+      bottom: -9rem;
+      z-index: 1;
       top: auto;
-      transform: translateX(-6rem);
+      margin-right: 2rem;
+      right: 0;
+      left: auto;
     }
   }
 }

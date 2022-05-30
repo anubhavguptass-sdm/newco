@@ -210,6 +210,8 @@
     }
   }
 }
-.p-m-0 {
-  padding: 0;
+
+.progress-timeline .flex.cols-d-5>div {
+  flex-basis: calc(100% / 5);
+  gap: 1rem;
 }

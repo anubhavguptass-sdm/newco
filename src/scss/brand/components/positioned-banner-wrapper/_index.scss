@@ -15,11 +15,10 @@
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      &.banner-width-50percent{
+      &.banner-width-50percent {
         min-width: calc(100% / 2 + 4rem);
       }
     }
-
   }
   &.right-positioned {
     .banner-text {

@@ -136,6 +136,12 @@
       background-color: $color-secondary-pink;
     }
   }
+  .green-underline {
+    @extend .grey-underline;
+    &::before {
+      background-color: $color-primary;
+    }
+  }
 
   @media (min-width: 992px) {
     .tabs .tabs-nav-list .tabs-nav-item a:hover,

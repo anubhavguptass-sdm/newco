@@ -9,17 +9,20 @@
     -webkit-box-shadow: 0px 16px 40px -8px #0000001a;
     box-shadow: 0px 16px 40px -8px #0000001a;
     background-color: #fff;
+
     @include sm {
       top: 50%;
       position: absolute;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+
       &.banner-width-50percent {
         min-width: calc(100% / 2 + 4rem);
       }
     }
   }
+
   &.right-positioned {
     .banner-text {
       @include sm {
@@ -28,6 +31,7 @@
       }
     }
   }
+
   &.left-positioned {
     .banner-text {
       @include sm {
@@ -36,17 +40,21 @@
       }
     }
   }
+
   &.bottom-positioned {
-    @include md {
-      bottom: -9rem;
-      z-index: 1;
-      top: auto;
-      margin-right: 2rem;
-      right: 0;
-      left: auto;
+    .banner-text {
+      @include md {
+        bottom: -9rem;
+        z-index: 1;
+        top: auto;
+        margin-right: 2rem;
+        right: 0;
+        left: auto;
+      }
     }
   }
 }
+
 .content-over-image {
   @include sm {
     position: absolute;

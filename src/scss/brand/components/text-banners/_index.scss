@@ -11,6 +11,7 @@
 }
 .box-with-halfcover-bg {
   > .component-content {
+    background-image: none;
     @include sm {
       background-repeat: no-repeat;
       background-position: right;

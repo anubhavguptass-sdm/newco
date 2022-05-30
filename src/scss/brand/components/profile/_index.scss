@@ -13,6 +13,7 @@
   .image {
     @extend .bottom-right-arrow;
     @extend .arrow-size-small;
+    
   }
 }
 .profile-hero-banner {
@@ -22,6 +23,9 @@
       width: 50%;
       max-width: 50%;
       flex-basis: 50%;
+    }
+    .image::after{
+      display: none;
     }
   }
 }

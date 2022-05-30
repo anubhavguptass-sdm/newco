@@ -36,13 +36,13 @@
       }
     }
   }
-  &.bottom-positioned{
+  &.bottom-positioned {
     @include md {
       bottom: -11rem;
       top: auto;
       transform: translateX(-6rem);
     }
-    }
+  }
 }
 .content-over-image {
   @include sm {

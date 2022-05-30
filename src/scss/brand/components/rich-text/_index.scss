@@ -56,15 +56,19 @@
 .scroll-down-arrow {
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   left: 50%;
-  bottom: 0;
+  width: auto;
+  bottom: 2px;
   transform: translateX(-50%);
   backdrop-filter: blur(32px);
+  .icon-angle-down {
+    width: 64px;
+    height: 64px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 1279px) and (min-width: 992px) {
@@ -219,6 +223,7 @@
   .heading-bg-strip {
     span {
       display: inline-block;
+      width: auto;
       &:before {
         width: 10vw;
         left: -10vw;
@@ -233,6 +238,6 @@
   }
 }
 
-.leader-card-bg{
+.leader-card-bg {
   background-color: $bg-color-3;
 }

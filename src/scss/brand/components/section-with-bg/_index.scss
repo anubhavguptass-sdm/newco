@@ -81,8 +81,8 @@
   }
   .banner-over-content {
     margin-top: 1.5rem;
+    padding: 2rem;
     @include sm {
-      padding: 2rem;
       margin-top: 3rem;
     }
   }

@@ -7,7 +7,7 @@
     margin: 0 0 2.5rem;
     font-weight: $font-extra-bold;
     line-height: $line-height-150;
-    @include sm{
+    @include sm {
       margin: 0 0 1rem;
     }
   }
@@ -22,8 +22,8 @@
   }
   .card-content-wrapper {
     margin-bottom: 0rem;
-    @include sd{
-      margin-bottom: 2rem
+    @include sd {
+      margin-bottom: 2rem;
     }
     .image {
       @extend .bottom-right-arrow;

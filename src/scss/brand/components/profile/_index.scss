@@ -23,6 +23,9 @@
       max-width: 50%;
       flex-basis: 50%;
     }
+    .image::after {
+      display: none;
+    }
   }
 }
 .reference-card-block {

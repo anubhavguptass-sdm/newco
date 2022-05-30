@@ -43,8 +43,10 @@
 
   &.bottom-positioned {
     .banner-text {
+      position: relative;
+      top: -5rem;
+      transform: translateX(-50%);
       @include md {
-        bottom: -9rem;
         z-index: 1;
         top: auto;
         margin-right: 2rem;

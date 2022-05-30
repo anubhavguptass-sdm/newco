@@ -14,16 +14,34 @@
     color: $color-2;
     border: 2px solid $color-primary;
   }
-  &.arrow-size-small {
-    &:after {
-      width: 40px;
-      line-height: 40px;
-    }
+ 
+}
+.bottom-external-arrow {
+  position: relative;
+  &::after {
+    content: '\e903';
+    font-family: 'icomoon';
+    text-align: center;
+    font-size: 20px;
+    background-color: $color-primary;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 72px;
+    line-height: 72px;
+    color: $color-2;
+    border: 2px solid $color-primary;
   }
-  &.arrow-size-medium {
-    &:after {
-      width: 48px;
-      line-height: 48px;
-    }
+}
+.arrow-size-small {
+  &:after {
+    width: 40px;
+    line-height: 40px;
+  }
+}
+.arrow-size-medium {
+  &:after {
+    width: 48px;
+    line-height: 48px;
   }
 }

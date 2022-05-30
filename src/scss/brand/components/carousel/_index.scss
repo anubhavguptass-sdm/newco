@@ -40,11 +40,7 @@
   &.carousel-with-img-arrow-links {
     .image {
       @extend .bottom-right-arrow;
-
-      &:after {
-        width: 40px;
-        line-height: 40px;
-      }
+      @extend .arrow-size-small;
     }
   }
 

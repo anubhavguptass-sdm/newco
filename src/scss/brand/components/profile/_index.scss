@@ -1,29 +1,27 @@
+.profile-card-content {
+  flex-basis: auto;
+  padding: 1rem 1.5rem;
+  @include sm{
+    padding: 1rem;
+  }
+}
 .profile-card-list-wrapper {
-  padding: 0 0.5rem !important;
-  .media-container {
+  .media-container,
+  .profile-card-content {
     flex-basis: 100%;
   }
-  .profile-card-content {
-    flex-basis: auto;
-    background-color: $color-grey-3;
-    padding: 1rem;
-    width: 100%;
-    p {
-      margin: 0;
-    }
+  .image {
+    @extend .bottom-right-arrow;
+    @extend .arrow-size-small;
   }
 }
 .profile-hero-banner {
   @include sm {
     .media-container,
     .profile-card-content {
-      width: 50% !important;
-      max-width: 50% !important;
-      flex-basis: 50% !important;
-      background-color: $color-white;
-      &::after {
-        display: none;
-      }
+      width: 50%;
+      max-width: 50%;
+      flex-basis: 50%;
     }
   }
 }

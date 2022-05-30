@@ -60,7 +60,7 @@ html,
 
 body {
   font-family: $font-family-primary;
-  font-size: $font-size-body-mobile;
+  font-size: $font-size-body;
   font-weight: $font-weight-body;
   margin: 0;
   padding: 0;
@@ -80,7 +80,7 @@ body {
             #{$line-height-h1-mobile} + #{$line-height-body-large-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-h1} + #{$font-size-body-large-desktop}
             );
@@ -99,7 +99,7 @@ body {
             #{$line-height-h2-mobile} + #{$line-height-body-large-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-h2} + #{$font-size-body-large-desktop}
             );
@@ -118,7 +118,7 @@ body {
             #{$line-height-h3-mobile} + #{$line-height-body-large-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-h3} + #{$font-size-body-large-desktop}
             );
@@ -135,7 +135,7 @@ body {
             #{$line-height-h4} + #{$line-height-body-large-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-h4} + #{$font-size-body-large-desktop}
             );
@@ -154,7 +154,7 @@ body {
             #{$line-height-body-mobile} + #{$line-height-body-large-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-body} + #{$font-size-body-large-desktop}
             );
@@ -173,7 +173,7 @@ body {
             #{$line-height-body-mobile} + #{$line-height-body-large-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-body} + #{$font-size-body-large-desktop}
             );
@@ -201,7 +201,7 @@ body {
             #{$line-height-h1-mobile} + #{$line-height-body-larger-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-h1} + #{$font-size-body-larger-desktop}
             );
@@ -220,7 +220,7 @@ body {
             #{$line-height-h2-mobile} + #{$line-height-body-larger-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-h2} + #{$font-size-body-larger-desktop}
             );
@@ -239,7 +239,7 @@ body {
             #{$line-height-h3-mobile} + #{$line-height-body-larger-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-h3} + #{$font-size-body-larger-desktop}
             );
@@ -256,7 +256,7 @@ body {
             #{$line-height-h4} + #{$line-height-body-larger-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-h4} + #{$font-size-body-larger-desktop}
             );
@@ -275,7 +275,7 @@ body {
             #{$line-height-body-mobile} + #{$line-height-body-larger-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-body} + #{$font-size-body-larger-desktop}
             );
@@ -294,7 +294,7 @@ body {
             #{$line-height-body-mobile} + #{$line-height-body-larger-mobile}
           );
 
-          @media (min-width: $breakpoint-md-min) {
+          @media (min-width: $breakpoint-sm-min) {
             font-size: calc(
               #{$font-size-body} + #{$font-size-body-larger-desktop}
             );
@@ -319,7 +319,7 @@ body {
     overflow: hidden;
   }
 
-  @media (min-width: $breakpoint-md-min) {
+  @media (min-width: $breakpoint-sm-min) {
     font-size: $font-size-body;
   }
 
@@ -337,7 +337,7 @@ body {
     font-weight: $font-weight-h1;
     line-height: $line-height-h1-mobile;
     margin: 0 0 1rem 0;
-    @media (min-width: $breakpoint-md-min) {
+    @media (min-width: $breakpoint-sm-min) {
       font-size: $font-size-h1;
       line-height: $line-height-h1;
     }
@@ -350,7 +350,7 @@ body {
     font-weight: $font-weight-h2;
     line-height: $line-height-h2-mobile;
     margin: 0 0 1rem 0;
-    @media (min-width: $breakpoint-md-min) {
+    @media (min-width: $breakpoint-sm-min) {
       font-size: $font-size-h2;
       line-height: $line-height-h2;
     }
@@ -363,7 +363,7 @@ body {
     font-weight: $font-weight-h3;
     line-height: $line-height-h3-mobile;
     margin: 0 0 1rem 0;
-    @media (min-width: $breakpoint-md-min) {
+    @media (min-width: $breakpoint-sm-min) {
       font-size: $font-size-h3;
       line-height: $line-height-h3;
     }
@@ -375,7 +375,7 @@ body {
     font-weight: $font-weight-h4;
     line-height: $line-height-h4-mobile;
     margin: 0 0 1rem 0;
-    @media (min-width: $breakpoint-md-min) {
+    @media (min-width: $breakpoint-sm-min) {
       line-height: $line-height-h4;
       font-size: $font-size-h4;
     }
@@ -388,7 +388,7 @@ body {
     font-weight: $font-weight-body;
     line-height: $line-height-body-mobile;
     margin: 0 0 1rem 0;
-    @media (min-width: $breakpoint-md-min) {
+    @media (min-width: $breakpoint-sm-min) {
       font-size: $font-size-body;
       line-height: $line-height-body;
     }

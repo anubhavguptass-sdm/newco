@@ -4,12 +4,11 @@ body {
       width: 100%;
     }
   }
-}
-#content {
-  @media (min-width: 992px) {
-    margin-top: 180px;
+  .strong,
+  strong {
+    font-weight: $font-extra-bold;
   }
-}
+  
 a {
   &:focus,
   &:focus:focus-visible {
@@ -112,6 +111,12 @@ a {
 .text-color-lime {
   color: $color-secondary-lime;
 }
+}
+#content {
+  @media (min-width: 992px) {
+    margin-top: 180px;
+  }
+}
 
 .bg-color-aqua {
   background-color: $color-secondary-aqua;
@@ -132,10 +137,7 @@ a {
   line-height: $line-height-160;
 }
 
-.strong,
-strong {
-  font-weight: $font-extra-bold;
-}
+
 .text-left {
   text-align: left;
 }
@@ -290,6 +292,16 @@ a[style*='visibility:hidden'] {
   @include sm {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
+  }
+}
+.p-d-r-1-5 {
+  @include sm {
+    padding-right: 1.5rem !important;
+  }
+}
+.p-d-l-1-5 {
+  @include sm {
+    padding-left: 1.5rem !important;
   }
 }
 .p-d-1-5 {

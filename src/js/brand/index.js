@@ -119,8 +119,8 @@ const { all } = require('core-js/fn/promise');
 
   // Show More Filter
    $(document).ready(function() {
-    $('a').click(function(){
-     $('a').removeClass('external');
+    $('a').load(function(){
+     $('this').removeClass('external');
     })
     removeClass('external');
     $('.megamenu-navigation .searchBox button').click(function() {

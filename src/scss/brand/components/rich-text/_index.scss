@@ -221,24 +221,49 @@
     flex-basis: calc(100% / 5);
     gap: 1rem;
   }
-  .heading-bg-strip {
-    span {
-      display: inline-block;
-      width: auto;
-      background-color: transparent;
-      padding-bottom: 2rem;
-      border-bottom: 44px solid $color-primary;
-      &:before {
-        width: 10vw;
-        left: -10vw;
-        top: 76px;
-      }
-      &:after {
-        width: 10vw;
-        right: -10vw;
-        top: 76px;
+  .timeline-year {
+    .heading-bg-strip {
+      margin-bottom: 3rem !important;
+      span {
+        display: inline-block;
+        width: auto;
+        font-weight: normal !important;
+        padding-bottom: 2px;
+        background-color: transparent;
+        border-bottom: 44px solid $color-primary;
+        &:before {
+          width: 10vw;
+          left: -10vw;
+          top: 76px;
+          height: 44px;
+        }
+        &:after {
+          width: 10vw;
+          right: -10vw;
+          top: 76px;
+          height: 44px;
+        }
       }
     }
+    &:first-of-type {
+      span {
+        &:before {
+          width: 40vw;
+          left: -40vw;
+        }
+      }
+    }
+    &:last-of-type {
+      span {
+        &::after {
+          width: 40vw;
+          right: -40vw;
+        }
+      }
+    }
+  }
+  .big-text {
+    padding-left: 2rem !important;
   }
 }
 

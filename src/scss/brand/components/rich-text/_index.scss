@@ -217,6 +217,9 @@
 }
 
 .progress-timeline {
+  margin-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   .flex.cols-d-5 > div {
     flex-basis: 100%;
     @include sm {
@@ -226,7 +229,7 @@
   }
   .timeline-year {
     .heading-bg-strip {
-      margin-bottom: 1rem !important;
+      margin-bottom: 2rem !important;
       @include sm {
         margin-bottom: 3rem !important;
       }
@@ -243,11 +246,12 @@
           background-color: transparent;
           border-bottom: 44px solid $color-primary;
           padding-top: 0;
+          padding-bottom: 28px;
         }
         &:before {
           width: 10vw;
           left: -10vw;
-          top: 76px;
+          top: 82px;
           height: 44px;
         }
         &:after {
@@ -258,7 +262,7 @@
           @include sm {
             width: 10vw;
             right: -10vw;
-            top: 76px;
+            top: 82px;
           }
         }
       }
@@ -289,8 +293,11 @@
       }
     }
   }
-  .big-text {
+  p {
     padding-left: 1rem !important;
+    margin-bottom: 3rem;
+    font-size: 18px;
+    line-height: 1.6;
     @include sm {
       padding-left: 2rem !important;
     }

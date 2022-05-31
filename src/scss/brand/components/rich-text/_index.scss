@@ -219,7 +219,7 @@
 .progress-timeline {
   .flex.cols-d-5 > div {
     flex-basis: 100%;
-    @include sd {
+    @include sm {
       flex-basis: calc(100% / 5);
       gap: 1rem;
     }
@@ -238,6 +238,7 @@
         background-color: $color-primary;
         border-bottom: none;
         padding-top: 10px;
+        height: 44px;
         @include sm {
           background-color: transparent;
           border-bottom: 44px solid $color-primary;

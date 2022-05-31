@@ -28,6 +28,9 @@
   > img {
     object-fit: cover;
     height: 100%;
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      height: auto;
+    }
   }
   .play {
     display: block;

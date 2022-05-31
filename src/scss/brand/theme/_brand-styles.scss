@@ -316,6 +316,11 @@ a[style*='visibility:hidden'] {
     padding-right: 1.5rem !important;
   }
 }
+.m-d-b--4 {
+  @include sm {
+    margin-bottom: 4rem !important;
+  }
+}
 
 .object-fit-cover {
   .component-content {

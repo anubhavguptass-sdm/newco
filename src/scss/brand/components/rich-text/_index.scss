@@ -219,7 +219,7 @@
 .progress-timeline {
   .flex.cols-d-5 > div {
     flex-basis: 100%;
-    @include sd {
+    @include sm {
       flex-basis: calc(100% / 5);
       gap: 1rem;
     }
@@ -251,13 +251,13 @@
         }
         &:after {
           width: 100vw;
-            right: -100vw;
-            top: 0;
-            height: 44px;
+          right: -100vw;
+          top: 0;
+          height: 44px;
           @include sm {
             width: 10vw;
-          right: -10vw;
-          top: 76px;
+            right: -10vw;
+            top: 76px;
           }
         }
       }

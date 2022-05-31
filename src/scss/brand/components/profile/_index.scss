@@ -36,7 +36,12 @@
   }
 }
 
-.image-bg-strip::before {
+.image-bg-strip{
+  display: none;
+  @include sm{
+    display: block;
+  }
+&::before {
   @include sm {
     content: '';
     width: 100%;
@@ -53,4 +58,5 @@
     height: 90px;
     top: calc(5rem + 180px);
   }
+}
 }

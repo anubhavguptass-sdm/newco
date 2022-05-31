@@ -221,9 +221,12 @@
     gap: 1rem;
   }
   .heading-bg-strip {
+      margin-bottom: 3rem;
     span {
       display: inline-block;
       width: auto;
+      font-weight: normal !important;
+      padding-bottom: 2px !important;  
       background-color: transparent;
       padding-bottom: 2rem;
       border-bottom: 44px solid $color-primary;
@@ -231,14 +234,19 @@
         width: 10vw;
         left: -10vw;
         top: 76px;
+          height: 44px;
       }
       &:after {
         width: 10vw;
         right: -10vw;
         top: 76px;
+          height: 44px;
       }
     }
-  }
+  }  
+      .big-text{
+        padding-left: 2rem !important;
+    }
 }
 
 .leader-card-bg {

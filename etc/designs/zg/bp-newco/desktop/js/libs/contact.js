@@ -145,7 +145,7 @@
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else if (name.length < 5) {
                 document.getElementById('name').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
-                document.getElementById("nameReqMsg").innerHTML = "This field must contain at least 5 characters.";
+                document.getElementById("nameReqMsg").innerHTML = "This field must contain at least five characters.";
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else {
                 document.getElementById('name').style.cssText = "border-color: #EAEAEA; outline: 1px solid #EAEAEA";

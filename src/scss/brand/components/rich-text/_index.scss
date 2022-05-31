@@ -156,7 +156,9 @@
     .breadcrumb-list-item {
       margin-right: 1rem;
       a {
+        font-size: 14px;
         color: #fff;
+        list-style: $line-height-150;
       }
     }
   }
@@ -169,14 +171,14 @@
     text-align: left;
   }
   .reference-bp-share-icon-svg {
-    margin: 2rem 0;
+    margin: 2.5rem 0;
     display: inline-block;
     width: 3.25rem;
     @include sm {
       display: block;
     }
     .share-icon {
-      padding: 1rem;
+      padding: 0.75rem;
       border: 2px solid $color-2;
     }
   }

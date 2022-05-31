@@ -11,6 +11,10 @@
     margin-bottom: 0.75rem;
     background-color: $color-grey-3;
     color: $color-3;
+    &:focus{
+      border-color: rgb(0, 0, 0);
+      outline: rgb(0, 0, 0) solid 1px;
+    }
   }
 
   input:-webkit-autofill,
@@ -73,6 +77,10 @@
         @media screen and (-webkit-min-device-pixel-ratio: 0) {
           display: none;
         }
+      }
+      &:focus{
+        border-color: rgb(0, 0, 0);
+       outline: rgb(0, 0, 0) solid 1px;
       }
     }
 

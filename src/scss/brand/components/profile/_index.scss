@@ -35,3 +35,27 @@
     }
   }
 }
+
+.image-bg-strip::before {
+ @include sm{
+  content: '';
+  width: 100%;
+  background: var(--bg-color-2);
+  display: block;
+  /* height: 100%; */
+  position: absolute;
+  /* left: -100vw; */
+  z-index: 1;
+  height: 40px;
+ top: calc(3rem + 110px);
+ }
+ @include sd{
+  height: 90px;
+  top: calc(5rem + 180px);
+ }
+}
+.bar-over-img{
+  @include md{
+    width: 100vw;
+  }
+}

@@ -346,6 +346,9 @@ a[style*='visibility:hidden'] {
     margin-right: auto;
   }
 }
+.text-grey{
+  color: $color-3;
+}
 
 /* Safari Specific CSS */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -354,3 +357,4 @@ a[style*='visibility:hidden'] {
   }
 }
 /* Safari Specific CSS */
+

@@ -107,6 +107,9 @@ header {
               position: absolute;
               top: 1px;
               left: 5.5rem;
+              @include md {
+                left: 4.5rem;
+              }
               @include sd {
                 top: 0;
                 left: 5.4rem;
@@ -135,6 +138,9 @@ header {
               top: -5px;
               left: 6.2rem;
               @include md {
+                left: 6.2rem;
+              }
+              @include sd {
                 top: 0;
                 right: initial;
               }
@@ -417,15 +423,18 @@ header {
         position: fixed;
         @include md {
           right: -20px !important;
-          top: 4px !important;
-          width: 20px !important;
-          height: 20px !important;
-          background-size: 20px !important;
+          top: 0px !important;
+          width: 18px !important;
+          height: 18px !important;
+          background-size: 18px !important;
           position: relative;
           background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/search-line.svg');
         }
         @include sd {
           top: 10px !important;
+          width: 20px !important;
+          height: 20px !important;
+          background-size: 20px !important;
         }
         &:hover {
           &:after {
@@ -446,7 +455,7 @@ header {
         &::before {
           content: 'Search';
           position: absolute;
-          left: -56px;
+          left: -48px;
           top: 2px;
           font-size: $font-size-13;
           color: $color-black;
@@ -504,7 +513,7 @@ header {
     // Newly Added
     @include md {
       width: 24%;
-      max-width: 24%;
+      max-width: 25%;
       margin-left: 6%;
       order: 3;
       .richText {
@@ -514,6 +523,7 @@ header {
     }
     @include sd {
       margin-left: 4%;
+      max-width: 24%;
     }
     @media (min-width: $breakpoint-xl-min) {
       max-width: 17%;

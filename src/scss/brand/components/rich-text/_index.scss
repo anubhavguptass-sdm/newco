@@ -220,7 +220,7 @@
     flex-basis: calc(100% / 5);
     gap: 1rem;
   }
-  .timeline-year{
+  .timeline-year {
     .heading-bg-strip {
       margin-bottom: 3rem !important;
       span {
@@ -244,22 +244,22 @@
         }
       }
     }
-    &:first-of-type{
-      span{
+    &:first-of-type {
+      span {
         &:before {
           width: 40vw;
           left: -40vw;
         }
       }
     }
-    &:last-of-type{
-      span{
+    &:last-of-type {
+      span {
         &::after {
           width: 40vw;
           right: -40vw;
         }
       }
-    }  
+    }
   }
   .big-text {
     padding-left: 2rem !important;

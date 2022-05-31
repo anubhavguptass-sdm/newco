@@ -318,7 +318,7 @@ a[style*='visibility:hidden'] {
 }
 .m-d-b--4 {
   @include sm {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
   }
 }
 

@@ -119,11 +119,9 @@ const { all } = require('core-js/fn/promise');
 
   // Show More Filter
   $(document).ready(function() {
-    $('body').load(function() {
-      debugger;
-      $('a').removeClass('external');
-    });
-    removeClass('external');
+    Array.from(document.querySelectorAll('a.external')).forEach(el =>
+      el.classList.remove('external')
+    );
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');
     });

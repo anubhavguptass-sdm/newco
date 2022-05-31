@@ -224,15 +224,18 @@
     span {
       display: inline-block;
       width: auto;
+      background-color: transparent;
+      padding-bottom: 2rem;
+      border-bottom: 44px solid $color-primary;
       &:before {
         width: 10vw;
         left: -10vw;
-        top: 100%;
+        top: 76px;
       }
       &:after {
         width: 10vw;
         right: -10vw;
-        top: 100%;
+        top: 76px;
       }
     }
   }

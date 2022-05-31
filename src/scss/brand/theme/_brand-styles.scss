@@ -346,3 +346,11 @@ a[style*='visibility:hidden'] {
     margin-right: auto;
   }
 }
+
+/* Safari Specific CSS */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body img {
+    height: auto;
+  }
+}
+/* Safari Specific CSS */

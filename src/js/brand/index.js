@@ -118,10 +118,10 @@ const { all } = require('core-js/fn/promise');
   // Mobile Menu
 
   // Show More Filter
-   $(document).ready(function() {
-    $('a').click(function(){
-     $('a').removeClass('external');
-    })
+  $(document).ready(function() {
+    $('a').click(function() {
+      $('a').removeClass('external');
+    });
     removeClass('external');
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');

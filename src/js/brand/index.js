@@ -33,6 +33,7 @@ const { all } = require('core-js/fn/promise');
 
   $(document).ready(e => {
     console.log('JS Working');
+    
     if ($('.template-standard-content-v2-profile').length) {
       $('.title').remove();
     }
@@ -118,6 +119,7 @@ const { all } = require('core-js/fn/promise');
 
   // Show More Filter
   $(document).ready(function() {
+    $('a').removeClass('external');
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');
     });

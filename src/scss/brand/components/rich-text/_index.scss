@@ -226,7 +226,10 @@
   }
   .timeline-year {
     .heading-bg-strip {
-      margin-bottom: 3rem !important;
+      margin-bottom: 1rem !important;
+      @include sm{
+        margin-bottom: 3rem !important;
+      }
       span {
         display: inline-block;
         width: auto;

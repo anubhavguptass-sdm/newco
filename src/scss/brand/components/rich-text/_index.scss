@@ -238,6 +238,7 @@
         background-color: $color-primary;
         border-bottom: none;
         padding-top: 10px;
+        height: 44px;
         @include sm {
           background-color: transparent;
           border-bottom: 44px solid $color-primary;

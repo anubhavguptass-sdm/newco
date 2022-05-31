@@ -230,6 +230,7 @@
     }
   }
   .timeline-year {
+    margin-bottom: 3rem;
     .heading-bg-strip {
       margin-bottom: 2rem !important;
       @include sm {
@@ -248,7 +249,7 @@
           background-color: transparent;
           border-bottom: 44px solid $color-primary;
           padding-top: 0;
-          padding-bottom: 28px;
+          padding-bottom: 38px;
         }
         &:before {
           width: 10vw;
@@ -294,15 +295,16 @@
         border-color: $color-2 !important;
       }
     }
+    p {
+      padding-left: 1rem !important;
+      line-height: 1.6;
+      @include sm {
+        padding-left: 2rem !important;
+      }
+    }
   }
   p {
-    padding-left: 1rem !important;
-    margin-bottom: 3rem;
     font-size: 18px;
-    line-height: 1.6;
-    @include sm {
-      padding-left: 2rem !important;
-    }
   }
 }
 

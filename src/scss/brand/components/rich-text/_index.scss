@@ -158,10 +158,10 @@
       a {
         font-size: 14px;
         color: #fff;
-        list-style: $line-height-150;
+        line-height: $line-height-150;
       }
     }
-    @include sm{
+    @include sm {
       flex-wrap: wrap;
       height: auto;
     }

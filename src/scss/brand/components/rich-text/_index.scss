@@ -233,91 +233,92 @@
       gap: 1rem;
     }
   }
-  .timeline-year {
-    margin-bottom: 3rem;
-    .heading-bg-strip {
-      margin-bottom: 1rem !important;
-      overflow: hidden;
+  p {
+    font-size: 18px;
+  }
+}
+
+.timeline-year {
+  margin-bottom: 3rem;
+  .heading-bg-strip {
+    margin-bottom: 1rem !important;
+    overflow: hidden;
+    @include sm {
+      margin-bottom: 3rem !important;
+      overflow: visible;
+    }
+    span {
+      display: inline-block;
+      width: auto;
+      font-weight: normal !important;
+      padding-bottom: 2px;
+      background-color: $color-primary;
+      border-bottom: none;
+      padding-top: 10px;
+      height: 44px;
       @include sm {
-        margin-bottom: 3rem !important;
-        overflow: visible;
+        background-color: transparent;
+        border-bottom: 44px solid $color-primary;
+        padding-top: 0;
+        padding-bottom: 38px;
       }
-      span {
-        display: inline-block;
-        width: auto;
-        font-weight: normal !important;
-        padding-bottom: 2px;
-        background-color: $color-primary;
-        border-bottom: none;
-        padding-top: 10px;
+      &:before {
+        width: 10vw;
+        left: -10vw;
+        top: 0;
         height: 44px;
         @include sm {
-          background-color: transparent;
-          border-bottom: 44px solid $color-primary;
-          padding-top: 0;
-          padding-bottom: 38px;
+          top: 82px;
         }
-        &:before {
+      }
+      &:after {
+        width: 100vw;
+        right: -100vw;
+        top: 0;
+        height: 44px;
+        @include sm {
           width: 10vw;
-          left: -10vw;
-          top: 0;
-          height: 44px;
-          @include sm {
-            top: 82px;
-          }
+          right: -10vw;
+          top: 82px;
         }
-        &:after {
-          width: 100vw;
-          right: -100vw;
-          top: 0;
-          height: 44px;
-          @include sm {
-            width: 10vw;
-            right: -10vw;
-            top: 82px;
-          }
-        }
-      }
-    }
-    &:first-of-type {
-      span {
-        &:before {
-          width: 40vw;
-          left: -40vw;
-          top: 0;
-          @include sm {
-            top: 82px;
-          }
-        }
-      }
-    }
-    &:last-of-type {
-      span {
-        &::after {
-          width: 100vw;
-          right: -100vw;
-          @include sm {
-            width: 40vw;
-            right: -40vw;
-          }
-        }
-      }
-    }
-    &:nth-child(5) {
-      span {
-        border-color: $color-2 !important;
-      }
-    }
-    p {
-      padding-left: 1rem !important;
-      line-height: 1.6;
-      @include sm {
-        padding-left: 2rem !important;
       }
     }
   }
+  &:first-of-type {
+    span {
+      &:before {
+        width: 40vw;
+        left: -40vw;
+        top: 0;
+        @include sm {
+          top: 82px;
+        }
+      }
+    }
+  }
+  &:last-of-type {
+    span {
+      &::after {
+        width: 100vw;
+        right: -100vw;
+        @include sm {
+          width: 40vw;
+          right: -40vw;
+        }
+      }
+    }
+  }
+  &:nth-child(5) {
+    span {
+      border-color: $color-2 !important;
+    }
+  }
   p {
-    font-size: 18px;
+    padding-left: 1rem !important;
+    line-height: 1.6;
+    @include sm {
+      padding-left: 2rem !important;
+    }
   }
 }
 
@@ -337,7 +338,7 @@
     width: 100%;
     padding: 1rem 0 !important;
     margin: 0;
-    @include sm{
+    @include sm {
       width: auto;
       padding: 10px 15px !important;
     }
@@ -347,6 +348,10 @@
 .hoverable-boxes {
   border: 1px solid $color-secondary-lime;
   padding: 1rem !important;
+  margin-bottom: 1rem !important;
+  @include sm {
+    margin-bottom: 0 !important;
+  }
   h2 {
     @extend .giant-font;
     color: $color-secondary-lime;
@@ -377,6 +382,8 @@
 }
 
 .efficiency-targets {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  padding-bottom: 2rem;
+  @include sm {
+    padding-bottom: 0;
+  }
 }

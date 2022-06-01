@@ -159,6 +159,10 @@
       width: 100vw;
     }
   }
+  padding-left: 0.75rem;
+  @include sm {
+    padding-left: 0;
+  }
 }
 .lime-bg-strip{
   background: $color-secondary-lime;

@@ -7,7 +7,8 @@
     -webkit-box-shadow: 0px 16px 40px -8px #0000001a;
     box-shadow: 0px 16px 40px -8px #0000001a;
     background-color: #fff;
-    margin: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     @include sm {
       top: 50%;
       position: absolute;
@@ -52,6 +53,10 @@
         left: auto;
       }
     }
+  }
+  &.flex > div > div > div:nth-last-of-type(1) {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 

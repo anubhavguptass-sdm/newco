@@ -91,7 +91,7 @@
       &:after {
         top: 0 !important;
       }
-      &.bg-strip-170 {
+      &.bg-strip-large {
         &:before {
           height: 100%;
           @include sm {
@@ -105,8 +105,8 @@
     font-weight: normal;
     font-style: normal;
   }
-  .bar-over-img{
-    @include md{
+  .bar-over-img {
+    @include md {
       width: 100vw;
     }
   }

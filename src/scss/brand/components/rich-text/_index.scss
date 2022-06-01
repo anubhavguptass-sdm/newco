@@ -219,9 +219,13 @@
 }
 
 .progress-timeline {
-  margin-bottom: 5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin-bottom: 5rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  overflow: hidden;
+  @include sm {
+    overflow: visible;
+  }
   .flex.cols-d-5 > div {
     flex-basis: 100%;
     @include sm {
@@ -232,9 +236,13 @@
   .timeline-year {
     margin-bottom: 3rem;
     .heading-bg-strip {
-      margin-bottom: 2rem !important;
+      margin-bottom: 1rem !important;
+      overflow: hidden;
+      padding-left: 0.75rem;
       @include sm {
         margin-bottom: 3rem !important;
+        overflow: visible;
+        padding-left: 0;
       }
       span {
         display: inline-block;
@@ -254,8 +262,11 @@
         &:before {
           width: 10vw;
           left: -10vw;
-          top: 82px;
+          top: 0;
           height: 44px;
+          @include sm {
+            top: 82px;
+          }
         }
         &:after {
           width: 100vw;
@@ -275,6 +286,10 @@
         &:before {
           width: 40vw;
           left: -40vw;
+          top: 0;
+          @include sm {
+            top: 82px;
+          }
         }
       }
     }
@@ -311,6 +326,7 @@
 .leader-card-bg {
   background-color: $bg-color-3;
 }
+
 .strip-content{
   margin-left: 0 !important;
   padding-left: 0.75rem;
@@ -324,4 +340,41 @@
     padding: 1rem 0 !important;
     margin: 0;
   }
+}
+
+.hoverable-boxes {
+  border: 1px solid $color-secondary-lime;
+  padding: 1rem !important;
+  h2 {
+    @extend .giant-font;
+    color: $color-secondary-lime;
+  }
+  p {
+    @extend .font-size--small;
+    @extend .font-extra-bold;
+    color: $color-secondary-lime;
+  }
+  .display-on-hover {
+    visibility: hidden;
+  }
+}
+
+.hoverable-boxes:hover {
+  background-color: $color-secondary-lime;
+  color: $color-2;
+  h2 {
+    color: $color-2;
+  }
+  p {
+    color: $color-2;
+  }
+  .display-on-hover {
+    visibility: visible;
+    font-weight: 400 !important;
+  }
+}
+
+.efficiency-targets {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }

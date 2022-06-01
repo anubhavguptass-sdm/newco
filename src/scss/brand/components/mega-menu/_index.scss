@@ -920,38 +920,6 @@ header {
   .megamenu-submenu-item {
     height: 100vh;
   }
-  li {
-    &.page-who-we-are,
-    &.page-our-brands,
-    &.page-planet-and-people,
-    &.page-careers {
-      a::before {
-        content: '';
-        border: solid #a19e9e;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-        position: absolute;
-        margin-left: 0.5rem;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        color: #000;
-        display: none;
-      }
-    }
-    &.page-who-we-are a::before {
-      left: 6rem;
-    }
-    &.page-our-brands a::before {
-      left: 5.5rem;
-    }
-    &.page-planet-and-people a::before {
-      left: 7.8rem;
-    }
-    &.page-careers a::before {
-      left: 3.7rem;
-    }
-  }
 }
 
 .back-button-desktop-hide {
@@ -1096,10 +1064,33 @@ li.page-careers a::before {
   font-size: 1rem;
   padding: 3px;
   position: absolute;
-  color: #000;
+  color: $color-black;
   right: -1.2rem;
   @include md {
-    display: none;
+    transform: rotate(90deg);
+    color: $color-1;
+  }
+}
+li {
+  &.page-who-we-are a::before {
+    @include md {
+      left: 6rem;
+    }
+  }
+  &.page-our-brands a::before {
+    @include md {
+      left: 5.5rem;
+    }
+  }
+  &.page-planet-and-people a::before {
+    @include md {
+      left: 8.8rem;
+    }
+  }
+  &.page-careers a::before {
+    @include md {
+      left: 3.7rem;
+    }
   }
 }
 .megamenu-logo {

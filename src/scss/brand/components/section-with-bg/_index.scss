@@ -35,9 +35,14 @@
   > .component-content {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 60% 350px;
+    background-color: #595a5c;
     padding: 1rem 1rem 4rem;
     overflow: hidden;
+    @include md {
+      background-position: center;
+      background-color: transparent;
+    }
   }
   .percentage-box {
     margin-bottom: 2.5rem;
@@ -85,8 +90,8 @@
     margin-top: 1.5rem;
     padding: 2rem 0.5rem;
     @include sm {
-      padding: 2rem;
-      margin-top: 3rem;
+      padding: 1rem 2rem;
+      margin-top: 2rem;
     }
   }
   .fit-content {

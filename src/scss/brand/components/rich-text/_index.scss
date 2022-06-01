@@ -343,6 +343,10 @@
 .hoverable-boxes {
   border: 1px solid $color-secondary-lime;
   padding: 1rem !important;
+  margin-bottom: 1rem !important;
+  @include sm {
+    margin-bottom: 0 !important;
+  }
   h2 {
     @extend .giant-font;
     color: $color-secondary-lime;
@@ -373,6 +377,8 @@
 }
 
 .efficiency-targets {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  padding-bottom: 2rem;
+  @include sm {
+    padding-bottom: 0;
+  }
 }

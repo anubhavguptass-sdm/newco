@@ -311,3 +311,17 @@
 .leader-card-bg {
   background-color: $bg-color-3;
 }
+.strip-content{
+  margin-left: 0 !important;
+  padding-left: 0.75rem;
+  @include sm{
+    padding-left: 0;
+  }
+}
+.button-full-width{
+  button{
+    width: 100%;
+    padding: 1rem 0 !important;
+    margin: 0;
+  }
+}

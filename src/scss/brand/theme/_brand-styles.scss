@@ -367,3 +367,9 @@ a[style*='visibility:hidden'] {
   }
 }
 /* Safari Specific CSS */
+
+a:hover {
+  span {
+    background-color: inherit;
+  }
+}

@@ -257,7 +257,7 @@ a[style*='visibility:hidden'] {
 
 .p-m-0 {
   padding: 0;
-  @include sm{
+  @include sm {
     padding: auto;
   }
 }

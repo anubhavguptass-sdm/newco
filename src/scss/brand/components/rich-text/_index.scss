@@ -319,10 +319,10 @@
     }
   }
   p {
-    padding-left: 1rem !important;
     line-height: 1.6;
+    padding-right: 1rem !important;
     @include sm {
-      padding-left: 2rem !important;
+      padding-right: 2rem !important;
     }
   }
 }

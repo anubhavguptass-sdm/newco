@@ -322,6 +322,7 @@ a[style*='visibility:hidden'] {
   }
 }
 
+
 .object-fit-cover {
   .component-content {
     height: 100% !important;
@@ -346,3 +347,16 @@ a[style*='visibility:hidden'] {
     margin-right: auto;
   }
 }
+.text-grey {
+  color: $color-3;
+}
+.img-full-height{
+  height: 100%;
+}
+/* Safari Specific CSS */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body img {
+    height: auto;
+  }
+}
+/* Safari Specific CSS */

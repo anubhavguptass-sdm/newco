@@ -132,7 +132,8 @@ body {
 }
 /* global css end */
 
-.big-text, .big-text-para p {
+.big-text,
+.big-text-para p {
   font-size: $font-size-18;
   line-height: $line-height-160;
 }

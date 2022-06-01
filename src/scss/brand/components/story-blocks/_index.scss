@@ -58,6 +58,12 @@
   }
   .story-content {
     padding: 2rem;
+    @media screen and (max-width: 767px) {
+      margin-top: 15rem;
+    }
+    @media screen and (max-width: 480px) {
+      margin-top: 0rem;
+    }
     @include md {
       padding: 1rem;
     }
@@ -76,6 +82,12 @@
       height: 100%;
       object-fit: cover;
       object-position: top;
+      @media screen and (max-width: 767px) {
+        height: 150%;
+      }
+      @media screen and (max-width: 480px) {
+        height: 100%;
+      }
     }
   }
 }

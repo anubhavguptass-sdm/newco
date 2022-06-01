@@ -343,7 +343,7 @@
     width: 100%;
     padding: 1rem 0 !important;
     margin: 0;
-    @include sm {
+    @include sd {
       width: auto;
       padding: 10px 15px !important;
     }

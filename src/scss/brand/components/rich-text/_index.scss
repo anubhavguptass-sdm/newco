@@ -327,18 +327,34 @@
   background-color: $bg-color-3;
 }
 
-.hoverable-box {
+.hoverable-boxes {
   border: 1px solid $color-secondary-lime;
-  color: $color-secondary-lime;
-  display-on-hover {
+  padding: 1rem !important;
+  h2 {
+    @extend .giant-font;
+    color: $color-secondary-lime;
+  }
+  p {
+    @extend .font-size--small;
+    @extend .font-extra-bold;
+    color: $color-secondary-lime;
+  }
+  .display-on-hover {
     visibility: hidden;
   }
 }
 
-.hoverable-box:hover {
+.hoverable-boxes:hover {
   background-color: $color-secondary-lime;
   color: $color-2;
-  display-on-hover {
+  h2 {
+    color: $color-2;
+  }
+  p {
+    color: $color-2;
+  }
+  .display-on-hover {
     visibility: visible;
+    font-weight: 400 !important;
   }
 }

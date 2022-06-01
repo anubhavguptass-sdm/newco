@@ -58,6 +58,12 @@
   }
   .story-content {
     padding: 2rem;
+    @include md {
+      padding: 1rem;
+    }
+    @include lg {
+      padding: 2rem;
+    }
     @include sm {
       width: 60%;
     }

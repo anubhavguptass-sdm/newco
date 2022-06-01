@@ -326,3 +326,19 @@
 .leader-card-bg {
   background-color: $bg-color-3;
 }
+
+.hoverable-box {
+  border: 1px solid $color-secondary-lime;
+  color: $color-secondary-lime;
+  display-on-hover {
+    visibility: hidden;
+  }
+}
+
+.hoverable-box:hover {
+  background-color: $color-secondary-lime;
+  color: $color-2;
+  display-on-hover {
+    visibility: visible;
+  }
+}

@@ -31,10 +31,6 @@
   }
 
   &.left-positioned {
-    justify-content: center;
-    @include sm {
-      justify-content: right;
-    }
     .banner-text {
       @include sm {
         left: 0;

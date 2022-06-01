@@ -7,9 +7,11 @@
     height: 100%;
     white-space: nowrap;
     @extend .font-extra-bold;
+
     @include sm {
       width: 100%;
     }
+
     &:before {
       content: '';
       width: 100vw;
@@ -22,6 +24,7 @@
 
       z-index: -1;
     }
+
     &:after {
       content: '';
       width: 100vw;
@@ -33,44 +36,94 @@
       top: -100%;
       z-index: -1;
     }
+
     &.two-steps {
       width: 85%;
-      background: transparent;
-      padding-left: 0.75rem;
       &.one-step-lower {
         width: 100%;
         height: 65px;
         line-height: 65px;
         background: var(--bg-color-2);
+
         &:after {
           content: none;
         }
+
         &:before {
           content: none;
+
           @include sm {
             content: '';
           }
         }
       }
+
       &.one-step-upper {
         width: 100%;
         height: 65px;
         line-height: 65px;
         background: var(--bg-color-2);
+
         @include sm {
           margin-top: 65px;
         }
+
         &:before {
           content: none;
         }
+
         &:after {
           content: none;
+
           @include sm {
             content: '';
             top: -100% !important;
           }
         }
       }
+
+      @include sm {
+        background: var(--bg-color-2);
+        margin-left: -2rem;
+        padding-left: 2rem;
+      }
+
+      &:before {
+        height: 100%;
+        top: 0;
+        width: 110%;
+        left: -10%;
+
+        @include sm {
+          height: 100%;
+          left: -100vw;
+          width: 100vw;
+          top: 100%;
+        }
+      }
+
+      &:after {
+        top: -100% !important;
+        @include sm {
+          top: 0 !important;
+        }
+      }
+
+      &.bg-strip-large {
+        &:before {
+          height: 100%;
+
+          @include sm {
+            height: 170px !important;
+          }
+        }
+      }
+    }
+
+    &.two-steps.bg-strip-large {
+      width: 85%;
+      background: transparent;
+
       @include sm {
         background: var(--bg-color-2);
         margin-left: -2rem;
@@ -83,28 +136,23 @@
         left: -10%;
 
         @include sm {
-          height: 100%;
+          height: 170px !important;
           left: -100vw;
           width: 100vw;
         }
       }
+
       &:after {
         top: 0 !important;
       }
-      &.bg-strip-large {
-        &:before {
-          height: 100%;
-          @include sm {
-            height: 170px !important;
-          }
-        }
-      }
     }
   }
+
   em {
     font-weight: normal;
     font-style: normal;
   }
+
   .bar-over-img {
     @include md {
       width: 100vw;
@@ -117,6 +165,7 @@
   background-color: $color-primary;
   padding: 1rem;
 }
+
 .green-line {
   background: #30ea03;
   min-width: 54px;

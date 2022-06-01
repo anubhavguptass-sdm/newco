@@ -52,9 +52,21 @@
       /* left: -100vw; */
       z-index: 1;
       height: 40px;
-      top: calc(3rem + 110px);
+      top: calc(3rem + 65px);
     }
     @include sd {
+      height: 60px;
+      top: calc(5rem + 150px);
+    }
+    @include md {
+      height: 70px;
+      top: calc(5rem + 140px);
+    }
+    @include lg {
+      height: 80px;
+      top: calc(5rem + 160px);
+    }
+    @include xl {
       height: 90px;
       top: calc(5rem + 180px);
     }

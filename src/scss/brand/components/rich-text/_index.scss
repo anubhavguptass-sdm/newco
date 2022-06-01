@@ -161,6 +161,10 @@
         list-style: $line-height-150;
       }
     }
+    @include sm{
+      flex-wrap: wrap;
+      height: auto;
+    }
   }
 }
 .article-social-share {

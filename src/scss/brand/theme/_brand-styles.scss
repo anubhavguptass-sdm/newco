@@ -246,6 +246,10 @@ a[style*='visibility:hidden'] {
     margin: auto;
   }
 }
+.max-width-1440 {
+  max-width: 1440px !important;
+  width: 100%;
+  }
 .m-auto {
   margin: auto !important;
 }

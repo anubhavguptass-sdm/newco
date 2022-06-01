@@ -71,7 +71,7 @@
     &:after {
       content: none;
       position: absolute;
-      top: 0;
+      top: 10px;
       right: 0;
       z-index: -1;
       @include sm {
@@ -91,7 +91,7 @@
     padding: 2rem 0.5rem;
     @include sm {
       padding: 1rem 2rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   }
   .fit-content {

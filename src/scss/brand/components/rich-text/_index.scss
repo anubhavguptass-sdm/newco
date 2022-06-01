@@ -238,11 +238,9 @@
     .heading-bg-strip {
       margin-bottom: 1rem !important;
       overflow: hidden;
-      padding-left: 0.75rem;
       @include sm {
         margin-bottom: 3rem !important;
         overflow: visible;
-        padding-left: 0;
       }
       span {
         display: inline-block;

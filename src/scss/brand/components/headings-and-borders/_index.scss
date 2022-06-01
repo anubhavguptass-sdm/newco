@@ -7,9 +7,10 @@
     height: 100%;
     white-space: nowrap;
     @extend .font-extra-bold;
-
+    padding-left: 0.75rem;
     @include sm {
       width: 100%;
+      padding-left: 0;
     }
 
     &:before {
@@ -157,10 +158,6 @@
     @include md {
       width: 100vw;
     }
-  }
-  padding-left: 0.75rem;
-  @include sm {
-    padding-left: 0;
   }
 }
 

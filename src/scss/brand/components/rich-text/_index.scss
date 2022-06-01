@@ -223,7 +223,7 @@
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
   overflow: hidden;
-  @include sm{
+  @include sm {
     overflow: visible;
   }
   .flex.cols-d-5 > div {
@@ -237,8 +237,12 @@
     margin-bottom: 3rem;
     .heading-bg-strip {
       margin-bottom: 1rem !important;
+      overflow: hidden;
+      padding-left: .75rem;
       @include sm {
         margin-bottom: 3rem !important;
+        overflow: visible;
+        padding-left: 0;
       }
       span {
         display: inline-block;
@@ -258,8 +262,11 @@
         &:before {
           width: 10vw;
           left: -10vw;
-          top: 82px;
+          top: 0;
           height: 44px;
+          @include sm {
+            top: 82px;
+          }
         }
         &:after {
           width: 100vw;
@@ -280,7 +287,7 @@
           width: 40vw;
           left: -40vw;
           top: 0;
-          @include sm{
+          @include sm {
             top: 82px;
           }
         }

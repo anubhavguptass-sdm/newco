@@ -102,16 +102,24 @@
 .reference-homepage-carousel {
   overflow: hidden;
   padding-top: 1.5rem;
-  h2 {
+  .carousel-heading {
     margin-bottom: 2rem;
-  }
-  .lSSlideOute {
-    overflow: visible !important;
+    margin-top: 2rem;
+    @include sd {
+      margin-top: 1rem;
+    }
+    width: 60%;
+    @include sm {
+      width: 80%;
+    }
   }
   .lSSlideOuter {
     overflow: visible !important;
   }
   .lSSlideWrapper {
     overflow: visible !important;
+  }
+  .box.component {
+    overflow: hidden;
   }
 }

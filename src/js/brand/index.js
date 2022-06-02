@@ -49,7 +49,7 @@ const { all } = require('core-js/fn/promise');
         contentelement.parents('.leader-cards').length
       ) {
         contentelement.html(
-          `<h3><a href="${dlink}">${dtitle}</a></h3><p>${dsubtitle}</p>`
+          `<h3><a href="${dlink}">${dtitle}</a></h3><p class="m-d-b-0 m-m-b-0">${dsubtitle}</p>`
         );
       } else {
         if (ddesc.trim().length)

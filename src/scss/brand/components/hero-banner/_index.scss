@@ -33,6 +33,10 @@
     .banner-subheading {
       @extend .font-size--large;
       @extend .line-height-160;
+      margin-left: 0;
+      @include sm {
+        margin-left: 2rem;
+      }
     }
     .bottom-text {
       position: relative;

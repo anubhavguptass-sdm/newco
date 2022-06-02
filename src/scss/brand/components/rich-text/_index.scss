@@ -248,6 +248,11 @@
   .heading-bg-strip {
     margin-bottom: 1rem !important;
     overflow: hidden;
+    &.strong {
+      span {
+        font-weight: $font-extra-bold !important;
+      }
+    }
     @include sm {
       margin-bottom: 3rem !important;
       overflow: visible;

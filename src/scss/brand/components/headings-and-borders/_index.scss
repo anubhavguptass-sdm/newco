@@ -124,6 +124,19 @@
           }
         }
       }
+      strong {
+        &:before {
+          content: '';
+          width: 100%;
+          background: var(--bg-color-2);
+          display: block;
+          height: 100%;
+          position: absolute;
+          left: -100%;
+          top: -100%;
+          z-index: -1;
+        }
+      }
     }
 
     &.two-steps.bg-strip-large {
@@ -168,12 +181,15 @@
   @include sm {
     padding-left: 0;
   }
-  .strip-inside-content {
+  &.strip-inside-content {
     padding: 0;
+    @include sm{
+      margin-top: -65px;
+    }
     .two-steps {
       padding-left: 0.75rem;
       @include sm {
-        padding-left: 0;
+        margin-left: 0;
       }
     }
   }

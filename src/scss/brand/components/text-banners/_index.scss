@@ -24,6 +24,7 @@
 .box-with-fullcover-bg {
   > .component-content {
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
+    background-position: top center;
   }
 }

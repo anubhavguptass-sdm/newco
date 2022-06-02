@@ -248,6 +248,11 @@
   .heading-bg-strip {
     margin-bottom: 1rem !important;
     overflow: hidden;
+    &.strong {
+      span {
+        font-weight: $font-extra-bold;
+      }
+    }
     @include sm {
       margin-bottom: 3rem !important;
       overflow: visible;
@@ -359,25 +364,23 @@
   }
   h2 {
     @extend .giant-font;
-    color: $color-secondary-lime;
   }
   p {
     @extend .font-size--small;
     @extend .font-extra-bold;
-    color: $color-secondary-lime;
   }
   .display-on-hover {
     visibility: hidden;
+  }
+  * {
+    color: $color-secondary-lime;
   }
 }
 
 .hoverable-boxes:hover {
   background-color: $color-secondary-lime;
   color: $color-2;
-  h2 {
-    color: $color-2;
-  }
-  p {
+  * {
     color: $color-2;
   }
   .display-on-hover {

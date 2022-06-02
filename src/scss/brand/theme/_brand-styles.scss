@@ -363,11 +363,11 @@ a[style*='visibility:hidden'] {
 .text-grey {
   color: $color-3;
 }
-.order-m-2{
- order: 2;
- @include sm{
-  order: unset;
- }
+.order-m-2 {
+  order: 2;
+  @include sm {
+    order: unset;
+  }
 }
 .img-full-height {
   height: 100%;
@@ -383,5 +383,12 @@ a[style*='visibility:hidden'] {
 a:hover {
   span {
     background-color: inherit;
+  }
+}
+
+.m-l-r-auto{
+  .flex>div>div>div:nth-last-of-type(1){
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }

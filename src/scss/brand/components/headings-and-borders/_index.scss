@@ -80,17 +80,17 @@
           }
         }
       }
-     &.strip-hide{
-       &::after{
-         content: none;
-       }
-       &::before{
-         content: none;
-       }
-       @include sm{
-         margin-left: 0 ;
-       }
-     }
+      &.strip-hide {
+        &::after {
+          content: none;
+        }
+        &::before {
+          content: none;
+        }
+        @include sm {
+          margin-left: 0;
+        }
+      }
       @include sm {
         background: var(--bg-color-2);
         margin-left: -2rem;

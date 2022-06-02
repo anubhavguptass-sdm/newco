@@ -88,13 +88,13 @@ body {
   }
 
   .font-size--small {
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
   }
   .font-size--medium {
-    font-size: 0.875rem;
+    font-size: 0.875rem !important;
   }
   .font-size--large {
-    font-size: 1.125rem;
+    font-size: 1.125rem !important;
   }
   .color-grey-3 {
     color: $color-3;

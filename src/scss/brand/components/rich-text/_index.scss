@@ -250,7 +250,7 @@
     overflow: hidden;
     &.strong {
       span {
-        font-weight: $font-extra-bold;
+        font-weight: $font-extra-bold !important;
       }
     }
     @include sm {

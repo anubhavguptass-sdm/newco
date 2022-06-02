@@ -99,10 +99,19 @@
   }
 }
 
-.reference-homepage-carousel{
+.reference-homepage-carousel {
   overflow: hidden;
   padding-top: 1.5rem;
-  h2{
+  h2 {
     margin-bottom: 2rem;
+  }
+  .lSSlideOute {
+    overflow: visible !important;
+  }
+  .lSSlideOuter {
+    overflow: visible !important;
+  }
+  .lSSlideWrapper {
+    overflow: visible !important;
   }
 }

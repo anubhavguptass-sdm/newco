@@ -5,7 +5,7 @@
   /** /!!! core css Should not edit !!!/**/
 
   .lSSlideOuter {
-    overflow: visible;
+    overflow: hidden;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -27,7 +27,7 @@
 
   .lSSlideWrapper {
     max-width: 100%;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
   }
 

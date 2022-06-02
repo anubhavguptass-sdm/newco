@@ -124,6 +124,19 @@
           }
         }
       }
+      strong {
+        &:before {
+          content: '';
+          width: 100%;
+          background: var(--bg-color-2);
+          display: block;
+          height: 100%;
+          position: absolute;
+          left: -100%;
+          top: -100%;
+          z-index: -1;
+        }
+      }
     }
 
     &.two-steps.bg-strip-large {
@@ -170,12 +183,12 @@
   }
   &.strip-inside-content {
     padding: 0;
-    @include sm{
+    @include sm {
       padding-left: 0.75rem;
     }
     .two-steps {
       padding-left: 0.75rem;
-      @include sm{
+      @include sm {
         margin-left: 0;
       }
     }

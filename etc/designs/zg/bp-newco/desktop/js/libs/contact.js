@@ -30,7 +30,7 @@
 
     $(document).ready(function () {
         $('#privacy').removeClass("external");
-        $('#name').on('keyup focus', function (event) {
+        $('#firstname').on('keyup focus', function (event) {
             validateForm('name');
         });
         $('#email').on('keyup focus', function (event) {
@@ -67,8 +67,8 @@
             validateForm('all');
             OnfocusField(event);
        });
-        $('#name').on('keypress', function (event) {
-            if ($('#name').val().length == 0 && event.which === 32) {
+        $('#firstname').on('keypress', function (event) {
+            if ($('#firstname').val().length == 0 && event.which === 32) {
                 event.preventDefault();
                 return false;
             } else if (event.which === 32) {
@@ -112,8 +112,8 @@
 
     function OnfocusField(event) {
         
-        if (document.haleonForm.name.value == '') {
-            document.haleonForm.name.focus();
+        if (document.haleonForm.firstname.value == '') {
+            document.haleonForm.firstname.focus();
         } else if (document.haleonForm.email.value == '') {
             document.haleonForm.email.focus();
         } else if (document.forms["haleonForm"]["00N9E000004hkmw"].value == '') {
@@ -123,8 +123,8 @@
         } else if (document.haleonForm.description.value == '') {
             document.haleonForm.description.focus();
         }
-        else if (!document.haleonForm.checkbox_1.checked) {
-            document.haleonForm.checkbox_1.focus();
+        else if (!document.haleonForm.chk1-label.checked) {
+            document.haleonForm.chk1-label.focus();
         }
         else{
             ValidateEmail(event);
@@ -132,7 +132,7 @@
     }
 
     function validateForm(type) {
-        let name = document.forms["haleonForm"]["name"].value;
+        let name = document.forms["haleonForm"]["firstname"].value;
         let email = document.forms["haleonForm"]["email"].value;
         let country = document.forms["haleonForm"]["00N9E000004hkmw"].value;
         let enquiry = document.forms["haleonForm"]["subject"].value;
@@ -140,15 +140,15 @@
         let element = document.getElementById("emailGroup");
         if ((type == 'name' || type == 'all')) {
             if (name == "") {
-                document.getElementById('name').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
+                document.getElementById('firstname').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
                 document.getElementById("nameReqMsg").innerHTML = "Required";
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else if (name.length < 5) {
-                document.getElementById('name').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
+                document.getElementById('firstname').style.cssText = "border-color: #c30000; outline: 1px solid #c30000";
                 document.getElementById("nameReqMsg").innerHTML = "This field must contain at least five characters.";
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else {
-                document.getElementById('name').style.cssText = "border-color: #EAEAEA; outline: 1px solid #EAEAEA";
+                document.getElementById('firstname').style.cssText = "border-color: #EAEAEA; outline: 1px solid #EAEAEA";
                 document.getElementById('nameReqMsg').style.display = 'none';
             }
         }
@@ -206,9 +206,9 @@
     function ValidateEmail(event) {
        
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if(document.haleonForm.name.value.length < 5){
+        if(document.haleonForm.firstname.value.length < 5){
             event.preventDefault();
-            document.haleonForm.name.focus();
+            document.haleonForm.firstname.focus();
             return false;
         }
         if(document.haleonForm.description.value.length < 20){

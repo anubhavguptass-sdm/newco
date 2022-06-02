@@ -337,9 +337,11 @@
 }
 
 .strip-content {
+  max-width: 100% !important;
   margin-left: 0 !important;
   padding-left: 0.75rem;
   @include sm {
+    max-width: 80% !important;
     padding-left: 0;
   }
 }

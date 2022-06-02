@@ -86,10 +86,7 @@
        }
        &::before{
          content: none;
-       }
-       @include sm{
-         margin-left: 0 ;
-       }
+       } 
      }
       @include sm {
         background: var(--bg-color-2);
@@ -225,3 +222,6 @@
     background-color: $color-secondary-pink;
   }
 }
+
+
+  

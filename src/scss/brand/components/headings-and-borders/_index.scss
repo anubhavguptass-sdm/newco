@@ -168,7 +168,7 @@
   @include sm {
     padding-left: 0;
   }
-  .strip-inside-content{
+  &.strip-inside-content{
     padding: 0;
     .two-steps {
       padding-left: 0.75rem;

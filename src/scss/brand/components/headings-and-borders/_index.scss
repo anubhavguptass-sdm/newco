@@ -170,9 +170,6 @@
   }
   &.strip-inside-content {
     padding: 0;
-    @include sm{
-      padding-left: 0.75rem;
-    }
     .two-steps {
       padding-left: 0.75rem;
       @include sm{

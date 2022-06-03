@@ -6,6 +6,20 @@
     padding-right: 1.5rem;
     padding-top: 0rem;
     order: -1;
+    .banner-padding{
+      padding-right: 0;
+      padding-left: 0;
+      @include sd{
+        padding-left: auto;
+      }
+      .heading{
+        margin: 0;
+        padding-left: 2rem;
+        @include sm{
+          padding-left: auto;
+        }
+      }
+    }
     @include sm {
       order: unset;
       padding-top: 3rem;

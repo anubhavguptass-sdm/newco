@@ -307,9 +307,13 @@
       height: 32px;
       background-color: $color-black;
     }
-    .tag-time-wrapper{
+    .tag-time-wrapper {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+    .read-time{
+      margin-bottom: 0;
     }
   }
 }

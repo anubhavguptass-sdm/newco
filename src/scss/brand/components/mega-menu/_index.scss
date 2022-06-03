@@ -216,6 +216,7 @@ header {
               font-size: $font-size-16 !important;
               font-weight: $font-normal !important;
               cursor: pointer;
+              margin: 0 5px;
               &:hover {
                 background-color: $color-primary !important;
               }
@@ -245,6 +246,7 @@ header {
             max-width: 250px;
             height: auto;
             margin: 0;
+            margin-bottom: 2px;
           }
           &:hover {
             height: auto;
@@ -1074,40 +1076,48 @@ li.page-careers a::before {
 }
 li {
   &.page-planet-and-people {
-    min-width: 160px;
-    a::before {
-      @include md {
-        left: 7.75rem;
+    a {
+      min-width: 162px;
+      &::before {
+        @include md {
+          left: 7.75rem;
+        }
       }
     }
   }
 }
 li {
   &.page-our-brands {
-    min-width: 105px;
-    a::before {
-      @include md {
-        left: 4.25rem;
+    a {
+      min-width: 107px;
+      &::before {
+        @include md {
+          left: 4.25rem;
+        }
       }
     }
   }
 }
 li {
   &.page-who-we-are {
-    min-width: 115px;
-    a::before {
-      @include md {
-        left: 5rem;
+    a {
+      min-width: 117px;
+      &::before {
+        @include md {
+          left: 5rem;
+        }
       }
     }
   }
 }
 li {
   &.page-careers {
-    min-width: 80px;
-    a::before {
-      @include md {
-        left: 2.4rem;
+    a {
+      min-width: 82px;
+      &::before {
+        @include md {
+          left: 2.4rem;
+        }
       }
     }
   }

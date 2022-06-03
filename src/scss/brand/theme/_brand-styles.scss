@@ -183,7 +183,7 @@ a[style*='visibility:hidden'] {
 }
 .hide-mobile {
   display: none;
-  @include sm{
+  @include sm {
     display: block;
   }
 }

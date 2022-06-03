@@ -56,19 +56,19 @@
     }
     @include sd {
       height: 60px;
-      top: calc(5rem + 150px);
+      top: calc(4rem + 150px);
     }
     @include md {
       height: 70px;
-      top: calc(5rem + 150px);
+      top: calc(4rem + 150px);
     }
     @media screen and (min-width: 1280px) and (max-width: 1440px) {
       height: 80px;
-      top: calc(8rem + 160px);
+      top: calc(7rem + 165px);
     }
     @media screen and (min-width: 1441px) {
       height: 90px;
-      top: calc(10rem + 185px);
+      top: calc(9rem + 185px);
     }
   }
 }

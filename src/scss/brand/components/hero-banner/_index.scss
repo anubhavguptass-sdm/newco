@@ -15,8 +15,8 @@
       .heading {
         margin: 0;
         padding-left: 1rem;
-        @include sm {
-          padding-left: auto;
+        @include sd {
+          padding-left: 0;
         }
       }
     }

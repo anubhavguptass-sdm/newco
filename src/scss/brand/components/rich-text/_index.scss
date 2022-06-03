@@ -20,7 +20,7 @@
 
 .sec-with-center-line {
   background-color: $bg-color-3;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem !important;
 
   .border-right {
     border-bottom: 2px solid $color-3;
@@ -32,6 +32,7 @@
   }
   .left-area {
     padding-right: 0;
+    padding-bottom: 1rem;
     @include sm {
       padding-right: 4.375rem !important;
     }

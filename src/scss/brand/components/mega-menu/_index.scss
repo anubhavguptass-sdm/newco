@@ -1054,6 +1054,18 @@ header {
   position: relative;
   width: auto;
 }
+li.page-who-we-are,
+li.page-our-brands,
+li.page-planet-and-people,
+li.page-careers {
+  margin: 0 5px;
+}
+li.page-who-we-are a,
+li.page-our-brands a,
+li.page-planet-and-people a,
+li.page-careers a {
+  margin-left: -15px;
+}
 li.page-who-we-are a::before,
 li.page-our-brands a::before,
 li.page-planet-and-people a::before,

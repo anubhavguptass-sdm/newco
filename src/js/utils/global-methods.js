@@ -104,32 +104,29 @@
         arguments.length > 0
           ? accordionContentWrapperElement
           : '.accordion-content-wrapper';
-      $(accordionContentWrapperElement).each((ind, el) => {
-        let t = $(el),
-          possibleHeight,
-          // commented for accordion .  click on accordion text accordio not hide.
-
-          //     style = `.accordion-slide.is-active #${el.id} {
-          //   max-height: {{maxheight}}px
-          // }
-          //   .accordion-slide:focus-within #${el.id} {
-          //   max-height: {{maxheight}}px
-          // }
-
-          // `,
-
-          // commented for accordion .  click on accordion text accordio not hide.
-          styleEl = $('<style/>');
-        possibleHeight = t.get(0).scrollHeight;
-        // create a style element with it's own id and max height
-        style = style.replace(/\{\{maxheight\}\}/gi, possibleHeight);
-        styleEl.text(style);
-        t.closest('.accordion-slide')
-          .find(' > style')
-          .remove();
-        // prepend style element to content wrapper
-        t.before(styleEl);
-      });
+      // $(accordionContentWrapperElement).each((ind, el) => {
+      //   let t = $(el),
+      //     possibleHeight,
+      //     style = `.accordion-slide.is-active #${el.id} {
+      //   max-height: {{maxheight}}px
+      // }
+      //   .accordion-slide:focus-within #${el.id} {
+      //   max-height: {{maxheight}}px
+      // }`,
+      //     styleEl = $('<style/>');
+      //   possibleHeight = t.get(0).scrollHeight;
+      //   // create a style element with it's own id and max height
+      //   style = style.replace(/\{\{maxheight\}\}/gi, possibleHeight);
+      //   styleEl.text(style);
+      //   t.closest('.accordion-slide')
+      //     .find(' > style')
+      //     .remove();
+      //   // prepend style element to content wrapper
+      //   t.before(styleEl);
+      // });
+    
+      
+      // commented for accordion .  click on accordion text accordion not hide.
     }, 100);
   };
   // in case something is loaded to accordion content run accordionHeight again

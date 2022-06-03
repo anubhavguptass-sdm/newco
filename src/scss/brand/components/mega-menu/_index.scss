@@ -881,7 +881,7 @@ header {
     font-weight: 400 !important;
     cursor: pointer;
     padding: 0;
-    padding-left: 1px;
+    padding: 0 2px;
   }
   .megamenu-navigation {
     .megamenu-top-bar-left > .component-content > .paragraphSystem {
@@ -1050,18 +1050,9 @@ header {
   > .navigation-root.navigation-level1
   .navigation-item
   > a {
-  padding: 0 1.25rem;
+  padding: 0 2px;
   position: relative;
   width: auto;
-}
-li.page-who-we-are,
-li.page-our-brands,
-li.page-planet-and-people,
-li.page-careers {
-  margin: 0 5px;
-  a {
-    margin-left: -15px;
-  }
 }
 li.page-who-we-are a::before,
 li.page-our-brands a::before,
@@ -1082,27 +1073,46 @@ li.page-careers a::before {
   }
 }
 li {
-  &.page-who-we-are a::before {
-    @include md {
-      left: 6rem;
-    }
-  }
-  &.page-our-brands a::before {
-    @include md {
-      left: 5.5rem;
-    }
-  }
-  &.page-planet-and-people a::before {
-    @include md {
-      left: 8.8rem;
-    }
-  }
-  &.page-careers a::before {
-    @include md {
-      left: 3.7rem;
+  &.page-planet-and-people {
+    min-width: 160px;
+    a::before {
+      @include md {
+        left: 7.75rem;
+      }
     }
   }
 }
+li {
+  &.page-our-brands {
+    min-width: 105px;
+    a::before {
+      @include md {
+        left: 4.25rem;
+      }
+    }
+  }
+}
+li {
+  &.page-who-we-are {
+    min-width: 115px;
+    a::before {
+      @include md {
+        left: 5rem;
+      }
+    }
+  }
+}
+li {
+  &.page-careers {
+    min-width: 80px;
+    a::before {
+      @include md {
+        left: 2.4rem;
+      }
+    }
+  }
+}
+
 .megamenu-logo {
   .image {
     a {

@@ -10,11 +10,11 @@
       padding-right: 0;
       padding-left: 0;
       @include sd {
-        padding-left: auto;
+        padding-left: 1.5rem;
       }
       .heading {
         margin: 0;
-        padding-left: 2rem;
+        padding-left: 1rem;
         @include sm {
           padding-left: auto;
         }

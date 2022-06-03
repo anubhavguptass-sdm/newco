@@ -5,7 +5,6 @@
 
   .carousel-slides {
     height: auto !important;
-    box-shadow: 0px 12px 20px -4px rgba(0, 0, 0, 0.1);
     .richText {
       padding: 0 1rem;
 
@@ -17,7 +16,7 @@
 
   .carousel-slide {
     background: #fff;
-
+    box-shadow: 0px 12px 20px -4px rgba(0, 0, 0, 0.1);
     ul.tag-links {
       width: 80%;
       position: relative;

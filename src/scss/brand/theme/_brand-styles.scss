@@ -420,3 +420,7 @@ a:hover {
 .find-more-link {
   border-bottom: 2px solid $color-primary;
 }
+
+.bordered-text {
+  border-bottom: 2px solid var(--border-color-2);
+}

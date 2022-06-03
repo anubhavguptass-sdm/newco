@@ -297,8 +297,7 @@ header {
       > .component-content > .navigation-mobile-menu {
         left: auto;
         right: -15px;
-        top: 4px;
-        // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/menu-icon.svg');
+        top: 6px;
         content: '\e916';
         font-family: 'icomoon';
         font-size: 1rem;
@@ -309,12 +308,11 @@ header {
     }
     &.nav-opened {
       .megamenu-main-nav > .component-content .navigation-mobile-menu {
-        // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/cross-icon.svg');
         content: '\e90e';
         font-family: 'icomoon';
         font-size: 1rem;
         background-size: auto;
-        top: 3px;
+        top: 6px;
         background-size: 80%;
       }
     }
@@ -422,7 +420,7 @@ header {
         width: 24px !important;
         height: 24px !important;
         background-size: 24px !important;
-        top: 4px !important;
+        top: 7px !important;
         right: 2rem !important;
         position: fixed;
         @include md {

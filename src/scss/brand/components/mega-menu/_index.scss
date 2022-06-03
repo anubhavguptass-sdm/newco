@@ -53,7 +53,8 @@ header {
           margin-top: 3.5rem !important;
           @include sd {
             max-width: 100% !important;
-            justify-content: center;
+            justify-content: flex-end;
+            width: 100% !important;
             margin-top: 0 !important;
           }
         }
@@ -292,7 +293,7 @@ header {
     .megamenu-main-nav {
       @media (min-width: $breakpoint-sd-min) {
         margin-top: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
       }
       > .component-content > .navigation-mobile-menu {
         left: auto;

@@ -248,6 +248,13 @@
     flex-direction: column;
     .slider-galeria-thumbs {
       order: 2;
+      .slick-track {
+        display: flex;
+      }
+    }
+
+    .slick-track {
+      display: flex;
     }
     .carousel-wrapper {
       display: flex;

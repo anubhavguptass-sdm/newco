@@ -239,7 +239,7 @@ header {
           max-width: 115px;
           min-width: auto;
           margin-left: -0.75rem;
-          margin-top: 0;
+          margin-top: 6px;
           @include sd {
             width: 250px;
             min-width: 250px;
@@ -297,7 +297,7 @@ header {
       > .component-content > .navigation-mobile-menu {
         left: auto;
         right: -15px;
-        top: 6px;
+        top: 12px;
         content: '\e916';
         font-family: 'icomoon';
         font-size: 1rem;
@@ -312,7 +312,7 @@ header {
         font-family: 'icomoon';
         font-size: 1rem;
         background-size: auto;
-        top: 6px;
+        top: 12px;
         background-size: 80%;
       }
     }
@@ -420,7 +420,7 @@ header {
         width: 24px !important;
         height: 24px !important;
         background-size: 24px !important;
-        top: 7px !important;
+        top: 12px !important;
         right: 2rem !important;
         position: fixed;
         @include md {

@@ -249,10 +249,13 @@
 
     .slider-galeria-thumbs {
       order: 2;
-      margin-top: -4rem;
+      margin-top: 0;
       z-index: 1;
-      @include sd{
+      @include sm {
         margin-top: -2rem;
+      }
+      @include sd {
+        margin-top: -4rem;
       }
       .slick-track {
         display: flex;
@@ -296,6 +299,9 @@
       align-items: center;
       display: flex;
       list-style-type: none;
+      @include sm {
+        bottom: 3rem;
+      }
     }
 
     .slick-dots li {
@@ -315,7 +321,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    .read-time{
+    .read-time {
       margin-bottom: 0;
     }
   }

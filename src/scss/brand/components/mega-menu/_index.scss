@@ -108,6 +108,8 @@ header {
               left: 5.5rem;
               @include md {
                 left: 4.5rem;
+                font-size: 20px;
+                top: -4px;
               }
               @include sd {
                 top: 0;
@@ -138,10 +140,10 @@ header {
               left: 6.2rem;
               @include md {
                 left: 5.2rem;
-                top: 0;
+                top: -4px;
+                font-size: 20px;
               }
               @include sd {
-                top: 0;
                 left: 6.2rem;
                 right: initial;
               }

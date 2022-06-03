@@ -249,6 +249,7 @@
 
     .slider-galeria-thumbs {
       display: none;
+
       @include sm {
         display: block;
         order: 2;
@@ -256,12 +257,14 @@
         z-index: 1;
         margin-top: -2rem;
       }
+
       @include sd {
         margin-top: -4rem;
       }
+
       .slick-track {
         display: flex;
-
+        height: auto !important;
         .thumbs-wrapper {
           display: flex;
 
@@ -272,21 +275,20 @@
       }
     }
 
-    .slick-track {
-      display: flex;
-    }
-
     .carousel-wrapper {
       display: flex;
       flex-direction: column;
       padding-bottom: 6rem;
+
       @include sm {
         flex-direction: row;
         padding-bottom: 0;
       }
+
       > div {
         padding: 2rem 1rem 0;
         order: 2;
+
         @include sm {
           order: unset;
           padding: 0 1.5rem;
@@ -311,9 +313,11 @@
       align-items: center;
       display: flex;
       list-style-type: none;
+
       @include sm {
         bottom: 3rem;
       }
+
       @include sd {
         bottom: 5rem;
       }
@@ -331,17 +335,19 @@
       height: 32px;
       background-color: $color-black;
     }
+
     .tag-time-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     .read-time {
       margin-bottom: 0;
     }
   }
-  
-  .slick-list{
+
+  .slick-list {
     height: auto !important;
   }
 }

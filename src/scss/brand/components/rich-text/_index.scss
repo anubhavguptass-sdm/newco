@@ -390,3 +390,9 @@
     padding-bottom: 0;
   }
 }
+
+.box-with-halfcover-bg.align-left-bg {
+  > .component-content {
+    background-position: left;
+  }
+}

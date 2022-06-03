@@ -242,10 +242,14 @@
 }
  */
 
-
- .custamized-banner{
-  .product-slider{
-    .carousel-wrapper{
+.custamized-banner {
+  .product-slider {
+    display: flex;
+    flex-direction: column;
+    .slider-galeria-thumbs {
+      order: 2;
+    }
+    .carousel-wrapper {
       display: flex;
       > div {
         > div {
@@ -254,5 +258,5 @@
         }
       }
     }
-  }   
+  }
 }

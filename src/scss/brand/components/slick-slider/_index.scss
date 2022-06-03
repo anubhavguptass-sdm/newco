@@ -248,10 +248,24 @@
     flex-direction: column;
     .slider-galeria-thumbs {
       order: 2;
+      .slick-track {
+        display: flex;
+        .thumbs-wrapper {
+          display: flex;
+          p {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+
+    .slick-track {
+      display: flex;
     }
     .carousel-wrapper {
       display: flex;
       > div {
+        padding: 0 1.5rem;
         > div {
           display: flex;
           flex-direction: column;

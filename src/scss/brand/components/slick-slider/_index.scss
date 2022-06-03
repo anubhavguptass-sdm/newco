@@ -1,4 +1,4 @@
-.product-slider {
+/* .product-slider {
   display: flex;
   flex-direction: column;
 
@@ -7,9 +7,9 @@
     width: 60% !important;
     height: auto !important;
     float: none;
-
+    display: none;
     @include sm {
-      display: none;
+      display: block;
     }
 
     .slick-list {
@@ -63,31 +63,37 @@
 
         .carousel-wrapper {
           position: relative;
-
+          flex-direction: column;
           @include sd {
-            flex-direction: column;
+            flex-direction: row;
           }
 
           div.max-content-width {
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
             @include sd {
-              padding-left: 1.5rem !important;
-              padding-right: 1.5rem !important;
+              padding-left: 0 !important;
+              padding-right: 0 !important;
             }
           }
 
           div {
-            padding-left: 5rem;
-            padding-right: 7rem;
+            padding-left: 0rem;
+            padding-right: 2rem;
             position: relative;
+            order: 2;
+            width: 100% !important;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
 
             @include lg {
-              padding-left: 0rem;
-              padding-right: 2rem;
+              padding-left: 5rem;
+              padding-right: 7rem;
             }
 
             @include sd {
-              order: 2;
-              width: 100% !important;
+              order: unset;
+              width: auto !important;
               margin-top: 2rem;
               margin-bottom: 4rem;
             }
@@ -97,7 +103,7 @@
               padding: 0;
               display: flex;
               justify-content: space-between;
-
+              margin-top: 0;
               @include sd {
                 margin-top: 0;
               }
@@ -121,13 +127,13 @@
                     background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/Other-Clock.svg');
                     position: absolute;
                     top: 5px;
-                    left: -25px;
                     height: 16px;
                     width: 16px;
-
+                    right: 80px;
                     @include sd {
-                      top: 2px !important;
-                      right: 80px;
+                      right: unset;
+                      left: -25px;
+                      top: 5px;
                     }
                   }
                 }
@@ -151,13 +157,13 @@
 
           p {
             text-align: left;
-            margin-left: 2rem;
+            margin-left: 1.5rem;
             font-size: $font-size-h5;
             line-height: $line-height-150;
             margin-right: 0;
 
             @include sd {
-              margin-left: 1.5rem;
+              margin-left: 2rem;
             }
 
             span {
@@ -170,12 +176,13 @@
       }
 
       img {
-        left: 0 !important;
-        right: unset !important;
-
+        left: 0;
+        right: unset;
+        order: 1;
+        width: 100%;
         @include sd {
-          order: 1;
-          width: 100% !important;
+          order: unset;
+          width: 100%;
         }
       }
     }
@@ -233,3 +240,11 @@
     }
   }
 }
+ */
+
+
+/*  .custamized-banner{
+  .product-slider{
+
+  }   
+} */

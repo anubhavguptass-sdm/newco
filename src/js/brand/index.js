@@ -80,10 +80,7 @@ const { all } = require('core-js/fn/promise');
     } else {
       $('.navigation-branch li.page-our-brands a').attr('href', '/our-brands/');
       $('.navigation-branch li.page-who-we-are a').attr('href', '/who-we-are/');
-      $('.navigation-branch li.page-planet-and-people a').attr(
-        'href',
-        '/planet-and-people/'
-      );
+      $('.navigation-branch li.page-planet-and-people a').attr('href', '/planet-and-people/');
       $('.navigation-branch li.page-careers a').attr('href', '/careers/');
     }
   }

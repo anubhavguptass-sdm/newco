@@ -181,6 +181,12 @@ a[style*='visibility:hidden'] {
 .d-none {
   display: none;
 }
+.hide-mobile {
+  display: none;
+  @include sm{
+    display: block;
+  }
+}
 .align-center {
   align-items: center;
 }

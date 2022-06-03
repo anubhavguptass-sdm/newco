@@ -51,21 +51,21 @@
             });
           }
 
-          let rootAccordion = t.closest('.accordion');
-          rootAccordion
-            .find('.is-active')
-            .not(t)
-            .removeClass('is-active')
-            .trigger('blur')
-            .find('*')
-            .trigger('blur');
+          // let rootAccordion = t.closest('.accordion');
+          // rootAccordion
+          //   .find('.is-active')
+          //   .not(t)
+          //   .removeClass('is-active')
+          //   .trigger('blur')
+          //   .find('*')
+          //   .trigger('blur');
 
-          if (t.is('.is-active')) {
-            t.removeClass('is-active');
-            t.trigger('blur')
-              .find('*')
-              .trigger('blur');
-          } else t.addClass('is-active');
+          // if (t.is('.is-active')) {
+          //   t.removeClass('is-active');
+          //   t.trigger('blur')
+          //     .find('*')
+          //     .trigger('blur');
+          // } else t.addClass('is-active');
         }
       });
     });

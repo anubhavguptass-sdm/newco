@@ -53,9 +53,10 @@ header {
           margin-top: 3.5rem !important;
           @include sd {
             max-width: 100% !important;
-            justify-content: flex-end;
             width: 100% !important;
             margin-top: 0 !important;
+            display: block;
+            padding-top: 0.75rem;
           }
         }
       }
@@ -207,6 +208,7 @@ header {
         margin-top: 0;
         padding-bottom: 1rem;
         @include sd {
+          text-align: center;
           margin-top: 0;
           padding-bottom: 0.25rem;
         }

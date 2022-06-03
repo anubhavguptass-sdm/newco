@@ -18,7 +18,10 @@
   }
 }
 
-.bg-grey-border {
+.sec-with-center-line {
+  background-color: $bg-color-3;
+  padding: 4rem 1rem;
+  
   .border-right {
     border-bottom: 2px solid $color-3;
     border-right: none;

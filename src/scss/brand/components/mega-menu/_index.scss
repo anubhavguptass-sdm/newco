@@ -1050,9 +1050,18 @@ header {
   > .navigation-root.navigation-level1
   .navigation-item
   > a {
-  padding: 0 1rem;
+  padding: 0 1.25rem;
   position: relative;
   width: auto;
+}
+li.page-who-we-are,
+li.page-our-brands,
+li.page-planet-and-people,
+li.page-careers {
+  margin: 0 5px;
+  a {
+    margin-left: -15px;
+  }
 }
 li.page-who-we-are a::before,
 li.page-our-brands a::before,

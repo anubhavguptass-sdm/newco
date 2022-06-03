@@ -205,10 +205,10 @@ header {
         background-color: $color-white;
         padding-bottom: 1rem;
         margin-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 1rem;
         @include sd {
           margin-top: 0;
-          padding-bottom: 1rem;
+          padding-bottom: 0.25rem;
         }
         ul.navigation-level1 {
           li.navigation-item {

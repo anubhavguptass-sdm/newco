@@ -124,8 +124,7 @@
       //   // prepend style element to content wrapper
       //   t.before(styleEl);
       // });
-    
-      
+
       // commented for accordion .  click on accordion text accordion not hide.
     }, 100);
   };

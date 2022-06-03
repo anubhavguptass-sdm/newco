@@ -108,10 +108,10 @@
         let t = $(el),
           possibleHeight,
           style = `.accordion-slide.is-active #${el.id} {
-        max-height: {{maxheight}}px
+        max-height: initial
       }
         .accordion-slide:focus-within #${el.id} {
-        max-height: {{maxheight}}px
+        max-height: initial
       }`,
           styleEl = $('<style/>');
         possibleHeight = t.get(0).scrollHeight;

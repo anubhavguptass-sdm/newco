@@ -27,29 +27,29 @@
 
           t = t.closest('.accordion-slide');
 
-          // if (t.closest('.accordion').is('.slide-to-active')) {
-          //   t.find('.accordion-content-wrapper').one('transitionend', e => {
-          //     if (
-          //       e.originalEvent.propertyName === 'max-height' ||
-          //       e.originalEvent.propertyName === 'maxHeight'
-          //     ) {
-          //       let navSelector =
-          //         $(window).width() < 992
-          //           ? '.megamenu-bottom-center'
-          //           : '.megamenu-main-nav';
-          //       let tTop = t.offset().top - $(navSelector).height() - 10;
-          //       $('body,html')
-          //         .stop()
-          //         .animate(
-          //           {
-          //             scrollTop: tTop
-          //           },
-          //           'fast',
-          //           null
-          //         );
-          //     }
-          //   });
-          // }
+          if (t.closest('.accordion').is('.slide-to-active')) {
+            t.find('.accordion-content-wrapper').one('transitionend', e => {
+              if (
+                e.originalEvent.propertyName === 'max-height' ||
+                e.originalEvent.propertyName === 'maxHeight'
+              ) {
+                let navSelector =
+                  $(window).width() < 992
+                    ? '.megamenu-bottom-center'
+                    : '.megamenu-main-nav';
+                let tTop = t.offset().top - $(navSelector).height() - 10;
+                $('body,html')
+                  .stop()
+                  .animate(
+                    {
+                      scrollTop: tTop
+                    },
+                    'fast',
+                    null
+                  );
+              }
+            });
+          }
 
           // let rootAccordion = t.closest('.accordion');
           // rootAccordion

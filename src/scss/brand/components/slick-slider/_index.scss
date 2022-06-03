@@ -248,10 +248,12 @@
     flex-direction: column;
 
     .slider-galeria-thumbs {
-      order: 2;
-      margin-top: 0;
-      z-index: 1;
+      display: none;
       @include sm {
+        display: block;
+        order: 2;
+        margin-top: 0;
+        z-index: 1;
         margin-top: -2rem;
       }
       @include sd {
@@ -276,9 +278,19 @@
 
     .carousel-wrapper {
       display: flex;
-
+      flex-direction: column;
+      padding-bottom: 6rem;
+      @include sm {
+        flex-direction: row;
+        padding-bottom: 0;
+      }
       > div {
-        padding: 0 1.5rem;
+        padding: 2rem 1rem 0;
+        order: 2;
+        @include sm {
+          order: unset;
+          padding: 0 1.5rem;
+        }
 
         > div {
           display: flex;
@@ -301,6 +313,9 @@
       list-style-type: none;
       @include sm {
         bottom: 3rem;
+      }
+      @include sd {
+        bottom: 5rem;
       }
     }
 

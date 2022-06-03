@@ -196,9 +196,10 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   li {
     border: 1px dashed $color-1;
-    margin: 0 5px !important;
+    margin: 0 10px 0 0 !important;
     padding: 5px 10px !important;
     color: $color-2 !important;
   }

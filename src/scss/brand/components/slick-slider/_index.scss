@@ -307,5 +307,9 @@
       height: 32px;
       background-color: $color-black;
     }
+    .tag-time-wrapper{
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

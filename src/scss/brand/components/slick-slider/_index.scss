@@ -261,7 +261,7 @@
       }
       .slick-track {
         display: flex;
-
+        height: auto !important;
         .thumbs-wrapper {
           display: flex;
 
@@ -270,10 +270,6 @@
           }
         }
       }
-    }
-
-    .slick-track {
-      display: flex;
     }
 
     .carousel-wrapper {
@@ -339,5 +335,9 @@
     .read-time {
       margin-bottom: 0;
     }
+  }
+
+  .slick-list {
+    height: auto !important;
   }
 }

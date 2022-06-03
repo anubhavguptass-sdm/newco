@@ -107,12 +107,18 @@
       $(accordionContentWrapperElement).each((ind, el) => {
         let t = $(el),
           possibleHeight,
-          style = `.accordion-slide.is-active #${el.id} {
-        max-height: initial
-      }
-        .accordion-slide:focus-within #${el.id} {
-        max-height: initial
-      }`,
+          // commented for accordion .  click on accordion text accordio not hide.
+
+          //     style = `.accordion-slide.is-active #${el.id} {
+          //   max-height: {{maxheight}}px
+          // }
+          //   .accordion-slide:focus-within #${el.id} {
+          //   max-height: {{maxheight}}px
+          // }
+
+          // `,
+
+          // commented for accordion .  click on accordion text accordio not hide.
           styleEl = $('<style/>');
         possibleHeight = t.get(0).scrollHeight;
         // create a style element with it's own id and max height

@@ -239,7 +239,7 @@ header {
           max-width: 115px;
           min-width: auto;
           margin-left: -0.75rem;
-          margin-top: 0;
+          margin-top: 6px;
           @include sd {
             width: 250px;
             min-width: 250px;
@@ -297,8 +297,7 @@ header {
       > .component-content > .navigation-mobile-menu {
         left: auto;
         right: -15px;
-        top: 4px;
-        // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/menu-icon.svg');
+        top: 12px;
         content: '\e916';
         font-family: 'icomoon';
         font-size: 1rem;
@@ -309,12 +308,11 @@ header {
     }
     &.nav-opened {
       .megamenu-main-nav > .component-content .navigation-mobile-menu {
-        // background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/cross-icon.svg');
         content: '\e90e';
         font-family: 'icomoon';
         font-size: 1rem;
         background-size: auto;
-        top: 3px;
+        top: 12px;
         background-size: 80%;
       }
     }
@@ -422,7 +420,7 @@ header {
         width: 24px !important;
         height: 24px !important;
         background-size: 24px !important;
-        top: 4px !important;
+        top: 12px !important;
         right: 2rem !important;
         position: fixed;
         @include md {
@@ -631,7 +629,7 @@ header {
   width: 0;
   margin: 0;
 }
-.megamenu-main-nav>*>.navigation-root.navigation-level1 .navigation-item {
+.megamenu-main-nav > * > .navigation-root.navigation-level1 .navigation-item {
   @include md {
     max-height: initial;
     height: auto;
@@ -1063,8 +1061,7 @@ header {
 }
 li.page-who-we-are a::before,
 li.page-our-brands a::before,
-li.page-planet-and-people a::before,
-li.page-careers a::before {
+li.page-planet-and-people a::before {
   content: '\e903';
   font-family: 'icomoon';
   color: #a19e9e;
@@ -1115,18 +1112,6 @@ li {
     }
   }
 }
-li {
-  &.page-careers {
-    a {
-      min-width: 82px;
-      &::before {
-        @include md {
-          left: 2.4rem;
-        }
-      }
-    }
-  }
-}
 
 .megamenu-logo {
   .image {
@@ -1146,14 +1131,6 @@ li {
   .paragraphSystem
   .imageCompatibleMarkup:after {
   color: #000;
-}
-.reference-whats-new
-  .carousel-cq
-  .lSSlideOuter
-  .lSSlideWrapper
-  .carousel-slides
-  .carousel-slide {
-  margin-top: 4rem;
 }
 .megamenu .searchBox input[type='text'] {
   font-size: $font-size-12;

@@ -243,8 +243,16 @@
  */
 
 
-/*  .custamized-banner{
+ .custamized-banner{
   .product-slider{
-
+    .carousel-wrapper{
+      display: flex;
+      > div {
+        > div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
   }   
-} */
+}

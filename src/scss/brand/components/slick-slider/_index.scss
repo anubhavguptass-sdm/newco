@@ -274,7 +274,9 @@
         }
       }
     }
-
+    .slick-track {
+      display: flex;
+    }
     .carousel-wrapper {
       display: flex;
       flex-direction: column;

@@ -123,8 +123,8 @@
         } else if (document.haleonForm.description.value == '') {
             document.haleonForm.description.focus();
         }
-        else if (!document.haleonForm.chk1-label.checked) {
-            document.haleonForm.chk1-label.focus();
+        else if (!document.haleonForm['chk1-label'].checked) {
+            document.haleonForm['chk1-label'].focus();
         }
         else{
             ValidateEmail(event);
@@ -204,7 +204,6 @@
     }
 
     function ValidateEmail(event) {
-       
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if(document.haleonForm.firstname.value.length < 5){
             event.preventDefault();

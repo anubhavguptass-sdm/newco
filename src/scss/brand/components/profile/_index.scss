@@ -52,7 +52,7 @@
       /* left: -100vw; */
       z-index: 1;
       height: 40px;
-      top: calc(3rem + 65px);
+      top: calc(7rem + 65px);
     }
     @include sd {
       height: 60px;
@@ -60,15 +60,15 @@
     }
     @include md {
       height: 70px;
-      top: calc(5rem + 140px);
+      top: calc(5rem + 150px);
     }
-    @include lg {
+    @media screen and (min-width: 1280px) and (max-width: 1440px) {
       height: 80px;
-      top: calc(5rem + 160px);
+     top: calc(8rem + 160px);
     }
-    @include xl {
+    @media screen and (min-width: 1441px) {
       height: 90px;
-      top: calc(5rem + 180px);
+      top: calc(10rem + 185px);
     }
   }
 }

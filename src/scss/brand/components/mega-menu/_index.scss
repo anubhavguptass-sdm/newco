@@ -1082,10 +1082,10 @@ li.page-planet-and-people a::before {
 li {
   &.page-planet-and-people {
     a {
-      min-width: 162px;
+      min-width: 168px;
       &::before {
         @include md {
-          left: 7.75rem;
+          left: 7.85rem;
         }
       }
     }
@@ -1094,7 +1094,7 @@ li {
 li {
   &.page-our-brands {
     a {
-      min-width: 107px;
+      min-width: 112px;
       &::before {
         @include md {
           left: 4.25rem;
@@ -1106,7 +1106,7 @@ li {
 li {
   &.page-who-we-are {
     a {
-      min-width: 117px;
+      min-width: 122px;
       &::before {
         @include md {
           left: 5rem;

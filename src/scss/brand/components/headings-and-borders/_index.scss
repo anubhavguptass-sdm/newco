@@ -35,16 +35,16 @@
       top: -100%;
       z-index: -1;
     }
-   &.overlap-strip{
-     &::after{
-       z-index: 1;
-       top: 100%;
-       @include sm{
-        z-index: -1;
-        top: -100%;
-       }
-     }
-   }
+    &.overlap-strip {
+      &::after {
+        z-index: 1;
+        top: 100%;
+        @include sm {
+          z-index: -1;
+          top: -100%;
+        }
+      }
+    }
     &.two-steps {
       width: 85%;
       &.one-step-lower {

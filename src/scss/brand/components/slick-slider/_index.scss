@@ -397,32 +397,40 @@
 }
 
 .checkout-section {
-  position: relative;
-
-  .carousel-nav {
-    display: block !important;
-    text-align: center;
-    padding: 0;
-    position: absolute;
-    bottom: 6rem;
-    left: 0;
-    cursor: pointer;
-    width: 50px;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    list-style-type: none;
+  .carousel-slide {
+    .richText.component {
+      position: relative;
+      .carousel-nav {
+        display: block !important;
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        bottom: 6rem;
+        left: 0;
+        cursor: pointer;
+        width: 50px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex !important;
+        list-style-type: none;
+      }
+      .carousel-nav li {
+        width: 4px;
+        height: 20px;
+        background-color: $color-1;
+        border-radius: 0;
+      }
+      .carousel-nav li a {
+        visibility: hidden;
+      }
+      .carousel-nav li.is-active {
+        width: 8px;
+        height: 32px;
+        background-color: $color-black;
+      }
+    }
   }
-  .carousel-nav li {
-    width: 4px;
-    height: 20px;
-    background-color: $color-1;
-    border-radius: 0;
-  }
-
-  .carousel-nav li.is-active {
-    width: 8px;
-    height: 32px;
-    background-color: $color-black;
+  .youtube-player {
+    margin: 0 !important;
   }
 }

@@ -39,6 +39,10 @@
      &::after{
        z-index: 1;
        top: 100%;
+       @include sm{
+        z-index: -1;
+        top: -100%;
+       }
      }
    }
     &.two-steps {

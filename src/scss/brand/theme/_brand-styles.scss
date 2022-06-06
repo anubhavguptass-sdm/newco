@@ -425,9 +425,10 @@ a:hover {
   border-bottom: 2px solid var(--border-color-2);
 }
 
-.richText-content{
-  ul>li , ol>li{
-    &::before{
+.richText-content {
+  ul > li,
+  ol > li {
+    &::before {
       line-height: 1;
     }
   }

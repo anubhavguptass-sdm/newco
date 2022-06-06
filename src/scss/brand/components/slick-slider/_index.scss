@@ -262,11 +262,6 @@
         order: 2;
         z-index: 1;
         margin: -2rem 0 5rem 0;
-        width: 100%;
-      }
-
-      @include lg {
-        width: 90%;
       }
 
       @include sd {
@@ -290,6 +285,9 @@
             .thumbs-wrapper {
               border-bottom: 6px solid $color-primary;
             }
+          }
+          &:last-of-type {
+            padding: 0 !important;
           }
         }
 
@@ -399,12 +397,11 @@
 .checkout-section {
   .carousel {
     position: relative;
-    .carousel-nav {
-      display: block !important;
+    .lSPager {
       text-align: center;
-      padding: 0;
+      padding: 0 !important;
       position: absolute;
-      bottom: 6rem;
+      bottom: 4rem;
       left: 1.5rem;
       cursor: pointer;
       width: 50px;
@@ -413,22 +410,28 @@
       display: flex !important;
       list-style-type: none;
     }
-    .carousel-nav li {
+    .lSPager li {
       width: 4px;
       height: 20px;
       background-color: $color-1;
       border-radius: 0;
-    }
-    .carousel-nav li a {
-      color: transparent;
+      padding: 0 4px !important;
+      a {
+        border: none !important;
+      }
       &:hover {
-        background-color: transparent;
+        a {
+          background-color: transparent;
+        }
       }
     }
-    .carousel-nav li.is-active {
+    .lSPager li.active {
       width: 8px;
       height: 32px;
       background-color: $color-black;
+      a {
+        background-color: transparent;
+      }
     }
     .carousel-slides {
       .richText {

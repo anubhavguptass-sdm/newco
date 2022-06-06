@@ -258,7 +258,7 @@
         margin-top: -2rem;
         width: 100%;
       }
-      @include lg{
+      @include lg {
         width: 90%;
       }
 
@@ -269,18 +269,17 @@
       .slick-track {
         display: flex;
         height: auto !important;
-        .slick-slide{
-          @include sm{
+        .slick-slide {
+          @include sm {
             padding: 0 1rem 0 0;
           }
-          @include md{
+          @include md {
             padding: 0 2rem 0 0;
           }
-          &.slick-active{
-            .thumbs-wrapper{
+          &.slick-active {
+            .thumbs-wrapper {
               border-bottom: 6px solid $color-primary;
             }
-            
           }
         }
         .thumbs-wrapper {

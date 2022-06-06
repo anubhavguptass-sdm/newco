@@ -117,86 +117,144 @@ const { all } = require('core-js/fn/promise');
 
   // Mobile Menu
 
-
-
-
-
-
   // Show More Filter
   $(document).ready(function() {
+    // default megamenu js start
 
-// default megamenu js start
-
-$(".megamenu-navigation .megamenu-main-nav .component-content .navigation-root.navigation-level1 .navigation-item").hover(
-  function() {
-    setTimeout(function() {
-      debugger
-    $(this).addClass("current");
-    var hoverType = $(this).find('> a').attr('title');
-    var str = 'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item[data-link-title= "' + hoverType + '"]';
-    $(str).addClass("openedNew");} , 500)
-  },
-  function() {
-    setTimeout(function() {
-    $(this).removeClass("current");
-    var hoverType = $(this).find('> a').attr('title');
-    var str = 'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item[data-link-title= "' + hoverType + '"]';
-    $(str).removeClass('openedNew');
-    }.bind(this), 500)
-  });
-
-  //end    
-
-  // Megamenu
-
-  if ($(window).width() > 992) {
-  var filteredContent = $('body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item');
-  $('.megamenu-navigation .megamenu-main-nav .component-content .navigation-root.navigation-level1 .navigation-item .navigation-item-title').on('focus', function () {
-    var isFocused = $(this).is(":focus");
-    if (isFocused) {
-      $('.megamenu-navigation .megamenu-main-nav .component-content .navigation-root.navigation-level1 .navigation-item').removeClass('is-active');
-      $(this).parent().addClass('is-active');
-      var dataType = $(this).attr('title');
-      var str = 'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item[data-link-title= "' + dataType + '"]';
-      setTimeout(function () {
-         filteredContent.removeClass('opened openedNew');
-                 $(str).addClass("opened openedNew");
-         $(str).find(".default-style .btn.btn-black").focus();
-              }, 500);
-    }
-  });
-}
-
-  $(document).on("keydown", ".megamenu-submenu-items-container .megamenu-submenu-item", function (d) {
-  
-  var b = d.keyCode || d.which;
-  var c = $(this).attr("title");
-  if ($(window).width() > 992) {
-    if (b === 9) {
-      if ($(this).find(".default-style.last ul li").last().find("a").is(":focus")) {
-        $("body .megamenu-navigation .megamenu-main-nav>.component-content>.navigation-root.navigation-level1>.navigation-item.is-active>a").parent("li").next().find("a").focus();
-        $(this).removeClass("opened openedNew");
-        $(this).find("body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item .default-style .btn.btn-black").focus();
-        return false;
+    $(
+      '.megamenu-navigation .megamenu-main-nav .component-content .navigation-root.navigation-level1 .navigation-item'
+    ).hover(
+      function() {
+        setTimeout(function() {
+          debugger;
+          $(this).addClass('current');
+          var hoverType = $(this)
+            .find('> a')
+            .attr('title');
+          var str =
+            'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item[data-link-title= "' +
+            hoverType +
+            '"]';
+          $(str).addClass('openedNew');
+        }, 500);
+      },
+      function() {
+        setTimeout(
+          function() {
+            $(this).removeClass('current');
+            var hoverType = $(this)
+              .find('> a')
+              .attr('title');
+            var str =
+              'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item[data-link-title= "' +
+              hoverType +
+              '"]';
+            $(str).removeClass('openedNew');
+          }.bind(this),
+          500
+        );
       }
-    }
-    if (d.shiftKey && d.keyCode == 9) {
-      if ($(this).find(".navigation-root.navigation-branch.navigation-level1>li > a[title]").is(":focus")) {
-        $('body .megamenu-navigation .megamenu-main-nav>.component-content>.navigation-root.navigation-level1>.navigation-item > a[title="' + c + '"]').focus();
+    );
 
-      }
-    } else {
-      if (d.shiftKey && d.keyCode == 9) {
-        if ($(this).find(".navigation-root.navigation-branch.navigation-level1>li > a[title]").is(":focus")) {
-          //empty
+    //end
+
+    // Megamenu
+
+    if ($(window).width() > 992) {
+      var filteredContent = $(
+        'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item'
+      );
+      $(
+        '.megamenu-navigation .megamenu-main-nav .component-content .navigation-root.navigation-level1 .navigation-item .navigation-item-title'
+      ).on('focus', function() {
+        var isFocused = $(this).is(':focus');
+        if (isFocused) {
+          $(
+            '.megamenu-navigation .megamenu-main-nav .component-content .navigation-root.navigation-level1 .navigation-item'
+          ).removeClass('is-active');
+          $(this)
+            .parent()
+            .addClass('is-active');
+          var dataType = $(this).attr('title');
+          var str =
+            'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item[data-link-title= "' +
+            dataType +
+            '"]';
+          setTimeout(function() {
+            filteredContent.removeClass('opened openedNew');
+            $(str).addClass('opened openedNew');
+            $(str)
+              .find('.default-style .btn.btn-black')
+              .focus();
+          }, 500);
+        }
+      });
+    }
+
+    $(document).on(
+      'keydown',
+      '.megamenu-submenu-items-container .megamenu-submenu-item',
+      function(d) {
+        var b = d.keyCode || d.which;
+        var c = $(this).attr('title');
+        if ($(window).width() > 992) {
+          if (b === 9) {
+            if (
+              $(this)
+                .find('.default-style.last ul li')
+                .last()
+                .find('a')
+                .is(':focus')
+            ) {
+              $(
+                'body .megamenu-navigation .megamenu-main-nav>.component-content>.navigation-root.navigation-level1>.navigation-item.is-active>a'
+              )
+                .parent('li')
+                .next()
+                .find('a')
+                .focus();
+              $(this).removeClass('opened openedNew');
+              $(this)
+                .find(
+                  'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item .default-style .btn.btn-black'
+                )
+                .focus();
+              return false;
+            }
+          }
+          if (d.shiftKey && d.keyCode == 9) {
+            if (
+              $(this)
+                .find(
+                  '.navigation-root.navigation-branch.navigation-level1>li > a[title]'
+                )
+                .is(':focus')
+            ) {
+              $(
+                'body .megamenu-navigation .megamenu-main-nav>.component-content>.navigation-root.navigation-level1>.navigation-item > a[title="' +
+                  c +
+                  '"]'
+              ).focus();
+            }
+          } else {
+            if (d.shiftKey && d.keyCode == 9) {
+              if (
+                $(this)
+                  .find(
+                    '.navigation-root.navigation-branch.navigation-level1>li > a[title]'
+                  )
+                  .is(':focus')
+              ) {
+                //empty
+              }
+            }
+          }
         }
       }
-    }
-  }
-});
+    );
 
-// default megamenu js End
-    
+    // default megamenu js End
+
     Array.from(document.querySelectorAll('a.external')).forEach(el =>
       el.classList.remove('external')
     );

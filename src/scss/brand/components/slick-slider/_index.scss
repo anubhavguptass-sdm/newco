@@ -378,20 +378,21 @@
       background-color: $color-black;
     }
 
-    .tag-time-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .read-time {
-      margin-bottom: 0;
-    }
   }
 
   .slick-list {
     height: auto !important;
   }
+}
+
+.tag-time-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-time {
+  margin-bottom: 0;
 }
 
 .checkout-section {

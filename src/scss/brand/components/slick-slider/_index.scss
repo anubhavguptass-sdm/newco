@@ -420,7 +420,10 @@
       border-radius: 0;
     }
     .carousel-nav li a {
-      visibility: hidden;
+      color: transparent;
+      &:hover {
+        background-color: transparent;
+      }
     }
     .carousel-nav li.is-active {
       width: 8px;
@@ -429,10 +432,10 @@
     }
     .carousel-slides {
       .richText {
-        padding-top: 0 1rem 4rem;
+        padding: 1rem 1rem 4rem;
         order: 2;
         @include sm {
-          padding-top: 0 1rem 1rem;
+          padding: 1rem 1rem 1rem;
           order: unset;
         }
       }

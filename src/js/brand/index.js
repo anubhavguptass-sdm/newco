@@ -129,10 +129,12 @@ const { all } = require('core-js/fn/promise');
 
 $(".megamenu-navigation .megamenu-main-nav .component-content .navigation-root.navigation-level1 .navigation-item").hover(
   function() {
+    setTimeout(function() {
+      debugger
     $(this).addClass("current");
     var hoverType = $(this).find('> a').attr('title');
     var str = 'body .megamenu-navigation .megamenu-submenu-items-container .megamenu-submenu-item[data-link-title= "' + hoverType + '"]';
-    $(str).addClass("openedNew");
+    $(str).addClass("openedNew");} , 500)
   },
   function() {
     setTimeout(function() {

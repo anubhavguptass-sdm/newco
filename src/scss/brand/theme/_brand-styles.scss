@@ -431,4 +431,9 @@ a:hover {
       line-height: 1;
     }
   }
-} 
+}
+ 
+.bg-cover>.component-content{
+background-repeat: no-repeat;
+background-size: cover;
+}

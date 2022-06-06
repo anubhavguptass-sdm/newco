@@ -180,7 +180,7 @@
     left: 1rem;
   }
   .reference-bp-share-icon-svg {
-    margin-bottom: 1rem 0;
+    margin-bottom: 1rem;
     display: inline-block;
     width: 3.25rem;
     @include sm {
@@ -192,7 +192,7 @@
     width: 3rem;
     height: 3rem;
     align-items: center;
-    justify-content: center;
+    justify-content: cenlter;
     border: 2px solid $color-2;
     }
   }

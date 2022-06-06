@@ -43,8 +43,9 @@
               background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/accordion-plus.svg) !important;
             }
           }
-          h3 {
+          .accordion-title {
             width: 80%;
+            font-size: 1.313rem;
             a {
               font-size: $font-size-18;
               font-weight: $font-semi-bold;

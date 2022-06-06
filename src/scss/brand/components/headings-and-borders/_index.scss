@@ -278,3 +278,25 @@
     background-color: $color-secondary-pink;
   }
 }
+
+.heading-bg-strip-no-content{
+  &::before {
+    background: $color-primary;
+    content: '';
+    width: 100vw;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: 100%;
+  }
+  &::after {
+    content: '';
+    width: 100vw;
+    height: 4rem;
+    background: $color-primary;
+    position: absolute;
+    margin: 0;
+    right: 0;
+  }
+}

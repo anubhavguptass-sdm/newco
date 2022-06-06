@@ -341,6 +341,7 @@ a[style*='visibility:hidden'] {
   .component-content {
     height: 100% !important;
     img {
+      width: 100% !important;
       height: 100% !important;
       object-fit: cover;
     }

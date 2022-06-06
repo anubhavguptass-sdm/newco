@@ -131,7 +131,7 @@ header {
           }
           a {
             position: relative;
-            padding-right: 20px;
+            padding-right: 22px;
             &:after {
               content: '\e90f';
               font-family: 'icomoon';
@@ -1082,10 +1082,10 @@ li.page-planet-and-people a::before {
 li {
   &.page-planet-and-people {
     a {
-      min-width: 168px;
+      min-width: 140px;
       &::before {
         @include md {
-          left: 7.85rem;
+          left: 7rem;
         }
       }
     }

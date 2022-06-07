@@ -94,6 +94,9 @@
 .story-inline {
   .story-block {
     flex-direction: row;
+    @include sm {
+      flex-direction: column;
+    }
     .story-content {
       width: 100%;
     }

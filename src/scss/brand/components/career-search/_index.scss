@@ -56,9 +56,9 @@
   }
   #searchCareer {
     position: absolute;
-    right: 31px;
-    bottom: 32px;
-    @include sm {
+    right: 2rem;
+    bottom: 2.5rem;
+    @include sm{
       position: relative;
       bottom: auto;
       right: auto;

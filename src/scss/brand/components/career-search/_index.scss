@@ -58,7 +58,7 @@
     position: absolute;
     right: 2rem;
     bottom: 2.5rem;
-    @include sm{
+    @include sm {
       position: relative;
       bottom: auto;
       right: auto;

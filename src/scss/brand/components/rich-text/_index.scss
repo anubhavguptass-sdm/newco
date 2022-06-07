@@ -444,11 +444,11 @@
 } */
 
 /* Our brand Carousel end */
-.bg-sky{
+.bg-sky {
   background: $color-secondary-aqua;
 }
 
-.other-info-icon::before{
+.other-info-icon::before {
   content: 'e912';
   font-family: 'icomoon' !important;
   padding: 0.5rem;
@@ -456,7 +456,7 @@
   left: -4rem;
   @extend .bg-sky;
 }
-.other-contrast-icon::before{
+.other-contrast-icon::before {
   content: 'e90f';
   font-family: 'icomoon' !important;
   padding: 0.5rem;
@@ -464,7 +464,7 @@
   left: -4rem;
   @extend .bg-sky;
 }
-.other-alert-icon::before{
+.other-alert-icon::before {
   content: 'e900';
   font-family: 'icomoon' !important;
   padding: 0.5rem;
@@ -472,7 +472,7 @@
   left: -4rem;
   @extend .bg-sky;
 }
-.tick-icon::before{
+.tick-icon::before {
   content: 'e90c';
   font-family: 'icomoon' !important;
   padding: 0.5rem;

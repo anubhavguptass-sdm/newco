@@ -57,6 +57,12 @@
 .icon-arrow-right:before {
   content: '\e907';
   @extend .icomoon;
+  margin-right: 0.25rem;
+}
+.icon-arrow--right:after {
+  content: '\e907';
+  @extend .icomoon;
+  margin-right: 0.25rem;
 }
 .icon-arrow-top:before {
   content: '\e908';
@@ -110,6 +116,7 @@
   content: '\e914';
   @extend .icomoon;
 }
+
 .icon-mail:before {
   content: '\e915';
   @extend .icomoon;

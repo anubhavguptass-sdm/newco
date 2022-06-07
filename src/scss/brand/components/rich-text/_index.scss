@@ -444,36 +444,36 @@
 } */
 
 /* Our brand Carousel end */
-.bg-sky{
-  &::before{
-  background: $color-secondary-aqua;
-  width: 2rem;
-  height: 2rem;
-  font-family: 'icomoon' !important;
-  padding: 0.5rem;
-  position: absolute;
-  left: 0;
-  @include sm{
-  left: -4rem;
+.bg-sky {
+  &::before {
+    background: $color-secondary-aqua;
+    width: 2rem;
+    height: 2rem;
+    font-family: 'icomoon' !important;
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    @include sm {
+      left: -4rem;
+    }
   }
 }
-}
 
-.other-info-icon::before{
+.other-info-icon::before {
   content: '\e912';
   @extend .bg-sky;
 }
-.other-contrast-icon::before{
+.other-contrast-icon::before {
   content: '\90f';
   left: -4rem;
   @extend .bg-sky;
 }
-.other-alert-icon::before{
+.other-alert-icon::before {
   content: '\e900';
   left: -4rem;
   @extend .bg-sky;
 }
-.tick-icon::before{
+.tick-icon::before {
   content: '\e90c';
   @extend .bg-sky;
 }

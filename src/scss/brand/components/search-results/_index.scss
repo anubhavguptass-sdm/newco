@@ -36,11 +36,18 @@
     order: 2;
     margin-top: -1rem;
     width: 300px;
+    @include sm {
+      width: 100%;
+      margin-top: 0;
+    }
   }
   .searchResults-title {
     width: 70%;
   }
   .searchResults-description {
-    width: 70%;
+    width: 50%;
+    @include sd {
+      width: 70%;
+    }
   }
 }

@@ -95,10 +95,10 @@
   .story-block {
     flex-direction: row;
     @include sm {
-      flex-direction: column;
+      flex-direction: initial;
     }
     .story-content {
-      width: 100%;
+      width: inherit;
     }
   }
 }

@@ -34,20 +34,25 @@
   flex-wrap: wrap;
   img {
     order: 2;
-    margin-top: -1rem;
-    width: 300px;
+    margin-top: 0;
+    width: 100%;
     @include sm {
-      width: 100%;
-      margin-top: 0;
+      width: 300px;
+      margin-top: -1rem;
     }
   }
   .searchResults-title {
-    width: 70%;
+    width: 60%;
+    @include lg {
+      width: 70%;
+    }
   }
   .searchResults-description {
     width: 50%;
-    @include sd {
+    margin-bottom: 1rem;
+    @include lg {
       width: 70%;
+      margin-bottom: 0;
     }
   }
 }

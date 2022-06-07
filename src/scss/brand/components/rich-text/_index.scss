@@ -478,10 +478,12 @@
 }
 
 .white-stripped{
-  content: '';
+  @include sm{
+    content: '';
     position: absolute;
     left: 0;
     background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png);
     width: 2rem;
     height: 100%;
+  }
 }

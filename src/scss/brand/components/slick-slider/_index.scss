@@ -452,3 +452,12 @@
     margin: 0 !important;
   }
 }
+
+.img-bottom-btn{
+  .youtube-player {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+  }
+}

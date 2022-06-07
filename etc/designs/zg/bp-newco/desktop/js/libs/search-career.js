@@ -3,6 +3,16 @@
         $('#searchCareer').click(function(){
           careerSearch();
       });
+      $('#jobTitle , #location').keypress(function(event){
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+          careerSearch();
+        }
+        //Stop the event from propogation to other handlers
+        //If this line will be removed, then keypress event handler attached 
+        //at document level will also be triggered
+        event.stopPropagation();
+      });
       });
   //careerSearch for search jobs
   function careerSearch() {

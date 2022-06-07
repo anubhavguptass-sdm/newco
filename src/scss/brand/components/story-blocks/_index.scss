@@ -91,3 +91,11 @@
     }
   }
 }
+.story-inline {
+  .story-block {
+    flex-direction: row;
+    .story-content {
+      width: 100%;
+    }
+  }
+}

@@ -94,8 +94,11 @@
 .story-inline {
   .story-block {
     flex-direction: row;
+    @include sm {
+      flex-direction: initial;
+    }
     .story-content {
-      width: 100%;
+      width: inherit;
     }
   }
 }

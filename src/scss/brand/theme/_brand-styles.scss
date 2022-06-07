@@ -430,8 +430,11 @@ a:hover {
   ul > li,
   ol > li {
     &::before {
-      line-height: 1;
+      color: inherit;
     }
+  }
+  ul > li {
+    line-height: 1;
   }
 }
 

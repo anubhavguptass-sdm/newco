@@ -185,8 +185,7 @@
       }
 
       &:after {
-        top: -100% !important;
-
+        top: 100% !important;
         @include sm {
           top: 0 !important;
         }

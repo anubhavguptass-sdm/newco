@@ -16,7 +16,11 @@
 
 .haleon-career-search-input-element {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  @include sm{
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .haleon-career-search-section .haleon-career-search-card button {
@@ -31,15 +35,35 @@
   padding: 3px;
 }
 
-.haleon-career-search-section .haleon-career-search-card input {
-  margin: 0 1.5rem 0 0;
+.haleon-career-search-section .haleon-career-search-card  {
+  input{
+    width: 100%;
+    margin: 0.5rem 0;
+    max-width: 100%;
   background: #ddd;
   outline: 1px solid #ddd;
   padding: 1rem;
   border: none;
-  max-width: 417px;
-  width: 50%;
   height: 48px;
+  @include sm{
+    width: 50%;
+    margin: 0 1.5rem 0 0;
+    max-width: 417px;
+  }
+  &#location{
+    width: calc(100% - 4rem) !important;
+  }
+  }
+  #searchCareer{
+    position: absolute;
+    right: 31px;
+    bottom: 32px;
+    @include sm{
+      position: relative;
+      bottom: auto;
+      right: auto;
+    }
+  }
 }
 
 .haleon-career-search-section .haleon-career-search-card {

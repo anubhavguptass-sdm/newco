@@ -1,13 +1,19 @@
 .searchbox-results {
+  .form-search{
+    display: flex;
+  }
   button {
+    background-color: $color-primary;
     &:before {
       display: none !important;
     }
   }
   .searchBox-label {
-    display: block !important;
+    display: flex !important;
+    width: 100%;
     input {
       display: block !important;
+
     }
   }
 }

@@ -418,16 +418,15 @@
   width: 30%;
 }
 
-
-.icon-map{
-  &::before{
-  content: '\e914';
-  font-family: 'icomoon';
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: red;
-}
+.icon-map {
+  &::before {
+    content: '\e914';
+    font-family: 'icomoon';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: red;
+  }
 }

@@ -60,7 +60,7 @@
         position: absolute;
         bottom: 0;
         line-height: $line-height-150;
-        right: 0rem;
+        right: -1rem;
       }
       @include sd {
         right: 0rem;

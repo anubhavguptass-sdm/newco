@@ -489,6 +489,7 @@
 
 .brand-carousel-content {
   width: 40%;
+  padding: 1.5rem;
 }
 .brand-carousel-content + .image {
   width: 60%;
@@ -496,6 +497,7 @@
 
 .half-carousel .carousel .carousel-slide {
   box-shadow: none;
+  margin: 0;
 }
 
 .highlighted-content {
@@ -517,12 +519,17 @@
   box-shadow: 0px 12px 20px -4px #0000001a;
   z-index: 84;
 }
-.half-carousel .lSPager{
+.half-carousel .lSPager {
   display: none;
 }
 
+.highlighted-sec-wrapper {
+  margin-top: -7rem;
+  z-index: -1;
+}
+
 .highlighted-sec-content {
-  margin: 8rem 0 5rem !important;
+  margin: 12rem 0 5rem !important;
 }
 
 /* Our brand Carousel end */

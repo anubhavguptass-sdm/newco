@@ -703,6 +703,9 @@
   margin-right: 1rem;
   max-width: fit-content;
   border: none !important;
+  overflow: visible !important;
+  background-color: $color-white !important;
+  color: $color-2 !important;
 }
 .story-filter
   .theme-1.class-filter[data-type='buttons']
@@ -712,8 +715,8 @@
   .theme-1.class-filter[data-type='buttons']
   .filter-list-js
   .filter-item-js:hover {
-  background-color: $color-primary;
-  color: $color-2;
+  background-color: $color-primary !important;
+  color: $color-2 !important;
 }
 
 /* Quaterly result filter css end */

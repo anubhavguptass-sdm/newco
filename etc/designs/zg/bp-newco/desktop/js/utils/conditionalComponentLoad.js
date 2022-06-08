@@ -5,12 +5,12 @@ var ConditionalComponentLoad = function () {
   this.components = [
     {
       selector: ".article-filter",
-      js: ["./components/articleFilter.js"],
+      js: ["components/articleFilter.js"],
       name: "Article filter",
     },
     {
       selector: ".reference-custom-video",
-      js: ["./components/custom-video.js"],
+      js: ["components/custom-video.js"],
       name: "Custom video",
     },
     // {
@@ -33,95 +33,95 @@ var ConditionalComponentLoad = function () {
       js: ["libs/search-career.js"],
       name: "career Page",
     },
-    {
-      selector: ".products-table",
-      js: ["./components/productsTable.js"],
-      name: "Products table",
-    },
+    // {
+    //   selector: ".products-table",
+    //   js: ["components/productsTable.js"],
+    //   name: "Products table",
+    // },
     {
       selector: ".gtm-search",
-      js: ["./components/search.js"],
+      js: ["components/search.js"],
       name: "Search",
     },
-    {
-      selector: ".dotter-store",
-      js: ["./components/dotter.js"],
-      name: "Dotter",
-    },
-    {
-      selector: ".quiz-container",
-      js: ["./components/quizData.js"],
-      name: "Quiz",
-    },
+    // {
+    //   selector: ".dotter-store",
+    //   js: ["components/dotter.js"],
+    //   name: "Dotter",
+    // },
+    // {
+    //   selector: ".quiz-container",
+    //   js: ["./components/quizData.js"],
+    //   name: "Quiz",
+    // },
     {
       selector: ".accordion",
-      js: ["./components/accordion.js"],
+      js: ["components/accordion.js"],
       name: "accordion",
     },
     {
       selector: ".imageGallery",
-      js: ["./components/imageGallery.js"],
+      js: ["components/imageGallery.js"],
       name: "imageGallery",
     },
-    {
-      selector: ".map-canvas",
-      js: ["./components/map.js"],
-      name: "map",
-    },
-    {
-      selector: ".questionanswers",
-      js: ["./components/questionanswers.js"],
-      name: "questionanswers",
-    },
+    // {
+    //   selector: ".map-canvas",
+    //   js: ["./components/map.js"],
+    //   name: "map",
+    // },
+    // {
+    //   selector: ".questionanswers",
+    //   js: ["components/questionanswers.js"],
+    //   name: "questionanswers",
+    // },
     {
       selector: ".cf-search-box",
-      js: ["./components/search.box.js"],
+      js: ["components/search.box.js"],
       name: "searchbox",
     },
     {
       selector: ".searchresults",
-      js: ["./components/search.results.js"],
+      js: ["components/search.results.js"],
       name: "searchresults",
     },
-    {
-      selector: ".table",
-      js: ["./components/table.js"],
-      name: "table",
-    },
+    // {
+    //   selector: ".table",
+    //   js: ["./components/table.js"],
+    //   name: "table",
+    // },
     {
       selector: ".tabs",
-      js: ["./components/tabs.js"],
+      js: ["components/tabs.js"],
       name: "tabs",
     },
     {
       selector: ".tagBasedFilter",
-      js: ["./components/tagbasedFilter.js"],
+      js: ["components/tagbasedFilter.js"],
       name: "tagBasedFilter",
     },
-    {
-      selector: ".videoGallery",
-      js: ["./components/videoGallery.js"],
-      name: "videoGallery",
-    },
-    {
-      selector: ".short-nav-abreva",
-      js: ["./parallax.js"],
-      name: "Parallax",
-    },
-    {
-      selector: ".gigyaraas",
-      js: [
-        "./libs/lodash.js",
-        "./libs/cf.js",
-        "visitorSyncUtil.js",
-        "./components/gigya.raas.js",
-        "./components/gigya.ssolink.js",
-        "./components/gigya.raas.extension.js",
-        "./components/gigya.raas.adobeaudience.extension.js",
-        "./components/gigya.raas.unsubscribe.js",
-      ],
-      name: "gigya",
-    },
+    // {
+    //   selector: ".videoGallery",
+    //   js: ["./components/videoGallery.js"],
+    //   name: "videoGallery",
+    // },
+    // {
+    //   selector: ".short-nav-abreva",
+    //   js: ["./parallax.js"],
+    //   name: "Parallax",
+    // },
+    // {
+    //   selector: ".gigyaraas",
+    //   js: [
+    //     "./libs/lodash.js",
+    //     "./libs/cf.js",
+    //     "visitorSyncUtil.js",
+    //     "./components/gigya.raas.js",
+    //     "./components/gigya.ssolink.js",
+    //     "./components/gigya.raas.extension.js",
+    //     "./components/gigya.raas.adobeaudience.extension.js",
+    //     "./components/gigya.raas.unsubscribe.js",
+    //   ],
+    //   name: "gigya",
+    // },
   ];
 
   this.loadCssArray = function (paths, index) {

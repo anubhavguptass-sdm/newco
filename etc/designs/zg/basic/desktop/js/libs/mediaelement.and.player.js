@@ -5956,7 +5956,6 @@ if (typeof Cog != 'undefined') {
 			'zh-cn':'Chinese Simplified',
 			'zh-tw':'Chinese Traditional',
 			hr:'Croatian',
-			cs:'Czech',
 			da:'Danish',
 			nl:'Dutch',
 			en:'English',

@@ -664,14 +664,19 @@
 }
 .location-result-wrapper {
   padding-top: 2rem;
+  border-bottom: 4px solid $color-black;
+  width: calc(100% - 2rem);
   @include sd {
     padding-top: 0;
+    width: auto;
   }
-  border-bottom: 4px solid $color-black;
-  border-top: 4px solid $color-black;
   .article-filter {
     padding-top: 4rem;
     padding-bottom: 2rem;
+    border-bottom: 2px solid $color-black;
+    &:last-child{
+      border-bottom: 4px solid $color-black;
+    }
     @include sd {
       padding-top: 2rem;
     }

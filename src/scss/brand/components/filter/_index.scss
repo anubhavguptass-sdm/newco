@@ -1,5 +1,9 @@
 .browse-stories-sec {
   .filter-container-js {
+    border: 0px;
+    background: #fff;
+    padding: 0.24rem 0; 
+    text-align: left;
     display: flex;
     flex-direction: row !important;
 
@@ -10,7 +14,7 @@
     .selected-item-js {
       display: inline-block;
       text-decoration: underline;
-      padding: 5px;
+      padding: 0;
       margin-bottom: 10px;
       cursor: pointer;
       order: 1;
@@ -30,6 +34,9 @@
 
       li.active-js {
         background-color: #47ffe5;
+        background-color: #fff;
+        color: #333;
+        border: 1px solid;
       }
     }
   }
@@ -114,12 +121,13 @@
       width: auto;
       height: auto;
       z-index: 100;
-      width: 200px;
       border: 1px solid #000;
       left: 0px;
       padding: 5px;
 
       .filter-item-js {
+        background-color: #ddd;
+        border: solid #000 1px !important;
         margin-bottom: 10px;
       }
     }
@@ -147,28 +155,21 @@
   cursor: pointer !important;
 }
 
-//  refactoring css start
-.filter-container-js {
-  .faqs-filter{
-    border: 0px;
-    background: #fff;
-    padding: 0.24rem 0; 
-    text-align: left;
-    .selected-item-js{
-      padding:0; 
-    }
-    .filter-item-js{
-      .filter-item-js:not(.multilevel).active-js{
-        background-color: #fff;
-        color: #333;
-        border: 1px solid;
-      }
-      .filter-item-js{
-        background-color: #ddd;
-        border: solid #000 1px !important;
-      }
-    }
+// //  refactoring css start
+// .filter-container-js {
+//   .faqs-filter{
+//     .filter-item-js{
+//       .filter-item-js:not(.multilevel).active-js{
+//         background-color: #fff;
+//         color: #333;
+//         border: 1px solid;
+//       }
+//       .filter-item-js{
+//         background-color: #ddd;
+//         border: solid #000 1px !important;
+//       }
+//     }
     
-  }
-}
-//  refactoring css end
+//   }
+// }
+// //  refactoring css end

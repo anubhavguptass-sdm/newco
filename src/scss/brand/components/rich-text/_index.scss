@@ -447,6 +447,10 @@
   margin-left: 0;
 }
 
+.half-carousel .carousel .carousel-slides .richText {
+  padding: 0;
+}
+
 /* .half-carousel .lSSlideOuter {
   overflow: visible;
 }
@@ -457,12 +461,10 @@
 
 .half-carousel-wrapper {
   overflow: hidden;
-  padding-bottom: 15rem;
 }
 
 .half-carousel-wrapper .half-carousel {
   position: relative;
-  top: 6rem;
 }
 
 .half-carousel .brand-tile {
@@ -492,6 +494,10 @@
   width: 60%;
 }
 
+.half-carousel .carousel .carousel-slide {
+  box-shadow: none;
+}
+
 .highlighted-content {
   position: absolute;
   background: $color-2;
@@ -506,7 +512,21 @@
   }
 }
 
+.brand-carousel-content-wrapper {
+  background: #fff;
+  box-shadow: 0px 12px 20px -4px #0000001a;
+  z-index: 84;
+}
+.half-carousel .lSPager{
+  display: none;
+}
+
+.highlighted-sec-content {
+  margin: 8rem 0 5rem !important;
+}
+
 /* Our brand Carousel end */
+
 .bg-sky {
   &::before {
     background: $color-secondary-aqua;

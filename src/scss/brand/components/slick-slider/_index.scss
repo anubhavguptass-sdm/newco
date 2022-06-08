@@ -243,10 +243,11 @@
  */
 
 .custamized-banner {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
 
   @include sm {
+    padding-left: 1.5rem !important;
     padding-right: 0 !important;
   }
 
@@ -324,10 +325,10 @@
       }
 
       > div {
-        padding: 2rem 3rem 0 0;
+        padding: 2rem 1rem 0 1rem;
         order: 2;
-
-        @include sm {
+        @include md {
+          padding: 2rem 3rem 0 0;
           order: unset;
           padding: 0 2rem 0 0;
         }
@@ -348,7 +349,7 @@
       padding: 0;
       position: absolute;
       bottom: 2rem;
-      left: 0;
+      left: 1rem;
       cursor: pointer;
       width: 50px;
       justify-content: space-between;
@@ -358,6 +359,7 @@
 
       @include sm {
         bottom: 3rem;
+        left: 0;
       }
 
       @include sd {

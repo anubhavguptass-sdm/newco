@@ -437,6 +437,11 @@
 }
 
 /* Our brand Carousel */
+
+.half-carousel * {
+  overflow: visible !important;
+}
+
 .half-carousel .carousel-wrapper > .component-content {
   overflow: visible !important;
 }
@@ -472,9 +477,9 @@
   overflow: visible;
 } */
 
-/* .half-carousel-wrapper {
-  overflow: hidden;
-} */
+.carousel-wrapper {
+  overflow: visible !important;
+}
 
 .half-carousel-wrapper .half-carousel {
   position: relative;
@@ -502,7 +507,7 @@
 
 .brand-carousel-content {
   width: 100%;
-  padding: 1.5rem 0 !important;
+  padding: 2rem 1rem 1rem !important;
   @include sm {
     width: 40%;
     padding: 1.5rem !important;
@@ -581,6 +586,40 @@
   p {
     text-align: left;
     padding-top: 1.2rem;
+  }
+}
+
+.our-brands-title {
+  width: 70%;
+  @include sm {
+    width: 90%;
+  }
+  @include sd {
+    width: 100%;
+  }
+}
+
+.half-carousel .lSPager {
+  position: absolute;
+  bottom: -8rem;
+  left: auto;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  li {
+    width: 4px;
+    height: 20px;
+    background-color: #484848;
+    border-radius: 0;
+    border: none !important;
+    margin-left: 1rem !important;
+    &.active {
+      width: 8px;
+      height: 32px;
+      background-color: #000;
+    }
   }
 }
 
@@ -717,7 +756,7 @@
   .filter-item-js:hover {
   background-color: #47ffe5 !important;
   color: $color-2 !important;
-  border-color: #47ffe5;
+  border-color: #47ffe5 !important;
 }
 
 /* Quaterly result filter css end */

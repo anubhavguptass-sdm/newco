@@ -525,7 +525,7 @@
   @extend .bg-sky;
 }
 
-.white-stripped{
+.white-stripped {
   &::before {
     @include sm {
       content: '';
@@ -536,26 +536,26 @@
       height: 100%;
     }
   }
-.opportunity-sec {
-  @include sm {
-    padding-left: 6rem;
-  }
-  @include sm {
-    padding-left: 3rem;
-  }
-  .heading {
-    @include sd {
-      font-size: 2.5rem;
+  .opportunity-sec {
+    @include sm {
+      padding-left: 6rem;
     }
-    @include lg {
-      font-size: 4.5rem;
+    @include sm {
+      padding-left: 3rem;
+    }
+    .heading {
+      @include sd {
+        font-size: 2.5rem;
+      }
+      @include lg {
+        font-size: 4.5rem;
+      }
     }
   }
-}
-.aqua-content {
-  padding-left: 4rem !important;
-  @include sm {
-    padding-left: 0rem !important;
+  .aqua-content {
+    padding-left: 4rem !important;
+    @include sm {
+      padding-left: 0rem !important;
+    }
   }
-}
 }

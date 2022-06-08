@@ -559,3 +559,10 @@
     }
   }
 }
+
+.aqua-content {
+  padding-left: 4rem !important;
+  @include sm {
+    padding-left: 0rem !important;
+  }
+}

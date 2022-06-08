@@ -209,8 +209,7 @@
     padding: 5px 10px !important;
     color: $color-2 !important;
     &::before {
-      display: none;
-      content: '';
+      display: none !important;
     }
   }
 }

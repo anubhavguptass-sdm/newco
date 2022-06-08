@@ -208,7 +208,7 @@
     margin: 0 10px 0 0 !important;
     padding: 5px 10px !important;
     color: $color-2 !important;
-    &::before{
+    &::before {
       display: none;
       content: '';
     }
@@ -433,19 +433,55 @@
 
 /* Our brand Carousel */
 
-/* .brand-carousel-content-wrapper {
-  margin-left: 2rem;
-  .imageCompatibleMarkup img {
-    height: 28rem !important;
+.half-carousel .carousel-slides .carousel-slide .carouselSlide {
+  background: transparent;
+  height: auto;
+  width: 65%;
+  margin-left: -30%;
+  box-shadow: 0px 20px 56px -10px rgba(0, 0, 0, 0.15);
+}
+
+.half-carousel .carousel-slides .carousel-slide.active .carouselSlide {
+  margin-left: 0;
+}
+
+/* .half-carousel .lSSlideOuter {
+  overflow: visible;
+}
+
+.half-carousel .lSSlideWrapper {
+  overflow: visible;
+} */
+
+.half-carousel-wrapper {
+  overflow: hidden;
+  padding-bottom: 15rem;
+}
+
+.half-carousel-wrapper .half-carousel {
+  position: relative;
+  top: 6rem;
+}
+
+.half-carousel .brand-tile {
+  background: #ffffff !important;
+}
+
+.half-carousel {
+  .brand-tile {
+    .box {
+      width: 40%;
+      padding: 2rem;
+
+      @include sm {
+        padding: 0 2rem;
+      }
+    }
   }
 }
-.brand-carousel-content {
-  width: 30%;
-  height: 28rem !important;
-  .richText {
-    padding: 1rem 1rem 1rem !important;
-  }
-} */
+.half-carousel .brand-tile .image {
+  width: 60%;
+}
 
 /* Our brand Carousel end */
 .bg-sky {
@@ -491,26 +527,25 @@
     height: 100%;
   }
 }
-.opportunity-sec{
-  @include sm{
+.opportunity-sec {
+  @include sm {
     padding-left: 6rem;
   }
-  @include sm{
+  @include sm {
     padding-left: 3rem;
   }
-  .heading{
-    @include sd{
+  .heading {
+    @include sd {
       font-size: 2.5rem;
     }
-   @include lg{
-     font-size: 4.5rem;
-   }
-  
+    @include lg {
+      font-size: 4.5rem;
+    }
   }
 }
-.aqua-content{
+.aqua-content {
   padding-left: 4rem;
-  @include sm{
+  @include sm {
     padding-left: 0rem;
   }
 }

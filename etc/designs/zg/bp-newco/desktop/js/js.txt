@@ -1,9 +1,6 @@
 {mergeOff}
 libs/jquery.js
 libs/cog.js
-libs/jquery.ui.core.js
-libs/jquery.ui.datepicker.js
-libs/jquery.placeholder.js
 libs/overthrow.js
 libs/zeroclipboard.js
 libs/lightslider.min.js

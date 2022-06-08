@@ -207,7 +207,7 @@ let lng = {
       'ko'
     ],
     croatian: [],
-    czech: ['en-US', 'cz-cz', 'cz'],
+    czech: ['cz-cz', 'cz'],
     danish: [],
     default: [],
     esperanto: [],

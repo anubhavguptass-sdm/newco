@@ -228,7 +228,14 @@
     .two-steps {
       padding-left: 0.75rem;
       @include sm {
+        font-size: 0.938rem;
         margin-left: 0;
+      }
+      @include sd {
+        font-size: 1rem;
+      }
+      @include lg {
+        font-size: 1.5rem;
       }
     }
   }

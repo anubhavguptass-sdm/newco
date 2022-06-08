@@ -512,6 +512,13 @@
   @include sm {
     width: 60%;
   }
+  > div {
+    height: 100% !important;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .half-carousel .carousel .carousel-slide {

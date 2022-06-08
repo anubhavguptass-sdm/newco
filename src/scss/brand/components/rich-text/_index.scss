@@ -616,7 +616,11 @@
     padding-left: 0rem !important;
   }
 }
-.location-result-wrapper {
+.location-result-wrapper{
+  padding-top: 2rem;
+  @include sd{
+    padding-top: 0;
+  }
   border-bottom: 4px solid $color-black;
   border-top: 4px solid $color-black;
   .article-filter {

@@ -602,6 +602,9 @@
     @include sm {
       padding-left: 3rem;
     }
+    @include lg{
+      padding-left: 0rem;
+    }
     .heading {
       @include sd {
         font-size: 2.5rem;

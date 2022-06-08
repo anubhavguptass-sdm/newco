@@ -26,7 +26,7 @@
 .haleon-career-search-section .haleon-career-search-card button {
   height: 48px;
   width: 48px;
-  @include sm{
+  @include sm {
     width: 100px;
   }
   background: #30ea03;
@@ -53,10 +53,10 @@
     padding: 1rem;
     border: none;
     height: 48px;
- 
+
     &#location {
       width: calc(100% - 4rem) !important;
-      @include sm{
+      @include sm {
         width: 100%;
       }
     }
@@ -72,6 +72,5 @@
     }
   }
 }
-
 
 /* carrer search box end */

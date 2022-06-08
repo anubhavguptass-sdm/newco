@@ -208,7 +208,7 @@
     margin: 0 10px 0 0 !important;
     padding: 5px 10px !important;
     color: $color-2 !important;
-    &::before{
+    &::before {
       display: none;
       content: '';
     }
@@ -527,26 +527,25 @@
     height: 100%;
   }
 }
-.opportunity-sec{
-  @include sm{
+.opportunity-sec {
+  @include sm {
     padding-left: 6rem;
   }
-  @include sm{
+  @include sm {
     padding-left: 3rem;
   }
-  .heading{
-    @include sd{
+  .heading {
+    @include sd {
       font-size: 2.5rem;
     }
-   @include lg{
-     font-size: 4.5rem;
-   }
-  
+    @include lg {
+      font-size: 4.5rem;
+    }
   }
 }
-.aqua-content{
+.aqua-content {
   padding-left: 4rem;
-  @include sm{
+  @include sm {
     padding-left: 0rem;
   }
 }

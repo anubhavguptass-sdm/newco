@@ -436,7 +436,9 @@
 }
 
 /* Our brand Carousel */
-
+.half-carousel .carousel-wrapper > .component-content {
+  overflow: visible !important;
+}
 .half-carousel .carousel-slides .carousel-slide .carouselSlide {
   background: transparent;
   height: auto;
@@ -501,6 +503,7 @@
 .half-carousel .carousel .carousel-slide {
   box-shadow: none;
   margin: 0;
+  background-color: transparent !important;
 }
 
 .highlighted-content {
@@ -534,7 +537,13 @@
 .highlighted-sec-content {
   margin: 12rem auto 5rem !important;
   max-width: 860px !important;
-  padding: 1rem 2rem 0.5rem;
+  height: 70px;
+  .bottom-right-arrow {
+    &:after {
+      right: 12px;
+      bottom: -10px;
+    }
+  }
   p {
     text-align: left;
   }
@@ -616,9 +625,9 @@
     padding-left: 0rem !important;
   }
 }
-.location-result-wrapper{
+.location-result-wrapper {
   padding-top: 2rem;
-  @include sd{
+  @include sd {
     padding-top: 0;
   }
   border-bottom: 4px solid $color-black;

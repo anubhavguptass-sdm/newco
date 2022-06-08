@@ -140,35 +140,31 @@
   }
 }
 
-
-
-
 .faqs-filter {
   cursor: pointer !important;
 }
 
 //  refactoring css start
 .filter-container-js {
-  .faqs-filter{
+  .faqs-filter {
     border: 0px;
     background: #fff;
-    padding: 0.24rem 0; 
+    padding: 0.24rem 0;
     text-align: left;
-    .selected-item-js{
-      padding:0; 
+    .selected-item-js {
+      padding: 0;
     }
-    .filter-item-js{
-      .filter-item-js:not(.multilevel).active-js{
+    .filter-item-js {
+      .filter-item-js:not(.multilevel).active-js {
         background-color: #fff;
         color: #333;
         border: 1px solid;
       }
-      .filter-item-js{
+      .filter-item-js {
         background-color: #ddd;
         border: solid #000 1px !important;
       }
     }
-    
   }
 }
 //  refactoring css end

@@ -327,7 +327,7 @@
       > div {
         padding: 2rem 1rem 0 1rem;
         order: 2;
-        @include md {
+        @include sm {
           padding: 2rem 3rem 0 0;
           order: unset;
           padding: 0 2rem 0 0;

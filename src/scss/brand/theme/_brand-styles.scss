@@ -448,3 +448,8 @@ a:hover {
     order: 2;
   }
 }
+.img-quarter-width-m img {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    width: 75%;
+  }
+}

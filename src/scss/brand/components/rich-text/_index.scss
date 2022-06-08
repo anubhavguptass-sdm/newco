@@ -481,8 +481,8 @@
   @extend .bg-sky;
 }
 
-.white-stripped::before{
-  @include sm{
+.white-stripped::before {
+  @include sm {
     content: '';
     position: absolute;
     left: 0;

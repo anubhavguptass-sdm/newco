@@ -429,8 +429,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include sd{
-      top:0rem;
+    @include sd {
+      top: 0rem;
     }
   }
 }
@@ -450,6 +450,10 @@
   margin-left: 0;
 }
 
+.half-carousel .carousel .carousel-slides .richText {
+  padding: 0;
+}
+
 /* .half-carousel .lSSlideOuter {
   overflow: visible;
 }
@@ -460,12 +464,10 @@
 
 .half-carousel-wrapper {
   overflow: hidden;
-  padding-bottom: 15rem;
 }
 
 .half-carousel-wrapper .half-carousel {
   position: relative;
-  top: 6rem;
 }
 
 .half-carousel .brand-tile {
@@ -490,9 +492,15 @@
 
 .brand-carousel-content {
   width: 40%;
+  padding: 1.5rem;
 }
 .brand-carousel-content + .image {
   width: 60%;
+}
+
+.half-carousel .carousel .carousel-slide {
+  box-shadow: none;
+  margin: 0;
 }
 
 .highlighted-content {
@@ -509,7 +517,26 @@
   }
 }
 
+.brand-carousel-content-wrapper {
+  background: #fff;
+  box-shadow: 0px 12px 20px -4px #0000001a;
+  z-index: 84;
+}
+.half-carousel .lSPager {
+  display: none;
+}
+
+.highlighted-sec-wrapper {
+  margin-top: -7rem;
+  z-index: -1;
+}
+
+.highlighted-sec-content {
+  margin: 12rem 0 5rem !important;
+}
+
 /* Our brand Carousel end */
+
 .bg-sky {
   &::before {
     background: $color-secondary-aqua;
@@ -591,10 +618,10 @@
   }
   border-bottom: 4px solid $color-black;
   border-top: 4px solid $color-black;
-  .article-filter{
+  .article-filter {
     padding-top: 4rem;
     padding-bottom: 2rem;
-    @include sd{
+    @include sd {
       padding-top: 2rem;
     }
   }

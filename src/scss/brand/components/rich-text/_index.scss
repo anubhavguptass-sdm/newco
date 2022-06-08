@@ -424,11 +424,14 @@
     height: 40px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -4rem;
     background: #eaeaea;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include sd{
+      top:0rem;
+    }
   }
 }
 
@@ -579,5 +582,16 @@
   padding-left: 4rem !important;
   @include sm {
     padding-left: 0rem !important;
+  }
+}
+.location-result-wrapper{
+  border-bottom: 4px solid $color-black;
+  border-top: 4px solid $color-black;
+  .article-filter{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    @include sd{
+      padding-top: 2rem;
+    }
   }
 }

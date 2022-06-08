@@ -463,10 +463,12 @@
 .img-bottom-btn {
   .youtube-player {
     .play {
+    @include sm{
       top: auto;
       left: auto;
-      bottom: 1rem;
-      right: 1rem;
+      bottom: 0;
+      right: 0;
+    }
     }
   }
 }

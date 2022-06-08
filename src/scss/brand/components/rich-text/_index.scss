@@ -420,6 +420,7 @@
 .icon-map {
   &::before {
     content: '\e914';
+    font-family: 'icomoon';
     width: 40px;
     height: 40px;
     position: absolute;
@@ -664,7 +665,7 @@
 }
 .location-result-wrapper {
   padding-top: 2rem;
-  border-bottom: 4px solid $color-black;
+  border-top: 4px solid $color-black;
   width: calc(100% - 2rem);
   @include sd {
     padding-top: 0;
@@ -681,6 +682,9 @@
       padding-top: 2rem;
     }
   }
+}
+.flex > div > div > div.career-search-wrapper {
+  margin-right: auto !important;
 }
 
 /* Quaterly result filter css */

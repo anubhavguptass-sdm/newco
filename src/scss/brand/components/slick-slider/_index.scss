@@ -456,10 +456,12 @@
 .img-bottom-btn {
   .youtube-player {
     .play {
+    @include sm{
       top: auto;
       left: auto;
       bottom: 0;
       right: 0;
+    }
     }
   }
 }

@@ -439,6 +439,13 @@
 .half-carousel .carousel-wrapper > .component-content {
   overflow: visible !important;
 }
+.half-carousel .carousel-wrapper .box.component {
+  overflow: visible !important;
+}
+.half-carousel .carousel-slides {
+  overflow: visible;
+  margin-top: 3rem;
+}
 .half-carousel .carousel-slides .carousel-slide .carouselSlide {
   background: transparent;
   height: auto;
@@ -464,9 +471,9 @@
   overflow: visible;
 } */
 
-.half-carousel-wrapper {
+/* .half-carousel-wrapper {
   overflow: hidden;
-}
+} */
 
 .half-carousel-wrapper .half-carousel {
   position: relative;
@@ -493,11 +500,17 @@
 }
 
 .brand-carousel-content {
-  width: 40%;
+  width: 100%;
   padding: 1.5rem !important;
+  @include sm {
+    width: 40%;
+  }
 }
 .brand-carousel-content + .image {
-  width: 60%;
+  width: 100%;
+  @include sm {
+    width: 60%;
+  }
 }
 
 .half-carousel .carousel .carousel-slide {
@@ -509,12 +522,18 @@
 .highlighted-content {
   position: absolute;
   background: $color-2;
-  left: 25%;
-  top: 0rem;
+  left: 0;
+  top: -3rem;
   z-index: 1;
-  width: 40%;
+  width: 65%;
   text-align: center;
   padding: 10px 0 0 0;
+  z-index: 1;
+  @include sm {
+    left: 25%;
+    top: -2rem;
+    width: 40%;
+  }
   p {
     color: $color-white;
   }
@@ -524,6 +543,12 @@
   background: #fff;
   box-shadow: 0px 12px 20px -4px #0000001a;
   z-index: 84;
+  > div > div {
+    flex-direction: column;
+    @include sm {
+      flex-direction: row;
+    }
+  }
 }
 /* .half-carousel .lSPager {
   display: none;
@@ -541,7 +566,7 @@
   .bottom-right-arrow {
     &:after {
       right: 12px;
-      bottom: 6px;
+      bottom: -8px;
     }
   }
   p {

@@ -1,11 +1,13 @@
 /* carrer search box */
 
 .career-search-wrapper {
+ @include sm{
   position: absolute;
   bottom: -73px;
   left: 0;
   right: 0;
   z-index: 1;
+ }
 }
 
 .haleon-career-search-section {
@@ -44,7 +46,7 @@
   padding: 2rem;
   background: #ffffff;
   box-shadow: 0px 16px 40px -8px #0000001a;
-  max-width: 90%;
+  max-width: 100%;
   @include sd{
     max-width: 80%;
   }

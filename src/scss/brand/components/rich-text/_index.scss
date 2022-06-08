@@ -517,16 +517,17 @@
   @extend .bg-sky;
 }
 
-.white-stripped::before {
-  @include sm {
-    content: '';
-    position: absolute;
-    left: 0;
-    background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png);
-    width: 2rem;
-    height: 100%;
+.white-stripped{
+  &::before {
+    @include sm {
+      content: '';
+      position: absolute;
+      left: 0;
+      background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png);
+      width: 2rem;
+      height: 100%;
+    }
   }
-}
 .opportunity-sec {
   @include sm {
     padding-left: 6rem;
@@ -544,8 +545,9 @@
   }
 }
 .aqua-content {
-  padding-left: 4rem;
+  padding-left: 4rem !important;
   @include sm {
-    padding-left: 0rem;
+    padding-left: 0rem !important;
   }
+}
 }

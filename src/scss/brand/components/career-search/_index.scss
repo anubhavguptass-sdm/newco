@@ -1,13 +1,13 @@
 /* carrer search box */
 
 .career-search-wrapper {
- @include sm{
-  position: absolute;
-  bottom: -73px;
-  left: 0;
-  right: 0;
-  z-index: 1;
- }
+  @include sm {
+    position: absolute;
+    bottom: -73px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
 }
 
 .haleon-career-search-section {

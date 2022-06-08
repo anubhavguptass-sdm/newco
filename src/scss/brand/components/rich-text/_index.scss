@@ -541,11 +541,12 @@
   .bottom-right-arrow {
     &:after {
       right: 12px;
-      bottom: -10px;
+      bottom: 6px;
     }
   }
   p {
     text-align: left;
+    padding-top: 1.2rem;
   }
 }
 

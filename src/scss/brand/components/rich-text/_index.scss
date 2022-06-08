@@ -501,9 +501,10 @@
 
 .brand-carousel-content {
   width: 100%;
-  padding: 1.5rem !important;
+  padding: 1.5rem 0 !important;
   @include sm {
     width: 40%;
+    padding: 1.5rem !important;
   }
 }
 .brand-carousel-content + .image {
@@ -628,7 +629,7 @@
     @include sm {
       padding-left: 3rem;
     }
-    @include lg{
+    @include lg {
       padding-left: 0rem;
     }
     .heading {

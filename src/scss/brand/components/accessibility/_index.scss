@@ -129,6 +129,9 @@ button {
           margin: 0 2px;
           span {
             font-size: 1rem;
+            &::before {
+              font-size: 1rem;
+            }
           }
         }
       }

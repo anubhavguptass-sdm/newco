@@ -702,7 +702,7 @@
   margin-left: 0;
   margin-right: 1rem;
   max-width: fit-content;
-  border: none !important;
+  border-color: $color-white !important;
   overflow: visible !important;
   background-color: $color-white !important;
   color: $color-2 !important;
@@ -715,8 +715,9 @@
   .theme-1.class-filter[data-type='buttons']
   .filter-list-js
   .filter-item-js:hover {
-  background-color: $color-primary !important;
+  background-color: #47ffe5 !important;
   color: $color-2 !important;
+  border-color: #47ffe5;
 }
 
 /* Quaterly result filter css end */

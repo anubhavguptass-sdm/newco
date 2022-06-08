@@ -513,6 +513,13 @@
   @include sm {
     width: 60%;
   }
+  > div {
+    height: 100% !important;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 .half-carousel .carousel .carousel-slide {
@@ -668,7 +675,7 @@
     padding-top: 4rem;
     padding-bottom: 2rem;
     border-bottom: 2px solid $color-black;
-    &:last-child{
+    &:last-child {
       border-bottom: 4px solid $color-black;
     }
     @include sd {
@@ -676,3 +683,14 @@
     }
   }
 }
+.flex > div > div > div.career-search-wrapper {
+  margin-right: auto !important;
+}
+
+/* Quaterly result filter css */
+
+.class-filter[data-type='buttons'] .filter-list-js .filter-item-js {
+  margin-left: 0;
+}
+
+/* Quaterly result filter css end */

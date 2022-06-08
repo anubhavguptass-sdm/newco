@@ -209,8 +209,7 @@
     padding: 5px 10px !important;
     color: $color-2 !important;
     &::before {
-      display: none;
-      content: '';
+      display: none !important;
     }
   }
 }
@@ -487,7 +486,7 @@
 .brand-carousel-content {
   width: 40%;
 }
-.brand-carousel-content + .image img {
+.brand-carousel-content + .image {
   width: 60%;
 }
 

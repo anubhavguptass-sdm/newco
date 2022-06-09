@@ -117,9 +117,23 @@ const { all } = require('core-js/fn/promise');
 
   // Show More Filter
   $(document).ready(function() {
+
     Array.from(document.querySelectorAll('a.external')).forEach(el =>
       el.classList.remove('external')
     );
+
+    $(".operate-filter-article-section .reference-bp-filter").bind("DOMNodeInserted",function(){
+      $(".filter-item-js").click(function(){
+       if ($(this).hasClass("default-state-js")){
+      
+      $(".location-result-wrapper").css("display","none");
+      } else {
+      
+      $(".location-result-wrapper").css("display","block");
+      }
+      });
+      });      
+
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');
     });
@@ -136,6 +150,7 @@ const { all } = require('core-js/fn/promise');
       $('.searchBox .search-query').removeClass('searchInput');
     });
   });
+  
   // Show More Filter
 })(Cog.jQuery());
 /*eslint-enable*/

@@ -822,12 +822,12 @@
   @include sm {
     padding-top: 0;
   }
-  @include sd{
+  @include sd {
     width: auto;
   }
-  .icon-arrow-top--right{
+  .icon-arrow-top--right {
     text-align: left;
-    @include sm{
+    @include sm {
       text-align: right;
     }
   }
@@ -937,6 +937,7 @@
 }
 
 .signs-to-look {
+  margin-top: 4rem;
   p {
     text-align: center;
     span {

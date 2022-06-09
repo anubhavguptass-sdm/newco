@@ -746,13 +746,12 @@
   .article-filter {
     padding-top: 4rem;
     padding-bottom: 2rem;
-    margin-top: 2rem;
     border-bottom: 2px solid $color-black;
     &:last-child {
       border-bottom: 4px solid $color-black;
     }
     @include sm {
-      >.richText{
+      > .richText{
       padding-left: 4rem;
       }
       padding-top: 2rem;

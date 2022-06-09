@@ -244,8 +244,11 @@ a[style*='visibility:hidden'] {
     width: 60%;
   }
 }
-.width-auto img {
+.width-auto {
   width: auto !important;
+  img {
+    width: auto !important;
+  }
 }
 .max-content-width-1140 {
   max-width: 100%;

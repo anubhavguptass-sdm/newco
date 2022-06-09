@@ -126,8 +126,10 @@ const { all } = require('core-js/fn/promise');
       function() {
         $('.filter-item-js').click(function() {
           if ($(this).hasClass('default-state-js')) {
+            console.log('check1');
             $('.location-result-wrapper').css('display', 'none');
           } else {
+            console.log('check2');
             $('.location-result-wrapper').css('display', 'block');
           }
         });

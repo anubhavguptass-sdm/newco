@@ -782,7 +782,7 @@
 }
 
 /* Quaterly result filter css end */
-
+.operate-filter-article-section{
 .class-filter[data-type-mobile='dropdown'] {
   margin: 0;
   max-width: 250px;
@@ -794,9 +794,10 @@
       }
     }
     .selected-item-js {
-      background-color: $color-white;
+      background-color: $color-white !important;
       border: 0px;
-      padding: 0.25rem;
+      padding: 0.25rem 1rem;
+      text-align: left;
       &:hover {
         background-color: $color-white;
       }
@@ -809,8 +810,10 @@
   }
   .filter-list-js {
     .filter-item-js {
-      padding: 0.25rem !important;
-      text-align: center;
+      padding: 0.25rem 1rem !important;
+      text-align: left;
+      background-color: $color-white;
+      border: none;
       .active-js {
         background-color: $color-white;
         color: $color-black;
@@ -818,4 +821,5 @@
       }
     }
   }
+}
 }

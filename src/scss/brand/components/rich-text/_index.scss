@@ -455,10 +455,14 @@
 .half-carousel .carousel-slides .carousel-slide .carouselSlide {
   background: transparent;
   height: auto;
-  width: 65%;
-  margin-left: -30%;
+  width: 80%;
+  margin-left: -15%;
   box-shadow: 0px 20px 56px -10px rgba(0, 0, 0, 0.15);
   height: 100%;
+  @include sm{
+    width: 65%;
+    margin-left: -30%;
+  }
 }
 
 .half-carousel .carousel-slides .carousel-slide.active .carouselSlide {
@@ -539,7 +543,7 @@
   left: 0;
   top: -3rem;
   z-index: 1;
-  width: 65%;
+  width: 80%;
   text-align: center;
   padding: 10px 0 0 0;
   z-index: 1;
@@ -673,7 +677,7 @@
 }
 
 .half-carousel .carousel-cq .lSSlideOuter .lSSlideWrapper .lSAction a {
-  margin-top: -136px;
+  margin-top: -110px;
   @include sm {
     margin-top: -80px;
   }

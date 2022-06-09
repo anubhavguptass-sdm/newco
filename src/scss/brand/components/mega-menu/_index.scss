@@ -452,6 +452,7 @@ header {
         &:focus {
           &:after {
             display: block;
+            border: 2px dotted;
             @media only screen and (max-width: 991px) {
               display: none;
             }

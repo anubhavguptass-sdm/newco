@@ -833,7 +833,7 @@
     &:last-child {
       border-bottom: 4px solid $color-black;
     }
-    > .richText-content {
+    .headquarter-content{
       @include sm {
         padding-left: 4rem;
       }

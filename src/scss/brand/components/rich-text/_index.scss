@@ -790,16 +790,16 @@
     &.opened-js {
       background-color: $color-white;
     }
-    .selected-item-js{
+    .selected-item-js {
       background-color: $color-white;
       border: 0px;
       padding: 0.25rem;
-      &:hover{
+      &:hover {
         background-color: $color-white;
       }
     }
-    &:focus-within{
-      .selected-item-js{
+    &:focus-within {
+      .selected-item-js {
         background-color: $color-white;
       }
     }

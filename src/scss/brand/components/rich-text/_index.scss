@@ -778,3 +778,36 @@
 }
 
 /* Quaterly result filter css end */
+
+
+
+.class-filter[data-type-mobile='dropdown'] {
+  margin: 0;
+  max-width: 250px;
+  .filter-container-js{
+    &.opened-js{
+      background-color: $color-white;
+    }
+    &:focus-within{
+      .selected-item-js{
+        background-color: $color-white;
+        border: 0px;
+        padding: 0.25rem;
+        &:hover{
+          background-color: $color-white;
+        }
+      }
+    }
+  } 
+  .filter-list-js {
+    .filter-item-js{
+      padding: 0.25rem !important;
+      text-align: center;
+      .active-js{
+        background-color: $color-white;
+        color: $color-black;
+        padding: 0.25rem;
+      }
+    }
+  }
+} 

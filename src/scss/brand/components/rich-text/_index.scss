@@ -610,10 +610,11 @@
     width: 100%;
   }
 }
-
 .half-carousel .bottom-pos-0 {
+  position: relative;
   @include sd {
-    position: relative;
+    position: absolute;
+    bottom: 12px;
   }
 }
 
@@ -639,13 +640,18 @@
       background-color: #000;
       a {
         border: none !important;
-        background-color: transparent;
+        background-color: transparent !important;
       }
     }
     a {
       border: none !important;
       &:hover {
         background-color: transparent;
+      }
+    }
+    &:hover {
+      a {
+        background-color: transparent !important;
       }
     }
   }
@@ -791,44 +797,41 @@
 }
 
 /* Quaterly result filter css end */
-.operate-filter-article-section{
-.class-filter[data-type-mobile='dropdown'] {
-  margin: 0;
-  max-width: 250px;
-  .filter-container-js {
-    &.opened-js {
-      background-color: $color-white;
-      .selected-item-js{
+.operate-filter-article-section {
+  .class-filter[data-type-mobile='dropdown'] {
+    margin: 0;
+    max-width: 250px;
+    .filter-container-js {
+      &.opened-js {
         background-color: $color-white;
       }
-    }
-    .selected-item-js {
-      background-color: $color-white !important;
-      border: 0px;
-      padding: 0.25rem 1rem;
-      text-align: left;
-      &:hover {
-        background-color: $color-white;
-      }
-    }
-    &:focus-within {
       .selected-item-js {
+        background-color: $color-white !important;
+        border: 0px;
+        padding: 0.25rem 1rem;
+        text-align: left;
+        &:hover {
+          background-color: $color-white;
+        }
+      }
+      &:focus-within {
+        .selected-item-js {
+          background-color: $color-white;
+        }
+      }
+    }
+    .filter-list-js {
+      .filter-item-js {
+        padding: 0.25rem 1rem !important;
+        text-align: left;
         background-color: $color-white;
+        border: none;
+        .active-js {
+          background-color: $color-white;
+          color: $color-black;
+          padding: 0.25rem;
+        }
       }
     }
   }
-  .filter-list-js {
-    .filter-item-js {
-      padding: 0.25rem 1rem !important;
-      text-align: left;
-      background-color: $color-white;
-      border: none;
-      .active-js {
-        background-color: $color-white;
-        color: $color-black;
-        padding: 0.25rem;
-      }
-    }
-  }
-}
 }

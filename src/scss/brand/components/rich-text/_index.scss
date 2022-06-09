@@ -695,20 +695,24 @@
 .logo-wrapper {
   .image {
     border: 1px solid $color-grey-3;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .no-top-border {
-  border-top: none;
+  border-top: none !important;
 }
 .no-bottom-border {
-  border-bottom: none;
+  border-bottom: none !important;
 }
 .no-right-border {
-  border-right: none;
+  border-right: none !important;
 }
 .no-left-border {
-  border-left: none;
+  border-left: none !important;
 }
 
 /* Our brand Carousel end */

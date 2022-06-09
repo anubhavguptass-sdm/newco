@@ -610,10 +610,11 @@
     width: 100%;
   }
 }
-
 .half-carousel .bottom-pos-0 {
+  position: relative;
   @include sd {
-    position: relative;
+    position: absolute;
+    bottom: 12px;
   }
 }
 
@@ -639,13 +640,18 @@
       background-color: #000;
       a {
         border: none !important;
-        background-color: transparent;
+        background-color: transparent !important;
       }
     }
     a {
       border: none !important;
       &:hover {
         background-color: transparent;
+      }
+    }
+    &:hover {
+      a {
+        background-color: transparent !important;
       }
     }
   }
@@ -795,9 +801,6 @@
   .filter-container-js {
     &.opened-js {
       background-color: $color-white;
-      .selected-item-js{
-        background-color: $color-white;
-      }
     }
     .selected-item-js {
       background-color: $color-white;

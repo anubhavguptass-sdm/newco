@@ -692,15 +692,24 @@
       margin-left: 1rem;
       color: $color-primary;
     }
-    &:hover{
-      color: $color-2;
+    &:hover {
+      .icon-angle-right {
+        color: $color-2;
+      }
     }
   }
   &:before {
-    content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/brands-measure.png');
-    position: absolute;
-    left: -2rem;
-    top: -4rem;
+    display: none;
+    @include sm {
+      display: block;
+      content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/brands-measure.png');
+      position: absolute;
+      left: -5rem;
+      top: -4rem;
+      @include sd {
+        left: -2rem;
+      }
+    }
   }
 }
 

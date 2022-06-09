@@ -822,12 +822,12 @@
   @include sm {
     padding-top: 0;
   }
-  @include sd{
+  @include sd {
     width: auto;
   }
-  .icon-arrow--right{
+  .icon-arrow--right {
     text-align: left;
-    @include sm{
+    @include sm {
       text-align: right;
     }
   }
@@ -843,7 +843,6 @@
     &:last-child {
       border-bottom: 4px solid $color-black;
     }
-   
   }
 }
 .headquarter-content {
@@ -946,6 +945,7 @@
 }
 
 .signs-to-look {
+  margin-top: 4rem;
   p {
     text-align: center;
     span {

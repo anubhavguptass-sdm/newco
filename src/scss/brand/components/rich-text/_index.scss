@@ -843,11 +843,12 @@
     &:last-child {
       border-bottom: 4px solid $color-black;
     }
-    .headquarter-content {
-      @include sm {
-        padding-left: 4rem;
-      }
-    }
+   
+  }
+}
+.headquarter-content {
+  @include sm {
+    padding-left: 4rem;
   }
 }
 .flex > div > div > div.career-search-wrapper {

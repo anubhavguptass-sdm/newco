@@ -916,3 +916,30 @@
     }
   }
 }
+
+/* Health Topic */
+
+.health-topic-tag + .health-topic-tag {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  @include sm {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.signs-to-look{
+  p{
+    text-align: center;
+    span{
+      display: inline-flex;
+    padding: .5rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background: $color-grey-3;
+    margin: 0 .5rem;
+  }
+    }
+  }
+
+/* Health Topic End */

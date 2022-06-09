@@ -133,6 +133,10 @@ button {
               font-size: 1rem;
             }
           }
+          &:focus,
+          &:hover {
+            background-color: $color-primary;
+          }
         }
       }
       .icons-with-link {

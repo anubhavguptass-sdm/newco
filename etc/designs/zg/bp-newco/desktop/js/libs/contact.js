@@ -125,9 +125,9 @@
             document.haleonForm.name.focus();
         } else if (document.haleonForm.email.value == '') {
             document.haleonForm.email.focus();
-        } else if (document.forms["haleonForm"]["00N1q000000v7U5"].value == '') {
+        } else if (document.forms["haleonForm"]["00N1q000000v7U5"].value == '' || document.forms["haleonForm"]["00N1q000000v7U5"].value == 'none') {
             document.forms["haleonForm"]["00N1q000000v7U5"].focus();
-        } else if (document.haleonForm.subject.value == '') {
+        } else if (document.haleonForm.subject.value == '' || document.haleonForm.subject.value == 'none') {
             document.haleonForm.subject.focus();
         } else if (document.haleonForm.description.value == '') {
             document.haleonForm.description.focus();
@@ -177,7 +177,7 @@
         }
 
         if ((type == 'country' || type == 'all')) {
-            if (country == "") {
+            if (country == "none" || country == "") {
                 document.getElementById('00N1q000000v7U5').style.cssText = "border-color: #c30000;";
                 document.getElementById('countryReqMsg').style.display = 'block';
             } else {
@@ -186,7 +186,7 @@
             }
         }
         if ((type == 'subject' || type == 'all')) {
-            if (enquiry == "") {
+            if (enquiry == "" || enquiry == 'none') {
                 document.getElementById('subject').style.cssText = "border-color: #c30000;";
                 document.getElementById('subjectDescription').style.cssText = "color: #c30000; display: block";
                 document.getElementById("subjectDescription").innerHTML ="Required";

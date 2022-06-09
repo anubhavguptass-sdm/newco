@@ -73,6 +73,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4px;
   }
 }
 
@@ -153,16 +154,18 @@
     list-style: none;
     padding: 0;
     height: 35px;
-    padding-left: 1rem;
+    padding-left: 0rem;
     line-height: 35px;
     margin: 0;
     display: flex;
     .breadcrumb-list-item {
-      margin-right: 1rem;
+      margin-right: 2px;
       a {
         font-size: 14px;
         color: #fff;
         line-height: $line-height-150;
+        padding: 5px;
+        margin-left: 2px;
       }
     }
     @include sm {
@@ -455,10 +458,14 @@
 .half-carousel .carousel-slides .carousel-slide .carouselSlide {
   background: transparent;
   height: auto;
-  width: 65%;
-  margin-left: -30%;
+  width: 80%;
+  margin-left: -15%;
   box-shadow: 0px 20px 56px -10px rgba(0, 0, 0, 0.15);
   height: 100%;
+  @include sm {
+    width: 65%;
+    margin-left: -30%;
+  }
 }
 
 .half-carousel .carousel-slides .carousel-slide.active .carouselSlide {
@@ -539,7 +546,7 @@
   left: 0;
   top: -3rem;
   z-index: 1;
-  width: 65%;
+  width: 80%;
   text-align: center;
   padding: 10px 0 0 0;
   z-index: 1;
@@ -571,6 +578,10 @@
 .highlighted-sec-wrapper {
   margin-top: -7rem;
   z-index: -1;
+  > div {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .highlighted-sec-content {
@@ -602,10 +613,7 @@
 }
 
 .our-brands-title {
-  width: 70%;
-  @include sm {
-    width: 90%;
-  }
+  width: 60%;
   @include sd {
     width: 100%;
   }
@@ -620,13 +628,27 @@
 
 .half-carousel .lSPager {
   position: absolute;
-  bottom: -8rem;
+  bottom: -19rem;
   left: auto;
-  right: 0;
+  right: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: auto;
+  @media screen and (min-width: 710px) {
+    bottom: -17rem;
+  }
+  @include sm {
+    bottom: -11rem;
+    right: 0;
+  }
+  @include sd {
+    bottom: -8.75rem;
+    right: -2rem;
+  }
+  @include md {
+    right: 0;
+  }
   li {
     width: 4px;
     height: 20px;
@@ -655,6 +677,63 @@
       }
     }
   }
+}
+
+.half-carousel .carousel-cq .lSSlideOuter .lSSlideWrapper .lSAction a {
+  margin-top: -110px;
+  @include sm {
+    margin-top: -80px;
+  }
+}
+
+.white-line-strip {
+  a {
+    .icon-angle-right {
+      margin-left: 1rem;
+      color: $color-primary;
+    }
+    &:hover {
+      .icon-angle-right {
+        color: $color-2;
+      }
+    }
+  }
+  &:before {
+    display: none;
+    @include sm {
+      display: block;
+      content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/brands-measure.png');
+      position: absolute;
+      left: -5rem;
+      top: -4rem;
+      @include sd {
+        left: -2rem;
+      }
+    }
+  }
+}
+
+.logo-wrapper {
+  .image {
+    border: 1px solid $color-grey-3;
+    padding: 1.25rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.no-top-border {
+  border-top: none !important;
+}
+.no-bottom-border {
+  border-bottom: none !important;
+}
+.no-right-border {
+  border-right: none !important;
+}
+.no-left-border {
+  border-left: none !important;
 }
 
 /* Our brand Carousel end */

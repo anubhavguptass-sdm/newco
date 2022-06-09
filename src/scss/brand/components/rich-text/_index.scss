@@ -611,6 +611,12 @@
   }
 }
 
+.half-carousel .bottom-pos-0 {
+  @include sd {
+    position: relative;
+  }
+}
+
 .half-carousel .lSPager {
   position: absolute;
   bottom: -8rem;

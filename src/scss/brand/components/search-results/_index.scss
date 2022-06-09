@@ -17,6 +17,10 @@
     input {
       display: block !important;
       width: 100%;
+      padding: 1rem;
+      border-width: 2px;
+      border-color: #9e9e9e;
+      border-right: none;
     }
   }
 }

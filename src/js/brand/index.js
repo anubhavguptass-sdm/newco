@@ -121,17 +121,18 @@ const { all } = require('core-js/fn/promise');
       el.classList.remove('external')
     );
 
-    $(".operate-filter-article-section .reference-bp-filter").bind("DOMNodeInserted",function(){
-      $(".filter-item-js").click(function(){
-       if ($(this).hasClass("default-state-js")){
-      
-      $(".location-result-wrapper").css("display","none");
-      } else {
-      
-      $(".location-result-wrapper").css("display","block");
+    $('.operate-filter-article-section .reference-bp-filter').bind(
+      'DOMNodeInserted',
+      function() {
+        $('.filter-item-js').click(function() {
+          if ($(this).hasClass('default-state-js')) {
+            $('.location-result-wrapper').css('display', 'none');
+          } else {
+            $('.location-result-wrapper').css('display', 'block');
+          }
+        });
       }
-      });
-      });      
+    );
 
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');

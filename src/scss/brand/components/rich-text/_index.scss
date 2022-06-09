@@ -791,6 +791,9 @@
   .filter-container-js{
     &.opened-js{
       background-color: $color-white;
+      .selected-item-js{
+        background-color: $color-white;
+      }
     }
     .selected-item-js{
       background-color: $color-white;

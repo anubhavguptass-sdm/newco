@@ -153,16 +153,18 @@
     list-style: none;
     padding: 0;
     height: 35px;
-    padding-left: 1rem;
+    padding-left: 0rem;
     line-height: 35px;
     margin: 0;
     display: flex;
     .breadcrumb-list-item {
-      margin-right: 1rem;
+      margin-right: 2px;
       a {
         font-size: 14px;
         color: #fff;
         line-height: $line-height-150;
+        padding: 5px;
+        margin-left: 2px;
       }
     }
     @include sm {

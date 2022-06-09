@@ -117,7 +117,6 @@ const { all } = require('core-js/fn/promise');
 
   // Show More Filter
   $(document).ready(function() {
-
     Array.from(document.querySelectorAll('a.external')).forEach(el =>
       el.classList.remove('external')
     );
@@ -150,7 +149,7 @@ const { all } = require('core-js/fn/promise');
       $('.searchBox .search-query').removeClass('searchInput');
     });
   });
-  
+
   // Show More Filter
 })(Cog.jQuery());
 /*eslint-enable*/

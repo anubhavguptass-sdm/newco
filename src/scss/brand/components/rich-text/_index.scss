@@ -834,6 +834,7 @@
       border-bottom: 4px solid $color-black;
     }
     > .richText{
+      
      @include sm {
       padding-left: 4rem;
      }

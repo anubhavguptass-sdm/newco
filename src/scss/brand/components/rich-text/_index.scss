@@ -575,8 +575,16 @@
 
 .highlighted-sec-content {
   margin: 12rem auto 5rem !important;
-  max-width: 860px !important;
-  height: 70px;
+  max-width: 100% !important;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  @include sm {
+    width: 80%;
+  }
+  @include sd {
+    max-width: 860px !important;
+    width: 100%;
+  }
   .bottom-right-arrow {
     &:after {
       right: 12px;
@@ -586,6 +594,10 @@
   p {
     text-align: left;
     padding-top: 1.2rem;
+    width: 80%;
+    @include sd {
+      width: 100%;
+    }
   }
 }
 
@@ -619,6 +631,12 @@
       width: 8px;
       height: 32px;
       background-color: #000;
+    }
+    a {
+      border: none !important;
+      &:hover {
+        background-color: transparent;
+      }
     }
   }
 }

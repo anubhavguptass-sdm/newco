@@ -928,18 +928,18 @@
   }
 }
 
-.signs-to-look{
-  p{
+.signs-to-look {
+  p {
     text-align: center;
-    span{
+    span {
       display: inline-flex;
-    padding: .5rem 1.5rem;
-    justify-content: center;
-    align-items: center;
-    background: $color-grey-3;
-    margin: 0 .5rem;
-  }
+      padding: 0.5rem 1.5rem;
+      justify-content: center;
+      align-items: center;
+      background: $color-grey-3;
+      margin: 0 0.5rem;
     }
   }
+}
 
 /* Health Topic End */

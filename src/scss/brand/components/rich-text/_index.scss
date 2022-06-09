@@ -825,7 +825,7 @@
   @include sd {
     width: auto;
   }
-  .icon-arrow--right{
+  .icon-arrow--right {
     text-align: left;
     @include sm {
       text-align: right;
@@ -843,7 +843,6 @@
     &:last-child {
       border-bottom: 4px solid $color-black;
     }
-   
   }
 }
 .headquarter-content {
@@ -854,10 +853,10 @@
 .flex > div > div > div.career-search-wrapper {
   margin-right: auto !important;
 }
-.headquarter-area{
- .image{
-  padding-right: 1.5rem;
- }
+.headquarter-area {
+  .image {
+    padding-right: 1.5rem;
+  }
 }
 /* Quaterly result filter css */
 

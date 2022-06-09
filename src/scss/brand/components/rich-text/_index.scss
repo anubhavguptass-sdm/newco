@@ -631,6 +631,10 @@
       width: 8px;
       height: 32px;
       background-color: #000;
+      a {
+        border: none !important;
+        background-color: transparent;
+      }
     }
     a {
       border: none !important;

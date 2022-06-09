@@ -440,6 +440,9 @@ header {
           width: 20px !important;
           height: 20px !important;
           background-size: 20px !important;
+          &:focus:focus-visible {
+            outline: none !important;
+          }
         }
         &:hover {
           &:after {
@@ -554,9 +557,6 @@ header {
   &::before {
     content: 'Search';
     position: absolute;
-    left: -48px;
-    top: 1px;
-    font-size: $font-size-14;
     color: $color-black;
     display: none;
     @include md {

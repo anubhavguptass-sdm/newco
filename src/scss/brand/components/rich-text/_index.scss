@@ -606,7 +606,7 @@
 }
 
 .our-brands-title {
-  width: 70%;
+  width: 60%;
   @include sd {
     width: 100%;
   }
@@ -669,6 +669,13 @@
         background-color: transparent !important;
       }
     }
+  }
+}
+
+.half-carousel .carousel-cq .lSSlideOuter .lSSlideWrapper .lSAction a {
+  margin-top: -136px;
+  @include sm {
+    margin-top: -80px;
   }
 }
 
@@ -767,8 +774,8 @@
       border-bottom: 4px solid $color-black;
     }
     @include sm {
-      >.richText{
-      padding-left: 4rem;
+      > .richText {
+        padding-left: 4rem;
       }
       padding-top: 2rem;
     }

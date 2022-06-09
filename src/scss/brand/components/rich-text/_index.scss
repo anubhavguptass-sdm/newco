@@ -825,7 +825,7 @@
   @include sd {
     width: auto;
   }
-  .icon-arrow-top--right {
+  .icon-arrow--right{
     text-align: left;
     @include sm {
       text-align: right;
@@ -835,23 +835,30 @@
     padding-top: 4rem;
     padding-bottom: 2rem;
     border-bottom: 2px solid $color-black;
+    margin-top: 2rem;
     @include sm {
+      margin-top: 0rem;
       padding-top: 2rem;
     }
     &:last-child {
       border-bottom: 4px solid $color-black;
     }
-    .headquarter-content {
-      @include sm {
-        padding-left: 4rem;
-      }
-    }
+   
+  }
+}
+.headquarter-content {
+  @include sm {
+    padding-left: 4rem;
   }
 }
 .flex > div > div > div.career-search-wrapper {
   margin-right: auto !important;
 }
-
+.headquarter-area{
+ .image{
+  padding-right: 1.5rem;
+ }
+}
 /* Quaterly result filter css */
 
 .story-filter .class-filter[data-type='buttons'] .filter-list-js {

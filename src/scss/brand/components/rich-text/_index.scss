@@ -849,6 +849,9 @@
   @include sm {
     padding-left: 4rem !important;
   }
+  address{
+    font-style: normal;
+  }
 }
 .flex > div > div > div.career-search-wrapper {
   margin-right: auto !important;

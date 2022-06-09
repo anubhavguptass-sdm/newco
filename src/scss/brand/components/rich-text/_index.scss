@@ -733,7 +733,7 @@
 .location-result-wrapper {
   border-top: 4px solid $color-black;
   width: calc(100% - 2rem);
-  @include sd {
+  @include sm {
     padding-top: 0;
     width: auto;
   }
@@ -745,7 +745,10 @@
     &:last-child {
       border-bottom: 4px solid $color-black;
     }
-    @include sd {
+    @include sm {
+      >.richText{
+      padding-left: 4rem;
+      }
       padding-top: 2rem;
     }
   }

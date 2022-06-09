@@ -833,12 +833,11 @@
     &:last-child {
       border-bottom: 4px solid $color-black;
     }
-    > .richText{
-      
-     @include sm {
-      padding-left: 4rem;
-     }
+    > .richText {
+      @include sm {
+        padding-left: 4rem;
       }
+    }
   }
 }
 .flex > div > div > div.career-search-wrapper {

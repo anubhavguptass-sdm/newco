@@ -552,7 +552,7 @@
   width: 80%;
   text-align: center;
   padding: 10px 0 0 0;
-  z-index: 1;
+  z-index: 111;
   @include sm {
     left: 25%;
     top: -2rem;
@@ -560,6 +560,25 @@
   }
   p {
     color: $color-white;
+    text-align: left;
+    text-indent: -2rem;
+    padding-left: 2rem;
+    margin-left: 1rem;
+    em.iconmoon {
+      &:before {
+        width: 20px;
+        height: 20px;
+        background: $color-white;
+        color: $color-2;
+        font-style: normal;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        padding: 4px;
+        text-indent: 0;
+      }
+    }
   }
 }
 

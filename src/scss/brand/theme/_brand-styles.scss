@@ -239,6 +239,7 @@ table{
   left: 0;
   z-index: 9;
   max-width: 20% !important;
+  background-color: $color-white;
 }
 .column-5 {
   @include sm {

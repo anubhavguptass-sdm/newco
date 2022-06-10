@@ -448,18 +448,16 @@ a:hover {
   ul > li,
   ol > li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.25rem;
     &::before {
       color: inherit;
       position: relative;
-      align-items: center;
-      line-height: 1;
-      align-items: center;
+      line-height: 26px;
     }
   }
   ul > li {
-    line-height: 1;
+    line-height: 1.5;
   }
   ul , ol{
     margin-bottom: 1rem;

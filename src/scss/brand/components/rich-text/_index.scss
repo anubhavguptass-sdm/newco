@@ -109,6 +109,7 @@
 .full-clickable-box:hover {
   overflow: hidden;
   position: relative;
+  cursor: pointer;
   a:after {
     content: '';
     position: absolute;
@@ -997,17 +998,21 @@
 
 .topic-cards {
   .richText {
-    padding: 1rem 1rem 0.5rem 1rem;
+    padding: 1rem;
   }
   > div {
     height: 100% !important;
     > div {
       display: flex;
       flex-direction: column;
-      align-items: baseline;
+      justify-content: space-between;
       height: 100% !important;
     }
   }
+}
+
+.border-top {
+  border-top: 2px solid $color-grey-3 !important;
 }
 
 /* Health Topic End */

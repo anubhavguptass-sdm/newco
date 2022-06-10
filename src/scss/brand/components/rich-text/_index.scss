@@ -860,24 +860,24 @@
 .flex > div > div > div.career-search-wrapper {
   margin-right: auto !important;
 }
-.headquarter-area{
+.headquarter-area {
   margin-bottom: 4rem;
   padding: 1rem;
-  @include sd{
+  @include sd {
     margin-bottom: 5rem;
     padding: 0 1rem;
   }
-  .headquarter-content{
-   margin-top: 5rem;
-   @include sm{
-     margin-top: 0;
-   }
+  .headquarter-content {
+    margin-top: 5rem;
+    @include sm {
+      margin-top: 0;
+    }
   }
- @include sm{
-  img{
-    padding-right: 1.5rem;
-   }
- }
+  @include sm {
+    img {
+      padding-right: 1.5rem;
+    }
+  }
 }
 
 /* Quaterly result filter css */

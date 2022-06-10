@@ -240,6 +240,7 @@ table {
   left: 0;
   z-index: 9;
   max-width: 20% !important;
+  background-color: $color-white;
 }
 .column-5 {
   @include sm {
@@ -447,12 +448,22 @@ a:hover {
 .richText-content {
   ul > li,
   ol > li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     &::before {
       color: inherit;
+      position: relative;
+      align-items: center;
+      line-height: 1;
+      align-items: center;
     }
   }
   ul > li {
     line-height: 1;
+  }
+  ul , ol{
+    margin-bottom: 1rem;
   }
 }
 

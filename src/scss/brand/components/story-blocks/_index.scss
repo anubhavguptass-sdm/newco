@@ -102,3 +102,9 @@
     }
   }
 }
+.reference-story-block {
+  width: 100%;
+  @include md {
+    width: auto;
+  }
+}

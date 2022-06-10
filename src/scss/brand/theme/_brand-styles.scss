@@ -226,15 +226,16 @@ a[style*='visibility:hidden'] {
 .max-width-quarter {
   max-width: 24%;
 }
-.overflow-x-auto{
+.overflow-x-auto {
   overflow-x: auto;
 }
-table{
-  td ,th{
-   padding: .5rem;
+table {
+  td,
+  th {
+    padding: 0.5rem;
   }
 }
-.table-data-sticky{
+.table-data-sticky {
   position: sticky;
   left: 0;
   z-index: 9;

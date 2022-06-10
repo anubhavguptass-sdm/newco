@@ -611,6 +611,13 @@
       width: 100%;
     }
   }
+  &.full-clickable-box:hover {
+    .richText {
+      &:after {
+        filter: grayscale(100) contrast(100) invert(0);
+      }
+    }
+  }
 }
 
 .our-brands-title {
@@ -715,13 +722,12 @@
 }
 
 .logo-wrapper {
-  justify-content: center;
+  justify-content: center !important;
   .image {
     border: 1px solid $color-grey-3;
-    padding: 1.25rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem 0.5rem;
+    justify-content: center !important;
+    align-items: center !important;
   }
   > div > div {
     justify-content: center;
@@ -836,7 +842,7 @@
       text-align: right;
     }
   }
-  .icon-arrow-top--right{
+  .icon-arrow-top--right {
     text-align: left;
     @include sm {
       text-align: right;

@@ -226,6 +226,20 @@ a[style*='visibility:hidden'] {
 .max-width-quarter {
   max-width: 24%;
 }
+.overflow-x-auto{
+  overflow-x: auto;
+}
+table{
+  td ,th{
+   padding: .5rem;
+  }
+}
+.table-data-sticky{
+  position: sticky;
+  left: 0;
+  z-index: 9;
+  max-width: 20% !important;
+}
 .column-5 {
   @include sm {
     flex-basis: calc(100% / 5);

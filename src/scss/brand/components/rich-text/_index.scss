@@ -436,6 +436,7 @@
     justify-content: center;
     @include sm {
       top: 0rem;
+      left: 2rem;
     }
   }
 }
@@ -858,7 +859,7 @@
 }
 .headquarter-content {
   @include sm {
-    padding-left: 4rem !important;
+    padding-left: 7rem !important;
   }
   address {
     font-style: normal;

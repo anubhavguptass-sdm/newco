@@ -857,6 +857,18 @@
   margin-right: auto !important;
 }
 .headquarter-area{
+  margin-bottom: 4rem;
+  padding: 1rem;
+  @include sd{
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+  }
+  .headquarter-content{
+   margin-top: 5rem;
+   @include sm{
+     margin-top: 0;
+   }
+  }
  @include sm{
   img{
     padding-right: 1.5rem;

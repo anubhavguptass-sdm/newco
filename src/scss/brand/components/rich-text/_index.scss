@@ -490,6 +490,7 @@
 
 .half-carousel-wrapper .half-carousel {
   position: relative;
+  z-index: 9;
 }
 
 .half-carousel .brand-tile {
@@ -577,7 +578,6 @@
 
 .highlighted-sec-wrapper {
   margin-top: -7rem;
-  z-index: -1;
   > div {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -714,12 +714,16 @@
 }
 
 .logo-wrapper {
+  justify-content: center;
   .image {
     border: 1px solid $color-grey-3;
-    padding: 1.25rem 0;
+    padding: 1.25rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  > div > div {
+    justify-content: center;
   }
 }
 
@@ -875,6 +879,7 @@
    }
  }
 }
+
 /* Quaterly result filter css */
 
 .story-filter .class-filter[data-type='buttons'] .filter-list-js {
@@ -972,6 +977,10 @@
       margin: 0 0.5rem;
     }
   }
+}
+
+.full-clickable-box:hover .bottom-right-arrow:after {
+  filter: grayscale(100) contrast(100) invert(1);
 }
 
 /* Health Topic End */

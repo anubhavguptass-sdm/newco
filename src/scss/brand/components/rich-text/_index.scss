@@ -726,9 +726,26 @@
   justify-content: center !important;
   .image {
     border: 1px solid $color-grey-3;
+    border-left: none;
+    border-right: none;
     padding: 1rem 0.5rem;
     justify-content: center !important;
     align-items: center !important;
+    @include sm {
+      padding: 0.5rem;
+      border: 1px solid $color-grey-3;
+    }
+    @include sd {
+      padding: 1rem 0.5rem;
+    }
+    &.border-m-top-bot {
+      border-top: 1px solid $color-grey-3 !important;
+      border-bottom: 1px solid $color-grey-3 !important;
+      @include sm {
+        border-top: none !important;
+        border-bottom: none !important;
+      }
+    }
   }
   > div > div {
     justify-content: center;

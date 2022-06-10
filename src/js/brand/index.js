@@ -117,20 +117,20 @@ const { all } = require('core-js/fn/promise');
 
   // filter display block start
 
-  $(document).ready(function() {
-    setTimeout(function() {
-      $('.filter-item-js').on('click', function(e) {
-        console.log('check');
-        if ($(this).hasClass('default-state-js')) {
-          console.log('check1');
-          $('.location-result-wrapper').css('display', 'none');
-        } else {
-          console.log('check2');
-          $('.location-result-wrapper').css('display', 'block');
-        }
-      });
-    }, 200);
-  });
+  // $(document).ready(function() {
+  //   setTimeout(function() {
+  //     $('.filter-item-js').on('click', function(e) {
+  //       console.log('check');
+  //       if ($(this).hasClass('default-state-js')) {
+  //         console.log('check1');
+  //         $('.location-result-wrapper').css('display', 'none');
+  //       } else {
+  //         console.log('check2');
+  //         $('.location-result-wrapper').css('display', 'block');
+  //       }
+  //     });
+  //   }, 200);
+  // });
 
   // filter display block end
 

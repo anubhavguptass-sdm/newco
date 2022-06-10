@@ -836,6 +836,12 @@
       text-align: right;
     }
   }
+  .icon-arrow-top--right{
+    text-align: left;
+    @include sm {
+      text-align: right;
+    }
+  }
   .article-filter {
     padding-top: 4rem;
     padding-bottom: 2rem;

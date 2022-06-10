@@ -726,8 +726,8 @@
   justify-content: center !important;
   .image {
     border: 1px solid $color-grey-3;
-    border-left: none !important;
-    border-right: none !important;
+    border-left: none;
+    border-right: none;
     padding: 1rem 0.5rem;
     justify-content: center !important;
     align-items: center !important;
@@ -738,16 +738,12 @@
     @include sd {
       padding: 1rem 0.5rem;
     }
-    .no-bottom-border {
-      border-bottom: 1px solid;
+    &.border-m-top-bot {
+      border-top: 1px solid $color-grey-3 !important;
+      border-bottom: 1px solid $color-grey-3 !important;
       @include sm {
-        border-bottom: none;
-      }
-    }
-    .no-top-border {
-      border-top: 1px solid;
-      @include sm {
-        border-top: none;
+        border-top: none !important;
+        border-bottom: none !important;
       }
     }
   }

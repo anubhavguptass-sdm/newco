@@ -1049,9 +1049,9 @@
 }
 
 .topic-cards {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
   @include sm {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
   .richText {
     padding: 1rem;

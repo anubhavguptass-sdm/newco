@@ -2,6 +2,13 @@
     // window.onbeforeunload = function() { 
     //     setTimeout(document.haleonForm.reset(), 2000);
     //  };
+    (function () {
+        window.onpageshow = function(event) {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        };
+    })();
     if(document.getElementById('checkboxpot')){
         const checkbox = document.getElementById('checkboxpot')
         //  honeypot checkbox disable button validation
@@ -245,12 +252,6 @@
         document.haleonForm.email.focus();
         return false;
     }
-        
-       
-      
-        
-        
-       
     }
 
 })(Cog.jQuery());

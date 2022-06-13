@@ -1,4 +1,7 @@
 (function ($) {
+    window.onbeforeunload = function() { 
+        setTimeout(document.haleonForm.reset(), 2000);
+     };
     if(document.getElementById('checkboxpot')){
         const checkbox = document.getElementById('checkboxpot')
         //  honeypot checkbox disable button validation
@@ -235,7 +238,6 @@
                     window.location.href = document.haleonForm.retURL.value;
                     document.getElementById("subjectDescription").innerHTML = '';
                    document.getElementById("haleonForm").submit();
-                   setTimeout(document.haleonForm.reset(), 2000);
                    return true;
        }
        else {

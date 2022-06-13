@@ -1015,7 +1015,10 @@
 }
 
 .signs-to-look {
-  margin-top: 4rem;
+  margin-top: 1rem;
+  @include sm {
+    margin-top: 4rem;
+  }
   p {
     text-align: center;
     margin-bottom: 0;
@@ -1037,7 +1040,7 @@
 .brand-box {
   padding: 2rem 1.5rem 0 !important;
   order: 1;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   @include sd {
     padding: 2rem 1.5rem !important;
     margin-top: 0;
@@ -1046,6 +1049,10 @@
 }
 
 .topic-cards {
+  margin-bottom: 1rem !important;
+  @include sm {
+    margin-bottom: 0 !important;
+  }
   .richText {
     padding: 1rem;
   }

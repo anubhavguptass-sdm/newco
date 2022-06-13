@@ -1016,7 +1016,7 @@
 
 .signs-to-look {
   margin-top: 1rem;
-  @include sm{
+  @include sm {
     margin-top: 4rem;
   }
   p {
@@ -1049,8 +1049,8 @@
 }
 
 .topic-cards {
-  margin-bottom: 1rem; 
-  @include sm{
+  margin-bottom: 1rem;
+  @include sm {
     margin-bottom: 0;
   }
   .richText {

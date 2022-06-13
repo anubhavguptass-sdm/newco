@@ -19,7 +19,7 @@ var ConditionalComponentLoad = function () {
     //   name: "shareThis",
     // },
      {
-      selector: ".haleon-contact-form",
+      selector: ".consumer-enquiry-form",
       js: ["libs/contact.js"],
       name: "Consumer Enquiry Page",
     },

@@ -413,12 +413,9 @@
 
       .tabs-nav-item {
         margin-bottom: 0;
-        padding: 0 !important;
+        padding: 1rem 0 !important;
         outline: 0;
         list-style-type: none;
-        @include sm {
-          padding: 1rem 0 !important;
-        }
         a {
           color: $tab-inactive-color;
           display: block;
@@ -603,6 +600,15 @@
 
 .tabs .tabs-nav-list .tabs-nav-item .text-wrapper {
   font-size: 12px;
+}
+.tabs .tabs-nav-list {
+  position: relative;
+  &::before {
+
+  }
+  &::after {
+    
+  }
 }
 @media (min-width: 768px) {
   .tabs .tabs-nav {

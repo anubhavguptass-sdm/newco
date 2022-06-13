@@ -73,6 +73,7 @@
     position: absolute;
     right: 0rem;
     bottom: 0.5rem;
+    color: $color-2;
     @include sm {
       position: relative;
       bottom: auto;

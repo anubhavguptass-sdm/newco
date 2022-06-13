@@ -114,3 +114,53 @@
     }
   }
 }
+
+
+#footer {
+  ul {
+    li {
+      a {
+        &:focus {
+          &:focus-visible {
+            background-color: var(--bg-color-2);
+          }
+        }
+      }
+    }
+  }
+
+  .image {
+    a {
+      margin-top: 2px;
+      margin-left: 3px;
+    }
+  }
+
+  .social-pages {
+    .reference-svg-icons-with-link {
+      a {
+        background: #eaeaea;
+        width: 35px;
+        height: 35px;
+        line-height: 40px;
+        text-align: center;
+        margin: 0 2px;
+        span {
+          font-size: 1rem;
+          &::before {
+            font-size: 1rem;
+          }
+        }
+        &:focus,
+        &:hover {
+          background-color: $color-primary;
+        }
+      }
+    }
+    .icons-with-link {
+      a {
+        margin-top: 2px;
+      }
+    }
+  }
+}

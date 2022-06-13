@@ -390,8 +390,13 @@
   .tabs .tabs-content {
     border: 0;
     border-top: var(--color-1) solid 1px;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
     z-index: 1;
+    margin: 0 -1rem;
+    @include sm {
+      margin: 0;
+      padding: 1rem 0 1rem 0;
+    }
   }
 
   .tabs .tabs-nav-switcher {
@@ -600,15 +605,6 @@
 
 .tabs .tabs-nav-list .tabs-nav-item .text-wrapper {
   font-size: 12px;
-}
-.tabs .tabs-nav-list {
-  position: relative;
-  &::before {
-
-  }
-  &::after {
-    
-  }
 }
 @media (min-width: 768px) {
   .tabs .tabs-nav {

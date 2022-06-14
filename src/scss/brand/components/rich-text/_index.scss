@@ -358,7 +358,7 @@
   max-width: 100% !important;
   margin-left: 0 !important;
   padding-left: 0.75rem;
-  color:$color-black;
+  color: $color-black;
   @include sm {
     max-width: 80% !important;
   }
@@ -837,8 +837,8 @@
     }
     @include sm {
       padding-left: 3rem;
-    } 
-     @include lg {
+    }
+    @include lg {
       padding-left: 0rem;
     }
     .heading {
@@ -1080,14 +1080,14 @@
     margin-right: 0.5rem;
   }
 }
-.visit-brand-box{
+.visit-brand-box {
   background-color: $color-primary;
   padding: 2rem !important;
   order: 2;
   @include sm {
     order: unset;
   }
-  &::after{
+  &::after {
     content: '\e909';
     font-family: 'icomoon';
     text-align: center;
@@ -1104,12 +1104,12 @@
       right: 1rem;
     }
   }
-  &:hover{
+  &:hover {
     background-color: $color-black;
-    h2{
+    h2 {
       color: $color-white;
     }
-    &::after{
+    &::after {
       color: $color-white;
     }
   }

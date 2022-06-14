@@ -126,7 +126,8 @@
   }
 }
 
-.full-clickable-box:focus-within {
+.full-clickable-box:focus-visible,
+.full-clickable-box:focus {
   .image {
     &:after {
       border: 2px solid $color-2;

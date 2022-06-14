@@ -837,7 +837,7 @@
       content: '';
       position: absolute;
       left: 0;
-      background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png);
+      background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-career.png);
       width: 2rem;
       height: 100%;
     }
@@ -850,7 +850,7 @@
       padding-left: 3rem;
     }
     @include lg {
-      padding-left: 0rem;
+      padding-left: 2rem;
     }
     .heading {
       @include sd {

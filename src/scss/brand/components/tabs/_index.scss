@@ -68,6 +68,9 @@
               border-bottom: 2px solid $color-2;
               line-height: $line-height-150;
               color: $color-1;
+              a {
+                padding: 14px;
+              }
 
               @include xs {
                 word-break: break-word;

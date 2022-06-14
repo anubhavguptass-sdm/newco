@@ -358,6 +358,21 @@ table {
     margin-bottom: 4rem !important;
   }
 }
+.m-d-t--4 {
+  @include sm {
+    margin-top: 4rem !important;
+  }
+}
+.p-d-b--4 {
+  @include sm {
+    padding-bottom: 4rem !important;
+  }
+}
+.p-d-t--4 {
+  @include sm {
+    padding-top: 4rem !important;
+  }
+}
 
 .object-fit-cover {
   .component-content {

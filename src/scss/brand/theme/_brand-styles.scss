@@ -373,6 +373,11 @@ table {
     padding-top: 4rem !important;
   }
 }
+.p-d-t--5 {
+  @include sm {
+    padding-top: 5rem !important;
+  }
+}
 
 .object-fit-cover {
   .component-content {

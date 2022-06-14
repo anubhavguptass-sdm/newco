@@ -181,6 +181,9 @@
       padding: 0px !important;
       a {
         border: none !important;
+        width: inherit;
+        height: inherit;
+        border-radius: 0;
       }
       &:hover {
         a {

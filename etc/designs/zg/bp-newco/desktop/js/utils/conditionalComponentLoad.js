@@ -3,11 +3,11 @@ var ConditionalComponentLoad = function () {
   var _this = this;
   // add more components/pages here while following the same object pattern
   this.components = [
-    {
-      selector: ".article-filter",
-      js: ["components/articleFilter.js"],
-      name: "Article filter",
-    },
+    // {
+    //   selector: ".article-filter",
+    //   js: ["components/articleFilter.js"],
+    //   name: "Article filter",
+    // },
     {
       selector: ".reference-custom-video",
       js: ["components/custom-video.js"],

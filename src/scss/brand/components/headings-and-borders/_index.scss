@@ -1,5 +1,9 @@
 .heading-bg-strip {
-  padding-left: 1rem;
+  &.heading-size--sm {
+    @media screen and (max-width: 425px) {
+      font-size: 1.5rem;
+    }
+  }
   span {
     background: var(--bg-color-2);
     display: block;

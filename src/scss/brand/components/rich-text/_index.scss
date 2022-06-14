@@ -126,8 +126,7 @@
   }
 }
 
-.full-clickable-box:focus-visible,
-.full-clickable-box:focus {
+.full-clickable-box:focus-within {
   .image {
     &:after {
       border: 2px solid $color-2;
@@ -837,7 +836,7 @@
       content: '';
       position: absolute;
       left: 0;
-      background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/measure-career.png);
+      background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png);
       width: 2rem;
       height: 100%;
     }
@@ -850,7 +849,7 @@
       padding-left: 3rem;
     }
     @include lg {
-      padding-left: 2rem;
+      padding-left: 0rem;
     }
     .heading {
       @include sd {

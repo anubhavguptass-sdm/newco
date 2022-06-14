@@ -837,8 +837,8 @@
     }
     @include sm {
       padding-left: 3rem;
-    }
-    @include lg {
+    } 
+     @include lg {
       padding-left: 0rem;
     }
     .heading {
@@ -1078,5 +1078,41 @@
 .watch-time {
   span {
     margin-right: 0.5rem;
+  }
+}
+.visit-brand-box{
+  background-color: $color-primary;
+  padding: 2rem;
+  order: 2;
+  @include sm {
+    order: unset;
+  }
+  &::after{
+    content: '\e909';
+    font-family: 'icomoon';
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: $color-primary;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 68px;
+    line-height: 68px;
+    color: #000;
+    border: 2px solid;
+    border-color: $color-primary;
+    @include sm{
+      bottom: 2rem;
+      right: 1rem;
+    }
+  }
+  &:hover{
+    background-color: $color-black;
+    h2{
+      color: $color-white;
+    }
+    &::after{
+      color: $color-white;
+    }
   }
 }

@@ -74,7 +74,6 @@ const { all } = require('core-js/fn/promise');
       $('.navigation-branch li.page-our-brands a').removeAttr('href');
       $('.navigation-branch li.page-who-we-are a').removeAttr('href');
       $('.navigation-branch li.page-planet-and-people a').removeAttr('href');
-      $('.navigation-branch li.page-careers a').removeAttr('href');
     } else {
       $('.navigation-branch li.page-our-brands a').attr('href', '/our-brands/');
       $('.navigation-branch li.page-who-we-are a').attr('href', '/who-we-are/');
@@ -82,7 +81,6 @@ const { all } = require('core-js/fn/promise');
         'href',
         '/planet-and-people/'
       );
-      $('.navigation-branch li.page-careers a').attr('href', '/careers/');
     }
   }
 
@@ -96,7 +94,7 @@ const { all } = require('core-js/fn/promise');
   });
 
   $(
-    'li.page-our-brands , li.page-who-we-are , li.page-planet-and-people , li.page-careers'
+    'li.page-our-brands , li.page-who-we-are , li.page-planet-and-people'
   ).click(function() {
     $(
       '.navigation-branch , .megamenu-top-bar-left , .megamenu-top-bar-right'

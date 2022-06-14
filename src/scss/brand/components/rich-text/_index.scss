@@ -884,11 +884,12 @@
   @include sd {
     width: auto;
   }
-  .icon-arrow--right {
+  .more-info {
     text-align: left;
     @include sm {
       text-align: right;
     }
+    color: $color-black !important;
   }
   .icon-arrow-top--right {
     text-align: left;
@@ -1092,10 +1093,11 @@
 }
 .visit-brand-box {
   background-color: $color-primary;
-  padding: 2rem !important;
+  padding: 2rem 2rem 3rem !important;
   order: 2;
   @include sm {
-    order: unset;
+   order: unset;
+  padding: 2rem !important;
   }
   &::after {
     content: '\e909';

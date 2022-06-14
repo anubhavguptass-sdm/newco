@@ -121,5 +121,5 @@
 }
 
 .searchResults-title a {
-  display: inline-block
+  display: inline-block !important;
 }

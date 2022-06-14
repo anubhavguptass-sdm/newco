@@ -1088,7 +1088,7 @@
 }
 .visit-brand-box {
   background-color: $color-primary;
-  padding: 2rem;
+  padding: 2rem !important;
   order: 2;
   @include sm {
     order: unset;
@@ -1098,7 +1098,6 @@
     font-family: 'icomoon';
     text-align: center;
     font-size: 2.5rem;
-    background-color: $color-primary;
     position: absolute;
     right: 0px;
     bottom: 0px;
@@ -1106,8 +1105,7 @@
     line-height: 68px;
     color: #000;
     border: 2px solid;
-    border-color: $color-primary;
-    @include sm {
+    @include sm{
       bottom: 2rem;
       right: 1rem;
     }
@@ -1119,7 +1117,6 @@
     }
     &::after {
       color: $color-white;
-      background-color: $color-black;
     }
   }
 }

@@ -685,6 +685,12 @@
     border-radius: 0;
     border: none !important;
     margin-left: 1rem !important;
+    padding: 0 !important;
+    a {
+      width: inherit;
+      height: inherit;
+      border-radius: 0;
+    }
     &.active {
       width: 8px;
       height: 32px;
@@ -943,7 +949,7 @@
   .class-filter[data-type='buttons']
   .filter-list-js
   .filter-item-js {
-  margin-left: 0;
+  margin: 1px;
   margin-right: 1rem;
   max-width: fit-content;
   border-color: $color-white !important;

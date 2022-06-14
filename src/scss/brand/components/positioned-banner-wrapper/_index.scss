@@ -15,10 +15,13 @@
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-
+      padding: 1rem;
       &.banner-width-50percent {
         min-width: calc(100% / 2 + 4rem);
       }
+    }
+    @include sd {
+      padding: 2rem;
     }
   }
 

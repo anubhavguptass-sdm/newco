@@ -880,11 +880,12 @@
   @include sd {
     width: auto;
   }
-  .icon-arrow--right {
+  .text-black {
     text-align: left;
     @include sm {
       text-align: right;
     }
+    color: $color-black !important;
   }
   .icon-arrow-top--right {
     text-align: left;

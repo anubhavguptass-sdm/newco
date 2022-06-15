@@ -173,7 +173,7 @@
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else {
                 $('#name').removeClass('error');
-                $('#name').addClass('succcess');
+                $('#name').addClass('success');
                 document.getElementById('name').style.cssText = "border-color: #EAEAEA;";
                 document.getElementById('nameReqMsg').style.display = 'none';
             }

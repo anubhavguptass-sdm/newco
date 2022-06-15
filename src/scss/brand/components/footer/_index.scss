@@ -11,7 +11,7 @@
         margin: 0 -12px;
         display: inline-block;
         &:hover {
-          background-color: #fff;
+          background-color: $color-white;
           border-color: $color-primary;
         }
       }
@@ -58,7 +58,7 @@
       p {
         color: $color-2;
         font-size: $font-size-15;
-        margin: -0.5rem 0 0.25rem;
+        margin: -0.5rem 0 1.5rem;
         line-height: $line-height-150;
         text-align: center;
 
@@ -90,7 +90,7 @@
     a.external {
       height: 42px;
       width: 40px;
-      background: #eaeaea;
+      background: $color-grey-3;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -112,7 +112,10 @@
   .footer-list {
     @extend .flex-row;
     @extend .justify-center;
-    padding-top: 0.75rem;
+    padding-top: 1.5rem;
+    @include sm {
+      padding-top: 0.5rem;
+    }
     li {
       padding: 0 5px 0 0 !important;
       margin-bottom: 1rem;
@@ -143,7 +146,7 @@
   .social-pages {
     .reference-svg-icons-with-link {
       a {
-        background: #eaeaea;
+        background: $color-grey-3;
         width: 35px;
         height: 35px;
         line-height: 40px;

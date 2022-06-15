@@ -1,7 +1,7 @@
 .browse-stories-sec {
   .filter-container-js {
     border: 0px;
-    background: #fff;
+    background: $color-white;
     padding: 0.24rem 0;
     text-align: left;
     display: flex;
@@ -28,14 +28,14 @@
         display: inline-block;
         padding: 5px 10px;
         margin: 0 10px 10px 0;
-        background-color: #fff;
+        background-color: $color-white;
         cursor: pointer;
       }
 
       li.active-js {
-        background-color: #47ffe5;
-        background-color: #fff;
-        color: #333;
+        background-color: $color-secondary-aqua;
+        background-color: $color-white;
+        color: $color-2;
         border: 1px solid;
       }
     }
@@ -91,82 +91,3 @@
   white-space: nowrap;
   overflow-x: scroll;
 }
-
-// .operate-filter-article-section {
-//   .faqs-filter {
-//     padding: 5px;
-//     // width: 200px;
-//     margin-bottom: 1rem;
-//     position: relative;
-
-//     .filter-list-js {
-//       display: none;
-//     }
-//   }
-
-//   .faqs-filter:after {
-//     position: absolute;
-//     top: 4px;
-//     right: 20px;
-//     font-family: monospace;
-//     z-index: -1;
-//     content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/dropdown-arrow.svg');
-//   }
-
-//   .faqs-filter.opened-js {
-//     .filter-list-js {
-//       display: block;
-//       position: absolute;
-//       background: #fff;
-//       width: auto;
-//       height: auto;
-//       z-index: 100;
-//       border: 1px solid #000;
-//       left: 0px;
-//       padding: 5px;
-
-//       .filter-item-js {
-//         background-color: #ddd;
-//         border: solid #000 1px !important;
-//         margin-bottom: 10px;
-//       }
-//     }
-//   }
-// }
-
-// .page-where-we-operate {
-//   .faqs-filter.opened-js {
-//     .filter-list-js {
-//       .filter-item-js {
-//         &:focus {
-//           &:focus-visible {
-//             outline: 2px dotted;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// .faqs-filter {
-//   cursor: pointer !important;
-// }
-
-// //  refactoring css start
-// .filter-container-js {
-//   .faqs-filter{
-//     .filter-item-js{
-//       .filter-item-js:not(.multilevel).active-js{
-//         background-color: #fff;
-//         color: #333;
-//         border: 1px solid;
-//       }
-//       .filter-item-js{
-//         background-color: #ddd;
-//         border: solid #000 1px !important;
-//       }
-//     }
-
-//   }
-// }
-// //  refactoring css end

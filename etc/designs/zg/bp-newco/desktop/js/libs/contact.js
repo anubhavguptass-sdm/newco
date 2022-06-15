@@ -168,13 +168,11 @@
             } else if (name.length < 5) {
                 $('#name').removeClass('success');
                 $('#name').addClass('error');
-                document.getElementById('name').style.cssText = "border-color: #c30000;";
                 document.getElementById("nameReqMsg").innerHTML = "This field must contain at least five characters.";
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else {
                 $('#name').removeClass('error');
                 $('#name').addClass('success');
-                document.getElementById('name').style.cssText = "border-color: #EAEAEA;";
                 document.getElementById('nameReqMsg').style.display = 'none';
             }
         }

@@ -41,6 +41,7 @@
     }
     li {
       padding: 0 2px;
+      margin-bottom: 1rem;
       &:before {
         display: none;
       }
@@ -57,7 +58,7 @@
       p {
         color: $color-2;
         font-size: $font-size-15;
-        margin: -0.5rem 0;
+        margin: -0.5rem 0 0.25rem;
         line-height: $line-height-150;
         text-align: center;
 

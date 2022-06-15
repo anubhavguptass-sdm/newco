@@ -11,17 +11,14 @@
     margin-bottom: 0.75rem;
     background-color: $color-grey-3;
     color: $color-1;
-    &:focus {
-      border-color: rgb(0, 0, 0);
-      outline: rgb(0, 0, 0) solid 2px;
-      background-color: $color-white;
-      color: $color-black;
-    }
   }
   .error {
     background-color: #fee8e7;
+    border: 2px solid #fee8e7;
     &:focus {
       background-color: $color-white;
+      border-color: #f41811;
+      outline: #f41811 solid 2px;
     }
   }
   .success {
@@ -30,8 +27,8 @@
     &:focus {
       color: $color-2;
       background-color: $color-white;
-      border-color: rgb(0, 0, 0);
-      outline: rgb(0, 0, 0) solid 2px;
+      border-color: #30ea03;
+      outline: #30ea03 solid 2px;
     }
   }
   input:-webkit-autofill,

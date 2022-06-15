@@ -32,7 +32,7 @@
   @include sm {
     width: 100px;
   }
-  background: #30ea03;
+  background: $color-primary;
   cursor: pointer;
 }
 
@@ -44,7 +44,7 @@
 .haleon-career-search-section .haleon-career-search-card {
   margin: 0 auto;
   padding: 2rem;
-  background: #ffffff;
+  background: $color-white;
   box-shadow: 0px 16px 40px -8px #0000001a;
   max-width: 100%;
   @include sm {
@@ -54,8 +54,8 @@
     width: 100%;
     margin: 0.5rem 0;
     max-width: 100%;
-    background: #ddd;
-    outline: 1px solid #ddd;
+    background: $color-3;
+    outline: 1px solid $color-3;
     padding: 1rem;
     border: none;
     height: 48px;

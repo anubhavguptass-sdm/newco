@@ -11,7 +11,7 @@
         margin: 0 -12px;
         display: inline-block;
         &:hover {
-          background-color: #fff;
+          background-color: $color-white;
           border-color: $color-primary;
         }
       }
@@ -90,7 +90,7 @@
     a.external {
       height: 42px;
       width: 40px;
-      background: #eaeaea;
+      background: $color-grey-3;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -146,7 +146,7 @@
   .social-pages {
     .reference-svg-icons-with-link {
       a {
-        background: #eaeaea;
+        background: $color-grey-3;
         width: 35px;
         height: 35px;
         line-height: 40px;

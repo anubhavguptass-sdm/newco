@@ -18,22 +18,22 @@
       color: $color-black;
     }
   }
-  .error{
-    background-color: #FEE8E7;
-    &:focus{
-     background-color: $color-white;
+  .error {
+    background-color: #fee8e7;
+    &:focus {
+      background-color: $color-white;
     }
- }
- .success{
-   color: $color-1;
-   background-color: #EAEAEA;
-   &:focus{
-   color: $color-2;
-   background-color: $color-white;
-   border-color: rgb(0, 0, 0);
-   outline: rgb(0, 0, 0) solid 2px;
-   }
-}
+  }
+  .success {
+    color: $color-1;
+    background-color: #eaeaea;
+    &:focus {
+      color: $color-2;
+      background-color: $color-white;
+      border-color: rgb(0, 0, 0);
+      outline: rgb(0, 0, 0) solid 2px;
+    }
+  }
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,

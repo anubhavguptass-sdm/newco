@@ -37,8 +37,11 @@
   &.left-positioned {
     .banner-text {
       @include sm {
-        left: 0;
+        left: 1rem;
         right: auto;
+      }
+      @include md {
+        left: 0;
       }
     }
   }

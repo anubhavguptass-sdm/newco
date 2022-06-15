@@ -23,6 +23,7 @@
 
       @include sd {
         margin-top: -4rem;
+        width: 90%;
       }
 
       .slick-track {
@@ -52,8 +53,11 @@
           display: flex;
 
           p {
-            padding: 1.5rem;
+            padding: 1rem;
             margin: 0;
+            @include sd {
+              padding: 1.5rem;
+            }
           }
 
           * {

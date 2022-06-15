@@ -1096,8 +1096,10 @@
   padding: 2rem 2rem 3rem !important;
   order: 2;
   @include sm {
-   order: unset;
-  padding: 2rem !important;
+    order: unset;
+    padding: 2rem !important;
+    margin-left: 1rem !important;
+    margin-bottom: 2rem !important;
   }
   &::after {
     content: '\e909';

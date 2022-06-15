@@ -393,7 +393,7 @@
   .tabs .tabs-content {
     border: 0;
     border-top: $color-3 solid 1px;
-    padding: 1rem 0;
+    padding: 1rem;
     z-index: 1;
     margin: 0 -1rem;
     @include sm {

@@ -7,7 +7,7 @@
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  color: #000;
+  color: $color-2;
 }
 
 .sr-only {
@@ -39,7 +39,7 @@ body {
       outline: 2px dotted;
       margin: 6px 12px;
       font-size: 16px;
-      color: #fff;
+      color: $color-white;
     }
   }
 }
@@ -167,7 +167,7 @@ button {
 
       &:focus {
         &:focus-visible {
-          outline: 2px dotted #fff;
+          outline: 2px dotted $color-white;
         }
       }
     }
@@ -181,7 +181,7 @@ button {
         a {
           &:focus {
             &:focus-visible {
-              outline: 2px dotted #000 !important;
+              outline: 2px dotted $color-2 !important;
             }
           }
         }
@@ -202,7 +202,7 @@ button {
 
         &:focus {
           &:focus-visible {
-            outline: 2px dotted #fff;
+            outline: 2px dotted $color-white;
             height: 100%;
             width: 3px;
             opacity: 1;

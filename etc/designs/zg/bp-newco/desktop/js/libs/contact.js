@@ -162,7 +162,6 @@
             if (name == "") {
                 $('#name').removeClass('success');
                 $('#name').addClass('error');
-                document.getElementById('name').style.cssText = "border-color: #c30000;";
                 document.getElementById("nameReqMsg").innerHTML = "Required";
                 document.getElementById('nameReqMsg').style.display = 'block';
             } else if (name.length < 5) {
@@ -180,11 +179,13 @@
         if ((type == 'email' || type == 'all')) {
             if (email == '') {
                 element.classList.remove("emailValidation");
-                document.getElementById('email').style.cssText = "border-color: #c30000;";
+                $('#email').removeClass('success');
+                $('#email').addClass('error');
                 document.getElementById('emailError').style.display = 'none';
                 document.getElementById('emailReqMsg').style.display = 'block';
             } else {
-                document.getElementById('email').style.cssText = "border-color: #EAEAEA;";
+                $('#email').removeClass('error');
+                $('#email').addClass('success');
                 document.getElementById('emailReqMsg').style.display = 'none';
                 emailValidation();
             }
@@ -192,37 +193,43 @@
 
         if ((type == 'country' || type == 'all')) {
             if (country == "none" || country == "") {
-                document.getElementById('00N1q000000v7U5').style.cssText = "border-color: #c30000;";
+                $('#00N1q000000v7U5').removeClass('success');
+                $('#00N1q000000v7U5').addClass('error');
                 document.getElementById('countryReqMsg').style.display = 'block';
             } else {
-                document.getElementById('00N1q000000v7U5').style.cssText = "border-color: #EAEAEA;";
+                $('#00N1q000000v7U5').removeClass('error');
+                $('#00N1q000000v7U5').addClass('success');
                 document.getElementById('countryReqMsg').style.display = 'none';
             }
         }
         if ((type == 'subject' || type == 'all')) {
             if (enquiry == "" || enquiry == 'none') {
-                document.getElementById('subject').style.cssText = "border-color: #c30000;";
-                document.getElementById('subjectDescription').style.cssText = "color: #c30000; display: block";
+                $('#subject').removeClass('success');
+                $('#subject').addClass('error');
                 document.getElementById("subjectDescription").innerHTML ="Required";
 
             } else {
-                document.getElementById('subject').style.cssText = "border-color: #EAEAEA;";
+                $('#subject').removeClass('error');
+                $('#subject').addClass('success');
             }
         }
         if ((type == 'desc' || type == 'all')) {
             desc = desc.trim();
             if (desc == "") {
-                document.getElementById('description').style.cssText = "border-color: #c30000;";
+                $('#description').removeClass('success');
+                $('#description').addClass('error');
                 document.getElementById("descReqMsg").innerHTML = "Required.";
                 document.getElementById('descReqMsg').style.display = 'block';
             } 
             else if (desc.length < 20) {
-                document.getElementById('description').style.cssText = "border-color: #c30000;";
+                $('#description').removeClass('success');
+                $('#description').addClass('error');
                 document.getElementById("descReqMsg").innerHTML = "This field must contain at least 20 characters.";
                 document.getElementById('descReqMsg').style.display = 'block';
             }
             else {
-                document.getElementById('description').style.cssText = "border-color: #EAEAEA;";
+                $('#description').removeClass('error');
+                $('#description').addClass('success');
                 document.getElementById('descReqMsg').style.display = 'none';
             }
         }

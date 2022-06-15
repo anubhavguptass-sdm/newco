@@ -676,7 +676,12 @@
 
 .highlighted-sec-wrapper {
   margin-top: -7rem;
-
+  @include sm {
+    margin-top: -6.5rem;
+  }
+  @include sd {
+    margin-top: -4.5rem;
+  }
   > div {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -684,20 +689,18 @@
 }
 
 .highlighted-sec-content {
-  margin: 6rem auto 6rem !important;
+  margin: 10rem auto 6rem !important;
   max-width: 100% !important;
   width: 100%;
   padding: 0.5rem 1rem;
 
   @include sm {
     width: 80%;
-    margin: 7rem auto 5rem !important;
   }
 
   @include sd {
     max-width: 860px !important;
     width: 100%;
-    margin: 10rem auto 5rem !important;
   }
 
   .bottom-right-arrow {
@@ -745,7 +748,7 @@
 
 .half-carousel .lSPager {
   position: absolute;
-  bottom: -15rem;
+  bottom: -18rem;
   left: auto;
   right: 50%;
   display: flex;
@@ -754,21 +757,22 @@
   width: auto;
 
   @media screen and (min-width: 710px) {
-    bottom: -17rem;
+    bottom: -15rem;
   }
 
   @include sm {
-    bottom: -11rem;
+    bottom: -9rem;
     right: 0;
   }
 
   @include sd {
-    bottom: -8.75rem;
+    bottom: -6.5rem;
     right: -2rem;
   }
 
   @include md {
     right: 0;
+    bottom: -8.5rem;
   }
 
   li {

@@ -492,7 +492,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 992px) and(min-width: 768px) {
+@media only screen and (max-width: 1024px) and(min-width: 768px) {
   .flex.cols-tab-4.s-d-1 > div > .content {
     -ms-flex-preferred-size: calc(((100% - (1rem * (4 - 1))) / 4));
     flex-basis: calc(((100% - (1rem * (4 - 1))) / 4));

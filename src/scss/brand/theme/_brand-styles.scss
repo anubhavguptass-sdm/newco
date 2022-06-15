@@ -510,7 +510,7 @@ a:hover {
   }
 }
 
-.small-cards-wrapper {
+.small-cards-wrapper > div > .content {
   -ms-flex-preferred-size: calc(((100% - (1rem * (2 - 1))) / 2));
   flex-basis: calc(((100% - (1rem * (2 - 1))) / 2));
   gap: 1rem;

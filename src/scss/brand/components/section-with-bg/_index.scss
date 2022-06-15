@@ -20,10 +20,6 @@
     @extend .small-font;
   }
   .card-content-wrapper {
-    margin-bottom: 0rem;
-    @include sd {
-      margin-bottom: 2rem;
-    }
     .image {
       @extend .bottom-right-arrow;
       &:after {

@@ -10,13 +10,27 @@
     padding: 0rem 1rem;
     margin-bottom: 0.75rem;
     background-color: $color-grey-3;
-    color: $color-3;
-    &:focus {
-      border-color: rgb(0, 0, 0);
-      outline: rgb(0, 0, 0) solid 2px;
-    }
+    color: $color-1;
   }
-
+  .error{
+    background-color: #FEE8E7;
+    border: 2px solid #FEE8E7;
+    &:focus{
+     background-color: $color-white;
+     border-color: #F41811;
+     outline: #F41811 solid 2px;
+    }
+ }
+ .success{
+   color: $color-1;
+   background-color: #EAEAEA;
+   &:focus{
+   color: $color-2;
+   background-color: $color-white;
+   border-color: #30EA03;
+   outline: #30EA03 solid 2px;
+   }
+}
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,

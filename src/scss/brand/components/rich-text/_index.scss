@@ -102,10 +102,6 @@
   position: static;
 }
 
-.position-static {
-  position: static;
-}
-
 .full-clickable-box:hover {
   overflow: hidden;
   position: relative;
@@ -548,17 +544,18 @@
 .highlighted-content {
   position: absolute;
   background: $color-1;
-  left: 0;
+  left: auto;
+  right: -1rem;
   top: -3rem;
   z-index: 1;
-  width: 80%;
+  width: auto;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 10px 1rem 0 0 !important;
   z-index: 111;
   @include sm {
-    left: 25%;
+    left: auto;
+    right: -2rem;
     top: -2rem;
-    width: 40%;
   }
   p {
     color: $color-white;
@@ -602,7 +599,10 @@
 } */
 
 .highlighted-sec-wrapper {
-  margin-top: -7rem;
+  margin-top: -6.5rem;
+  @include sd{
+    margin-top: -4.5rem;
+  }
   > div {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -610,17 +610,18 @@
 }
 
 .highlighted-sec-content {
-  margin: 8rem auto 6rem !important;
+  margin: 6rem auto 6rem !important;
   max-width: 100% !important;
   width: 100%;
   padding: 0.5rem 1rem;
   @include sm {
     width: 80%;
-    margin: 12rem auto 5rem !important;
+    margin: 7rem auto 5rem !important;
   }
   @include sd {
     max-width: 860px !important;
     width: 100%;
+    margin: 10rem auto 5rem !important;
   }
   .bottom-right-arrow {
     &:after {
@@ -646,7 +647,10 @@
 }
 
 .our-brands-title {
-  width: 60%;
+  width: 50%;
+  @media screen and (min-width: 370px) {
+    width: 60%;
+  }
   @include sd {
     width: 100%;
   }
@@ -726,6 +730,9 @@
 }
 
 .white-line-strip {
+  h3 {
+    margin-bottom: 3rem !important;
+  }
   a {
     .icon-angle-right {
       margin-left: 1rem;
@@ -744,7 +751,7 @@
       content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/brands-measure.png');
       position: absolute;
       left: -5rem;
-      top: -4rem;
+      top: -3rem;
       @include sd {
         left: -2rem;
       }
@@ -1134,22 +1141,27 @@
 
 // add comma's in dropdown start
 
-‌.css-comma:after {
-  content: "\002C";
-  }
-  .operate-filter-article-section .class-filter[data-type-mobile='dropdown'] {
+‌.css-comma::after {
+  content: ',' !important;
+}
+.operate-filter-article-section .class-filter[data-type-mobile='dropdown'] {
   margin: 0;
   max-width: 320px;
   width: 100%;
-  }
-  .operate-filter-article-section .class-filter[data-type-mobile='dropdown'] .filter-container-js .selected-item-js {
+}
+.operate-filter-article-section
+  .class-filter[data-type-mobile='dropdown']
+  .filter-container-js
+  .selected-item-js {
   padding: 0.25rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .operate-filter-article-section
+    .class-filter[data-type-mobile='dropdown']
+    .filter-container-js
+    .selected-item-js {
+    padding: 0.25rem 1rem;
   }
-  @media only screen and (min-width: 768px) {
-  .operate-filter-article-section .class-filter[data-type-mobile='dropdown'] .filter-container-js .selected-item-js {
-  padding: 0.25rem 1rem;
-  }
-  }
+}
 
-  
 // add comma's in dropdown end

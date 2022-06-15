@@ -115,6 +115,11 @@ body {
     color: $color-secondary-lime;
   }
 }
+
+.position-relative {
+  position: relative;
+}
+
 #content {
   @media (min-width: 992px) {
     margin-top: 180px;

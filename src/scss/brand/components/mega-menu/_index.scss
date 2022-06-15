@@ -140,7 +140,7 @@ header {
               font-family: 'icomoon';
               position: absolute;
               right: 1px;
-              top: -4px;
+              top: -2px;
               left: 6.2rem;
               @include md {
                 left: 5.2rem;
@@ -419,10 +419,13 @@ header {
         }
       }
       button {
+        width: 24px !important;
+        height: 24px !important;
+        background-size: 24px !important;
         top: 12px !important;
         right: 2rem !important;
-        position: fixed;
         background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/search-line.svg');
+        position: fixed;
         @include md {
           right: -4px !important;
           top: 0px !important;

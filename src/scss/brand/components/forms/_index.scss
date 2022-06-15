@@ -10,11 +10,29 @@
     padding: 0rem 1rem;
     margin-bottom: 0.75rem;
     background-color: $color-grey-3;
-    color: $color-3;
+    color: $color-1;
     &:focus {
       border-color: rgb(0, 0, 0);
       outline: rgb(0, 0, 0) solid 2px;
+      background-color: $color-white;
+      color: $color-black;
     }
+    &.error{
+       background-color: #FEE8E7;
+       &:focus{
+        background-color: $color-white;
+       }
+    }
+    &.success{
+      color: $color-1;
+      background-color: #EAEAEA;
+      &:focus{
+     color: $color-2;
+     background-color: $color-white;
+      border-color: rgb(0, 0, 0);
+      outline: rgb(0, 0, 0) solid 2px;
+      }
+   }
   }
 
   input:-webkit-autofill,

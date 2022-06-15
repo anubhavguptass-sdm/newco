@@ -120,6 +120,11 @@ body {
     margin-top: 180px;
   }
 }
+.m-p-l-1 {
+  @media screen and (max-width: 767px) {
+    padding-left: 1rem !important;
+  }
+}
 
 .bg-color-aqua {
   background-color: $color-secondary-aqua;

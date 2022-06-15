@@ -88,7 +88,7 @@
 
 @media only screen and (max-width: 1279px) and (min-width: 992px) {
   .card-text-image-small {
-    >.component-content>.paragraphSystem {
+    > .component-content > .paragraphSystem {
       flex-direction: column !important;
       flex-wrap: initial;
     }
@@ -97,7 +97,7 @@
 
 @media only screen and (max-width: 767px) {
   .card-text-image {
-    >.component-content>.paragraphSystem {
+    > .component-content > .paragraphSystem {
       flex-direction: column !important;
       flex-wrap: initial;
     }
@@ -106,10 +106,6 @@
       position: relative !important;
     }
   }
-}
-
-.position-static {
-  position: static;
 }
 
 .position-static {
@@ -286,7 +282,7 @@
     overflow: visible;
   }
 
-  .flex.cols-d-5>div {
+  .flex.cols-d-5 > div {
     flex-basis: 100%;
 
     @include sm {
@@ -476,7 +472,7 @@
 }
 
 .box-with-halfcover-bg.align-left-bg {
-  >.component-content {
+  > .component-content {
     background-position: left;
   }
 }
@@ -508,7 +504,7 @@
   overflow: visible !important;
 }
 
-.half-carousel .carousel-wrapper>.component-content {
+.half-carousel .carousel-wrapper > .component-content {
   overflow: visible !important;
 }
 
@@ -592,14 +588,14 @@
   }
 }
 
-.brand-carousel-content+.image {
+.brand-carousel-content + .image {
   width: 100%;
 
   @include sm {
     width: 60%;
   }
 
-  >div {
+  > div {
     height: 100% !important;
 
     img {
@@ -618,18 +614,19 @@
 .highlighted-content {
   position: absolute;
   background: $color-1;
-  left: 0;
+  left: auto;
+  right: -1rem;
   top: -3rem;
   z-index: 1;
-  width: 80%;
+  width: auto;
   text-align: center;
-  padding: 10px 0 0 0;
+  padding: 10px 1rem 0 0 !important;
   z-index: 111;
 
   @include sm {
-    left: 25%;
+    left: auto;
+    right: -2rem;
     top: -2rem;
-    width: 40%;
   }
 
   p {
@@ -664,7 +661,7 @@
   box-shadow: 0px 12px 20px -4px #0000001a;
   z-index: 84;
 
-  >div>div {
+  > div > div {
     flex-direction: column;
 
     @include sm {
@@ -680,26 +677,27 @@
 .highlighted-sec-wrapper {
   margin-top: -7rem;
 
-  >div {
+  > div {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 .highlighted-sec-content {
-  margin: 8rem auto 6rem !important;
+  margin: 6rem auto 6rem !important;
   max-width: 100% !important;
   width: 100%;
   padding: 0.5rem 1rem;
 
   @include sm {
     width: 80%;
-    margin: 12rem auto 5rem !important;
+    margin: 7rem auto 5rem !important;
   }
 
   @include sd {
     max-width: 860px !important;
     width: 100%;
+    margin: 10rem auto 5rem !important;
   }
 
   .bottom-right-arrow {
@@ -824,6 +822,9 @@
 }
 
 .white-line-strip {
+  h3 {
+    margin-bottom: 3rem !important;
+  }
   a {
     .icon-angle-right {
       margin-left: 1rem;
@@ -885,7 +886,7 @@
     }
   }
 
-  >div>div {
+  > div > div {
     justify-content: center;
   }
 }
@@ -1056,7 +1057,7 @@
   }
 }
 
-.flex>div>div>div.career-search-wrapper {
+.flex > div > div > div.career-search-wrapper {
   margin-right: auto !important;
 }
 
@@ -1092,7 +1093,10 @@
   overflow-y: auto;
 }
 
-.story-filter .class-filter[data-type='buttons'] .filter-list-js .filter-item-js {
+.story-filter
+  .class-filter[data-type='buttons']
+  .filter-list-js
+  .filter-item-js {
   margin: 1px;
   margin-right: 1rem;
   max-width: fit-content;
@@ -1102,8 +1106,14 @@
   color: $color-2 !important;
 }
 
-.story-filter .theme-1.class-filter[data-type='buttons'] .filter-list-js .filter-item-js.active-js,
-.story-filter .theme-1.class-filter[data-type='buttons'] .filter-list-js .filter-item-js:hover {
+.story-filter
+  .theme-1.class-filter[data-type='buttons']
+  .filter-list-js
+  .filter-item-js.active-js,
+.story-filter
+  .theme-1.class-filter[data-type='buttons']
+  .filter-list-js
+  .filter-item-js:hover {
   background-color: #47ffe5 !important;
   color: $color-2 !important;
   border-color: #47ffe5 !important;
@@ -1156,11 +1166,11 @@
     }
   }
   .class-filter[data-type='dropdown'] {
-    .filter-container-js{
-      .selected-item-js::before{
+    .filter-container-js {
+      .selected-item-js::before {
         right: 0;
       }
-      .selected-item-js::after{
+      .selected-item-js::after {
         right: 0;
       }
     }
@@ -1169,7 +1179,7 @@
 
 /* Health Topic */
 
-.health-topic-tag+.health-topic-tag {
+.health-topic-tag + .health-topic-tag {
   margin-top: 0.25rem;
   margin-bottom: 1.5rem;
 
@@ -1229,10 +1239,10 @@
     padding: 1rem;
   }
 
-  >div {
+  > div {
     height: 100% !important;
 
-    >div {
+    > div {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -1303,7 +1313,7 @@
 // add comma's in dropdown start
 
 ‌.css-comma:after {
-  content: "\002C";
+  content: '\002C';
 }
 
 .operate-filter-article-section .class-filter[data-type-mobile='dropdown'] {
@@ -1312,15 +1322,20 @@
   width: 100%;
 }
 
-.operate-filter-article-section .class-filter[data-type-mobile='dropdown'] .filter-container-js .selected-item-js {
+.operate-filter-article-section
+  .class-filter[data-type-mobile='dropdown']
+  .filter-container-js
+  .selected-item-js {
   padding: 0.25rem 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .operate-filter-article-section .class-filter[data-type-mobile='dropdown'] .filter-container-js .selected-item-js {
+  .operate-filter-article-section
+    .class-filter[data-type-mobile='dropdown']
+    .filter-container-js
+    .selected-item-js {
     padding: 0.25rem 1rem;
   }
 }
-
 
 // add comma's in dropdown end

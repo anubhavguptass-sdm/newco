@@ -12,27 +12,25 @@
     background-color: $color-grey-3;
     color: $color-1;
   }
-  .error {
-    display: block;
-    background-color: #fee8e7;
-    border: 2px solid #fee8e7;
-    &:focus {
-      background-color: $color-white;
-      border-color: #f41811;
-      outline: #f41811 solid 2px;
+  .error{
+    background-color: #FEE8E7;
+    border: 2px solid #FEE8E7;
+    &:focus{
+     background-color: $color-white;
+     border-color: #F41811;
+     outline: #F41811 solid 2px;
     }
-  }
-  .success {
-    display: none;
-    color: $color-1;
-    background-color: #eaeaea;
-    &:focus {
-      color: $color-2;
-      background-color: $color-white;
-      border-color: #30ea03;
-      outline: #30ea03 solid 2px;
-    }
-  }
+ }
+ .success{
+   color: $color-1;
+   background-color: #EAEAEA;
+   &:focus{
+   color: $color-2;
+   background-color: $color-white;
+   border-color: #30EA03;
+   outline: #30EA03 solid 2px;
+   }
+}
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,

@@ -1129,3 +1129,25 @@
 .searchResults-title a {
   display: inline-block !important;
 }
+
+// add comma's in dropdown start
+
+‌.css-comma:after {
+  content: "\002C";
+  }
+  .operate-filter-article-section .class-filter[data-type-mobile='dropdown'] {
+  margin: 0;
+  max-width: 320px;
+  width: 100%;
+  }
+  .operate-filter-article-section .class-filter[data-type-mobile='dropdown'] .filter-container-js .selected-item-js {
+  padding: 0.25rem 0;
+  }
+  @media only screen and (min-width: 768px) {
+  .operate-filter-article-section .class-filter[data-type-mobile='dropdown'] .filter-container-js .selected-item-js {
+  padding: 0.25rem 1rem;
+  }
+  }
+
+  
+// add comma's in dropdown end

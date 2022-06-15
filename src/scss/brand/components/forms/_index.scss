@@ -44,13 +44,13 @@
   select:-webkit-autofill:focus,
   select:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s !important;
-    -webkit-text-fill-color: $color-3 !important;
+    -webkit-text-fill-color: $color-2 !important;
   }
 
   textarea {
     resize: none;
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
     padding: 1rem;
   }
 
@@ -90,8 +90,8 @@
         }
       }
       &:focus {
-        border-color: rgb(0, 0, 0);
-        outline: rgb(0, 0, 0) solid 1px;
+        border-color: $color-1;
+        outline: $color-1 solid 2px;
       }
     }
 
@@ -165,7 +165,7 @@
 }
 
 #privacy {
-  text-decoration: underline;
+  text-decoration: underline 2px solid $color-primary;
 }
 
 /* contact form end */

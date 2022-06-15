@@ -28,8 +28,11 @@
   &.right-positioned {
     .banner-text {
       @include sm {
-        right: 0;
+        right: 1rem;
         left: auto;
+      }
+      @include sd {
+        right: 0;
       }
     }
   }

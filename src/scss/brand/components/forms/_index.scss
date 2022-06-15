@@ -13,6 +13,7 @@
     color: $color-1;
   }
   .error{
+    display: block;
     background-color: #FEE8E7;
     border: 2px solid #FEE8E7;
     &:focus{
@@ -22,6 +23,7 @@
     }
  }
  .success{
+   display: none;
    color: $color-1;
    background-color: #EAEAEA;
    &:focus{

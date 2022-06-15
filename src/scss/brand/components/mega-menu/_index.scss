@@ -100,7 +100,7 @@ header {
             padding-right: 0;
             @include sm {
               position: relative;
-              padding-right: 20px;
+              padding-right: 26px;
             }
             &:after {
               content: '\e91a';
@@ -110,11 +110,11 @@ header {
               left: 5.5rem;
               @include md {
                 left: 4.5rem;
-                font-size: 20px;
-                top: -4px;
+                font-size: 18px;
+                top: -2px;
               }
               @include sd {
-                left: 5.4rem;
+                left: 76px;
               }
             }
           }
@@ -131,21 +131,20 @@ header {
           }
           a {
             position: relative;
-            padding-right: 22px;
+            padding-right: 26px;
             &:after {
               content: '\e90f';
               font-family: 'icomoon';
               position: absolute;
               right: 1px;
-              top: -5px;
+              top: -3px;
               left: 6.2rem;
               @include md {
                 left: 5.2rem;
-                top: -4px;
-                font-size: 20px;
+                font-size: 18px;
               }
               @include sd {
-                left: 6.2rem;
+                left: 86px;
                 right: initial;
               }
             }
@@ -156,7 +155,7 @@ header {
         p {
           a {
             position: relative;
-            padding-right: 20px;
+            padding-right: 26px;
             &:after {
               content: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/other-contrast.png');
               position: absolute;
@@ -427,7 +426,7 @@ header {
         right: 2rem !important;
         position: fixed;
         @include md {
-          right: -20px !important;
+          right: -4px !important;
           top: 0px !important;
           width: 18px !important;
           height: 18px !important;
@@ -436,10 +435,7 @@ header {
           background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/search-line.svg');
         }
         @include sd {
-          top: 10px !important;
-          width: 20px !important;
-          height: 20px !important;
-          background-size: 20px !important;
+          top: 8px !important;
           &:focus:focus-visible {
             outline: none !important;
           }
@@ -470,8 +466,7 @@ header {
           color: $color-black;
           font-family: $font-family-default;
           @include sd {
-            font-size: $font-size-16;
-            left: -56px;
+            left: -46px;
           }
           @media only screen and (max-width: 991px) {
             display: none;
@@ -886,11 +881,11 @@ header {
   .header-anchor-text a {
     line-height: 1.6;
     color: #000 !important;
-    font-size: 1rem !important;
+    font-size: 13px !important;
     font-weight: 400 !important;
     cursor: pointer;
     padding: 0;
-    padding: 0 2px;
+    padding: 3px 6px;
   }
   .megamenu-navigation {
     .megamenu-top-bar-left > .component-content > .paragraphSystem {

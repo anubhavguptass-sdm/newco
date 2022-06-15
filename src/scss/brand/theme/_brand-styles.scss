@@ -115,11 +115,6 @@ body {
     color: $color-secondary-lime;
   }
 }
-
-.position-relative {
-  position: relative;
-}
-
 #content {
   @media (min-width: 992px) {
     margin-top: 180px;
@@ -408,28 +403,28 @@ table {
     padding-top: 2rem !important;
   }
 }
-.p-d-y--3 {
-  @include sm {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+.p-d-y--3{
+  @include sm{
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
   }
 }
-.p-d-y--2 {
-  @include sm {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+.p-d-y--2{
+  @include sm{
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
   }
 }
-.p-d-x--3 {
-  @include sm {
-    padding-right: 3rem !important;
-    padding-left: 3rem !important;
+.p-d-x--3{
+  @include sm{
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
   }
 }
-.p-d-x--2 {
-  @include sm {
-    padding-right: 2rem !important;
-    padding-left: 2rem !important;
+.p-d-x--2{
+  @include sm{
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
   }
 }
 
@@ -497,7 +492,7 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 992px) and(min-width: 768px) {
   .flex.cols-tab-4.s-d-1 > div > .content {
     -ms-flex-preferred-size: calc(((100% - (1rem * (4 - 1))) / 4));
     flex-basis: calc(((100% - (1rem * (4 - 1))) / 4));
@@ -514,6 +509,19 @@ a:hover {
     gap: 1rem;
   }
 }
+
+.small-cards-wrapper{
+  -ms-flex-preferred-size: calc(((100% - (1rem * (2 - 1))) / 2));
+  flex-basis: calc(((100% - (1rem * (2 - 1))) / 2));
+  gap: 1rem;
+
+  @include lg{
+    -ms-flex-preferred-size: calc(((100% - (1rem * (4 - 1))) / 4));
+    flex-basis: calc(((100% - (1rem * (4 - 1))) / 4));
+    gap: 1rem;
+  }
+}
+
 .find-more-link {
   border-bottom: 2px solid $color-primary;
 }

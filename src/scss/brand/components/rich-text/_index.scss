@@ -1355,34 +1355,34 @@ ol.alpha-bullets {
   margin-left: 1rem;
 
   li {
-      display: block !important;
-      text-indent: -1rem;
+    display: block !important;
+    text-indent: -1rem;
+    padding-left: 1rem;
+
+    &:before {
+      margin-left: -0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    p {
       padding-left: 1rem;
-
-      &:before {
-          margin-left: -.5rem;
-          margin-right: .5rem;
-      }
-
-      p {
-          padding-left: 1rem;
-      }
+    }
   }
 }
 
-ol.alpha-bullets>li:nth-child(1)::before {
+ol.alpha-bullets > li:nth-child(1)::before {
   content: 'a.' !important;
 }
 
-ol.alpha-bullets>li:nth-child(2)::before {
+ol.alpha-bullets > li:nth-child(2)::before {
   content: 'b.' !important;
 }
 
 ol.alpha-bullets ul {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 
   li:before {
-      top: 6px;
+    top: 6px;
   }
 }
 

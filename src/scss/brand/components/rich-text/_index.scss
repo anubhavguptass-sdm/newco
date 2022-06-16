@@ -82,7 +82,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
   }
 }
 
@@ -172,7 +172,8 @@
 
     .breadcrumb-list-item {
       margin-right: 2px;
-
+      display: flex;
+      align-items: center;
       a {
         font-size: 14px;
         color: #fff;

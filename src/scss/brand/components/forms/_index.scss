@@ -11,6 +11,8 @@
     margin-bottom: 0.75rem;
     background-color: $color-grey-3;
     color: $color-1;
+    line-height: $line-height-130;
+    font-size: 1.125rem;
     &:disabled {
       background-color: $color-3;
     }
@@ -159,22 +161,23 @@
   }
 }
 
-.emailValidation {
-  input {
-    border: 2px solid $color-2 !important;
-    outline: 1px solid $color-2 !important;
-  }
+// .emailValidation {
+//   input {
+//     border: 2px solid $color-2 !important;
+//     outline: 1px solid $color-2 !important;
+//   }
 
-  .err-email-msg {
-    color: $color-2 !important;
-  }
-}
+//   .err-email-msg {
+//     color: $color-2 !important;
+//   }
+// }
 
 .label-form {
   margin: 0.75rem 0;
-  font-size: 1.5rem !important;
-  line-height: 120% !important;
+  font-size: 1rem !important;
+  line-height: 160% !important;
   display: block;
+  font-weight: $font-normal;
 }
 
 .pos-absolute {

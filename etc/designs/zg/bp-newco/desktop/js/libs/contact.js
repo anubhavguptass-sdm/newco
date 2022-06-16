@@ -115,15 +115,14 @@
     });
 
     function emailValidation() {
-        var element = document.getElementById("emailGroup");
         var val = document.getElementById("email");
         var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (val.value.match(reg)) {
-            element.classList.remove("emailValidation");
+        $('#email').removeClass('error');
+        $('#email').addClass('success');
             document.getElementById('emailError').style.display = 'none';
             document.getElementById('emailReqMsg').style.display = 'none';
         } else {
-            element.classList.add("emailValidation");
             document.getElementById('emailError').style.display = 'block';
             document.getElementById('emailReqMsg').style.display = 'none';
         }
@@ -178,14 +177,11 @@
 
         if ((type == 'email' || type == 'all')) {
             if (email == '') {
-                element.classList.remove("emailValidation");
                 $('#email').removeClass('success');
                 $('#email').addClass('error');
                 document.getElementById('emailError').style.display = 'none';
                 document.getElementById('emailReqMsg').style.display = 'block';
             } else {
-                $('#email').removeClass('error');
-                $('#email').addClass('success');
                 document.getElementById('emailReqMsg').style.display = 'none';
                 emailValidation();
             }

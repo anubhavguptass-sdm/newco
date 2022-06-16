@@ -19,6 +19,7 @@
         order: 2;
         z-index: 1;
         margin: -2rem 0 5rem 0;
+        width: calc(100% - 1.5rem);
       }
 
       @include sd {

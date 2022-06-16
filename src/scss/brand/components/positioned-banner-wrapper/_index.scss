@@ -4,9 +4,9 @@
     position: relative;
     padding: 2rem;
     top: -5rem;
-    -webkit-box-shadow: 0px 16px 40px -8px #0000001a;
-    box-shadow: 0px 16px 40px -8px #0000001a;
-    background-color: #fff;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+    background-color: $color-white;
     margin-left: auto !important;
     margin-right: auto !important;
     @include sm {
@@ -80,9 +80,9 @@
 
 .card-content-wrapper {
   .bottom-positioned {
-    -webkit-box-shadow: 0px 16px 40px -8px #0000001a;
-    box-shadow: 0px 16px 40px -8px #0000001a;
-    background-color: #fff;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+    background-color: $color-white;
     padding: 2rem !important;
     margin: -3rem auto 2rem;
     @include sm {

@@ -65,23 +65,23 @@
       .richText {
         h3 {
           .green-bar {
-            border-color: #000;
+            border-color: $color-2;
 
             @include sd {
               border: none !important;
-              background-color: #000 !important;
-              color: #fff !important;
+              background-color: $color-2 !important;
+              color: $color-white !important;
             }
 
             &::before {
               @include sd {
-                background-color: #000 !important;
+                background-color: $color-2 !important;
               }
             }
 
             &::after {
               @include sd {
-                background-color: #000 !important;
+                background-color: $color-2 !important;
               }
             }
           }

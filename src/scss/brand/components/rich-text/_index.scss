@@ -1351,8 +1351,8 @@
 /* who-we-are/governance/compliance CSS */
 
 ol.alpha-bullets {
-  list-style: lower-armenian;
-  margin-left: 1rem;
+  counter-reset: list;
+  margin-left: 3rem;
 
   li {
     display: block !important;
@@ -1362,6 +1362,9 @@ ol.alpha-bullets {
     &:before {
       margin-left: -0.5rem;
       margin-right: 0.5rem;
+      font-weight: normal !important;
+      content: counter(list, lower-alpha) '. ' !important;
+      counter-increment: list;
     }
 
     p {
@@ -1370,18 +1373,10 @@ ol.alpha-bullets {
   }
 }
 
-ol.alpha-bullets > li:nth-child(1)::before {
-  content: 'a.' !important;
-}
-
-ol.alpha-bullets > li:nth-child(2)::before {
-  content: 'b.' !important;
-}
-
 ul.hidden-bullets {
-  margin-left: 1rem;
+  margin-left: 3rem;
   li {
-    display: block;
+    display: block !important;
     &:before {
       display: none !important;
     }

@@ -1347,3 +1347,43 @@
 }
 
 // add comma's in dropdown end
+
+/* who-we-are/governance/compliance CSS */
+
+ol.alpha-bullets {
+  list-style: lower-armenian;
+  margin-left: 1rem;
+
+  li {
+      display: block !important;
+      text-indent: -1rem;
+      padding-left: 1rem;
+
+      &:before {
+          margin-left: -.5rem;
+          margin-right: .5rem;
+      }
+
+      p {
+          padding-left: 1rem;
+      }
+  }
+}
+
+ol.alpha-bullets>li:nth-child(1)::before {
+  content: 'a.' !important;
+}
+
+ol.alpha-bullets>li:nth-child(2)::before {
+  content: 'b.' !important;
+}
+
+ol.alpha-bullets ul {
+  margin-left: .5rem;
+
+  li:before {
+      top: 6px;
+  }
+}
+
+/* who-we-are/governance/compliance CSS End */

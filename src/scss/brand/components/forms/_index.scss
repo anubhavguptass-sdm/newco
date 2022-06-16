@@ -11,7 +11,7 @@
     margin-bottom: 0.75rem;
     background-color: $color-grey-3;
     color: $color-1;
-    &:disabled{
+    &:disabled {
       background-color: $color-3;
     }
   }
@@ -72,7 +72,7 @@
     gap: 0.5rem;
     color: $color-2;
     font-size: 1.125rem;
-    @include sm{
+    @include sm {
       gap: 0.75rem;
     }
 
@@ -111,7 +111,7 @@
     font-family: $font-normal;
     padding: 1rem 0rem 0;
     color: $color-2;
-    @include sm{
+    @include sm {
       padding: 1rem 2rem 0;
     }
   }
@@ -120,14 +120,14 @@
     color: #000;
     padding: 0 0rem 0 0.15rem;
     font-weight: 700;
-   a{
-    text-decoration: underline 2px solid $color-primary;
-    &:focus {
-      background: transparent !important;
-      border: 2px solid;
-      outline: none;
+    a {
+      text-decoration: underline 2px solid $color-primary;
+      &:focus {
+        background: transparent !important;
+        border: 2px solid;
+        outline: none;
+      }
     }
-   }
   }
 
   .group-form {

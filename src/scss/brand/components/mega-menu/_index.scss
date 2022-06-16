@@ -866,8 +866,11 @@ header {
   background-color: $color-grey-3;
   background-size: 2.25rem !important;
   background-position: center right 0 !important;
-  padding-right: 2rem;
+  padding-right: 0rem;
   text-align: left;
+  @include md {
+    width: 98% !important;
+  }
 }
 
 .megamenu-remove {

@@ -1,7 +1,4 @@
 bundle.css
 core/normalize.css
 core/cookiePolicy.css
-core/exitNotification.css
 core/overlay.css
-core/fullcalendar.css
-{components}

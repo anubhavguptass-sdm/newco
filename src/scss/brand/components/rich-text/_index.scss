@@ -832,7 +832,10 @@
 
 .white-line-strip {
   h3 {
-    margin-bottom: 3rem !important;
+    margin-bottom: 2.5rem !important;
+    &:nth-last-child(1) {
+      margin-bottom: 0 !important;
+    }
   }
   a {
     .icon-angle-right {
@@ -974,10 +977,6 @@
 
     @include sm {
       padding-left: 3rem;
-    }
-
-    @include lg {
-      padding-left: 0rem;
     }
 
     .heading {

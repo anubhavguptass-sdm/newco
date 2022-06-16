@@ -365,7 +365,7 @@ header {
       .searchBox-label {
         display: none !important;
         background: $color-white;
-        box-shadow: 0px 16px 40px -8px #0000001a;
+        box-shadow: $box-shadow;
         padding: 0 !important;
         height: auto;
         position: fixed;
@@ -819,7 +819,7 @@ header {
         }
       }
       .btn.btn-black {
-        color: #fff !important;
+        color: $color-white !important;
         background-color: $color-2 !important;
         color: $color-2;
         font-size: 0.938rem;
@@ -863,7 +863,7 @@ header {
   .searchBox
   input[type='text'] {
   background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/green-search.svg');
-  background-color: #eaeaea;
+  background-color: $color-grey-3;
   background-size: 2rem !important;
   background-position: center right 0 !important;
   padding-right: 2rem;
@@ -880,7 +880,7 @@ header {
 @include sd {
   .header-anchor-text a {
     line-height: 1.6;
-    color: #000 !important;
+    color: $color-2 !important;
     font-size: 13px !important;
     font-weight: 400 !important;
     cursor: pointer;
@@ -1129,7 +1129,7 @@ li {
   .box
   .paragraphSystem
   .imageCompatibleMarkup:after {
-  color: #000;
+  color: $color-2;
 }
 .megamenu .searchBox input[type='text'] {
   font-size: $font-size-12;

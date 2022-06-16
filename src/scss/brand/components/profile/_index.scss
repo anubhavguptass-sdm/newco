@@ -45,11 +45,9 @@
     @include sm {
       content: '';
       width: 100%;
-      background: var(--bg-color-2);
+      background-color: $color-primary;
       display: block;
-      /* height: 100%; */
       position: absolute;
-      /* left: -100vw; */
       z-index: 1;
       height: 40px;
       top: 42%;

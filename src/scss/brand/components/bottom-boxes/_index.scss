@@ -19,7 +19,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-bottom: -52px !important;
+    margin-bottom: -42px !important;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 786px) {
+    margin-bottom: -58px !important;
   }
   .btn {
     margin: 0;

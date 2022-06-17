@@ -1023,8 +1023,8 @@ header {
 }
 
 .megamenu-navigation .megamenu-top-bar-right {
-  margin-bottom: 4rem;
-  @include sm {
+  margin-bottom: 8rem;
+  @media screen and (min-width: 425px) {
     margin-bottom: 0rem;
   }
 }
@@ -1092,18 +1092,18 @@ li {
     }
   }
 }
-li {
-  &.page-our-brands {
-    a {
-      min-width: 112px;
-      &::before {
-        @include md {
-          left: 4.25rem;
-        }
-      }
-    }
-  }
-}
+// li {
+//   &.page-our-brands {
+//     a {
+//       min-width: 112px;
+//       &::before {
+//         @include md {
+//           left: 4.25rem;
+//         }
+//       }
+//     }
+//   }
+// }
 li {
   &.page-who-we-are {
     a {

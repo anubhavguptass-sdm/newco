@@ -798,6 +798,11 @@ header {
     box-shadow: none !important;
     height: auto;
     padding: 0;
+    @include md {
+      box-shadow: $box-shadow !important;
+      width: 1440px;
+      margin: auto;
+    }
     .bg-color-3 {
       background-color: $color-grey-3;
       padding: 1rem;
@@ -1024,9 +1029,14 @@ header {
     margin: 0;
   }
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .megamenu-navigation .megamenu-top-bar-right {
+    margin-bottom: 11rem;
+  }
+}
 
 .megamenu-navigation .megamenu-top-bar-right {
-  margin-bottom: 11rem;
+  margin-bottom: 2rem;
   @media screen and (min-width: 425px) {
     margin-bottom: 0rem;
   }

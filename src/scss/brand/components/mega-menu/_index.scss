@@ -50,7 +50,7 @@ header {
       .megamenu-main-nav {
         .navigation-branch.navigation-level1 {
           max-width: 100% !important;
-          margin-top: 0.5rem !important;
+          margin-top: 2.5rem !important;
           @include sm {
             margin-top: 3.5rem !important;
           }
@@ -224,7 +224,10 @@ header {
               font-size: $font-size-16 !important;
               font-weight: $font-normal !important;
               cursor: pointer;
-              margin: 2px 5px;
+              margin: 2px 0;
+              @include md {
+                margin: 2px 5px;
+              }
               &:hover {
                 background-color: $color-primary !important;
               }
@@ -1023,7 +1026,7 @@ header {
 }
 
 .megamenu-navigation .megamenu-top-bar-right {
-  margin-bottom: 8rem;
+  margin-bottom: 11rem;
   @media screen and (min-width: 425px) {
     margin-bottom: 0rem;
   }

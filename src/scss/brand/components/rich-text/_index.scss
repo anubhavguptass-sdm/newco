@@ -154,7 +154,7 @@
   background: #000;
   color: #fff;
 
-  @include sm {
+  @include sd {
     top: 3.75rem;
     left: 1rem;
     max-width: fit-content;
@@ -1384,3 +1384,8 @@ ul.hidden-bullets {
 }
 
 /* who-we-are/governance/compliance CSS End */
+.social-share{
+  font-size: 0.75rem;
+  width: 48px;
+  text-align: center;
+}

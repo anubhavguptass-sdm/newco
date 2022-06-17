@@ -1390,21 +1390,28 @@ ul.hidden-bullets {
 /* who-we-are/governance/compliance CSS End */
 .social-share {
   font-size: 0.75rem;
-  width: 48px;
   text-align: center;
+  @include sm{
+    width: 48px;
+  }
 }
 .sitemap-column {
-  margin-top: 1rem;
-  ul {
-    margin-left: 1rem;
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  > ul {
+    list-style-type: none;
+    margin-left: 2rem;
     li {
       padding: 0.25rem 0;
       ul {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
       }
     }
   }
 }
+
 ‌.sitemap-columns-2 {
   justify-content: space-between;
   display: flex;

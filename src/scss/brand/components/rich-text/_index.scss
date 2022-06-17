@@ -1388,8 +1388,10 @@ ul.hidden-bullets {
 /* who-we-are/governance/compliance CSS End */
 .social-share {
   font-size: 0.75rem;
-  width: 48px;
   text-align: center;
+  @include sm{
+    width: 48px;
+  }
 }
 .sitemap-column {
   h3 {
@@ -1407,6 +1409,7 @@ ul.hidden-bullets {
     }
   }
 }
+
 ‌.sitemap-columns-2 {
   justify-content: space-between;
   display: flex;

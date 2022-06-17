@@ -50,7 +50,7 @@ header {
       .megamenu-main-nav {
         .navigation-branch.navigation-level1 {
           max-width: 100% !important;
-          margin-top: 0.5rem !important;
+          margin-top: 2.5rem !important;
           @include sm {
             margin-top: 3.5rem !important;
           }
@@ -1023,7 +1023,7 @@ header {
 }
 
 .megamenu-navigation .megamenu-top-bar-right {
-  margin-bottom: 9rem;
+  margin-bottom: 11rem;
   @media screen and (min-width: 425px) {
     margin-bottom: 0rem;
   }

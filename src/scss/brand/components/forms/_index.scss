@@ -23,8 +23,8 @@
   .outlined {
     color: $color-2;
     background-color: $color-white;
-    outline:none;
-    &:focus{
+    outline: none;
+    &:focus {
       outline: solid #484848 2px;
     }
   }

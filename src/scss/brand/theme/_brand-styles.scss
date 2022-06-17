@@ -10,6 +10,7 @@ body {
   }
 
   a {
+    word-break: break-all;
     &:focus,
     &:focus:focus-visible {
       outline: 2px dotted;

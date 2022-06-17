@@ -225,6 +225,9 @@ header {
               font-weight: $font-normal !important;
               cursor: pointer;
               margin: 2px 5px;
+              @include md {
+                margin: 2px 0;
+              }
               &:hover {
                 background-color: $color-primary !important;
               }

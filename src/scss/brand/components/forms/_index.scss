@@ -16,6 +16,13 @@
     &:disabled {
       background-color: $color-3;
     }
+    &:focus{
+      color: $color-2;
+    }
+  }
+  .outlined{
+    color: $color-2;
+    background-color: $color-white;
   }
   .error {
     background-color: #fee8e7;

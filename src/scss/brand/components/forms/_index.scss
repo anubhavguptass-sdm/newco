@@ -30,6 +30,7 @@
     &:focus {
       background-color: $color-white;
       border-color: $color-error;
+      color: $color-2;
       outline: $color-error solid 2px;
     }
   }

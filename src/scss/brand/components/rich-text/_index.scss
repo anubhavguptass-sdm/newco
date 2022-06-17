@@ -1389,3 +1389,7 @@ ul.hidden-bullets {
   width: 48px;
   text-align: center;
 }
+
+.tabs-content .tabContent td a.outlined:focus:focus-visible {
+  outline: 2px solid !important;
+}

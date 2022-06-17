@@ -1347,3 +1347,40 @@
 }
 
 // add comma's in dropdown end
+
+/* who-we-are/governance/compliance CSS */
+
+ol.alpha-bullets {
+  counter-reset: list;
+  margin-left: 3rem;
+
+  li {
+    display: block !important;
+    text-indent: -1rem;
+    padding-left: 1rem;
+
+    &:before {
+      margin-left: -0.5rem;
+      margin-right: 0.5rem;
+      font-weight: normal !important;
+      content: counter(list, lower-alpha) '. ' !important;
+      counter-increment: list;
+    }
+
+    p {
+      text-indent: 0;
+    }
+  }
+}
+
+ul.hidden-bullets {
+  margin-left: 3rem;
+  li {
+    display: block !important;
+    &:before {
+      display: none !important;
+    }
+  }
+}
+
+/* who-we-are/governance/compliance CSS End */

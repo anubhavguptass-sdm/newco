@@ -92,7 +92,7 @@ const { all } = require('core-js/fn/promise');
   });
 
   $(
-    'li.page-our-brands , li.page-who-we-are , li.page-planet-and-people'
+    'li.page-who-we-are , li.page-planet-and-people'
   ).click(function() {
     $(
       '.navigation-branch , .megamenu-top-bar-left , .megamenu-top-bar-right'

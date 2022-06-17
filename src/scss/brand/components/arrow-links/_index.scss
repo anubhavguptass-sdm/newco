@@ -14,7 +14,7 @@
     color: $color-2;
     border: 2px solid;
     border-color: $color-primary;
-    @include sm{
+    @include sm {
       width: 68px;
       line-height: 68px;
     }

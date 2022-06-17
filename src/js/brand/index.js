@@ -71,11 +71,9 @@ const { all } = require('core-js/fn/promise');
   function megaMenuMobile() {
     var width = $(window).width();
     if (width < 1024) {
-      $('.navigation-branch li.page-our-brands a').removeAttr('href');
       $('.navigation-branch li.page-who-we-are a').removeAttr('href');
       $('.navigation-branch li.page-planet-and-people a').removeAttr('href');
     } else {
-      $('.navigation-branch li.page-our-brands a').attr('href', '/our-brands/');
       $('.navigation-branch li.page-who-we-are a').attr('href', '/who-we-are/');
       $('.navigation-branch li.page-planet-and-people a').attr(
         'href',

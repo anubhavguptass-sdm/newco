@@ -1032,12 +1032,6 @@ header {
     margin: 0;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .megamenu-navigation .megamenu-top-bar-right {
-    margin-bottom: 11rem;
-  }
-}
-
 .megamenu-navigation .megamenu-top-bar-right {
   margin-bottom: 2rem;
   @media screen and (min-width: 425px) {
@@ -1047,6 +1041,12 @@ header {
 
 #footer {
   margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .megamenu-navigation .megamenu-top-bar-right {
+    margin-bottom: 11rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

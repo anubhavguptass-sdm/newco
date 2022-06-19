@@ -1645,3 +1645,15 @@
     }
   }
 }
+.megamenu-navigation {
+  .megamenu-submenu-item {
+    .default-style {
+      ul {
+        padding: 1rem;
+        li {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

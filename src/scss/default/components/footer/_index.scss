@@ -172,3 +172,14 @@
   }
 }
 /*stylelint-enable*/
+.slash-separator {
+  position: relative;
+  &:after {
+    content: '/';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1rem;
+    color: $color-2;
+  }
+}

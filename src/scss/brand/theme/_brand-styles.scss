@@ -254,6 +254,9 @@ table {
   max-width: 20% !important;
   background-color: $color-white;
 }
+.word-break-all {
+  word-break: break-all;
+}
 .column-5 {
   @include sm {
     flex-basis: calc(100% / 5);

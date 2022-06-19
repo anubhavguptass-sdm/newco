@@ -27,7 +27,7 @@ header {
     padding: 0;
     > .component-content {
       padding: 0 1.8rem !important;
-      @include sm{
+      @include sm {
         padding: 0 2rem !important;
       }
       @include sd {

@@ -560,7 +560,7 @@
               align-content: center;
               @media (max-width: $breakpoint-sm-max) {
                 //mobile styles
-                min-height: 54px;
+                min-height: auto;
               }
 
               &:hover {

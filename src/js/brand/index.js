@@ -52,11 +52,11 @@ const { all } = require('core-js/fn/promise');
       } else {
         if (ddesc.trim().length)
           contentelement.html(
-            `<h1>${dtitle}</h1><p class="h2">${dsubtitle}</p><p class="desc">${ddesc}</p>`
+            `<h1 class="strong">${dtitle}</h1><p class="h2">${dsubtitle}</p><p class="desc">${ddesc}</p>`
           );
         else
           contentelement.html(
-            `<h1>${dtitle}</h1><p class="h2">${dsubtitle}</p>`
+            `<h1 class="strong">${dtitle}</h1><p class="h2">${dsubtitle}</p>`
           );
       }
     });

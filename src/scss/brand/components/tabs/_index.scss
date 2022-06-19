@@ -5,7 +5,7 @@
     .tabs-nav-list {
       li {
         width: auto !important;
-        margin-right: 3% !important;
+        margin-right: 0% !important;
         padding-bottom: 1rem !important;
         background-color: $color-white !important;
         border-bottom: 2px solid transparent !important;
@@ -215,7 +215,7 @@
   }
 
   .tabs-wrapper.mobile-tabs .tabs-nav-list .tabs-nav-item + li {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .tabs-wrapper.mobile-tabs .tabs-nav-list .tabs-nav-item a {
@@ -309,7 +309,7 @@
   .tabs-wrapper.mobile-tabs .tabs .tabs-content {
     border: none;
     background-color: #fff;
-    padding: 2rem 0 !important;
+    padding: 1rem !important;
 
     p {
       padding-right: 1.5rem;

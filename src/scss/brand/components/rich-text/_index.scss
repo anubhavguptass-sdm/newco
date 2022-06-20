@@ -1162,9 +1162,9 @@
 
     .filter-list-js {
       max-width: 320px !important;
-      width: 300px;
+      min-width: 260px;
       .filter-item-js {
-        padding: 0.25rem 1rem !important;
+        padding: 0.25rem 0.5rem !important;
         text-align: left;
         background-color: $color-white;
         border: none;

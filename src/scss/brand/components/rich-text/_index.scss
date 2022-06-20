@@ -1,6 +1,9 @@
 /* Health Profesional Amrendra*/
 .box.hero-banner {
   min-height: 100vh;
+  @media screen and (min-width: 1920px) {
+    min-height: auto;
+  }
 }
 .your-patient-card-overlap {
   position: relative;

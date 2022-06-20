@@ -968,8 +968,8 @@
       position: absolute;
       left: 0;
       background-image: url(/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/logo/measure.png);
-      width: 2rem;
-      height: 85%;
+      width: 3rem;
+      height: 80%;
       top: 4rem;
       background-size: cover;
     }
@@ -1163,9 +1163,9 @@
 
     .filter-list-js {
       max-width: 320px !important;
-      width: 300px;
+      min-width: 260px;
       .filter-item-js {
-        padding: 0.25rem 1rem !important;
+        padding: 0.25rem 0.5rem !important;
         text-align: left;
         background-color: $color-white;
         border: none;

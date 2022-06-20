@@ -1420,3 +1420,12 @@ ul.hidden-bullets {
 .full-clickable-box:focus-within .bottom-right-arrow:after {
   border: 2px solid #000;
 }
+
+.banner-text {
+  ol li {
+    display: block !important;
+    &::before {
+      left: -5px;
+    }
+  }
+}

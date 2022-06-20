@@ -51,6 +51,12 @@
       @include sm {
         margin-left: 2rem;
       }
+      &.sm-width {
+        width: 85%;
+        @include sm {
+          width: 100%;
+        }
+      }
     }
     .bottom-text {
       position: relative;

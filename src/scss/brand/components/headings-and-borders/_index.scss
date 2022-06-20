@@ -166,6 +166,22 @@
         top: 0 !important;
       }
     }
+    &.two-steps.bg-strip-large.strip-pos {
+      &:before {
+        top: 0;
+
+        @include sm {
+          top: 100%;
+        }
+      }
+
+      &:after {
+        top: 100% !important;
+        @include sm {
+          top: 0 !important;
+        }
+      }
+    }
     &.three-steps {
       width: 85%;
 

@@ -1,6 +1,9 @@
 #footer {
   .footer-column {
-    padding: 2rem 0rem;
+    padding: 2rem 1.5rem;
+    @include sm {
+      padding: 2rem 0;
+    }
   }
   .footer-secondary-nav {
     border-top: 1px solid $color-grey-3;

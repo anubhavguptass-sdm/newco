@@ -207,6 +207,10 @@
           left: -200%;
           top: 200%;
           z-index: -1;
+          @media screen and (min-width: 1920px) {
+            left: -300%;
+            width: 200%;
+          }
         }
       }
     }

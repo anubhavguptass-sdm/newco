@@ -6,11 +6,14 @@ ul.tag-links {
     margin-right: 10px;
     font-size: 0.875rem;
     @include sm {
-      padding: 2px;
+      padding: 0.1rem;
       margin-right: 1px;
     }
     @include sd {
       padding: 0.25rem;
+      margin-right: 4px;
+    }
+    @include lg {
       margin-right: 10px;
     }
     &::before {

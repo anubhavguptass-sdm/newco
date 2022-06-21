@@ -10,8 +10,17 @@
   button {
     background-color: $color-primary !important;
     border: none !important;
+    cursor: pointer;
     &:before {
       display: none !important;
+    }
+    &::after {
+      content: '\e91d' !important;
+      font-family: icomoon;
+      background: none !important;
+      z-index: 11;
+      cursor: pointer;
+      font-size: 20px;
     }
   }
   .searchBox-label {

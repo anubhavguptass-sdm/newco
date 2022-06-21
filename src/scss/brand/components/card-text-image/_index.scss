@@ -28,12 +28,14 @@
   }
 }
 
+.our-brands-wrapper {
+  @media screen and (min-width: 992px) and (max-width: 1280px) {
+    margin-bottom: 2rem !important;
+  }
+}
 @media only screen and (max-width: 1279px) and (min-width: 992px) {
   .card-text-image-small .card-image img {
     height: 350px !important;
     object-position: top;
-  }
-  .our-brands-wrapper {
-    margin-bottom: 2rem !important;
   }
 }

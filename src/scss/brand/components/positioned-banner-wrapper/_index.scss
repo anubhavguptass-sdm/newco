@@ -9,6 +9,14 @@
     background-color: $color-white;
     margin-left: auto !important;
     margin-right: auto !important;
+    &.banner-width-half {
+      @include sm {
+        width: 50%;
+      }
+      @include sd {
+        width: auto;
+      }
+    }
     @include sm {
       top: 50%;
       position: absolute;

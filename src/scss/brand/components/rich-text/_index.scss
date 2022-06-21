@@ -1,10 +1,10 @@
 /* Health Profesional Amrendra*/
-.box.hero-banner {
-  min-height: 100vh;
-  @media screen and (min-width: 1920px) {
-    min-height: auto;
-  }
-}
+// .box.hero-banner {
+//   min-height: 100vh;
+//   @media screen and (min-width: 1920px) {
+//     min-height: auto;
+//   }
+// }
 .your-patient-card-overlap {
   position: relative;
 
@@ -1504,6 +1504,40 @@ ul.hidden-bullets {
             width: 32px;
             z-index: -1;
           }
+            top: 2px !important;
+            width: 2.125rem !important;
+            background: $color-primary;
+            height: 1.875rem !important;
+            z-index: 1;
+            display: block !important;
+            @include sm{
+              height: 2.125rem !important;
+            }
+            @include md{
+              right: 7px !important;
+              top: 18px !important;
+            }
+            &.icon-search-line:before{
+              content: '\e91d' !important;
+              left: 0 !important;
+              right: 0;
+              font-size: 1.25rem !important;
+              top: 5px !important;
+              font-family: 'icomoon' !important;
+              display: block !important;
+              z-index: -1 !important;
+            }
+            &:after{
+              content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -2px;
+    height: 2.125rem;
+    background-color: var(--color-primary);
+    width: 2rem;
+    z-index: -1;
+            }
         }
       }
     }

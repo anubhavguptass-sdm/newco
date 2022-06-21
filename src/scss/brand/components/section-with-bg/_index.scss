@@ -93,12 +93,8 @@
   .fit-content {
     .richText-content {
       width: fit-content !important;
-      margin-left: 0;
-      margin-right: 0;
-      @include sm {
-        margin-left: auto;
-        margin-right: auto;
-      }
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

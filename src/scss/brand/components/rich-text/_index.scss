@@ -1446,65 +1446,6 @@ ul.hidden-bullets {
           right: 0px !important;
           position: absolute;
           top: 2px !important;
-          width: 34px !important;
-          background: $color-primary;
-          height: 34px !important;
-          z-index: 1;
-          display: block !important;
-          @include md {
-            right: 14px !important;
-            top: 18px !important;
-          }
-          &.icon-search-line:before {
-            content: '\e91d' !important;
-            left: 0 !important;
-            right: 0;
-            font-size: 1.25rem !important;
-            top: 5px !important;
-            font-family: 'icomoon' !important;
-          }
-          &:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: -2px;
-            height: 34px;
-            background-color: var(--color-primary);
-            width: 32px;
-            z-index: -1;
-          }
-          top: 2px !important;
-          width: 34px !important;
-          background: $color-primary;
-          height: 34px !important;
-          z-index: 1;
-          display: block !important;
-          @include md {
-            right: 14px !important;
-            top: 18px !important;
-          }
-          &.icon-search-line:before {
-            content: '\e91d' !important;
-            left: 0 !important;
-            right: 0;
-            font-size: 1.25rem !important;
-            top: 5px !important;
-            font-family: 'icomoon' !important;
-            display: block !important;
-          }
-          &:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: -2px;
-            height: 34px;
-            background-color: var(--color-primary);
-            width: 32px;
-            z-index: -1;
-          }
-          top: 2px !important;
           width: 2.125rem !important;
           background: $color-primary;
           height: 1.875rem !important;
@@ -1514,8 +1455,9 @@ ul.hidden-bullets {
             height: 2.125rem !important;
           }
           @include md {
-            right: 7px !important;
-            top: 18px !important;
+            top: calc(100% - 47px) !important;
+            height: calc(100% - 28px) !important;
+            left: calc(100% - 3.75rem);
           }
           &.icon-search-line:before {
             content: '\e91d' !important;

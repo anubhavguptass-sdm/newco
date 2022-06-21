@@ -1446,13 +1446,13 @@ ul.hidden-bullets {
           right: 0px !important;
             position: absolute;
             top: 2px !important;
-            width: 34px !important;
+            width: 2.125rem !important;
             background: $color-primary;
-            height: 30px!important;
+            height: 1.875rem !important;
             z-index: 1;
             display: block !important;
             @include sm{
-              height: 34px;
+              height: 2.125rem !important;
             }
             @include md{
               right: 7px !important;
@@ -1474,9 +1474,9 @@ ul.hidden-bullets {
     left: 0;
     right: 0;
     top: -2px;
-    height: 34px;
+    height: 2.125rem;
     background-color: var(--color-primary);
-    width: 32px;
+    width: 2rem;
     z-index: -1;
             }
         }

@@ -1451,7 +1451,7 @@ ul.hidden-bullets {
           height: 34px !important;
           z-index: 1;
           display: block !important;
-          @include md {
+          @include sd {
             right: 7px !important;
             top: 18px !important;
           }

@@ -1444,44 +1444,41 @@ ul.hidden-bullets {
         }
         button.header-search {
           right: 0px !important;
-          position: absolute;
-          top: 2px !important;
-          width: 34px !important;
-          background: $color-primary;
-          height: 34px !important;
-          z-index: 1;
-          display: block !important;
-          @include sd {
-            right: 13px !important;
-            top: 18px !important;
-          }
-          @include xl {
-            right: 22px !important;
-          }
-          &.icon-search-line:before {
-            content: '\e91d' !important;
-            left: 0 !important;
-            right: 0;
-            font-size: 1.25rem !important;
-            top: 5px !important;
-            font-family: 'icomoon' !important;
-            display: block !important;
-            z-index: 0 !important;
-          }
-          &.icon-search-line:after {
-            content: none;
-          }
-          &:after {
-            content: '';
             position: absolute;
-            left: 0;
-            right: 0;
-            top: -2px;
-            height: 34px;
-            background-color: var(--color-primary);
-            width: 32px;
-            z-index: -1;
-          }
+            top: 2px !important;
+            width: 2.125rem !important;
+            background: $color-primary;
+            height: 1.875rem !important;
+            z-index: 1;
+            display: block !important;
+            @include sm{
+              height: 2.125rem !important;
+            }
+            @include md{
+              right: 1rem !important;
+              top: 18px !important;
+            }
+            &.icon-search-line:before{
+              content: '\e91d' !important;
+              left: 0 !important;
+              right: 0;
+              font-size: 1.25rem !important;
+              top: 5px !important;
+              font-family: 'icomoon' !important;
+              display: block !important;
+              z-index: -1 !important;
+            }
+            &:after{
+              content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -2px;
+    height: 2.125rem;
+    background-color: var(--color-primary);
+    width: 2rem;
+    z-index: -1;
+            }
         }
       }
     }

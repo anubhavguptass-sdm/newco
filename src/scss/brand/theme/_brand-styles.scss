@@ -417,6 +417,12 @@ table {
     padding-bottom: 3rem !important;
   }
 }
+.p-d-y--4 {
+  @include sm {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
 .p-d-y--2 {
   @include sm {
     padding-top: 2rem !important;

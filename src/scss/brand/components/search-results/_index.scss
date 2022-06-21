@@ -10,6 +10,7 @@
   button {
     background-color: $color-primary !important;
     border: none !important;
+    cursor: pointer;
     &:before {
       display: none !important;
     }
@@ -25,6 +26,14 @@
       background-color: $color-grey-3;
       border: none !important;
     }
+  }
+  &::after {
+    content: '\e91d';
+    font-family: icomoon;
+    background: none;
+    z-index: 11;
+    cursor: pointer;
+    font-size: 20px;
   }
 }
 

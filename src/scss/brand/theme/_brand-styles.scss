@@ -348,14 +348,6 @@ table {
   }
 }
 
-.p-d-y-3 {
-  padding-top: 3rem;
-  @include sm {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
 .p-d-r-1-5 {
   @include sm {
     padding-right: 1.5rem !important;

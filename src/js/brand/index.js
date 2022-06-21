@@ -129,8 +129,10 @@ const { all } = require('core-js/fn/promise');
   // filter display block end
   // Show More Filter
   $(document).ready(function() {
-    var r= $('<button type="submit" class="header-search icon-search-line" value="new button"> </button>');
-    $(".megamenu-search.search-block .searchBox-label").append(r);
+    var r = $(
+      '<button type="submit" class="header-search icon-search-line" value="new button"> </button>'
+    );
+    $('.megamenu-search.search-block .searchBox-label').append(r);
     Array.from(document.querySelectorAll('a.external')).forEach(el =>
       el.classList.remove('external')
     );

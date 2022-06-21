@@ -1463,6 +1463,7 @@ ul.hidden-bullets {
               top: 5px !important;
               font-family: 'icomoon' !important;
               display: block !important;
+              z-index: -1 !important;
             }
             &:after{
               content: '';

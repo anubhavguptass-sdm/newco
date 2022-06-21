@@ -1452,7 +1452,7 @@ ul.hidden-bullets {
           z-index: 1;
           display: block !important;
           @include sd {
-            right: 14px !important;
+            right: 13px !important;
             top: 18px !important;
           }
           @include xl {
@@ -1466,7 +1466,10 @@ ul.hidden-bullets {
             top: 5px !important;
             font-family: 'icomoon' !important;
             display: block !important;
-            z-index: -1 !important;
+            z-index: 0 !important;
+          }
+          &.icon-search-line:after {
+            content: none;
           }
           &:after {
             content: '';

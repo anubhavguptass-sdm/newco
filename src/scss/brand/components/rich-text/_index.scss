@@ -1455,6 +1455,9 @@ ul.hidden-bullets {
             right: 7px !important;
             top: 18px !important;
           }
+          @include xl {
+            right: 22px !important;
+          }
           &.icon-search-line:before {
             content: '\e91d' !important;
             left: 0 !important;

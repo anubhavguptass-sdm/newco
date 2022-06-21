@@ -1433,3 +1433,22 @@ ul.hidden-bullets {
     }
   }
 }
+
+// header search css
+.header-search {
+  right: 14px !important;
+  position: absolute;
+  top: 18px !important;
+  width: 34px !important;
+  background: $color-primary;
+  height: 34px !important;
+  z-index: 1;
+  &.icon-search-line:before {
+    content: '\e91d' !important;
+    left: 0 !important;
+    right: 0;
+    font-size: 1.25rem !important;
+    top: 5px !important;
+    font-family: 'icomoon' !important;
+  }
+}

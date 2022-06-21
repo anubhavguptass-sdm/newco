@@ -1455,8 +1455,9 @@ ul.hidden-bullets {
               height: 2.125rem !important;
             }
             @include md{
-              right: 7px !important;
-              top: 18px !important;
+            top: calc(100% - 47px) !important;
+            height: calc(100% - 28px) !important;
+            left: calc(100% - 3.75rem);
             }
             &.icon-search-line:before{
               content: '\e91d' !important;

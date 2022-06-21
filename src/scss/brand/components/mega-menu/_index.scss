@@ -884,7 +884,7 @@ header {
   padding-right: 0rem;
   text-align: left;
   @include md {
-    width: 98% !important;
+    width: calc(100% - 2.2rem) !important;
   }
 }
 

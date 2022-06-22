@@ -315,8 +315,6 @@ header {
       > .component-content > .navigation-mobile-menu {
         left: auto;
         right: -15px;
-        top: 10px;
-        background-size: auto;
         background-image: none;
         width: 24px;
         height: 24px;
@@ -325,20 +323,19 @@ header {
           font-family: 'icomoon';
           font-size: 1.6rem;
           color: $color-2;
+          top: 10px;
         }
       }
     }
     &.nav-opened {
       .megamenu-main-nav > .component-content .navigation-mobile-menu {
-        background-size: auto;
-        top: 5px;
-        background-size: 80%;
         background-image: none;
         &::before {
           content: '\e90e';
           font-family: 'icomoon';
           font-size: 2rem;
           color: $color-2;
+          top: 5px;
         }
       }
     }
@@ -831,7 +828,7 @@ header {
     }
     .default-style {
       ul {
-        padding: 1.5rem;
+        padding: 1rem;
         li {
           margin-bottom: 2rem;
           &:nth-last-child() {

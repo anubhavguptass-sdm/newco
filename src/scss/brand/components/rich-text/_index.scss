@@ -1555,4 +1555,23 @@ ul.hidden-bullets {
   }
 }
 
+.social-links > div > div {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.social-links .reference-svg-icons-with-link {
+  width: 35px;
+  height: 35px;
+  background: #eaeaea;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+
 /* Home Page Carouse End */

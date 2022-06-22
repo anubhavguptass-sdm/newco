@@ -53,7 +53,7 @@ const mygtmStructure = [
     eventCategory: 'navigation',
     action: 'mobile',
     label: !1
-  } ,
+  },
   {
     id: 'searchCareer',
     targetElement: 'button',
@@ -168,18 +168,18 @@ signUpFormBtn(),
           .trim();
       },
       t = [];
-      debugger
+    debugger;
     for (var n = 0; n < mygtmStructure.length; n++) {
-      debugger
+      debugger;
       const u = mygtmStructure[n],
         d = document.querySelector('.' + u.id);
       console.log('mymyhtmlTargets main loop', d);
       var o = location.search.split('q=')[1];
-      if('searchCareer' ===  u.id){
+      if ('searchCareer' === u.id) {
         dataLayer.push({
           event: u.event,
           eventCategory: u.eventCategory || 'Could not find',
-          eventAction: e || 'Could not find',
+          eventAction: e || 'Could not find'
         });
       }
       if ('gtm-search' === u.id && o) {

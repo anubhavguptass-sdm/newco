@@ -318,12 +318,12 @@ header {
         background-image: none;
         width: 24px;
         height: 24px;
+        top: 8px;
         &::before {
           content: '\e91f';
           font-family: 'icomoon';
           font-size: 1.6rem;
           color: $color-2;
-          top: 10px;
         }
       }
     }
@@ -335,7 +335,8 @@ header {
           font-family: 'icomoon';
           font-size: 2rem;
           color: $color-2;
-          top: 5px;
+          position: relative;
+          top: -4px;
         }
       }
     }

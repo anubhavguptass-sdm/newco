@@ -321,10 +321,10 @@ header {
         width: 24px;
         height: 24px;
         &::before {
-        content: '\e91f';
-        font-family: 'icomoon';
-        font-size: 1.6rem;
-        color: $color-2;
+          content: '\e91f';
+          font-family: 'icomoon';
+          font-size: 1.6rem;
+          color: $color-2;
         }
       }
     }

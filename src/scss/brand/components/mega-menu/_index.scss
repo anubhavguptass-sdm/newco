@@ -315,23 +315,30 @@ header {
       > .component-content > .navigation-mobile-menu {
         left: auto;
         right: -15px;
-        top: 12px;
-        content: '\e91f';
-        font-family: 'icomoon';
-        font-size: 1rem;
+        top: 10px;
         background-size: auto;
+        background-image: none;
         width: 24px;
         height: 24px;
+        &::before {
+        content: '\e91f';
+        font-family: 'icomoon';
+        font-size: 1.6rem;
+        color: $color-2;
+        }
       }
     }
     &.nav-opened {
       .megamenu-main-nav > .component-content .navigation-mobile-menu {
-        content: '\e90e';
-        font-family: 'icomoon';
-        font-size: 1rem;
         background-size: auto;
         top: 12px;
         background-size: 80%;
+        &::before {
+          content: '\e90e';
+          font-family: 'icomoon';
+          font-size: 1.6rem;
+          color: $color-2;
+        }
       }
     }
     nav {

@@ -1487,46 +1487,71 @@ ul.hidden-bullets {
 
 /* Home Page Carouse */
 
-.half-slide-carousel .carousel-slides .carousel-slide{
+.half-slide-carousel .carousel-slides .carousel-slide {
   background: transparent !important;
 }
 
 .half-slide-carousel .carousel-slides .carousel-slide .carouselSlide {
-background: transparent;
-width: 85% !important;
-height: 100% !important;  
-margin-left: -10% !important;
-box-shadow: 0px 20px 56px -10px rgba(0, 0, 0, 0.15);
+  background: $color-white;
+  width: 85% !important;
+  height: 100% !important;
+  margin-left: -10% !important;
+  box-shadow: 0px 20px 56px -10px rgba(0, 0, 0, 0.15);
 }
 
 .half-slide-carousel .carousel-slides .carousel-slide.active .carouselSlide {
-margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 
-.half-slide-carousel .carousel-slides .carousel-slide.active + .carousel-slide .carouselSlide{
-  margin-left: -5rem !important;
-  @include sm{
-      margin-left: -2rem !important;
+.half-slide-carousel
+  .carousel-slides
+  .carousel-slide.active
+  + .carousel-slide
+  .carouselSlide {
+  margin-left: -2rem !important;
+  @include xs{
+    margin-left: -4rem !important;
+  }
+  @include sm {
+    margin-left: -2rem !important;
   }
 }
 
-.half-slide-carousel .carousel-slides .carousel-slide.active + .carousel-slide + .carousel-slide .carouselSlide{
+.half-slide-carousel
+  .carousel-slides
+  .carousel-slide.active
+  + .carousel-slide
+  + .carousel-slide
+  .carouselSlide {
   margin-left: -6rem !important;
-  @include sm{
-      margin-left: -4rem !important;
+  @include sm {
+    margin-left: -4rem !important;
   }
 }
 
-.half-slide-carousel .carousel-slides .carousel-slide.active + .carousel-slide + .carousel-slide + .carousel-slide .carouselSlide{
+.half-slide-carousel
+  .carousel-slides
+  .carousel-slide.active
+  + .carousel-slide
+  + .carousel-slide
+  + .carousel-slide
+  .carouselSlide {
   margin-left: -9rem !important;
-  @include sm{
-      margin-left: -6rem !important;
+  @include sm {
+    margin-left: -6rem !important;
   }
 }
-.half-slide-carousel .carousel-slides .carousel-slide.active + .carousel-slide + .carousel-slide + .carousel-slide + .carousel-slide .carouselSlide{
+.half-slide-carousel
+  .carousel-slides
+  .carousel-slide.active
+  + .carousel-slide
+  + .carousel-slide
+  + .carousel-slide
+  + .carousel-slide
+  .carouselSlide {
   margin-left: -12rem !important;
-  @include sm{
-      margin-left: -8rem !important;
+  @include sm {
+    margin-left: -8rem !important;
   }
 }
 

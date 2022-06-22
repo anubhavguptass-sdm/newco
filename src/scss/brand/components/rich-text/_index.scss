@@ -1400,8 +1400,12 @@ ul.hidden-bullets {
     margin-left: 2rem;
     li {
       padding: 0.25rem 0;
+      line-height: 1.5;
       ul {
         margin-left: 1.5rem;
+        li {
+          line-height: 1.5;
+        }
       }
     }
   }

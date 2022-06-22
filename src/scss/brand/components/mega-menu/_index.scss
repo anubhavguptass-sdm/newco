@@ -571,6 +571,9 @@ header {
   .searchBox
   button {
   opacity: 1 !important;
+  @include md {
+    margin-left: 10px;
+  }
   &::before {
     content: 'Search';
     position: absolute;

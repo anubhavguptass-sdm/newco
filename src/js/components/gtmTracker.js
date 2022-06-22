@@ -53,6 +53,15 @@ const mygtmStructure = [
     eventCategory: 'navigation',
     action: 'mobile',
     label: !1
+  } ,
+  {
+    id: 'searchCareer',
+    targetElement: 'button',
+    labelTarget: 'button',
+    event: 'customEvent',
+    eventCategory: 'searchCareer',
+    action: '',
+    label: ''
   }
 ];
 function buyBtnClick() {
@@ -143,6 +152,7 @@ function getFormData() {
       );
   }
 }
+
 function signUpFormBtn() {}
 function logEvent(e, t, n, o) {
   let a = { event: e, eventCategory: t, eventAction: n, eventLabel: o };
@@ -158,11 +168,20 @@ signUpFormBtn(),
           .trim();
       },
       t = [];
+      debugger
     for (var n = 0; n < mygtmStructure.length; n++) {
+      debugger
       const u = mygtmStructure[n],
         d = document.querySelector('.' + u.id);
       console.log('mymyhtmlTargets main loop', d);
       var o = location.search.split('q=')[1];
+      if('searchCareer' ===  u.id){
+        dataLayer.push({
+          event: u.event,
+          eventCategory: u.eventCategory || 'Could not find',
+          eventAction: e || 'Could not find',
+        });
+      }
       if ('gtm-search' === u.id && o) {
         var a = document.querySelector('.' + u.labelTarget);
         let e = a.querySelector('span.searchResults-term').innerHTML;

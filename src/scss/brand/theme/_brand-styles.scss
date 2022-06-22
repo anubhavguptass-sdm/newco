@@ -417,6 +417,12 @@ table {
     padding-bottom: 3rem !important;
   }
 }
+.p-d-y--4 {
+  @include sm {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
 .p-d-y--2 {
   @include sm {
     padding-top: 2rem !important;
@@ -595,4 +601,11 @@ a:hover {
   padding: 15px 20px !important;
   width: calc(100% - 40px) !important;
   margin: 0;
+}
+.width-sd-80 {
+  img {
+    @media screen and (max-width: 1280px) and (min-width: 992px) {
+      width: 80%;
+    }
+  }
 }

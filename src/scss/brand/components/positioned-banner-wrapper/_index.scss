@@ -10,7 +10,7 @@
     margin-left: auto !important;
     margin-right: auto !important;
     &.banner-width-half {
-      @include sm {        
+      @include sm {
         width: 50%;
       }
       @include sd {

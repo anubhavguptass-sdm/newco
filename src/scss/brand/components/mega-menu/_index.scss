@@ -315,23 +315,29 @@ header {
       > .component-content > .navigation-mobile-menu {
         left: auto;
         right: -15px;
-        top: 12px;
-        content: '\e91f';
-        font-family: 'icomoon';
-        font-size: 1rem;
-        background-size: auto;
+        background-image: none;
         width: 24px;
         height: 24px;
+        top: 8px;
+        &::before {
+          content: '\e91f';
+          font-family: 'icomoon';
+          font-size: 1.6rem;
+          color: $color-2;
+        }
       }
     }
     &.nav-opened {
       .megamenu-main-nav > .component-content .navigation-mobile-menu {
-        content: '\e90e';
-        font-family: 'icomoon';
-        font-size: 1rem;
-        background-size: auto;
-        top: 12px;
-        background-size: 80%;
+        background-image: none;
+        &::before {
+          content: '\e90e';
+          font-family: 'icomoon';
+          font-size: 2rem;
+          color: $color-2;
+          position: relative;
+          top: -4px;
+        }
       }
     }
     nav {
@@ -563,6 +569,9 @@ header {
   .searchBox
   button {
   opacity: 1 !important;
+  @include md {
+    margin-left: 10px !important;
+  }
   &::before {
     content: 'Search';
     position: absolute;
@@ -820,7 +829,7 @@ header {
     }
     .default-style {
       ul {
-        padding: 1.5rem;
+        padding: 1rem;
         li {
           margin-bottom: 2rem;
           &:nth-last-child() {
@@ -948,6 +957,7 @@ header {
 .back-button-desktop-hide {
   display: block;
   font-size: 0.938rem;
+  margin: 0 0 1rem 0;
   @include sd {
     display: none;
   }

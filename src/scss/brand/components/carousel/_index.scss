@@ -27,15 +27,29 @@
       flex-wrap: wrap;
       @include sm {
         left: 3px;
+        flex-direction: column;
+        top: -4rem;
       }
       @include sd {
         left: 10px;
+      }
+      @include lg {
+        flex-direction: row;
+        top: -2.5rem;
       }
       li {
         background: rgba(0, 0, 0, 0.5);
         border: none;
         color: $color-grey-3 !important;
         margin-bottom: 0px;
+        @include sm {
+          margin-bottom: 0.25rem;
+          width: fit-content;
+        }
+        @include lg {
+          margin-bottom: 0;
+          width: auto;
+        }
       }
     }
   }
@@ -73,7 +87,7 @@
         }
 
         &.lSNext {
-          right: 0;
+          right: 2px;
 
           &:after {
             content: '\e907';

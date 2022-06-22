@@ -75,7 +75,7 @@
   position: absolute;
   left: 50%;
   width: auto;
-  bottom: 2px;
+  bottom: 6px;
   transform: translateX(-50%);
   backdrop-filter: blur(32px);
   margin-bottom: -0.25rem !important;
@@ -1509,8 +1509,8 @@ ul.hidden-bullets {
   + .carousel-slide
   .carouselSlide {
   margin-left: -2rem !important;
-  @include xs{
-    margin-left: -4rem !important;
+  @include xs {
+    margin-left: -3rem !important;
   }
   @include sm {
     margin-left: -2rem !important;

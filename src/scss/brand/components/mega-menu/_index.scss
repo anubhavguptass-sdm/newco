@@ -331,12 +331,13 @@ header {
     &.nav-opened {
       .megamenu-main-nav > .component-content .navigation-mobile-menu {
         background-size: auto;
-        top: 12px;
+        top: 5px;
         background-size: 80%;
+        background-image: none;
         &::before {
           content: '\e90e';
           font-family: 'icomoon';
-          font-size: 1.6rem;
+          font-size: 2rem;
           color: $color-2;
         }
       }

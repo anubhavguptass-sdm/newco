@@ -959,6 +959,7 @@ header {
 .back-button-desktop-hide {
   display: block;
   font-size: 0.938rem;
+  margin: 0 0 1rem 0;
   @include sd {
     display: none;
   }

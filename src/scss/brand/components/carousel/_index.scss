@@ -79,7 +79,10 @@
         }
 
         &.lSPrev {
-          right: 80px;
+          right: 66px;
+          @include xs {
+            right: 80px;
+          }
 
           &:after {
             content: '\e906';

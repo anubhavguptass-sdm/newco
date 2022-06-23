@@ -152,7 +152,7 @@
       &:before {
         height: 100%;
         top: 100%;
-        width: 110%;
+        width: 120%;
         left: -10%;
 
         @include sm {
@@ -164,6 +164,10 @@
 
       &:after {
         top: 0 !important;
+        right: -107vw;
+        @include sm {
+          right: -100vw;
+        }
       }
     }
     &.two-steps.bg-strip-large.strip-pos {

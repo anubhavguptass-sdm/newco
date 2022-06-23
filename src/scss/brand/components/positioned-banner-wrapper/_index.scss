@@ -9,6 +9,7 @@
     background-color: $color-white;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-bottom: -5rem;
     &.banner-width-half {
       @include sm {
         width: 50%;

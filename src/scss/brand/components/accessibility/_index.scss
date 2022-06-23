@@ -65,7 +65,10 @@ button {
     .lSSlideWrapper {
       .lSAction {
         a {
-          margin-top: -80px;
+          margin-top: -90px;
+          @include sm {
+            margin-top: -80px;
+          }
         }
       }
     }

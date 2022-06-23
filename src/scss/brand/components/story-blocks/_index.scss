@@ -20,6 +20,7 @@
     position: relative;
   }
   .story-image {
+    width: 100%;
     @include sm {
       width: 40%;
     }

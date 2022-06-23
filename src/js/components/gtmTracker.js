@@ -53,7 +53,7 @@ const mygtmStructure = [
     eventCategory: 'navigation',
     action: 'mobile',
     label: !1
-  } ,
+  },
   {
     id: 'searchCareer',
     targetElement: 'button',

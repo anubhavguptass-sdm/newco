@@ -1307,8 +1307,11 @@
     color: #000;
 
     @include sm {
-      bottom: 2rem;
+      bottom: 0rem;
       right: 1rem;
+    }
+    @include lg {
+      bottom: 2rem;
     }
   }
 

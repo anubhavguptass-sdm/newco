@@ -1453,7 +1453,7 @@ ul.hidden-bullets {
           width: 2.125rem !important;
           background: $color-primary;
           height: 1.875rem !important;
-          z-index: 1;
+          z-index: 0;
           display: block !important;
           @include sm {
             height: 2.125rem !important;
@@ -1579,3 +1579,13 @@ ul.hidden-bullets {
 }
 
 /* Home Page Carouse End */
+
+.bottom-right-box {
+  a:hover {
+    background: $color-2;
+    color: $color-white !important;
+    em {
+      color: $color-white !important;
+    }
+  }
+}

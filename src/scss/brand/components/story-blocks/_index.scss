@@ -20,7 +20,10 @@
     position: relative;
   }
   .story-image {
-    width: 40%;
+    width: 100%;
+    @include sm {
+      width: 40%;
+    }
     line-height: 0;
     img {
       height: 100%;

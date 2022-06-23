@@ -315,7 +315,7 @@ header {
         background-image: none;
         width: 24px;
         height: 24px;
-        top: 8px;
+        top: 9px;
         &::before {
           content: '\e91f';
           font-family: 'icomoon';
@@ -965,7 +965,7 @@ header {
   > .component-content {
   max-height: 95px;
   @include xs {
-    max-height: initial;
+    max-height: 0;
   }
   @media only screen and (max-width: 1023px) and (min-width: 992px) {
     max-height: 95px;

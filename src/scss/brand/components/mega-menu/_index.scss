@@ -1194,11 +1194,12 @@ li {
           display: block !important;
           background-image: none;
           @include sm {
-            height: 34px !important;
+            height: 90% !important;
           }
           @include md {
             right: 1rem !important;
             top: 18px !important;
+            height: 34px !important;
           }
           &.icon-search-line:before {
             content: '\e91d' !important;

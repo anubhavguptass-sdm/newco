@@ -1352,9 +1352,9 @@
 }
 .operate-filter-article-section {
   .width-auto {
-    width: 100%;
+    width: 100% !important;
     @include sm {
-      width: auto;
+      width: auto !important;
     }
   }
 }

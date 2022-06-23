@@ -159,12 +159,39 @@
         span {
           font-size: 1rem;
           &::before {
+            font-family: 'icomoon';
+            font-style: normal;
             font-size: 1rem;
           }
         }
         &:focus,
         &:hover {
           background-color: $color-primary;
+        }
+      }
+      .Facebook{
+        span:before{
+          content: '\ea90';
+        }
+      }
+      .Twitter{
+        span:before{
+          content: '\ea96';
+        }
+      }
+      .Youtube{
+        span:before{
+          content: '\ea9d';
+        }
+      }
+      .Linkedin{
+        span:before{
+          content: '\eaca';
+        }
+      }
+      .Facebook{
+        span:before{
+          content: '\ea92';
         }
       }
     }

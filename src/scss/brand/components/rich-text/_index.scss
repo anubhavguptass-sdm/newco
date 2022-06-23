@@ -1607,9 +1607,12 @@ ul.hidden-bullets {
 
 .career-search-wrapper {
   .accordion {
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
+    @include sm{
+      width: 80%;
+    }
     .accordion-slide {
       &:before {
         width: 100%;

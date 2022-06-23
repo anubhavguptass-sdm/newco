@@ -74,7 +74,7 @@ header {
           font-weight: $font-normal;
           color: $color-grey-1;
           cursor: pointer;
-          margin-bottom: 1rem !important;
+          margin-bottom: 0.5rem !important;
           @include sm {
             margin-bottom: 0 !important;
           }
@@ -92,7 +92,7 @@ header {
       .header-icon-one {
         margin-left: 0 !important;
         margin-right: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         @include md {
           margin-bottom: 0;
           margin-right: 0;
@@ -218,7 +218,7 @@ header {
         background-color: $color-white;
         padding-bottom: 1rem;
         margin-top: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
         @include sd {
           text-align: center;
           margin-top: 0;

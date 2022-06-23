@@ -137,11 +137,8 @@ header {
         text-align: right;
         margin-right: 0.5rem;
         p {
-          width: 100px;
+          width: auto;
           margin: auto !important;
-          @include sm {
-            width: auto;
-          }
           a {
             position: relative;
             padding-right: 26px;

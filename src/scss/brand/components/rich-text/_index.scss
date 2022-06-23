@@ -1613,6 +1613,7 @@ ul.hidden-bullets {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -2px !important;
     @include sm {
       width: 80%;
     }
@@ -1621,6 +1622,13 @@ ul.hidden-bullets {
         width: 100%;
       }
     }
+  }
+}
+
+.var-pad {
+  padding-top: 1rem;
+  @include sm {
+    padding-top: 7rem;
   }
 }
 

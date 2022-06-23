@@ -169,30 +169,20 @@
           background-color: $color-primary;
         }
       }
-      .Facebook{
-        span:before{
+      .Facebook:before{
           content: '\ea90';
-        }
       }
-      .Twitter{
-        span:before{
+      .Twitter:before{
           content: '\ea96';
-        }
       }
-      .Youtube{
-        span:before{
-          content: '\ea9d';
-        }
+      .Youtube::before{
+        content: '\ea9d';
       }
-      .Linkedin{
-        span:before{
-          content: '\eaca';
-        }
+      .Linkedin::before{
+        content: '\eaca';
       }
-      .Facebook{
-        span:before{
-          content: '\ea92';
-        }
+      .Instagram:before{
+        content: '\ea92';
       }
     }
     .icons-with-link {

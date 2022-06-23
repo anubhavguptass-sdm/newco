@@ -1345,9 +1345,19 @@
   .class-filter[data-type-mobile='dropdown']
   .filter-container-js
   .selected-item-js {
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0rem;
+  @include sm {
+    padding: 0.25rem 1rem;
+  }
 }
-
+.operate-filter-article-section {
+  .width-auto {
+    width: 100%;
+    @include sm {
+      width: auto;
+    }
+  }
+}
 // add comma's in dropdown end
 
 /* who-we-are/governance/compliance CSS */

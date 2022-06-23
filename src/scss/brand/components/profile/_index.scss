@@ -35,7 +35,11 @@
     }
   }
 }
-
+.profile-card-content {
+  p {
+    color: $color-2;
+  }
+}
 .image-bg-strip {
   display: none;
   @include sm {

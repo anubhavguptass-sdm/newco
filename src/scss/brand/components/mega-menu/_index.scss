@@ -1166,3 +1166,8 @@ li {
     font-size: $font-size-16;
   }
 }
+.megamenu .searchBox button {
+  @include md {
+    margin-left: 10px !important;
+  }
+}

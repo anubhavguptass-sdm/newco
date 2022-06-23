@@ -229,6 +229,7 @@ header {
               font-weight: $font-normal !important;
               cursor: pointer;
               margin: 2px 0;
+              padding: 0 3px;
               @include md {
                 margin: 2px 5px;
               }
@@ -839,7 +840,7 @@ header {
             color: $color-2;
             font-size: 15px;
             line-height: $line-height-100;
-            padding: 0 2px;
+            padding: 2px 4px;
           }
         }
       }
@@ -900,7 +901,9 @@ header {
     display: block !important;
   }
 }
-
+.header-anchor-text a {
+  padding: 0 3px;
+}
 @include sd {
   .header-anchor-text a {
     line-height: 1.6;
@@ -964,7 +967,7 @@ header {
   .megamenu--newco.mobile-megamenu-search
   > .component-content {
   max-height: 95px;
-  @include xs {
+  @media screen and (max-width: 991px) {
     max-height: 0;
   }
   @media only screen and (max-width: 1023px) and (min-width: 992px) {
@@ -1184,14 +1187,14 @@ li {
           right: 0px !important;
           position: absolute;
           top: 2px !important;
-          width: 2.125rem !important;
+          width: 34px !important;
           background-color: $color-primary;
           height: 1.875rem !important;
           z-index: 0;
           display: block !important;
           background-image: none;
           @include sm {
-            height: 2.125rem !important;
+            height: 34px !important;
           }
           @include md {
             right: 1rem !important;
@@ -1212,11 +1215,14 @@ li {
             position: absolute;
             left: 0;
             right: 0;
-            top: -2px;
+            top: 0px;
             height: 2.125rem;
             background-color: var(--color-primary);
             width: 2rem;
             z-index: -1;
+            @include md {
+              top: -2px;
+            }
           }
         }
       }

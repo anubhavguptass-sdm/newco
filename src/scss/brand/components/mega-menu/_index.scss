@@ -1210,6 +1210,9 @@ li {
             font-family: 'icomoon' !important;
             display: block !important;
             z-index: 1 !important;
+            @include sm {
+              top: 7px !important;
+            }
           }
           &:after {
             content: '';

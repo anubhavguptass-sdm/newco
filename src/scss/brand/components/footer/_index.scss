@@ -159,10 +159,12 @@
         span {
           font-size: 1rem;
           &::before {
-            font-family: 'icomoon';
-            font-style: normal;
             font-size: 1rem;
           }
+        }
+        &::before{
+          font-family: 'icomoon';
+          font-style: normal;
         }
         &:focus,
         &:hover {

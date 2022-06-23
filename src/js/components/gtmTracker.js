@@ -168,19 +168,23 @@ signUpFormBtn(),
           .trim();
       },
       t = [];
-      debugger
     for (var n = 0; n < mygtmStructure.length; n++) {
-      debugger
       const u = mygtmStructure[n],
         d = document.querySelector('.' + u.id);
       console.log('mymyhtmlTargets main loop', d);
       var o = location.search.split('q=')[1];
-      if('searchCareer' ===  u.id){
-        dataLayer.push({
-          event: u.event,
-          eventCategory: u.eventCategory || 'Could not find',
-          eventAction: e || 'Could not find',
-        });
+      const docVal = document.getElementById(u.id);
+      if('searchCareer' ===  u.id && docVal){
+        docVal.addEventListener('click', function() {
+          if(document.getElementById('jobTitle').value && document.getElementById('location').value){
+            dataLayer.push({
+              event: u.event,
+              eventCategory: u.eventCategory || 'Could not find',
+              eventAction: `Job: ${document.getElementById('jobTitle').value} ,  Loaction :  ${document.getElementById('location').value}`,
+            });
+          }
+        })
+      
       }
       if ('gtm-search' === u.id && o) {
         var a = document.querySelector('.' + u.labelTarget);

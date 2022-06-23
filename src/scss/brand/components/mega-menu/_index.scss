@@ -101,13 +101,13 @@ header {
           margin-right: 1rem;
         }
         p {
-          width: 100px;
+          width: 115px;
           margin: auto !important;
           @include sm {
             width: auto;
           }
           a {
-            padding-right: 0;
+            padding-right: 20px;
             @include sm {
               position: relative;
               padding-right: 26px;
@@ -141,7 +141,7 @@ header {
           margin: auto !important;
           a {
             position: relative;
-            padding-right: 26px;
+            padding-right: 20px;
             &:after {
               content: '\e90f';
               font-family: 'icomoon';

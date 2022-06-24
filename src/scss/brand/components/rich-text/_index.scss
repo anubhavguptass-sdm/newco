@@ -1574,6 +1574,9 @@ ul.hidden-bullets {
     }
     .accordion-container .accordion-slide .accordion-head .accordion-title {
       width: 90%;
+      a {
+        font-size: 1.125rem;
+      }
     }
     .accordion-container
       .accordion-slide.is-active

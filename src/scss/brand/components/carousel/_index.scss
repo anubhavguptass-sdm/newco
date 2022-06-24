@@ -80,10 +80,9 @@
 
         &.lSPrev {
           right: 66px;
-          @include xs {
+          @media only screen and (min-width: 480px) {
             right: 80px;
           }
-
           &:after {
             content: '\e906';
           }

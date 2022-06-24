@@ -153,15 +153,12 @@
         height: 100%;
         top: 100%;
         width: 120%;
-        left: -10.75%;
+        left: -10%;
 
         @include sm {
           height: 170px !important;
           left: -100vw;
           width: 100vw;
-        }
-        @include xs{
-          left: -10%;
         }
       }
 
@@ -222,18 +219,18 @@
       strong {
         &:before {
           content: '';
-          width: 100%;
+          width: 100vw;
           background: var(--bg-color-2);
           display: block;
           height: 100%;
           position: absolute;
-          left: -200%;
+          left: calc(-100vw - 100%);
           top: 200%;
           z-index: -1;
-          @media screen and (min-width: 1920px) {
-            left: -300%;
-            width: 200%;
-          }
+          /* @media screen and (min-width: 1920px) {
+            left: calc(-100vw - 100%);
+            width: 100vw;
+          } */
         }
       }
     }

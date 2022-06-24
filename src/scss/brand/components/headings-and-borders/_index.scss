@@ -153,15 +153,12 @@
         height: 100%;
         top: 100%;
         width: 120%;
-        left: -10.75%;
+        left: -10%;
 
         @include sm {
           height: 170px !important;
           left: -100vw;
           width: 100vw;
-        }
-        @include xs {
-          left: 10%;
         }
       }
 

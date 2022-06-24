@@ -134,5 +134,10 @@
   @media screen and (max-width: 767px) {
     max-width: 100%;
     width: 100%;
+    .icon-arrow-right {
+      &:before {
+        margin-right: 1.5rem;
+      }
+    }
   }
 }

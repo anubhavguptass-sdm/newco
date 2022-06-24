@@ -39,18 +39,21 @@
 
   .left-area {
     padding-right: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 
     @include sm {
       padding-right: 4.375rem !important;
+      padding-bottom: 1rem;
     }
   }
 
   .right-area {
     padding-left: 0;
+    padding-top: 3rem;
 
     @include sm {
       padding-left: 4.375rem !important;
+      padding-top: 0;
     }
 
     .heading {
@@ -75,7 +78,7 @@
   position: absolute;
   left: 50%;
   width: auto;
-  bottom: 6px;
+  bottom: 4px;
   transform: translateX(-50%);
   backdrop-filter: blur(32px);
   margin-bottom: -0.25rem !important;
@@ -88,6 +91,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
+  }
+}
+
+.scroll-down-arrow:focus-within {
+  bottom: 7px !important;
+  .icon-angle-down {
+    height: 61px !important;
   }
 }
 
@@ -177,11 +187,19 @@
     line-height: 35px;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    @include sm {
+      flex-wrap: nowrap;
+    }
 
     .breadcrumb-list-item {
       margin-right: 2px;
       display: flex;
       align-items: center;
+
+      &.first {
+        white-space: nowrap;
+      }
       a {
         font-size: 14px;
         color: #fff;
@@ -200,7 +218,9 @@
 
 .article-social-share {
   text-align: center;
-
+  p {
+    padding-left: 4px;
+  }
   @include sm {
     position: absolute;
     top: 0;
@@ -1170,6 +1190,7 @@
     .filter-list-js {
       max-width: 320px !important;
       min-width: 260px;
+      width: 300px;
       .filter-item-js {
         padding: 0.25rem 0.5rem !important;
         text-align: left;
@@ -1310,8 +1331,11 @@ h2{
     color: #000;
 
     @include sm {
-      bottom: 2rem;
+      bottom: 0rem;
       right: 1rem;
+    }
+    @include lg {
+      bottom: 2rem;
     }
   }
 
@@ -1348,9 +1372,19 @@ h2{
   .class-filter[data-type-mobile='dropdown']
   .filter-container-js
   .selected-item-js {
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0rem;
+  @include sm {
+    padding: 0.25rem 1rem;
+  }
 }
-
+.operate-filter-article-section {
+  .width-auto {
+    width: 100% !important;
+    @include sm {
+      width: auto !important;
+    }
+  }
+}
 // add comma's in dropdown end
 
 /* who-we-are/governance/compliance CSS */
@@ -1444,58 +1478,7 @@ ul.hidden-bullets {
   }
 }
 
-// header search css
-.megamenu {
-  .megamenu-search {
-    .searchBox {
-      .searchBox-label {
-        input {
-          background-image: none !important;
-        }
-        button.header-search {
-          right: 0px !important;
-          position: absolute;
-          top: 2px !important;
-          width: 2.125rem !important;
-          background: $color-primary;
-          height: 1.875rem !important;
-          z-index: 0;
-          display: block !important;
-          @include sm {
-            height: 2.125rem !important;
-          }
-          @include md {
-            right: 1rem !important;
-            top: 18px !important;
-          }
-          &.icon-search-line:before {
-            content: '\e91d' !important;
-            left: 0 !important;
-            right: 0;
-            font-size: 1.25rem !important;
-            top: 5px !important;
-            font-family: 'icomoon' !important;
-            display: block !important;
-            z-index: -1 !important;
-          }
-          &:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: -2px;
-            height: 2.125rem;
-            background-color: var(--color-primary);
-            width: 2rem;
-            z-index: -1;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* Home Page Carouse */
+/* Home Page Carousel */
 
 .half-slide-carousel .carousel-slides .carousel-slide {
   background: transparent !important;
@@ -1593,5 +1576,75 @@ ul.hidden-bullets {
     em {
       color: $color-white !important;
     }
+  }
+}
+
+/* Careers search accordion */
+
+.career-search-wrapper {
+  .accordion {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2px !important;
+    border-bottom: 2px solid $color-2;
+    @include sm {
+      width: 80%;
+    }
+    .accordion-slide {
+      &:before {
+        width: 100%;
+      }
+    }
+    .accordion-container .accordion-slide .accordion-head .accordion-title {
+      width: 90%;
+      a {
+        font-size: 1.125rem;
+      }
+    }
+    .accordion-container
+      .accordion-slide.is-active
+      .accordion-head
+      .accordion-title {
+      border-bottom: 1px solid $color-2;
+      padding-bottom: 10px;
+    }
+    .accordion-container .accordion-slide.is-active .accordion-content-wrapper {
+      @include sm {
+        height: 180px !important;
+        overflow-y: auto !important;
+      }
+      @include sd {
+        height: 250px !important;
+      }
+      @include md {
+        height: 300px !important;
+      }
+    }
+  }
+}
+
+.var-pad {
+  padding-top: 3rem;
+  @include sm {
+    padding-top: 11rem;
+  }
+}
+
+.career-search-wrapper
+  .accordion
+  .accordion-container
+  .accordion-slide
+  .accordion-head
+  .accordion-title
+  a {
+  font-size: 18px;
+}
+
+/* Careers End */
+
+.class-filter[data-type='dropdown'] .filter-container-js .filter-list-js {
+  @media screen and (max-width: 420px) {
+    left: auto;
   }
 }

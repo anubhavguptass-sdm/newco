@@ -101,13 +101,13 @@ header {
           margin-right: 1rem;
         }
         p {
-          width: 100px;
+          width: 115px;
           margin: auto !important;
           @include sm {
             width: auto;
           }
           a {
-            padding-right: 0;
+            padding-right: 20px;
             @include sm {
               position: relative;
               padding-right: 26px;
@@ -137,14 +137,11 @@ header {
         text-align: right;
         margin-right: 0.5rem;
         p {
-          width: 100px;
+          width: auto;
           margin: auto !important;
-          @include sm {
-            width: auto;
-          }
           a {
             position: relative;
-            padding-right: 26px;
+            padding-right: 20px;
             &:after {
               content: '\e90f';
               font-family: 'icomoon';
@@ -232,6 +229,7 @@ header {
               font-weight: $font-normal !important;
               cursor: pointer;
               margin: 2px 0;
+              padding: 0 3px;
               @include md {
                 margin: 2px 5px;
               }
@@ -318,7 +316,7 @@ header {
         background-image: none;
         width: 24px;
         height: 24px;
-        top: 8px;
+        top: 9px;
         &::before {
           content: '\e91f';
           font-family: 'icomoon';
@@ -842,7 +840,7 @@ header {
             color: $color-2;
             font-size: 15px;
             line-height: $line-height-100;
-            padding: 0 2px;
+            padding: 2px 4px;
           }
         }
       }
@@ -903,7 +901,9 @@ header {
     display: block !important;
   }
 }
-
+.header-anchor-text a {
+  padding: 0 3px;
+}
 @include sd {
   .header-anchor-text a {
     line-height: 1.6;
@@ -967,8 +967,8 @@ header {
   .megamenu--newco.mobile-megamenu-search
   > .component-content {
   max-height: 95px;
-  @include xs {
-    max-height: initial;
+  @media screen and (max-width: 991px) {
+    max-height: 0;
   }
   @media only screen and (max-width: 1023px) and (min-width: 992px) {
     max-height: 95px;
@@ -1167,5 +1167,69 @@ li {
   font-size: $font-size-12;
   @include sm {
     font-size: $font-size-16;
+  }
+}
+.megamenu .searchBox button {
+  @include md {
+    margin-left: 10px !important;
+  }
+}
+
+// header search css
+.megamenu {
+  .megamenu-search {
+    .searchBox {
+      .searchBox-label {
+        input {
+          background-image: none !important;
+        }
+        button.header-search {
+          right: 0px !important;
+          position: absolute;
+          top: 2px !important;
+          width: 34px !important;
+          background-color: $color-primary;
+          height: 1.875rem !important;
+          z-index: 0;
+          display: block !important;
+          background-image: none;
+          @include sm {
+            height: 90% !important;
+          }
+          @include md {
+            right: 1rem !important;
+            top: 18px !important;
+            height: 34px !important;
+          }
+          &.icon-search-line:before {
+            content: '\e91d' !important;
+            left: 0 !important;
+            right: 0;
+            font-size: 1.25rem !important;
+            top: 5px !important;
+            font-family: 'icomoon' !important;
+            display: block !important;
+            z-index: 1 !important;
+            @include sm {
+              top: 7px !important;
+            }
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0px;
+            height: 2.125rem;
+            background-color: var(--color-primary);
+            width: 2rem;
+            z-index: -1;
+            @include md {
+              top: -2px;
+            }
+          }
+        }
+      }
+    }
   }
 }

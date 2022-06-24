@@ -442,6 +442,20 @@ table {
   }
 }
 
+.object-fit-fill {
+  .component-content {
+    height: 100% !important;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+    .paragraphSystem.content {
+      height: 100%;
+    }
+  }
+}
+
 .object-fit-cover {
   .component-content {
     height: 100% !important;

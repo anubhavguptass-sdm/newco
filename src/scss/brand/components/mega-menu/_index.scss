@@ -1209,7 +1209,8 @@ li {
             top: 5px !important;
             font-family: 'icomoon' !important;
             display: block !important;
-            z-index: 1 !important;
+            z-index: 9 !important;
+            color: $color-2;
             @include sm {
               top: 7px !important;
             }

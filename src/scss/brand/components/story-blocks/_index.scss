@@ -26,8 +26,12 @@
     }
     line-height: 0;
     img {
+      max-height: 200px;
       height: 100%;
       object-fit: cover;
+      @include sm{
+        max-height: 100%;
+      }
     }
   }
   .story-content {

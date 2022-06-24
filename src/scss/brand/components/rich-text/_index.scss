@@ -215,7 +215,9 @@
 
 .article-social-share {
   text-align: center;
-
+  p {
+    padding-left: 4px;
+  }
   @include sm {
     position: absolute;
     top: 0;

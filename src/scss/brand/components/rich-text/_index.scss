@@ -1183,8 +1183,6 @@
     }
 
     .filter-list-js {
-      max-width: 320px !important;
-      min-width: 260px;
       width: 300px;
       .filter-item-js {
         padding: 0.25rem 0.5rem !important;
@@ -1632,8 +1630,23 @@ ul.hidden-bullets {
 
 /* Careers End */
 
-.class-filter[data-type='dropdown'] .filter-container-js .filter-list-js {
-  @media screen and (max-width: 420px) {
-    left: auto;
+/* Where we operate */
+
+.operate-filter-article-section {
+  .class-filter[data-type-mobile='dropdown'] .filter-container-js {
+    position: absolute !important;
+    width: auto !important;
+    @include sm {
+      position: relative !important;
+      width: 100% !important;
+    }
+    .selected-item-js {
+      padding: 0.25rem 1rem 0 0 !important;
+      @include sm {
+        padding: 0.25rem 1rem !important;
+      }
+    }
   }
 }
+
+/* Where we operate end */

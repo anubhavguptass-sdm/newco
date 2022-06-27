@@ -139,8 +139,7 @@
       text-decoration: underline 2px solid $color-primary;
       &:focus {
         background: transparent !important;
-        border: 2px solid;
-        outline: none;
+        outline: 2px solid;
       }
     }
   }

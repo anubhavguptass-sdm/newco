@@ -33,9 +33,10 @@
     background-repeat: no-repeat;
     background-position: 60% 350px;
     background-color: #595a5c;
-    padding: 1rem 1rem 4rem;
+    padding: 1rem 0rem 4rem;
     overflow: hidden;
     @include md {
+      padding: 1rem 1rem 4rem;
       background-position: center;
       background-color: transparent;
     }

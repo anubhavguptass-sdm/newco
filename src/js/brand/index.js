@@ -83,6 +83,21 @@ const { all } = require('core-js/fn/promise');
   }
 
   $(document).ready(function() {
+// Form required active/error status start
+    $(this).find("input , textarea , select").on("blur , change , keydown", function(e) {
+      var req = $(this).attr("required");
+      if (req) {
+        if($(this).val() == ''){
+          $(this).removeClass('success');
+          $(this).addClass('error');
+        }
+        else{
+          $(this).removeClass('error');
+          $(this).addClass('success');
+        }
+      }
+    });
+// Form required active/error status end
     megaMenuMobile();
   });
   window.addEventListener('orientationchange', function() {

@@ -641,6 +641,9 @@ a:hover {
 }
 
 input, select, textarea{
+  &:focus {
+    outline: 2px solid; // for accessbility fixes
+  }
 &.error {
   background-color: #fee8e7 !important;
   border: 2px solid #fee8e7 !important;

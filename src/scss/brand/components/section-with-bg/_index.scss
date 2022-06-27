@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
     background-position: 60% 350px;
     background-color: #595a5c;
-    padding: 1rem 0rem 4rem;
+    padding: 1rem 0rem 0rem;
     overflow: hidden;
     @include md {
       padding: 1rem 1rem 4rem;
@@ -94,7 +94,10 @@
   .fit-content {
     .richText-content {
       width: fit-content !important;
-      margin-left: 0;
+      margin-left: auto;
+      @include md {
+        margin-left: 0;
+      }
     }
   }
 }

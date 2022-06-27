@@ -247,11 +247,11 @@ table {
     padding: 0.5rem;
   }
 }
-table.equal-column{
+table.equal-column {
   td,
-th {
-  width: 25%;
-}
+  th {
+    width: 25%;
+  }
 }
 .table-data-sticky {
   position: sticky;
@@ -633,3 +633,4 @@ a:hover {
 .m-b-t--2 {
   margin-top: -2rem;
 }
+

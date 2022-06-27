@@ -66,6 +66,7 @@ button {
       .lSAction {
         a {
           margin-top: -95px;
+
           @include sm {
             margin-top: -80px;
           }
@@ -111,9 +112,7 @@ button {
             margin-right: 2px !important;
 
             &:focus {
-              &:focus-visible {
-                outline: 2px dotted;
-              }
+              outline: 2px dotted;
             }
           }
         }

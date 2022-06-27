@@ -17,6 +17,7 @@
       background-color: $color-3;
     }
     &:focus {
+      outline: 2px solid;
       color: $color-2;
     }
   }
@@ -45,7 +46,7 @@
       color: $color-2;
       background-color: $color-white;
       border-color: $color-primary;
-      outline: $color-primary solid 2px;
+      outline: $color-primary solid 3px;
     }
   }
   input:-webkit-autofill,
@@ -138,8 +139,7 @@
       text-decoration: underline 2px solid $color-primary;
       &:focus {
         background: transparent !important;
-        border: 2px solid;
-        outline: none;
+        outline: 2px solid;
       }
     }
   }

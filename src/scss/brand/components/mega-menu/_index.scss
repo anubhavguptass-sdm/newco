@@ -454,9 +454,6 @@ header {
         }
         @include sd {
           top: 7px !important;
-          &:focus:focus-visible {
-            outline: none !important;
-          }
         }
         &:hover {
           &:after {

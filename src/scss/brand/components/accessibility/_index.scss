@@ -79,7 +79,7 @@ button {
 @media screen and (min-width: 991px) {
   .megamenu-navigation {
     .megamenu-logo {
-      >.component-content {
+      > .component-content {
         .image {
           a {
             margin-bottom: 2px;
@@ -89,10 +89,10 @@ button {
     }
 
     .megamenu-main-nav {
-      >.component-content {
-        >.navigation-root.navigation-level1 {
-          >.navigation-item {
-            >a {
+      > .component-content {
+        > .navigation-root.navigation-level1 {
+          > .navigation-item {
+            > a {
               margin-left: 3px;
               margin-right: 3px;
             }
@@ -105,8 +105,8 @@ button {
 
 .megamenu-navigation {
   .megamenu-search {
-    >.component-content {
-      >.paragraphSystem {
+    > .component-content {
+      > .paragraphSystem {
         .searchBox {
           button {
             margin-right: 2px !important;
@@ -195,7 +195,7 @@ button {
 .product-slider {
   .slick-dots {
     li {
-      >button {
+      > button {
         display: block;
         opacity: 0;
         border: none;

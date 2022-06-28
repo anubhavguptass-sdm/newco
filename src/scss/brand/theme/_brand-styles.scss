@@ -640,28 +640,27 @@ a:hover {
   margin-top: -2rem;
 }
 
-input, select, textarea{
-  &:focus {
-    outline: 2px solid; // for accessbility fixes
+input,
+select,
+textarea {
+  &.error {
+    background-color: #fee8e7 !important;
+    border: 2px solid #fee8e7 !important;
+    &:focus {
+      background-color: $color-white !important;
+      border-color: $color-error !important;
+      color: $color-2 !important;
+      outline: $color-error solid 2px !important;
+    }
   }
-&.error {
-  background-color: #fee8e7 !important;
-  border: 2px solid #fee8e7 !important;
-  &:focus {
-    background-color: $color-white !important;
-    border-color: $color-error !important;
-    color: $color-2 !important;
-    outline: $color-error solid 2px !important;
+  &.success {
+    color: $color-1 !important;
+    background-color: $color-grey-3 !important;
+    &:focus {
+      color: $color-2 !important;
+      background-color: $color-white !important;
+      border-color: $color-primary !important;
+      outline: $color-primary solid 2px !important;
+    }
   }
-}
-&.success {
-  color: $color-1 !important;
-  background-color: $color-grey-3 !important;
-  &:focus {
-    color: $color-2 !important;
-    background-color: $color-white !important;
-    border-color: $color-primary !important;
-    outline: $color-primary solid 2px !important;
-  }
-}
 }

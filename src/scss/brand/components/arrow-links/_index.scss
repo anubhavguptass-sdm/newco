@@ -8,13 +8,14 @@
     background-color: $color-primary;
     position: absolute;
     right: 0px;
-    bottom: 0;
+    bottom: -1px;
     width: 40px;
     line-height: 40px;
     color: $color-2;
     border: 2px solid;
     border-color: $color-primary;
     @include sm {
+      bottom: 0;
       width: 68px;
       line-height: 68px;
     }

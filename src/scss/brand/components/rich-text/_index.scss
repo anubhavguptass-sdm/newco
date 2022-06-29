@@ -219,7 +219,7 @@
 .article-social-share {
   text-align: center;
   p {
-    padding-left: 4px;
+    padding-left: 3px;
   }
   @include sm {
     position: absolute;
@@ -1333,7 +1333,7 @@
       right: 1rem;
     }
     @include lg {
-      bottom: 2rem;
+      bottom: 1rem;
     }
   }
 

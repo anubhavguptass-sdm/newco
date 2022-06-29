@@ -94,7 +94,7 @@
   .fit-content {
     .richText-content {
       width: fit-content !important;
-      margin-left: auto;
+      margin-left: 0;
       @include md {
         margin-left: 0;
       }

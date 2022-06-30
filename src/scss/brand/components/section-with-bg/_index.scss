@@ -95,9 +95,6 @@
     .richText-content {
       width: fit-content !important;
       margin-left: 0;
-      @include md {
-        margin-left: 0;
-      }
     }
   }
 }

@@ -218,10 +218,13 @@
 
 .article-social-share {
   text-align: center;
-  p {
-    padding-left: 0px;
+  .component.col-lg-1 {
+    width: 100%;
+    p {
+      text-align: center;
+    }
     @include sm {
-      padding-left: 3px;
+      width: 48px;
     }
   }
   @include sm {
@@ -1588,7 +1591,7 @@ ul.hidden-bullets {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -2px !important;
-    border-bottom: 2px solid $color-2;
+    z-index: 1;
     @include sm {
       width: 80%;
     }

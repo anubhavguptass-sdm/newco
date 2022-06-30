@@ -1661,26 +1661,34 @@ ul.hidden-bullets {
 }
 
 /* Where we operate end */
-.green-icon:before {
+.icon-color:before {
   position: absolute;
   width: 40px;
   height: 40px;
   background: $color-primary;
-  left: -3rem;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  @include sm{
+  @include sm {
     width: 60px;
     height: 60px;
-    left: -5rem;
     font-size: 2.5rem;
   }
 }
 
-.p-m-r-4-5{
+.p-m-r--4-5 {
   padding-left: 4.5rem !important;
-  @include sm{
-      padding-left: 0 !important;
+  padding-right: 1.5rem !important;
+  @include sm {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.icon-wrapper {
+  margin-left: 3.5rem;
+  @include sm {
+    margin-left: 5rem;
   }
 }

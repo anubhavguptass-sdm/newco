@@ -51,7 +51,6 @@
   background: $color-white;
   box-shadow: $box-shadow;
   max-width: 100%;
-  border: 1px solid $color-2;
   @include sm {
     max-width: 80%;
   }

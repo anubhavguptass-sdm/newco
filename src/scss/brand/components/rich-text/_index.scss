@@ -1588,7 +1588,7 @@ ul.hidden-bullets {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -2px !important;
-    border-bottom: 2px solid $color-2;
+    z-index: 1;
     @include sm {
       width: 80%;
     }

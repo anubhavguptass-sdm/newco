@@ -219,7 +219,10 @@
 .article-social-share {
   text-align: center;
   p {
-    padding-left: 3px;
+    padding-left: 0px;
+    @include sm {
+      padding-left: 3px;
+    }
   }
   @include sm {
     position: absolute;

@@ -1194,7 +1194,6 @@ li {
           height: 1.875rem !important;
           z-index: 0;
           display: block !important;
-          background-image: none;
           @include sm {
             height: 90% !important;
           }
@@ -1210,7 +1209,7 @@ li {
             font-size: 1.25rem !important;
             top: 5px !important;
             font-family: 'icomoon' !important;
-            display: block !important;
+            display: none !important;
             z-index: 9 !important;
             color: $color-2;
             @include sm {

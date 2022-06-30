@@ -95,8 +95,8 @@
     .richText-content {
       width: fit-content !important;
       margin-left: 0;
-      @include md {
-        margin-left: 0;
+      @media only screen and (min-width: 1800px) {
+        margin-left: 2rem !important;
       }
     }
   }

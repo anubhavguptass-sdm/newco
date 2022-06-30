@@ -1695,3 +1695,7 @@ ul.hidden-bullets {
     margin-left: 5rem;
   }
 }
+
+.visit-brand-box.full-clickable-box:hover * {
+  position: static;
+}

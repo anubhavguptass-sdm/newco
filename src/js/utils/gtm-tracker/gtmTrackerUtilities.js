@@ -134,7 +134,7 @@
           fullInternalLink: !/https?:\/\/(www\.)?/gim.test(link)
             ? `${window.location.protocol}//${window.location.hostname}${link}`
             : link,
-          title : baseElement.title ? baseElement.title : 'null',
+          title: baseElement.title ? baseElement.title : 'null',
           pageUrl: window.location.href,
           hostName: window.location.hostname,
           rootUrl: `${window.location.protocol}://${window.location.hostname}`,

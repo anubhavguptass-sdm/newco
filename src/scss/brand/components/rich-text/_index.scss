@@ -1713,9 +1713,32 @@ ul.hidden-bullets {
   position: static;
 }
 .dynamic-height img {
-  object-fit: cover;
+  @include sm {
+    object-fit: cover;
+    min-height: 400px;
+    object-position: top;
+  }
 }
 
-a.bordered-text strong{
+.accordion-content-wrapper a.bordered-text strong {
   cursor: pointer !important;
 }
+
+.word-break {
+  word-break: break-word;
+}
+
+/* Breadcrumb css */
+
+.article-breadcrumbs .breadcrumbs-list {
+  display: block;
+  margin: 0 10px;
+}
+.article-breadcrumbs .breadcrumbs-list .breadcrumb-list-item {
+  display: contents !important;
+}
+.article-breadcrumbs .breadcrumbs-list .breadcrumb-list-item a {
+  padding: 0 !important;
+}
+
+/* Breadcrumb css End */

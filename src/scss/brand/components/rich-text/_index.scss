@@ -1166,6 +1166,10 @@
 
 /* Quaterly result filter css end */
 .operate-filter-article-section {
+  margin-bottom: 7rem !important;
+  @include sm {
+    margin-bottom: 5.5rem !important;
+  }
   .class-filter[data-type-mobile='dropdown'] {
     margin: 0;
     max-width: 180px;
@@ -1630,14 +1634,14 @@ ul.hidden-bullets {
 
 .var-pad {
   padding-top: 3rem;
-  @include sm{
+  @include sm {
     padding-top: 15rem;
   }
-  @include md{
-      padding-top: 14rem;
+  @include md {
+    padding-top: 14rem;
   }
-  @include lg{
-      padding-top: 11rem;
+  @include lg {
+    padding-top: 11rem;
   }
 }
 
@@ -1707,4 +1711,11 @@ ul.hidden-bullets {
 
 .visit-brand-box.full-clickable-box:hover * {
   position: static;
+}
+.dynamic-height img {
+  object-fit: cover;
+}
+
+a.bordered-text strong{
+  cursor: pointer !important;
 }

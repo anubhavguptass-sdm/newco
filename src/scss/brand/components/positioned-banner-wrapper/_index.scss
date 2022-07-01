@@ -35,6 +35,10 @@
   }
 
   &.right-positioned {
+    margin-bottom: 5rem;
+    @include sm {
+      margin-bottom: 3rem;
+    }
     .banner-text {
       @include sm {
         right: 1rem;
@@ -47,6 +51,10 @@
   }
 
   &.left-positioned {
+    margin-bottom: 5rem;
+    @include sm {
+      margin-bottom: 3rem;
+    }
     .banner-text {
       @include sm {
         left: 1rem;

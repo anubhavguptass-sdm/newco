@@ -25,7 +25,7 @@
       bpComponents.bpTrackers.externalLinksTracker = new GTMTracker({
         id: 'externalLinksTracker',
         eventCategory: 'external links',
-        eventAction: '{{text}}',
+        eventAction: '{{title}}',
         eventTrigger: 'click',
         eventLabel: '{{link}}',
         eventTargetSelector: 'a.external, a.external *',

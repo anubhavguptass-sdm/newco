@@ -14,14 +14,19 @@
         event.stopPropagation();
       });
       });
+
   //careerSearch for search jobs
   function careerSearch() {
-    if (document.getElementById('jobTitle')) {
       var job = encodeURI(document.getElementById('jobTitle').value);
-    }
-    if (document.getElementById('location')) {
+      if(job == '' || job ==  undefined){
+        $('#jobTitle').removeClass('success');
+        $('#jobTitle').addClass('error');
+      }
       var location = encodeURI(document.getElementById('location').value);
-    }
+      if(location == '' || location ==  undefined){
+        $('#location').removeClass('success');
+        $('#location').addClass('error');
+      }
     if (
       job &&
       location != undefined &&
@@ -30,6 +35,8 @@
       job &&
       location != null
     ) {
+      $('#location ,#jobTitle').removeClass('error');
+      $('#location,#jobTitle').addClass('success');
       $('#jobTitle').val('');
       $('#location').val('');
       let link =

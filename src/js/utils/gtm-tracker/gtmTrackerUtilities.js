@@ -96,7 +96,6 @@
        ** each property represents macro
        ** {{propertyName}}
        */
-
       //  console.log(baseElement !== window)
       let link = window !== baseElement ? baseElement.getAttribute('href') : '',
         eh =
@@ -135,6 +134,7 @@
           fullInternalLink: !/https?:\/\/(www\.)?/gim.test(link)
             ? `${window.location.protocol}//${window.location.hostname}${link}`
             : link,
+          title : baseElement.title ? baseElement.title : 'null',
           pageUrl: window.location.href,
           hostName: window.location.hostname,
           rootUrl: `${window.location.protocol}://${window.location.hostname}`,
@@ -225,10 +225,10 @@
             : 'null',
           slidesCount: () => {
             let slides = document.querySelectorAll(
-              '.hero-banner-carousel .carousel-slide:not(.clone)'
+              '.carousel-wrapper .carousel-slide:not(.clone)'
             );
             let slideName = document.querySelectorAll(
-              '.hero-banner-carousel .active.carousel-slide:not(.clone) .carousel-content h2'
+              '.carousel-wrapper .active.carousel-slide:not(.clone) .carousel-content h3'
             )[0].textContent;
             for (let i = 0; i < slides.length; i++) {
               if (slides[i].classList.contains('active')) {

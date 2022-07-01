@@ -151,8 +151,8 @@
           eventAction: 'country select',
           eventTrigger: 'click',
           eventLabel: '{{countryWithLanguage}}',
-          eventTargetSelector: '.reference-language-block a',
-          eventTargetClosestSelector: 'a'
+          eventTargetSelector: '.reference-language-block a, .class-filter .selected-item-js',
+          eventTargetClosestSelector: 'a , .selected-item-js'
         }
       ).init();
 
@@ -190,6 +190,24 @@
         eventTargetParentSelector: '.hero-banner-carousel  .richText-content'
       }).init();
 
+
+
+      // Carousel Article-Link
+  // Category: destinationLink | Action: custom Event' | Label: contentText
+   bpComponents.bpTrackers.articleTraker = new GTMTracker({
+    id: 'articleTraker',
+    eventCategory: 'Article link',
+    eventAction: 'list selection',
+    eventTrigger: 'click',
+    eventLabel: '{{text}}',
+    eventTargetSelector: '.carousel-slide a, .carousel-slide a *',
+    eventTargetClosestSelector: 'a',
+    eventTargetParentSelector: '.carousel-slides',
+    eventTargetSharerSelector:
+      '.active .carousel-content h2, .carousel-content h1 ,  .carousel-content h3'
+  }).init();
+
+      // 
       /*
        ***** Carousel Start *****
        */
@@ -197,18 +215,18 @@
       // Carousel banner clicked
       // Did an user clicks retailer telephne number?
       // Category: carousel interaction | Action: carousel banner click | Label: {{banner position}}:{{banner name}}
-      bpComponents.bpTrackers.carouselBannerClickTraker = new GTMTracker({
-        id: 'carouselBannerClickTraker',
-        eventCategory: 'carousel interaction',
-        eventAction: 'carousel banner click',
-        eventTrigger: 'click',
-        eventLabel: '{{slidesCount}}',
-        eventTargetSelector: '.carousel-slide a, .carousel-slide a *',
-        eventTargetClosestSelector: 'a',
-        eventTargetParentSelector: '.carousel-slides',
-        eventTargetSharerSelector:
-          '.active .carousel-content h2, .carousel-content h1'
-      }).init();
+      // bpComponents.bpTrackers.carouselBannerClickTraker = new GTMTracker({
+      //   id: 'carouselBannerClickTraker',
+      //   eventCategory: 'carousel interaction',
+      //   eventAction: 'carousel banner click',
+      //   eventTrigger: 'click',
+      //   eventLabel: '{{slidesCount}}',
+      //   eventTargetSelector: '.carousel-slide a, .carousel-slide a *',
+      //   eventTargetClosestSelector: 'a',
+      //   eventTargetParentSelector: '.carousel-slides',
+      //   eventTargetSharerSelector:
+      //     '.active .carousel-content h2, .carousel-content h1'
+      // }).init();
 
       // Carousel indicator clicked
       // User clicks on indicator representing a banner to jump to a specific banner ?
@@ -257,7 +275,7 @@
         eventTargetClosestSelector: '.lSAction'
       }).init();
 
-      // Carousel advancement swipe
+      // Carousel advancement swipeF
       // User swipes banner on mobile/touch screen to change the banner
       // Category: where to buy | Action: carousel transition | Label: swipe {{left/right}}
       window.trackerPreSlide = 1;
@@ -315,6 +333,28 @@
 
       /*
        ***** Product Filter End *****
+       */
+
+          /*
+       ***** Country Filter Start *****
+       */
+
+      // Clicks a country category
+      // User selects a Country category to narrow results (outside of standard filter options)
+      // Category: Country filter | Action: category select | Label: {{Country text}}
+      bpComponents.bpTrackers.productCategoryClickTracker = new GTMTracker({
+        id: 'productCategoryClickTracker',
+        eventCategory: 'Country filter',
+        eventAction: 'Category select',
+        eventTrigger: 'click',
+        eventLabel: '{{text}}',
+        eventTargetSelector:
+          '.operate-filter-article-section .filter-item-js:not(.active-js), .operate-filter-article-section .filter-item-js:not(.active-js) *',
+        eventTargetClosestSelector: '.filter-item-js'
+      }).init();
+
+      /*
+       ***** Country Filter End *****
        */
 
       /*
@@ -444,16 +484,16 @@
       // Page shared
       // Did an user used tool to share a page to a social media network?
       // Category: social share | Action: {{social media network name/email}} | Label: {{URL of shared page}}
-      bpComponents.bpTrackers.socialSharedTracker = new GTMTracker({
-        id: 'socialSharedTracker',
-        eventCategory: 'social share',
-        eventAction: '{{childTitle}}',
-        eventTrigger: 'click',
-        eventLabel: 'visit',
-        eventTargetSelector: '#footer .default-icon *',
-        eventTargetClosestSelector: '#footer .default-icon',
-        eventTargetChildSelector: 'a'
-      }).init();
+      // bpComponents.bpTrackers.socialSharedTracker = new GTMTracker({
+      //   id: 'socialSharedTracker',
+      //   eventCategory: 'social share',
+      //   eventAction: '{{childTitle}}',
+      //   eventTrigger: 'click',
+      //   eventLabel: 'visit',
+      //   eventTargetSelector: '#footer .default-icon *',
+      //   eventTargetClosestSelector: '#footer .default-icon',
+      //   eventTargetChildSelector: 'a'
+      // }).init();
 
       bpComponents.bpTrackers.pageSharedTracker = new GTMTracker({
         id: 'pageSharedTracker',
@@ -461,10 +501,10 @@
         eventAction: '{{childTitle}}',
         eventTrigger: 'click',
         eventLabel: 'share',
-        eventTargetSelector: '.article-social-share .reference-bp-share-icon *',
+        eventTargetSelector: '.article-social-share .reference-bp-share-icon-svg * , .social-links .reference-svg-icons-with-link *',
         eventTargetClosestSelector:
-          '.article-social-share .reference-bp-share-icon',
-        eventTargetChildSelector: 'img'
+          '.article-social-share .reference-bp-share-icon-svg, .social-links .reference-svg-icons-with-link',
+        eventTargetChildSelector: 'a'
       }).init();
 
       /*
@@ -479,6 +519,24 @@
       // Did an user performed a search (in header or on results page)?
       // Category: site search | Action: {{search term}} | Label: {{number of results}}
       $(document).ready(e => {
+        function socialshare(){
+          let val = document.querySelector('.social-link-section .social-pages');
+          if(val){
+            val.onclick = e => {
+              if(e.target){
+                let triggerData = {
+                  event:'customEvent' ,
+                  eventCategory: 'Social Share',
+                  eventAction:  e.target.className,
+                  eventLabel:  e.target.href || 'Could not find'
+                };
+                dataLayer.push(triggerData);
+              }
+              
+          } 
+      
+          }
+              }
         function checkGA() {
           if (typeof ga === 'function') {
             ga(function(tracker) {
@@ -512,6 +570,7 @@
           }
         }
         checkGA();
+        socialshare();
       });
 
       // Clicked search results

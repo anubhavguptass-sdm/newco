@@ -3,10 +3,19 @@
 .career-search-wrapper {
   @include sm {
     position: absolute;
-    bottom: -140px;
+    bottom: -196px;
     left: 0;
     right: 0;
     z-index: 1;
+  }
+  @include sd{
+    bottom: -186px;
+  }
+  @include md{
+    bottom: -176px;
+  }
+    @include lg{
+    bottom: -120px;
   }
 }
 

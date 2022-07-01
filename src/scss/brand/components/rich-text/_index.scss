@@ -1630,8 +1630,14 @@ ul.hidden-bullets {
 
 .var-pad {
   padding-top: 3rem;
-  @include sm {
-    padding-top: 11rem;
+  @include sm{
+    padding-top: 15rem;
+  }
+  @include md{
+      padding-top: 14rem;
+  }
+  @include lg{
+      padding-top: 11rem;
   }
 }
 

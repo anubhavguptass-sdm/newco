@@ -18,6 +18,11 @@ var ConditionalComponentLoad = function () {
     //   js: ["components/shareThis.js"],
     //   name: "shareThis",
     // },
+    {
+      selector: ".dynamic-height",
+      js: ["libs/positioned-wrapper.js"],
+      name: "Custom video",
+    },
      {
       selector: ".consumer-enquiry-form",
       js: ["libs/contact.js"],

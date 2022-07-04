@@ -82,7 +82,7 @@ const { all } = require('core-js/fn/promise');
     }
   }
 
-  $(document).ready(function() {   
+  $(document).ready(function() {
     // Form required active/error status start
     $(this)
       .find('input , textarea , select')
@@ -155,7 +155,7 @@ const { all } = require('core-js/fn/promise');
 
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');
-      $( ".search-query.searchInput" ).focus();
+      $('.search-query.searchInput').focus();
     });
 
     setTimeout(function() {

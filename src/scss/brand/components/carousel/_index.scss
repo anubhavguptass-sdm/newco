@@ -118,10 +118,13 @@
   .carousel-heading {
     margin-bottom: 2rem;
     margin-top: 2rem;
+    width: 50%;
+    @include xs {
+      width: 60%;
+    }
     @include sd {
       margin-top: 1rem;
     }
-    width: 60%;
     @include sm {
       width: 80%;
     }

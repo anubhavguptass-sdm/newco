@@ -2,10 +2,20 @@
   position: relative;
   .card-content {
     position: absolute;
-    top: 0;
-    padding: 2rem;
+    bottom: 0;
+    padding: 1rem;
     color: $color-2;
     z-index: 999;
+    background: #ffffff99;
+    p {
+      margin-bottom: 0;
+    }
+    @include sm {
+      top: 0;
+      bottom: initial;
+      padding: 2rem;
+      background: none;
+    }
   }
   .overlapping-text {
     position: absolute;

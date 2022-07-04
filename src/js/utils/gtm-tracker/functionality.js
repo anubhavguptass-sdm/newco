@@ -151,7 +151,8 @@
           eventAction: 'country select',
           eventTrigger: 'click',
           eventLabel: '{{countryWithLanguage}}',
-          eventTargetSelector: '.reference-language-block a, .class-filter .selected-item-js',
+          eventTargetSelector:
+            '.reference-language-block a, .class-filter .selected-item-js',
           eventTargetClosestSelector: 'a , .selected-item-js'
         }
       ).init();
@@ -190,24 +191,22 @@
         eventTargetParentSelector: '.hero-banner-carousel  .richText-content'
       }).init();
 
-
-
       // Carousel Article-Link
-  // Category: destinationLink | Action: custom Event' | Label: contentText
-   bpComponents.bpTrackers.articleTraker = new GTMTracker({
-    id: 'articleTraker',
-    eventCategory: 'Article link',
-    eventAction: 'list selection',
-    eventTrigger: 'click',
-    eventLabel: '{{text}}',
-    eventTargetSelector: '.carousel-slide a, .carousel-slide a *',
-    eventTargetClosestSelector: 'a',
-    eventTargetParentSelector: '.carousel-slides',
-    eventTargetSharerSelector:
-      '.active .carousel-content h2, .carousel-content h1 ,  .carousel-content h3'
-  }).init();
+      // Category: destinationLink | Action: custom Event' | Label: contentText
+      bpComponents.bpTrackers.articleTraker = new GTMTracker({
+        id: 'articleTraker',
+        eventCategory: 'Article link',
+        eventAction: 'list selection',
+        eventTrigger: 'click',
+        eventLabel: '{{text}}',
+        eventTargetSelector: '.carousel-slide a, .carousel-slide a *',
+        eventTargetClosestSelector: 'a',
+        eventTargetParentSelector: '.carousel-slides',
+        eventTargetSharerSelector:
+          '.active .carousel-content h2, .carousel-content h1 ,  .carousel-content h3'
+      }).init();
 
-      // 
+      //
       /*
        ***** Carousel Start *****
        */
@@ -335,7 +334,7 @@
        ***** Product Filter End *****
        */
 
-          /*
+      /*
        ***** Country Filter Start *****
        */
 
@@ -501,7 +500,8 @@
         eventAction: '{{childTitle}}',
         eventTrigger: 'click',
         eventLabel: 'share',
-        eventTargetSelector: '.article-social-share .reference-bp-share-icon-svg * , .social-links .reference-svg-icons-with-link *',
+        eventTargetSelector:
+          '.article-social-share .reference-bp-share-icon-svg * , .social-links .reference-svg-icons-with-link *',
         eventTargetClosestSelector:
           '.article-social-share .reference-bp-share-icon-svg, .social-links .reference-svg-icons-with-link',
         eventTargetChildSelector: 'a'
@@ -519,24 +519,24 @@
       // Did an user performed a search (in header or on results page)?
       // Category: site search | Action: {{search term}} | Label: {{number of results}}
       $(document).ready(e => {
-        function socialshare(){
-          let val = document.querySelector('.social-link-section .social-pages');
-          if(val){
+        function socialshare() {
+          let val = document.querySelector(
+            '.social-link-section .social-pages'
+          );
+          if (val) {
             val.onclick = e => {
-              if(e.target){
+              if (e.target) {
                 let triggerData = {
-                  event:'customEvent' ,
+                  event: 'customEvent',
                   eventCategory: 'Social Share',
-                  eventAction:  e.target.className,
-                  eventLabel:  e.target.href || 'Could not find'
+                  eventAction: e.target.className,
+                  eventLabel: e.target.href || 'Could not find'
                 };
                 dataLayer.push(triggerData);
               }
-              
-          } 
-      
+            };
           }
-              }
+        }
         function checkGA() {
           if (typeof ga === 'function') {
             ga(function(tracker) {

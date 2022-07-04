@@ -516,17 +516,20 @@ header {
     .default-style {
       margin-bottom: 1rem;
     }
-    @media (min-width: $breakpoint-md-min) {
+    @include md {
       .component-content > .paragraphSystem {
         height: auto;
       }
-      max-width: 40%;
+      max-width: 36.75%;
       .richText {
         margin-right: 1rem;
         p {
           margin: 0 !important;
         }
       }
+    }
+    @include xl {
+      max-width: 37.75%;
     }
   }
   .megamenu-top-bar-right {

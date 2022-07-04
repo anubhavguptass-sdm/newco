@@ -28,8 +28,12 @@
     img {
       height: 100%;
       object-fit: cover;
+      max-height: 180px;
       @include sm {
         max-height: 100%;
+      }
+      @include md {
+        max-height: initial;
       }
     }
   }

@@ -1742,3 +1742,10 @@ ul.hidden-bullets {
 }
 
 /* Breadcrumb css End */
+
+.contact-details{
+  margin-top: 1rem;
+  @include sd{
+    margin-top: 0;
+  }
+}

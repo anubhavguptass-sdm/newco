@@ -897,7 +897,7 @@ header {
   padding: 0 0 0 1rem;
   height: 35px;
   @include md {
-    width: calc(100% - 2.2rem) !important;
+    width: calc(100% - 1rem) !important;
   }
 }
 
@@ -1202,9 +1202,9 @@ li {
             height: 90% !important;
           }
           @include md {
-            right: 1rem !important;
+            right: 12px !important;
             top: 18px !important;
-            height: 34px !important;
+            height: 35px !important;
           }
           &.icon-search-line:before {
             content: '\e91d' !important;

@@ -1196,7 +1196,7 @@ li {
           background-color: $color-primary;
           height: 1.875rem !important;
           z-index: 0;
-          display: block !important;
+          display: none !important;
           @include sm {
             height: 90% !important;
           }

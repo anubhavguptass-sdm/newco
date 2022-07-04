@@ -15,11 +15,11 @@
     @extend .arrow-size-small;
   }
 }
-.reference-leader-profile .profile-card-list-wrapper .image:after {
+/* .reference-leader-profile .profile-card-list-wrapper .image:after {
   @media screen and (max-width: 767px) {
     bottom: -1px;
   }
-}
+} */
 .profile-hero-banner {
   @include sm {
     .media-container,

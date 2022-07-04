@@ -1166,6 +1166,10 @@
 
 /* Quaterly result filter css end */
 .operate-filter-article-section {
+  margin-bottom: 7rem !important;
+  @include sm {
+    margin-bottom: 5.5rem !important;
+  }
   .class-filter[data-type-mobile='dropdown'] {
     margin: 0;
     max-width: 180px;
@@ -1708,3 +1712,33 @@ ul.hidden-bullets {
 .visit-brand-box.full-clickable-box:hover * {
   position: static;
 }
+.dynamic-height img {
+  @include sm {
+    object-fit: cover;
+    min-height: 400px;
+    object-position: top;
+  }
+}
+
+.accordion-content-wrapper a.bordered-text strong {
+  cursor: pointer !important;
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+/* Breadcrumb css */
+
+.article-breadcrumbs .breadcrumbs-list {
+  display: block;
+  margin: 0 10px;
+}
+.article-breadcrumbs .breadcrumbs-list .breadcrumb-list-item {
+  display: contents !important;
+}
+.article-breadcrumbs .breadcrumbs-list .breadcrumb-list-item a {
+  padding: 0 !important;
+}
+
+/* Breadcrumb css End */

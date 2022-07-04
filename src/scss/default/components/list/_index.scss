@@ -13,10 +13,10 @@
       ul,
       ol {
         margin: 0;
-        padding: 0;
+        padding: 0; 
 
         > li {
-          color: $primary-text-color;
+          color: $secondary-text-color;
           display: block;
           line-height: $line-height-body-mobile;
           list-style-type: none;

@@ -38,6 +38,7 @@
     margin-bottom: 5rem;
     @include sm {
       margin-bottom: 3rem;
+      margin-top: 3rem;
     }
     .banner-text {
       @include sm {

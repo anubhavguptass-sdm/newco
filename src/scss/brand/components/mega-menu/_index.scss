@@ -255,7 +255,7 @@ header {
           max-width: 125px;
           min-width: auto;
           margin-left: -0.75rem;
-          margin-top: 6px;
+          margin-top: 13px;
           @include sd {
             width: 250px;
             min-width: 250px;
@@ -316,7 +316,7 @@ header {
         background-image: none;
         width: 24px;
         height: 24px;
-        top: 9px;
+        top: 18px;
         &::before {
           content: '\e91f';
           font-family: 'icomoon';
@@ -439,7 +439,7 @@ header {
         width: 24px !important;
         height: 24px !important;
         background-size: 24px !important;
-        top: 12px !important;
+        top: 19px !important;
         right: 2.25rem !important;
         outline: 1px;
         background-image: url('/content/dam/cf-consumer-healthcare/bp-haleon/en_US/global/icons/search-line.svg');

@@ -6,7 +6,7 @@
     padding: 1rem;
     color: $color-2;
     z-index: 999;
-    background: rgb(255 255 255 / 60%);
+    background: #ffffff99;
     p {
       margin-bottom: 0;
     }
@@ -14,6 +14,7 @@
       top: 0;
       bottom: initial;
       padding: 2rem;
+      background: none;
     }
   }
   .overlapping-text {

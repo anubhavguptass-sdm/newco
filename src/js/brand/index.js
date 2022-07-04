@@ -155,7 +155,7 @@ const { all } = require('core-js/fn/promise');
 
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');
-      $('.search-query.searchInput').focus();
+      $('.search-query').focus();
     });
 
     setTimeout(function() {

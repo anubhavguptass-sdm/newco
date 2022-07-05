@@ -75,8 +75,11 @@
   .social-pages {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: -webkit-fill-available;
+    @include sm {
+      justify-content: flex-end
+    }
     .icons-with-link {
       margin: $share-icon-spacing;
       margin-bottom: 5px !important;

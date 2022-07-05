@@ -195,12 +195,12 @@
         margin-top: 2px;
       }
     }
-    @include sm {
-      padding-left: 5px;
-    }
-    @include md {
-      padding-left: 0;
-    }
+    @include sm{
+      padding-right: 5px;
+     } 
+     @include md{
+      padding-right: 0;
+     }
   }
 }
 #footer {

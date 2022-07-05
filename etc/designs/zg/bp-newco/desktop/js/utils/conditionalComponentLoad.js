@@ -13,6 +13,7 @@ var ConditionalComponentLoad = function () {
       js: ["components/custom-video.js"],
       name: "Custom video",
     },
+   
     // {
     //   selector: ".shareThis",
     //   js: ["components/shareThis.js"],
@@ -21,7 +22,7 @@ var ConditionalComponentLoad = function () {
     {
       selector: ".dynamic-height",
       js: ["libs/positioned-wrapper.js"],
-      name: "Custom video",
+      name: "Height adjust",
     },
      {
       selector: ".consumer-enquiry-form",

@@ -1488,7 +1488,7 @@ ul.hidden-bullets {
 
 /* Home Page Carousel */
 
-.half-slide-carousel .carousel-slides .carousel-slide {
+/* .half-slide-carousel .carousel-slides .carousel-slide {
   background: transparent !important;
 }
 
@@ -1554,7 +1554,19 @@ ul.hidden-bullets {
   @include sm {
     margin-left: -8rem !important;
   }
+} */
+
+.half-slide-carousel .carousel-slide{
+  @media only screen and (max-width: 767px) {
+    width: 20% !important;
+    min-width: 20% !important;
+    margin-right: 1rem !important;
+  }
 }
+
+
+
+
 
 .social-links > div > div {
   flex-direction: row;
@@ -1743,9 +1755,9 @@ ul.hidden-bullets {
 
 /* Breadcrumb css End */
 
-.contact-details{
+.contact-details {
   margin-top: 1rem;
-  @include sd{
+  @include sd {
     margin-top: 0;
   }
 }

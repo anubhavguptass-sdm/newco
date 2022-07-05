@@ -16,6 +16,11 @@
       padding: 2rem;
       background: none;
     }
+    &.bg-none {
+      top: 0;
+      bottom: unset;
+      background: none;
+    }
   }
   .overlapping-text {
     position: absolute;

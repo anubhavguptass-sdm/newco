@@ -11,7 +11,7 @@
     .footer-logo {
       a {
         border: 4px solid $color-white;
-        margin: 0 -12px;
+        margin: 0 -3px;
         display: inline-block;
         &:hover {
           background-color: $color-white;
@@ -75,7 +75,7 @@
   .social-pages {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: -webkit-fill-available;
     .icons-with-link {
       margin: $share-icon-spacing;

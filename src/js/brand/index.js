@@ -155,6 +155,7 @@ const { all } = require('core-js/fn/promise');
 
     $('.megamenu-navigation .searchBox button').click(function() {
       $('.searchBox-label').toggleClass('is-search-open');
+      $('.megamenu--newco').toggleClass('mobile-megamenu-search');
       $('.search-query').focus();
     });
 
@@ -163,10 +164,10 @@ const { all } = require('core-js/fn/promise');
     }, 2000);
     $('.searchBox .button').on('click', function(e) {
       $('.searchBox .search-query').addClass('searchInput');
-      $('.megamenu--newco').toggleClass('mobile-megamenu-search');
     });
     $('.navigation-mobile-menu').on('click', function(e) {
       $('.searchBox-label').removeClass('is-search-open');
+      $('.megamenu--newco').removeClass('mobile-megamenu-search');
       $('.searchBox .search-query').removeClass('searchInput');
     });
   });

@@ -381,7 +381,6 @@ header {
         box-shadow: $box-shadow;
         padding: 0 !important;
         height: auto;
-        position: fixed;
         z-index: 9999;
         left: 0;
         right: 0;
@@ -395,6 +394,7 @@ header {
           left: 0;
           height: 4rem;
           padding: 1rem 1rem 1rem 1rem !important;
+          position: fixed;
         }
         input[type='text'] {
           width: 100% !important;

@@ -388,13 +388,15 @@ header {
         top: 45px;
         width: 100%;
         left: 0;
+        @include md{
+          position: fixed;
+        }
         @include sd {
           top: 135px;
           width: 70%;
           left: 0;
           height: 4rem;
           padding: 1rem 1rem 1rem 1rem !important;
-          position: fixed;
         }
         input[type='text'] {
           width: 100% !important;

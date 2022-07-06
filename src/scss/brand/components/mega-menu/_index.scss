@@ -452,7 +452,7 @@ header {
         }
         &:hover {
           &:after {
-            display: none;
+            display: block;
             @media only screen and (max-width: 991px) {
               display: none;
             }
@@ -1238,5 +1238,15 @@ li {
         }
       }
     }
+  }
+}
+
+.megamenu
+  .megamenu-search
+  .searchBox
+  .searchBox-label
+  button.header-search:hover {
+  &:after {
+    display: none !important;
   }
 }

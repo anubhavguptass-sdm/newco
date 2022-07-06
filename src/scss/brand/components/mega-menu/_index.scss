@@ -381,6 +381,7 @@ header {
         box-shadow: $box-shadow;
         padding: 0 !important;
         height: auto;
+        position: fixed;
         z-index: 9999;
         left: 0;
         right: 0;
@@ -452,7 +453,7 @@ header {
         }
         &:hover {
           &:after {
-            display: block;
+            display: none;
             @media only screen and (max-width: 991px) {
               display: none;
             }
@@ -1238,15 +1239,5 @@ li {
         }
       }
     }
-  }
-}
-
-.megamenu
-  .megamenu-search
-  .searchBox
-  .searchBox-label
-  button.header-search:hover {
-  &:after {
-    display: none !important;
   }
 }

@@ -1830,10 +1830,13 @@ ul.hidden-bullets {
 }
 
 .half-text {
-  height: 100%;
-  > .component-content {
-    height: 100%;
-    > .paragraphSystem {
+  padding: 2rem;
+  background: #fff;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  >.component-content {
+    height: 100% !important;
+    >.paragraphSystem {
       height: 100%;
       display: flex;
       justify-content: center;

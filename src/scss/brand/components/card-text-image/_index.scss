@@ -18,8 +18,8 @@
       width: 100%;
       object-fit: cover;
       max-height: 180px;
-      @media only screen and (min-width: 376px) {
-        max-height: initial;
+      @media screen and (min-width: 376px) {
+        max-height: initial !important;
       }
     }
 

@@ -53,7 +53,7 @@
   &.btn-dark-black {
     background-color: $color-2;
     border: 2px solid $color-2;
-    font-weight: $font-normal !important;
+    font-weight: $font-normal;
     font-size: $font-size-18;
     color: $color-white;
 
@@ -73,7 +73,7 @@
   &.btn-border-black {
     background-color: inherit;
     border: 2px solid $color-2;
-    font-weight: $font-normal !important;
+    font-weight: $font-normal;
     font-size: $font-size-18;
     color: $color-2;
 
@@ -115,7 +115,7 @@
     border: 2px solid $color-white;
     font-size: $font-size-18;
     color: $color-white;
-    font-weight: $font-normal !important;
+    font-weight: $font-normal;
 
     &:hover {
       background-color: $color-1 !important;

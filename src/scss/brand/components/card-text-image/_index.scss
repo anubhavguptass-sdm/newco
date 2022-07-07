@@ -18,7 +18,7 @@
       width: 100%;
       object-fit: cover;
       max-height: 180px;
-      @include sm {
+      @media only screen and (min-width: 376px) {
         max-height: initial;
       }
     }

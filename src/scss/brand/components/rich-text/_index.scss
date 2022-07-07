@@ -289,7 +289,7 @@
 
 .article-date {
   color: $color-2;
-  font-weight: $font-extra-bold;
+  font-family: $font-family-extrabold;
   @extend .font-small-12;
   text-align: center;
 }
@@ -503,7 +503,7 @@
 
   .display-on-hover {
     visibility: visible;
-    font-weight: 400 !important;
+    font-weight: $font-normal;
   }
 }
 
@@ -1422,7 +1422,7 @@ ol.alpha-bullets {
     &:before {
       margin-left: -0.5rem;
       margin-right: 0.5rem;
-      font-weight: normal !important;
+      font-weight: $font-normal;
       content: counter(list, lower-alpha) '. ' !important;
       counter-increment: list;
     }
@@ -1583,17 +1583,18 @@ ul.hidden-bullets {
   margin-left: 0 !important;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) {
   .half-slide-carousel .carousel-slides .carousel-slide.active {
-    width: 20% !important;
-    min-width: 20% !important;
+    width: 17% !important;
+    min-width: 17% !important;
     margin-right: 1rem !important;
-    height: max-content;
   }
-
-  .half-slide-carousel .carousel-slides .carousel-slide.active+.carousel-slide {
-    width: 20% !important;
-    min-width: 20% !important;
+  .half-slide-carousel
+    .carousel-slides
+    .carousel-slide.active
+    ~ .carousel-slide {
+    width: 17% !important;
+    min-width: 17% !important;
     margin-right: 1rem !important;
   }
 }

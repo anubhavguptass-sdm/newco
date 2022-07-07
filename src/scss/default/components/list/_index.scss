@@ -57,7 +57,7 @@
           &:nth-child(#{$i})::before {
             content: '#{$i}.';
             font-size: inherit;
-            font-weight: 700;
+            font-family: $font-family-bold;
           }
         }
       }

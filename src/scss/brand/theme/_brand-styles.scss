@@ -6,7 +6,7 @@ body {
   }
   .strong,
   strong {
-    font-weight: $font-extra-bold;
+    font-family: $font-family-extrabold;
   }
 
   a {
@@ -43,24 +43,33 @@ body {
     line-height: $line-height-100;
   }
 
-  .font-light {
-    font-weight: $font-light;
-  }
-
+  .font-light,
   .font-normal {
-    font-weight: $font-normal;
+    font-family: $font-family-regular;
   }
-
-  .font-semi-bold {
-    font-weight: $font-semi-bold;
+  .font-normal-italic {
+    font-family: $font-family-regularitalic;
   }
-
-  .font-bold {
-    font-weight: $font-bold;
+  .font-super {
+    font-family: $font-family-super;
   }
-
   .font-extra-bold {
-    font-weight: $font-extra-bold !important;
+    font-family: $font-family-extrabold;
+  }
+  .font-semi-bold {
+    font-family: $font-family-semibold;
+  }
+  .font-bold {
+    font-family: $font-family-bold;
+  }
+  .font-bold-italic {
+    font-family: $font-family-bolditalic;
+  }
+  .font-medium {
+    font-family: $font-family-medium;
+  }
+  .font-medium-italic {
+    font-family: $font-family-mediumitalic;
   }
 
   .font-small-12 {
@@ -88,13 +97,13 @@ body {
   }
 
   .font-size--small {
-    font-size: 0.75rem !important;
+    font-size: 0.75rem;
   }
   .font-size--medium {
-    font-size: 0.875rem !important;
+    font-size: 0.875rem;
   }
   .font-size--large {
-    font-size: 1.125rem !important;
+    font-size: 1.125rem;
   }
   .color-grey-3 {
     color: $color-3;

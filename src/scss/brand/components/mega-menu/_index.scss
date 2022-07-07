@@ -71,7 +71,6 @@ header {
       .richText-content {
         p {
           font-size: $font-size-13;
-          font-weight: $font-normal;
           color: $color-grey-1;
           cursor: pointer;
           margin-bottom: 0.5rem !important;
@@ -124,7 +123,7 @@ header {
               @include md {
                 left: 4.5rem;
                 font-size: 18px;
-                top: -2px;
+                top: -6px;
               }
               @include sd {
                 left: 76px;
@@ -152,6 +151,7 @@ header {
               @include md {
                 left: 5.2rem;
                 font-size: 18px;
+                top: -6px;
               }
               @include sd {
                 left: 86px;
@@ -184,7 +184,6 @@ header {
       .richText-content {
         p {
           font-size: $font-size-13;
-          font-weight: $font-normal;
           cursor: pointer;
           color: $color-grey-1;
           margin-bottom: 1rem !important;
@@ -226,7 +225,6 @@ header {
             a {
               color: $color-black !important;
               font-size: $font-size-16 !important;
-              font-weight: $font-normal !important;
               cursor: pointer;
               margin: 2px 0;
               padding: 0 3px;
@@ -258,9 +256,9 @@ header {
           margin-left: -0.75rem;
           margin-top: 13px;
           @include sd {
-            width: 250px;
-            min-width: 250px;
-            max-width: 250px;
+            width: 242px;
+            min-width: 242px;
+            max-width: 242px;
             height: auto;
             margin: 0;
             margin-bottom: 8px;
@@ -388,7 +386,7 @@ header {
         top: 45px;
         width: 100%;
         left: 0;
-        @include md{
+        @include md {
           position: fixed;
         }
         @include sd {
@@ -455,7 +453,7 @@ header {
         }
         &:hover {
           &:after {
-            display: none;
+            display: block;
             @media only screen and (max-width: 991px) {
               display: none;
             }
@@ -687,7 +685,6 @@ header {
     display: inline-block;
     color: $color-black !important;
     font-size: 1rem !important;
-    font-weight: 400 !important;
     line-height: 30px;
     width: auto;
   }
@@ -912,7 +909,6 @@ header {
     line-height: 1.6;
     color: $color-2 !important;
     font-size: 13px !important;
-    font-weight: 400 !important;
     cursor: pointer;
     padding: 0;
     padding: 3px 6px;

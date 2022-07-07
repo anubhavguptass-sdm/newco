@@ -209,7 +209,7 @@
 
               &.filter-group-label-js {
                 pointer-events: all !important;
-                font-weight: bold;
+                font-family: $font-family-bold;
                 cursor: default;
                 background-color: darken(
                   $class-filter-selection-bckgrnd-color,
@@ -219,7 +219,7 @@
 
               &.multilevel {
                 > a {
-                  font-weight: bold !important;
+                  font-family: $font-family-bold;
                   background-color: darken(
                     $class-filter-selection-bckgrnd-color,
                     3%
@@ -380,7 +380,7 @@
 
               &.filter-group-label-js {
                 pointer-events: all !important;
-                font-weight: bold;
+                font-family: $font-family-bold;
                 cursor: default;
                 background-color: darken(
                   $class-filter-selection-bckgrnd-color,
@@ -671,7 +671,7 @@
               > a {
                 margin-top: $class-filter-links-sublevel-y-margin !important;
                 margin-bottom: $class-filter-links-sublevel-y-margin !important;
-                font-weight: bold !important;
+                font-family: $font-family-bold;
                 font-size: $class-filter-links-sublevel-size !important;
                 color: $class-filter-links-sublevel-color !important;
 
@@ -723,7 +723,7 @@
               > a {
                 margin-top: $class-filter-links-sublevel-y-margin !important;
                 margin-bottom: $class-filter-links-sublevel-y-margin !important;
-                font-weight: bold !important;
+                font-family: $font-family-bold;
                 font-size: $class-filter-links-sublevel-size !important;
                 color: $class-filter-links-sublevel-color !important;
 
@@ -961,7 +961,7 @@
 
               &.filter-group-label-js {
                 pointer-events: all !important;
-                font-weight: bold;
+                font-family: $font-family-bold;
                 cursor: default;
                 background-color: darken(
                   $class-filter-selection-bckgrnd-color,
@@ -971,7 +971,7 @@
 
               &.multilevel {
                 > a {
-                  font-weight: bold !important;
+                  font-family: $font-family-bold;
                   background-color: darken(
                     $class-filter-selection-bckgrnd-color,
                     3%
@@ -1127,7 +1127,7 @@
 
               &.filter-group-label-js {
                 pointer-events: all !important;
-                font-weight: bold;
+                font-family: $font-family-bold;
                 cursor: default;
                 background-color: darken(
                   $class-filter-selection-bckgrnd-color,
@@ -1417,7 +1417,7 @@
               > a {
                 margin-top: $class-filter-links-sublevel-y-margin !important;
                 margin-bottom: $class-filter-links-sublevel-y-margin !important;
-                font-weight: bold !important;
+                font-family: $font-family-bold;
                 font-size: $class-filter-links-sublevel-size !important;
                 color: $class-filter-links-sublevel-color !important;
 
@@ -1469,7 +1469,7 @@
               > a {
                 margin-top: $class-filter-links-sublevel-y-margin !important;
                 margin-bottom: $class-filter-links-sublevel-y-margin !important;
-                font-weight: bold !important;
+                font-family: $font-family-bold;
                 font-size: $class-filter-links-sublevel-size-mobile !important;
                 color: $class-filter-links-sublevel-color !important;
 

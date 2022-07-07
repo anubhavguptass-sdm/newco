@@ -50,7 +50,7 @@
             line-height: 1.3;
             a {
               font-size: $font-size-18;
-              font-weight: $font-semi-bold;
+              font-family: $font-family-semibold;
               color: $color-2;
               @include sm {
                 font-size: $font-size-21;

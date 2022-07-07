@@ -87,7 +87,6 @@
       text-transform: $breadcrumbs-text-transform;
       white-space: nowrap;
       font-size: $breadcrumbsfont-size-m;
-      font-weight: $font-weight-breadcrumbs;
       line-height: $line-height-breadcrumbs;
       text-decoration: none;
     }
@@ -107,7 +106,6 @@
 
       a {
         font-size: $breadcrumbsfont-size-d !important;
-        font-weight: $font-weight-breadcrumbs;
         line-height: $line-height-breadcrumbs;
       }
     }

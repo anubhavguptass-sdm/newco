@@ -123,7 +123,6 @@
 
   .privacy-desc-haleon {
     font-size: 1.125rem;
-    font-family: $font-normal;
     padding: 1rem 0rem 0;
     color: $color-2;
     @include sm {
@@ -134,7 +133,7 @@
   .col-primary-theme {
     color: #000;
     padding: 0 0rem 0 0.15rem;
-    font-weight: 400;
+    font-weight: $font-normal;
     a {
       text-decoration: underline 2px solid $color-primary;
       &:focus {
@@ -146,7 +145,7 @@
 
   .group-form {
     display: block;
-    font-weight: 600;
+    font-family: $font-family-semibold;
 
     .input-required {
       color: $color-error;
@@ -172,17 +171,6 @@
     }
   }
 }
-
-// .emailValidation {
-//   input {
-//     border: 2px solid $color-2 !important;
-//     outline: 1px solid $color-2 !important;
-//   }
-
-//   .err-email-msg {
-//     color: $color-2 !important;
-//   }
-// }
 
 .label-form {
   margin: 0.75rem 0;

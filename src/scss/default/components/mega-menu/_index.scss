@@ -540,7 +540,7 @@
               border: none;
               color: $navigation-link-color-mobile;
               font-size: $font-size-button;
-              font-weight: 700;
+              font-family: $font-family-default;
               height: auto;
               @media (min-width: $breakpoint-sm-min) {
                 //desktop styles
@@ -672,7 +672,6 @@
                   border: none;
                   display: block;
                   font-size: $font-size-button-mobile;
-                  font-weight: 400;
                   height: 100%;
                   line-height: 49px;
                   padding: 0;

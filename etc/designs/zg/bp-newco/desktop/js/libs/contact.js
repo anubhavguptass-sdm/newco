@@ -16,9 +16,9 @@
         //  honeypot checkbox disable button validation
         checkbox.addEventListener('change', (event) => {
             if (event.currentTarget.checked) {
-                document.getElementById("submitbtn").disabled = true;
+                document.getElementById("submit").disabled = true;
             } else {
-                document.getElementById("submitbtn").disabled = false;
+                document.getElementById("submit").disabled = false;
             }
         })
     }
@@ -51,7 +51,7 @@
         $('#description').on('blur', function (event) {
             validateForm('desc');
         });
-        $('#00N1q000000v7U5').on('change keydown', function (event) {
+        $('#00N1t00000Kz8CI').on('change keydown', function (event) {
             validateForm('country');
         });
         $('#subject').on('change keydown', function (event) {
@@ -71,7 +71,7 @@
             }
         });
 
-        $('#submitbtn').click(function (event) {
+        $('#submit').click(function (event) {
             validateForm('all');
             OnfocusField(event);
         });
@@ -137,8 +137,8 @@
         } else if (document.haleonForm.email.value == '') {
             document.haleonForm.email.focus();
             EventTriger();
-        } else if (document.forms["haleonForm"]["00N1q000000v7U5"].value == '' || document.forms["haleonForm"]["00N1q000000v7U5"].value == 'none') {
-            document.forms["haleonForm"]["00N1q000000v7U5"].focus();
+        } else if (document.forms["haleonForm"]["00N1t00000Kz8CI"].value == '' || document.forms["haleonForm"]["00N1t00000Kz8CI"].value == 'none') {
+            document.forms["haleonForm"]["00N1t00000Kz8CI"].focus();
             EventTriger();
         } else if (document.haleonForm.subject.value == '' || document.haleonForm.subject.value == 'none') {
             document.haleonForm.subject.focus();
@@ -157,7 +157,7 @@
     function validateForm(type) {
         let name = document.forms["haleonForm"]["name"].value.trim();
         let email = document.forms["haleonForm"]["email"].value;
-        let country = document.forms["haleonForm"]["00N1q000000v7U5"].value;
+        let country = document.forms["haleonForm"]["00N1t00000Kz8CI"].value;
         let enquiry = document.forms["haleonForm"]["subject"].value;
         let desc = document.forms["haleonForm"]["description"].value.trim();
         let element = document.getElementById("emailGroup");
@@ -196,12 +196,12 @@
 
         if ((type == 'country' || type == 'all')) {
             if (country == "none" || country == "") {
-                $('#00N1q000000v7U5').removeClass('success');
-                $('#00N1q000000v7U5').addClass('error');
+                $('#00N1t00000Kz8CI').removeClass('success');
+                $('#00N1t00000Kz8CI').addClass('error');
                 document.getElementById('countryReqMsg').style.display = 'block';
             } else {
-                $('#00N1q000000v7U5').removeClass('error');
-                $('#00N1q000000v7U5').addClass('success');
+                $('#00N1t00000Kz8CI').removeClass('error');
+                $('#00N1t00000Kz8CI').addClass('success');
                 document.getElementById('countryReqMsg').style.display = 'none';
             }
         }
@@ -244,17 +244,17 @@
         val = val.trim();
         let flag = false;
         if (val.length) {
-            let a = Object.values(val)
-            a.forEach((elem,index) => {
+            let a = Object.values(val);
+            a.filter(entry => entry != ' ');
+            a.forEach((elem) => {
                 var regex = new RegExp("^[a-zA-Z-]+$");
-                if (regex.test(elem)) {
-                    return true;
-                }
-                else if(val.charCodeAt(index) === 32) {
-                    flag = true;
-                }
+                if(elem != ' '){
+                    if (regex.test(elem)) {
+                        return true;
+                    }
                 else{
                     flag = true;
+                }
                 }
             })
             if (val.length < 5 || flag) {
@@ -270,6 +270,12 @@
                 return false;
             }
 
+        }
+        else{
+            event.preventDefault();
+                document.haleonForm.name.focus();
+                EventTriger();
+                return false; 
         }
         let text = document.haleonForm.description.value;
         text = text.trim();
@@ -303,7 +309,7 @@
         eventObj = {
             'name': a && a.length > 4 ? '' : 'Contact Name',
             'email': document.haleonForm.email.value ? '' : 'email',
-            'country': document.forms["haleonForm"]["00N1q000000v7U5"].value ? '' : 'Country',
+            'country': document.forms["haleonForm"]["00N1t00000Kz8CI"].value ? '' : 'Country',
             'subject': document.haleonForm.subject.value ? '' : 'Type of Enquiry',
             'discription': c && c.length > 19 ? '' : 'Description',
             'termsAndconditions': document.haleonForm.termsAndconditions.checked ? '' : 'Privacy Policy',

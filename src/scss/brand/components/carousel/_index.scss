@@ -52,6 +52,29 @@
         }
       }
     }
+
+    ul.tag-links1 {
+      width: 70%;
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      flex-wrap: wrap;
+      li {
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: $color-grey-3 !important;
+        margin-bottom: 0px;
+        @include sm {
+          margin-bottom: 0.25rem;
+          width: fit-content;
+        }
+        @include lg {
+          margin-bottom: 0;
+          width: auto;
+        }
+      }
+    }
   }
 
   &.carousel-with-img-arrow-links {

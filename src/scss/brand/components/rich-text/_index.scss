@@ -96,6 +96,7 @@
 
 .scroll-down-arrow:focus-within {
   bottom: 7px !important;
+
   .icon-angle-down {
     height: 61px !important;
   }
@@ -103,7 +104,7 @@
 
 @media only screen and (max-width: 1279px) and (min-width: 992px) {
   .card-text-image-small {
-    > .component-content > .paragraphSystem {
+    >.component-content>.paragraphSystem {
       flex-direction: column !important;
       flex-wrap: initial;
     }
@@ -112,7 +113,7 @@
 
 @media only screen and (max-width: 767px) {
   .card-text-image {
-    > .component-content > .paragraphSystem {
+    >.component-content>.paragraphSystem {
       flex-direction: column !important;
       flex-wrap: initial;
     }
@@ -134,6 +135,7 @@
 
   a {
     color: $color-2 !important;
+
     &:after {
       content: '';
       position: absolute;
@@ -188,6 +190,7 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+
     @include sm {
       flex-wrap: nowrap;
     }
@@ -200,6 +203,7 @@
       &.first {
         white-space: nowrap;
       }
+
       a {
         font-size: 14px;
         color: #fff;
@@ -218,15 +222,19 @@
 
 .article-social-share {
   text-align: center;
+
   .component.col-lg-1 {
     width: 100%;
+
     p {
       text-align: center;
     }
+
     @include sm {
       width: 48px;
     }
   }
+
   @include sm {
     position: absolute;
     top: 0;
@@ -318,7 +326,7 @@
     overflow: visible;
   }
 
-  .flex.cols-d-5 > div {
+  .flex.cols-d-5>div {
     flex-basis: 100%;
 
     @include sm {
@@ -508,7 +516,7 @@
 }
 
 .box-with-halfcover-bg.align-left-bg {
-  > .component-content {
+  >.component-content {
     background-position: left;
   }
 }
@@ -540,7 +548,7 @@
   overflow: visible !important;
 }
 
-.half-carousel .carousel-wrapper > .component-content {
+.half-carousel .carousel-wrapper>.component-content {
   overflow: visible !important;
 }
 
@@ -624,14 +632,14 @@
   }
 }
 
-.brand-carousel-content + .image {
+.brand-carousel-content+.image {
   width: 100%;
 
   @include sm {
     width: 60%;
   }
 
-  > div {
+  >div {
     height: 100% !important;
 
     img {
@@ -697,7 +705,7 @@
   box-shadow: $box-shadow;
   z-index: 84;
 
-  > div > div {
+  >div>div {
     flex-direction: column;
 
     @include sm {
@@ -712,13 +720,16 @@
 
 .highlighted-sec-wrapper {
   margin-top: -7rem;
+
   @include sm {
     margin-top: -6.5rem;
   }
+
   @include sd {
     margin-top: -4.5rem;
   }
-  > div {
+
+  >div {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -868,10 +879,12 @@
 .white-line-strip {
   h3 {
     margin-bottom: 2.5rem !important;
+
     &:nth-last-child(1) {
       margin-bottom: 0 !important;
     }
   }
+
   a {
     .icon-angle-right {
       margin-left: 1rem;
@@ -933,7 +946,7 @@
     }
   }
 
-  > div > div {
+  >div>div {
     justify-content: center;
   }
 }
@@ -1102,7 +1115,7 @@
   }
 }
 
-.flex > div > div > div.career-search-wrapper {
+.flex>div>div>div.career-search-wrapper {
   margin-right: auto !important;
 }
 
@@ -1138,10 +1151,7 @@
   overflow-y: auto;
 }
 
-.story-filter
-  .class-filter[data-type='buttons']
-  .filter-list-js
-  .filter-item-js {
+.story-filter .class-filter[data-type='buttons'] .filter-list-js .filter-item-js {
   margin: 1px;
   margin-right: 1rem;
   max-width: fit-content;
@@ -1151,14 +1161,8 @@
   color: $color-2 !important;
 }
 
-.story-filter
-  .theme-1.class-filter[data-type='buttons']
-  .filter-list-js
-  .filter-item-js.active-js,
-.story-filter
-  .theme-1.class-filter[data-type='buttons']
-  .filter-list-js
-  .filter-item-js:hover {
+.story-filter .theme-1.class-filter[data-type='buttons'] .filter-list-js .filter-item-js.active-js,
+.story-filter .theme-1.class-filter[data-type='buttons'] .filter-list-js .filter-item-js:hover {
   background-color: $color-secondary-aqua !important;
   color: $color-2 !important;
   border-color: $color-secondary-aqua !important;
@@ -1167,9 +1171,11 @@
 /* Quaterly result filter css end */
 .operate-filter-article-section {
   margin-bottom: 7rem !important;
+
   @include sm {
     margin-bottom: 5.5rem !important;
   }
+
   .class-filter[data-type-mobile='dropdown'] {
     margin: 0;
     max-width: 180px;
@@ -1199,6 +1205,7 @@
 
     .filter-list-js {
       width: 300px;
+
       .filter-item-js {
         padding: 0.25rem 0.5rem !important;
         text-align: left;
@@ -1213,11 +1220,13 @@
       }
     }
   }
+
   .class-filter[data-type='dropdown'] {
     .filter-container-js {
       .selected-item-js::before {
         right: 0;
       }
+
       .selected-item-js::after {
         right: 0;
       }
@@ -1227,7 +1236,7 @@
 
 /* Health Topic */
 
-.health-topic-tag + .health-topic-tag {
+.health-topic-tag+.health-topic-tag {
   margin-top: 0.25rem;
   margin-bottom: 1.5rem;
 
@@ -1239,10 +1248,12 @@
 
 .signs-to-look {
   margin-top: 1rem;
+
   h2 {
     color: $color-1;
     text-align: center;
   }
+
   @include sm {
     margin-top: 4rem;
   }
@@ -1290,10 +1301,10 @@
     padding: 1rem;
   }
 
-  > div {
+  >div {
     height: 100% !important;
 
-    > div {
+    >div {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -1342,6 +1353,7 @@
       bottom: 0rem;
       right: 1rem;
     }
+
     @include lg {
       bottom: 1rem;
     }
@@ -1376,23 +1388,24 @@
   width: 100%;
 }
 
-.operate-filter-article-section
-  .class-filter[data-type-mobile='dropdown']
-  .filter-container-js
-  .selected-item-js {
+.operate-filter-article-section .class-filter[data-type-mobile='dropdown'] .filter-container-js .selected-item-js {
   padding: 0.25rem 0rem;
+
   @include sm {
     padding: 0.25rem 1rem;
   }
 }
+
 .operate-filter-article-section {
   .width-auto {
     width: 100% !important;
+
     @include sm {
       width: auto !important;
     }
   }
 }
+
 // add comma's in dropdown end
 
 /* who-we-are/governance/compliance CSS */
@@ -1422,8 +1435,10 @@ ol.alpha-bullets {
 
 ul.hidden-bullets {
   margin-left: 3rem;
+
   li {
     display: block !important;
+
     &:before {
       display: none !important;
     }
@@ -1434,23 +1449,29 @@ ul.hidden-bullets {
 .social-share {
   font-size: 0.75rem;
   text-align: center;
+
   @include sm {
     width: 48px;
   }
 }
+
 .sitemap-column {
   h3 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
-  > ul {
+
+  >ul {
     list-style-type: none;
     margin-left: 2rem;
+
     li {
       padding: 0.25rem 0;
       line-height: 1.5;
+
       ul {
         margin-left: 1.5rem;
+
         li {
           line-height: 1.5;
         }
@@ -1463,6 +1484,7 @@ ul.hidden-bullets {
   justify-content: space-between;
   display: flex;
 }
+
 @media only screen and (max-width: 767px) {
   .sitemap-columns-2 {
     flex-direction: column;
@@ -1480,6 +1502,7 @@ ul.hidden-bullets {
 .banner-text {
   ol li {
     display: block !important;
+
     &::before {
       left: -5px;
     }
@@ -1567,26 +1590,26 @@ ul.hidden-bullets {
     margin-right: 1rem !important;
     height: max-content;
   }
-  .half-slide-carousel
-    .carousel-slides
-    .carousel-slide.active
-    + .carousel-slide {
+
+  .half-slide-carousel .carousel-slides .carousel-slide.active+.carousel-slide {
     width: 20% !important;
     min-width: 20% !important;
     margin-right: 1rem !important;
   }
 }
 
-.social-links > div > div {
+.social-links>div>div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
+
 .social-links .reference-svg-icons-with-link {
   width: 35px;
   height: 35px;
   background: #eaeaea;
+
   a {
     display: flex;
     align-items: center;
@@ -1602,6 +1625,7 @@ ul.hidden-bullets {
   a:hover {
     background: $color-2;
     color: $color-white !important;
+
     em {
       color: $color-white !important;
     }
@@ -1617,35 +1641,40 @@ ul.hidden-bullets {
     margin-right: auto;
     margin-bottom: -2px !important;
     z-index: 1;
+
     @include sm {
       width: 80%;
     }
+
     .accordion-slide {
       &:before {
         width: 100%;
       }
     }
+
     .accordion-container .accordion-slide .accordion-head .accordion-title {
       width: 90%;
+
       a {
         font-size: 1.125rem;
       }
     }
-    .accordion-container
-      .accordion-slide.is-active
-      .accordion-head
-      .accordion-title {
+
+    .accordion-container .accordion-slide.is-active .accordion-head .accordion-title {
       border-bottom: 1px solid $color-2;
       padding-bottom: 10px;
     }
+
     .accordion-container .accordion-slide.is-active .accordion-content-wrapper {
       @include sm {
         height: 180px !important;
         overflow-y: auto !important;
       }
+
       @include sd {
         height: 250px !important;
       }
+
       @include md {
         height: 300px !important;
       }
@@ -1655,24 +1684,21 @@ ul.hidden-bullets {
 
 .var-pad {
   padding-top: 3rem;
+
   @include sm {
     padding-top: 15rem;
   }
+
   @include md {
     padding-top: 14rem;
   }
+
   @include lg {
     padding-top: 11rem;
   }
 }
 
-.career-search-wrapper
-  .accordion
-  .accordion-container
-  .accordion-slide
-  .accordion-head
-  .accordion-title
-  a {
+.career-search-wrapper .accordion .accordion-container .accordion-slide .accordion-head .accordion-title a {
   font-size: 18px;
 }
 
@@ -1684,12 +1710,15 @@ ul.hidden-bullets {
   .class-filter[data-type-mobile='dropdown'] .filter-container-js {
     position: absolute !important;
     width: auto !important;
+
     @include sm {
       position: relative !important;
       width: 100% !important;
     }
+
     .selected-item-js {
       padding: 0.25rem 1rem 0 0 !important;
+
       @include sm {
         padding: 0.25rem 1rem !important;
       }
@@ -1707,6 +1736,7 @@ ul.hidden-bullets {
   display: flex;
   justify-content: center;
   align-items: center;
+
   @include sm {
     width: 60px;
     height: 60px;
@@ -1717,6 +1747,7 @@ ul.hidden-bullets {
 .p-m-r--4-5 {
   padding-left: 4.5rem !important;
   padding-right: 1.5rem !important;
+
   @include sm {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -1725,6 +1756,7 @@ ul.hidden-bullets {
 
 .icon-wrapper {
   margin-left: 3.5rem;
+
   @include sm {
     margin-left: 5rem;
   }
@@ -1733,6 +1765,7 @@ ul.hidden-bullets {
 .visit-brand-box.full-clickable-box:hover * {
   position: static;
 }
+
 .dynamic-height img {
   @include sm {
     object-fit: cover;
@@ -1755,9 +1788,11 @@ ul.hidden-bullets {
   display: block;
   margin: 0 10px;
 }
+
 .article-breadcrumbs .breadcrumbs-list .breadcrumb-list-item {
   display: contents !important;
 }
+
 .article-breadcrumbs .breadcrumbs-list .breadcrumb-list-item a {
   padding: 0 !important;
 }
@@ -1766,7 +1801,22 @@ ul.hidden-bullets {
 
 .contact-details {
   margin-top: 1rem;
+
   @include sd {
     margin-top: 0;
+  }
+}
+
+
+.half-text {
+  height: 100%;
+  >.component-content {
+    height: 100%;
+    >.paragraphSystem {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

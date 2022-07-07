@@ -1830,17 +1830,32 @@ ul.hidden-bullets {
 }
 
 .half-text {
-  padding: 2rem;
+  padding: 2rem !important;
   background: #fff;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  >.component-content {
+  > .component-content {
     height: 100% !important;
-    >.paragraphSystem {
+    > .paragraphSystem {
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
+}
+
+.megamenu
+  .megamenu-search
+  .searchBox
+  .searchBox-label.is-search-open
+  button.header-search:after {
+  display: none;
+}
+
+li.searchResults-pagination-item.is-active a {
+  background-color: $color-primary;
+}
+.searchResults-pagination-item a {
+  padding: 5px 10px 2px !important;
 }

@@ -104,7 +104,7 @@
 
 @media only screen and (max-width: 1279px) and (min-width: 992px) {
   .card-text-image-small {
-    >.component-content>.paragraphSystem {
+    > .component-content > .paragraphSystem {
       flex-direction: column !important;
       flex-wrap: initial;
     }
@@ -113,7 +113,7 @@
 
 @media only screen and (max-width: 767px) {
   .card-text-image {
-    >.component-content>.paragraphSystem {
+    > .component-content > .paragraphSystem {
       flex-direction: column !important;
       flex-wrap: initial;
     }
@@ -326,7 +326,7 @@
     overflow: visible;
   }
 
-  .flex.cols-d-5>div {
+  .flex.cols-d-5 > div {
     flex-basis: 100%;
 
     @include sm {
@@ -516,7 +516,7 @@
 }
 
 .box-with-halfcover-bg.align-left-bg {
-  >.component-content {
+  > .component-content {
     background-position: left;
   }
 }
@@ -548,7 +548,7 @@
   overflow: visible !important;
 }
 
-.half-carousel .carousel-wrapper>.component-content {
+.half-carousel .carousel-wrapper > .component-content {
   overflow: visible !important;
 }
 
@@ -632,14 +632,14 @@
   }
 }
 
-.brand-carousel-content+.image {
+.brand-carousel-content + .image {
   width: 100%;
 
   @include sm {
     width: 60%;
   }
 
-  >div {
+  > div {
     height: 100% !important;
 
     img {
@@ -705,7 +705,7 @@
   box-shadow: $box-shadow;
   z-index: 84;
 
-  >div>div {
+  > div > div {
     flex-direction: column;
 
     @include sm {
@@ -729,7 +729,7 @@
     margin-top: -4.5rem;
   }
 
-  >div {
+  > div {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -946,7 +946,7 @@
     }
   }
 
-  >div>div {
+  > div > div {
     justify-content: center;
   }
 }
@@ -1115,7 +1115,7 @@
   }
 }
 
-.flex>div>div>div.career-search-wrapper {
+.flex > div > div > div.career-search-wrapper {
   margin-right: auto !important;
 }
 
@@ -1151,7 +1151,10 @@
   overflow-y: auto;
 }
 
-.story-filter .class-filter[data-type='buttons'] .filter-list-js .filter-item-js {
+.story-filter
+  .class-filter[data-type='buttons']
+  .filter-list-js
+  .filter-item-js {
   margin: 1px;
   margin-right: 1rem;
   max-width: fit-content;
@@ -1161,8 +1164,14 @@
   color: $color-2 !important;
 }
 
-.story-filter .theme-1.class-filter[data-type='buttons'] .filter-list-js .filter-item-js.active-js,
-.story-filter .theme-1.class-filter[data-type='buttons'] .filter-list-js .filter-item-js:hover {
+.story-filter
+  .theme-1.class-filter[data-type='buttons']
+  .filter-list-js
+  .filter-item-js.active-js,
+.story-filter
+  .theme-1.class-filter[data-type='buttons']
+  .filter-list-js
+  .filter-item-js:hover {
   background-color: $color-secondary-aqua !important;
   color: $color-2 !important;
   border-color: $color-secondary-aqua !important;
@@ -1236,7 +1245,7 @@
 
 /* Health Topic */
 
-.health-topic-tag+.health-topic-tag {
+.health-topic-tag + .health-topic-tag {
   margin-top: 0.25rem;
   margin-bottom: 1.5rem;
 
@@ -1301,10 +1310,10 @@
     padding: 1rem;
   }
 
-  >div {
+  > div {
     height: 100% !important;
 
-    >div {
+    > div {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -1388,7 +1397,10 @@
   width: 100%;
 }
 
-.operate-filter-article-section .class-filter[data-type-mobile='dropdown'] .filter-container-js .selected-item-js {
+.operate-filter-article-section
+  .class-filter[data-type-mobile='dropdown']
+  .filter-container-js
+  .selected-item-js {
   padding: 0.25rem 0rem;
 
   @include sm {
@@ -1461,7 +1473,7 @@ ul.hidden-bullets {
     margin-bottom: 0.5rem;
   }
 
-  >ul {
+  > ul {
     list-style-type: none;
     margin-left: 2rem;
 
@@ -1599,7 +1611,7 @@ ul.hidden-bullets {
   }
 }
 
-.social-links>div>div {
+.social-links > div > div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -1661,7 +1673,10 @@ ul.hidden-bullets {
       }
     }
 
-    .accordion-container .accordion-slide.is-active .accordion-head .accordion-title {
+    .accordion-container
+      .accordion-slide.is-active
+      .accordion-head
+      .accordion-title {
       border-bottom: 1px solid $color-2;
       padding-bottom: 10px;
     }
@@ -1699,7 +1714,13 @@ ul.hidden-bullets {
   }
 }
 
-.career-search-wrapper .accordion .accordion-container .accordion-slide .accordion-head .accordion-title a {
+.career-search-wrapper
+  .accordion
+  .accordion-container
+  .accordion-slide
+  .accordion-head
+  .accordion-title
+  a {
   font-size: 18px;
 }
 
@@ -1808,13 +1829,11 @@ ul.hidden-bullets {
   }
 }
 
-
-
 .half-text {
   height: 100%;
-  >.component-content {
+  > .component-content {
     height: 100%;
-    >.paragraphSystem {
+    > .paragraphSystem {
       height: 100%;
       display: flex;
       justify-content: center;

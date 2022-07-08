@@ -1220,7 +1220,10 @@
         text-align: left;
         background-color: $color-white;
         border: none;
-
+       &.outlined{
+        background-color: $bg-color-3 !important;
+        outline: none;
+       }
         .active-js {
           background-color: $color-white;
           color: $color-black;

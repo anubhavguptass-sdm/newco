@@ -1229,6 +1229,9 @@
           color: $color-black;
           padding: 0.25rem;
         }
+        &.outlined{
+         color: $color-black !important;
+         }
       }
     }
   }

@@ -405,7 +405,10 @@ header {
           display: block !important;
           input {
             display: block !important;
-            height: 38px !important;
+            height: 33px !important;
+            @include sm {
+              height: 38px !important;
+            }
             @include md {
               height: 18px !important;
             }

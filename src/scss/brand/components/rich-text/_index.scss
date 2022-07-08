@@ -1865,3 +1865,27 @@ li.searchResults-pagination-item.is-active a {
 .searchResults-pagination-item a {
   padding: 5px 10px 2px !important;
 }
+
+.object-pos-top {
+  img {
+    object-position: top;
+  }
+}
+
+.object-pos-bottom {
+  img {
+    object-position: bottom;
+  }
+}
+
+.object-pos-left {
+  img {
+    object-position: left;
+  }
+}
+
+.object-pos-right {
+  img {
+    object-position: right;
+  }
+}

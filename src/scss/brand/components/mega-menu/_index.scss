@@ -406,10 +406,10 @@ header {
           input {
             display: block !important;
             height: 33px !important;
-            @include sm{
+            @include sm {
               height: 38px !important;
             }
-            @include md{
+            @include md {
               height: 18px !important;
             }
           }

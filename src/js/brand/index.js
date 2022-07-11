@@ -143,6 +143,7 @@ const { all } = require('core-js/fn/promise');
     setTimeout(function() {
       if (e.keyCode == 13) {
         $(this).click();
+        console.log('FIlter')
       }
     }, 2000);
   });

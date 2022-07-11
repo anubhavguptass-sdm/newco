@@ -1892,7 +1892,7 @@ li.searchResults-pagination-item.is-active a {
 
 .carousel h3.h4 {
   line-height: 1.5 !important;
-  @include sm {
+  @include sd {
     line-height: initial !important;
   }
 }

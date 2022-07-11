@@ -140,9 +140,11 @@ const { all } = require('core-js/fn/promise');
   });
 
   $('.filter-item-js').keypress(function(e) {
-    if (e.keyCode == 13) {
-      $(this).click();
-    }
+    setTimeout(function() {
+      if (e.keyCode == 13) {
+        $(this).click();
+      }
+    }, 2000);
   });
 
   // filter display block end

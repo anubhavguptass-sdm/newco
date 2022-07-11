@@ -136,16 +136,14 @@ const { all } = require('core-js/fn/promise');
           $('.location-result-wrapper').css('display', 'block');
         }
       });
-    }, 200);
-  });
 
-  $('.filter-item-js').keypress(function(e) {
-    setTimeout(function() {
-      if (e.keyCode == 13) {
-        $(this).click();
-        console.log('FIlter')
-      }
-    }, 2000);
+      $('.filter-item-js').keypress(function(e) {
+        if (e.keyCode == 13) {
+          $('.filter-item-js').click();
+          console.log('FIlter 1');
+        }
+      });
+    }, 200);
   });
 
   // filter display block end

@@ -1202,10 +1202,15 @@ li {
           height: 29px !important;
           z-index: 0;
           display: block !important;
+          border: 2px dotted $color-primary;
+          &:focus {
+            border: 2px dotted $color-2;
+          }
           @include sm {
             height: 34px !important;
             right: 0 !important;
             top: 2px !important;
+            border: none;
           }
           @include sd {
             right: 15px !important;

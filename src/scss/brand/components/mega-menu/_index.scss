@@ -106,28 +106,30 @@ header {
             width: auto;
           }
           a {
-            padding-right: 20px;
+            /* padding-right: 20px; */
             @include sm {
               position: relative;
-              padding-right: 26px;
+              /* padding-right: 26px; */
             }
             &:after {
               content: '\e920';
               font-family: 'icomoon';
-              position: absolute;
-              top: -1px;
-              left: 5.5rem;
-              @include sm {
+              /* position: absolute; */
+              vertical-align: middle;
+              margin-left: 5px !important;
+              /* top: -1px; */
+              /* left: 5.5rem; */
+              /* @include sm {
                 top: -3px;
-              }
+              } */
               @include md {
-                left: 4.5rem;
+                /* left: 4.5rem; */
                 font-size: 18px;
-                top: -6px;
+                /* top: -6px; */
               }
-              @include sd {
+              /* @include sd {
                 left: 76px;
-              }
+              } */
             }
           }
         }
@@ -140,23 +142,25 @@ header {
           margin: auto !important;
           a {
             position: relative;
-            padding-right: 24px;
+            /* padding-right: 24px; */
             &:after {
               content: '\e90f';
               font-family: 'icomoon';
-              position: absolute;
-              right: 1px;
-              top: -2px;
-              left: 6.2rem;
+              vertical-align: middle;
+              margin-left: 5px !important;
+              /* position: absolute; */
+              /* right: 1px; */
+              /* top: -2px; */
+              /* left: 6.2rem; */
               @include md {
-                left: 5.2rem;
+                /* left: 5.2rem; */
                 font-size: 18px;
-                top: -6px;
+                /* top: -6px; */
               }
-              @include sd {
+              /* @include sd {
                 left: 86px;
                 right: initial;
-              }
+              } */
             }
           }
         }
@@ -456,7 +460,7 @@ header {
           position: relative;
         }
         @include sd {
-          top: 7px !important;
+          top: 10px !important;
         }
         &:hover {
           &:after {

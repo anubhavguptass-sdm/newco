@@ -1205,6 +1205,9 @@ li {
           border: 2px dotted $color-primary;
           &:focus {
             border: 2px dotted $color-2;
+            @include sm {
+              border: none;
+            }
           }
           @include sm {
             height: 34px !important;

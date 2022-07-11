@@ -136,13 +136,6 @@ const { all } = require('core-js/fn/promise');
           $('.location-result-wrapper').css('display', 'block');
         }
       });
-
-      $('.filter-item-js').keypress(function(e) {
-        if (e.keyCode == 13) {
-          $('.filter-item-js').click();
-          console.log('FIlter 1');
-        }
-      });
     }, 200);
   });
 
@@ -173,6 +166,17 @@ const { all } = require('core-js/fn/promise');
       $('.searchBox-label').removeClass('is-search-open');
       $('.searchBox .search-query').removeClass('searchInput');
     });
+  });
+
+  $(document).ready(function() {
+    setTimeout(function() {
+      $('.filter-item-js').keydown(function(e) {
+        if (e.keyCode == 13) {
+          console.log('Filter 1');
+          $('.filter-list-js li:focus').click();
+        }
+      });
+    }, 200);
   });
 
   // Show More Filter

@@ -130,16 +130,19 @@ const { all } = require('core-js/fn/promise');
   $(document).ready(function() {
     setTimeout(function() {
       $('.filter-item-js').on('click', function(e) {
-        console.log('check');
         if ($(this).hasClass('default-state-js')) {
-          console.log('check1');
           $('.location-result-wrapper').css('display', 'none');
         } else {
-          console.log('check2');
           $('.location-result-wrapper').css('display', 'block');
         }
       });
     }, 200);
+  });
+
+  $('.filter-item-js').keypress(function(e) {
+    if (e.keyCode == 13) {
+      $(this).click();
+    }
   });
 
   // filter display block end

@@ -13,7 +13,7 @@
   .story-block {
     display: flex;
     flex-direction: column;
-    @include sm {
+    @media only screen and (min-width: 650px) {
       flex-direction: row;
     }
     margin-bottom: 1rem;
@@ -21,7 +21,7 @@
   }
   .story-image {
     width: 100%;
-    @include sm {
+    @media only screen and (min-width: 650px) {
       width: 40%;
     }
     line-height: 0;
@@ -41,7 +41,7 @@
     }
   }
   .story-content {
-    @include sm {
+    @media only screen and (min-width: 650px) {
       width: 60%;
     }
     padding: 1rem;
@@ -63,13 +63,13 @@
     height: 100%;
     background: #fff;
     flex-direction: column;
-    @include sm {
+    @media only screen and (min-width: 650px) {
       flex-direction: row;
     }
   }
   .story-content {
     padding: 2rem 1rem;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 430px) {
       margin-top: 0rem;
     }
     @include md {
@@ -78,12 +78,12 @@
     @include lg {
       padding: 2rem;
     }
-    @include sm {
+    @media only screen and (min-width: 650px) {
       width: 60%;
     }
   }
   .story-image {
-    @include sm {
+    @media only screen and (min-width: 650px) {
       width: 40%;
     }
     img {
@@ -91,7 +91,7 @@
       object-fit: cover;
       max-height: 180px;
 
-      @media only screen and (min-width: 481px) {
+      @media only screen and (min-width: 430px) {
         max-height: 300px;
         height: 300px;
       }

@@ -139,15 +139,6 @@ const { all } = require('core-js/fn/promise');
     }, 200);
   });
 
-  $('.filter-item-js').keypress(function(e) {
-    setTimeout(function() {
-      if (e.keyCode == 13) {
-        $(this).click();
-        console.log('FIlter');
-      }
-    }, 2000);
-  });
-
   // filter display block end
   // Show More Filter
   $(document).ready(function() {
@@ -175,6 +166,17 @@ const { all } = require('core-js/fn/promise');
       $('.searchBox-label').removeClass('is-search-open');
       $('.searchBox .search-query').removeClass('searchInput');
     });
+  });
+
+  $(document).ready(function() {
+    setTimeout(function() {
+      $('.filter-item-js').keydown(function(e) {
+        if (e.keyCode == 13) {
+          console.log('Filter 1');
+          $('.filter-list-js li:focus').click();
+        }
+      });
+    }, 200);
   });
 
   // Show More Filter

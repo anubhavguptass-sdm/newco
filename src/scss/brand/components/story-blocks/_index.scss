@@ -19,6 +19,13 @@
     margin-bottom: 1rem;
     position: relative;
   }
+  .story-height-100 {
+    .story-image {
+      img {
+        height: 100%;
+      }
+    }
+  }
   .story-image {
     width: 100%;
     @media only screen and (min-width: 650px) {
@@ -36,6 +43,10 @@
 
       @include md {
         max-height: initial;
+        height: 340px;
+      }
+
+      @include lg {
         height: 100%;
       }
       @include xl {

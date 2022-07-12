@@ -6,15 +6,11 @@
     padding: 1rem;
     color: $color-2;
     background: #ffffff99;
-    width: 100%;
     h2 {
       margin: 0;
     }
     @media screen and (max-width: 375px) {
       padding-right: 3rem !important;
-    }
-    @include sm {
-      width: min-content;
     }
     p {
       margin-bottom: 0;

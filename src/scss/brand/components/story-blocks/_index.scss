@@ -38,6 +38,9 @@
         max-height: initial;
         height: 100%;
       }
+      @include xl {
+        height: 210px;
+      }
     }
   }
   .story-content {

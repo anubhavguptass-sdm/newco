@@ -5,9 +5,14 @@
     bottom: 0;
     padding: 1rem;
     color: $color-2;
-    /* z-index: 999; */
     background: #ffffff99;
     width: 100%;
+    h2 {
+      margin: 0;
+    }
+    @media screen and (max-width: 375px) {
+      padding-right: 3rem !important;
+    }
     @include sm {
       width: min-content;
     }

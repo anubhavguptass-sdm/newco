@@ -40,7 +40,7 @@
       $('#jobTitle').val('');
       $('#location').val('');
       let link =
-        'https://haleon.staging.jibeapply.com/jobs' +
+        'https://careers.haleon.com/jobs' +
         `?keywords=${job}&location=${location}`;
       window.location.href = link;
      

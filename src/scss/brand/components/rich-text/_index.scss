@@ -1641,6 +1641,12 @@ ul.hidden-bullets {
 /* Home Page Carouse End */
 
 .bottom-right-box {
+  a {
+    em {
+      position: relative;
+      top: 2px;
+    }
+  }
   a:hover {
     background: $color-2;
     color: $color-white !important;

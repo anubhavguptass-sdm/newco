@@ -46,6 +46,9 @@
       padding: 0 2px;
       margin-bottom: 1rem;
       padding: 0 3px !important;
+      a {
+        padding: inherit !important;
+      }
       &:before {
         display: none;
       }

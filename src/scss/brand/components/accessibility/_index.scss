@@ -222,9 +222,6 @@ button {
       input[type='text'] {
         &:focus {
           outline: 2px dotted;
-          @media screen and (max-width: 767px) {
-            border-style: dotted !important;
-          }
         }
       }
     }

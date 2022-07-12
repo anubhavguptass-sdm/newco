@@ -106,30 +106,19 @@ header {
             width: auto;
           }
           a {
-            /* padding-right: 20px; */
             @include sm {
               position: relative;
-              /* padding-right: 26px; */
             }
             &:after {
               content: '\e920';
               font-family: 'icomoon';
-              /* position: absolute; */
               vertical-align: middle;
               margin-left: 5px !important;
-              /* top: -1px; */
-              /* left: 5.5rem; */
-              /* @include sm {
-                top: -3px;
-              } */
               @include md {
-                /* left: 4.5rem; */
                 font-size: 18px;
-                /* top: -6px; */
+                position: relative;
+                top: -0.5px;
               }
-              /* @include sd {
-                left: 76px;
-              } */
             }
           }
         }
@@ -142,25 +131,17 @@ header {
           margin: auto !important;
           a {
             position: relative;
-            /* padding-right: 24px; */
+            padding: 3px 6px;
             &:after {
               content: '\e90f';
               font-family: 'icomoon';
               vertical-align: middle;
               margin-left: 5px !important;
-              /* position: absolute; */
-              /* right: 1px; */
-              /* top: -2px; */
-              /* left: 6.2rem; */
               @include md {
-                /* left: 5.2rem; */
                 font-size: 18px;
-                /* top: -6px; */
+                position: relative;
+                top: -0.5px;
               }
-              /* @include sd {
-                left: 86px;
-                right: initial;
-              } */
             }
           }
         }
@@ -401,7 +382,7 @@ header {
           padding: 1rem 1rem 1rem 1rem !important;
         }
         input[type='text'] {
-          width: 100% !important;
+          width: 99% !important;
           border: 2px solid $color-black;
           display: none !important;
         }
@@ -499,8 +480,8 @@ header {
           position: absolute;
           left: -52px;
           right: 0;
-          top: -3px;
-          height: 24px;
+          top: 0px;
+          height: 18.8px;
           background-color: $color-primary;
           color: $color-2;
           width: 76px;
@@ -852,7 +833,7 @@ header {
             color: $color-2;
             font-size: 15px;
             line-height: $line-height-100;
-            padding: 2px 4px;
+            padding: 4px 4px 2px 4px;
           }
         }
       }
@@ -901,6 +882,7 @@ header {
   input[type='text'] {
   padding-right: 0rem;
   text-align: left;
+  margin: 1px;
   @include md {
     width: calc(100% - 2.2rem) !important;
   }
@@ -922,7 +904,7 @@ header {
     font-size: 13px !important;
     cursor: pointer;
     padding: 0;
-    padding: 3px 6px;
+    padding: 4px 6px 2px 6px;
   }
   .megamenu-navigation {
     .megamenu-top-bar-left > .component-content > .paragraphSystem {
@@ -1194,21 +1176,14 @@ li {
           background-image: none !important;
         }
         button.header-search {
-          right: 0px !important;
+          right: 3px !important;
           position: absolute;
-          top: 2px !important;
+          top: 3px !important;
           width: 34px !important;
           background-color: $color-primary;
           height: 29px !important;
           z-index: 0;
           display: block !important;
-          border: 2px dotted $color-primary;
-          &:focus {
-            border: 2px dotted $color-2;
-            @include sm {
-              border: none;
-            }
-          }
           @include sm {
             height: 34px !important;
             right: 0 !important;

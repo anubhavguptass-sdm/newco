@@ -210,7 +210,10 @@
   .reference-social-icons-c1-v02 {
     .inner {
       > .component-content {
-        justify-content: flex-end;
+        justify-content: center;
+        @include sm {
+          justify-content: flex-end;
+        }
       }
     }
   }

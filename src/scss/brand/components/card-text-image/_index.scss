@@ -35,7 +35,7 @@
   }
 }
 @media only screen and (max-width: 1279px) and (min-width: 992px) {
-  .card-text-image-small .card-image img {
+  .object-fit-cover.card-text-image-small .card-image img {
     height: 350px !important;
     object-position: top;
   }

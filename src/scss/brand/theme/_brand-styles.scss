@@ -578,11 +578,6 @@ a:hover {
 .bordered-text {
   border-bottom: 2px solid var(--border-color-2);
 }
-
-a.bordered-text:hover {
-  border-bottom: none;
-}
-
 .text-color-black-m * {
   @media screen and (max-width: 767px) {
     color: $color-2 !important;

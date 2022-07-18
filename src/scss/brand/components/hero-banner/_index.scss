@@ -28,6 +28,9 @@
     .heading {
       white-space: initial;
       padding-top: 1rem;
+      @media screen and (max-width: 320px) {
+        font-size: 1.75rem;
+      }
       @include sm {
         padding-top: 2rem;
       }

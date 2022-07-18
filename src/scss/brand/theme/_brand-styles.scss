@@ -275,6 +275,11 @@ table.equal-column {
   max-width: 20% !important;
   background-color: $color-white;
 }
+@-moz-document url-prefix() {
+  .table-data-sticky {
+    outline: 2px solid;
+  }
+}
 .word-break-all {
   word-break: break-all;
 }

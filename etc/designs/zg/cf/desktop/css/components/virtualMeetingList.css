@@ -581,7 +581,7 @@
       flex-shrink: 0;
       width: 400px; }
       .virtualMeetingList .meeting-list-content .meeting-list-entry .meeting-list-section.section--generalInfo .section-item--description {
-        font-family: Arial, sans-serif;
+        /* font-family: Arial, sans-serif; */
         color: #4a4a4a;
         font-size: 14px;
         line-height: 1.5;
@@ -595,7 +595,8 @@
       .virtualMeetingList .meeting-list-content .meeting-list-entry .meeting-list-section.section--regulatoryCode .section-item--zincCode {
         font-size: 12px;
         color: #3e3e3e;
-        font-family: Arial, sans-serif; }
+        /* font-family: Arial, sans-serif;  */
+      }
     .virtualMeetingList .meeting-list-content .meeting-list-entry .meeting-list-section .section-item--meetingBanner .eventMeetingBanner--small {
       width: 230px;
       height: 173px;

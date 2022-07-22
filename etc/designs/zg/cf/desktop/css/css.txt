@@ -1,10 +1,10 @@
+{mergeOff}
 core/normalize.css
 core/cookiePolicy.css
 core/exitNotification.css
 core/main.css
 core/selection.css
 core/skipContent.css
-core/overlay.css
 core/fullcalendar.css
 libs/datepicker.css
 {components}

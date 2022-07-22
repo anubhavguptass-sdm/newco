@@ -197,6 +197,7 @@ a[style*='visibility:hidden'] {
 .d-block {
   display: block;
 }
+
 .d-md-block {
   @media screen and (max-width: 991px) {
     display: block;
@@ -207,6 +208,16 @@ a[style*='visibility:hidden'] {
 }
 .d-none {
   display: none;
+}
+.list-d-block {
+  li {
+    display: block !important;
+    padding-bottom: 2px !important;
+    &:before {
+      position: absolute !important;
+      top: 1px !important;
+    }
+  }
 }
 .hide-mobile {
   display: none;
@@ -283,6 +294,13 @@ table.equal-column {
 .word-break-all {
   word-break: break-all;
 }
+.cursor-auto {
+  cursor: auto !important;
+}
+.cursor-auto .full-clickable-box:hover {
+  cursor: auto;
+}
+
 .column-5 {
   @include sm {
     flex-basis: calc(100% / 5);

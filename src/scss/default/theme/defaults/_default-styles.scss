@@ -131,9 +131,7 @@ body {
         h4,
         .h4 {
           font-size: calc(#{$font-size-h4} + #{$font-size-body-large-mobile});
-          line-height: calc(
-            #{$line-height-h4} + #{$line-height-body-large-mobile}
-          );
+          line-height: $line-height-150;
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
@@ -252,9 +250,7 @@ body {
         h4,
         .h4 {
           font-size: calc(#{$font-size-h4} + #{$font-size-body-larger-mobile});
-          line-height: calc(
-            #{$line-height-h4} + #{$line-height-body-larger-mobile}
-          );
+          line-height: $line-height-150;
 
           @media (min-width: $breakpoint-md-min) {
             font-size: calc(
@@ -369,7 +365,7 @@ body {
     color: $primary-headings-color;
     font-size: $font-size-h4-mobile;
     font-weight: $font-weight-h4;
-    line-height: $line-height-h4-mobile;
+    line-height: $line-height-150;
     margin: 0 0 1rem 0;
     @media (min-width: $breakpoint-md-min) {
       line-height: $line-height-h4;

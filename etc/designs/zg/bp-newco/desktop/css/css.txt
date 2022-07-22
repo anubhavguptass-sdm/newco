@@ -1,4 +1,3 @@
+{mergeOff}
 bundle.css
 core/normalize.css
-core/cookiePolicy.css
-core/overlay.css

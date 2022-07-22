@@ -43,14 +43,7 @@
 
       @include md {
         max-height: initial;
-        height: 340px;
-      }
-
-      @include lg {
         height: 100%;
-      }
-      @include xl {
-        height: 210px;
       }
     }
   }

@@ -87,7 +87,7 @@ TODO: SEPARATE COLOR ON FUNCTIONS
 .wsform button,
 .wsform select,
 .wsform textarea {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
 }
 /* line 159, ../../sass/components/wsform.scss */
 .wsform label {

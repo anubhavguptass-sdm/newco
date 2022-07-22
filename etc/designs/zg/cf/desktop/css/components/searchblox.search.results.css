@@ -68,7 +68,7 @@
   margin-top: 10px; }
 
 .searchBlox-results .searchResults-description p, .searchBlox-results .searchResults-context p {
-  font-family: arial;
+  /* font-family: arial; */
   font-size: 12px;
   color: #635a54; }
 
